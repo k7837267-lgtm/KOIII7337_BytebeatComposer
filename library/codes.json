@@ -3288,31 +3288,82 @@
         ]
     },
     {
+        "author": "IncreaseRegular",
+        "children": [
+            {
+                "description": "drive into the sky",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1lz4bec/combinations_i_think_3_whatever_edition/",
+                "date": "Jul 13, 2025",
+                "sampleRate": 44100,
+                "codeOriginal": "p=t=>(a=(x,y)=>t*2**(parseInt(x[(t>>y)%x.length],36)/12)/1.15,a('C7C5C32A23AFEA5A23AFHEACEA5C73A2',13)&128)*(1-t%8192/12E3),p(t)+p(t-12288)/2+p(t-24576)/4+p(t-36864)/8"
+            },
+            {
+                "description": "1-bit chords (PrincessPriscillaPT's amen break version)",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1lz4bec/combinations_i_think_3_whatever_edition/",
+                "date": "Jul 13, 2025",
+                "sampleRate": 48000,
+                "codeOriginal": "T=t>>5,m=n=>(2**(1/12))**n,x=t=>[[0,7,10,15],[-2,1,5,8],[-4,0,3,5],[-5,0,3,5]][t>>16&3].map(x=>t*m(x)%256).reduce((a,b)=>a+b)/4,a='++++++++!!!!!!!!////////--  //  --  //  ++++++++////////--  //  ++++++++++++++++////////--  //  --  //  ++++++++////////--  //  ',b=a[(t>>10)%a.length],drums=min(max((b=='+'?512*tanh(4*tanh(sin(16*sqrt(t%8192)**.5)))*(1-t%8192/8192):b=='-'?512*random()*(1-t%8192/8192)+(t>>6)%128-128:b=='/'?+(16*((t*sin(t/1.25>>3)&32)-16)*(1-t%8192/8192)):0)+192*sin(1.5*t+3*random())*(1-t%8192/8192)**.5,-128),127),chords=64*(x(t)/x(t-(8-(t>>13&7)))&1)*(1-t%8192/16384),bass=t*m(-'0245'[t>>16&3]-12*(2-(t>>13&1)))%256/3,(drums+128)/3+chords+bass"
+            },
+            {
+                "description": "DrumedAwayToPomerania",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1lz4bec/combinations_i_think_3_whatever_edition/",
+                "date": "Jul 13, 2025",
+                "sampleRate": 32000,
+                "mode": "Floatbeat",
+                "codeOriginal": "t>>=2,c=(((2*t&8*t|t/32&36*t&18*t&9*t|t/128&32*t&t/64*t|t/16&t/4|t/32&t/16|t/12&t/8&t/6)&255)/128)-1,k=sin(4e3/('1001001001011010'[t>>10&15]*t&1023)&255)*2.5,h=(tan(t*random())&1)/(1+(t>>8&3)),s=sin(t*t*t)/(1+(t>>10&3))*(t>>12&1),c+k+h+s"
+            },
+            {
+                "description": "minified moment and hontarious drums switched backwards",
+                "url": "https://www.reddit.com/r/bytebeat/comments/14kcvux/comment/n5ycsfh/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+                "date": "Jul 30, 2025",
+                "children": [
+                    {
+                        "description": "1",
+                        "mode": "Floatbeat",
+                        "sampleRate": 44100,
+                        "codeOriginal": "(sin(10*cbrt(k=t&8191))*.6*(5737>>(t>>11)/4%16&1)/(1+k*.002)+sin(t)*random()/2/(1+(y=t&4095)*.003)*(340872525>>(t>>11)/2&1)+sin(.2*t*sin(t*PI>>5))/2/(1+y*.003)*(19140624>>(t>>11)/2&1))*3+atan(tan(t/53*[1,1,1,1.5,0,0,1.5,0,1.35,0,1.5,0,1.2,0,.9,0,1,1,1,1.5,0,0,1.5,0,1.6,1.6,1.5,0,1.4,0,1.5,0][31&t>>12]))/5"
+                    },
+                    {
+                        "description": "2",
+                        "mode": "Floatbeat",
+                        "sampleRate": 42800,
+                        "codeOriginal": "t?0:b=c=d=0,C=cos,S=sin,l=t>>11,a=PI*t/64*2**((((l/4&5|2)^l>>4&3+(l&6)/3)+t%([0,0,2,3,0,-9,2,-11][l/4&7]+4)*7)/12),b+=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/8192)+C(t*PI/12E3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/15E3)),b/=2,c+=b/3-c/4,d+=c/5-d/4,(d*.4+(S(8E3/(t&16383))/3+random()*(31&-t>>9)*(1&t>>14)/45)/2)*3"
+                    }
+                ]
+            },
+            {
+                "description": "feedabeefableface",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1mgplgb/feedabeefableface/",
+                "date": "Aug 03, 2025",
+                "mode": "Floatbeat",
+                "sampleRate": 75000,
+                "codeOriginal": "l=0,t?0:a=Array(n=24832).fill(0),f=(z,v)=>sin(l++<z?f(z,v)-v:(l=0,v)),x=a.shift(),t/=5+sin(t/164882)/95,f=q=>(a.push(q/4-a[n/2|0]/2+a[n/4|0]/3),x),f(sign(sin(t/1.5*(0xfeedabeefab1eface*((t>>13)+16553)).toString(5)[t/1.5>>10&15]*PI/[32,48,64,24][t*1.25>>15&3])))"
+            },
+            {
+                "description": "Angry Birds Phonk",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1mi7615/angry_birds_phonk/",
+                "date": "Aug 05, 2025",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "codeOriginal": "this.a??=0,r=t/1.25,p=t*2**(parseInt('552222579922229BCBCBCECB99999924552222579922229BCBCBCECB9999999BCCCCCCCCCECBCC9BCCCCCECB9922229BCCCCCCCCCECBCC9BCCCCBBB799222224'[127&r>>12],36)/12)/2.1,a=(a*24+((p%88+p%59*6/4)-64)/((r/'2281228111118881228122811111888122221121221121212222112122212121'[63&r>>13]%4096+128)**.7)*64)/32,a/12"
+            },
+            {
+                "description": "Momentator (Remix of \"minified moment\" by ANoUserXD)",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1mjd8z0/momentator_remix_of_minified_moment_by_anouserxd/",
+                "date": "Aug 06, 2025",
+                "mode": "Floatbeat",
+                "sampleRate": 36000,
+                "file": "IncreaseRegular.js",
+                "fileOriginal": true
+            }
+        ]
+    },
+    {
         "author": "MarioFan171",
         "description": "SPORION",
         "url": "https://www.reddit.com/r/bytebeat/comments/1m4rosb/sporion/",
         "date": "Jul 20, 2025",
         "sampleRate": 44100,
         "codeOriginal": "(t%128^t/(t/2>>t/(t&t>>(t>>12))&t>>6)|t>>(t/t^t>>(t>>13))^t>>(t>>13))%128+(9e5/(t%16384)&128)"
-    },
-    {
-        "author": "IncreaseRegular",
-        "description": "minified moment and hontarious drums switched backwards",
-        "url": "https://www.reddit.com/r/bytebeat/comments/14kcvux/comment/n5ycsfh/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
-        "date": "Jul 30, 2025",
-        "children": [
-            {
-                "description": "1",
-                "mode": "Floatbeat",
-                "sampleRate": 44100,
-                "codeOriginal": "(sin(10*cbrt(k=t&8191))*.6*(5737>>(t>>11)/4%16&1)/(1+k*.002)+sin(t)*random()/2/(1+(y=t&4095)*.003)*(340872525>>(t>>11)/2&1)+sin(.2*t*sin(t*PI>>5))/2/(1+y*.003)*(19140624>>(t>>11)/2&1))*3+atan(tan(t/53*[1,1,1,1.5,0,0,1.5,0,1.35,0,1.5,0,1.2,0,.9,0,1,1,1,1.5,0,0,1.5,0,1.6,1.6,1.5,0,1.4,0,1.5,0][31&t>>12]))/5"
-            },
-            {
-                "description": "2",
-                "mode": "Floatbeat",
-                "sampleRate": 42800,
-                "codeOriginal": "t?0:b=c=d=0,C=cos,S=sin,l=t>>11,a=PI*t/64*2**((((l/4&5|2)^l>>4&3+(l&6)/3)+t%([0,0,2,3,0,-9,2,-11][l/4&7]+4)*7)/12),b+=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/8192)+C(t*PI/12E3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/15E3)),b/=2,c+=b/3-c/4,d+=c/5-d/4,(d*.4+(S(8E3/(t&16383))/3+random()*(31&-t>>9)*(1&t>>14)/45)/2)*3"
-            }
-        ]
     }
 ]
