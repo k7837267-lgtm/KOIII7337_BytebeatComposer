@@ -37,6 +37,7 @@ globalThis.bytebeat = new class {
 		this.controlRecord = null;
 		this.controlSampleRate = null;
 		this.controlSampleRateSelect = null;
+		this.controlScale = null;
 		this.controlScaleDown = null;
 		this.controlTime = null;
 		this.controlTimeUnits = null;
@@ -245,6 +246,17 @@ globalThis.bytebeat = new class {
 	expandEditor() {
 		this.containerFixedElem.classList.toggle('container-expanded');
 	}
+	formatBytes(bytes) {
+		if (bytes < 2e3) {
+			return bytes + 'B';
+		}
+		// i fear the day we get a 1 Terabyte code. - Chasyxx, creator of the EnBeat_NEW fork
+		const power1000i = parseInt(Math.floor(Math.log(bytes) / Math.log(1000)), 10);
+		const power1000s = (power1000i ? (bytes / (1000 ** power1000i)).toFixed(2) : bytes) + ['B', 'KB', 'MB', 'GB', 'TB'][power1000i];
+		const power1024i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)), 10);
+		const power1024s = (power1000i ? (bytes / (1024 ** power1000i)).toFixed(2) : bytes) + ['B', 'KiB', 'MiB', 'GiB', 'TiB'][power1024i];
+		return `${power1024s} (${[power1000s]})`
+	}
 	generateLibraryEntry({
 		author, children, codeMinified, codeOriginal, date, description, file, fileFormatted, fileMinified,
 		fileOriginal, mode, remixed, sampleRate, stereo, url, exotic
@@ -371,6 +383,7 @@ globalThis.bytebeat = new class {
 					case 'control-play-forward': this.playbackToggle(true, true, 1); break;
 					case 'control-rec': this.toggleRecording(); break;
 					case 'control-reset': this.resetTime(); break;
+					case 'control-scale': this.setScale(-this.settings.drawScale); break;
 					case 'control-scaledown': this.setScale(-1, elem); break;
 					case 'control-scaleup': this.setScale(1); break;
 					case 'control-stop': this.playbackStop(); break;
@@ -489,6 +502,7 @@ globalThis.bytebeat = new class {
 		this.controlRecord = document.getElementById('control-rec');
 		this.controlSampleRate = document.getElementById('control-samplerate');
 		this.controlSampleRateSelect = document.getElementById('control-samplerate-select');
+		this.controlScale = document.getElementById('control-scale');
 		this.controlScaleDown = document.getElementById('control-scaledown');
 		this.setScale(0);
 
@@ -717,7 +731,7 @@ globalThis.bytebeat = new class {
 				this.sendData({ errorDisplayed: true });
 			}
 			if (data.updateUrl !== true) {
-				this.setCodeSize(this.editorValue.length);
+				this.setCodeSize(this.editorValue);
 			}
 		}
 		if (data.updateUrl === true) {
@@ -754,7 +768,7 @@ globalThis.bytebeat = new class {
 		this.setCounterValue(this.byteSample);
 	}
 	setCodeSize(value) {
-		this.controlCodeSize.textContent = value + 'c';
+		this.controlCodeSize.textContent = this.formatBytes(new Blob([value]).size);
 	}
 	setCounterValue(value) {
 		this.controlTime.value = this.settings.isSeconds ?
@@ -823,7 +837,11 @@ globalThis.bytebeat = new class {
 		if (buttonElem?.getAttribute('disabled')) {
 			return;
 		}
-		this.settings.drawScale = Math.max(this.settings.drawScale + amount, 0);
+		const scale = Math.max(this.settings.drawScale + amount, 0);
+		this.settings.drawScale = scale;
+		this.controlScale.innerHTML = !scale ? '1x' :
+			scale < 7 ? `1/${2 ** scale}${scale < 4 ? 'x' : ''}` :
+				`<sub>2</sub>-${scale}`;
 		this.saveSettings();
 		this.clearCanvas();
 		this.toggleTimeCursor();
@@ -878,7 +896,7 @@ globalThis.bytebeat = new class {
 		if (this.songData.mode !== 'Bytebeat') {
 			songData.mode = this.songData.mode;
 		}
-		this.setCodeSize(code.length);
+		this.setCodeSize(code);
 		window.location.hash = `#v3b64${btoa(String.fromCharCode.apply(undefined,
 			deflateRaw(JSON.stringify(songData)))).replaceAll('=', '')}`;
 	}
