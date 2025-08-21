@@ -84,7 +84,7 @@ footer {
 	flex-shrink: 0;
 	position: relative;
 	box-sizing: border-box;
-	border: 2px solid #fda757;
+	border: 3px solid #575b61;
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -98,8 +98,8 @@ footer {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	border-left: 2px solid blue;
-	box-shadow: 0 0 8px #6ab2ff, 0 0 16px #fff;
+	border-left: 2px solid rgb(154, 185, 223);
+	box-shadow: 0 0 4px #7fa7ff, 0 0 16px #b3c0d8;
 	left: 0;
 }
 
@@ -254,7 +254,7 @@ button[name="close"] {
 	padding: 2px 6px;
 	border: none;
 	border-radius: 3px;
-	background-image: linear-gradient(to bottom, #424242, #171b22);
+	background-image: linear-gradient(to bottom, #626264, #2a2f35);
 	color: #ced5e1;
 	font: var(--font-size)/var(--font-size) sans-serif;
 	white-space: nowrap;
@@ -262,7 +262,7 @@ button[name="close"] {
 }
 
 .code-button:hover {
-	background-image: linear-gradient(to bottom, #3c508a, #1f2331);
+	background-image: linear-gradient(to bottom, #5876ce, #202a41);
 	color: #c2dfff;
 }
 
@@ -272,11 +272,11 @@ button[name="close"] {
 }
 
 .code-stereo {
-	color: #008040;
+	color: #09ad69;
 }
 
 .code-exotic {
-	color: #a61107;
+	color: #d11515;
 }
 
 .entry {
@@ -320,12 +320,12 @@ button[name="close"] {
 .library-header {
 	padding: 4px 8px;
 	border-radius: 3px;
-	background-image: linear-gradient(to bottom, #000000, #0b0d17);
+	background-image: linear-gradient(to bottom, #55595e, #252525);
 	cursor: pointer;
 }
 
 .library-header:hover, .library-header:focus-visible {
-	background-image: linear-gradient(to bottom, #32426c, #151b2b);
+	background-image: linear-gradient(to bottom, #5b6ea0, #151b2b);
 	color: #94c7ff;
 }
 
@@ -359,7 +359,7 @@ button[name="close"] {
 	padding: 0;
 	border: none;
 	border-radius: var(--control-corners);
-	background-image: linear-gradient(to bottom, #959595, #242a37);
+	background-image: linear-gradient(to bottom, #7c8086, #1e1f22);
 	color: #e3e3e3;
 	font: bold var(--font-size)/var(--control-size) sans-serif;
 	cursor: pointer;
@@ -371,7 +371,7 @@ button[name="close"] {
 }
 
 .control-button:not([disabled]):hover, .control-select:hover {
-	background-image: linear-gradient(to bottom, #738cc1, #28314a);
+	background-image: linear-gradient(to bottom, #668cdd, #1d222e);
 	color: #c2dfff;
 }
 
