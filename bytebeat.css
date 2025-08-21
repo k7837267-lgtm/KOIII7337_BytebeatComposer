@@ -84,7 +84,7 @@ footer {
 	flex-shrink: 0;
 	position: relative;
 	box-sizing: border-box;
-	border: 3px solid #575b61;
+	border: 2px solid #575b61;
 	overflow: hidden;
 	cursor: pointer;
 }
