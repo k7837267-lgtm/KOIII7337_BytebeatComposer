@@ -258,12 +258,12 @@ globalThis.bytebeat = new class {
 		return `${power1024s} (${[power1000s]})`
 	}
 	generateLibraryEntry({
-		author, children, codeMinified, codeOriginal, date, description, file, fileFormatted, fileMinified,
-		fileOriginal, mode, remixed, sampleRate, stereo, url, exotic
+		author, children, codeMinified, codeOriginal, cover, date, exotic, file, fileFormatted,
+		fileMinified, fileOriginal, mode, name, remix, sampleRate, stereo, url
 	}) {
 		let entry = '';
-		if (description) {
-			entry += !url ? description : `<a href="${url}" target="_blank">${description}</a>`;
+		if (name) {
+			entry += !url ? name : `<a href="${url}" target="_blank">${name}</a>`;
 		}
 		if (author) {
 			let authorsList = '';
@@ -271,7 +271,7 @@ globalThis.bytebeat = new class {
 			for (let i = 0, len = authorsArr.length; i < len; ++i) {
 				const authorElem = authorsArr[i];
 				if (typeof authorElem === 'string') {
-					authorsList += description || !url ? authorElem :
+					authorsList += name || !url ? authorElem :
 						`<a href="${url}" target="_blank">${authorElem}</a>`;
 				} else {
 					authorsList += `<a href="${authorElem[1]}" target="_blank">${authorElem[0]}</a>`;
@@ -280,15 +280,27 @@ globalThis.bytebeat = new class {
 					authorsList += ', ';
 				}
 			}
-			entry += `<span>${description ? ` by <b>${authorsList}</b>` : `by <b>${authorsList}</b>`}</span>`;
+			entry += `<span>${name ? ` (by <b>${authorsList}</b>)` : `by <b>${authorsList}</b>`}</span>`;
 		}
-		if (url && !description && !author) {
+		if (url && !name && !author) {
 			entry += `(<a href="${url}" target="_blank">source</a>)`;
 		}
-		if (remixed) {
-			const { url: rUrl, description: rDescription, author: rAuthor } = remixed;
-			entry += ` (remix of ${rUrl ? `<a href="${rUrl}" target="_blank">${rDescription || rAuthor}</a>` : `"${rDescription}"`
-				}${rDescription && rAuthor ? ' by ' + rAuthor : ''})`;
+		if (cover) {
+			const { url: cUrl, name: coverName } = cover;
+			entry += ` (cover of ${cUrl ?
+				`<a href="${cUrl}" target="_blank">${coverName}</a>` :
+				`"${coverName}"`
+				})`;
+		}
+		if (remix) {
+			const arr = [];
+			const remixArr = Array.isArray(remix) ? remix : [remix];
+			for (let i = 0, len = remixArr.length; i < len; ++i) {
+				const { url: rUrl, name: remixName, author: rAuthor } = remixArr[i];
+				arr.push(`${rUrl ? `<a href="${rUrl}" target="_blank">${remixName || rAuthor}</a>` : `"${remixName}"`
+					}${remixName && rAuthor ? ' by ' + rAuthor : ''}`);
+			}
+			entry += ` (remix of ${arr.join(', ')})`;
 		}
 
 		if (date || sampleRate || mode || stereo || exotic) {

@@ -15,7 +15,7 @@
         "codeMinified": "5*(t*t>>15|t*t>>16)|t/8|t>>4"
     },
     {
-        "description": "Different Version of absolute199's organ thing using Signed ByteBeat",
+        "name": "Different Version of absolute199's organ thing using Signed ByteBeat",
         "mode": "Signed Bytebeat",
         "url": "https://web.archive.org/web/20230528015552/https://dollchan.net/btb/res/3.html#784",
         "date": "Apr 07, 2023",
@@ -23,7 +23,7 @@
         "codeOriginal": "(a=t-t/[1.5,1.9,2.5,3.05,3.4][(t>>13)%5],sin(a/4)+sin(a/6)+asin(sin(a/8)))*8"
     },
     {
-        "description": "remix of \"Different Version of absolute199's organ thing using Signed ByteBeat\"",
+        "name": "remix of \"Different Version of absolute199's organ thing using Signed ByteBeat\"",
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/12eww2v/zombie_nation_kernkraft_400_but_made_using/",
         "date": "Apr 07, 2023",
@@ -31,39 +31,39 @@
         "codeOriginal": "(a=t-t/[1.5,1.9,1.5,1.9,2,5,2,5][(t>>13)%8],b=[1,1,0.90,0.75][(t>>15)%4],sin(a*b/4)+sin(a*b/6)+sin(a*b/8))*16|t>>11&15"
     },
     {
-        "description": "just a normal bytebeat music",
+        "name": "just a normal bytebeat music",
         "url": "https://www.reddit.com/r/bytebeat/comments/12eww2v/zombie_nation_kernkraft_400_but_made_using/",
         "date": "Apr 07, 2023",
         "codeOriginal": "d=t*(t>>10&30&t&t>>8),a=t%127&t*2,d+a",
         "codeMinified": "t*(t>>10&30&t&t>>8)+(t%127&t*2)"
     },
     {
-        "description": "Hi",
+        "name": "Hi",
         "url": "https://www.reddit.com/r/bytebeat/comments/14pz1iu/reupload_1_hi/",
         "date": "Apr 25, 2023",
         "sampleRate": 32000,
         "codeOriginal": "128*sin(t>>6|t*t>>10|t>>8)+128|128*sin(t/4096)+128|t*4&64"
     },
     {
-        "description": "\"Hi\" but without sine",
+        "name": "\"Hi\" but without sine",
         "date": "Apr 26, 2023",
         "sampleRate": 32000,
         "codeOriginal": "t>>6|t*t>>10|t>>8|t/4096|t*4&64"
     },
     {
-        "description": "Nice Sin code music I've made in ByteBeat.",
+        "name": "Nice Sin code music I've made in ByteBeat.",
         "date": "Apr 27, 2023",
         "codeOriginal": "(64*sin(~t>>4&~t|~t>>12|~t>>8&~t|~t/8)+128)+(64*sin(~t/1024))"
     },
     {
-        "description": "A music using a tree image with color code picker!",
+        "name": "A music using a tree image with color code picker!",
         "url": "https://www.reddit.com/r/bytebeat/comments/13hwvgj/a_music_using_a_tree_image_with_color_code_picker/",
         "date": "May 14, 2023",
         "sampleRate": 32000,
         "codeOriginal": "(.000125*t*(0x23231a>>!(t>>12&9))>>8&63)+random()*4e4/(t&16383)+64*sin(.00007*0xabc61d*(t>>4&t/131072))+80"
     },
     {
-        "description": "Pleasure To Paso (Unfinished/Not Full Version)",
+        "name": "Pleasure To Paso (Unfinished/Not Full Version)",
         "url": "https://www.reddit.com/r/bytebeat/comments/13im4qr/pleasure_to_paso_unfinishednot_full_version/",
         "date": "May 15, 2023",
         "sampleRate": 48000,
@@ -74,14 +74,14 @@
         ]
     },
     {
-        "description": "DJ G minor Bach with sinewave changed to sawtooth",
+        "name": "DJ G minor Bach with sinewave changed to sawtooth",
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/13uep2x/dj_g_minor_bach_with_sinewave_changed_to_sawtooth/",
         "date": "May 28, 2023",
         "codeOriginal": "t%=528e3,82*atan(tan(t*2**(\"B*918/916-918/91B*918/916-918/91>*;2:1;26/;2:1;2>*;2:1;26/;2:1;2A*;291;28/;291;2A*;291;28/;291;2B*=-;,=-91=-;,=-B*=-;,=-91=-;,=-E*>6=4>692>6=4>6E*>6=4>692>6=4>6D*<3:1<380<3:1<3D*<3:1<380<3:1<3D(=4<3=481=4<3=4D(=4<3=481=4<3=4B(:18/:16.:18/:1B(:18/:16.:18/:1B&;2:1;26/;2:1;2B&;2:1;26/;2:1;2@&;,9*;,8/;,9*;,@&;,9*;,8/;,9*;,@%=-;,=-91=-;,=-@%=-;,=-91=-;,=->*=-;,=-92=-;,=->*=-;,=-92=-;,=->,8/6-8/428/6-8/>,8/6-8/428/6-8/=-412/4192412141=-412/4192412141;-6341613/634163;-6341613/634163;,8/6-8/528/6-8/;,8/6-8/528/6\".charCodeAt(t>>10)/12-8.5)))/3+(64*random()*(-t>>4&255)>>6)*(t&4096)/16e3+48*sin(8e3/(t&4095))-24"
     },
     {
-        "description": "sin 'charCodeAt'.exe II (#2)",
+        "name": "sin 'charCodeAt'.exe II (#2)",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1459zpj/sin_charcodeatexe_ii_2/",
         "date": "Jun 09, 2023",
@@ -89,19 +89,19 @@
         "codeOriginal": "a=[4,4.25,3.55,4.25][t>>17&3]*t/'@+=$'.charCodeAt(t>>14&3),sin(a)+sin(a/3)+asin(sin(a/6))"
     },
     {
-        "description": "Random goofy ahh bytebeat",
+        "name": "Random goofy ahh bytebeat",
         "date": "Jun 12, 2023",
         "codeOriginal": "t*(t*3>>12&t*1.5>>2)>>(t*1.5>>8&15)/(t*4&t*6&t*10|t*.75>>3|t&t*3&t*9|t*1.5>>8)|t*1.5>>3"
     },
     {
-        "description": "Another C compatible bytebeat again",
+        "name": "Another C compatible bytebeat again",
         "url": "https://www.reddit.com/r/bytebeat/comments/14acmdr/another_c_compatible_bytebeat_again/",
         "date": "Jun 15, 2023",
         "sampleRate": 32000,
         "codeOriginal": "((t*t>>2|t^t/2^t>>8|t>>7^t>>8)&255)*(~t>>6&255)>>8"
     },
     {
-        "description": "Another reverb and stereo music cuz why not",
+        "name": "Another reverb and stereo music cuz why not",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/14b7srw/another_reverb_and_stereo_music_cuz_why_not/",
         "date": "Jun 16, 2023",
@@ -111,13 +111,13 @@
         "fileOriginal": true
     },
     {
-        "description": "First time using isNaN",
+        "name": "First time using isNaN",
         "url": "https://www.reddit.com/r/bytebeat/comments/14cmbut/first_time_using_isnan/",
         "date": "Jun 18, 2023",
         "codeOriginal": "isNaN(t%(t%28&t>>4&t>>12))?255:t>>4^t>>5"
     },
     {
-        "description": "Cool New 8000 Hz Harmony (Sine with reverb edition and floatbeat)",
+        "name": "Cool New 8000 Hz Harmony (Sine with reverb edition and floatbeat)",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/14hshup/cool_new_8000_hz_harmony_sine_with_reverb_edition/",
         "date": "Jun 24, 2023",
@@ -126,21 +126,21 @@
         "fileOriginal": true
     },
     {
-        "description": "music with loud kick",
+        "name": "music with loud kick",
         "url": "https://www.reddit.com/r/bytebeat/comments/14p6l8u/music_with_loud_kick/",
         "date": "Jul 02, 2023",
         "sampleRate": 48000,
         "codeOriginal": "max(min(sin(8e3/(t*1.25%32768))*256+(a=t*[1,1,1.2,.8][t*1.25>>16&3])%256/8+a*1.5%256/8+a*4%256/8+a*5%256/8+(t*random()*([b=~t*1.25>>13,b,b,~t*1.25>>12][t*1.25>>15&3]&1)&32),255),0)"
     },
     {
-        "description": "wth is this?",
+        "name": "wth is this?",
         "url": "https://www.reddit.com/r/bytebeat/comments/14p8imv/wth_is_this/",
         "date": "Jul 03, 2023",
         "sampleRate": 32000,
         "codeOriginal": "128+96*sin(t/(t>>12&1^t>>13&5^t>>14&7)+!t>>2&7)"
     },
     {
-        "description": "simple step sequencer remix",
+        "name": "simple step sequencer remix",
         "url": "https://www.reddit.com/r/bytebeat/comments/14rsy2y/simple_step_sequencer_remix/",
         "date": "Jul 05, 2023",
         "sampleRate": 44100,
@@ -155,7 +155,7 @@
         ]
     },
     {
-        "description": "Cover of \"Imagine Dragons - Believer\"",
+        "name": "Cover of \"Imagine Dragons - Believer\"",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/14uce4d/cover_of_imagine_dragons_believer/",
         "date": "Jul 08, 2023",
@@ -169,35 +169,35 @@
         "codeOriginal": "br(t>>7&t|t>>5&31|t>>10&t<<2&63|t>>2&t>>9&t*8&127,12)"
     },
     {
-        "description": "br function",
+        "name": "br function",
         "url": "https://www.reddit.com/r/bytebeat/comments/14z940t/update_2_of_my_composer/",
         "date": "Jul 14, 2023",
         "exotic": true,
         "codeOriginal": "br(t>>10&t|t>>11&t|t*2&t>>7&31|t/2&t>>6&31|t>>5,12)"
     },
     {
-        "description": "Random bytebeat #1",
+        "name": "Random bytebeat #1",
         "url": "https://www.reddit.com/r/bytebeat/comments/14zm77f/random_bytebeat_1_exotic_code_cuz_of_sinf/",
         "date": "Jul 14, 2023",
         "exotic": true,
         "codeOriginal": "(sinf(t*(0xABFEDACE>>(t>>10&15)&27)))*127+128^t>>6|t>>4"
     },
     {
-        "description": "Triangle man",
+        "name": "Triangle man",
         "url": "https://www.reddit.com/r/bytebeat/comments/158o8er/triangle_man/",
         "date": "Jul 24, 2023",
         "sampleRate": 32000,
         "codeOriginal": "tri=x=>abs((x&255)-128),a=tri(t*2*2**([-1,,,1,2,,,3,4,,,5,6,,6,1][t>>13&15]/12))/1.6,b=tri(t*2*2**([-13,,-13,,-13,-13,-13,-13,-11,,-11,,-11,-11,-11,-11,-10,,-10,,-10,-10,-10,-10,-8,,-8,,-8,-8,-8,-8][t>>12&31]/12))/1.6,c=tri(t*2*2**([11,6,11,14,16,13,13,14,,9,,7,,4][t>>12&15]/12))/1.6,[a+b,a+b+c][t>>18&1]"
     },
     {
-        "description": "Cover of some pixitracker song from the examples (Preview)",
+        "name": "Cover of some pixitracker song from the examples (Preview)",
         "url": "https://www.reddit.com/r/bytebeat/comments/15cx4ac/cover_of_some_pixitracker_song_from_the_examples/",
         "date": "Jul 29, 2023",
         "sampleRate": 32000,
         "codeOriginal": "T=t*1.75,p=x=>t*2**(x/12),a=(p([-10,,-10,-10,0,,2,,-10,-10,,-10,0,2,2][T>>13&15])&255)*(~T>>5&255)>>8,b=32+32*sin(4*cbrt(T&8191)),c=(t*random()&63)%256*(~T>>5&255)>>8,d=(t*sin(t>>3)&64)%256*(~T>>5&255)>>8,e=((t+131072)/64*sin(PI*t>>1)&64)%256*(~T>>5&255)>>8,f=[b,b,c,b,d,c,c,c,b,b,c,b,d,c,e,c][T>>13&15]*2,[a,a+f][T>>19&1]/2"
     },
     {
-        "description": "Cool triangle wave melody",
+        "name": "Cool triangle wave melody",
         "url": "https://www.reddit.com/r/bytebeat/comments/15doh7x/cool_triangle_wave_melody/",
         "date": "Jul 30, 2023",
         "sampleRate": 32000,
@@ -207,7 +207,7 @@
         ]
     },
     {
-        "description": "Remix of aturned777 bytebeat",
+        "name": "Remix of aturned777 bytebeat",
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/15ftz9g/remix_of_aturned777_bytebeat/",
         "date": "Aug 01, 2023",
@@ -215,14 +215,14 @@
         "codeOriginal": "j=t/4096,sin(sin((a=t/(4+(t>>15)%16)*(1+(3&t>>13))>>(2&t>>11))+!t>>1&7)+sin(a*PI/8)+asin(sin(a*PI/16))+tan(cos(a*PI/2))+sign(sin(a*PI/32)))*32+sin(1e4/(t%16384))*48+((t>>5^t/(.8+(j*6|0)/6%1)>>1)%39>16&&54*(1-j/(2-!(j/2+1&31))%1)*(50244>>(j/2&15)&1))*1.5-32"
     },
     {
-        "description": "Remix of Decent-Manager-6169's stuff",
+        "name": "Remix of Decent-Manager-6169's stuff",
         "url": "https://www.reddit.com/r/bytebeat/comments/15gcz52/remix_of_decentmanager6169s_stuff/",
         "date": "Aug 02, 2023",
         "sampleRate": 32000,
         "codeOriginal": "T=t*1.25,a=t*2.25*2**([8,0,-7,5,0,-7,8,0,-7,5,0,-7,8,0,5,-7,10,0,-7,5,0,-11,10,1,-7,7,3,-2,10,3,-2,7,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,8,-4,-11,5,-4,-11,8,-4,-7,5,-4,-11,10,-4,5,-7,7,-2,-9,3,-2,-9,7,-2,-9,3,-9,-2,8,7,5,10,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,][T>>12&127]/12),(((a/1.5%225+a/1.5%150+a/1.5%100+a/1.5%75)/2.15&128)+((t*sin(t>>3)&128)*([b=~T>>6,b,b,~T>>4,b,b,b,~T>>5][T>>15&7]&255)>>8)*(T>>14&1)+(sin(1e4/(T&4095)))*64+64+((t*random()&127)*(~T>>4&255)>>8))/2"
     },
     {
-        "description": "pixitracker example 10 (Bytebeat Edition/Preview)",
+        "name": "pixitracker example 10 (Bytebeat Edition/Preview)",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/15grzlk/pixitracker_example_10_bytebeat_edition_preview/",
         "date": "Aug 02, 2023",
@@ -230,7 +230,7 @@
         "codeOriginal": "this.v??=0,r=(w,i,s)=>(v++||(a=Array(i).fill(0)),w=w%256+a[z=v%a.length],a[z]=w*s,w),T=v/1.1,p=x=>v*2**(x/12),S=x=>sin(x*PI/128),C=x=>cos(x*PI/128),r(((A=cos(exp(S(b=p([6,6,11,11,13,13,18,18,4,4,8,8,11,11,20,20,2,2,6,6,8,8,11,11,4,4,8,8,11,11,13,13][c=T>>12&31]))+C(b*2))))+(A2=int(S(2*p([6,6,6,11,11,11,11,11,9,9,9,9,-1,-1,-1,11,11,11,4,4,4,4,4,4,13,13,13,13,13,13,13,13][c]))))+(A3=asin(S(2*p([6,6,6,6,6,6,13,13,13,13,13,13,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11][c])))),[A,A,A,A,A+A2,A+A2,A+A2,A+A2+A3][T>>17&7]),12288,.5)/5+.25"
     },
     {
-        "description": "The coolest aturned777 bytebeat remix ever",
+        "name": "The coolest aturned777 bytebeat remix ever",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/15hseaf/the_coolest_aturned777_bytebeat_remix_ever/",
         "date": "Aug 04, 2023",
@@ -238,14 +238,14 @@
         "codeOriginal": "S=x=>sin(x*PI/128),C=x=>cos(x*PI/128),a=(8*t/(4+(t>>15)%16)*(1+(3&t>>13))>>(2&t>>11))*'1248'[t>>17&3],b=sin(8*cbrt(t%4096)),c=((t*random()&255)*(~t>>4&255)>>8)/256,d=((t*sin(t>>3)&256)*(~t>>4&255)>>8)/256,f=[b,c,d,b,d,d,b,c,b,d,b,c,d,d,c,d][t>>12&15],sin(a*PI/128+tan(S(a*2))+S(a*1.01)+S(a/4.01)+C(a)+sign(S(a/2))+exp(S(a*4.03)))/4+f/1.375"
     },
     {
-        "description": "Synthesizer 2 (remix)",
+        "name": "Synthesizer 2 (remix)",
         "url": "https://www.reddit.com/r/bytebeat/comments/15jhm3e/synthesizer_2_remix/",
         "date": "Aug 06, 2023",
         "sampleRate": 32000,
         "codeOriginal": "p=x=>t*2**(x/12),A=p(a=[0,3,4,7,0,5,8,10,0,6,9,11,0,8,10,12,-2,0,1,3,-1,1,3,5,-1,3,4,6,-1,4,6,7][t>>12&31])%256/3+1.51*p(a)%256/3+2.01*p(a)%256/3,B=p(b=[-12,-14][t>>16&1])%256/2+1.005*p(b)%256/2,(A+B)/2"
     },
     {
-        "description": "0xFEA172C71E",
+        "name": "0xFEA172C71E",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/15n1y12/0xfea172c71e_minibake/",
         "date": "Aug 10, 2023",
@@ -253,7 +253,7 @@
         "codeOriginal": "this.T??=0,r=(x,y,z)=>(T++||(a=Array(y).fill(0)),x=x%256+a[v=T%a.length],a[v]=x*z,x),tri=x=>asin(sin(x*PI/16)),saw=x=>atan(tan(x*PI/128)),w=T*(0xFEA172C71E*((T>>13)+1)).toString(7)[(T>>14)%7]/PI/2*2**([0,2,3,5][T>>17&3]/12),[A,B,C]=[[-5,-3,0],[-3,-1,2],[-2,0,3],[0,2,5]][T>>17&3],r(-saw(w)/8+sin(4*cbrt(T&65536?T%8192:T%16384))/2+((tri(T/PI*2**(A/12))+tri(T/PI*2**(B/12))+tri(T/PI*2**(C/12)))*(T%131072/131072))/8*(T>524288)+((T*random()&255)*(~T>>5&255)>>8)/512*(T>1048576)*'1010110101101101'[T>>13&15],16384,.5)/2"
     },
     {
-        "description": "first remix of \"Pyramid Dungeon\"",
+        "name": "first remix of \"Pyramid Dungeon\"",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/161j3if/first_remix_of_pyramid_dungeon/",
         "date": "Aug 26, 2023",
@@ -261,21 +261,21 @@
         "codeOriginal": "p=x=>t*2**(x/12),m=2**([t>>13&5,7-(t>>13&5),7,4+3*(t>>17&2)][t>>16&3]/12),((m*t/2&32)+(m*t/8&31)+32*tan(PI/4*sin(m*t*PI/125)**(m*t/(8-2*(t>>17&1))&t>>12&62)))/192+cbrt(sin(12*cbrt(t%16384)))/4+p('0x'+'04737744047377AA'[t>>15&15])%256/1024+((t*sin(t>>3)&255)*(~t>>6&255)>>8)/512*(t>>14&1)+((t*random()&255)*(~t>>4&255)>>8)/1024-.7"
     },
     {
-        "description": "my own TIRO remix of \"The time is running out!\"",
+        "name": "my own TIRO remix of \"The time is running out!\"",
         "url": "https://www.reddit.com/r/bytebeat/comments/163aind/my_own_tiro_remix_of_the_time_is_running_out_by/",
         "date": "Aug 27, 2023",
         "sampleRate": 44100,
         "codeOriginal": "t/=4,S=x=>sin(x*PI/128),((128+81*asin(S(2*t*(t&16384?7:5)*(3-(3&t>>9)+(3&t>>8))>>(3&-t>>16)))*(~t>>12&1))%256/1.5+((t*(t&16384?7:5)*(3-(3&t>>9)+(3&t>>8))>>(3&-t>>2))*(t>>12&1))%256/1.5+'1011001010101110'[t>>10&15]*int(sin(16*cbrt(t%1024)))*128+128+(1.5*(a=t*'57'[t>>14&1])&t>>5&255)/4+(a&t>>5&255)/4+((t*2*[5,7.5,5,7.5,7,10.5,7,10.5][t>>12&7]&255)*(t>>4&255)>>8)/4+exp(S(t*2*'0505050507070707'[t>>11&15]))*64-64)/2.55"
     },
     {
-        "description": "other aturned777 remix i made a few weeks ago",
+        "name": "other aturned777 remix i made a few weeks ago",
         "mode": "Floatbeat",
         "date": "Sep 16, 2023",
         "sampleRate": 32000,
         "codeOriginal": "a=8*t/(4+(t>>15)%16)*(1+(3&t>>13))*(2**(t>>17&3)),(abs(a%256-128^48|32)+abs(a/2%256-128^48|32)+abs(a/4%256-128^48|32))/384+cbrt(sin(16*cbrt(t%16384)))/4+(t>>14&1)*sin(t*sin(t>>3))/(1+(t%[a=16384,a,a,8192,a,a,a,4096][t>>15&7])/512)+sin(t*random())/(4+(t%4096)/128)-.5"
     },
     {
-        "description": "New remix of Longline Theory",
+        "name": "New remix of Longline Theory",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/16oxyl4/new_remix_of_longline_theory_by_bsquareii/",
         "date": "Sep 21, 2023",
@@ -291,7 +291,7 @@
         ]
     },
     {
-        "description": "rand.music",
+        "name": "rand.music",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/16vom62/randmusic/",
         "date": "Sep 29, 2023",
@@ -307,34 +307,34 @@
         ]
     },
     {
-        "description": "the t>>9&12",
+        "name": "the t>>9&12",
         "url": "https://www.reddit.com/r/bytebeat/comments/173cnzm/the_t912/",
         "date": "Oct 08, 2023",
         "sampleRate": 32000,
         "codeOriginal": "t/=4,a=t*4*(4+(t>>9&12))/(4+(t>>15)%4)*(t&131072?1+(t>>8&2):1),x=sin(a*PI/128)*64+64,x=(x^x*1.999)/2+(x%(~t>>4&127)|0),x/4+1e5/(t&4095)%64+((t>>2)*(t>>7)&63)*(~t>>9&2)/2+((t*sin(t*PI>>1)|t>>4)&63)"
     },
     {
-        "description": "square wave remix of squsinsaw music",
+        "name": "square wave remix of squsinsaw music",
         "url": "https://www.reddit.com/r/bytebeat/comments/17443cy/square_wave_remix_of_squsinsaw_music/",
         "date": "Oct 09, 2023",
         "codeOriginal": "squ=2*t*[1,0,2,0,1,0,2,2,1,0,2,0,1,0,2,0,1.5,0,3,3,1.5,0,3,0,1.35,0,2.7,2.7,1.35,0,2.7][t>>10&31]&64,squ2=64*t/PI/40.743648*[8,9,9.5,12][t>>10&3]*[1,1,1.5,1.35][t>>13&3]&64,squ3=t/2*[0,0,0,0,0,0,0,0,8,9.5,12,16,0,0,0,0][t>>8&15]&64,kick=1E5/(t&4095)/5&64,snr=(t*t*t>>10&63|t>>6&63)*'0101'[t>>12&3],(squ2*(~t>>4&63)>>6)+squ*'01111111'[t>>16&7]+squ3*'00111111'[t>>16&7]+kick*'00111111'[t>>16&7]+snr*'00111111'[t>>16&7]"
     },
     {
-        "description": "melody man V3",
+        "name": "melody man V3",
         "url": "https://www.reddit.com/r/bytebeat/comments/175v0eu/melody_man_v3/",
         "date": "Oct 11, 2023",
         "sampleRate": 16000,
         "codeOriginal": "a=t*(t&8192?t&4096?4.8:3.8:t&4096?2.4:3.2)*(t&65536?t&32768?1.5:1.2:t&32768?.9:1),a=a%256/3+a*1.01%256/3+a*1.5%256/3,a*(1-t%4096/6144)"
     },
     {
-        "description": "just a neurofunk remix",
+        "name": "just a neurofunk remix",
         "url": "https://www.reddit.com/r/bytebeat/comments/178tynr/just_a_neurofunk_remix/",
         "date": "Oct 15, 2023",
         "sampleRate": 32000,
         "codeOriginal": "t/=3.75,a=(t*((t&4096?t%65536<59392?7:t&7:16)+(1&t>>14))>>(3&-t>>(t&2048?2:10))&255)*(~t>>(t&16384?t&4096?10:3:2)&255)>>8,a&=255,b=(~t>>12&1)*2.5**(~t/128%32+8)&128,c=(t%4096<1024?1e5/(t&1023)&127:0)*(t>>12&1),a/2+b+c"
     },
     {
-        "description": "some cool bitbeat thing i made",
+        "name": "some cool bitbeat thing i made",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/178vzl9/some_cool_bitbeat_thing_i_made/",
         "date": "Oct 15, 2023",
@@ -342,21 +342,21 @@
         "codeOriginal": "(t>>5&t>>9|t>>6&t>>10|t>>9&t>>11|t/4%9&t>>6|t/6&t>>12|t/10&t>>14)&1"
     },
     {
-        "description": "sort of a cool neurofunk remix",
+        "name": "sort of a cool neurofunk remix",
         "url": "https://dollchan.net/btb/res/2628.html#5034",
         "date": "Oct 17, 2023",
         "sampleRate": 48000,
         "codeOriginal": "t/=6*32/36,a=asin(sin(PI/64*(t*((t&4096?t%65536<59392?7:t&7:16)+(1&t>>14))>>(3&-t>>(t&2048?2:10)))))/PI*32+16,a=a*(~t>>(t&16384?t&4096?10:3:2)&255)>>8,a+((-t/128%32+8)**2.999&32)+(t*random()|t>>2|t>>4|t>>5)%256/8+(sin(b=t*PI/16*2**((t>>14&1)/12))+sin(b*1.5))*8+16+sin(t*PI/16384)*64+64"
     },
     {
-        "description": "Stereo using Array() remixed",
+        "name": "Stereo using Array() remixed",
         "url": "https://www.reddit.com/r/bytebeat/comments/17dj8fs/stereo_using_array_remixed/",
         "date": "Oct 21, 2023",
         "sampleRate": 9000,
         "codeOriginal": "x=[t*[4,4.5,5,3][a=t>>15&3]|t>>(b=t>>13&15),t*'6984'[a]|t>>b].reduce((a,b)=>(a&255)/2+b%256/2),x/4+(1e5/(t&[4095,4095,0,2047,4095,4095,1023,511,4095,4095,1023,4095,2047,4095,1023,511][t>>12&15])&64)+(t*random()&t>>6|t>>6&t>>2&t>>3|t>>4)%256/4+t*(t&t>>10)*(-t>>9&1)%256/4"
     },
     {
-        "description": "very cool remix of lhphr's pyramid dungeon",
+        "name": "very cool remix of lhphr's pyramid dungeon",
         "url": "https://dollchan.net/btb/res/2628.html#2637",
         "date": "Nov 13, 2023",
         "sampleRate": 32000,
@@ -364,33 +364,33 @@
         "codeMinified": "(t%(t>>(a=t*2**([t>>13&5,7-(t>>13&5),7,4+3*(t>>17&2)][t>>16&3]/12))/8)||a&-t>>6)%256/4+32*sign(sin(16*cbrt(t%(2<<+'22220101'[t>>14&7]+11))))+32+(t*random()&-(x=t&131072?2:1)*t>>5)*!(x*t>>13&7)%256/4+((t*sin(t>>3)&-x*t>>5)*!(x*t>>13&3)*(x*t>>15&1)&255)/4+1.5*a%256/8+a/1.5%256/8"
     },
     {
-        "description": "JS melody",
+        "name": "JS melody",
         "url": "https://dollchan.net/btb/res/2628.html#2793",
         "date": "Dec 16, 2023",
         "codeOriginal": "t?0:x=0,x=(x>>1)+(x/3>>2)+t*((t>>11&21|t>>10&9^2)&-t>>10),x&192"
     },
     {
-        "description": "outside the window",
+        "name": "outside the window",
         "url": "https://www.reddit.com/r/bytebeat/comments/18y2kiz/outside_the_window/",
         "date": "Jan 04, 2024",
         "codeOriginal": "t>>8+t%45|t>>t%(t%2?t&65536?t&32768?24:25:15:t&32768?18:19)|100000/(t>131072?t&4095:t&32767)"
     },
     {
-        "description": "2nd remix of extraordinary thread's music",
+        "name": "2nd remix of extraordinary thread's music",
         "url": "https://dollchan.net/btb/res/2628.html#2932",
         "date": "Jan 26, 2024",
         "sampleRate": 48000,
         "codeOriginal": "t=t/6|0,(5*(t+(t^t>>7)^.5)|19*(2*t>>43|15*t>>4)&(7*t>>172)/2*t*((t>>9|t>>13)&15)&129|t*((t>>9|3<t)&25&t>>10))%256/2*(t/4096%1)+sin(1e4/(t&4095))*64*(1-t/4096%1)+64*(1-t/4096%1)+sin(t*sin(t>>2))*32*(1-t/(t&4096?t&8192?4096:1024:2048)%1)+32*(1-t/(t&4096?t&8192?4096:1024:2048)%1)+(t*(1+(t>>11&2|t>>13&5|(t>>10^t>>11)&3|t>>9&4)))%256/4"
     },
     {
-        "description": "derfjfidrfdsjif",
+        "name": "derfjfidrfdsjif",
         "url": "https://dollchan.net/btb/res/2628.html#3030",
         "date": "Feb 28, 2024",
         "sampleRate": 32000,
         "codeOriginal": "(128*sin((a=t/5.1*[12,12,9,12,12,9,12,12,9,12,12,9,12,9,12,9][t>>12&15]*(b=[1,.89,.8,.75][t>>17&3]))/16+sin(a/8.01))+128)*(1-t/4096%1)/4+t/2.7*b%256/4+t/2.67*b%256/4+(4*t*(2+!(t>>12&5))/2.65*b&64)*(1-t/32768%1)*(t>>15&1)"
     },
     {
-        "description": "V2 remix of unknown entity",
+        "name": "V2 remix of unknown entity",
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/204.html#3131",
         "date": "Mar 18, 2024",
@@ -398,7 +398,7 @@
         "codeOriginal": "x=524288,r=t/1.2,n=x=>t*2**(parseInt(x,36)/12)/179,R=.999**(r&8191),k=sin(1e5/(r%8192+1e3))*R,h=(random()*2-1)*R,s=(t%16?a:a=random()*2-1)*R,(((n(['I8','D3','H1',['I3','H1'][1&r>>15]][3&r>>16][v=1&r>>13])*(r+(r>>19?x:0)>>19&1?1+(r*4/3>>10&3):1)&1)-.5)*(1-r%8192/14e3)+(r>x)*(n(l='iiddhhih'[r>>15&7])/8%1+(r%16384)*PI/x&1)*v-.5)/2+(r>x/2)*eval('khkkshkh'[r>>13&7])+(r>x*3/2)*(3/2*n(l)/8%1-.5)/2*v"
     },
     {
-        "description": "wth is this remix i just made (T!me Tr!al)",
+        "name": "wth is this remix i just made (T!me Tr!al)",
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/2628.html#3205",
         "date": "Mar 31, 2024",
@@ -406,7 +406,7 @@
         "codeOriginal": "t?(T++,z=12*(T>>18&1),a+=1/50*p([0,3,7,12,,19,,7][T>>11+(T>>13&3^T>>14&1)&7]+z),b+=p([0,3,7,12][T>>11&3]+z)*PI/88,c+=T>>13&1&&p(0xA7305730>>(T>>14&28)&15)*PI/352,m=cos(3*cbrt(atan(1/acos(cos(a)))+cbrt(sin(a)+expm1(sin(a/2)))))/E+A[T%o],A[T%o]=m/2,m=m+min(1/3,T/131072),m=acos(cos(sin(b+sin(b))+cbrt(expm1(cos(b/2))+abs(expm1(sin(b))-1))))/3-1/3+m*4/3,m=cbrt(asin(sin(c+cos(2*c)))+cos(sin(8*c)/2+cbrt(cbrt(sin(4*c)+sin(c)))))/3+m,m=m*3/4+sin(20/(T/4096%8+.2))/2+(t&3?d:d=random()-.5)/2*(1-T/32768%1)*(T>>15&1),m*4/5):(A=Array(o=12288).fill(T=a=b=c=0),p=v=>2**(v/12))"
     },
     {
-        "description": "736367373537",
+        "name": "736367373537",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1d26qkg/736367373537/",
         "date": "May 27, 2024",
@@ -414,7 +414,7 @@
         "codeOriginal": "t?0:b=c=d=0,h=t>>14,a=PI*t/64*2**(((A=[0,0,1,3,0,0,-2,-4][t>>16&7])+t%([0,0,2,0,4,2,2,4][t>>12&7]+2+2*!!(t>>18))*7)/12),b+=sin(sin(sin(a+sin(a*1.01+cos(a/1.02)))+a/2+8*cos(t/3e4))+a+sin(a)+sin(t/5e4)),b/=2,c+=b/4-c/3,d+=c/5-d/7,i=1.1*d+4*sin(5e4/((e=t%8192)+1e3))*.9995**e*(B=!(t>>13&3+(h&1)^t>>15&1))*(g=t>262144)+sin(4e3/(f=t%4096))*.998**f*(C=!!(t>>12&5^t>>13&1+(h&3)))*g+2*sin((t/4|0)**3)*(D=h&1)*.9993**(t%16384)*g,(()=>{if(!(t%128)){throw \"\\n\\nmelody: \"+A+\"\\nkick: \"+(g?B?1:0:\"\")+\"\\nkick 2: \"+(g?C?1:0:\"\")+\"\\nsnare: \"+(g?D:\"\")}else{return i}})()"
     },
     {
-        "description": "alien attack",
+        "name": "alien attack",
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/2628.html#3554",
         "date": "Jun 04, 2024",
@@ -423,7 +423,7 @@
         "codeMinified": "T=t>>11,S=sin,t?0:a=0,a+=PI*1/16*2**([0,2,7,3,-2,3,2,10][T/4&7]/12),(S(a/2)+S(a/3)+S(a/4))/3*cos(t*PI/8192)*2/3+((1e5/(t*(T&3^2)/(1+(T/2&3^2))*(2+(T/4&2^1))%4**7+2e3)&1)-.5)/2+S((t/5|0)**3)*!(T/4&3+(T/2&1)^T/8&3-(T/8&1)*T>>4&3^1)/2*.9993**(t%4096)"
     },
     {
-        "description": "minified moment",
+        "name": "minified moment",
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/2628.html#4643",
         "date": "Aug 19, 2024",
@@ -431,14 +431,19 @@
         "codeOriginal": "t?0:b=c=d=0,C=cos,S=sin,l=t>>11,a=PI*t/64*2**((((l/4&5|2)^l>>4&3+(l&6)/3)+(t%([0,0,2,3,0,-9,2,-11][l/4&7]+4))*7)/12),b+=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/8192)+C(t*PI/12e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/15e3)),b/=2,c+=b/3-c/4,d+=c/5-d/4,(d*.4+S(10*cbrt(k=t&8191))*.6*(5737>>l/4%16&1)/(1+k*.002)+S(t)*random()/2/(1+(y=t&4095)*.003)*(340872525>>l/2&1)+S(.2*t*S(t*PI>>5))/2/(1+y*.003)*(19140624>>l/2&1))*3"
     },
     {
-        "description": "insanity",
+        "name": "insanity",
         "url": "https://dollchan.net/btb/res/2628.html#4507",
         "date": "Sep 20, 2024",
         "sampleRate": 32000,
         "codeOriginal": "a=(t,x)=>{for(A=B=0;A<5;A++)B+=t*x**A*2**((t>>13+(t>>18&1)&7^1)/12)&192;return B/A},b=1e5/(t-8192&4**7-1),[a(t,1.5)*2/3+(b&63)*1.5+16,a(t,1.503)*2/3+(b&63)*1.5+16]"
     },
     {
-        "description": "notitle No.1",
+        "name": "notitle No.1",
+        "remix": {
+            "name": "minified moment",
+            "author": "ANoUserXD",
+            "url": "https://dollchan.net/btb/res/2628.html#4643"
+        },
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1gitpu2/notitle_no1/",
         "date": "Oct 20, 2024",
@@ -446,7 +451,7 @@
         "codeOriginal": "t?(C=cos,S=sin,[(N=(T,S,C)=>(l=t>>14,a=PI*T/64*2**((((l/2&5|2)^l/8&3+(2*l&6)/3)+t%([0,0,2,3,0,-9,2,-11][l/2&7]+4)*7)/12),S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/4**7)+C(t*PI/24e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/3e4))+cbrt(S(3*cbrt(k=t%4**7)))*2*.997**k+(random()-.5)*8*.999**(t%4096)*(1381127833>>(t>>12)&1)+S(t/2)*4*.998**(t%8192)*(t>>13&1)))(t,S,C),N(t*128/127,C,S)].map(k=>(b+=c+=(k-b-15*c)/256*8*abs(sin(t/4e5))))):b=c=0"
     },
     {
-        "description": "nonameverysuperonceagain",
+        "name": "nonameverysuperonceagain",
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/2628.html#4873",
         "date": "Nov 08, 2024",
@@ -454,7 +459,7 @@
         "codeOriginal": "t||(mel=[10,5,8,5],mel2=[1,8,13,10]),p=x=>2**(x/12)*t,MEL=mel[((t>>12)%3+(t>>14)%2+(t>>12)%7)%4],MEL2=mel2[((t>>13)%3+(t>>15)%5+(t>>14)%3)%4],a=PI/64*p(MEL),b=PI/256*p(MEL2),A=x=>sin(x)/4+sin(x*2)/3+sin(x*1.004)/7+sin(x*4)/6+sin(x/2)/3,A(a)/3+A(a*2**(7/12))/3+cbrt(A(b))/2"
     },
     {
-        "description": "remix of my old bells thing",
+        "name": "remix of my old bells thing",
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/2628.html#4986",
         "date": "Nov 17, 2024",
@@ -462,13 +467,13 @@
         "codeOriginal": "a=t=>t>0&&sin(t/48+sin(t/38+sin(t/44+sin(t/58)))),b=t=>a(9*t*2**(([0,3,7,8,10,8,7,3][t>>13&7]+[0,0,2,-3][t>>16&3])/12)||0)/2*(1-t/8192%1),b(t)+b(t-(x=12288))/2+b(t-x*2)/3+b(t-x*3)/4"
     },
     {
-        "description": "c drop",
+        "name": "c drop",
         "date": "Nov 17, 2024",
         "sampleRate": 12000,
         "codeOriginal": "t*((t>>13&3)==3?t>>11&1?4/5:8/5:t>>12&1?3/2:t>>15&1?2/3:1)*(-t>>10&3)&127|100000/(((t>>13&7)==7?t&2047:t&4095)+1)&128"
     },
     {
-        "description": "different variation",
+        "name": "different variation",
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/2628.html#5002",
         "date": "Nov 21, 2024",
@@ -484,7 +489,7 @@
         "fileOriginal": true
     },
     {
-        "description": "\"anxious\" with reverb V2",
+        "name": "\"anxious\" with reverb V2",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/DollchanBytebeat/comments/1heb73a/comment/m266r78/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button",
         "date": "Dec 15, 2024",
@@ -494,14 +499,14 @@
         "fileOriginal": true
     },
     {
-        "description": "no idea what this is supposed to be.",
+        "name": "no idea what this is supposed to be.",
         "url": "https://dollchan.net/btb/res/2628.html#5207",
         "date": "Dec 23, 2024",
         "sampleRate": 32000,
         "codeOriginal": "a=t*2**(-[[0,4,7,11],[0,3,7,10]][t>>17&1][t>>13&3]/12),min(min(a%256/3+a*1.5%256/3+a*1.51%256/3,128)/2*(2-t/4096%1)+min(cbrt(abs(sin(t*PI/512*2**(-\"43\"[t>>17&1]/12)))),.5)*255*(t>>13&1)+random()*(1-t/2048%1)**2*(-t>>5&64)+sin(t/2|t/5)*(1-t/8192%1)**3*(t>>9&32)+(t>>9&32),255)"
     },
     {
-        "description": "Zack's bytewave engine but it's the nutshack",
+        "name": "Zack's bytewave engine but it's the nutshack",
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1htzu3k/zacks_bytewave_engine_but_its_the_nutshack/",
         "date": "Jan 05, 2025",
@@ -510,7 +515,19 @@
         "codeOriginal": "r=t*1.125,l=16384,u=8192,c=4096,x=j=>min(max((s=(a,b)=>(t*2**(parseInt(a,36)/12)/b*.277%64+16&64)-24,w=r=>r>0&&(e=a=>s('5  8  7 4'[15&r>>13],a)/2,e(.5)+e(.5*j))*(1-r/8192%1/2),w(r)+w(r-(d=24576))/2+w(r-2*d)/3+w(r-3*d)/4+(b=a=>s('hhhkkkjjgggggggg'[15&r>>13],a),b(8)+b(4/j))*(r/l%2)**.25*(1-r%u/1E4)+(50*random()-25)*(1-r/u%1)**4+150*sin(6*cbrt(r%l))*(1-r/l%1)**2*!(r&l)+((t*sin(t>>2)&32)-16)*(1-r/l/2%1)**3*!(~r&2*l)),-128),127)*(r/32768%1)**.25*(1-r/8192%1*.5)**.25,[x(1.01),x(.99)]"
     },
     {
-        "description": "Another Zack's bytewave engine remix + SWANG algorithm",
+        "name": "Another Zack's bytewave engine remix + SWANG algorithm",
+        "remix": [
+            {
+                "name": "Dance in square machine",
+                "author": "Niknemメ",
+                "url": "https://dollchan.net/btb/res/204.html#3755"
+            },
+            {
+                "name": "the SWANG algorithm",
+                "author": "Greaserpirate",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1bfqimm/the_swang_algorithm_can_be_used_on_almost_any/?share_id=gzUXsPzL-sgkTSJE6So_A&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1"
+            }
+        ],
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1i7rw7q/another_zacks_bytewave_engine_remix_swang/",
         "date": "Jan 22, 2025",
@@ -519,7 +536,7 @@
         "codeOriginal": "t-=t>>20&1?t/2&4096:0,l=4**7,u=8192,c=4096,x=j=>min(max((s=(a,b)=>(t*2**(parseInt(a,36)/12)/b*.49&80)-40,w=t=>t>0&&(e=a=>s(['8DFGKPSW','8DFGKNPW','8DFGKNPU','6BFIKNSZ'][3&t>>17][7&(t>>21&1?(t>>14&5)+(t>>11&1)^t>>12&3:-t>>11&t>>12|t>>14&5^-t>>13&1)],a)/2,e(1)+e(j))*(1-t/u%1*2/3),w(t)+w(t-(d=4096))/2+w(t-d*2)/4+w(t-d*3)/8+(b=a=>s('DD9B'[3&t>>17],a),b(8*j)+b(4)+b(8/3*j))*(t/l%2)*(1-t/u%1*5/6)+sin(cbrt(t%l)*7)*128*(1-t/l%1)**2*!(t&l)+(random()-.5)*180*(1-t/c%1)**4*!(t&c)+((sin(t>>2)*9e9&1)-.5)*72*(1-t/l/2%1)**5*!(~t&l*2)),-128),127),[x(1.005),x(.995)]"
     },
     {
-        "description": "remix^3",
+        "name": "remix^3",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1i3r2z9/comment/m7tk7l9/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
         "date": "Jan 18, 2025",
@@ -529,7 +546,7 @@
         "fileOriginal": true
     },
     {
-        "description": "remix of \"Chiptune With The Zackx Song Engine\"",
+        "name": "remix of \"Chiptune With The Zackx Song Engine\"",
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1ic1tgu/comment/m9pxxg5/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
         "date": "Jan 28, 2025",
@@ -538,20 +555,25 @@
         "codeOriginal": "x=j=>(b=a=>(t*2**('6666666622224449'[t>>14&15]/12-2)*a)%256/2.1*(t/16384%2)*(1-t%8192/9e3),(a=t=>(t*=t>0,((t*j*2**(parseInt(\"6968696DD6966984289 289 49B 49GD\"[t>>13&31],36)/12)%128+40+(t>>8&15))&128)%256*(1-t/8192%1)),min(max((a(t)+a(t-6144)/2+a(t-12288)/3+a(t-18432)/4)*2/3+(b(1)+b(j)+b(2*j))*7/9+(80*tanh(3*sin((t&16383)**.51)))*(1&-t>>14)+230*random()*(1-t/8192%1)**4+(t*sin(t>>2)&128)*(1-t/32768%1)**5*(1&t>>15)/1.3-144,-128),127))),[x(1.006),x(.994)]"
     },
     {
-        "description": "notitle No.2",
+        "name": "notitle No.2",
         "url": "https://www.reddit.com/r/bytebeat/comments/1ifmnc4/notitle_no2/",
         "date": "Feb 02, 2025",
         "sampleRate": 48000,
         "codeOriginal": "x=t=>(1.05*t/(4-2*(t>>18&1))*2**(parseInt('DDGIIKGGD 8BGGDD'[15&((t>>13)^t>>12&7)+(t>>14&1)],36)/12)%128+(t>>7)&128)*([a=-t>>9,a,b=-t>>8,c=-(t+8192)>>9,c,b,a,a,b,,b,b,d=-t>>10,d,d,d][15&t>>13]&31)/13,min((x(t)/4+x(t+30*sin(t/2e5))/4+x(t-12288)/8+x(t-24888)/8+(random()*3/2*(-t>>(t>>13&1?7:6)&63)+60*cbrt(cbrt(sin(40*log(t/4096%16%15%8%3))))+60+(9e9*sin(t*.8/PI|0)&64)*5/3*(1-t/4**7%1)**3*(t>>14&1))*(t>>19&&1))*.6,255)"
     },
     {
-        "description": "sky of the night",
+        "name": "sky of the night",
         "url": "https://dollchan.net/btb/res/2628.html#5682",
         "date": "Mar 18, 2025",
         "codeOriginal": "b=3e3,b2=5e3,a=t=>t>0&&(t*4*[1,1.125,1.25,4/3,1.5,1.675,1.875,2][t>>13+(t>>12&1^t>>14&3)&7]&127)/((t>>8&15)+1),c=t=>a(t)+a(t+b)/3+a(t+b*2)/4+a(t-b)/2+a(t-b*2)/3,c(t)+c(t+b2)/2+c(t-b2)/3+c(t+b2*2)/2+c(t-b2*2)/4"
     },
     {
-        "description": "\"useless1 but in Slide Meodica Bliss\" with drums remix",
+        "name": "\"useless1 but in Slide Meodica Bliss\" with drums remix",
+        "remix": {
+            "name": "useless1 but in Slide Meodica Bliss ",
+            "author": "PrincessPriscillaPT",
+            "url": "https://www.reddit.com/r/bytebeat/comments/1hfg5kz/useless1_but_in_slide_meodica_bliss/"
+        },
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1jus74f/useless1_but_in_slide_meodica_bliss_with_drums/",
         "date": "Apr 08, 2025",
@@ -560,7 +582,7 @@
         "fileOriginal": true
     },
     {
-        "description": "bytebeat made in 10 minutes",
+        "name": "bytebeat made in 10 minutes",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/9237923792873917/comments/1kieowo/bytebeat_made_in_10_minutes_apr_08_2025/",
         "date": "Apr 08, 2025",
@@ -568,24 +590,24 @@
         "codeOriginal": "t?0:a=[0,Array(8192).fill(0)],v=[1,2,3,2,6,3,2.4,1.5][t>>12+(t>>13&3^t>>14&3)&7],a[0]+=(atan(tan(t*v/58+sin(t*v/72)*2))/3*(1-t/8192%1)-a[0])/(1+(t>>8&63)+(t>>8&31)),a[1][t%8192]+=a[0],a[1][t%8192]/=2,a[1][t%8192]"
     },
     {
-        "description": "made a \"flanger\" effect",
+        "name": "made a \"flanger\" effect",
         "url": "https://www.reddit.com/r/bytebeat/comments/1jxrjqb/made_a_flanger_effect_in_bytebeat/",
         "date": "Apr 12, 2025",
         "children": [
             {
-                "description": "1",
+                "name": "1",
                 "mode": "Signed Bytebeat",
                 "sampleRate": 32000,
                 "codeOriginal": "!t?A=Array(z=80).fill(a=0):0,a+=1-1/[1.5,1.9,2.5,3.05,3.4][(t>>13)%5],b=(sin(a/4)+sin(a/6)+asin(sin(a/8)))*32+A[(t+60*abs(sin(t/5e3)))%z|0],A[t%z|0]=b/1.6,b/3"
             },
             {
-                "description": "2",
+                "name": "2",
                 "mode": "Signed Bytebeat",
                 "sampleRate": 31700,
                 "codeOriginal": "!t?A=Array(z=60).fill(a=0):0,a+=[.4,.5,.6,.75][t>>13&3]/[1,1.125,1.25,4/3][t>>17&3],b=(sin(a/4)+sin(a/6)+asin(sin(a/8)))*40+A[(t+50*abs(sin(t/3.5e3)))%z|0],A[t%z|0]=b/1.5,b/3"
             },
             {
-                "description": "3",
+                "name": "3",
                 "mode": "Signed Bytebeat",
                 "sampleRate": 32000,
                 "codeOriginal": "!t?A=Array(z=540).fill(a=0):0,a+=[1,.75,.8,.6][t>>13+(t>>14&4^t>>12&3)&3^t>>14&3&t>>16]/2.26,b=(sin(a/2)+sin(a/6+sin(a/2))/3+cbrt(sin(a/8))/2)*60+A[(t+40*abs(sin(t/3e3)))%z|0],A[t%z|0]=b/1.5,b/3"
@@ -593,7 +615,7 @@
         ]
     },
     {
-        "description": "goofy ahh tanmode song",
+        "name": "goofy ahh tanmode song",
         "date": "Apr 17, 2025",
         "sampleRate": 24000,
         "mode": "Tanmode",
@@ -601,34 +623,39 @@
         "codeOriginal": "(t*[1.5,2,2.4,2][t>>13&3]*(x=[1,.9375,.875,.75][t>>16&3])/2*(z=t&4**9?1+(t>>12&7)%3:1)^t*x*((t>>15&1)+1)/((t>>13&5)+1))*z+random()*sin(t/16*PI*x*z)*(-t>>7&127)*(t>>14&1)"
     },
     {
-        "description": "uhhhh idfk",
+        "name": "uhhhh idfk",
         "date": "Apr 19, 2025",
         "sampleRate": 6000,
         "codeOriginal": "t?0:A=Array(x=5e3).fill(0),b=(t*4*[1,1.125,1.25,4/3,1.5,1.675,1.875,2][t/x&7]&112)*(1-t/x%1)+A[t*2/3%x|0],A[t*3/4%x|0]=b/2*(1+t/x%1),b"
     },
     {
-        "description": "another under 256 bytes attempt",
+        "name": "another under 256 bytes attempt",
         "url": "https://dollchan.net/btb/res/2628.html#5992",
         "date": "Apr 26, 2025",
         "sampleRate": 32000,
         "codeOriginal": "(t*(-t>>10&3|t>>13&1)*2**((0xA5702320>>4*(t>>14)&15)/12)&-t>>6&t>>13&511)/3+random()*(t>>9&31)**5/2**19+(4e5*sin(t>>2)&63)*(-t>>7&63)**3/4**9*(t>>13&1)+(2e5/(t&8191/\"21314631\"[t>>13&7])&64)"
     },
     {
-        "description": "there's too many aturned777 remixes idk",
+        "name": "there's too many aturned777 remixes idk",
         "url": "https://dollchan.net/btb/res/2628.html#6030",
         "date": "Apr 27, 2025",
         "sampleRate": 32000,
         "codeOriginal": "t?0:r=[0,0,Array(x=12288).fill(T=0),x=>max(min(x,255),0)],a777=t*4*(1+(t>>13)%4)/(4+(t>>15)%16)*2**(t>>17&3)&255,r[0]+=r[1]+=(a777-r[0]-r[1])/(1+(t>>6&127)),r[2][++T%x]+=r[1],u=r[2][T%x]/=2,r[3](u+128+random()*(-t>>7&63)**3/4096*(t>>13&1)+sin(log(t%8192+130)*30)*64+(t&3?n:n=random())*(-t>>9&31)**4/8192*(t>>14&1))"
     },
     {
-        "description": "baen's triangle melody but it's a remix",
+        "name": "baen's triangle melody but it's a remix",
+        "remix": {
+            "name": "triangle melody",
+            "author": "BaenHoHoHo",
+            "url": "https://dollchan.net/btb/res/117.html#5735"
+        },
         "date": "May 10, 2025",
         "sampleRate": 32000,
         "mode": "Floatbeat",
         "codeOriginal": "K=t>>20&1,D=t>>19&1,z=t*(K?1.2:1)*PI/32*[1,1,1.2,1.125][t>>16&3]*[2,2,1.5,2,2,1.5,2,2,2.5,2,1.5,1.5,1,1.2,1.5,1.5][t>>12&15],m=.4**expm1(exp(sin(z)/sin(z/8)))*(1-t/4096%1)+asin(sin(z/16+cos(z/4)*2))/2*(1-t/8192%1),m2=atan(tan(z/8.03))/4+atan(tan(z/4))/7,d=D?-random()*(-t>>6>>(t>>13&1)&63)**2/8192-(4e3/(t&16383)&1)*(t>>14&1):0,n=(random()-.5)*(t>>10&31)**5/8**8,m+d+m2*(t>>18&3&&1)+n*!(1+(t>>15)&31)"
     },
     {
-        "description": "tangent thingy",
+        "name": "tangent thingy",
         "url": "https://www.reddit.com/r/9237923792873917/comments/1kk60ja/tangent_thingy/",
         "date": "May 11, 2025",
         "sampleRate": 38000,
@@ -636,7 +663,7 @@
         "codeOriginal": "(min(.8**tan(t/512*PI*1.5**[1-(t>>17&1),3,2,3+!(1+(t>>15)&3)][t>>13&3])/(.2+5*abs(cos(t/2e5))),1)-.5)*(1-t/4**7%1)"
     },
     {
-        "description": "abandoned bytebattle entry",
+        "name": "abandoned bytebattle entry",
         "date": "May 13, 2025",
         "sampleRate": 35900,
         "mode": "Floatbeat",
@@ -649,26 +676,36 @@
         "codeOriginal": "t?0:b=c=d=0,C=cos,S=sin,l=t>>11,A=l/4,B=l/8,L=l>>8,a=PI*t/64*2**((((A&10|4)^(B&13|4)+(A&14|11)/6)+(t%([0,0,2,3,0,-9,2,-11][A&7]+4))*7)/12),b+=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/8192)+C(t*PI/12e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/15e3)),b/=2,c+=b/3-c/4,d+=c/5-d/4,d+cbrt(S(cbrt(t*(L&1?1+(A&3)+(B&1)-(l>>4&2):2+(A&1)-(B&1))&16383)*20))/2+(random()-.5)*2/3*max(1-t/8192%1*3,0)*(A&1|L&1)+S(.3*S(t>>3)*(t>>2))*3/4*max(1-t/4**7%1*4,0)*(B&L&1)"
     },
     {
-        "description": "tried making center effects in bytebeat",
+        "name": "tried making center effects in bytebeat",
+        "remix": {
+            "name": "minified moment",
+            "author": "ANoUserXD",
+            "url": "https://dollchan.net/btb/res/2628.html#4643"
+        },
         "date": "May 22, 2025",
         "sampleRate": 36000,
         "mode": "Floatbeat",
         "codeOriginal": "P=[(p=x=>2**(x/12))(-4),p(6),p(-6),p(-8),p(-2)],t?0:b=c=d=t2=T=fix=0,C=cos,S=sin,l=t2>>11,a=PI*T/64*2**((((l/4&5|2)^l>>4&3+(l&6)/3)+fix%([0,0,2,3,0,-9,2,-11][l/4&7]+4)*7)/12),b+=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t2*PI/8192)+C(t2*PI/12E3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t2*PI/15E3)),b/=2,c+=b/3-c/4,d+=c/5-d/4,i=(d*.4+S(10*cbrt(k=t2&8191)*P[v=(t2>>18)%5])*.6*(5737>>l/4%16&1)/(1+k*.002)+S(T)*random()/2/(1+(y=t2&4095)*.003)*(340872525>>l/2&1)+S(.2*T*S(T*PI>>5))/2/(1+y*.003)*(19140624>>l/2&1))*3,t2+=[1,.3,1,1,1][v],T+=P[v],fix++,i"
     },
     {
-        "description": "fade in and out chords",
+        "name": "fade in and out chords",
         "date": "May 31, 2025",
         "sampleRate": 48000,
         "mode": "Floatbeat",
         "codeOriginal": "t*=3,p=x=>2**((x-[0,2,3,-2][t>>18&3])/12)*t/512%1-.5,z=t/8**5%1,Z=1-z,(p(0)*[z,1,1,1,Z,0,0,0][t>>15&7]+p(3)*[0,z,1,1,1,Z,0,0][t>>15&7]+p(7)*[0,0,z,1,1,1,Z,0][t>>15&7]+p(10)*[0,0,0,z,1,1,1,Z][t>>15&7])/2"
     },
     {
-        "description": "sierpinski harmony remix",
+        "name": "sierpinski harmony remix",
         "date": "Jun 20, 2025",
         "codeOriginal": "((9*t&t>>4|5*t&t>>7|3*t&t>>10)-1&t>>5)-64^131072/((t&4095)+1)-(t>>5)"
     },
     {
-        "description": "useless song 009 (remix of \"minified moment\")",
+        "name": "useless song 009",
+        "remix": {
+            "name": "minified moment",
+            "author": "ANoUserXD",
+            "url": "https://dollchan.net/btb/res/2628.html#4643"
+        },
         "url": "https://www.reddit.com/r/9237923792873917/comments/1ly5oi2/useless_song_009_remix_of_minified_moment/",
         "date": "Jul 12, 2025",
         "children": [
@@ -678,7 +715,7 @@
                 "codeOriginal": "t?0:b=c=d=0,C=cos,S=sin,M=t/3,l=t>>12,a=PI*t/64*2**((((l/4&5|2)^l>>4&3+(l&6)/3)+t%([0,0,2,3,0,1,2,3][l/4&7]+4)*7)/12),b+=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(M*PI/8192)+C(M*PI/12E3))+a/2+C(a*3/4)+S(5/4*a)+4*S(M*PI/15E3)),b/=2,c+=b/3-c/4,d+=c/5-d/4,d*min(t/4096%16%12%9%7%4,1)+sin(cbrt(t%4096)*10)*2*max(1-t/4096%16%12%9%7%4,0)+sin(t^t*t)*max(1-t/4096%16%14%11%8%5*3,0)+sin(t/4|t/5^t/3)*max(1-t/4096%16%9%7%5%3*2,0)"
             },
             {
-                "description": "v1.01",
+                "name": "v1.01",
                 "sampleRate": 38000,
                 "mode": "Floatbeat",
                 "codeOriginal": "t?0:b=c=d=0,C=cos,S=sin,M=t/3,l=t>>12,a=PI*t/64*2**((((l/4&5|2)^l>>4&3+(l&6)/3)+t%([1,2,2,3,1,3,2,3][l/4&7]+4)*7)/12),b+=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(M*PI/8192)+C(M*PI/12E3))+a/2+C(a*3/4)+S(5/4*a)+4*S(M*PI/15E3)),b/=2,c+=b/3-c/4,d+=c/5-d/4,d*min(t/4096%16%12%9%7%4,1)+sin(cbrt(t%4096)*10)*2*max(1-t/4096%16%12%9%7%4,0)+sin(t^t*t)*max(1-t/4096%16%14%11%8%5*3,0)+sin(t/4|t/5^t/3)*max(1-t/4096%16%9%7%5%3*2,0)"
@@ -686,7 +723,7 @@
         ]
     },
     {
-        "description": "feeshbread reverb test by anouser (me)",
+        "name": "feeshbread reverb test by anouser (me)",
         "url": "https://www.reddit.com/r/bytebeat/comments/1m9evu2/feeshbread_reverb_test_by_anouser_me/",
         "date": "Jul 25, 2025",
         "children": [
@@ -696,7 +733,7 @@
                 "codeOriginal": "t?0:(f=[],lp=(a,c)=>(li=fi++,f[li]??=0,f[li]+=(a-f[li])*c),hp=(a,c)=>a-lp(a,c),bp=(a,hc,lc)=>hp(lp(a,lc),hc),s=(a,cu,cd)=>(si=fi++,f[si]??=0,sr=f[si],f[si]+=(a-sr)*(sr<a?cu:cd)),dm=1e4,d=(a,h,m,fbfn=x=>x)=>{di=fi++;f[di]??=Array(dm).fill(0);dw=dt%dm;df=a;du=0;for (let hd of h){dr=(dm+dt-round(hd.t))%dm;df+=f[di][dr]*hd.fb;du+=f[di][dr]*hd.m;}f[di][dw]=fbfn(df);return a*(1-m)+du*m;}),fi=0,dt=t,d(bp(max(min(.3/tan(t/512*PI*2**([-2,-2,15,15,-2,-2,13,13,10,10,11,11,10,10,13,8][t>>12&15]/12+(t>>18&1))),1)-1,-1),.09,.36),[{t:300+sin(t/4e3)*30,m:1,fb:0},{t:7e3,m:.2,fb:.5}],.39,x=>hp(x,.04))*1.6-.3"
             },
             {
-                "description": "V1.1",
+                "name": "V1.1",
                 "mode": "Floatbeat",
                 "sampleRate": 45000,
                 "codeOriginal": "t?0:(f=[],lp=(a,c)=>(li=fi++,f[li]??=0,f[li]+=(a-f[li])*c),hp=(a,c)=>a-lp(a,c),bp=(a,hc,lc)=>hp(lp(a,lc),hc),s=(a,cu,cd)=>(si=fi++,f[si]??=0,sr=f[si],f[si]+=(a-sr)*(sr<a?cu:cd)),dm=1e4,d=(a,h,m,fbfn=x=>x)=>{di=fi++;f[di]??=Array(dm).fill(0);dw=dt%dm;df=a;du=0;for (let hd of h){dr=(dm+dt-round(hd.t))%dm;df+=f[di][dr]*hd.fb;du+=f[di][dr]*hd.m;}f[di][dw]=fbfn(df);return a*(1-m)+du*m;}),fi=0,dt=t,d(bp(max(min([.1,9][t>>17&1]/tan(t/512*PI*2**([-2,-2,15,15,-2,-2,13,13,10,10,11,11,10,10,13,8][t>>12&15]/12+(t>>18&1))),1)-1,-1),.11,.6),[{t:300+sin(t/4e3)*30,m:1,fb:0},{t:7e3,m:.2,fb:.5}],.56,x=>hp(x,.03))*1.7-.3"
@@ -704,7 +741,7 @@
         ]
     },
     {
-        "description": "square chords (feeshbread reverb test 2)",
+        "name": "square chords (feeshbread reverb test 2)",
         "url": "https://www.reddit.com/r/bytebeat/comments/1ma00za/square_chords_feeshbread_reverb_test_2/",
         "date": "Jul 26, 2025",
         "sampleRate": 32000,
@@ -712,7 +749,7 @@
         "codeOriginal": "t?0:(f=[],lp=(a,c)=>(li=fi++,f[li]??=0,f[li]+=(a-f[li])*c),hp=(a,c)=>a-lp(a,c),bp=(a,hc,lc)=>hp(lp(a,lc),hc),s=(a,cu,cd)=>(si=fi++,f[si]??=0,sr=f[si],f[si]+=(a-sr)*(sr<a?cu:cd)),dm=1e4,d=(a,h,m,fbfn=x=>x)=>{di=fi++;f[di]??=Array(dm).fill(0);dw=dt%dm;df=a;du=0;for (let hd of h){dr=(dm+dt-round(hd.t))%dm;df+=f[di][dr]*hd.fb;du+=f[di][dr]*hd.m;}f[di][dw]=fbfn(df);return a*(1-m)+du*m;}),fi=0,dt=t,T=t/4e3,p=x=>2**(x/12),S1=x=>x*t/128&1,Q=(S1(p(31-(T/16&1)))*(T&1^1)+S1(p(28))*(T&1^1)+S1(p(23))*(T&1^1)-2)/2,d(bp(Q,.2,.5),[{t:300+sin(t/6e3)*40,m:.4,fb:0},{t:5e3,m:.3,fb:.6}],.4,x=>hp(x,.02))*1.9"
     },
     {
-        "description": "remix of my unnamed May 16th bytebeat",
+        "name": "remix of my unnamed May 16th bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1miqhy7/remix_of_my_unnamed_may_16th_bytebeat/",
         "date": "Aug 05, 2025",
         "children": [
@@ -722,7 +759,7 @@
                 "codeOriginal": "t?0:c=0,C=cos,S=sin,l=t>>11,A=l/4,B=l/8,L=l>>8,a=PI*t/64*2**((((A&10|4)^(B&13|4)+(A&14|11)/6)+(t%([1,0,1,2,0,1,2,1][A&7]+5))*7)/12),b=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/8192)+C(t*PI/12e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/15e3)),d=c+=(b-c)/(3+(t>>8&31)),d*=2,d+sin(cbrt(t*8&131071)*8/(1+(h=t>>14&1)/3))*[5/4,7/4][h]*max(1-t/4**7%1*4/3,0)+(random()-.5)*2*max(1-t/4**7%1*8/3,0)*h"
             },
             {
-                "description": "with SWANG rhythm",
+                "name": "with SWANG rhythm",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1miqhy7/comment/n794dxv/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
                 "sampleRate": 27000,
                 "mode": "Floatbeat",
