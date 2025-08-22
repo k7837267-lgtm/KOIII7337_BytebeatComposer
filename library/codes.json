@@ -5,13 +5,15 @@
             {
                 "url": "https://www.pouet.net/topic.php?which=8357&page=2#c388356",
                 "date": "Sep 28, 2011",
-                "codeOriginal": "(t|(t>>9|t>>7))*t&(t>>11|t>>9)"
+                "codeOriginal": "(t|(t>>9|t>>7))*t&(t>>11|t>>9)",
+                "codeMinified": "(t|t>>9|t>>7)*t&(t>>11|t>>9)"
             },
             {
                 "description": "more javascript hackery",
                 "url": "https://www.pouet.net/topic.php?which=8357&page=3#c388462",
                 "date": "Sep 30, 2011",
-                "codeOriginal": "(((j=Math.round(t/1500)%16))%8==1|(j==3)|(j==6)) * sin(200-200*Math.sqrt((t%6000)/6000))*50 + Math.random()*40*(j%8==5) + (((t|(t>>9|t>>7))*t&(t>>11|t>>9) )&63)*(j%3==0)"
+                "codeOriginal": "(((j=Math.round(t/1500)%16))%8==1|(j==3)|(j==6)) * sin(200-200*Math.sqrt((t%6000)/6000))*50 + Math.random()*40*(j%8==5) + (((t|(t>>9|t>>7))*t&(t>>11|t>>9) )&63)*(j%3==0)",
+                "codeMinified": "((j=round(t/1500)%16)%8==1|j==3|j==6)*sin(200-200*sqrt(t%6e3/6e3))*50+random()*40*(j%8==5)+((t|t>>9|t>>7)*t&(t>>11|t>>9)&63)*(j%3==0)"
             }
         ]
     },
@@ -26,7 +28,8 @@
         "description": "remix of miiro's 1-line symphony",
         "url": "https://news.ycombinator.com/item?id=3064986",
         "date": "Oct 03, 2011",
-        "codeOriginal": "t*9&(t*1>>4)|t*5&(t>>7)|t*3&(t*4>>12)"
+        "codeOriginal": "t*9&(t*1>>4)|t*5&(t>>7)|t*3&(t*4>>12)",
+        "codeMinified": "t*9&t>>4|t*5&t>>7|t*3&t>>10"
     },
     {
         "author": "216",
@@ -51,7 +54,8 @@
             {
                 "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
                 "date": "Oct 11, 2011",
-                "codeOriginal": "t>>16|((t>>4)%16)|((t>>4)%192)|(t*t%64)|(t*t%96)|(t>>16)*(t|t>>5)"
+                "codeOriginal": "t>>16|((t>>4)%16)|((t>>4)%192)|(t*t%64)|(t*t%96)|(t>>16)*(t|t>>5)",
+                "codeMinified": "t>>16|(t>>4)%16|(t>>4)%192|t*t%64|t*t%96|(t>>16)*(t|t>>5)"
             }
         ]
     },
@@ -63,7 +67,8 @@
         "description": "Dante's Inferno",
         "url": "https://youtu.be/tCRPUv8V22o?si=gVqaqvisKpDoSjod&t=243",
         "date": "Oct 10, 2011",
-        "codeOriginal": "((t*(t>>12)&(201*t/100)&(199*t/100))&(t*(t>>14)&(t*301/100)&(t*399/100)))+((t*(t>>16)&(t*202/100)&(t*198/100))-(t*(t>>17)&(t*302/100)&(t*298/100)))"
+        "codeOriginal": "((t*(t>>12)&(201*t/100)&(199*t/100))&(t*(t>>14)&(t*301/100)&(t*399/100)))+((t*(t>>16)&(t*202/100)&(t*198/100))-(t*(t>>17)&(t*302/100)&(t*298/100)))",
+        "codeMinified": "(t*(t>>12)&201*t/100&199*t/100&t*(t>>14)&t*301/100&t*399/100)+(t*(t>>16)&t*202/100&t*198/100)-(t*(t>>17)&t*302/100&t*298/100)"
     },
     {
         "author": "ultrageranium",
@@ -729,6 +734,35 @@
                 "date": "Nov 12, 2023",
                 "sampleRate": 48000,
                 "codeOriginal": "k=t/1.4,w=(t,y)=>{x=0;for(i=0;i<12;i++)x+=cos(sin(t*PI/256-.15*cos(t*i*PI/128)*(.9998**(y%65536))+cbrt(sin(t*PI/256)))/2**asin(sin(t*PI/256)));return x*(255&-y>>8)/1e4},(w(t*2**('0358'[k>>16&3]/12),k)+w(t*1.99*2**([-9,-5,-12,-11][k>>16&3]/12),k)+w(t*1.49*2**([0,3,-4,5][k>>16&3]/12),k)+w((k&8192?-t:t)*'12348642'[k>>[11,12][k>>14&1]&7]*2**('0358'[k>>16&3]/12),1)-.5)*(k>>9&31)**.5/8+(t*6*t/30%256)/444*(.997**(k%4096))*(255&k>>6)/256+sin((k%16384)**.3)/4+sin((k%16384)**.2)/4+max(-1,min(1,(t*63*t/31.1%256)*(1&k>>14)*(.9997**(k%16384))/128+sin(3*log(k+16384&32767))/2))/3"
+            },
+            {
+                "description": "untitledsong_1",
+                "mode": "Funcbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1capt4t/untitledsong_1/",
+                "date": "Apr 22, 2024",
+                "sampleRate": 48000,
+                "codeOriginal": [
+                    "/* unnamedsong_1MP*/",
+                    "const settings = { BPM:130,SPEED:1, FREQ:480};",
+                    "T = settings.BPM/60*settings.SPEED;",
+                    "//bpm",
+                    "H = settings.FREQ;//frequency",
+                    "F = 0; //filter",
+                    "function SHIFT (x) {",
+                    "return 2**(parseInt(x,36)/12);",
+                    "}function DRUM (w,h,y,t) {switch (w[h%w.length|0]){",
+                    "case'B':return sin(sin(96*y**.5)*.001**y*2)*2;",
+                    "case'I':return random()*sin(t*E*32E3)*cos(t*E*512)*.01**y*2;",
+                    "case'W':return ((( F -= 2,",
+                    "F += random()-F/8)/2+5.5)*cos(y*8)-.5)*.001**y*3}}",
+                    "function co(t,x) {",
+                    "return (x*SHIFT( ['CHJ'[_=t*T*12%3|0],'EIG'[_],'ACE'[_],'9FC'[_]][t*T/2&3] )*H/2 )%2-.9",
+                    "}",
+                    "return t => ",
+                    "{ for( i=k=0; i<8; i++) k+=",
+                    "co(t-=i/107.75,t)/8||0;return k/4+DRUM('BIBIWIBIIBIBWIBI',(t+=3.9)*T*4,T*t%.25,t)/4 }"
+                ],
+                "codeMinified": "S={B:130,S:1,F:480},T=S.B/60*S.S;H=S.F;F=0,_=x=>2**(parseInt(x,36)/12),D=(w,h,y,t)=>(Y=w[h&15],Y==\"B\"?2*sin(2*sin(96*y**.5)*.001**y):Y==\"I\"?random()*sin(32e3*t*E)*cos(512*t*E)*.01**y*2:Y==\"W\"?3*(((F-=2,F+=random()-F/8)/2+5.5)*cos(8*y)-.5)*.001**y:0),c=(t,x)=>x*_([\"CHJ\",\"EIG\",\"ACE\",\"9FC\"][t*T/2&3][t*T*12%3|0])*H/2%2-.9;return t=>{for(i=k=0;i<8;i++)k+=c(t-=i/107.75,t)/8||0;return k/4+D(\"BIBIWIBIIBIBWIBI\",(t+=3.9)*T*4,T*t%.25,t)/4}"
             },
             {
                 "description": "untitledsong_2",
