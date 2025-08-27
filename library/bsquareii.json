@@ -629,6 +629,18 @@
         "codeOriginal": "t?0:A=Array(x=5e3).fill(0),b=(t*4*[1,1.125,1.25,4/3,1.5,1.675,1.875,2][t/x&7]&112)*(1-t/x%1)+A[t*2/3%x|0],A[t*3/4%x|0]=b/2*(1+t/x%1),b"
     },
     {
+        "name": "stupid remix of my old remix of absolute's organ thingy",
+        "remix": {
+            "name": "Different Version of absolute199's organ thing using Signed ByteBeat",
+            "author": "ANoUserXD",
+            "url": "https://web.archive.org/web/20230528015552/https://dollchan.net/btb/res/3.html#784"
+        },
+        "date": "Apr 21, 2025",
+        "sampleRate": 32000,
+        "mode": "Signed Bytebeat",
+        "codeOriginal": "a=t-t/[1.5,1.9,2.5,3.05,3.4][(t>>13)%5],((sin(a/4)+sin(a/6)+asin(sin(a/8)))*8|(t>>9&31*(t>4**10)^t>>7>>(t>>12&1)&31*(t>(4**10+2**19)))*(t<2**21))*(t>(8**7+4**10)?t>(8**7+4**10+2**19)?0:1-t/2**19%1:1)+sin(log10(t&16383)*100)*40*(t>2**19&t<(8**7+4**10))+random()*90*(t/2**17%1)*(t>(4**10-2**17)&t<4**10)-50+(2e4/(t%8**5%24576%4**7)&1)*40*(t>8**7&t<(8**7+2**19))"
+    },
+    {
         "name": "another under 256 bytes attempt",
         "url": "https://dollchan.net/btb/res/2628.html#5992",
         "date": "Apr 26, 2025",

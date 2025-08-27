@@ -889,7 +889,7 @@
                 "file": "baenhohoho2.js"
             },
             {
-                "name": "wtf is this shitty ass beat",
+                "name": "goofy beat?",
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/117.html#7564",
                 "date": "Apr 26, 2025",
@@ -947,6 +947,20 @@
                 "mode": "Floatbeat",
                 "stereo": true,
                 "codeOriginal": "(t/=6)?0:a=0,t&(t>>8&3?3:15)?R:R=random(),p=(x,y,z=0)=>t*2.016**((parseInt(x[y],36)-95)/12+z-.02),s=(x,y=.5)=>x%1>y?1:-1,[s(r=p('7C7F7C7H7C7J7C7M8C8F8C8H8C8J8C8M',t>>11&31,3),~t>>11&1?r&1?r&3?r&2?.6:.3:0:.5:.5)/(1+(t>>9&3)/3)/3*(g=!!(-t>>8&15)),(!(t>>9&7)?s(t/64+R*(t>>12&1)):s(p('78',t>>15&1,1),.4))/4*g].map(x=>(a+=(x-a)/256,x-a)).reduce((x,y)=>[x+.5,y-.5])"
+            },
+            {
+                "name": "remixing my own bytebeat ig?",
+                "remix": {
+                    "name": "goofy beat?",
+                    "author": "BaenHoHoHo",
+                    "url": "https://dollchan.net/btb/res/117.html#7564"
+                },
+                "url": "https://dollchan.net/btb/res/117.html#8933",
+                "date": "Aug 26, 2025",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "stereo": true,
+                "codeOriginal": "(T=t,t-=(t%4**7)/5)!=0?0:y=new Float32Array(256),s=sin,c=cos,R=random(),N=4096,k=(x,y=.5)=>x%1>y?-1:1,D=(P,I,S=1)=>(w=P[I%P.length|0],w=='K'?k(6*(S*t%N/S)**.2+R*t*!(S*t>>7&31))*.1**(S*t/N%1):w=='S'?k(T*.005+.03*s(T/75)+t*R*!!(S*t>>9&7))*.1**(t/N*S%1):w=='H'?k(t*R)*1E-5**(t/N*S%1):0),(u=>{l=t>>12;a=T*2**((((-l/8&9|2)^l/8&5+(l&11)/8)+T%(-'0135 9841'[l/4&5]+4)*7)/12-1)|0;h=i=1;for(;i<u;i++){y[0]+=(c(3*PI*a*i/384)-y[0])/32}y[1]+=(s(PI*i*a/512)-y[1])/24;return [[y[0],y[1]],[y[1],y[0]]][t>>15&1].map(x=>(F=tanh(2*x/3+D('KHHHSHHH'.repeat(3).concat('KHHHSHHS'),t>>13,.5)/3),y[2]+=(F-y[2])*.003,y[2]-F))})(6)"
             }
         ]
     },
