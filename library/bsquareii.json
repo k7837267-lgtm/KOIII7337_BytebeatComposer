@@ -20,7 +20,7 @@
         ]
     },
     {
-        "name": "basic ass remix of gasman's rickroll bytebeat",
+        "name": "basic ass remix of gasman's rickroll",
         "remix": {
             "name": "some kind of 80s synth type thing",
             "author": "Gasman",
@@ -89,6 +89,10 @@
     },
     {
         "name": "Pleasure To Paso (Unfinished/Not Full Version)",
+        "cover": {
+            "name": "Paso of Dyntec - Pleasure to Paso",
+            "url": "https://youtu.be/w_LW75WE_oo?si=ldITZ662B0X0b9CW"
+        },
         "url": "https://www.reddit.com/r/bytebeat/comments/13im4qr/pleasure_to_paso_unfinishednot_full_version/",
         "date": "May 15, 2023",
         "sampleRate": 48000,
@@ -100,6 +104,11 @@
     },
     {
         "name": "DJ G minor Bach with sinewave changed to sawtooth",
+        "remix": {
+            "name": "G minor Bach",
+            "author": "skurk",
+            "url": "https://www.pouet.net/topic.php?which=8357&page=11#c389045"
+        },
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/13uep2x/dj_g_minor_bach_with_sinewave_changed_to_sawtooth/",
         "date": "May 28, 2023",
