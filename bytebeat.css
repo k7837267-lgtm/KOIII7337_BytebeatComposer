@@ -228,6 +228,46 @@ button[name="close"] {
 
 /* ==[ Library ] ========================================================================================== */
 
+.code-button {
+	margin: 1px 0 0 6px;
+	padding: 2px 6px;
+	border: none;
+	border-radius: 3px;
+	background-image: linear-gradient(to bottom, #626264, #2a2f35);
+	color: #ced5e1;
+	font: var(--font-size)/var(--font-size) sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.code-button:hover {
+	background-image: linear-gradient(to bottom, #5876ce, #202a41);
+	color: #c2dfff;
+}
+
+.code-button.children-toggle {
+	margin: 8px 0 5px 0;
+	padding: 5px 10px;
+	width: fit-content;
+}
+
+.code-exotic {
+	color: #d11515;
+}
+
+.code-length, .code-info {
+	color: gray;
+	cursor: default;
+}
+
+.code-remix {
+	font-size: 90%;
+}
+
+.code-stereo {
+	color: #09ad69;
+}
+
 .code-text {
 	display: inline-block;
 	margin: 0;
@@ -249,45 +289,15 @@ button[name="close"] {
 	color: #ed88fb !important;
 }
 
-.code-button {
-	margin: 1px 0 0 6px;
-	padding: 2px 6px;
-	border: none;
-	border-radius: 3px;
-	background-image: linear-gradient(to bottom, #626264, #2a2f35);
-	color: #ced5e1;
-	font: var(--font-size)/var(--font-size) sans-serif;
-	white-space: nowrap;
-	cursor: pointer;
-}
-
-.code-button:hover {
-	background-image: linear-gradient(to bottom, #5876ce, #202a41);
-	color: #c2dfff;
-}
-
-.code-length, .code-info {
-	color: gray;
-	cursor: default;
-}
-
-.code-stereo {
-	color: #09ad69;
-}
-
-.code-exotic {
-	color: #d11515;
-}
-
 .entry {
 	position: relative;
 }
 
-.entry-children > .entry:not(:last-child) {
+.entry-children .entry:not(:last-child) {
 	margin-bottom: 4px;
 }
 
-.entry-children > .entry::before {
+.entry-children .entry::before {
 	content: "\25CF";
 	position: absolute;
 	top: 2px;
@@ -296,7 +306,7 @@ button[name="close"] {
 	font-size: 12px;
 }
 
-.entry-children > .entry > .entry-children {
+.entry-children .entry > .entry-children {
 	margin-left: 11px;
 }
 
@@ -463,8 +473,7 @@ button[name="close"] {
 }
 
 #control-samplerate-select {
-	width: 22px;
-	font-size: 0;
+	width: 20px;
 	border-radius: 0 var(--control-corners) var(--control-corners) 0;
 }
 

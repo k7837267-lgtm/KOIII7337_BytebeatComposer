@@ -1461,24 +1461,36 @@
         "children": [
             {
                 "name": "long weekend chair",
-                "url": "https://web.archive.org/web/20230313114934/https://www.reddit.com/r/bytebeat/comments/11q7hwx/long_weekend_chair/",
+                "url": [
+                    "https://web.archive.org/web/20230313114934/https://www.reddit.com/r/bytebeat/comments/11q7hwx/long_weekend_chair/",
+                    "https://ihsoyct.github.io/index.html?comments=11q7hwx"
+                ],
                 "date": "Mar 13, 2023",
                 "sampleRate": 34000,
                 "codeOriginal": "t/=4,(-(10*(t>>6|t|t>>(t>>16))+(7&t>>11)/4&t>>4|t>>3)%(t>>t/[4,6,5,4.5][(t>>14)%4])|t>>4)%256/4+128+(random ()*50&-t>>7)+sin(4e4/(t%4096))*25+sin(t*2/[4,5,6,7][(t>>14)%4])*25-25"
             },
             {
                 "name": "Egypt dungeon",
+                "url": [
+                    "https://web.archive.org/web/20230315113705/https://reddit.com//r/bytebeat/comments/11rts6t/egypt_dungeon/",
+                    "https://ihsoyct.github.io/index.html?comments=11rts6t"
+                ],
                 "date": "Mar 15, 2023",
                 "sampleRate": 32000,
                 "codeOriginal": "t/=4,((sin(t/36*(t&16384?7:5)*(3+(3&t>>14))>>(3&t>>9))*40+128)%256*(-t/8&2047)/2E3)+(t*(t&16384?7:5)*(3+(3&t>>14))>>(3&t>>9)|127)%256/4%256*(-t/4&2047)/2E3"
             },
             {
                 "name": "CAPERMISSION",
+                "url": [
+                    "https://web.archive.org/web/20230321070456/https://reddit.com//r/bytebeat/comments/11x9ex9/capermission/",
+                    "https://ihsoyct.github.io/index.html?comments=11x9ex9"
+                ],
                 "date": "Mar 21, 2023",
                 "codeOriginal": "((t*(0x9273727>>(t>>9&30)&15)|t>>8)%256/2+sin(4e3/(t%4096))*50+50)%256*(-t&2047)/2E3+(t*4&-t>>8)%256/4"
             },
             {
                 "name": "No limit type beat",
+                "url": "https://web.archive.org/web/20230414113330/https://www.reddit.com/r/bytebeat/comments/12lu636/no_limit_type_beat/",
                 "date": "Apr 14, 2023",
                 "sampleRate": 32000,
                 "codeOriginal": "t/=4,(t*t*4)%256*(-t/[2,1,4,4,4,4,1,1][(t>>12)%8]&2047)/2E3%256/3+(sin(4e3/(t%4096))*50)+50+(random ()*50&-t>>5)*[0,1][(t>>11)%2]+(t*4&-t>>9|t*8&-t>>10)%256/4"
@@ -1500,6 +1512,7 @@
             },
             {
                 "name": "Descocsen",
+                "url": "https://web.archive.org/web/20230422142150/https://www.reddit.com/r/bytebeat/comments/12v7cgm/descocsen/",
                 "date": "Apr 22, 2023",
                 "sampleRate": 48000,
                 "codeOriginal": "mel=t>6302721?t%1:0+t>5526913?(t*[0,2,3,2][(t>>12)%4]/[1,1.5,1.75,2][(t>>17)%4]*[1,1.5,1.75,2][(t>>16)%4]/[3,4,3,2,1,2,1,2][(t>>15)%8])%256/4:0+t>4192129?((t*[0,2,3,2][(t>>12)%4]/[1,1.5,1.75,2][(t>>17)%4]*[1,1.5,1.75,2][(t>>16)%4]/[3,4,3,2,1,2,1,2][(t>>15)%8])%256/4+(t*[0,4,2,4][(t>>12)%4]/[1,2,3,3][(t>>17)%4]*[1,1.5,1.75,2][(t>>16)%4]/[5,6,4,3,2,4,5,1][(t>>15)%8])%256/4)&t>>7:0+t>3147777?(t*[0,2,3,2][(t>>12)%4]/[1,1.5,1.75,2][(t>>17)%4]*[1,1.5,1.75,2][(t>>16)%4]/[3,4,3,2,1,2,1,2][(t>>15)%8])%256/4+(t*[0,4,2,4][(t>>12)%4]/[1,2,3,3][(t>>17)%4]*[1,1.5,1.75,2][(t>>16)%4]/[5,6,4,3,2,4,5,1][(t>>15)%8])%256/4:0+(t*[0,2,3,2][(t>>12)%4]/[1,1.5,1.75,2][(t>>17)%4]*[1,1.5,1.75,2][(t>>16)%4]/[3,4,3,2,1,2,1,2][(t>>15)%8])%256/4,kick=t>6302721?t%1:0+t>1057025?4e4/(t/4%4096)&128:0,snear=t>6302721?t%1:0+t>2101505?random ()*128&-t>>6:0,(mel)+(kick)+(snear)"
@@ -1807,6 +1820,14 @@
                 "sampleRate": 16000,
                 "file": "chasyxx.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "THE UNICODE SHOW",
+                "url": "https://www.reddit.com/r/bytebeat_2/comments/1ngbns9/the_unicode_show/",
+                "date": "Sep 13, 2025",
+                "mode": "Floatbeat",
+                "file": "chasyxx3.js",
+                "fileOriginal": true
             }
         ]
     },
@@ -1834,14 +1855,20 @@
             },
             {
                 "name": "weird melody",
-                "url": "https://www.reddit.com/r/bytebeat/comments/12rgava/weird_melody/",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/12rgava/weird_melody/",
+                    "https://ihsoyct.github.io/index.html?comments=12rgava"
+                ],
                 "date": "Apr 19, 2023",
                 "codeOriginal": "(t*1.6)&(t*[3.6,3.2,3][(t/1.2>>13)%3])|(t>>3&t>>6)"
             },
             {
                 "name": "idk",
                 "mode": "Floatbeat",
-                "url": "https://www.reddit.com/r/bytebeat/comments/12vo5vd/idk/",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/12vo5vd/idk/",
+                    "https://ihsoyct.github.io/index.html?comments=12vo5vd"
+                ],
                 "date": "Apr 22, 2023",
                 "sampleRate": 32000,
                 "codeOriginal": "a=t/[1.6,2.4,3,3.6][(t>>14)%4],(sin(a*4)+sin(1))*(sin(a/6)+sin(a/4))"

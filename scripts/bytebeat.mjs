@@ -72,7 +72,7 @@ globalThis.bytebeat = new class {
 		return saveData;
 	}
 	get timeCursorEnabled() {
-		return this.songData.sampleRate >> this.settings.drawScale < 3950;
+		return this.songData.sampleRate >> this.settings.drawScale < 2000;
 	}
 	animationFrame() {
 		this.drawGraphics(this.byteSample);
@@ -258,12 +258,13 @@ globalThis.bytebeat = new class {
 		return `${power1024s} (${[power1000s]})`
 	}
 	generateLibraryEntry({
-		author, children, codeMinified, codeOriginal, cover, date, exotic, file, fileFormatted,
-		fileMinified, fileOriginal, mode, name, remix, sampleRate, stereo, url
+		author, children, codeMinified, codeOriginal, cover, date, description, exotic, file,
+		fileFormatted, fileMinified, fileOriginal, mode, name, remix, sampleRate, stereo, url
 	}) {
 		let entry = '';
+		const noArrayUrl = url && !Array.isArray(url);
 		if (name) {
-			entry += !url ? name : `<a href="${url}" target="_blank">${name}</a>`;
+			entry += url ? `<a href="${noArrayUrl ? url : url[0]}" target="_blank">${name}</a>` : name;
 		}
 		if (author) {
 			let authorsList = '';
@@ -271,7 +272,7 @@ globalThis.bytebeat = new class {
 			for (let i = 0, len = authorsArr.length; i < len; ++i) {
 				const authorElem = authorsArr[i];
 				if (typeof authorElem === 'string') {
-					authorsList += name || !url ? authorElem :
+					authorsList += name || !noArrayUrl ? '<b>' + authorElem + '</b>' :
 						`<a href="${url}" target="_blank">${authorElem}</a>`;
 				} else {
 					authorsList += `<a href="${authorElem[1]}" target="_blank">${authorElem[0]}</a>`;
@@ -280,17 +281,25 @@ globalThis.bytebeat = new class {
 					authorsList += ', ';
 				}
 			}
-			entry += `<span>${name ? ` (by <b>${authorsList}</b>)` : `by <b>${authorsList}</b>`}</span>`;
+			entry += ` <span>by ${authorsList}</span>`;
 		}
-		if (url && !name && !author) {
-			entry += `(<a href="${url}" target="_blank">source</a>)`;
+		if (url && (!noArrayUrl || !name && !author)) {
+			if (noArrayUrl) {
+				entry += `[<a href="${url}" target="_blank">link</a>]`;
+			} else {
+				const urlsList = [];
+				for (let i = name ? 1 : 0, len = url.length; i < len; ++i) {
+					urlsList.push(`<a href="${url[i]}" target="_blank">link${i + 1}</a>`);
+				}
+				entry += ` [${urlsList.join(', ')}]`;
+			}
 		}
 		if (cover) {
 			const { url: cUrl, name: coverName } = cover;
-			entry += ` (cover of ${cUrl ?
+			entry += ` <span class="code-remix">(cover of ${cUrl ?
 				`<a href="${cUrl}" target="_blank">${coverName}</a>` :
 				`"${coverName}"`
-				})`;
+				})</span>`;
 		}
 		if (remix) {
 			const arr = [];
@@ -300,7 +309,7 @@ globalThis.bytebeat = new class {
 				arr.push(`${rUrl ? `<a href="${rUrl}" target="_blank">${remixName || rAuthor}</a>` : `"${remixName}"`
 					}${remixName && rAuthor ? ' by ' + rAuthor : ''}`);
 			}
-			entry += ` (remix of ${arr.join(', ')})`;
+			entry += ` <span class="code-remix">(remix of ${arr.join(', ')})</span>`;
 		}
 
 		if (date || sampleRate || mode || stereo || exotic) {
@@ -340,6 +349,9 @@ globalThis.bytebeat = new class {
 					}" title="Click to load and play the minified code">minified</button>`;
 			}
 		}
+		if (description) {
+			entry += (entry ? '<br>' : '') + description;
+		}
 		if (codeOriginal) {
 			if (Array.isArray(codeOriginal)) {
 				codeOriginal = codeOriginal.join('\n');
@@ -352,8 +364,19 @@ globalThis.bytebeat = new class {
 		}
 		if (children) {
 			let childrenStr = '';
-			for (let i = 0, len = children.length; i < len; ++i) {
-				childrenStr += this.generateLibraryEntry(children[i]);
+			const len = children.length;
+			if (len > 8) {
+				childrenStr += `<details><summary class="code-button children-toggle">${len - 5} more bytebeats</summary>`;
+				for (let i = 0; i < len; ++i) {
+					if (i === len - 5) {
+						childrenStr += '</details>';
+					}
+					childrenStr += this.generateLibraryEntry(children[i]);
+				}
+			} else {
+				for (let i = 0; i < len; ++i) {
+					childrenStr += this.generateLibraryEntry(children[i]);
+				}
 			}
 			entry += `<div class="entry-children">${childrenStr}</div>`;
 		}
@@ -814,10 +837,11 @@ globalThis.bytebeat = new class {
 		buttonElem.title = `Play ${isFast ? `fast ${direction} x${speed} speed` : direction}`;
 	}
 	setSampleRate(sampleRate, isSendData = true) {
-		if (!sampleRate || !isFinite(sampleRate)) {
+		if (!sampleRate || !isFinite(sampleRate) ||
+			// Float32 limit
+			(sampleRate = Number(parseFloat(Math.abs(sampleRate)).toFixed(2))) > 3.4028234663852886E+38
+		) {
 			sampleRate = 8000;
-		} else if (sampleRate < 0) {
-			sampleRate = -sampleRate;
 		}
 		switch (sampleRate) {
 			case 4000:
