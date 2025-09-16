@@ -747,6 +747,22 @@
                 "codeOriginal": "k=t/1.4,w=(t,y)=>{x=0;for(i=0;i<12;i++)x+=cos(sin(t*PI/256-.15*cos(t*i*PI/128)*(.9998**(y%65536))+cbrt(sin(t*PI/256)))/2**asin(sin(t*PI/256)));return x*(255&-y>>8)/1e4},(w(t*2**('0358'[k>>16&3]/12),k)+w(t*1.99*2**([-9,-5,-12,-11][k>>16&3]/12),k)+w(t*1.49*2**([0,3,-4,5][k>>16&3]/12),k)+w((k&8192?-t:t)*'12348642'[k>>[11,12][k>>14&1]&7]*2**('0358'[k>>16&3]/12),1)-.5)*(k>>9&31)**.5/8+(t*6*t/30%256)/444*(.997**(k%4096))*(255&k>>6)/256+sin((k%16384)**.3)/4+sin((k%16384)**.2)/4+max(-1,min(1,(t*63*t/31.1%256)*(1&k>>14)*(.9997**(k%16384))/128+sin(3*log(k+16384&32767))/2))/3"
             },
             {
+                "name": "unfinished bytebeat cover of S.Q.F.P.R",
+                "cover": {
+                    "name": "bijoux - Sparta Quest For Perfection Base",
+                    "url": "https://www.youtube.com/watch?v=A2aSmVQt9j8"
+                },
+                "mode": "Funcbeat",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/1c2s97r/unfinished_bytebeat_cover_of_sqfpr/",
+                    "https://ihsoyct.github.io/index.html?comments=1c2s97r"
+                ],
+                "date": "Apr 12, 2024",
+                "sampleRate": 54000,
+                "codeOriginal": "b=140/60;k=n=R=S=V=0;ay={k:'CJCJ9G9GGNGNBIBI',l:'C9GB'};p=p=>2**(parseInt(p,36)/12);w1=(w,t,s=1)=>cos(sin(w*PI*8+cos(w*PI*12)*3*.01**(t*s%1))*.5**(t*s%1))-1,w=(w,t,s=1)=>(k+=sin(w%1*.3**(t%.5)*.5**(cos(t/4+s)+1)*36)-k/8)/16;Q=(x,t,s=.5)=>max(0,min(255,255*(K=x[t*s%x.length|0],K=='&'?sin(sin(255*(t*s%1)**.5)*.2**(t*s%1))*random()/2:K=='['?sin(cos(E*t*197E4)*random()*2*.001**(t*s%1)):K==']'?(R+=random()-R-.5,S+=R/2-S/9,V+=S/4-V/3)*sin(16*(t*s%1)**.07)*.01**(t*s%1)*4:0)+128));return t=>{P1=(n+=(m=(t,x,B=0)=>w(x*p(ay.k[t*b*2&15])*139,t*b,B)/2)(t,t/.995,-.5)+m(t,t,.5)+m(t-b/12,t/.99)/1E3-n/12)/13;P2=Q('&[][',t*b*4)/512;P3=w1(t*p(ay.l[t*b/2%4|0])*139/2,t*b/2)/2;P4=Q('[[[[][[[',t*b,4)/2E3;HI=sin(t*129E3)*random()*.7**(t*b%16)/2;return([_2=P1+P2,_4=_2+P3,HI+_4+P4][t*b/16|0])*2-.45}",
+                "codeMinified": "b=140/60;k=n=R=S=V=0;M=sin;N=cos;A={k:'CJCJ9G9GGNGNBIBI',l:'C9GB'};p=p=>2**(parseInt(p,36)/12);w1=(w,t,s=1)=>N(M(w*PI*8+N(w*PI*12)*3*.01**(t*s%1))*.5**(t*s%1))-1,w=(w,t,s=1)=>(k+=M(w%1*.3**(t%.5)*.5**(N(t/4+s)+1)*36)-k/8)/16;Q=(x,t,s=.5)=>max(0,min(255,255*(K=x[t*s%x.length|0],K=='&'?M(M(255*(t*s%1)**.5)*.2**(t*s%1))*random()/2:K=='['?M(N(E*t*197E4)*random()*2*.001**(t*s%1)):K==']'&&(R+=random()-R-.5,S+=R/2-S/9,V+=S/4-V/3)*M(16*(t*s%1)**.07)*.01**(t*s%1)*4)+128));return t=>{P=(n+=(m=(t,x,B=0)=>w(x*p(A.k[t*b*2&15])*139,t*b,B)/2)(t,t/.995,-.5)+m(t,t,.5)+m(t-b/12,t/.99)/1E3-n/12)/13;P2=Q('&[][',t*b*4)/512;P3=w1(t*p(A.l[t*b/2%4|0])*139/2,t*b/2)/2;P4=Q('[[[[][[[',t*b,4)/2E3;H=M(t*129E3)*random()*.7**(t*b%16)/2;return[_2=P+P2,_4=_2+P3,H+_4+P4][t*b/16|0]*2-.45}"
+            },
+            {
                 "name": "untitledsong_1",
                 "mode": "Funcbeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1capt4t/untitledsong_1/",
@@ -801,6 +817,18 @@
                 "codeOriginal": "t?(k=sin(b++/32*(1+(t>>12&13^t>>11&5|t>>13&42)))/4+a[S=t%n|0],a[S]=k/3+a[t/4%n|0]/4+a[t/3%n|0]/4,l+=sin(sin(k*a[S/4|0])-a[S/12|0]*(1-t/16384%1)*18)/32-l/32*(cos(b*PI/4096+.9)+1)*4):a=Array(n=16384).fill(l=b=0)"
             },
             {
+                "name": "something",
+                "mode": "Floatbeat",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/1cxj5te/something/",
+                    "https://ihsoyct.github.io/index.html?comments=1cxj5te"
+                ],
+                "date": "May 21, 2024",
+                "sampleRate": 48000,
+                "stereo": true,
+                "codeOriginal": "t?(S=t/6*11/s,T=1.4,$=ß=ø=ü=(A+=B+=P(a[S*4%4|0][S/4%8|0])*!(S*(S/4&3==3?'1212'[S*4%4|0]:'2424'[S*2%4|0])&1)-B/200,(H+=sin(A*PI/8050+l[t%ä/128|0]*2|W[t%y/48]*2|!(S*8%2|0))-H/12)/8)*min(S/4,1)*1e-3**(S%.25),$+=l[F=t%ä],ß+=W[F1=t%y],ø+=Y[D=t%z],ü+=Z[Õ=t%w],$+=l[F]=$/T,ß+=W[F1]=ß/T,ø+=Y[D]=ø/T,ü+=Z[Õ]=ü/T,[$+ß,ø+ü].map(t=>t/16*.3**(-S%1)+3*tanh(-sin((S%1)**.7*128))*.1**(S%1))):(R=k=>Array(k).fill(0),l=R(ä=10912),W=R(y=11025),Y=R(z=12280),Z=R(w=13500),s=A=B=H=Ï=º=48E3,a=['C0928289','98989898','C0C0ABCE','99999999'],P=n=>2**(parseInt(n,36)/12))"
+            },
+            {
                 "name": "tuca donka remake (unfinished)",
                 "mode": "Floatbeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1dkobcn/tuca_donka_remake_unfinished/",
@@ -809,7 +837,19 @@
                 "codeOriginal": "t?(T=t/a*13/6,N=d++,w.wav(N*p('0000011155555666'[2*T&15])/12,(m=T%4)/'33366244'[m*2&7]*4)+((l=b=>w.sine((K=(T+b)%.35)*K/16)*.1**K/4)(0)+l(1.01)/2+l(1.25)/3+l(1.5)/3)*.1**(T/3)):(a=b=c=d=e=f=g=h=i=j=k=48e3,w={wav:(x,y)=>(e+=sin(x*PI/32+(b+=c+=sinh(sin(x*PI/16))*.1**(y%1)-b/16-c/15)/1.3*.69**(cos(y*PI*2)+1))*.2**(cos(y*PI*2)+1)*.006**(y%1)*16-e/16)/32,sine:x=>sin(32e4*x)},p=n=>135*2**(parseInt(n,36)/12-7))"
             },
             {
+                "name": "echo_w_filter1",
+                "url": "https://dollchan.net/btb/res/117.html#4085",
+                "date": "Aug 03, 2024",
+                "sampleRate": 34500,
+                "codeOriginal": "r=(x,y,z)=>(t||(a=Array(8192).fill(y),b=c=f=e=0),d=x%256+a[_=t%a.length],a[_|0]=(b+=c+=d*z-b/(n=.6**(cos(t*PI/8192))*4)-c/3)/n,d*2/3),[(X=r(((t/2/1.05946**(4+(t>>14&15^6))*8|t/64&128)-64)+32,48,.5)-128)*(s=(x,y=0)=>x(t*PI/131072+y)*16)(cos,1.5),X*s(sin)].map(x=>max(0,min(255,(f+=e+=x/2-f/(N=128*.5**min(t/4**8,3))-e/4)/N+128)))"
+            },
+            {
                 "name": "untitledsong_2 with extra melodies",
+                "remix": {
+                    "author": "BaenHoHoHo",
+                    "name": "untitledsong_2",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1ce2nc9/untitledsong_2/"
+                },
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/117.html#4295",
                 "date": "Aug 27, 2024",
@@ -818,6 +858,11 @@
             },
             {
                 "name": "worst remix of echo_w_filter1",
+                "remix": {
+                    "author": "BaenHoHoHo",
+                    "name": "echo_w_filter1",
+                    "url": "https://dollchan.net/btb/res/117.html#4085"
+                },
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/117.html#4458",
                 "date": "Sep 14, 2024",
@@ -848,6 +893,21 @@
                 "date": "Sep 18, 2024",
                 "sampleRate": 48000,
                 "codeOriginal": "t?(B=((t*2**((5&t>>13^t>>14&7|t>>13&7)/12+!(t>>10&(_=t&16384?15:7)))&128)-64)*(1-(1+(-t>>14&1))*t%16384/16384)**.5+A[U=t%n|0],A[U-1]=B/3+A[U/1.005|0]/2,max(0,min(255,(L+=F+=B-L/($=8**(1+cos(t*PI/131072))*2)-F/$*2)/$+128))/2+64):A=Array(n=24576).fill(L=F=0)"
+            },
+            {
+                "name": "EVEN WORSE REMIX OF ECHO_W_FILTER1!!11!!11<",
+                "remix": {
+                    "author": "BaenHoHoHo",
+                    "name": "echo_w_filter1",
+                    "url": "https://dollchan.net/btb/res/117.html#4085"
+                },
+                "url": "https://dollchan.net/btb/res/117.html#4526",
+                "date": "Sep 23, 2024",
+                "mode": "Funcbeat",
+                "sampleRate": 48000,
+                "file": "baenhohoho3.js",
+                "fileOriginal": true,
+                "fileMinified": true
             },
             {
                 "name": "suicide..",
@@ -949,6 +1009,14 @@
                 "mode": "Floatbeat",
                 "stereo": true,
                 "codeOriginal": "t/=48E3,this.a||=b=0,S={B:170,F:440,S:1,V:1},T=t*S.B*S.S/60,V=sin(t)/256,c=cbrt,R=random(),h=(x,y,z=.01)=>y--?h(abs(x-2*z)-8*z,y-1):tanh(2*c(4*x+8*z)+x*8)/2,p=(x,y,z=0)=>440*2**(parseInt(x[y],36)/12-z),p=(x,y,z=0)=>++S.F*2**((parseInt(x[y],36)-63)/12+z),l=(t,T)=>T>0&&h(4*tanh(sin(t*p('CCDDFFDJ',T&7,3)%1-3)*.7**(P=T*'2214'[T&3]%1))/4,18)*.7**P**2/2*min(64*T%16,1)+2*h(sin(t*p('CDFD',T/2&3,2)%1-6)*(.8+128*V)**(Q=T/2%1)**2-1,16,.1)*.2**Q*min(4*T%8,1)/2,[l(t/2+(V=S.V&&V),T)+l(t+V-.4,T+.01)+2*l(t+V,T-.1)/3+l(t+V,T+.01)/3,l(t-V,T)+l(t/2-V+.4,T-.01)+2*l(t-V,T-.1)/3+l(t-V,T-.01)/3].map(x=>3*max(-1,min(1,(a+=b+=(x=x/3-a-16*b)/14,x+3*a+.3)))/4+3*cos(PI*t*4E3)*sin(R-.5)*(48E3*t&1)*(!(4*T&3^2)?.4:.01)**(8*T%2)/2+c(sin(127*(H=T%1)**.3+R*!(64*T&63)))*.01**H*!(L=T&1)+c(sin(1349*t-1/(T%1+.05))+48*sin(R-.5)*.1**(1+sin(PI*T*2+8.4)))*1E-3**H*L)"
+            },
+            {
+                "name": "amen break",
+                "url": "https://dollchan.net/btb/res/117.html#8755",
+                "date": "Aug 10, 2025",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "codeOriginal": "t/=48E3,SETS={BPM:140,SPD:1,MTN:true},BPS=SETS.BPM*SETS.SPD/60,i=t?i:[0,0,0],lowp=(w,x,y)=>(i[w]+=(x-i[w])*y),highp=(w,x,y)=>(i[w]+=(x-i[w])*y,i[w]-x),Math.tanh(Math.cbrt(4752>>(4*t*BPS&15)&1?lowp(1,Math.tanh(Math.sin(1120*t)+4*Math.cos(Math.random()+1)*(1+Math.sin(8*PI*BPS*t+4))),.4)*.3**(4*t*BPS%1):Math.sin(127*(r=2*t*BPS%1)**.4)*1e-3**r)+(SETS.MTN?sin(5500*t*(1+!(t*BPS/SETS.SPD&3)))*1e-9**(t*BPS/SETS.SPD%1):0)+128*highp(0,Math.cos(Math.random()+1)*.05**(4*t*BPS%1)*!(8*t*BPS&1),.99))"
             },
             {
                 "name": "(not-so) atari 2600 cover of \"Nothing Is Real.\"",

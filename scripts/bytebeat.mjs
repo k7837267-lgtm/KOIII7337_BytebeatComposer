@@ -51,8 +51,8 @@ globalThis.bytebeat = new class {
 		this.isPlaying = false;
 		this.isRecording = false;
 		this.playbackSpeed = 1;
-		this.settings = { drawMode: 'Waveform', drawScale: 0, isSeconds: false, volume: 1 };
-		this.songData = { mode: 'Floatbeat', sampleRate: 36000 };
+		this.settings = { drawMode: 'Waveform', drawScale: 0, isSeconds: false, volume: .5 };
+		this.songData = { mode: 'Bytebeat', sampleRate: 8000 };
 		this.init();
 	}
 	get editorValue() {
@@ -246,7 +246,7 @@ globalThis.bytebeat = new class {
 	expandEditor() {
 		this.containerFixedElem.classList.toggle('container-expanded');
 	}
-	formatBytes(bytes) {
+	formatBytes(bytes, mode = 0) {
 		if (bytes < 2e3) {
 			return bytes + 'B';
 		}
@@ -255,7 +255,7 @@ globalThis.bytebeat = new class {
 		const power1000s = (power1000i ? (bytes / (1000 ** power1000i)).toFixed(2) : bytes) + ['B', 'KB', 'MB', 'GB', 'TB'][power1000i];
 		const power1024i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)), 10);
 		const power1024s = (power1000i ? (bytes / (1024 ** power1000i)).toFixed(2) : bytes) + ['B', 'KiB', 'MiB', 'GiB', 'TiB'][power1024i];
-		return `${power1024s} (${[power1000s]})`
+		return mode ? `${power1024s}/${[power1000s]}` : `${power1024s} (${[power1000s]})`
 	}
 	generateLibraryEntry({
 		author, children, codeMinified, codeOriginal, cover, date, description, exotic, file,
@@ -489,7 +489,7 @@ globalThis.bytebeat = new class {
 		const mediaDest = this.audioCtx.createMediaStreamDestination();
 		const audioRecorder = this.audioRecorder = new MediaRecorder(mediaDest.stream);
 		audioRecorder.addEventListener('dataavailable', e => this.audioRecordChunks.push(e.data));
-		audioRecorder.addEventListener('stop', e => {
+		audioRecorder.addEventListener('stop', () => {
 			let file, type;
 			const types = ['audio/webm', 'audio/ogg'];
 			const files = ['track.webm', 'track.ogg'];
@@ -666,16 +666,20 @@ globalThis.bytebeat = new class {
 			({ hash } = window.location);
 		}
 		let songData;
-		if (hash.startsWith('#v3b64')) {
-			const hashString = atob(hash.substr(6));
-			const dataBuffer = new Uint8Array(hashString.length);
-			for (const i in hashString) {
-				if (Object.prototype.hasOwnProperty.call(hashString, i)) {
-					dataBuffer[i] = hashString.charCodeAt(i);
-				}
-			}
+		if (hash.startsWith('#4')) {
+			const dataArr = Uint8Array.from(atob(hash.substring(2)), el => el.charCodeAt());
 			try {
-				songData = inflateRaw(dataBuffer, { to: 'string' });
+				songData = {
+					mode: ['Bytebeat', 'Signed Bytebeat', 'Floatbeat', 'Funcbeat'][dataArr[0]],
+					sampleRate: new DataView(dataArr.buffer).getFloat32(1, 1),
+					code: inflateRaw(new Uint8Array(dataArr.buffer, 5), { to: 'string' })
+				};
+			} catch (err) {
+				console.error(`Couldn't load data from url: ${err}`);
+			}
+		} else if (hash.startsWith('#v3b64')) {
+			try {
+				songData = inflateRaw(Uint8Array.from(atob(hash.substring(6)), el => el.charCodeAt()), { to: 'string' });
 				if (!songData.startsWith('{')) { // XXX: old format
 					songData = { code: songData, sampleRate: 8000, mode: 'Bytebeat' };
 				} else {
@@ -803,7 +807,7 @@ globalThis.bytebeat = new class {
 		this.setCounterValue(this.byteSample);
 	}
 	setCodeSize(value) {
-		this.controlCodeSize.textContent = this.formatBytes(new Blob([value]).size);
+		this.controlCodeSize.textContent = `${this.formatBytes(new Blob([value]).size, 1)} (${window.location.href.length}c)`;
 	}
 	setCounterValue(value) {
 		this.controlTime.value = this.settings.isSeconds ?
@@ -925,15 +929,18 @@ globalThis.bytebeat = new class {
 	}
 	updateUrl() {
 		const code = this.editorValue;
-		const songData = { code };
-		if (this.songData.sampleRate !== 8000) {
-			songData.sampleRate = this.songData.sampleRate;
-		}
-		if (this.songData.mode !== 'Bytebeat') {
-			songData.mode = this.songData.mode;
-		}
 		this.setCodeSize(code);
-		window.location.hash = `#v3b64${btoa(String.fromCharCode.apply(undefined,
-			deflateRaw(JSON.stringify(songData)))).replaceAll('=', '')}`;
+		const codeArr = deflateRaw(code);
+		// First byte is mode, next 4 bytes is sampleRate, then the code
+		const outputArr = new Uint8Array(5 + codeArr.length);
+		outputArr[0] = ['Bytebeat', 'Signed Bytebeat', 'Floatbeat', 'Funcbeat'].indexOf(this.songData.mode);
+		outputArr.set(new Uint8Array(new Float32Array([this.songData.sampleRate]).buffer), 1);
+		outputArr.set(codeArr, 5);
+		// since we're dealing with Uint8Array I should use the non-map method I think - Chasyxx
+		let str = "";
+		for (let i = 0; i < outputArr.length; i++) {
+			str += String.fromCharCode(outputArr[i]);
+		}
+		window.location.hash = '4' + btoa(str).replaceAll('=', '');
 	}
 }();
