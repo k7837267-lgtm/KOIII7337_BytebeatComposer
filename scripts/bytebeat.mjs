@@ -35,13 +35,16 @@ globalThis.bytebeat = new class {
 		this.controlDrawMode = null;
 		this.controlPlaybackMode = null;
 		this.controlRecord = null;
+		this.controlSampleDivisor = null;
 		this.controlSampleRate = null;
 		this.controlSampleRateSelect = null;
 		this.controlScale = null;
 		this.controlScaleDown = null;
+		this.controlThemeStyle = null;
 		this.controlTime = null;
 		this.controlTimeUnits = null;
 		this.controlVolume = null;
+		this.controlVolumeDisplay = null;
 		this.drawBuffer = [];
 		this.drawEndBuffer = [];
 		this.editorElem = null;
@@ -51,7 +54,13 @@ globalThis.bytebeat = new class {
 		this.isPlaying = false;
 		this.isRecording = false;
 		this.playbackSpeed = 1;
-		this.settings = { drawMode: 'Waveform', drawScale: 0, isSeconds: false, volume: .5 };
+		this.settings = {
+			drawMode: 'Waveform',
+			drawScale: 0,
+			isSeconds: false,
+			themeStyle: 'Default',
+			volume: .5
+		};
 		this.songData = { mode: 'Bytebeat', sampleRate: 8000 };
 		this.init();
 	}
@@ -246,7 +255,7 @@ globalThis.bytebeat = new class {
 	expandEditor() {
 		this.containerFixedElem.classList.toggle('container-expanded');
 	}
-	formatBytes(bytes, mode = 0) {
+	formatBytes(bytes) {
 		if (bytes < 2e3) {
 			return bytes + 'B';
 		}
@@ -255,7 +264,7 @@ globalThis.bytebeat = new class {
 		const power1000s = (power1000i ? (bytes / (1000 ** power1000i)).toFixed(2) : bytes) + ['B', 'KB', 'MB', 'GB', 'TB'][power1000i];
 		const power1024i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)), 10);
 		const power1024s = (power1000i ? (bytes / (1024 ** power1000i)).toFixed(2) : bytes) + ['B', 'KiB', 'MiB', 'GiB', 'TiB'][power1024i];
-		return mode ? `${power1024s}/${[power1000s]}` : `${power1024s} (${[power1000s]})`
+		return `${power1024s}/${power1000s}`
 	}
 	generateLibraryEntry({
 		author, children, codeMinified, codeOriginal, cover, date, description, exotic, file,
@@ -390,10 +399,12 @@ globalThis.bytebeat = new class {
 		switch (e.type) {
 			case 'change':
 				switch (elem.id) {
+					case 'control-divisor': this.setSampleDivisor(elem.value); break;
 					case 'control-drawmode': this.setDrawMode(); break;
 					case 'control-mode': this.setPlaybackMode(elem.value); break;
 					case 'control-samplerate':
 					case 'control-samplerate-select': this.setSampleRate(+elem.value); break;
+					case 'control-theme-style': this.setThemeStyle(elem.value); break;
 				}
 				return;
 			case 'click':
@@ -464,6 +475,7 @@ globalThis.bytebeat = new class {
 		} catch (err) {
 			this.saveSettings();
 		}
+		this.setThemeStyle();
 		await this.initAudioContext();
 		if (document.readyState === 'loading') {
 			document.addEventListener('DOMContentLoaded', () => this.initAfterDom());
@@ -512,10 +524,11 @@ globalThis.bytebeat = new class {
 		['change', 'click', 'input', 'keydown'].forEach(
 			e => this.containerFixedElem.addEventListener(e, this));
 		const containerScroll = document.getElementById('container-scroll');
-		['click', 'mouseover'].forEach(e => containerScroll.addEventListener(e, this));
+		['change', 'click', 'mouseover'].forEach(e => containerScroll.addEventListener(e, this));
 
 		// Volume
 		this.controlVolume = document.getElementById('control-volume');
+		this.controlVolumeDisplay = document.getElementById('control-volume-display');
 		this.setVolume(true);
 
 		// Canvas
@@ -535,10 +548,13 @@ globalThis.bytebeat = new class {
 		this.controlPlayBackward = document.getElementById('control-play-backward');
 		this.controlPlayForward = document.getElementById('control-play-forward');
 		this.controlRecord = document.getElementById('control-rec');
+		this.controlSampleDivisor = document.getElementById('control-divisor');
 		this.controlSampleRate = document.getElementById('control-samplerate');
 		this.controlSampleRateSelect = document.getElementById('control-samplerate-select');
 		this.controlScale = document.getElementById('control-scale');
 		this.controlScaleDown = document.getElementById('control-scaledown');
+		this.controlThemeStyle = document.getElementById('control-theme-style');
+		this.controlThemeStyle.value = this.settings.themeStyle;
 		this.setScale(0);
 
 		// Time counter
@@ -840,6 +856,12 @@ globalThis.bytebeat = new class {
 		const direction = buttonElem === this.controlPlayForward ? 'forward' : 'reverse';
 		buttonElem.title = `Play ${isFast ? `fast ${direction} x${speed} speed` : direction}`;
 	}
+	setSampleDivisor(x) {
+		if (x != 0) {
+			x = Math.abs(x)
+			this.sendData({ divisor: x })
+		}
+	}
 	setSampleRate(sampleRate, isSendData = true) {
 		if (!sampleRate || !isFinite(sampleRate) ||
 			// Float32 limit
@@ -891,6 +913,19 @@ globalThis.bytebeat = new class {
 			this.controlScaleDown.removeAttribute('disabled');
 		}
 	}
+	setThemeStyle(value) {
+		if (!value) {
+			value = this.settings.themeStyle;
+			if (!value) {
+				value = this.settings.themeStyle = 'Default';
+				this.saveSettings();
+			}
+			document.documentElement.dataset.theme = value;
+			return;
+		}
+		document.documentElement.dataset.theme = this.settings.themeStyle = value;
+		this.saveSettings();
+	}
 	setVolume(isInit) {
 		let volumeValue = NaN;
 		if (isInit) {
@@ -900,7 +935,8 @@ globalThis.bytebeat = new class {
 			volumeValue = this.controlVolume.value / this.controlVolume.max;
 		}
 		this.controlVolume.value = this.settings.volume = volumeValue;
-		this.controlVolume.title = `Volume: ${(volumeValue * 100).toFixed(2)}%`;
+		this.controlVolume.title = `Volume: ${(volumeValue * 100).toFixed(0)}%`;
+		this.controlVolumeDisplay.textContent = `${(volumeValue * 100).toFixed(0)}%`;
 		this.saveSettings();
 		this.audioGain.gain.value = volumeValue * volumeValue;
 	}

@@ -20,7 +20,7 @@
 			<div class="controls">
 				<div class="controls-group controls-grow">
 					<button id="control-counter-units" class="control-button" title="Time units">t</button>
-					<input type="text" id="control-counter" value="0" title="Set time to jump along the timeline then press Enter">
+					<input type="text" id="control-counter" class="control-text" value="0" title="Set time to jump along the timeline then press Enter">
 				</div>
 				<div class="controls-group">
 					<button id="control-stop" class="control-button" title="Stop and reset">
@@ -67,7 +67,7 @@
 					<option value="Tanmode" title="mode by psub, taken from psubscirbe-bytebeat.neocities.org">Tanmode</option>
 				</select>
 				<div class="controls-group controls-grow">
-					<input type="text" id="control-samplerate" title="Set sample rate (in Hz) then press Enter">
+					<input type="text" id="control-samplerate" class="control-text" title="Set sample rate (in Hz) then press Enter">
 					<select id="control-samplerate-select" class="control-select" title="Sample rate">
 						<option value="4000">4kHz</option>
 						<option value="6000">6kHz</option>
@@ -82,6 +82,9 @@
 						<option value="48000">48kHz</option>
 					</select>
 				</div>
+				<div class="controls-group controls-grow" width="128">
+					<input value="1" type="number" id="control-divisor" class="control-text" title="Set sample rate divisor then press Enter">
+				</div>
 				<div class="controls-group">
 					<button id="control-rec" class="control-button" title="Record to the file">
 						<svg><use xlink:href="#symbol-rec"></use></svg>
@@ -92,13 +95,14 @@
 					<button id="control-expand" class="control-button" title="Expand the code editor">
 						<svg><use xlink:href="#symbol-expand"></use></svg>
 					</button>
-					<span id="control-codesize" title="Code size in bytes (link size in characters)"></span>
+					<span id="control-codesize" class="control-text" title="Code size in bytes (link size in characters)"></span>
 				</div>
 				<div class="controls-group controls-grow">
-					<input id="control-volume" type="range" min="0" max="1" value=".5" step="any" title="Volume">
+					<input id="control-volume" type="range" min="0" max="1" value=".5" step="0.01" title="Volume">
 				</div>
+				<span class="control-label" id="control-volume-display">...%</span>
 			</div>
-			<div id="error"></div>
+			<pre id="error"></pre>
 			<div id="canvas-container" title="Click to play">
 				<canvas id="canvas-main" width="1024" height="256"></canvas>
 				<div id="canvas-timecursor"></div>
@@ -113,7 +117,7 @@
 				<summary class="library-header">
 					<h1>Info &mdash; about bytebeat</h1>
 				</summary>
-				<article id="info" class="library-container entry-top">
+				<article id="info" class="library-container entry-top loaded">
 					Bytebeat music (or one-liner music) was invented in September 2011.
 					They're generally a piece of rhythmic and somewhat melodic music with no score, no instruments, and no real oscillators.
 					It's simply a single-line formula that defines a waveform as a function of time, processed (usually) 8000 times per second, resulting in an audible waveform with a 256-step resolution from silence (0) to full amplitude (256).
@@ -162,6 +166,26 @@
 					<svg class="loading-wait hidden"><use xlink:href="#symbol-wait"/></svg>
 				</summary>
 				<div id="library-bsquareii" class="library-container"></div>
+			</details>
+			<details class="library-content">
+				<summary class="library-header">
+					<h1>Settings</h1>
+				</summary>
+				<article id="settings" class="library-container entry-top loaded">
+					<label class="settings-block">
+						<select id="control-theme-style" class="control-select" title="Player style">
+							<option value="Default" selected>Default</option>
+							<option value="Blue">Blue</option>
+							<option value="Cake">Cake</option>
+							<option value="Dusk">Dusk</option>
+							<option value="Green">Green</option>
+							<option value="Orange">Orange</option>
+							<option value="Purple">Purple</option>
+							<option value="Teal">Teal</option>
+						</select>
+						<b>Theme style</b>
+					</label>
+				</article>
 			</details>
 			<footer>
 				<a class="link" href="https://dollchan.net/btb" title="Bytebeat discussion threads" target="_blank">Dollchan's btb discussion board</a><br>

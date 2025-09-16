@@ -3,6 +3,7 @@ class audioProcessor extends AudioWorkletProcessor {
 		super(...args);
 		this.audioSample = 0;
 		this.byteSample = 0;
+		this.divisorStorage = [null, null];
 		this.errorDisplayed = true;
 		this.func = null;
 		this.getValues = null;
@@ -13,6 +14,7 @@ class audioProcessor extends AudioWorkletProcessor {
 		this.lastFuncValue = [null, null];
 		this.lastTime = -1;
 		this.outValue = [0, 0];
+		this.sampleDivisor = 1;
 		this.sampleRate = 8000;
 		this.sampleRatio = 1;
 		Object.seal(this);
@@ -62,6 +64,7 @@ class audioProcessor extends AudioWorkletProcessor {
 			return true;
 		}
 		let time = this.sampleRatio * this.audioSample;
+		let divisor = this.sampleDivisor;
 		let { byteSample } = this;
 		const drawBuffer = [];
 		for (let i = 0; i < chDataLen; ++i) {
@@ -70,6 +73,7 @@ class audioProcessor extends AudioWorkletProcessor {
 			if (this.lastTime !== currentTime) {
 				let funcValue;
 				const currentSample = Math.floor(byteSample);
+				const DivisorMet = (((currentTime % divisor) + divisor) % divisor) == 0
 				try {
 					if (this.isFuncbeat) {
 						funcValue = this.func(currentSample / this.sampleRate, this.sampleRate);
@@ -93,7 +97,7 @@ class audioProcessor extends AudioWorkletProcessor {
 				let ch = 2;
 				while (ch--) {
 					try {
-						funcValue[ch] = +funcValue[ch];
+						funcValue[ch] = this.divisorStorage[ch] = DivisorMet ? +funcValue[ch] : +this.divisorStorage[ch];
 					} catch (err) {
 						funcValue[ch] = NaN;
 					}
@@ -192,6 +196,9 @@ class audioProcessor extends AudioWorkletProcessor {
 		}
 		if (data.resetTime === true) {
 			this.resetTime();
+		}
+		if (data.divisor !== undefined) {
+			this.sampleDivisor = data.divisor;
 		}
 		if (data.sampleRate !== undefined) {
 			this.sampleRate = data.sampleRate;
