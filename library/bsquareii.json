@@ -402,6 +402,20 @@
         "codeOriginal": "x=[t*[4,4.5,5,3][a=t>>15&3]|t>>(b=t>>13&15),t*'6984'[a]|t>>b].reduce((a,b)=>(a&255)/2+b%256/2),x/4+(1e5/(t&[4095,4095,0,2047,4095,4095,1023,511,4095,4095,1023,4095,2047,4095,1023,511][t>>12&15])&64)+(t*random()&t>>6|t>>6&t>>2&t>>3|t>>4)%256/4+t*(t&t>>10)*(-t>>9&1)%256/4"
     },
     {
+        "name": "chio (stereo version 2)",
+        "remix": {
+            "author": "BaenHoHoHo",
+            "name": "chio",
+            "url": "https://www.reddit.com/r/bytebeat/comments/17br56a/chio/"
+        },
+        "url": "https://ihsoyct.github.io/index.html?comments=17db99m&id=k6lzfgq",
+        "date": "Oct 26, 2023",
+        "sampleRate": 48000,
+        "mode": "Floatbeat",
+        "stereo": true,
+        "codeOriginal": "t*=.75,this.l??=Array(12288).fill(0),n=min(1,t/2048%8),m=(127-(t?(o+=2**(1-n*(t>>14&7)/12+1)):o=0)%255)*(-t>>6&255)+l[_=t%l.length|0],l[_-1]=m/1.5,d=(t?x=(32*x-m/32E3)/33:x=0),[d*abs(sin(t*PI/131072)),d*abs(cos(t*PI/131072))]"
+    },
+    {
         "name": "very cool remix of lhphr's pyramid dungeon",
         "url": "https://dollchan.net/btb/res/2628.html#2637",
         "date": "Nov 13, 2023",
