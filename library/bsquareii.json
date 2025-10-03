@@ -314,6 +314,24 @@
         "codeOriginal": "t/=4,S=x=>sin(x*PI/128),((128+81*asin(S(2*t*(t&16384?7:5)*(3-(3&t>>9)+(3&t>>8))>>(3&-t>>16)))*(~t>>12&1))%256/1.5+((t*(t&16384?7:5)*(3-(3&t>>9)+(3&t>>8))>>(3&-t>>2))*(t>>12&1))%256/1.5+'1011001010101110'[t>>10&15]*int(sin(16*cbrt(t%1024)))*128+128+(1.5*(a=t*'57'[t>>14&1])&t>>5&255)/4+(a&t>>5&255)/4+((t*2*[5,7.5,5,7.5,7,10.5,7,10.5][t>>12&7]&255)*(t>>4&255)>>8)/4+exp(S(t*2*'0505050507070707'[t>>11&15]))*64-64)/2.55"
     },
     {
+        "name": "\"hardcore\" or whatever remix of running man",
+        "remix": {
+            "author": "viznut",
+            "name": "Another attempt at melody construction",
+            "url": "https://www.pouet.net/topic.php?which=8357&page=9#c388930"
+        },
+        "date": "Sep 06, 2023",
+        "sampleRate": 11025,
+        "codeOriginal": [
+            "a=(t*(3+(1^t>>10&5))*(5+(3&t>>14))>>(t>>8&3))%256/4,",
+            "b=int(sin(16*cbrt(t&8192?t&16384?t%2048:t%1024:t%4096)))*64+64,",
+            "c=(t>>12&1)*(t*random()|(t%32768<24576?t>>4:t>>2))%256/4,",
+            "d=(t*(5+(3&t>>14))&t>>4)%256/4,",
+            "e=(1.5*t*(5+(3&t>>14))&t>>4)%256/4,",
+            "[a,a+b,a+b+c,a+b+c+d,b+d,b+c+d+e,a+b+c+d+e,a+b+c+d+e][t>>16]/1.25"
+        ]
+    },
+    {
         "name": "other aturned777 remix i made a few weeks ago",
         "mode": "Floatbeat",
         "date": "Sep 16, 2023",
@@ -400,6 +418,28 @@
         "date": "Oct 21, 2023",
         "sampleRate": 9000,
         "codeOriginal": "x=[t*[4,4.5,5,3][a=t>>15&3]|t>>(b=t>>13&15),t*'6984'[a]|t>>b].reduce((a,b)=>(a&255)/2+b%256/2),x/4+(1e5/(t&[4095,4095,0,2047,4095,4095,1023,511,4095,4095,1023,4095,2047,4095,1023,511][t>>12&15])&64)+(t*random()&t>>6|t>>6&t>>2&t>>3|t>>4)%256/4+t*(t&t>>10)*(-t>>9&1)%256/4"
+    },
+    {
+        "name": "IAPOTO combined with T's 80Khz beat",
+        "remix": [
+            {
+                "author": "emelchenko",
+                "name": "80kHz Beat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/12prupa/80khz_beat/"
+            },
+            {
+                "author": "psubscirbe",
+                "name": "im actually proud of this one ",
+                "url": "https://www.reddit.com/r/bytebeat/comments/122s69x/im_actually_proud_of_this_one/"
+            }
+        ],
+        "url": [
+            "https://www.reddit.com/r/bytebeat/comments/17e1lvu/iapoto_combined_with_ts_80khz_beat_64000_hz/",
+            "https://ihsoyct.github.io/index.html?comments=17e1lvu"
+        ],
+        "date": "Oct 22, 2023",
+        "sampleRate": 64000,
+        "codeOriginal": "T=t,t>>=1,a=(b,c)=>(t>>b)*[16,19,21,2,19,3,9,18,2,5][(t>>13)%9]|c,d=e=>t>>e,[A=(a('21'[(t>>17)%2],t>>5)+a('32'[(t>>18)%2],t>>6))|d(5),B=(a('21'[(t>>17)%2],t>>5)+a('32'[(t>>18)%2],t>>6))|d(6)],A%256/4+B%256/4+((T>>(T>>(T>>10)))*(1+(T&T>>15))|T>>6)%256/2"
     },
     {
         "name": "chio (stereo version 2)",
@@ -508,14 +548,15 @@
         "url": "https://dollchan.net/btb/res/2628.html#4507",
         "date": "Sep 20, 2024",
         "sampleRate": 32000,
+        "stereo": true,
         "codeOriginal": "a=(t,x)=>{for(A=B=0;A<5;A++)B+=t*x**A*2**((t>>13+(t>>18&1)&7^1)/12)&192;return B/A},b=1e5/(t-8192&4**7-1),[a(t,1.5)*2/3+(b&63)*1.5+16,a(t,1.503)*2/3+(b&63)*1.5+16]"
     },
     {
         "name": "notitle No.1",
         "remix": {
-            "name": "minified moment",
-            "author": "ANoUserXD",
-            "url": "https://dollchan.net/btb/res/2628.html#4643"
+            "author": "BaenHoHoHo",
+            "name": "suicide..",
+            "url": "https://dollchan.net/btb/res/2628.html#4683"
         },
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1gitpu2/notitle_no1/",
@@ -580,6 +621,15 @@
     },
     {
         "name": "Zack's bytewave engine but it's the nutshack",
+        "remix": {
+            "author": "NikNemメ",
+            "name": "Ghost road",
+            "url": "https://dollchan.net/btb/res/204.html#4406"
+        },
+        "cover": {
+            "name": "The Nutshack (intro)",
+            "url": "https://www.youtube.com/watch?v=MP1vQVTT_mM"
+        },
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1htzu3k/zacks_bytewave_engine_but_its_the_nutshack/",
         "date": "Jan 05, 2025",

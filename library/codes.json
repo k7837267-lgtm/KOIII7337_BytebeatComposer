@@ -621,6 +621,17 @@
                 "codeOriginal": "k=x=>max(0,(32*sin(x*PI/32)-31))*16,(((v=x=>k(t*x*1.0595**('0010010030705503'[t>>13&15]-12+3*(t>>18&1))),v(1)+v(1.5))*4*(!(t>>12&1))+(t*sin(t>>2)&255)*(!(t>>10&3))*(t>>13&1)*(t>>14>31)+(sqrt(512*(t&8191))&127)*(!(t>>11&3))*(t>>15>31))&32)*7.99"
             },
             {
+                "name": "pov: you are lost in the forest and then heard this",
+                "remix": {
+                    "author": "Chasyxx",
+                    "name": "cave_7",
+                    "url": "https://dollchan.net/btb/res/756.html#1762"
+                },
+                "date": "Aug 31, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": "t/=2,r=(x,y,z)=>(t||(a=Array(n=16383).fill(y)),c=x%256+a[t%n],a[t%n]=c*z,c),c=10*t/(4+(t>>16&15))*(1+(t>>17&3))>>!(t>>15&3)&128,o=r(c*1.00009**(-t%16384)%256/4,64,.8)/2*3|0"
+            },
+            {
                 "name": "chio",
                 "mode": "Floatbeat",
                 "url": [
@@ -761,6 +772,10 @@
             },
             {
                 "name": "tuca donka remake (unfinished)",
+                "cover": {
+                    "name": "CURSEDEVIL, DJ FKU, Skorde - TUCA DONKA",
+                    "url": "https://youtu.be/YDpNRw5geSA?si=G9yQ1aFVZlt5nlDI"
+                },
                 "mode": "Floatbeat",
                 "url": [
                     "https://www.reddit.com/r/bytebeat/comments/1dkobcn/tuca_donka_remake_unfinished/",
@@ -3124,11 +3139,30 @@
     },
     {
         "author": "GDPlayer_1035",
-        "name": "this is mf bytebeat (pcm test)",
-        "url": "https://www.reddit.com/r/bytebeat/comments/1b2yisq/this_is_mf_bytebeat_pcm_test/",
-        "date": "Feb 29, 2024",
-        "file": "gdplayer.js",
-        "fileOriginal": true
+        "children": [
+            {
+                "name": "this is mf bytebeat (pcm test)",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1b2yisq/this_is_mf_bytebeat_pcm_test/",
+                "date": "Feb 29, 2024",
+                "file": "gdplayer.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "wow i finally figured out how to do a kick drum",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ivhw7p/wow_i_finally_figured_out_how_to_do_a_kick_drum/",
+                "date": "Feb 22, 2025",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "codeOriginal": "kick=sin(cbrt(t%2**14)*3)*((-(t>>7)%128)/128+1),hihat=random()*((-(t>>6)%128)/128+1),snare=((random()-0.5)*2)*((-((16384)+t>>8)%128)/128+1)*0.4+sin(cbrt((16384+t)%2**15)*5)*((-((16384)+t>>8)%128)/128+1),(kick+hihat+snare)/2"
+            },
+            {
+                "name": "/srs or /j",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1nw1h80/srs_or_j/",
+                "date": "Oct 02, 2025",
+                "sampleRate": 48000,
+                "codeOriginal": "SAMPLE_RATE=48e3,A4=440,chords=[[1,4,8],[1,6,8],[-3,1,4],[-3,1,6]],leads=[1,4,8,1,6,8,1,4,-3,1,4,-3,1,6,-3,4],basses=[1,1,1,1,-3,-3,-3,-6],sem=s=>A4*2**(s/12),mul=s=>256*s/SAMPLE_RATE,chn=4,arpidx=Math.floor(t/65536),leadidx=Math.floor(t/16384),bassidx=Math.floor(t/32768),note=(chord=chords[arpidx%chords.length])[Math.floor(t/1024)%chord.length],arppw=t/512,arp1=t*mul(sem(note))%256>arppw%256?256/chn:0,lead=128<t*mul(sem(leads[leadidx%leads.length]))%256?(-t/64&255)/chn:0,bassfreq=sem(basses[bassidx%basses.length]-48),bass=(t*mul(bassfreq)%128+t*mul(bassfreq)%129)/(chn/1.6),out=bass+arp1+lead"
+            }
+        ]
     },
     {
         "author": "Consistent_Nerve_185",
