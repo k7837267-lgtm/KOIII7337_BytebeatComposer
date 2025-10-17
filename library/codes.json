@@ -3678,7 +3678,8 @@
                     "return max(min(o*320-196,255),0)",
                     "",
                     "})()"
-                ]
+                ],
+                "codeMinified": "x=(k,i)=>i?x(abs(k-1*i),i-1):k,d=t=>(x(tan(sin(t/256*PI)),3)*4^0)/4,q=t=>d(t/((t>>15&3)+[1,1.1,1.2,5/4][t>>18&3])*5/4)*2*(1-(t&32767)/8**5)-1,(n=>{for(i=o=1;i<8;i++)o+=q(t-(i-1)*2e4)/i/7;return max(min(o*320-196,255),0)})()"
             },
             {
                 "name": "number 69420 ei koskaan or somrhing",
@@ -3698,7 +3699,8 @@
                     "(wt(int(l)+5)*(l!=\" \")||0)/3+",
                     "(wt(int(l)+10)*(l!=\" \")||0)/3",
                     ")/1.5-0.5"
-                ]
+                ],
+                "codeMinified": "f=(v,x,s=.1)=>x?f(abs(v-s*4)+s,x-1):v,w=(t,x)=>f(cos(t/48000*PI*x/2),16,1e-3)+.01,wt=j=>w(t,440*2**(j/12)/2)*10-2,l=\"1144  11  113344  11  11334400001144  11  113344  6 666 66442222\"[t/1.2>>12&63],(wt(l)*(L=l!=\" \")/3+wt((l|0)+5)*L/3+wt((l|0)+10)*L/3)/1.5-.5"
             }
         ]
     },
@@ -3822,6 +3824,17 @@
                 "sampleRate": 48000,
                 "stereo": true,
                 "codeOriginal": "r=t*8/7,l=16384,u=8192,c=4096,x=j=>min(max((s=(a,b)=>((t*2**(parseInt(a,36)/12)/b*1.14/4%64+(sin(t*PI/l/4)*16+32)&64)-32)/1.25,w=r=>r>0&&(e=a=>s('C7EGG0J7C7EGG0JN'[15&r>>13],a*'1111121211111211'[15&r>>13]),e(1)+e(j))/1.25*(1.25-r/u%1*[.25,.75][1&r>>19]),w(r)+w(r-(d=24576))/2+w(r-2*d)/3+w(r-3*d)/4+(b=a=>s('CC57'[3&r>>18],a/'12'[r>>19&1]),b(8)+b(4/j))/1.25*(r/l%2)*(1.25-r%u/1e4)+(random()-.5)*80*(1-r/u%1)**4+atan(sin(6*sqrt(r%u)**.7))*100*1.31*(1-r/u%1)**.25*!(r&u)*'10100110'[r>>14&7]+((t*j*sin(t>>2)&32)-16)*(1.33-r/l/2%1)**2*!(~r&2*l)),-128),128)/128,[x(1.005),x(.995)]"
+            },
+            {
+                "url": "https://www.reddit.com/r/bytebeat/comments/1o29xox/comment/niqqg21/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+                "remix": {
+                    "author": "spaceboi0713",
+                    "name": "investigation?",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1o29xox/something_again/"
+                },
+                "date": "Oct 10, 2025",
+                "sampleRate": 37500,
+                "codeOriginal": "(((((t/2*2**([(t>>18&1?(t>>17&1?-14:-16):-12),((t>>17&3)==3?2:3),((t>>17&3)==3?3:5),((t>>17&3)==3?5:7)][t>>12&3]/12)&(t>>12&1?t>>7:~t>>7)&127)))+((t*2**([0,3,2,3,10,3,2,3][t>>13&7]/12)&127)&255&(t>>12&3?~t>>6:255)))%256+((((t/2*2**([(t>>18&1?(t>>17&1?-14:-16):-12),((t>>17&3)==3?2:3),((t>>17&3)==3?3:5),((t>>17&3)==3?5:7)][t>>12&3]/12)&(t>>12&1?t>>7:~t>>7)&127)))*((t*2**([0,3,2,3,10,3,2,3][t>>13&7]/12)&127)&255&(t>>12&3?~t>>6:255)))%256/8)/1.0625"
             }
         ]
     },
@@ -4151,6 +4164,29 @@
     {
         "author": "spaceboi0713",
         "children": [
+            {
+                "name": "insanity",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1o1gvr2/i_think_this_is_defo_better_than_i_expected/",
+                "date": "Oct 08, 2025",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "((t*[0.7,1.05,1.23,1.56][t>>12&3])*[0.99,0.93,1.246,0.83][t>>16&3]&80)+(t*[0.348,0.322,0.436,0.29][t>>16&3]&80)+(t*[,1.045][t>>13&1]*[0.99,0.93,0.99,0.83][t>>16&3]&50)",
+                    "// i can say this is highly detailed in a simplistic way which makes it all the more unique :O"
+                ]
+            },
+            {
+                "name": "investigation?",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1o29xox/something_again/",
+                "date": "Oct 09, 2025",
+                "sampleRate": 38000,
+                "codeOriginal": [
+                    "(t*[,0.595,0.669,0.75][t>>15&3]&-t>>5&200)+(t*[0.5,,,][t>>15&3]*[1,0.805][t>>19&1]&-t>>5&200)+(t*[1,1.19,1.12,1.19][t>>16&3]&40)+(t*t&24)",
+                    "/*i tried to make something long and diverse :D",
+                    "why i feel like 1/2x zoom better on bytebeats higher than 32000 hz",
+                    "ths one's fine tho",
+                    "also, you can remove \"t*t&24\", won't change much*/"
+                ]
+            },
             {
                 "name": "ｅｖａｃｕａｔｉｏｎ",
                 "description": "the most complicated thing i have made so far.",
