@@ -127,17 +127,23 @@
         "codeOriginal": "t?0:A=Array(A2=12e3).fill(0),p=.75*t*2**('B*918/916-918/91B*918/916-918/91>*;2:1;26/;2:1;2>*;2:1;26/;2:1;2A*;291;28/;291;2A*;291;28/;291;2B*=-;,=-91=-;,=-B*=-;,=-91=-;,=-E*>6=4>692>6=4>6E*>6=4>692>6=4>6D*<3:1<380<3:1<3D*<3:1<380<3:1<3D(=4<3=481=4<3=4D(=4<3=481=4<3=4B(:18/:16.:18/:1B(:18/:16.:18/:1B&;2:1;26/;2:1;2B&;2:1;26/;2:1;2@&;,9*;,8/;,9*;,@&;,9*;,8/;,9*;,@%=-;,=-91=-;,=-@%=-;,=-91=-;,=->*=-;,=-92=-;,=->*=-;,=-92=-;,=->,8/6-8/428/6-8/>,8/6-8/428/6-8/=-412/4192412141=-412/4192412141;-6341613/634163;-6341613/634163;,8/6-8/528/6-8/;,8/6-8/528/6'.charCodeAt(t>>12)/12-4),r=(.5*p%63+.5*p%64+.5*p%96+.5*p%95+.5*p%114+.5*p%113)/3.5+A[t%A2],A[t%A2]=r/2.5,r+random()*(t&4096)*(t>>14&1)/128+32*sin(8e4/(t&16383))*(-t>>14&1)+12"
     },
     {
+        "name": "Sync.fil 2",
+        "remix": {
+            "author": "absolute197",
+            "name": "sync.fil"
+        },
+        "url": "https://web.archive.org/web/20230605015010/https://reddit.com//r/bytebeat/comments/140y9dx/syncfil_2_remix_of_syncfil_by_absolute197/",
+        "date": "Jun 04, 2023",
+        "sampleRate": 38544,
+        "codeOriginal": "l=t*.25*[1,.8,.7,.65][3&t>>16]*(3&t>>13),min(32+(l%128+l%127+l%96+l%95+l%64+l%63+l%48+l%47+l%32+l%31+l%24+l%23+l%16+l%15+l%12+l%11+l%8+l%7)/4+32*sin(4e4/(t&16383))+(random()*(-t&4096)&15)+(t*sin(t>>3)*(t>>14&1)&~t>>8&63),255)"
+    },
+    {
         "name": "sin 'charCodeAt'.exe II (#2)",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1459zpj/sin_charcodeatexe_ii_2/",
         "date": "Jun 09, 2023",
         "sampleRate": 48000,
         "codeOriginal": "a=[4,4.25,3.55,4.25][t>>17&3]*t/'@+=$'.charCodeAt(t>>14&3),sin(a)+sin(a/3)+asin(sin(a/6))"
-    },
-    {
-        "name": "Random goofy ahh bytebeat",
-        "date": "Jun 12, 2023",
-        "codeOriginal": "t*(t*3>>12&t*1.5>>2)>>(t*1.5>>8&15)/(t*4&t*6&t*10|t*.75>>3|t&t*3&t*9|t*1.5>>8)|t*1.5>>3"
     },
     {
         "name": "Another C compatible bytebeat again",
@@ -177,13 +183,6 @@
         "date": "Jul 02, 2023",
         "sampleRate": 48000,
         "codeOriginal": "max(min(sin(8e3/(t*1.25%32768))*256+(a=t*[1,1,1.2,.8][t*1.25>>16&3])%256/8+a*1.5%256/8+a*4%256/8+a*5%256/8+(t*random()*([b=~t*1.25>>13,b,b,~t*1.25>>12][t*1.25>>15&3]&1)&32),255),0)"
-    },
-    {
-        "name": "wth is this?",
-        "url": "https://www.reddit.com/r/bytebeat/comments/14p8imv/wth_is_this/",
-        "date": "Jul 03, 2023",
-        "sampleRate": 32000,
-        "codeOriginal": "128+96*sin(t/(t>>12&1^t>>13&5^t>>14&7)+!t>>2&7)"
     },
     {
         "name": "simple step sequencer remix",
@@ -925,5 +924,25 @@
         "sampleRate": 40000,
         "mode": "Floatbeat",
         "codeOriginal": "t?0:(f=[],lp=(a,c)=>(li=fi++,f[li]??=0,f[li]+=(a-f[li])*c),hp=(a,c)=>a-lp(a,c),bp=(a,hc,lc)=>hp(lp(a,lc),hc),s=(a,cu,cd)=>(si=fi++,f[si]??=0,sr=f[si],f[si]+=(a-sr)*(sr<a?cu:cd)),dm=1e4,d=(a,h,m,fbfn=x=>x)=>{di=fi++;f[di]??=Array(dm).fill(0);dw=dt%dm;df=a;du=0;for (let hd of h){dr=(dm+dt-round(hd.t))%dm;df+=f[di][dr]*hd.fb;du+=f[di][dr]*hd.m;}f[di][dw]=fbfn(df);return a*(1-m)+du*m;}),fi=0,dt=t,v=t/(4-(t>>15&1^t>>13&3|t>>19&3^t>>14&1))*(1+(t>>16&3^t>>15&1)/3),m=sin(v*PI/128+sin(v/256*PI)**2*(1+2*(t/4**7%1))+sin(v*PI/64)**3+cos(v*PI/32)**4*(1-t/8192%1))*(1-t%4**7%12288/8192%1/2)**3,d(bp(m,.1,.6),[{t:200+sin(t/4e3)*30,m:.3,fb:0},{t:7e3,m:.2,fb:.7}],.6,x=>hp(x,.04))*3"
+    },
+    {
+        "name": "random() music test 1",
+        "url": "https://www.reddit.com/r/bytebeat_2/comments/1o5bbkd/random_music_test_1/",
+        "date": "Oct 12, 2025",
+        "sampleRate": 32000,
+        "mode": "Floatbeat",
+        "codeOriginal": "T=9e3,t?0:R=int(random()*12),p=x=>2**(x/12),m=[0,2,4,5,7,9,11],t/128*2**((m[(t%T?r:r=int(random()*7))%m.length]+R)/12)%1/2*(1-t/T%1)+tanh(sin(b=t/1024*PI*2**(R/12))*3+tan(b))/3+random()/3*(1-t*4/T%1)*(t*4%T?h:h=int(random()*2))+sin(cbrt(t*2%T)*11)/2*(t*2%T?k:k=int(random()*2))+sin(t/7|t/11)/3*(1-t/T%1)*(t%T?s:s=int(random()*2))-.2"
+    },
+    {
+        "name": "stereo test 3",
+        "remix": {
+            "author": "ANoUserXD",
+            "name": "robert type beat"
+        },
+        "url": "https://www.reddit.com/r/bytebeat_2/comments/1o64n5c/stereo_test_3_remix_of_robert_type_beat_by_me/",
+        "date": "Oct 13, 2025",
+        "sampleRate": 28000,
+        "stereo": true,
+        "codeOriginal": "st=(l,S,f)=>(t>>6&t%(50+l)|t>>7&t%(75+l)|t>>8&t%(100+l)|t>>9&t%(150+l)|t>>10&t%(200+l))*abs(f*2-1)/2+random()*(-t>>6&255)**3/4**8*(t>>14&1)+(sign(S(8192/(t&4095)))+1)*64*\"00101001\"[t>>12&7],[st(0,sin,sin(t*PI/4096))/2+st(-1,sin,cos(t*3*PI/4**7))/2,st(0,cos,cos(t*PI/8192))/2+st(1,cos,sin(t*5*PI/4**8))/2].map(x=>x/2)"
     }
 ]
