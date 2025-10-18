@@ -3431,6 +3431,17 @@
         ]
     },
     {
+        "author": "Phoneposter",
+        "description": "Write a chord progression player that's shorter and more concise than this one but has far more capabilities and can play rare/strangely-named chords (found in jazz/prog for instance), better if you use cool synths (Float64 wavetables, FM, soft pads) with rhythms, envelopes (ADSR), effects (N-order IIR filters, FDN reverb, chorus, dynamic compression) and arpeggios with some drums (pattern generation (rush/rolls, dynamics, off-beat/humanized swing), membrane simulation (snares, hi-hat, cymbal, bells)), even better if it's microtonal (are new chord notations required for this?) and not the standard 12-TET. also had to compress the JS because it was too long.",
+        "url": "https://dollchan.net/btb/res/3.html#4972",
+        "name": "Chord progression player",
+        "date": "Nov 16, 2024",
+        "mode": "Funcbeat",
+        "sampleRate": 48000,
+        "file": "Phoneposter.js",
+        "fileOriginal": true
+    },
+    {
         "author": "ChrisRM380",
         "children": [
             {
@@ -3548,7 +3559,8 @@
                 "date": "Jul 19, 2025",
                 "mode": "Floatbeat",
                 "sampleRate": 44100,
-                "codeOriginal": "s=7500,length=7500*4,t||(ltsm=[0,0,0],hltsm=[0,0],echorev=Array(length).fill(0)),clip=x=>atan(x),clamp=(x,y)=>min(max(x,-y),y),lowp=(w,x,y)=>(ltsm[w]+=(x-ltsm[w])*y,ltsm[w]),higp=(w,x,y)=>(hltsm[w]+=(x-hltsm[w])*y,x-hltsm[w]),rvb=(i,length,f)=>(echorev[t%length]+=i,echorev[t%length]*=f,echorev[t%length]),saw=x=>clip(tan(x)),tet12=x=>pow(2,x/12),gate=(x,y,z)=>x?y:z,chrdv1=[0,-3,4,2],chrdv2=[4,0,7,5],mel=[[0,4,7,0],[-3,4,7,-3],[4,7,11,4],[4,7,11,4]],ldr=[4,4,4,2],dtbls=[[1,0,0,0,0,0,0,0],[0,0,0,0,1,0,0,1],[2,1,2,[4,2][t/s%2|0]]],chrd=saw(tet12(chrdv1[t/16/s%4|0])*t/140)*.2+saw(tet12(chrdv2[t/16/s%4|0])*t/140)*.2,mlb=saw(tet12(mel[t/16/s%4|0][t/2/s%4|0])*t*2/140)*.2,kk=sin(4/((t/4/s%1)+.075))*16*exp(-t/4/s%1/.1)*dtbls[0][t/1/s%8|0],snk=sin(4/((t/s%1)+.095))*4*exp(-t/s%1/.1),snn=lowp(2,sin(sin(t*1e32)*1e8),.2)*exp(-t/s%1/.2),sn=(snk*2+snn*4)*dtbls[1][t/s%8|0],hh=higp(0,sin(sin(t*1e32)*1e8),.8)*exp(-t*dtbls[2][t/2/s%4|0]/s%1/.07),ld=sign(sin((t+4/((t/4/s%2)+.01)*6)*tet12(ldr[t/16/s%4|0])*4/140))*exp(-t/4/s%1/.7)+sign(sin((t+4/((t/4/s%2)+.01)*6)*tet12(5)*tet12(ldr[t/16/s%4|0])*4/140))*exp(-t/4/s%1/.7),(clamp(lowp(0,chrd,exp(-t/s%1/.2))*exp(t/s%4/2.5)*.2,.3)+rvb(lowp(1,mlb,exp(-t/s%2/.4)),length,.7))*.7+gate(t/s>64,(clip(kk)*.3+clip(sn)*.3+hh)*.95,0)+gate(t/s>128,higp(1,ld*.2,exp(-t/2/s%8/.8)),0)"
+                "file": "TI3699.js",
+                "fileOriginal": true
             },
             {
                 "name": "lankku",
@@ -3556,7 +3568,8 @@
                 "date": "Sep 06, 2025",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
-                "codeOriginal": "s=3500,t||(d=new Float32Array(512),sd=new Float32Array(512)),cl=x=>atan(x),lpf=(w,x,y)=>(d[w]+=(x-d[w])*y,d[w]),hpf=(w,x,y)=>x-lpf(w,x,y),rf=(v,w,x,y)=>(d[v]+=d[w]+=(x-d[v]-d[w])*y,d[v]),rd=x=>sin(x*1e32)*1e16,hf=(v,w,x,y)=>hpf(w,v,.97)*exp(-t/s/x%1/y),sld=(v,w,x,y)=>(sd[v]+=sd[w]+=(x-sd[w])/y,sd[v]),mm=[7,7,3,0][t/s/16%4|0],ep=[3,5,2,3,0,2,-2,0,-4,-2,-5,-4,-7,-5,-9,-7,-10,-9,-12,-10,-14,-12,-16,-14,-17,-16,-19,-17,-21,-19,-22,-21],hx=hf(cl(tan(t/128*8*pow(2,mm/12)))*1,0,1,.41)*8+hf(cl(tan(t/1.5/128*8*pow(2,mm/12)))*1,0,3,.41)*8+hf(cl(tan(t/2/128*8*pow(2,mm/12)))*1,0,6,.41)*8+hf(cl(tan(t/3/128*8*pow(2,mm/12)))*1,0,9,.41)*8,hh=hf(sin(rd(t)*8),1,2,.1)*8,kc=cl(sin(4/((t/s/2%1)+.085))*8*exp(-t/s/2%1/.2))*.5*(0b00101001>>(t/s/2%8|0)&1),sk=sin(4/((t/s/2%1)+.09996))*exp(-t/s/2%1/.1),ss=lpf(2,sin(rd(t))*4,.013)*exp(-t/s/2%1/.15),sn=cl(ss*8+sk*3)*.6*(0b01010000>>(t/s/2%8|0)&1),cy=hpf(3,sin(rd(t))*8,.999)*64*exp(-t/s/128%1/.05),sc=cl(tan(sld(0,1,1*pow(2,mm/12)*1,1200)/128))*.2+cl(tan(sld(2,3,1*pow(2,mm/12)*1.33,1200)/128))*.2,ech=t=>t>s*1024*1.75?0:t>s*128?sin(t/16*pow(2,ep[t/s%32|0]/12)*pow(2,(t/s/64&1?[0,5][t/s%2|0]:0)/12)*8)*exp(-t/s%1/.9)*.4:0,ec=ech(t)+ech(t-s*4)*.8+ech(t-s*8),out=(t>s*1024?0:hh+cy)*1.5+(t>s*1024*1.25?0:kc+sn)*1.5,out+=(t>s*1024?0:hx)+(t>s*1024*1.25?0:sc)+ec,out"
+                "file": "TI3699-2.js",
+                "fileOriginal": true
             }
         ]
     },
@@ -3797,6 +3810,29 @@
         "codeOriginal": "o=t/1024,(t*2**(1+[0,12,24,0,12,24,0,0][o&7]/12)*(t*2/([4,5,6,5][o/16&3]))+t/64)|(t>>64-(t*([3,4,2,3][o/16&3])/4))"
     },
     {
+        "author": "jumbledFox",
+        "description": "made a cute little song! first bytebeat and quite chuffed with it, especially how i compressed the main melody into a u32 split up into two bytes each acting as an index into a 'note' array. the name 'embarkening' is spelled wrong deliberately haha :P",
+        "name": "embarkening",
+        "url": "https://dollchan.net/btb/res/3.html#5529",
+        "date": "Feb 25, 2025",
+        "codeOriginal": [
+            "// various variables to make the code shorter and better ",
+            "m=t*[t>>17&1?1.04:1],",
+            "n=t>>11&7,",
+            "j=t>>9,",
+            "f=t>>14&1,",
+            "// main melody",
+            "(96&m*[,(f?5.3:6),5][(2568327513>>(j&62)&3)])",
+            "// bass",
+            "+(64&m*((t>>15&1)?[2,2,,4,4,,3]:[2,2,,2,2,,4])[n]/2)*0.8",
+            "// arp / arp echo",
+            "+(80&m*[6,5,8,6,10,8,12,10,7,6,9,7,10.5,9,14,10.5][(j&7)+f*8])/(j&1?2:1)",
+            "// drums",
+            "+((t*t*.09*[3,1,1,3,3,1,3,1][n])&13)*((~t>>3)&255)/56"
+        ],
+        "codeMinified": "m=t*(t>>17&1?1.04:1),n=t>>11&7,j=t>>9,f=t>>14&1,(96&m*[,f?5.3:6,5][2568327513>>(j&62)&3])+(64&m*(t>>15&1?[2,2,,4,4,,3]:[2,2,,2,2,,4])[n]/2)*.8+(80&m*[6,5,8,6,10,8,12,10,7,6,9,7,10.5,9,14,10.5][(j&7)+f*8])/(j&1?2:1)+((t*t*.09*[3,1,1,3,3,1,3,1][n])&13)*(~t>>3&255)/56"
+    },
+    {
         "author": "PrincessPriscillaPT",
         "children": [
             {
@@ -3874,6 +3910,19 @@
                     ""
                 ],
                 "codeMinified": "S=a=>t*2**((a-6)/12)&128,T=t/1.5,(S([-3,4,11,12,16,16,9,11,0,4,5,9,11,7,2,4][T>>13&15]+11)+S(\"9957\"[z=T>>15&3]-13)+S(9-2*(T>>16&1)+35)*(1&-T>>10&z))/3"
+            },
+            {
+                "name": "cover of \"uwa!! so temperate\"",
+                "cover": {
+                    "name": "Toby Fox - Uwa!! So Temperate♫",
+                    "url": "https://www.youtube.com/watch?v=HCrJNiMmH88"
+                },
+                "url": "https://dollchan.net/btb/res/5289.html#9537",
+                "date": "Oct 02, 2025",
+                "sampleRate": 20480,
+                "mode": "Floatbeat",
+                "codeOriginal": "t%=786432,r=(x,y=12288,z=0.5)=>(t?0:a=Array(y).fill(0),b=x%256+a.shift(),a.push(b*z),b),pI=parseInt,A=r(sin(t/20480*2*PI*528*2**(pI(\"J HJC AC7 570   5 35A   5 35D   \"[t>>12&31],36)/12))||0,6144)/2,(t&16384?(t&16383):(t&8191))?0:S=Array.from({length:s=int(81920/(528*2**((pI(\"8CJ 8CJ 6AH 6AD 8CJ 8CJ BFM BFI\"[t>>13&31],36)||0)/12)))},()=>random()),S[t%s]=S[t%s]/2+S[(t+1)%s]/2,B=r(S[t%s]-.5),D={K:sin(cbrt(t&4095)*8)/(1+((t/256)&15))},D.S=D.K/2+(D.H=(random()-.5)*(-t>>4&255)/256),C=D[\"K SKH SK  SKS   \"[t>>12&15]]||0,[B+A,B+C][t>>19&1]",
+                "codeMinified": "t%=786432,r=(x,y=12288,z=0.5)=>(t?0:a=Array(y).fill(0),b=x%256+a.shift(),a.push(b*z),b),P=parseInt,A=r(sin(t/20480*2*PI*528*2**(P(\"J HJC AC7 570   5 35A   5 35D\"[L=t>>12&31],36)/12))||0,6144)/2,(t&4**7?t&16383:t&8191)?0:S=Array.from({length:s=int(81920/(528*2**(P(\"8CJ 8CJ 6AH 6AD 8CJ 8CJ BFM BFI\"[t>>13&31],36)/12)))},()=>random()),S[t%s]=S[t%s]/2+S[(t+1)%s]/2,B=r(S[t%s]-.5),D={K:sin(cbrt(t&4095)*8)/(1+(t/256&15))},D.S=D.K/2+(D.H=(random()-.5)*(-t>>4&255)/256),C=D[\"K SKH SK  SKS\"[L&15]]||0,[B+A,B+C][t>>19&1]"
             }
         ]
     },
@@ -3882,6 +3931,12 @@
         "children": [
             {
                 "name": "atari thingy remix (my first bytebeat)",
+                "remix": {
+                    "author": "Decent-Manager-6169",
+                    "name": "atari thingy",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/121ie23/dont_know_what_to_name_with_atari_thingy/"
+                },
+                "url": "https://ihsoyct.github.io/index.html?comments=1jwnk3x",
                 "mode": "Signed Bytebeat",
                 "date": "Apr 11, 2025",
                 "sampleRate": 33600,
@@ -3890,6 +3945,7 @@
             },
             {
                 "name": "fm machine",
+                "url": "https://ihsoyct.github.io/index.html?comments=1jwo530",
                 "mode": "Floatbeat",
                 "date": "Apr 11, 2025",
                 "sampleRate": 32000,
@@ -3901,13 +3957,19 @@
             },
             {
                 "name": "Bfdi 3 song remix",
+                "cover": {
+                    "name": "Kenet & Rez - Unreal Super Hero 3",
+                    "url": "https://www.youtube.com/watch?v=9STiQ8cCIo0"
+                },
+                "url": "https://ihsoyct.github.io/index.html?comments=1jx5qva",
                 "date": "Apr 11, 2025",
                 "sampleRate": 38000,
                 "file": "sharp.js",
                 "fileOriginal": true
             },
             {
-                "name": "DARK JUNGLE",
+                "name": "DARK JUNGLE (JUMPSCARE WARNING)",
+                "url": "https://ihsoyct.github.io/index.html?comments=1jxc69h",
                 "date": "Apr 12, 2025",
                 "sampleRate": 48000,
                 "stereo": true,
@@ -3918,6 +3980,10 @@
     },
     {
         "author": "Cattoadishere",
+        "cover": {
+            "name": "Ethereal Workshop - Full Song Wave 7 (My Singing Monsters)",
+            "url": "https://www.youtube.com/watch?v=PWRx2IoVqs8"
+        },
         "name": "Ethereal Byteshop v1.0",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1k2mihy/ethereal_byteshop_v10/",
