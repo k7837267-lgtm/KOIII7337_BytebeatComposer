@@ -253,6 +253,10 @@
     },
     {
         "name": "Remix of aturned777 bytebeat",
+        "remix": {
+            "author": "aturned777",
+            "url": "https://dollchan.net/btb/res/406.html#406"
+        },
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/15ftz9g/remix_of_aturned777_bytebeat/",
         "date": "Aug 01, 2023",
@@ -276,6 +280,10 @@
     },
     {
         "name": "The coolest aturned777 bytebeat remix ever",
+        "remix": {
+            "author": "aturned777",
+            "url": "https://dollchan.net/btb/res/406.html#406"
+        },
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/15hseaf/the_coolest_aturned777_bytebeat_remix_ever/",
         "date": "Aug 04, 2023",
@@ -332,6 +340,10 @@
     },
     {
         "name": "other aturned777 remix i made a few weeks ago",
+        "remix": {
+            "author": "aturned777",
+            "url": "https://dollchan.net/btb/res/406.html#406"
+        },
         "mode": "Floatbeat",
         "date": "Sep 16, 2023",
         "sampleRate": 32000,
@@ -770,6 +782,10 @@
     },
     {
         "name": "there's too many aturned777 remixes idk",
+        "remix": {
+            "author": "aturned777",
+            "url": "https://dollchan.net/btb/res/406.html#406"
+        },
         "url": "https://dollchan.net/btb/res/2628.html#6030",
         "date": "Apr 27, 2025",
         "sampleRate": 32000,
