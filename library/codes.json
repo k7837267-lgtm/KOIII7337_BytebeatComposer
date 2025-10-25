@@ -3347,6 +3347,13 @@
                 "sampleRate": 48000,
                 "exotic": true,
                 "codeOriginal": "/*+[,.]*/sp=48000,t?0:z1=[],callCount=0,lpf=(a,c)=>(call=callCount++,z1[call]??=0,z1[call]+=(a-z1[call])*c),hpf=(a,c)=>a-lpf(a,c),hbf=(a,c,v)=>a+hpf(a,c)*v,p=z=>t*2**(z/12),r=(a,s)=>p(parseInt(a[(t/s)%a.length],36)),s=(x,z)=>t/(2**x)&z,f=hbf(lpf(sinf(p((t+300000)>>8*(t+300000)>>9)&(t+300000)>>8&255),Math.min(t/sp/10,1)),1-((t/sp)%1),1),t?0:R=Array(x=12288).fill(0),a=f/5+R[t%x],R[t%x]=a/1.6,a"
+            },
+            {
+                "name": "reberb",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1n2e5pz/reberb/",
+                "date": "Aug 28, 2025",
+                "sampleRate": 48000,
+                "codeOriginal": "r=(a,b,c,d,e)=>c==0?0:(a(-b)*9/e/c)+r(a,b-d,c-1,d,e),r((a)=>(g=t+a,(((g*2**([1,6,8,4,9,13,6,4][g>>14&7]/12))&255)/255)*(-g>>6&255)),0,20,10000,20)"
             }
         ]
     },
@@ -3473,25 +3480,16 @@
                 "codeOriginal": "t*2**([0,7,2,9,4,11,6,1,8,3,10,5][(t*(t/16&8191?r:r=random()*8|0)>>13)%12]/12)*2&128"
             },
             {
-                "name": "don't know how to name this",
-                "url": "https://dollchan.net/btb/res/368.html#5417",
-                "date": "Feb 01, 2025",
-                "sampleRate": 20480,
-                "codeOriginal": "speed=(t&32767?v:v=random()*16+1) / 2,t*(2**((-t*speed>>11&7)/12*3.5+(t*speed>>14&7)/24))*speed/6%256/2+t*(2**((-t*speed>>11&7)/12*3.5+(t*speed>>14&7)/24))/6*speed*.75%128*6"
-            },
-            {
                 "name": "Volt.A gdi trojan bytebeat 2",
+                "remix": {
+                    "author": "SthephanShi",
+                    "name": "Neurofunk",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/s0laz2/neurofunk/"
+                },
                 "url": "https://dollchan.net/btb/res/368.html#5540",
                 "date": "Feb 28, 2025",
                 "sampleRate": 9102,
                 "codeOriginal": "(((t / 2 * ((t & 4096 ? t % 65536 < 59392 ? 7 : t >> 6 : 16) + (1 & t >> 14)) >> (3 & (t >> (t & 2048 ? 2 : 10)) * 3)) ^ (t * 7 / 2 * ((t & 4096 ? t % 65536 < 59392 ? 7 : t >> 6 : 16) + (1 & t >> 14)) >> (3 & (t >> (t & 2048 ? 2 : 10))*3))) | t >> 2 - (t >> 12 & 1))"
-            },
-            {
-                "name": "found monoxide's first bytebeat...",
-                "url": "https://dollchan.net/btb/res/368.html#5863",
-                "date": "Apr 16, 2025",
-                "sampleRate": 48000,
-                "codeOriginal": "nSampleCount = 48000 * 30, nFreq = sin( t / 10) * 100. + 500., t * nFreq / nSampleCount * 256 & 128"
             }
         ]
     },
@@ -4183,22 +4181,34 @@
     },
     {
         "author": "a-desmos-grapher",
-        "name": "Cover of Kitsune^2 - Avast Your A$$",
-        "cover": {
-            "name": "Kitsune^2- Avast Your Ass",
-            "url": "https://www.youtube.com/watch?v=Y0E5wpyLd3M"
-        },
-        "url": "https://www.reddit.com/r/bytebeat/comments/1ksrhkv/cover_of_kitsune2_avast_your_a/",
-        "date": "May 22, 2025",
-        "sampleRate": 48000,
-        "codeOriginal": [
-            "n=-(10**16),",
-            "",
-            "hz=48000,",
-            "",
-            "t2=(floor((t/256*2**((-12.77+[0,8,3,10][floor(t/hz/2*150/120)%4])/12)*[1,1,2][floor(t/hz*6*150/120)%3]*28160/hz)%1*2)+floor((t/256*2**((-12.77+[0,8,3,10][floor(t/hz/2*150/120)%4])/12)*[1,1,2][floor(t/hz*6*150/120)%3]*28160/hz)%1*(2-((t%(hz/(150/60)))/hz*3*150/120%1*0.3))))*48,",
-            "",
-            "t2%256+floor((t/64*2**(([11,11,11,11,n,6,11,11,13,13,13,14,14,14,14,14,n,7,14,14,16,16,16,18,18,18,n,19,19,n,18,18,n,21,21,n,16,16,n,18,18,16,16,16,18,16,16,14,11,11,11,11,n,11,11,11,6,6,6,7,7,7,7,7,n,7,9,9,7,7,7,6,6,6,n,6,6,n,7,7,n,9,9,n,13,13,n,9,9,13,13,13,14,13,13,9][floor(t/hz*6*150/120)%96]+0.23)/12)*28160/hz)%2*0.6)*64+floor(min(t/hz*2*150/120,1))*floor((t/64*2**(([11,11,11,11,n,6,11,11,13,13,13,14,14,14,14,14,n,7,14,14,16,16,16,18,18,18,n,19,19,n,18,18,n,21,21,n,16,16,n,18,18,16,16,16,18,16,16,14,11,11,11,11,n,11,11,11,6,6,6,7,7,7,7,7,n,7,9,9,7,7,7,6,6,6,n,6,6,n,7,7,n,9,9,n,13,13,n,9,9,13,13,13,14,13,13,9][(floor(t/hz*6*150/120)+93)%96]+0.23)/12)*28160/hz)%2*0.6)*32"
+        "children": [
+            {
+                "name": "Cover of Kitsune^2 - Avast Your A$$",
+                "cover": {
+                    "name": "Kitsune^2- Avast Your Ass",
+                    "url": "https://www.youtube.com/watch?v=Y0E5wpyLd3M"
+                },
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ksrhkv/cover_of_kitsune2_avast_your_a/",
+                "date": "May 22, 2025",
+                "sampleRate": 48000,
+                "codeOriginal": [
+                    "n=-(10**16),",
+                    "",
+                    "hz=48000,",
+                    "",
+                    "t2=(floor((t/256*2**((-12.77+[0,8,3,10][floor(t/hz/2*150/120)%4])/12)*[1,1,2][floor(t/hz*6*150/120)%3]*28160/hz)%1*2)+floor((t/256*2**((-12.77+[0,8,3,10][floor(t/hz/2*150/120)%4])/12)*[1,1,2][floor(t/hz*6*150/120)%3]*28160/hz)%1*(2-((t%(hz/(150/60)))/hz*3*150/120%1*0.3))))*48,",
+                    "",
+                    "t2%256+floor((t/64*2**(([11,11,11,11,n,6,11,11,13,13,13,14,14,14,14,14,n,7,14,14,16,16,16,18,18,18,n,19,19,n,18,18,n,21,21,n,16,16,n,18,18,16,16,16,18,16,16,14,11,11,11,11,n,11,11,11,6,6,6,7,7,7,7,7,n,7,9,9,7,7,7,6,6,6,n,6,6,n,7,7,n,9,9,n,13,13,n,9,9,13,13,13,14,13,13,9][floor(t/hz*6*150/120)%96]+0.23)/12)*28160/hz)%2*0.6)*64+floor(min(t/hz*2*150/120,1))*floor((t/64*2**(([11,11,11,11,n,6,11,11,13,13,13,14,14,14,14,14,n,7,14,14,16,16,16,18,18,18,n,19,19,n,18,18,n,21,21,n,16,16,n,18,18,16,16,16,18,16,16,14,11,11,11,11,n,11,11,11,6,6,6,7,7,7,7,7,n,7,9,9,7,7,7,6,6,6,n,6,6,n,7,7,n,9,9,n,13,13,n,9,9,13,13,13,14,13,13,9][(floor(t/hz*6*150/120)+93)%96]+0.23)/12)*28160/hz)%2*0.6)*32"
+                ]
+            },
+            {
+                "name": "project.jdm thingy (sound)",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1o0znoe/projectjdm_thingy_sound/",
+                "date": "Oct 07, 2025",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "codeOriginal": "a=t=>[0,2,4,5,7,9,11,24,23,21,19,17,16,14,12][t],b=(n,tone)=>n&&sin((t%(80000/(n/15)))*PI/2400*44*2**((a(n-1)-9)/12)*tone)*10**-(t/48e3%(75/n/3)/1.5)+b(n-1,tone),(b(15,0.9985)/8+b(15,1.0015)/8)"
+            }
         ]
     },
     {
@@ -4239,14 +4249,33 @@
     },
     {
         "author": "newmemesfromsnapchat",
-        "name": "FLANGED reverb",
-        "url": "https://www.reddit.com/r/bytebeat/comments/1nwt3s2/flanged_reverb/",
-        "date": "Oct 03, 2025",
-        "sampleRate": 32000,
-        "mode": "Floatbeat",
-        "stereo": true,
-        "file": "newmemesfromsnapchat.js",
-        "fileOriginal": true
+        "children": [
+            {
+                "name": "FLANGED reverb",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1nwt3s2/flanged_reverb/",
+                "date": "Oct 03, 2025",
+                "sampleRate": 32000,
+                "mode": "Floatbeat",
+                "stereo": true,
+                "file": "newmemesfromsnapchat.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "FMbreak",
+                "remix": {
+                    "author": "RealZynx92",
+                    "name": "i bet nobody has thought of using cbrt",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/skg4b7/i_bet_nobody_has_thought_of_using_cbrt/"
+                },
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ocsaj8/fmbreak/",
+                "date": "Oct 21, 2025",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "stereo": true,
+                "file": "newmemesfromsnapchat2.js",
+                "fileOriginal": true
+            }
+        ]
     },
     {
         "author": "spaceboi0713",
@@ -4319,6 +4348,11 @@
         "children": [
             {
                 "name": "Complex step sequencer (stereo)",
+                "remix": {
+                    "author": "neverforgettoleave",
+                    "name": "simple step sequencer",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/jmbsoh/simple_step_sequencer/"
+                },
                 "date": "Oct 11, 2025",
                 "url": "https://www.reddit.com/r/bytebeat_2/comments/1o3t6j0/complex_step_sequencer_stereo/",
                 "stereo": true,
