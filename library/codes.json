@@ -4347,5 +4347,15 @@
         "mode": "Floatbeat",
         "file": "pck404.js",
         "fileOriginal": true
+    },
+    {
+        "author": "Funcbeat Anon",
+        "name": "Sampled procedural drum loop test with naïve time-stretching",
+        "url": "https://dollchan.net/btb/res/3.html#12024"
+        "date": "Jan 12, 2026",
+        "sampleRate": 44100,
+        "mode": "Funcbeat"
+        "file": "funcbeatanon.js",
+        "fileOriginal": true
     }
 ]
