@@ -1,16 +1,25 @@
 [
     {
         "author": "red-",
-        "url": "https://www.pouet.net/topic.php?which=8357&page=2#c388356",
-        "date": "Sep 28, 2011",
-        "codeOriginal": "(t|(t>>9|t>>7))*t&(t>>11|t>>9)",
-        "codeMinified": "(t|t>>9|t>>7)*t&(t>>11|t>>9)"
+        "children": [
+            {
+                "url": "https://www.pouet.net/topic.php?which=8357&page=2#c388356",
+                "date": "Sep 28, 2011",
+                "codeOriginal": "(t|(t>>9|t>>7))*t&(t>>11|t>>9)"
+            },
+            {
+                "description": "more javascript hackery",
+                "url": "https://www.pouet.net/topic.php?which=8357&page=3#c388462",
+                "date": "Sep 30, 2011",
+                "codeOriginal": "(((j=Math.round(t/1500)%16))%8==1|(j==3)|(j==6)) * sin(200-200*Math.sqrt((t%6000)/6000))*50 + Math.random()*40*(j%8==5) + (((t|(t>>9|t>>7))*t&(t>>11|t>>9) )&63)*(j%3==0)"
+            }
+        ]
     },
     {
         "author": "pyryp",
         "url": "https://youtu.be/qlrs2Vorw2Y?si=nX634LhxFID2zv3c&t=69",
         "date": "Sep 30, 2011",
-        "codeOriginal": "t?0:v=0,v=(v>>1)+(v>>4)+t*((t>>16|t>>6)&69&t>>9)"
+        "codeOriginal": "t?0:v=0,v=(v>>1)+(v>>4)+t*((t>>16|t>>6)&69&t>>9)&128"
     },
     {
         "author": "stephth",
