@@ -2,10 +2,10 @@
 
 :root {
 	--button-hover-color: #c2dfff;
-	--canvas-border: linear-gradient(#575b61, #575b61) 1;
+	--canvas-border: linear-gradient(#57ffff, #5730cc) 1;
 	--canvas-button: linear-gradient(to bottom, #67789d, #181f33);
-	--canvas-button-color: #c5c8c6;
-	--canvas-button-hover: linear-gradient(to bottom, #92aeec, #181f33) !important;
+	--canvas-button-color: #00ffc6;
+	--canvas-button-hover: linear-gradient(to bottom, #92ffec, #181fff) !important;
 	--code-button: linear-gradient(to bottom, #626264, #2a2f35);
 	--code-button-hover: linear-gradient(to bottom, #5876ce, #202a41);
 	--control-button: linear-gradient(to bottom, #7c8086, #1e1f22);
@@ -13,7 +13,7 @@
 	--control-button-hover: linear-gradient(to bottom, #668cdd, #1d222e);
 	--control-corners: 6px;
 	--control-size: 30px;
-	--control-text: linear-gradient(to top, #3a445e, #181c26);
+	--control-text: linear-gradient(to top, #3affbb, #188050);
 	--control-text-hover: linear-gradient(to top, #556897, #182033);
 	--control-volume: linear-gradient(to bottom, #aeaeae, #484c55);
 	--control-volume-hover: linear-gradient(to bottom, #90a7d7, #3f4c71);
@@ -30,7 +30,7 @@
 html {
 	color-scheme: dark;
 	background-color: #000;
-	color: #c4eaf9;
+	color: #50eaf9;
 	font: var(--font-size) sans-serif;
 }
 
