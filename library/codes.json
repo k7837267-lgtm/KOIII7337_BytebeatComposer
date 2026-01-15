@@ -3363,7 +3363,7 @@
 "codeMinified": "a=16,b=64,((((t*(5>>t)|(2>>t^2*4>>3|35+t))/a)+((t*3^43*t^1>>3+t|t)/a)+t*2.5+(((t*3>>3&5*5|4*t>>1)>>2)/a))/2)-102&((t*(3^3>>3)^sin(a)>>9&t|4)/b)>>2*sin(t>>t)/2"
 },
 {
-"name": " Variation 4 (1+3v)"
+"name": " Variation 4 (1+3v)",
 "codeOriginal": [
 "//Variation 4 (1+3v)",
 "a = 16,",
