@@ -3322,6 +3322,38 @@
         ]
     },
     {
+"author": "John Black",
+"name": "Bytebeat Random Experiments #1",
+"url": "https://www.youtube.com/watch?v=tPsu9Y8frSc",
+"date": "Sep 7, 2024",
+"children": [
+{
+"name": "Variation 1",
+"codeOriginal": [
+"//Variation 1:",
+"",
+"a = 16,",
+"b = 64,",
+"",
+"((((t*(5>>t)|(2>>t^2*4>>3|35+t))/a) + ((t*3^43*t^1>>3+t|t)/a)+t*(2.5) + (((t*3>>3&5*5|4*t>>1|4-4)>>2)/a))/2) - 102 - ((t*(3^3>>3)^sin(a)>>9&t|4)/b)>>2*sin(t>>t)/2"
+],
+"codeMinified": "a=16,b=64,((((t*(5>>t)|(2>>t^2*4>>3|35+t))/a)+((t*3^43*t^1>>3+t|t)/a)+t*2.5+(((t*3>>3&5*5|4*t>>1)>>2)/a))/2)-102-((t*(3^3>>3)^sin(a)>>9&t|4)/b)>>2*sin(t>>t)/2"
+},
+{
+"name": "Variation 2",
+"codeOriginal": [
+"//Variation 2:",
+"",
+"a = 16,",
+"b = 64,",
+"",
+"t|t>>16*((((t*(5>>t)|(2>>t^2*4>>3|35+t))/a) + ((t*3&43*t^1>>3+t|t)/a)+t*(2.5) + (((t*3>>3&5*5|4*t>>1|4-4)>>2)/a))/2) - 102 & ((t*3^3>>3)^sin(a)>>9&t|4)/b)>>2*sin(t>>t)/2"
+],
+"codeMinified": "a=16,b=64,t|t>>a*((((t*(5>>t)|(2>>t^2*4>>3|35+t))/a)+((t*3&43*t^1>>3+t|t)/a)+t*2.5+(((t*3>>3&5*5|4*t>>1)>>2)/a))/2)-102&((t*(3^3>>3)^sin(a)>>9&t|4)/b)>>2*sin(t>>t)/2"
+}
+]
+},
+    {
         "author": "Phoneposter",
         "description": "Write a chord progression player that's shorter and more concise than this one but has far more capabilities and can play rare/strangely-named chords (found in jazz/prog for instance), better if you use cool synths (Float64 wavetables, FM, soft pads) with rhythms, envelopes (ADSR), effects (N-order IIR filters, FDN reverb, chorus, dynamic compression) and arpeggios with some drums (pattern generation (rush/rolls, dynamics, off-beat/humanized swing), membrane simulation (snares, hi-hat, cymbal, bells)), even better if it's microtonal (are new chord notations required for this?) and not the standard 12-TET. also had to compress the JS because it was too long.",
         "url": "https://dollchan.net/btb/res/3.html#4972",
