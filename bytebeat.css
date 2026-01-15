@@ -19,7 +19,7 @@
 	--control-volume-hover: linear-gradient(to bottom, #4fffff, #00007f);
 	--editor: #1b7fff;
 	--focus: #6110ef;
-	--font-size: 10.75pt;
+	--font-size: 10.5pt;
 	--library-header: linear-gradient(to bottom, #005080, #203020);
 	--library-header-hover: linear-gradient(to bottom, #5b6ea0, #151b2b);
 	--library-header-hover-color: #94c7ff;
@@ -29,7 +29,7 @@
 
 html {
 	color-scheme: dark;
-	background-color: #00f;
+	background-color: #058;
 	color: #50eaf9;
 	font: var(--font-size) sans-serif;
 }
