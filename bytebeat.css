@@ -6,9 +6,9 @@
 	--canvas-button: linear-gradient(to bottom, #67789d, #181f33);
 	--canvas-button-color: #00ffc6;
 	--canvas-button-hover: linear-gradient(to bottom, #92ffec, #181fff) !important;
-	--code-button: linear-gradient(to bottom, #626264, #2a2f35);
-	--code-button-hover: linear-gradient(to bottom, #5876ce, #202a41);
-	--control-button: linear-gradient(to bottom, #7c8086, #1e1f22);
+	--code-button: linear-gradient(to bottom, #306264, #182f35);
+	--code-button-hover: linear-gradient(to bottom, #3076ce, #204a41);
+	--control-button: linear-gradient(to bottom, #009090, #007f00);
 	--control-button-active: linear-gradient(to bottom, #505f84, #1c1e26);
 	--control-button-hover: linear-gradient(to bottom, #668cdd, #1d222e);
 	--control-corners: 6px;
