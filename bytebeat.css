@@ -3,7 +3,7 @@
 :root {
 	--button-hover-color: #c2dfff;
 	--canvas-border: linear-gradient(#57ffff, #5730cc) 1;
-	--canvas-button: linear-gradient(to bottom, #67789d, #181f33);
+	--canvas-button: linear-gradient(to bottom, #eeeeee, #555555);
 	--canvas-button-color: #00ffc6;
 	--canvas-button-hover: linear-gradient(to bottom, #92ffec, #181fff) !important;
 	--code-button: linear-gradient(to bottom, #008f68, #006049);
