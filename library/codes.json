@@ -3294,6 +3294,7 @@
             },
             {
                 "name": "scuffed array melody (floatbeat)",
+                "mode": "Floatbeat",
                 "date": "Jul 14, 2024",
                 "sampleRate": 64000,
                 "codeOriginal": [
