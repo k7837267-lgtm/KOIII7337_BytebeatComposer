@@ -20,7 +20,7 @@
     },
     {
         "author": "pyryp",
-        "description": "JS Fix By Zopium, Modified By KOIII7337."
+        "description": "JS Fix By Zopium, Modified By KOIII7337.",
         "url": "https://youtu.be/qlrs2Vorw2Y?si=nX634LhxFID2zv3c&t=69",
         "date": "Sep 30, 2011",
         "codeOriginal": "(t?0:v=0,v=(v>>1)+(v>>4)+t*((t>>16|t>>6)&69&t>>9))&128"
