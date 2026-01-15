@@ -11,8 +11,8 @@
 	--control-button: linear-gradient(to bottom, #009090, #007f00);
 	--control-button-active: linear-gradient(to bottom, #2050aa, #104060);
 	--control-button-hover: linear-gradient(to bottom, #507080, #459040);
-	--control-corners: 6px;
-	--control-size: 30px;
+	--control-corners: 5px;
+	--control-size: 25px;
 	--control-text: linear-gradient(to top, #1077bb, #054037);
 	--control-text-hover: linear-gradient(to top, #556897, #182033);
 	--control-volume: linear-gradient(to bottom, #00ffff, #0000ff);
