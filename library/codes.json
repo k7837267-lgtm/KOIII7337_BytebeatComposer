@@ -8,7 +8,8 @@
                 "codeOriginal": "(t|(t>>9|t>>7))*t&(t>>11|t>>9)"
             },
             {
-                "description": "more javascript hackery",
+                "name": "more javascript hackery",
+                "description": "'Originally Unsigned, Doesn't Sound Like It.' - KOIII7337"
                 "url": "https://www.pouet.net/topic.php?which=8357&page=3#c388462",
                 "date": "Sep 30, 2011",
                 "mode": "Signed Bytebeat",
@@ -19,9 +20,10 @@
     },
     {
         "author": "pyryp",
+        "description": "JS Fix By Zopium, Modified By KOIII7337."
         "url": "https://youtu.be/qlrs2Vorw2Y?si=nX634LhxFID2zv3c&t=69",
         "date": "Sep 30, 2011",
-        "codeOriginal": "t?0:v=0,v=(v>>1)+(v>>4)+t*((t>>16|t>>6)&69&t>>9)&128"
+        "codeOriginal": "(t?0:v=0,v=(v>>1)+(v>>4)+t*((t>>16|t>>6)&69&t>>9))&128"
     },
     {
         "author": "stephth",
@@ -287,6 +289,7 @@
         "children": [
             {
                 "name": "what",
+                "description": "'Don't Play The Original Code, Play The Minified Because The Array At Start Makes It Lag.' - KOIII7337"
                 "url": "https://www.reddit.com/r/bytebeat/comments/v3ro35/what/",
                 "date": "Jun 02, 2022",
                 "sampleRate": 32000,
