@@ -1,0 +1,23 @@
+[
+  {
+    "name": "155E2 Music",
+    "url": [
+      "https://www.youtube.com/watch?v=jPcZ1m-v1NE",
+      "https://www.reddit.com/r/bytebeat/comments/1o7w9rw/155e2_music/"
+    ],
+    "date": "Oct 11, 2025",
+    "codeOriginal": [
+    "// 155E2 Music",
+"// Used My BB Melody Formula",
+"// KOIII7337 +-| Bytebeat! |-+",
+"(t/=2,",
+"t+=65536,",
+"T=1+2*14,",
+"I=10,",
+"A=(t>>9^(t>>9)-1-(T)^1+(T))%I*t,",
+"B=(t>>9^(t>>9)-1-(T)^1-(T))%I*t,",
+"C=(t>>9^(t>>9)-1+(T)^1+(T))%I*t,",
+"D=(t>>9^(t>>9)-1+(T)^1-(T))%I*t,",
+"((A&255)/4+(-B&255)/4+(C&255)/4+(-D&255)/4)&t>>4)^t>>12",
+    ]
+  }
