@@ -21,5 +21,23 @@
 "D=(t>>9^(t>>9)-1+(T)^1-(T))%I*t,",
 "((A&255)/4+(-B&255)/4+(C&255)/4+(-D&255)/4)&t>>4)^t>>12"
     ]
+  },
+  { "name": "A Random 8kHz Bytebeat Song I Made",
+    "url": [
+      "https://m.youtube.com/watch?v=VEoB0O3-dT0",
+      "https://www.reddit.com/r/bytebeat/comments/1o8q9t1/a_random_8khz_bytebeat_song_i_made/"
+],
+    "date": "Oct 16, 2025"
+    "description": "\"People Wants To Watch This So Much That The Audience Have Gotten This Bytebeat Video Popular.\" - KOIII7337",
+    "mode": "Signed Bytebeat",
+    "codeOriginal": [
+"// Name: A Random 8kHz Bytebeat Song I Made",
+"// Desc: A t*t Song With t/(t&4095) Format.",
+"A='0520330160129907'[t>>11&15]*t,",
+"B=t*2/(t&4095),",
+"C=A*A,",
+"D=C/4*((t>>16)),",
+"(B|D)|t&t>>8&15"
+    ]
   }
 ]
