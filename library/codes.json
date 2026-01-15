@@ -4360,6 +4360,7 @@
         "date": "Jan 12, 2026",
         "sampleRate": 44100,
         "mode": "Funcbeat",
+        "stereo": true,
         "file": "funcbeatanon.js",
         "fileOriginal": true
     }
