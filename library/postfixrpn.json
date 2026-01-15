@@ -11,6 +11,16 @@
       "name": "Octo",
       "file": "madgarden-1.js",
       "fileOriginal": true
+    },
+    {
+      "name": "Seargeant",
+      "file": "madgarden-2.js",
+      "fileOriginal": true
+    },
+    {
+      "name": "Rhythmgrind",
+      "file": "madgarden-3.js",
+      "fileOriginal": true
     }
   ]
 }
