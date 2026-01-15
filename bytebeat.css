@@ -31,7 +31,7 @@ html {
 	color-scheme: dark;
 	background-color: #058;
 	color: #50eaf9;
-	font: var(--font-size) sans-serif;
+	font: var(--font-size) monospace;
 }
 
 html[data-theme="Blue"] {
