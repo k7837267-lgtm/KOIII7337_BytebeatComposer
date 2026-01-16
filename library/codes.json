@@ -2986,6 +2986,7 @@
                 "url": "https://dollchan.net/btb/res/284.html#2231",
                 "date": "Sep 05, 2023",
                 "sampleRate": 7350,
+                "exotic": true,
                 "codeOriginal": "(t>>t*4/(4+(t>>13&3)))+(4e5/(t&4095))+(t*(1&t>>12)*random()&~t>>4)"
             },
             {
