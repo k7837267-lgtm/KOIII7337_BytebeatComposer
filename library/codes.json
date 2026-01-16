@@ -143,6 +143,7 @@
             },
            {
                 "name": "duo team. Based off of mu6k's \"Long Line Theory\"",
+                "description": "\"This Is Amazing At 172 Seconds!\" - KOIII7337",
                 "date": "Mar 16, 2014",
                 "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
                 "codeOriginal": "((t*.98)%(t>>13&t>>12))+(t%(t>>13&t>>10))"
