@@ -118,7 +118,7 @@
         "author": "a2aaron",
         "children": [
             {
-                "name": "fractal heaven"
+                "name": "fractal heaven",
                 "date": "Mar 16, 2014",
                 "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
                 "codeOriginal": "((t*t)/(t^t>>8))&t"
