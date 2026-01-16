@@ -115,6 +115,35 @@
         ]
     },
     {
+        "author": "a2aaron"
+        "children": [
+            {
+                "name": "fractal heaven"
+                "date": "Mar 16, 2014",
+                "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
+                "codeOriginal": "((t*t)/(t^t>>8))&t"
+            },
+           {
+                "name": "Sine wave heaven",
+                "date": "Mar 16, 2014",
+                "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
+                "codeOriginal": "sin(t/(1+(t>>8&t>>13)))*64+128"
+            },
+           {
+                "name": "click and pop",
+                "date": "Mar 16, 2014",
+                "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
+                "codeOriginal": "(sin(sin(t/10)+t/(1000-(t>>10|t>>12)))*64)+128"
+            },
+           {
+                "name": "dark kick",
+                "date": "Mar 16, 2014",
+                "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
+                "codeOriginal": "(t&t>>4)-(t>>13&t)"
+            },
+        ]
+    },
+    {
         "author": "neverforgettoleave",
         "children": [
             {
