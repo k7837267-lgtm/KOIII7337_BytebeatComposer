@@ -4474,12 +4474,24 @@
     },
     {
         "author": "vbinchees3000",
+        "children"  [
+        {
         "name": "experimenting",
         "url": "https://www.bytebeat.cloud/post/f5993567-27d5-464d-b035-e7e89aa867c1",
         "date": "Dec 12, 2025",
         "mode": "Floatbeat",
         "sampleRate": 32000,
         "codeOriginal": "(t<13E4?(dly=[],l=0,k=0):(sc=[1,2,3,4,8,0,0,0,0,0,0,0,0,0,0,0],base=55*sc[(t>>13)%16],ph=t/2048*PI*2,env=exp(-(t%8192)/2E3),mod=sin(ph*base*2.01)*env*2,s=sin(ph*base+mod)*env,t%(1<<14)||(k=1),k*=.9995,i=2*s,p=t%24E3,ds=dly[p]||0,l+=(ds-l)/12,dly[p]=i+l,o=i+(dly[(p+12E3)%24E3]||0)/2,tanh((i+l/2)+o)/4))+(t<13E4?(y=1,x=0):y=~y*1664521-1,t%1||(x+=((y>>31&1)*2-1)*64/((t+128)%16384),x>3/4&&(x=3/4),x<-3/4&&(x=-3/4)),x)/4-exp(-(t+16384)/4096%8)/4*random()"
+    },
+    { "name": "weep woop",
+        "url": "https://www.bytebeat.cloud/post/270926c1-207e-4fd3-abf5-7d5109befd19",
+        "date": "Jan 3, 2026",
+        "mode": "Floatbeat",
+        "sampleRate": 11025,
+        "file": "vbinchees3000.js",
+        "fileOriginal": true
+    }
+        ]
     },
     {
         "author": "pck404",
