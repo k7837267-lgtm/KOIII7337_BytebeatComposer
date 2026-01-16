@@ -28,5 +28,22 @@
     "name": "#6",
     "date": "Jan 15, 2026",
     "codeOriginal": "(((t*'1367'[t>>12&3])<<(t>>15&3))+((tan(t/32768*PI))*128)|t>>'4444332112334444'[t>>11&15])-(t>>3&127)+128"
+  },
+  {
+    "name": "#7",
+    "date": "Jan 16, 2026",
+    "description": "Inspired By SthephanShi",
+    "codeOriginal": "((t*8>>(t>>9&3))<<(t>>11&1))*(8+((t>>14^t>>15^t>>13)&3))/8|t>>4"
+  },
+  {
+    "name": "#8",
+    "date": "Jan 16, 2026",
+    "description": "Inspired By tejeez",
+    "codeOriginal": "t*(t>>6&63|t>>9)>>(t>>11&3)^t>>7"
+  },
+  {
+    "name": "#9",
+    "date": "Jan 16, 2026",
+    "codeOriginal": "((((t*8/7^t*8/7>>1)*((t>>10)%6)|t>>4)&t>>8)^t>>5)*6"
   }
 ]
