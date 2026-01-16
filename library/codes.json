@@ -4533,7 +4533,7 @@
                 "codeOriginal": "s=i=>parseInt(i,36),(cos(sqrt((l=t*.75*2**((s('5358555533idhh05'[t>>12&15])-5+s('ojjoc0c0'[(t>>16&3)^t>>12&7]))/12)&511)|l*((-t>>9&7)+(t>>16&7)+2)&511)/9)-.12)*(t&8192?256:t>>5&255)/256+sin(sqrt(t&16383))*(t&8192?0:-t>>5&255)/100"
             },
             {
-                "name": "ADAMANTINE"
+                "name": "ADAMANTINE",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1qcxl77/adamantine/",
                 "date": "Jan 14, 2026",
                 "sampleRate": 48000,
