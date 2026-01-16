@@ -4197,11 +4197,21 @@
     },
     {
         "author": "MarioFan171",
+        "children" [
+        {
         "name": "SPORION",
         "url": "https://www.reddit.com/r/bytebeat/comments/1m4rosb/sporion/",
         "date": "Jul 20, 2025",
         "sampleRate": 44100,
         "codeOriginal": "(t%128^t/(t/2>>t/(t&t>>(t>>12))&t>>6)|t>>(t/t^t>>(t>>13))^t>>(t>>13))%128+(9e5/(t%16384)&128)"
+    },
+            {
+                "name": "Railgunned the Railgun",
+                "url": "https://www.bytebeat.cloud/post/d33b318f-ac01-47aa-8356-73c02ae6990a",
+                "date": "Jan 8, 2026",
+                "codeOriginal": "L=(2**(8+(t>>12&[1,3,7,9,5,3,11,15][t>>13&7^t>>15&1^t>>17&3]))),i=t%L/(t%L>>8)*(2**(1+(t>>12&15^t>>14&7)))|t%L/(t%L>>8)*32,b=t*[1,1.2,4/3,3/2][[t>>12,t>>13,t>>14,t>>15][t>>14&3]&3]*(1+(t>>(t&32768?10:12)&3^t>>15&3))/2,((32e5/(t%16384)&192)^(i&t>>6))^b"
+            }
+        ]
     },
     {
         "author": [
@@ -4218,7 +4228,7 @@
             "name": "Paso of Dyntec - Pleasure to Paso",
             "url": "https://youtu.be/w_LW75WE_oo?si=B616tVAbbQtuLIJU"
         },
-        "url": "https://www.reddit.com/r/bytebeat/comments/1m4rosb/sporion/",
+        "url": "https://www.reddit.com/r/bytebeat_2/comments/1nesdlx/pleasure_to_bytebeat_v2_cover_of_pleasure_to/",
         "date": "Sep 11, 2025",
         "sampleRate": 48000,
         "stereo": true,
