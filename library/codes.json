@@ -151,6 +151,32 @@
         ]
     },
     {
+        "author": "Gabriel Miceli",
+        "children": [
+            {
+                "name": "Deep Tones",
+                "url": "https://www.youtube.com/watch?v=V4GfkFbDojc",
+                "date": "July 9, 2016",
+                "codeOriginal": "t*(t*287/256&t>>11&31)"
+            },
+            {
+                "name": "Shapeshifter Tune",
+                "remix": {
+                    "name": "The 42 Melody",
+                    "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
+                },
+                "url": "https://www.youtube.com/watch?v=V4GfkFbDojc",
+                "date": "July 9, 2016",
+                "codeOriginal": "y=t*(t>>10&42),y*2|y+t/64"
+            },
+            {
+                "url": "https://www.youtube.com/watch?v=V4GfkFbDojc",
+                "date": "July 9, 2016",
+                "codeOriginal": "(t&t+t/256)-t*(t>>15)&64"
+            }
+        ]
+    },
+    {
         "author": "neverforgettoleave",
         "children": [
             {
