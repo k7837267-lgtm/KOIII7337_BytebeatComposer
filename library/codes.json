@@ -141,6 +141,12 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
                 "codeOriginal": "(t&t>>4)-(t>>13&t)"
             },
+           {
+                "name": "duo team. Based off of mu6k's \"Long Line Theory\"",
+                "date": "Mar 16, 2014",
+                "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
+                "codeOriginal": "((t*.98)%(t>>13&t>>12))+(t%(t>>13&t>>10))"
+            }
         ]
     },
     {
@@ -1524,7 +1530,7 @@
     {
         "author": "byteobserver",
         "name": "zigzag",
-        "description": "Sends \" i is not defined \" At The Start.",
+        "description": "Sends \"i is not defined\" At The Start.",
         "url": "https://demozoo.org/music/318949/",
         "date": "Feb 11, 2023",
         "sampleRate": 32000,
