@@ -14,7 +14,7 @@
 	--control-corners: 5px;
 	--control-size: 25px;
 	--control-text: linear-gradient(to top, #1077bb, #054037);
-	--control-text-hover: linear-gradient(to top, #556897, #182033);
+	--control-text-hover: linear-gradient(to top, #00cfcf, #00004f);
 	--control-volume: linear-gradient(to bottom, #00ffff, #0000ff);
 	--control-volume-hover: linear-gradient(to bottom, #4fffff, #00007f);
 	--editor: #1b4f60;
