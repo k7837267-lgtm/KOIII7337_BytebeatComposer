@@ -1495,6 +1495,7 @@
     {
         "author": "byteobserver",
         "name": "zigzag",
+        "description": "Sends \" i is not defined \" At The Start."
         "url": "https://demozoo.org/music/318949/",
         "date": "Feb 11, 2023",
         "sampleRate": 32000,
@@ -3104,6 +3105,11 @@
     {
         "author": "awogler9124812041",
         "name": "ultimate bitbeat",
+        "remix": {
+            "author": "ANoUserXD",
+            "name": "some cool bitbeat thing i made",
+            "url": "https://www.reddit.com/r/bytebeat/comments/178vzl9/some_cool_bitbeat_thing_i_made/"
+        },
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/199r12o/ultimate_bitbeat/",
         "date": "Jan 18, 2024",
