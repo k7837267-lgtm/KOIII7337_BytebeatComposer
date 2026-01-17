@@ -47,7 +47,7 @@
     },
     {
         "author": "ryg",
-        "url": "http://pouet.net/topic.php?which=8357&page=8",
+        "url": "https://www.pouet.net/topic.php?post=388873",
         "date": "Oct 04, 2011",
         "sampleRate": 44100,
         "codeOriginal": "(t>>4)*(13&(0x8898a989>>(t>>11&30)))"
