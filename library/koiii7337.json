@@ -41,6 +41,24 @@
     ]
   },
   {
+    "name": "These Will Nothing Happen And Exist",
+    "remix": {
+      "author": "Two2Fall",
+      "name": "Nothing is real",
+      "url": "https://www.reddit.com/r/bytebeat/comments/1gzwwdr/i_finished_my_song_for_the_bytebattle_season_2/"
+  },
+    "date": "Oct 19, 2025",
+    "url": "https://www.reddit.com/r/bytebeat_2/comments/1oav13q/these_will_nothing_happen_exist/"
+    "codeOriginal": [
+      "t/=4,",
+"A=(cbrt(tan(sin(t/32*PI*2.016**('78'[t>>15&1]/12))))*110)*(-t>>4&255)>>9,",
+"B=((sqrt(acos(sin(t/16*PI*2.016**(parseInt('7C7F7C7H7C7J7C7M8C8F8C8H8C8J8C8M'[t>>11&31],36)/12)))))*85-92)*'1000'[t>>9&3],",
+"C=(cbrt(sin(sin(cos(1000/(t%4096))))))*64-36,",
+"D=(((t*Math.random()&256)/1.01|t>>5)*'0011'[t>>11&3]-128),",
+"(t?0:Reverb=Array(10240).fill(0),Reverb2=(A/1.5+B*'01111111'[t>>17&7]/5)+Reverb.shift(),Reverb.push(Reverb2/1.475),Reverb2)/128+(C*'00111111'[t>>17&7]/3+(D*'00011111'[t>>17&7]&255)/9)/110"
+    ]
+  },
+  {
 "name": "An Electric Square-Like Sound",
 "remix": [
 {
