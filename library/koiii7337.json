@@ -50,6 +50,8 @@
   },
     "date": "Oct 19, 2025",
     "url": "https://www.reddit.com/r/bytebeat_2/comments/1oav13q/these_will_nothing_happen_exist/",
+    "mode": "Floatbeat",
+    "sampleRate": 32000,
     "codeOriginal": [
       "t/=4,",
 "A=(cbrt(tan(sin(t/32*PI*2.016**('78'[t>>15&1]/12))))*110)*(-t>>4&255)>>9,",
