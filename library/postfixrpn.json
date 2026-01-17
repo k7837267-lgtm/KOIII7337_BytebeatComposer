@@ -35,10 +35,44 @@
   ]
 },
   {
+    "author": "Gede",
+    "name": "hardcOR",
+    "url": "https://touchbit.xyz/#s=8000&bb=5d000001001200000000000000003a08032343ba1cc77415ac7cfbeccb4449cb7005655ffe8d4c00",
+    "file": "gede.js",
+    "fileOriginal": true
+  },
+  {
+    "author": "eypacha *(Creator Of Touchbit)*",
+    "children": [
+      {
+        "name": "untaunta",
+        "url": "https://touchbit.xyz/#s=8000&bb=5d000001001200000000000000003a081c04698400fe822a1c9bc4212c4a3884747affff035a0000",
+        "file": "eypacha.js",
+        "fileOriginal": true
+  },
+      {
+        "name": "this != copla",
+        "url": "touchbit.xyz/#s=8000&bb=5d000001002000000000000000003a0802235b1284d64f1b9d0c2fbb05e1d037fb002736df1dda5c6691461fffdc8ab000",
+        "file": "eypacha-1.js",
+        "fileOriginal": true
+      }
+    ]
+  },
+  {
     "author": "KOIII7337",
+    "children": [
+      {
     "name": "Well, This Is An Interesting Combination.",
     "date": "Jan 15, 2026",
     "file": "koiii7337.js",
     "fileOriginal": true
-  }
+  },
+      {
+      "name": "They're Begging To Say It In \"BEATS\" Expression",
+      "date": "Jan 16, 2026",
+      "file": "koiii7337-1.js",
+      "fileOriginal": true
+      }
+]
+}
   ]
