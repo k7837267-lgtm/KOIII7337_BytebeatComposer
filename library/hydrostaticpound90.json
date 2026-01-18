@@ -64,7 +64,7 @@
   },
   {
     "name": "#12",
-    "date": "Jan 18, 2026",
+    "date": "Jan 18 2026",
     "codeOriginal": "((sin(t/16*PI)*t%32)&t>>8)*t>>10|t>>4"
   }
 ]
