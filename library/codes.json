@@ -3748,10 +3748,12 @@
             },
             {
                 "name": "found monoxide's first bytebeat...",
+                "description": "Minified By PrincessPriscillaPT",
                 "url": "https://dollchan.net/btb/res/368.html#5863",
                 "date": "Apr 16, 2025",
                 "sampleRate": 48000,
-                "codeOriginal": "nSampleCount = 48000 * 30, nFreq = sin( t / 10) * 100. + 500., t * nFreq / nSampleCount * 256 & 128"
+                "codeOriginal": "nSampleCount = 48000 * 30, nFreq = sin( t / 10) * 100. + 500., t * nFreq / nSampleCount * 256 & 128",
+                "codeMinified": "t*(sin(t/10)*100+500)/(48e3*30)*256&128"
             }
         ]
     },
