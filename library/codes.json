@@ -315,7 +315,7 @@
     },
     {
         "author": "ToxidWorm",
-        "description": "Protactinium.exe",
+        "name": "Protactinium.exe",
         "url": "https://m.youtube.com/watch?v=llrig7wzujI",
         "date": "Aug 5, 2021",
         "children": [
@@ -344,21 +344,21 @@
         "author": "ccret293 (OLD)",
         "children": [
             {
-                "description": "nice 72100Hz music",
+                "name": "nice 72100Hz music",
                 "url": "https://www.reddit.com/r/bytebeat/comments/sgdkpm/nice_72100hz_music/",
                 "date": "Jan 30, 2022",
                 "sampleRate": 72100,
                 "codeOriginal": "((t*[1,0,1.5,0,1,0,1.5,2][(t>>13)%8]>>2)%127)+((t*[1,0,1.5,0,1,0,1.5,2][(t>>13)%8]>>2)%128)"
             },
             {
-                "description": "hell rock",
+                "name": "hell rock",
                 "url": "https://www.reddit.com/r/bytebeat/comments/sqv5s7/hell_rock/",
                 "date": "Feb 12, 2022",
                 "sampleRate": 32000,
                 "codeOriginal": "(t>>(t>>3)*(t&32768?1.05:1)&64)+(4e5/(t&[16383,12287,2147483647,12287,16383,12287,2147483647,5728][(t>>14)%8])&64)"
             },
             {
-                "description": "cool melody",
+                "name": "cool melody",
                 "url": "https://www.reddit.com/r/bytebeat/comments/t6ghty/cool_melody/",
                 "date": "Mar 04, 2022",
                 "sampleRate": 44100,
@@ -370,7 +370,7 @@
                 ]
             },
             {
-                "description": "$19 dollar fortnite card",
+                "name": "$19 dollar fortnite card",
                 "mode": "Signed Bytebeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/urrene/19_dollar_fortnite_card/",
                 "date": "May 17, 2022",
@@ -378,21 +378,21 @@
                 "codeOriginal": "t*=1.6,gc=t*[1,2,3,4,2,0,4,0,0.5,0.5,0,0,0.5,0.5,0,0][t>>12&15]/[4,5,6,6][t>>16&3]*4,30*asin(sin(gc/7))+40*asin(sin(gc/14))"
             },
             {
-                "description": "cool 1000hz beat",
+                "name": "cool 1000hz beat",
                 "url": "https://www.reddit.com/r/Enhanced_Bytebeat/comments/ut46t9/cool_1000hz_beat/",
                 "date": "May 19, 2022",
                 "sampleRate": 1000,
                 "codeOriginal": "(t*(-t>>7&5)*(t>>8&15)*16&64)+(t>>2&127)"
             },
             {
-                "description": "quandale dingle anthem",
+                "name": "quandale dingle anthem",
                 "url": "https://www.reddit.com/r/bytebeat/comments/ut8wwz/quandale_dingle_anthem/",
                 "date": "May 19, 2022",
                 "sampleRate": 32000,
                 "codeOriginal": "(((t/[4,3,2.5,2.2][t>>15&3]/1.8)&64)+(t*[1,1,2,2,6,6,5.3,5.3,4,4,3.6,3,3.6,3.6,4,4][t>>12&15]/1.8&64)+(64*random()*(-t>>11&1))+(t*sin(t>>4)*(t>>14&1)&-t>>8&63)+(4e4/(t&16383)&64))/1.5"
             },
             {
-                "description": "henry bartholomew dinglenut anthem",
+                "name": "henry bartholomew dinglenut anthem",
                 "mode": "Signed Bytebeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/utt7t5/henry_bartholomew_dinglenut_anthem/",
                 "date": "May 20, 2022",
@@ -400,14 +400,14 @@
                 "codeOriginal": "(50*cbrt(asin(sin(t/[4,3,2.5,2.2][t>>15&3]/20/1.8)))+30*atan(tan(t*[1,1,2,2,6,6,5.3,5.3,4,4,3.6,3,3.6,3.6,4,4][t>>12&15]/40/1.8))+30*sin(3e2/(t&4095))+50*sin(4e3/(t&16383)))/2"
             },
             {
-                "description": "48khz hardcore music eeee",
+                "name": "48khz hardcore music eeee",
                 "url": "https://www.reddit.com/r/Enhanced_Bytebeat/comments/uv88g8/48khz_hardcore_music_eeee/",
                 "date": "May 22, 2022",
                 "sampleRate": 48000,
                 "codeOriginal": "(t&96)*(4e3/(t&([16383,16383,16383,8191,16383,16383,16383,12287][(t>>15)&7])))+(t&t>>10&63)"
             },
             {
-                "description": "me when the",
+                "name": "me when the",
                 "mode": "Signed Bytebeat",
                 "url": "https://dollchan.net/btb/res/227.html#236",
                 "date": "Nov 12, 2022",
@@ -415,21 +415,21 @@
                 "codeOriginal": "((4E5/(t&16383)&128)+(t*[2,2,2,2,3,0,3,0][7&t>>11]*[1,1,1.2,1.35][3&t>>15]>>1&128)+((sin(t*[1,1,1,1,2,2,2,2,1,1,2,2,3,3,4,4][15&t>>13]*.79>>5)*100)))>>2"
             },
             {
-                "description": "squ and hat",
+                "name": "squ and hat",
                 "url": "https://dollchan.net/btb/res/227.html#241",
                 "date": "Nov 13, 2022",
                 "sampleRate": 32000,
                 "codeOriginal": "(4E3/(t&8191)&127)+(t*[2,1.5,3,2.5][3&t>>12]*[1,1,1.2,1.35][3&t>>15]&128)"
             },
             {
-                "description": "the platonic solids",
+                "name": "the platonic solids",
                 "url": "https://dollchan.net/btb/res/227.html#244",
                 "date": "Nov 14, 2022",
                 "sampleRate": 32000,
                 "codeOriginal": "t>>=2,((4E5/(t&4095)&127)+(random()*64&-t>>4)+(t*[0,sin(t>>1)][1&t>>12]&-t>>5&127)+((t*[1,1,1.2,1.35][3&t>>13]&127)+(t*.01)&128)+(t*[1,3,2,4,2,0,4,0][7&t>>10]&127)+(t*[4,0,0,3.55][3&t>>13]&64))/3"
             },
             {
-                "description": "space critters",
+                "name": "space critters",
                 "mode": "Signed Bytebeat",
                 "url": "https://dollchan.net/btb/res/227.html#246",
                 "date": "Nov 14, 2022",
@@ -437,14 +437,14 @@
                 "codeOriginal": "(4E3/(t&[16383,5265,16383,9383,14383,13683,16383,4095][7&t>>14])&63)+(sin(t/[10,6,10,8,12,8,10,6][7&t>>12])*10)+(sin(t/[20,16,12,10,20,15,12,13.5][7&t>>16])*50)"
             },
             {
-                "description": "absolute banger",
+                "name": "absolute banger",
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/227.html#269",
                 "date": "Dec 06, 2022",
                 "codeOriginal": "sin(t/10*(t&8192?-t>>8&t>>11&19:t>>9&t>>10&15)*(t&1024?t>>11&3:PI))"
             },
             {
-                "description": "i just ✨ SHNIPPLED ✨",
+                "name": "i just ✨ SHNIPPLED ✨",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1i3r2z9/i_just_shnippled/",
                 "date": "Jan 17, 2025",
                 "sampleRate": 32000,
@@ -457,14 +457,14 @@
                 "codeOriginal": "((t/(t&16384?t&8192?4:3:2)*(t^t>>(1+(t>>10)%15)&63)&127)+(300000/(t&4095)&128)+((t>>2)*(t>>2^t>>4)*(t>>12&1)&-t>>5&127)+(t*(t^t>>3)*3*(t>>11&1*(-t>>10&1))&-t>>3&127))/1.7"
             },
             {
-                "description": "blahaj",
+                "name": "blahaj",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1ifgs08/blahaj/",
                 "date": "Feb 01, 2025",
                 "sampleRate": 22050,
                 "codeOriginal": "c=h=>(h/2.1%31)+(h/2%32),(c(t*1.08)+c(t*1.28)+c(t*1.6)+c(t*(t&65536?2.16:.95)))*(-t>>9&31)/90+(sin(sqrt(t&32767)*2.5)*50)/1.2+random()*(-t>>3&127)*'1000'[t>>10&3]*((t>>9&31)+19)/200+41"
             },
             {
-                "description": "gdi skid repellent",
+                "name": "gdi skid repellent",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1kzki7c/gdi_skid_repellent/",
                 "date": "May 30, 2025",
                 "sampleRate": 48000,
@@ -472,7 +472,7 @@
                 "codeOriginal": "t/=1.5,w=v=>cos(sqrt(v&255)/4.5),d=(-t>>5&127)*(-t>>12&1),k=cbrt(sin(sqrt(t&8191)))*(-t>>6&127)/230,s=sin(t/7.5&t>>6)*d/300,h=random()*(t>>1&1)*d/670,st=v1=>(w(v1/1.002)+w(v1*1.002))/20,st(t*(t&8192?2:1)*[1,1.2,1.35,1.5,1.6,1.8,2,t&131072?.9:1.5][t>>14&7])+asin(sin(t*PI*[1,1,1.2,t&16384?.9:1.5][t>>15&3]/256))/4.5+[k,h,s,k,h,k,s,0,k,h,s,k,0,s,s,k][t>>13&15]"
             },
             {
-                "description": "harmonic polyrhythms",
+                "name": "harmonic polyrhythms",
                 "url": "https://www.reddit.com/r/9237923792873917/comments/1kztepu/harmonic_polyrhythms/",
                 "date": "May 31, 2025",
                 "sampleRate": 48000,
@@ -481,7 +481,7 @@
                 "codeOriginal": "t*=1.1,mp=.8,tri=v=>asin(sin(v*mp*PI/64))/1800,saw=v2=>cos(sqrt(v2*mp&1023)/8)/3,c=tri(t*(t&262144?.9:1))*(-t>>9&127)+tri(t*1.2)*(-t*1.25>>9&127)+tri(t*1.5)*(-t*1.5>>9&127)+tri(t*1.75)*(-t*1.75>>9&127)+tri(t*(t&262144?2.35:2))*(-t*(2)>>9&127),bm=t*(t&262144?t&131072?1.2:.9:1),bg='1  1 1 1'[t>>14&7],k=sin(sqrt(t&16383))*(-t>>6&127)*(-t>>13&1)/120,s=cbrt(sin(t/10^t/13))*(-t>>7&127)/300,h=sin(t/23&t/1.1>>2)*(-t>>6&127)/900,h2=random()*(-t>>6&127)*(t>>1&1)/600,p=sin(t*mp*PI/32)*(-t>>7&127)/800,seq=[k,0,s,k,p,k,s,k][t>>14&7],seq2=[0,h2,h,h2,h2,h,h2,h2][t>>13&7],lf=c+saw(bm/1.002)*bg+seq+seq2,rt=c+saw(bm*1.002)*bg+seq+seq2,[lf,rt]"
             },
             {
-                "description": "𝓽𝓻𝓪𝓷𝓼𝓬𝓮𝓷𝓭𝓮𝓷𝓽𝓪𝓵.",
+                "name": "𝓽𝓻𝓪𝓷𝓼𝓬𝓮𝓷𝓭𝓮𝓷𝓽𝓪𝓵.",
                 "url": "https://www.reddit.com/r/9237923792873917/comments/1lc6ulu/%F0%9D%93%BD%F0%9D%93%BB%F0%9D%93%AA%F0%9D%93%B7%F0%9D%93%BC%F0%9D%93%AC%F0%9D%93%AE%F0%9D%93%B7%F0%9D%93%AD%F0%9D%93%AE%F0%9D%93%B7%F0%9D%93%BD%F0%9D%93%AA%F0%9D%93%B5/",
                 "date": "Jun 15, 2025",
                 "sampleRate": 48000,
@@ -489,7 +489,7 @@
                 "codeOriginal": "mp=.98,t?0:(d=Array(time=12288).fill(0)),k=((sin(sqrt(t&8191)))+.5)*(-t>>5&127)*(-t>>12&1)/80,s=l=>(floor(cbrt(sin(t*PI/(14+l*3)&t>>4))*10)+5)*(-t>>6&127)/800/((l+3)/2),h=(random()*(t/1.7&1)*(-t>>6&127))/270,r=v=>cos(sqrt(v&1023)/7),o=v2=>r(v2/1.002)+r(v2*1.002),ds=(round(asin(sin(t*mp*PI/64*[t&262144?.9:1,1.2,1.35,t&131072?1.77:1.5][t>>13&3]))*2.8)+ceil((abs(sin(t/4.3&t>>3)))*1.00062))*((-t>>6&127)+90)/1100+d[t%time],d[t%time]=ds/2,d[t%time]+o(t*mp*[1,1.2,1.35,1.5][t>>17&3])*(P='1  1  1 '[t>>13&7])/1.7+(P/2)+[k,h,s(3.3),k,s(1),h,k,s(5)][t>>13&7]-.2"
             },
             {
-                "description": "messing around with overtones",
+                "name": "messing around with overtones",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1m9v67e/messing_around_with_overtones/",
                 "date": "Jul 26, 2025",
                 "sampleRate": 48000,
