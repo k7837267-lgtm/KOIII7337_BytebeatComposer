@@ -3591,6 +3591,17 @@
         ]
     },
     {
+        "author": [
+            "emelchenko",
+            "Gaham"
+        ],
+        "name": "caveium",
+        "url": "https://dollchan.net/btb/res/727.html#4685",
+        "date": "Jul 11, 2024",
+        "sampleRate": 32000,
+        "codeOriginal": "c=t=>((cbrt(sin(t*PI/128*(1.5**(3&[t,-t][t>>15&1]>>13))/(1+1.5/2*(3&t>>16))))*sin(t*PI/128/64)+(random()*64&-t>>7)%255/128)/2+cbrt(sin(t*PI/128/128/4))/4)*127+128&255,(()=>{o=0;n=3;n2=4e3;for(i=0;i<n*n2;i+=n2)o+=c(t-i);return o/n})()+(sin(4e3/(t&16383))*32)"
+    },
+    {
         "author": "SRB2er",
         "name": "want a byte of my food?",
         "url": "https://battleofthebits.com/arena/Entry/want+a+byte+of+my+food_/70383/",
@@ -3717,6 +3728,13 @@
                 "codeOriginal": "t*2**([0,7,2,9,4,11,6,1,8,3,10,5][(t*(t/16&8191?r:r=random()*8|0)>>13)%12]/12)*2&128"
             },
             {
+                "name": "don't know how to name this",
+                "url": "https://dollchan.net/btb/res/368.html#5417",
+                "date": "Feb 01, 2025",
+                "sampleRate": 20480,
+                "codeOriginal": "speed=(t&32767?v:v=random()*16+1) / 2,t*(2**((-t*speed>>11&7)/12*3.5+(t*speed>>14&7)/24))*speed/6%256/2+t*(2**((-t*speed>>11&7)/12*3.5+(t*speed>>14&7)/24))/6*speed*.75%128*6"
+            },
+            {
                 "name": "Volt.A gdi trojan bytebeat 2",
                 "remix": {
                     "author": "SthephanShi",
@@ -3727,6 +3745,13 @@
                 "date": "Feb 28, 2025",
                 "sampleRate": 9102,
                 "codeOriginal": "(((t / 2 * ((t & 4096 ? t % 65536 < 59392 ? 7 : t >> 6 : 16) + (1 & t >> 14)) >> (3 & (t >> (t & 2048 ? 2 : 10)) * 3)) ^ (t * 7 / 2 * ((t & 4096 ? t % 65536 < 59392 ? 7 : t >> 6 : 16) + (1 & t >> 14)) >> (3 & (t >> (t & 2048 ? 2 : 10))*3))) | t >> 2 - (t >> 12 & 1))"
+            },
+            {
+                "name": "found monoxide's first bytebeat...",
+                "url": "https://dollchan.net/btb/res/368.html#5863",
+                "date": "Apr 16, 2025",
+                "sampleRate": 48000,
+                "codeOriginal": "nSampleCount = 48000 * 30, nFreq = sin( t / 10) * 100. + 500., t * nFreq / nSampleCount * 256 & 128"
             }
         ]
     },
