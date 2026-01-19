@@ -3865,6 +3865,45 @@
                 "sampleRate": 32000,
                 "file": "TI3699-2.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "the μ of the errors",
+                "url": "https://www.bytebeat.cloud/post/9672d2e4-f2aa-485c-a548-f69259f0f6b2",
+                "date": "Jan 02, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "I=t?I:0,T=++I/48000,s=I/6000,P=[].concat([[1,2],[6.5,4.5]][floor(s/16)%2].map(x=>x+4/x),[[2,4],[4,5],[3,2],[3],[2,4,3],[2.5,1],[1.5,2],[3]][floor(s/16)%8].map(y=>y-4*y)),(e=>{e*=sin(cos(I/100000)*82);return atan(e*2)*.75})(P.reduce((Z,o)=>Z+=(sin(sin(T*PI*60*o*2)+(sin(T*PI*120*o)*o/8)**2)*.01**(s*(1+o/16)/4%1))*.5,0)+sin(4/((s/4%1)+.05)))"
+            },
+            {
+                "name": "openside warmths",
+                "url": "https://www.bytebeat.cloud/post/ca6c0b27-31d9-4edb-aeba-46b4b43cad9d",
+                "date": "Jan 10, 2026",
+                "sampleRate": 48000,
+                "codeOriginal": "s=t/11972,.75*((t*8/2.8*pow(2,(s/16&1?((s/8&1?s/4&1?0b001:0:0)>>(0|8*s%3)&1&&-1)+((s/8&1?0x720:0x950)>>(0|8*s%3)*4&15):s/8&1?(0b001>>(0|8*s%3)&1&&-1)+((s/4&1?0x740:0x720)>>(0|8*s%3)*4&15):((s/4&1?0x950:0x740)>>(0|8*s%3)*4&15))/12)%256<100+54*sin(t/1999)||63)*((s/4&1?0b10111001:0b10110001)>>(s*2&7)&1)*(s*2%1<.8)+(t/4/2.8*pow(2,(s/16&1?s/8&1?-((s/4&1?0x13111111:0x31000000)>>(2*s&7)*4&15):-3:s/8&1?s/4&1?4:-1:s/4&1?5:0)/12)&63)+((t/2.8)/16*pow(2,(s/16&1?s/8&1?s/4&1?(s%2>1?-1:-5):(s%2>1?0:-3):(s%2>1?-3:-7):s/8&1?-(0x15687531>>(s&7)*4&15):(0x02454C74>>(s&7)*4&15))/12)&1||-s*64&63)+(t*t*.65&63)*(1-(s*2%1))*(s%1<.5)+((t>>2)*(t>>2)*.65&63)*(1-(s/2%1))*!(s/4%1<.5))"
+            },
+            {
+                "name": "Catch This (ti3699 remix)",
+                "cover": {
+                    "name": "Diego Miranda & Tom Enzy - Catch This",
+                    "url": "https://www.youtube.com/watch?v=5GonUiAegMg"
+                },
+                "url": "https://www.bytebeat.cloud/post/1ae4e638-b48b-48b9-aaab-c1d831a7acbc",
+                "date": "Jan 18, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": [
+"s=t/10912,",
+"dly=(f,l,m)=>m&&f(s-l*m)/m*4+dly(f,l,m-1),fm1=(t,e)=>sin(sin(t)*5.1258083*e+sin(t)*3.139*e)*.2*e,",
+"ml=[-3,-3,-3,9,9,9,-3,-3,-3,-3,4,0,5,0,0,0],",
+"gs=s=>s>0&&fm1(t/128*PI*pow(2,ml[floor(2*s)%16]/12),pow(.2,2*s%1))*((floor(s/8)%4==3?21577:5193)>>(2*s&15)&1),",
+"sc=\"0012\",",
+"R=gs(s)*2+([1.5,2].reduce((a,b)=>a+=dly(gs,b+sin(t/(s/16&1?s/8&1?147:124:100)*24)*sin(s*PI/4)*.1,16)*.6,0)+[[0,3,7,10],[-4,0,3,7],[-5,-2,2,5]][sc[floor(s/8)%4]].reduce((a,b)=>a+=(c=>atan(tan(c)))(t/98*2*pow(2,b/12))*.08,0))*max(-s/2%1),",
+"f_in=max(s>16?1:s/16),R*=f_in,",
+"pnch=40/pow(.13+(s/2%1),.5),n_cr=(random()-.5)*pow(.8,s),hh=(random()-.5)*pow(.1,2*s%1)*(1&s),",
+"R+=(n_cr+(s>64?atan(sin(pnch)*16*pow(.004,s/2%1))*.5+hh*.5:0)),",
+"dm=sin(s*1430)*.75,",
+"floor(s)==63?dm:R"
+                ]
             }
         ]
     },
@@ -4736,6 +4775,15 @@
                 "stereo": true,
                 "file": "insanity.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "\"acid\"",
+                "date": "Jan 01, 2026",
+                "url": "https://www.bytebeat.cloud/post/c03bf5ab-7332-4edb-be94-a6cfbfae8ce6",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "stereo": true,
+                "codeOriginal": "t?0:fx=[],fxi=0,lpf=(a,c)=>(fx[++fxi]??=0,fx[fxi]+=(a-fx[fxi])*c),hpf=(a,c)=>a-lpf(a,c),del=(i,d,f,c=0)=>(fx[++fxi]??=Array(d).fill(0),out=i+fx[fxi][(t+c|0)%d],fx[fxi][t%d]=out*f,out),rev=(m,a,s,v,f,d,w)=>{var out=0;for(let i=0;i<a;i++){out+=((del(m,s+(v*i),f,i*1568+12e3+(cos(t/32e3*(i/70+.8))*96))-m)/a)};return m*d+(out*w);},wv=x=>sin(exp(x%256/(64+abs(sin(t/2**16)*30)))),ms=i=>hpf(rev(del(wv(t*(1+(t>>13)%3)*2**([0,2,5,3][t>>16&3]/12))/(1+(t/8192%1)*16),i?12168:12282,.5),4,i?1e4:9e3,i?125:135,.6,1,1),.01),[ms(0),ms(1)]"
             }
         ]
     },
