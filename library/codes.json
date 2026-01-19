@@ -474,6 +474,7 @@
             {
                 "name": "harmonic polyrhythms",
                 "date": "May 31, 2025",
+                "description": "Won't Provide The Link Since The Subreddit Got Banned.",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
                 "stereo": true,
@@ -482,6 +483,7 @@
             {
                 "name": "𝓽𝓻𝓪𝓷𝓼𝓬𝓮𝓷𝓭𝓮𝓷𝓽𝓪𝓵.",
                 "date": "Jun 15, 2025",
+                "description": "Won't Provide The Link Since The Subreddit Got Banned.",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
                 "codeOriginal": "mp=.98,t?0:(d=Array(time=12288).fill(0)),k=((sin(sqrt(t&8191)))+.5)*(-t>>5&127)*(-t>>12&1)/80,s=l=>(floor(cbrt(sin(t*PI/(14+l*3)&t>>4))*10)+5)*(-t>>6&127)/800/((l+3)/2),h=(random()*(t/1.7&1)*(-t>>6&127))/270,r=v=>cos(sqrt(v&1023)/7),o=v2=>r(v2/1.002)+r(v2*1.002),ds=(round(asin(sin(t*mp*PI/64*[t&262144?.9:1,1.2,1.35,t&131072?1.77:1.5][t>>13&3]))*2.8)+ceil((abs(sin(t/4.3&t>>3)))*1.00062))*((-t>>6&127)+90)/1100+d[t%time],d[t%time]=ds/2,d[t%time]+o(t*mp*[1,1.2,1.35,1.5][t>>17&3])*(P='1  1  1 '[t>>13&7])/1.7+(P/2)+[k,h,s(3.3),k,s(1),h,k,s(5)][t>>13&7]-.2"
