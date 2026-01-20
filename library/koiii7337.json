@@ -83,6 +83,6 @@
     "exotic": true,
     "description": "Bytebeat Composers With Exotic Functions Should Add This. Maybe..",
     "date": "Jan 19, 2026",
-    "codeOriginal":"((br((t>>8|t>>15))*t/32|br(t>>8))&255)*PIn(t/2048*PI)*(1+(t>>12&7))"
+    "codeOriginal":"((br((t>>8|t>>15))*t/32|br(t>>8))&255)*sin(t/2048*PI)*(1+(t>>12&7))"
   }
 ]
