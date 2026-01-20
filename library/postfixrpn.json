@@ -75,13 +75,14 @@
       },
       {
       "name": "Postfix(rpn) Simple Noise",
-      "description": "\"I Could Quietly Hear The Screams From Hell If I Could Tell.\" - KOIII7337"
+      "description": "\"I Could Quietly Hear The Screams From Hell If I Could Tell.\" - KOIII7337",
       "date": "Jan 19, 2026",
       "file": "koiii7337-2.js",
       "fileOriginal": true
       },
       {
       "name": "Each Time It Increases, It Will Turn Into A Triangle Drum Type",
+      "description": "And \"0 >>\" Wasn't Even Necessary In This Code Because It Will Sound The Same. So I Removed To Save Space.",
       "date": "Jan 19, 2026",
       "file": "koiii7337-3.js",
       "fileOriginal": true
