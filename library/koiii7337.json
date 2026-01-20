@@ -77,5 +77,12 @@
 ],
 "date": "Jan 15, 2026",
 "codeOriginal": "(((t*2.1*2**([0,0,6,7,11,11,7,7,6,6,7,7,0,0,7,7,2,2,6,7,11,11,7,7,6,6,7,7,2,2,3,3,4,4,6,7,11,11,7,7,6,6,7,7,4,4,7,7,-1,-1,6,7,11,11,7,7,6,6,7,7,-3,-3,-1,-1][t>>10&63]/12)&63)+((acos(-cos(t/32768*PI))/16-.1965)*128-1)*1.25)|t>>'43444444'[t>>11&7]&127)-(t/2>>'43444444'[t>>11&7]&63)"
-}
+},
+  {
+  "name": "I ALWAYS WANTED TO TEST EXOTIC STUFF!",
+    "exotic": true,
+    "description": "Bytebeat Composers With Exotic Functions Should Add This. Maybe..",
+    "date": "Jan 19, 2026",
+    "codeOriginal":"((br((t>>8|t>>15))*t/32|br(t>>8))&255)*PIn(t/2048*PI)*(1+(t>>12&7))"
+  }
 ]
