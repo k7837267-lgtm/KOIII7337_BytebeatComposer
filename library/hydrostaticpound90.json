@@ -92,5 +92,17 @@
     "date": "Jan 19, 2026",
     "description": "\"I Wrote A Code While KOIII Was Watching Taiko No Tatsujin Videos.\" - HydrostaticPound90",
     "codeOriginal": "((\"12348765\"[t*[1,1,1.5,1.35][t>>12&3]>>(t>>8&16/'11121124'[t>>12&7]-1)&7]*27|5e4/(t*4&8191)|(t**9%255)*(t>>11&1)*(-t>>10&1)*(-t>>9&1))*(-1+(-t>>11&2))|15)-8"
+  },
+  {
+    "name": "#17",
+    "date": "Jan 21, 2026",
+    "description": "\"I Was In A Total Rush. 11;50P. Made It In Time.\" - HydrostaticPound90 (Sounds Like Shooting Lasers)",
+    "codeOriginal": "(t&255)*t/(t&4095)&255|t>>4^t>>8"
+  },
+  {
+    "name": "#18",
+    "date": "Jan 22, 2026",
+    "description": "JavaScript Fire Alarm Thing In (Infix Bytebeat).",
+    "codeOriginal": "(((t/[1.05,1.225][t>>12&1]*t)/(t&2047^t&4094))&255)*8|t>>4&127"
   }
 ]
