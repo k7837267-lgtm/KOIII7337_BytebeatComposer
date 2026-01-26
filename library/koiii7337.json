@@ -84,5 +84,36 @@
     "description": "Bytebeat Composers With Exotic Functions Should Add This. Maybe.. (Also, Pitful_Amoeba, If You're Seeing This, I Still Don't Trust You For Calling The HZ The Stupid God Forsaken Six Seven From One Of Someone's Bytebeat.)",
     "date": "Jan 19, 2026",
     "codeOriginal":"((br((t>>8|t>>15))*t/32|br(t>>8))&255)*sin(t/2048*PI)*(1+(t>>12&7))"
+  },
+  {
+    "name": "Modified Polysine",
+    "remix": {
+      "author": "Glebguything",
+      "name": "polysine",
+      "url": "https://www.reddit.com/r/bytebeat/comments/1g3awfe/polysine/"
+    },
+    "url": "https://www.reddit.com/r/bytebeat/comments/1g3awfe/comment/o1r9l1b/?context=3",
+    "date": "Jan 25, 2026",
+    "children": [
+      {
+      "sampleRate": 16001,
+      "mode": "Floatbeat",
+      "codeOriginal": "t*=3,F=i=>i&&sin(t*PI/32/6*2**(i/5))*(-t/32*2**(i/12)&8191)/16E3/i+F(i-1),F(20)/1.25"
+      },
+      {
+        "name": "CBRT Version",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1g3awfe/comment/o1r9rik/?context=3",
+      "sampleRate": 16001,
+      "mode": "Floatbeat",
+      "codeOriginal": "t*=3,F=i=>i&&cbrt(sin(t*PI/32/6*2**(i/5)))*(-t/32*2**(i/12)&8191)/16E3/i+F(i-1),F(20)/1.5"
+      },
+      {
+        "name": "SQRT Version",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1g3awfe/comment/o1r9wjb/?context=3",
+      "sampleRate": 16001,
+      "mode": "Floatbeat",
+      "codeOriginal": "t*=3,F=i=>i&&(sqrt(sin(t*PI/32/6*2**(i/5)))||0)*(-t/32*2**(i/12)&8191)/16E3/i+F(i-1),F(20)-.55"
+      }
+]
   }
 ]
