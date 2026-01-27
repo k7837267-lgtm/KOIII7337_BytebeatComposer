@@ -4546,6 +4546,13 @@
         ]
     },
     {
+        "author": "illia6236",
+        "name": "HO² funk",
+        "url": "https://www.youtube.com/watch?v=R2GVAHbJ4PI",
+        "date": "Aug 21, 2025",
+        "codeOriginal": "t*((t>>5|t>>8)&234)"
+    },
+    {
         "author": [
             "ANoUserXD",
             "BaenHoHoHo"
