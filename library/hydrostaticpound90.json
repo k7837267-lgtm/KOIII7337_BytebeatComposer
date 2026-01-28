@@ -110,5 +110,16 @@
     "date": "Jan 25, 2026",
     "description": "\"KOIII's Being Requested To Do His First Pull Request, He's Gonna Get In Trouble!!!\" - HydrostaticPound90 (Metallic Sound-Like JavaScript Bytebeat)",
     "codeOriginal": "t+=8192,(t*128*tan(t>>13)<<(t>>11&31))/1.01|t>>4"
+  },
+  {
+    "name": "#20",
+    "remix": {
+      "author": "Blueberry",
+      "name": "Good old fractal melody",
+      "url": "http://www.pouet.net/topic.php?which=8357&page=12#c389114"
+    },
+    "date": "Jan 28, 2026",
+    "description": "\"It Does Go Haywire, Making New Types Of ST Waveform.\" - HydrostaticPound90",
+    "codeOriginal": "((t>>10^(t>>10)-3^3)%13*t&191)*((t>>10^(t>>10)-3^3)%13)/2|t>>4"
   }
 ]
