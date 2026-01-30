@@ -4908,13 +4908,25 @@
     },
     {
         "author": "pck404 *(Creator Of BytebeatCloud)*",
+        "children": [
+            {
         "name": "momentum presence",
         "url": "https://www.bytebeat.cloud/post/447ebb36-fc8e-47e8-9a0c-d7183cd9d877",
         "date": "Dec 13, 2025",
-        "sampleRate": 8000,
         "mode": "Floatbeat",
         "file": "pck404.js",
         "fileOriginal": true
+    },
+            {
+                "name": "rêverie subaquatique",
+                "description": "BytebeatCloud's Week 1 Submission",
+                "date": "Dec 13, 2025",
+                "sampleRate": 22050,
+                "mode": "Floatbeat",
+                "file": "pck404-1.js",
+                "fileOriginal": true
+            }
+        ]
     },
     {
         "author": "Funcbeat Anon",
