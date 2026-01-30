@@ -115,5 +115,42 @@
       "codeOriginal": "t*=3,F=i=>i&&(sqrt(sin(t*PI/32/6*2**(i/5)))||0)*(-t/32*2**(i/12)&8191)/16E3/i+F(i-1),F(20)-.55"
       }
 ]
+  },
+  {
+    "name": "I Made A Under 256B Music",
+    "url": "https://www.reddit.com/r/bytebeat/comments/1qo3v51/i_made_a_under_256b_music/",
+    "date": "Jan 27, 2026",
+    "description": "Minified By Me & ClerkOk7202",
+    "sampleRate": 11000,
+    "codeOriginal": "A=(t*'*/'.charCodeAt(t>>(10+(t>>18&3))&1)/8*[1,1.5,1.25,1.75][t>>14&3]|t*[1,1.5,1.25,1.75][t>>14&3]&255),(A%128+A%192)/3+(((tan(t)*t)|t>>2)&255)*'00001000'[t>>10&7]/3*'01'[t>>17&1]+(sqrt(sin(5e4/((t&4095)+275)))||0)*64*'01'[t>>17&1]^sin(t/16384*PI)*4+4^2",
+    "codeMinified": "a='4657'[t>>14&3]/4,A=t*'*/'.charCodeAt(t>>(10+(t>>18&3))&1)/8*a|t*a&255,(A%128+A%192)/3+((tan(t)*t|t/4)&255)*'00001000'[t>>10&7]/3*'01'[t>>17&1]+(sqrt(sin(5e4/((t&4095)+275)))||0)*64*'01'[t>>17&1]^sin(t/16384*PI)*4+4^2"
+  },
+  {
+    "name": "I Started Using Hex",
+    "url": "https://www.reddit.com/r/bytebeat/comments/1qpvh3j/i_started_using_hex/",
+    "date": "Jan 29, 2026",
+    "sampleRate": 9000,
+    "codeOriginal": "t+=4096,(t*2*(0x6391649164917>>(t>>9&30)&(14+(t>>17&1)))&128)/3.2+(t/4*3*(0x6839615816918>>(t>>10&(14+(t>>16&1)))&18)&128)/3+(t*(0x97391938>>(t>>11&11)&(13+(-t>>17&1)))%128/8+t*(0x97391938>>(t>>11&11)&(13+(-t>>17&1)))%192/4)+((t*(0x7337/(t&4095)&12)/8)&63)"
+  },
+  {
+    "name": "Sparta Antimatter RYG",
+    "remix": [
+      {
+        "author": "MarioFan171",
+        "name": "Ryg the Bamboo Cutter",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1oc5qe7/ryg_the_bamboo_cutter/"
+      },
+      {
+        "author": "ryg",
+        "url": "https://www.pouet.net/topic.php?which=8357&page=12#c389146"
+      }
+    ],
+    "cover": {
+      "name": "Sparta Antimatter Remix"
+    },
+    "url": "https://dollchan.net/btb/res/10880.html#12408",
+    "date": "Jan 30, 2026",
+    "sampleRate": 40000,
+    "codeOriginal": "p=K=>t*1.59*2**(parseInt(K,36)/12),((t>>(11+(t>>14&1))^(t>>(11+(t>>14&1)))-2)%11*(p('BB44505C929EC5CC'[t>>13&15])/4|t>>11)&127)+(p('4525'[t>>15&3])*(1+(t>>13&1))/8&128)"
   }
 ]
