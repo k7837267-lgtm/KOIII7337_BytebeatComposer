@@ -120,19 +120,19 @@
     "date": "Dec 28, 2025",
     "children": [
       {
-        "name": "V1"
+        "name": "V1",
         "sampleRate": 32000,
         "mode": "Floatbeat",
         "codeOriginal": "(exp(sin(cos(tan(cbrt(((t))%16384)))))-1.35)"
       },
       {
-        "name": "V2"
+        "name": "V2",
         "sampleRate": 32000,
         "mode": "Floatbeat",
         "codeOriginal": "(exp(sin(cos(tan(cbrt(((t^t/2))%16384)))))-1.35)"
       },
       {
-        "name": "V3"
+        "name": "V3",
         "sampleRate": 32000,
         "mode": "Floatbeat",
         "codeOriginal": "(exp(sin(cos(tan(cbrt(((t/2&t*.75))%16384)))))-1.35)"
