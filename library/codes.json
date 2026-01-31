@@ -4205,6 +4205,18 @@
                 "date": "Oct 10, 2025",
                 "sampleRate": 37500,
                 "codeOriginal": "(((((t/2*2**([(t>>18&1?(t>>17&1?-14:-16):-12),((t>>17&3)==3?2:3),((t>>17&3)==3?3:5),((t>>17&3)==3?5:7)][t>>12&3]/12)&(t>>12&1?t>>7:~t>>7)&127)))+((t*2**([0,3,2,3,10,3,2,3][t>>13&7]/12)&127)&255&(t>>12&3?~t>>6:255)))%256+((((t/2*2**([(t>>18&1?(t>>17&1?-14:-16):-12),((t>>17&3)==3?2:3),((t>>17&3)==3?3:5),((t>>17&3)==3?5:7)][t>>12&3]/12)&(t>>12&1?t>>7:~t>>7)&127)))*((t*2**([0,3,2,3,10,3,2,3][t>>13&7]/12)&127)&255&(t>>12&3?~t>>6:255)))%256/8)/1.0625"
+            },
+            {
+                "name": "made a beat from v3",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1pxi8qj/comment/nwc534w/?context=3",
+                "remix": {
+                    "author": "KOIII7337",
+                    "name": "I Was Using Functions Then Got This",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1pxi8qj/i_was_using_functions_then_got_this/"
+                },
+                "date": "Dec 28, 2025",
+                "sampleRate": 44100,
+                "codeOriginal": "T=t+8192,tanh((exp(sin(cos(tan(cbrt(((T/2&T))%16384)*8))))-1.35))*min(1,t/8192%2)+tanh(sin(100*(t%16384)**.1)*4)*4*max(0,1-t/8192%2)+sin(t/2.1|t/4.5)*(1-t/16384%1)**4*4*(t>>14&1)"
             }
         ]
     },
