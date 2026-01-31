@@ -62,6 +62,24 @@
     ]
   },
   {
+    "name": "My Attempt On A C-compatible Music",
+    "description": "\"Did I Stole It? Or Somebody Just Forgot To Credit Me.\" - KOIII7337",
+    "url": "https://www.reddit.com/r/bytebeat_2/comments/1ocxm1k/my_attempt_on_a_ccompatible_music/",
+    "date": "Oct 22, 2025",
+    "codeOriginal": "t>>(t&4096?2:3)|(t+(8+(t<<(t>>14&1)))<<(1&t>>16))*(t&2048?0:1)|t*(t^t%255)*(t&2048?1:0)"
+  },
+  {
+    "name": "STMSRT",
+    "description": "I LITERALLY JUST USED RANDOM NAMES FOR THIS.",
+    "url": "https://www.reddit.com/r/bytebeat/comments/1oh4br8/stradio_technophole_menner_saferrates_refesa/",
+    "date": "Oct 27, 2025",
+    "codeOriginal": [
+      "/* Removing The Messages Will Be 492B (Just That You Remove The Spaces) */",
+"// I JUST USED RANDOM NAMES WHAT-",
+"A=[1,3,6,8,12,16,24,32][(t>>13&7^t>>15&7|t>>11&7)&7]*t/2,STRADIO_TECHNOPHOLE1=-A,B=sin(7337 /* My Number Cuz Why Not? */ /((t&4095)^t>>8^t>>10))*64+128,MENNER_SAFERRATES1=B,C=t/4&(t>>8^t>>10^t>>12),REFESA_TREAMITEAS1=C*9|C*15,STMSRT_1=(((STRADIO_TECHNOPHOLE1)&255)/3+((MENNER_SAFERRATES1)&255)/3+((REFESA_TREAMITEAS1)&255)/3),STRADIO_TECHNOPHOLE2=A*3,MENNER_SAFERRATES2=-B,REFESA_TREAMITEAS2=-C*9|-C*15,STMSRT_2=(((STRADIO_TECHNOPHOLE2)&255)/3+((MENNER_SAFERRATES2)&255)/3+((REFESA_TREAMITEAS2)&255)/3),[STMSRT_1,STMSRT_2]"
+    ]
+  },
+    {
 "name": "An Electric Square-Like Sound",
 "remix": [
 {
@@ -81,7 +99,7 @@
   {
   "name": "I ALWAYS WANTED TO TEST EXOTIC STUFF!",
     "exotic": true,
-    "description": "Bytebeat Composers With Exotic Functions Should Add This. Maybe.. (Also, Pitful_Amoeba, If You're Seeing This, I Still Don't Trust You For Calling The HZ The Stupid God Forsaken Six Seven From One Of Someone's Bytebeat.)",
+    "description": "Bytebeat Composers With Exotic Functions Should Add This. Maybe.. (Also, Pitful_Amoeba, IfSeeinge Seeing This, I Still Don't Trust You For Calling The HZ The Stupid God Forsaken Six Seven From One Of Someone's Bytebeat.)",
     "date": "Jan 19, 2026",
     "codeOriginal":"((br((t>>8|t>>15))*t/32|br(t>>8))&255)*sin(t/2048*PI)*(1+(t>>12&7))"
   },
