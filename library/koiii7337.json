@@ -99,7 +99,6 @@
     "url": "https://www.reddit.com/r/bytebeat/comments/1otlgy8/random_thing_2/",
     "date": "Nov 10, 2025",
     "codeOriginal": "PitchChange=(t&32768/8-1?v:v=random()*10+1),t?0:A=Array(N=1).fill(0),T=((t*PitchChange<<(t>>8))&127|t>>6),EV=(T)/6+A[t%N]||0,A[t%N]=EV/1.01,EV/0.5"
-    ]
   },
   {
     "name": "Random Thing #3",
