@@ -73,10 +73,70 @@
     "description": "I LITERALLY JUST USED RANDOM NAMES FOR THIS.",
     "url": "https://www.reddit.com/r/bytebeat/comments/1oh4br8/stradio_technophole_menner_saferrates_refesa/",
     "date": "Oct 27, 2025",
+    "sampleRate": 9461,
     "codeOriginal": [
       "/* Removing The Messages Will Be 492B (Just That You Remove The Spaces) */",
 "// I JUST USED RANDOM NAMES WHAT-",
 "A=[1,3,6,8,12,16,24,32][(t>>13&7^t>>15&7|t>>11&7)&7]*t/2,STRADIO_TECHNOPHOLE1=-A,B=sin(7337 /* My Number Cuz Why Not? */ /((t&4095)^t>>8^t>>10))*64+128,MENNER_SAFERRATES1=B,C=t/4&(t>>8^t>>10^t>>12),REFESA_TREAMITEAS1=C*9|C*15,STMSRT_1=(((STRADIO_TECHNOPHOLE1)&255)/3+((MENNER_SAFERRATES1)&255)/3+((REFESA_TREAMITEAS1)&255)/3),STRADIO_TECHNOPHOLE2=A*3,MENNER_SAFERRATES2=-B,REFESA_TREAMITEAS2=-C*9|-C*15,STMSRT_2=(((STRADIO_TECHNOPHOLE2)&255)/3+((MENNER_SAFERRATES2)&255)/3+((REFESA_TREAMITEAS2)&255)/3),[STMSRT_1,STMSRT_2]"
+    ]
+  },
+  {
+    "name": "My Remix Of Neurofunk!",
+    "url": "https://www.reddit.com/r/bytebeat/comments/1oj6ucp/my_remix_of_neurofunk/",    
+    "sampleRate": 9053,
+    "date": "Oct 29, 2025",
+    "codeOriginal": "t-=t/1&256*1,A=t*((t&4096?t%65536<59392?7:t>>6:16)+(1&t>>14))>>(3&-t>>(t&2048?2:10)),B=t*((t&4096?t%65536<59392?7:t>>6:16)^(1&t>>14))>>(3&-t>>(t&2048?2:10)),C=(t>>'1200'[t>>11&3]),D=(t/(t&4095)),[[A|C^D,B|C^D],[B|C^D,A|C^D]][t>>13&1]"
+  },
+  {
+    "name": "Random Thing #1",
+    "url": "https://www.reddit.com/r/bytebeat/comments/1ot0eqz/random_thing_1/",
+    "date": "Nov 9, 2025",
+    "codeOriginal": "(t/=(t/(t*3&t*3/1.001)),t*3&t/3>>5)^t"
+  },
+  {
+    "name": "Random Thing #2",
+    "description": "A Mistake At The Date Posted. (11/10 & Not 10/10)"
+    "url": "https://www.reddit.com/r/bytebeat/comments/1otlgy8/random_thing_2/",
+    "date": "Nov 10, 2025",
+    "codeOriginal": [
+      "PitchChange=(t&32768/8-1?v:v=random()*10+1),",
+"t?0:A=Array(N=1).fill(0),",
+"T=((t*PitchChange<<(t>>8))&127|t>>6),EV=(T)/6+A[t%N]||0, A[t%N]=EV/1.01,EV/0.5t"
+    ]
+  },
+  {
+    "name": "Random Thing #3",
+    "description": "A Mistake At The Date Posted. (11/15 & Not 10/15)"
+    "url": "https://www.reddit.com/r/bytebeat/comments/1oy6nqw/random_thing_3/",
+    "date": "Nov 15, 2025",
+    "codeOriginal": [
+      "A=2**(parseInt('80A50A80A50A805AF0A50BF1A73CF3C7G0A80AG0A80AG08AG0A80AG0F137C3578DB5DB8DA5DBFD5A7CE3CE7CE3EC875FG0A80AG0A80AG08AG0A80AG0F137C357'[t>>10&127],36)/12),",
+"(t*A<<(t>>10)|t*A<<(t>>11)|t*A<<(t>>12)|t*A<<(t>>8)|t*A<<(t>>5)|t*A<<(t>>(t>>11&7)&15)|t*A*16>>((t>>9>>t>>13)&3)|t>>4)^t*8/((t&4095)+1e3)"
+    ]
+  },
+  {
+    "name": "I Was Using Functions Then Got This",
+    "url": "https://www.reddit.com/r/bytebeat/comments/1pxi8qj/i_was_using_functions_then_got_this/",
+    "date": "Dec 28, 2025",
+    "children": [
+      {
+        "name": "V1"
+        "sampleRate": 32000,
+        "mode": "Floatbeat"
+        "codeOriginal": "(exp(sin(cos(tan(cbrt(((t))%16384)))))-1.35)"
+      },
+      {
+        "name": "V2"
+        "sampleRate": 32000,
+        "mode": "Floatbeat"
+        "codeOriginal": "(exp(sin(cos(tan(cbrt(((t^t/2))%16384)))))-1.35)"
+      },
+      {
+        "name": "V3"
+        "sampleRate": 32000,
+        "mode": "Floatbeat"
+        "codeOriginal": "(exp(sin(cos(tan(cbrt(((t/2&t*.75))%16384)))))-1.35)"
+     }
     ]
   },
     {
@@ -99,7 +159,7 @@
   {
   "name": "I ALWAYS WANTED TO TEST EXOTIC STUFF!",
     "exotic": true,
-    "description": "Bytebeat Composers With Exotic Functions Should Add This. Maybe.. (Also, Pitful_Amoeba, IfSeeinge Seeing This, I Still Don't Trust You For Calling The HZ The Stupid God Forsaken Six Seven From One Of Someone's Bytebeat.)",
+    "description": "Bytebeat Composers With Exotic Functions Should Add This. Maybe.. (Also, Pitful_Amoeba, If You're Seeing This, I Still Don't Trust You For Calling The HZ The Stupid God Forsaken Six Seven From One Of Someone's Bytebeat.)",
     "date": "Jan 19, 2026",
     "codeOriginal":"((br((t>>8|t>>15))*t/32|br(t>>8))&255)*sin(t/2048*PI)*(1+(t>>12&7))"
   },
@@ -108,7 +168,7 @@
     "remix": {
       "author": "Glebguything",
       "name": "polysine",
-      "url": "https://www.reddit.com/r/bytebeat/comments/1g3awfe/polysine/"
+      "url": "https://www.redditbytebeatycommentsomments/1g3awfe/polysine/"
     },
     "url": "https://www.reddit.com/r/bytebeat/comments/1g3awfe/comment/o1r9l1b/?context=3",
     "date": "Jan 25, 2026",
