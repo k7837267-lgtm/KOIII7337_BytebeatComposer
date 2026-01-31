@@ -74,6 +74,7 @@
     "url": "https://www.reddit.com/r/bytebeat/comments/1oh4br8/stradio_technophole_menner_saferrates_refesa/",
     "date": "Oct 27, 2025",
     "sampleRate": 9461,
+    "stereo": true,
     "codeOriginal": [
       "/* Removing The Messages Will Be 492B (Just That You Remove The Spaces) */",
 "// I JUST USED RANDOM NAMES WHAT-",
@@ -84,6 +85,7 @@
     "name": "My Remix Of Neurofunk!",
     "url": "https://www.reddit.com/r/bytebeat/comments/1oj6ucp/my_remix_of_neurofunk/",    
     "sampleRate": 9053,
+    "stereo": true,
     "date": "Oct 29, 2025",
     "codeOriginal": "t-=t/1&256*1,A=t*((t&4096?t%65536<59392?7:t>>6:16)+(1&t>>14))>>(3&-t>>(t&2048?2:10)),B=t*((t&4096?t%65536<59392?7:t>>6:16)^(1&t>>14))>>(3&-t>>(t&2048?2:10)),C=(t>>'1200'[t>>11&3]),D=(t/(t&4095)),[[A|C^D,B|C^D],[B|C^D,A|C^D]][t>>13&1]"
   },
