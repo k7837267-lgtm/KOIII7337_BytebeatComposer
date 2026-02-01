@@ -196,10 +196,10 @@
     "name": "I Made A Under 256B Music",
     "url": "https://www.reddit.com/r/bytebeat/comments/1qo3v51/i_made_a_under_256b_music/",
     "date": "Jan 27, 2026",
-    "description": "Minified By Me & ClerkOk7202",
+    "description": "Minified By Me, ClerkOk7202 & Salty_Formal5291. (I Never Used == Before)",
     "sampleRate": 11000,
     "codeOriginal": "A=(t*'*/'.charCodeAt(t>>(10+(t>>18&3))&1)/8*[1,1.5,1.25,1.75][t>>14&3]|t*[1,1.5,1.25,1.75][t>>14&3]&255),(A%128+A%192)/3+(((tan(t)*t)|t>>2)&255)*'00001000'[t>>10&7]/3*'01'[t>>17&1]+(sqrt(sin(5e4/((t&4095)+275)))||0)*64*'01'[t>>17&1]^sin(t/16384*PI)*4+4^2",
-    "codeMinified": "a='4657'[t>>14&3]/4,A=t*'*/'.charCodeAt(t>>(10+(t>>18&3))&1)/8*a|t*a&255,(A%128+A%192)/3+((tan(t)*t|t/4)&255)*'00001000'[t>>10&7]/3*'01'[t>>17&1]+(sqrt(sin(5e4/((t&4095)+275)))||0)*64*'01'[t>>17&1]^sin(t/16384*PI)*4+4^2"
+    "codeMinified": "a='4657'[t>>14&3]/4,A=t*(42+(t>>10+(t>>18&3)&1)*5)/8*a|t*a&255,(A%128+A%192)/3+((tan(t)*t|t/4)&255)*((t>>10&7)==4)/3*(b=t>>17&1)+(sqrt(sin(5e4/(t%4096+275)))||0)*64*b^sin(t/16384*PI)*4+4^2"
   },
   {
     "name": "I Started Using Hex",
