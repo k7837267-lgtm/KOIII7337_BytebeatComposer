@@ -3706,6 +3706,17 @@
 },
     {
         "name": "#5",
+        "description": "\"Cool Sound You Got! I Also Did A No Variable Minified Code!\" - KOIII7337",
+        "codeOriginal": [
+            "x = 16,",
+"y = t/x,",
+"a = t*2%255/2 + t*5%255/2>>y/8,",
+"b = a + (t | t) << 1 | y + t*6%255/2"
+        ],
+        "codeMinified": "(t*2%255/2+t*5%255/2>>t/16/8)+t<<1|t/16+t*6%255/2"
+    },
+    {
+        "name": "#6",
         "codeOriginal": [
             "a = 16,",
             "b = 1|t >> 4*t | a/15*3,",
