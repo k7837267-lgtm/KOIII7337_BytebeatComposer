@@ -1,5 +1,27 @@
 [
     {
+        "name": "trivial minimum: plain sawtooth",
+        "codeOriginal": "t"
+    },
+    { 
+        "author": "visy",
+        "children": [
+            {
+                "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+                "date": "Sep 18, 2011",
+                "codeOriginal": "t*(((t>>9)|(t>>13))&(25&(t>>6)))",
+                "codeMinified": "t*((t>>9|t>>13)&(25&t>>6))"
+            },
+            {
+                "name": "Space Invaders vs Pong",
+                "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+                "date": "Sep 18, 2011",
+                "codeOriginal": "t*(t>>((t>>9)|(t>>8))&(63&(t>>4)))",
+                "codeMinified": "t*(t>>(t>>9|t>>8)&(63&t>>4))"
+            }
+        ]
+    },
+    {
         "author": "red-",
         "children": [
             {
@@ -48,7 +70,10 @@
     },
     {
         "author": "ryg",
-        "url": "https://www.pouet.net/topic.php?post=388873",
+        "url": [
+            "https://www.pouet.net/topic.php?post=388873",
+            "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
+        ],
         "date": "Oct 04, 2011",
         "sampleRate": 44100,
         "codeOriginal": "(t>>4)*(13&(0x8898a989>>(t>>11&30)))"
@@ -75,7 +100,10 @@
             "viznut"
         ],
         "name": "Dante's Inferno",
-        "url": "https://youtu.be/tCRPUv8V22o?si=gVqaqvisKpDoSjod&t=243",
+        "url": [
+        "https://youtu.be/tCRPUv8V22o?si=gVqaqvisKpDoSjod&t=243",
+        "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
+        ],
         "date": "Oct 10, 2011",
         "codeOriginal": "((t*(t>>12)&(201*t/100)&(199*t/100))&(t*(t>>14)&(t*301/100)&(t*399/100)))+((t*(t>>16)&(t*202/100)&(t*198/100))-(t*(t>>17)&(t*302/100)&(t*298/100)))",
         "codeMinified": "(t*(t>>12)&201*t/100&199*t/100&t*(t>>14)&t*301/100&t*399/100)+(t*(t>>16)&t*202/100&t*198/100)-(t*(t>>17)&t*302/100&t*298/100)"
