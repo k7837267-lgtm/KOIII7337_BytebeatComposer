@@ -1,0 +1,56 @@
+[
+  {
+        "name": "squsinsaw floatbeat",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1mgovav/squsinsaw_floatbeat/",
+        "codeOriginal": [
+        "S1=sign(sin((2*t*'10201022102010201022102010221020'[t>>10&31]*[1,1,1.5,4/3][t>>13&3])*PI/128)),",
+        "S2=floor(tan(sin(t*([8,9,9.5,12][t>>10&3]*[1,1,1.5,4/3][t>>13&3])*PI/128)))/(1+(t>>6&15)),",
+        "S3=abs(cos((t*[8,9.5,12,16][t>>8&3]*[1,1,1.5,4/3][t>>13&3])*PI/128))*'0010'[t>>10&3],",
+        "K=tan(4e2/(t&4095)),",
+        "S=sin(t*t*random())*random()/((1+(t>>8&15))/5)/2*(t>>12&1),",
+        "S2+(S1*(t>65536))+(S3*(t>131072))+(K*(t>131072))+(S*(t>131072))"
+        ]
+    },
+   {
+        "name": "A7URN3D777",
+        "url": "https://www.reddit.com/r/bytebeat/comments/15q5lx2/a7urn3d777/",
+        "sampleRate": 32000,
+        "codeOriginal": "(('1248'[t>>17&3]*2*t/(4+(t>>15)%16)*(1+(3&t>>13))&64)*(-t>>5&255)>>8)+((tan(4e3/(t&16383))&255)/4)+((((random()*t&255)*(-t>>4&255)>>8)&255)/4)+((([NaN,1][t>>14&1]*t*(t^t%1023)&255)*(-t>>6&255)>>8)&255)/4"
+    },
+   {
+        "name": "I HAVE A BITS, MUSIC!",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1mhfms5/i_have_a_bits_music/",
+        "sampleRate": 40000,
+        "codeOriginal": "(([2,0,2,0,2,2,1.8,1.8,3,3,2,2,2.5,2.5,2,2,2,0,3,3.5,4,4,3,0,2,0,2,0,2,0,5,0,6,0,6,0,6,0,6,0,6,6,5.5,6,6.8,6.8,6,0,1,0,2,0,1,0,2,0,1,0,2,0,1,0,2,2][(t>>12)%64]*t/2&128)/2+(t/'21'[t>>13&1]&[32,64,96,64][t>>12&3]-t&128)/2|(4e5/(t&16383))&128)"
+    },
+   {
+        "name": "something2",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1lurky2/something2/",
+        "sampleRate": 32000,
+        "codeOriginal": "(((t%(t>>12)&t)*t>>t)&t>>6)*(t>>13&1)+(((4e5/(t>>2&4095)&128)&255)*(-t>>5&255)>>8)*(-t>>13&1)+(t&t>>6)"
+    },
+   {
+        "name": "something1.5",
+        "sampleRate": 32000,
+        "codeOriginal": "c=1.047,cs=1.107,d=1.173,ds=1.243,e=1.318,f=1.392,fs=1.476,g=1.568,gs=1.656,a=1.755,as=1.862,b=1.977,(1+(t/2.5>>17&1))*t*[gs,0,gs,0,ds,0,ds,0,gs,0,gs,0,ds,ds,gs,gs,fs,0,fs,0,cs,0,cs,0,fs,0,fs,0,cs,cs,fs,fs][t/1.25>>11&31]+(t*[gs,fs][t/1.25>>15&1]&t/1.25>>6)"
+    },
+    {
+        "name": "remix of \"Another C compatible bytebeat again\"",
+        "mode": "Floatbeat",
+        "sampleRate": 48000,
+        "codeOriginal": "(((((t*t>>2|t^t/2^t>>8|t>>7^t>>8)&255)/127-1)/(1+(t&16383)/4096))+cbrt(sin(8*cbrt('10010010'[t>>13&7]*t&8191)))+(((t&3?s:s=2*random()&1)/(1+(t&8191)/4096))*'00100101'[t>>13&7])*2)-0.5"
+    },
+    {
+        "name": "random factory music",
+        "mode": "Floatbeat",
+        "url": "https://dollchan.net/btb/res/2628.html#8611",
+        "sampleRate": 33075,
+        "codeOriginal": "t?0:b=c=d=0,C=cos,S=sin,l=t>>11,a=PI*t/64*2**((((l/4&6|2)^l>>4&7+(l&6)/3)+(t%([0,1,0,2,0,3,6,9][l/4&(t>>14&7)]+4))*7)/12),b+=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/8192)+C(t*PI/12e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/15e3)),b/=2,c+=b/3-c/4,d+=c/5-d/4,d/2+S(8192/(t>>2&4095))/2+C(64e4/(t>>3&511))*'0111001100101011'[t>>12&15]/(2+(t>>9&7))+C(256e4/(t>>2&511))*(t>>14&1)/(2+(t>>11&7))"
+    },
+    {
+        "name": "remix of \"Notitle No.2\"",
+        "sampleRate": 48000,
+        "codeOriginal": "x=t=>t<0?0:((tan(1.05*t/(2-1*(t>>18&1))*2**(parseInt('DDGIIKGGD 8BGGDD'[15&((t>>13)^t>>12&7)+(t>>14&1)],36)/12)*(PI/256))-(((t>>7)&123)/128))&255)*([a=-t>>9,a,b=-t>>8,c=-(t+8192)>>9,c,b,a,a,b,0,b,b,d=-t>>10,d,d,d][15&t>>13]&31)/13,(x(t)/4+x(t+30*sin(t/2e5))/4+x(t-12288)/8+x(t-24888)/8)/2+((log(sin(cbrt(t*'11111112'[t>>14&7]&16383)*5))&255)/4+(((5e6*tan(t>>2))&255)*(-t>>5&255)>>9)*'00100100001001010010010010010100'[t>>13&31])*(t>524288)"
+    },
+]
