@@ -272,7 +272,20 @@
   {
     "name": "Hydrostatic Y.S.N.",
     "description": "A HF Spinoff!",
-    "date": "Feb 8, 2026",
+    "date": "Feb 9, 2026",
     "codeOriginal": "t%=32768,t+=65536,(sin(t/(4+(t>>13&3)))*[t/512,t/256][-t>>10&1]+128|t>>(t>>11))*1.5|t>>5&127"
+  },
+  {
+    "name": "I Hate My Sister.",
+    "remix": {
+"author": "SamsaDev",
+"name": "Sequen_0x6",
+"url": "https://www.reddit.com/r/bytebeat/comments/1bgce1u/sequen_0x6_cool_name/"
+},
+    "description": "\"She Warned Me While I Was Doing A Tilting Stream On A Monday, Now I Hate Her...\" - KOIII7337",
+    "date": "Feb 9, 2026",
+    "mode": "Tanmode",
+    "exotic": true,
+    "codeOriginal": "(((t*(t>>30|t>>13)/2>>(t*(t>>18|t>>10)&7^t>>7|t>>18)|t/16>>(t&t/6))&255)/4-32)*sin(1+(t>>11))*8^50000/(t&4095)"
   }
 ]
