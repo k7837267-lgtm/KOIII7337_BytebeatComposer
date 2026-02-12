@@ -260,7 +260,7 @@
   {
     "name": "This Sounds Kinda Radioactive To Me.",
     "date": "Feb 6, 2026",
-    "sampleRate": 48000,
+    "modeRate": 48000,
     "codeOriginal": "(((T=t/1.25,(t*sin(t/6.00000001*PI)**[1,2,3,4][(T>>13)%4]&148)*[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,,1,,1,,1,,1,,1,,1,,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3,t/16384*3][T>>12&63])||T>>10)&191)+32"
   },
   {
@@ -287,5 +287,18 @@
     "mode": "Tanmode",
     "exotic": true,
     "codeOriginal": "(((t*(t>>30|t>>13)/2>>(t*(t>>18|t>>10)&7^t>>7|t>>18)|t/16>>(t&t/6))&255)/4-32)*sin(1+(t>>11))*8^50000/(t&4095)"
+  },
+  {
+    "name": "8-bit Violin Thing",
+    "remix": {
+"author": "Pentalogue",
+"name": "Some Arcade Game Music",
+"url": "https://dollchan.net/btb/res/3.html#11866"
+},
+    "date": "Feb 11, 2026",
+    "mode": "Signed Bytebeat",
+    "sampleRate": 32000,
+    "file": "koiii7337-7.js",
+    "fileOriginal": true
   }
 ]
