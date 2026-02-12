@@ -309,5 +309,12 @@
     "sampleRate": 15950,
     "file": "koiii7337-8.js",
     "fileOriginal": true
+  },
+  {
+    "name": "t XOR Equals",
+    "description": "\"Yeah It Quickly Makes A Cursed Waveform I'm Out.\" - KOIII7337",
+    "date": "Feb 12, 2026",
+    "sampleRate": 15990,
+    "codeOriginal": "t^=t>>7&t>>5*t>>8,(t*2&t>>5)/1.5|50000/(t/2&4095)"
   }
 ]
