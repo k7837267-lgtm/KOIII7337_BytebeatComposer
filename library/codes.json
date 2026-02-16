@@ -4264,6 +4264,15 @@
                 "date": "Dec 28, 2025",
                 "sampleRate": 44100,
                 "codeOriginal": "T=t+8192,tanh((exp(sin(cos(tan(cbrt(((T/2&T))%16384)*8))))-1.35))*min(1,t/8192%2)+tanh(sin(100*(t%16384)**.1)*4)*4*max(0,1-t/8192%2)+sin(t/2.1|t/4.5)*(1-t/16384%1)**4*4*(t>>14&1)"
+            },
+            {
+                "name": "Simple drum machine",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/28e3e8fb-5199-450e-869b-00e9bb06d881",
+                "date": "Feb 13, 2026",
+                "sampleRate": 48000,
+                "stereo": true,
+                "codeOriginal": "t||(fx=[]),fxi=0,lpf=(a,c)=>(lp_fxii=fxi++,fx[lp_fxii]??=0,fx[lp_fxii]+=(a-fx[lp_fxii])*c),hpf=(a,c)=>a-lpf(a,c),bpf=(a,hc,lc)=>hpf(lpf(a,lc),hc),bbf=(a,hc,lc,v)=>a+bpf(a,hc,lc)*v,ts=t*abs(130/(48e3*60)*16384),l=16384,m=8192,s=4096,seq=(inst,pat=\"\",step=t)=>((!pat[step]||pat[step]==\"0\")?0:inst)||0,kick=()=>tanh((sin(100*(ts%s)**.025*6)+hpf((random()-.5)/2,.5))*(1-ts/s%1)**22+(sin(100*(ts%s)**.1))*(1-(ts/s%1)**2)*(1-(1-ts/s%1)**8)*1.2)/tanh(1),clap=()=>bpf(((random()-.5)*10*(ts>>10&3?(1-ts/s%1)**4*2.5:(1-(ts/(512/1.5))%1)**2)),.2,.2)*1.25,chat=closedHat=()=>hpf((random()-.5)*10*(1-ts/s%1)**4,.9),ride=()=>bpf(bpf((random()-.5)*(1-(ts/s%1)**2),.6,.59),.6,.59)*12.5,mast=()=>sin(bbf(+seq(kick(),\"1000000101010000\",ts>>12&15)+seq(clap(),\"00001000\",ts>>12&7)+seq(chat(),\"0010001000100010\",ts>>12&15)+seq(ride(),\"0000000101010000\",ts>>12&15)+(random()-.5)/1e3,.025,.2,-.5)),[mast(),mast()]"
             }
         ]
     },
