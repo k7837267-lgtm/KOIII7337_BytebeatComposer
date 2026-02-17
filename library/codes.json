@@ -5043,6 +5043,7 @@
                 "date": "Feb 15, 2026",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
+                "stereo": true,
                 "file": "pck404-4.js",
                 "fileOriginal": true
             }
