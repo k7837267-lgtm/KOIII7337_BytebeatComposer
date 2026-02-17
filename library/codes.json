@@ -5030,7 +5030,22 @@
         "mode": "Floatbeat",
         "file": "pck404-3.js",
         "fileOriginal": true
-    }
+    },
+            {
+                "name": "we do no more",
+                "remix": {
+                    "author": "PrincessPriscillaPT",
+                    "name": "Simple drum machine",
+                    "url": "https://www.bytebeat.cloud/post/28e3e8fb-5199-450e-869b-00e9bb06d881"
+                },
+                "url": "https://www.bytebeat.cloud/post/5aa3b17f-32ea-493d-8d14-dc59ccbf6577",
+                "description": "BytebeatCloud's Week 10 Submission",
+                "date": "Feb 15, 2026",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "file": "pck404-4.js",
+                "fileOriginal": true
+            }
         ]
     },
     {
