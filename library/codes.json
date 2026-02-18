@@ -5026,7 +5026,7 @@
             {
         "name": "Lullaby",
         "url": "https://www.bytebeat.cloud/post/e457b3ce-b16d-4909-9a47-a7ce5797ca0d",
-        "date": "Jan 001, 2026",
+        "date": "Jan 01, 2026",
         "mode": "Floatbeat",
         "file": "pck404-3.js",
         "fileOriginal": true
@@ -5069,5 +5069,32 @@
         "sampleRate": 48000,
         "file": "hypernovaheathen.js",
         "fileOriginal": true
+    },
+    {
+        "author": "ThusII",
+        "children": [
+            {
+                "name": "harkask",
+                "remix": {
+                    "author": "yehar",
+                    "name": "bare-bones version",
+                    "url": "https://yehar.com/blog/?p=2554"
+                },
+                "url": "https://www.bytebeat.cloud/post/1161b7b8-296b-48c1-883f-7c6a06568f41",
+                "date": "Feb 18, 2026",
+                "codeOriginal": "(((5+(t>>10|t>>13&7)*2)*t*(1+(t>>13|t>>14)^t>>11)))*t*(-t>>9&1)|t>>(t&16384/(((t>>12^t>>13)&1|t>>14&5))?4:3)"
+            },
+            {
+                "name": "FEDEX PRESENT",
+                "remix": {
+                    "author": "Anonymous from russian imageboards",
+                    "name": "10) FUTURE ROCK",
+                    "url": "https://arhivach.xyz/storage/a/9b/a9b7e820d10e52493570894ed002b9a5.jpg"
+                },
+                "url": "https://www.bytebeat.cloud/post/b04dd347-78c6-4ede-8af5-4a653e5d7057",
+                "date": "Feb 18, 2026",
+                "codeOriginal": "((t>>5^t>>4)&127?0:t*(t*t^255&t>>7)&140)|(t/3*((t/3>>9|t/5>>10)&1)?t*3&63:4*t%191)"
+            }
+        ]
     }
 ]
