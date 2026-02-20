@@ -5094,6 +5094,12 @@
                 "url": "https://www.bytebeat.cloud/post/b04dd347-78c6-4ede-8af5-4a653e5d7057",
                 "date": "Feb 18, 2026",
                 "codeOriginal": "((t>>5^t>>4)&127?0:t*(t*t^255&t>>7)&140)|(t/3*((t/3>>9|t/5>>10)&1)?t*3&63:4*t%191)"
+            },
+            {
+                "name": "Bozi",
+                "url": "https://www.bytebeat.cloud/post/fb1ba2ae-d36e-49c9-966c-1ad059ed39df",
+                "date": "Feb 19, 2026",
+                "codeOriginal": "(t/(12+((t*(1+(t>>14&3^1)))/12&7^1))&127)+9000/(t&4095)"
             }
         ]
     }
