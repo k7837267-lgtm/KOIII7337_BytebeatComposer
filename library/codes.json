@@ -1637,6 +1637,17 @@
                 "stereo": true,
                 "file": "decentmanager6.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "Till Last Breath",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/1fd2ccd1-37e8-41ee-be5e-2c46a24450ce",
+                "date": "Feb 22, 2026",
+                "description": "BytebeatCloud's Week 11 Submission (A Sequel To \"Nostalgic Before Hopeless\")",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "decentmanager8.js",
+                "fileOriginal": true
             }
         ]
     },
