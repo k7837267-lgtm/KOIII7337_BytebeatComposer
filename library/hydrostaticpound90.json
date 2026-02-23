@@ -121,5 +121,11 @@
     "date": "Jan 28, 2026",
     "description": "\"It Does Go Haywire, Making New Types Of ST Waveform.\" - HydrostaticPound90",
     "codeOriginal": "((t>>10^(t>>10)-3^3)%13*t&191)*((t>>10^(t>>10)-3^3)%13)/2|t>>4"
+  },
+  {
+    "name": "#21",
+    "date": "Feb 23, 2026",
+    "description": "\"I'm Back. I Was In A Middle Of Tilting My Games.\" - HydrostaticPound90",
+    "codeOriginal": "t*t%(t>>(t>>8&15))"
   }
 ]
