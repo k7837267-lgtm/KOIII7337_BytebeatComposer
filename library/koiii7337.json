@@ -276,13 +276,11 @@
     "codeOriginal": "t%=32768,t+=65536,(sin(t/(4+(t>>13&3)))*[t/512,t/256][-t>>10&1]+128|t>>(t>>11))*1.5|t>>5&127"
   },
   {
-    "name": "I Hate My Sister.",
     "remix": {
 "author": "SamsaDev",
 "name": "Sequen_0x6",
 "url": "https://www.reddit.com/r/bytebeat/comments/1bgce1u/sequen_0x6_cool_name/"
 },
-    "description": "\"She Warned Me While I Was Doing A Tilting Stream On A Monday, Now I Hate Her...\" - KOIII7337",
     "date": "Feb 9, 2026",
     "mode": "Tanmode",
     "exotic": true,
@@ -316,5 +314,28 @@
     "date": "Feb 12, 2026",
     "sampleRate": 15990,
     "codeOriginal": "t^=t>>7&t>>5*t>>8,(t*2&t>>5)/1.5|50000/(t/2&4095)"
-  }
+  },
+  {
+    "name": "A Bitbeat Thing!",
+    "date": "Feb 24, 2026",
+    "sampleRate": 12000,
+    "mode": "Bitbeat",
+    "exotic": true,
+    "codeOriginal": "t/=2.5,((((t>>(t>>10&7))*(-t>>8)+(t*1.5/4>>(t>>12&3))*(t>>8))+random()*(1+((-t>>13^t>>11)&1))*'1000000'[t>>8&7]||0)*'1110'[t>>9&3]-(t/128*9&t>>9)*'0001'[t>>9&3]+1000/(t*8&16383))"
+  },
+  {
+    "name": "\"HOW MUCH INTENSITY DOES IT GET!?\"",
+    "date": "Feb 25, 2026",
+    "sampleRate": 9000,
+    "stereo": true,
+    "codeOriginal": "t%=16**4*2,[[t*(t*20/7)*(t>>13&1),(t*3&t*1.5>>7)/1.5],[sin(t/128*8/7*PI)*127,(t|t>>7)*10]][t**sin((t/16/900)%2)*8>>(t>>13&7)&1]"
+  },
+  {
+    "name": "How's This?",
+    "url": "https://www.bytebeat.cloud/post/76e5d836-8be1-48eb-8904-6007df4d7dfa",
+    "description": "This One's <64b. Also, This Is My First Day Here On BytebeatCloud. (Part Of \"Ultra-Short Challenge\")",
+    "date": "Feb 26, 2026",
+    "sampleRate": 9000,
+    "codeOriginal": "((t*(t>>10&6*t>>12&11)*t)&120)+(t/4*((t>>9^12&62)&14)&127)"
+  },
 ]
