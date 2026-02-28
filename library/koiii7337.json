@@ -337,5 +337,12 @@
     "date": "Feb 26, 2026",
     "sampleRate": 9000,
     "codeOriginal": "((t*(t>>10&6*t>>12&11)*t)&120)+(t/4*((t>>9^12&62)&14)&127)"
+  },
+  {
+    "name": "Square And Sawtooth Beats Getting More Intense",
+    "url": "https://www.bytebeat.cloud/post/0b651bdf-3a3c-4f56-a454-f217d728d5ce",
+    "date": "Feb 28, 2026",
+    "mode": "Signed Bytebeat",
+    "codeOriginal": "(((t^t>>20*(t>>11))*10/((t/(2+(t>>11&2))&1023)+25))&128)+(((t>>20*(t>>11))*20/((t*2/(2+(t>>11&2))&1023)+50))&127)"
   }
 ]
