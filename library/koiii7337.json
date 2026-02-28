@@ -153,11 +153,10 @@
 ],
 "date": "Jan 15, 2026",
 "codeOriginal": "(((t*2.1*2**([0,0,6,7,11,11,7,7,6,6,7,7,0,0,7,7,2,2,6,7,11,11,7,7,6,6,7,7,2,2,3,3,4,4,6,7,11,11,7,7,6,6,7,7,4,4,7,7,-1,-1,6,7,11,11,7,7,6,6,7,7,-3,-3,-1,-1][t>>10&63]/12)&63)+((acos(-cos(t/32768*PI))/16-.1965)*128-1)*1.25)|t>>'43444444'[t>>11&7]&127)-(t/2>>'43444444'[t>>11&7]&63)"
-},
+  },
   {
-  "name": "I ALWAYS WANTED TO TEST EXOTIC STUFF!",
+    "name": "I ALWAYS WANTED TO TEST EXOTIC STUFF!",
     "exotic": true,
-    "description": "Bytebeat Composers With Exotic Functions Should Add This. Maybe.. (Also, Pitful_Amoeba, If You're Seeing This, I Still Don't Trust You For Calling The HZ The Stupid God Forsaken Six Seven From One Of Someone's Bytebeat.)",
     "date": "Jan 19, 2026",
     "codeOriginal":"((br((t>>8|t>>15))*t/32|br(t>>8))&255)*sin(t/2048*PI)*(1+(t>>12&7))"
   },
@@ -344,5 +343,13 @@
     "date": "Feb 28, 2026",
     "mode": "Signed Bytebeat",
     "codeOriginal": "(((t^t>>20*(t>>11))*10/((t/(2+(t>>11&2))&1023)+25))&128)+(((t>>20*(t>>11))*20/((t*2/(2+(t>>11&2))&1023)+50))&127)"
+  },
+  {
+    "name": "An \"EXOTIC\" Situation",
+    "exotic": true,
+    "sampleRate": 9500,
+    "date": "Feb 28, 2026",
+    "mode": "Floatbeat",
+    "codeOriginal":"t-=(t/4&2047),(T=t+1024,(sinf(T*(T>>10&7)&T>>6)/3+(sin(br(4096/(t&4095))))/3*((t>>15&3)>=1)+max(-1,min(1,(tanf(t*4/'2225'[t>>13&3]/(1+(t>>13&3))*(br((1+(t>>10)),(1+(t>>13&3))))))*(t>>16&1)))/3+atan(tan(t/4*(1+(t>>12&6))&t>>12&63))/(t%4096+1)*150*(t>>17&1))*1.5)"
   }
 ]
