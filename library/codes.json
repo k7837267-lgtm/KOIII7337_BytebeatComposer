@@ -5333,7 +5333,6 @@
     {
         "author": "HypernovaHeathen",
         "name": "Recon",
-        "description": "\"OH. MY. GOD. HypernovaHeathen Is Still Posting Bytebeats After 2026 Just Begun. This Is Indeed Demanding On My Silk Browser Performance. It's Indeed Still Amazing! Good Luck Out There!\" - KOIII7337",
         "date": "Jan 14, 2026",
         "url": "https://dollchan.net/btb/res/77.html#12049",
         "sampleRate": 48000,
@@ -5370,6 +5369,33 @@
                 "url": "https://www.bytebeat.cloud/post/fb1ba2ae-d36e-49c9-966c-1ad059ed39df",
                 "date": "Feb 19, 2026",
                 "codeOriginal": "(t/(12+((t*(1+(t>>14&3^1)))/12&7^1))&127)+9000/(t&4095)"
+            },
+            {
+                "name": "Going home",
+                "url": "https://www.bytebeat.cloud/post/7e799163-ad56-46fe-b104-a426a9b1f4ea",
+                "date": "Feb 28, 2026",
+                "codeOriginal": "((t*t/2*(1+(t>>13&8|t>>12&10|5&t>>14)+((t>>10^t>>11)&1))))+((~t>>9)+t^t)|t>>4&t"
+            }
+        ]
+    },
+    {
+        "author": "RealZynx92",
+        "name": "stereo chords based on 0b5vr's 128 voices generator",
+        "description": "\"Welcome Back, RealZynx92!\" - KOIII7337"
+        "url": "https://www.reddit.com/r/bytebeat_2/comments/1r9um2u/stereo_chords_based_on_0b5vrs_128_voices_generator/",
+        "date": "Feb 20, 2026",
+        "children": [
+            {
+                "name": "full version",
+                "mode" "Floatbeat",
+                "sampleRate": 44000,
+                "codeOriginal": "T=t/21120,i=64,o=q=[0,0],r=(e,t)=>(m=0,e.forEach(e=>e<t?m=t-e:0),m),(()=>{while(i--)o[1&i]+=((t*(j=[58,69,46,52][2.5<T%4|T>>1&2]/50)*[40,(e=2.5<T%8)?50:48,60,e?75.2:70.8,90][(i>>1)%5]/40+1e4*(1+sin(i+t/7e5)))%(a=256)-128)/1e3})(),o.forEach((e,i)=>t?l[i]+=(e%a-l[i])*(1-r([0,.75,1.5,2.5,3.25],T%4))**(7+5*sin(T*PI/8)):l=q),e=(e,t,i)=>(1-(e*t<1?e*t:1))**i,B=(g=(c=32768)*T)%c/48e3/4,k=atan(2*sin(7*cbrt(g%c)))*e(B,15,2)*(~g>>15&1),h=(m=sin(t**7))/4*e(g%8192/48e3/4,2==(g>>13&3)?10:40,3),y=atan(sin(8*cbrt(g%c))*e(B,40,.5)*1.7+2*m*(e(B,160,3)/3+e(B,20,2)*min(60*B,1)**1.5))*(g>>15&1),d=atan(k+h+y),b=atan((t*j/4%a/a-.5)*(2*T%2)),[(l[0]+b)*(q=(T%1)**.5)+d,(l[1]+b)*q+d]"
+            },
+            {
+                "name": "only the chords",
+                "mode" "Floatbeat",
+                "sampleRate": 44000,
+                "codeOriginal": "T=t/21120,i=64,o=q=[0,0],r=(e,t)=>(m=0,e.forEach(e=>e<t?m=t-e:0),m),(()=>{while(i--)o[1&i]+=((t*(j=[58,69,46,52][2.5<T%4|T>>1&2]/50)*[40,(e=2.5<T%8)?50:48,60,e?75.2:70.8,90][(i>>1)%5]/40+1e4*(1+sin(i+t/7e5)))%(a=256)-128)/1e3})(),o.forEach((e,i)=>t?l[i]+=(e%a-l[i])*(1-r([0,.75,1.5,2.5,3.25],T%4))**(7+5*sin(T*PI/8)):l=q),l"
             }
         ]
     }
