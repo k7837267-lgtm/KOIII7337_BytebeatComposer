@@ -127,5 +127,10 @@
     "date": "Feb 23, 2026",
     "description": "\"I'm Back. I Was In A Middle Of Tilting My Games.\" - HydrostaticPound90",
     "codeOriginal": "t*t%(t>>(t>>8&15))"
+  },
+  {
+    "name": "#22",
+    "date": "Feb 28, 2026",
+    "codeOriginal": "(((t/127%(t>>8)*127^t)|t*(t>>10&3))*(t>>8&14))/2*(1+(t>>14&3))|(t>>3&192)/3*2"
   }
 ]
