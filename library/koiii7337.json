@@ -351,5 +351,25 @@
     "date": "Feb 28, 2026",
     "mode": "Floatbeat",
     "codeOriginal":"t-=(t/4&2047),(T=t+1024,(sinf(T*(T>>10&7)&T>>6)/3+(sin(br(4096/(t&4095))))/3*((t>>15&3)>=1)+max(-1,min(1,(tanf(t*4/'2225'[t>>13&3]/(1+(t>>13&3))*(br((1+(t>>10)),(1+(t>>13&3))))))*(t>>16&1)))/3+atan(tan(t/4*(1+(t>>12&6))&t>>12&63))/(t%4096+1)*150*(t>>17&1))*1.5)"
+  },
+  {
+    "name": "t XOR Equals (Another One)",
+    "description": "A Nice Rhythm-Type Waveform",
+    "date": "Mar 1, 2026",
+    "sampleRate": 20000,
+    "codeOriginal": "t^=(t|(t>>6|t>>9)^t>>7),(t^t>>8*t>>7)|1e3/(t>>4&4095)+128&sin(t**2)-t>>3"
+  },  
+  {
+    "name": "Me And The Funcbeat",
+    "date": "Mar 3, 2026",
+    "mode": "Funcbeat",
+    "sampleRate": 48000,
+    "codeOriginal": [
+      "// Yep. My First Time Using Funcbeat! ~^w^~",
+      "var A = 750",
+"var B1 = 124.5",
+"var B2 = 125.5",
+"return t=>([((atan(tan(t*B1*((t*A>>8^t*A>>6^t*A>>5)&14)))/4+atan(tan(t*B1*((t*A>>4^t*A>>7^t*A>>9)&12)))/4+(5e5/(t*A*16&4095)&128)/128-.5+random()/((t*A*3*16&4095)+1024)*2000*(t*A>>8&1))/1.5)-.2,((atan(tan(t*B2*((t*A>>8^t*A>>6^t*A>>5)&14)))/4+atan(tan(t*B2*((t*A>>4^t*A>>7^t*A>>9)&12)))/4+(5e5/(t*A*16&4095)&128)/128-.5+random()/((t*A*3*16&4095)+1024)*2000*(t*A>>8&1))/1.5)-.2])"
+    ]
   }
 ]
