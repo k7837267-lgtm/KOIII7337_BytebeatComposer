@@ -364,12 +364,28 @@
     "date": "Mar 3, 2026",
     "mode": "Funcbeat",
     "sampleRate": 48000,
+    "stereo": true,
     "codeOriginal": [
       "// Yep. My First Time Using Funcbeat! ~^w^~",
       "var A = 750",
 "var B1 = 124.5",
 "var B2 = 125.5",
 "return t=>([((atan(tan(t*B1*((t*A>>8^t*A>>6^t*A>>5)&14)))/4+atan(tan(t*B1*((t*A>>4^t*A>>7^t*A>>9)&12)))/4+(5e5/(t*A*16&4095)&128)/128-.5+random()/((t*A*3*16&4095)+1024)*2000*(t*A>>8&1))/1.5)-.2,((atan(tan(t*B2*((t*A>>8^t*A>>6^t*A>>5)&14)))/4+atan(tan(t*B2*((t*A>>4^t*A>>7^t*A>>9)&12)))/4+(5e5/(t*A*16&4095)&128)/128-.5+random()/((t*A*3*16&4095)+1024)*2000*(t*A>>8&1))/1.5)-.2])"
+    ]
+  },  
+  {
+    "name": "Another Funcbeat Song",
+    "date": "Mar 3, 2026",
+    "mode": "Funcbeat",
+    "sampleRate": 13250,
+    "stereo": true,
+    "codeOriginal": [
+      "// Time For Another Funcbeat Song!",
+"const N1 = [2,4,8,6,12,10,14,17]",
+"var T1 = 682.75",
+"var T2 = 550.05",
+"var T3 = 687.25",
+"return t=>([atan(tan(t*T1/8*PI*2**(N1[t*T2>>10&7]/12)*'1010101011223344'[t*T2>>6&15]))/4+sin(sin(t*T1*1.5*PI*2**(N1[t*T2>>10&7]/12))+t*T1/2*PI*2**(N1[t*T2>>10&7]/12))/5+((3e3/(t*T2&255))&255)/128-.5+(atan(tan(cos(t*T1*PI*2**(N1[t*T2>>10&7]/12)*((t*T2>>6&6^t*T2>>8&3)&14)/2))/4))+(random()-.5)*((t*T2/128)%1-1)*((t*T2>>7&3)==2),atan(tan(t*T3/8*PI*2**(N1[t*T2>>10&7]/12)*'1010101011223344'[t*T2>>6&15]))/4+sin(sin(t*T3*1.5*PI*2**(N1[t*T2>>10&7]/12))+t*T3/2*PI*2**(N1[t*T2>>10&7]/12))/5+((3e3/(t*T2&255))&255)/128-.5+(atan(tan(cos(t*T3*PI*2**(N1[t*T2>>10&7]/12)*((t*T2>>6&6^t*T2>>8&3)&14)/2))/4))+(random()-.5)*((t*T2/128)%1-1)*((t*T2>>7&3)==2)])"
     ]
   }
 ]
