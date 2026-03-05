@@ -5321,6 +5321,8 @@
     },
     {
         "author": "Funcbeat Anon",
+        "children": [
+            {
         "name": "Sampled procedural drum loop test with naïve time-stretching",
         "url": "https://dollchan.net/btb/res/3.html#12024",
         "date": "Jan 12, 2026",
@@ -5330,6 +5332,19 @@
         "file": "funcbeatanon.js",
         "fileOriginal": true
     },
+     {
+        "name": "Wavetable-like soft synths using exp/cosine bell bumps that move and wrap around.",
+        "description": "change their width to change its timbre; smaller is brighter, wider is softer.",
+        "url": "https://dollchan.net/btb/res/3.html#12918",
+        "date": "Feb 24, 2026",
+        "sampleRate": 22050,
+        "mode": "Funcbeat",
+        "stereo": true,
+        "file": "funcbeatanon-1.js",
+        "fileOriginal": true
+    }
+        ]
+            },
     {
         "author": "HypernovaHeathen",
         "name": "Recon",
