@@ -5346,6 +5346,67 @@
         ]
             },
     {
+        "author": "mqdantee",
+        "children": [
+            {
+                "name": "mqdantee's first song",
+                "url": "https://www.bytebeat.cloud/post/856cc903-ad84-487c-9ba7-729932a08bc2",
+                "date": "Jan 11, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "c=2**(1/12),cs=2**(2/12),d=2**(3/12),ds=2**(4/12),e=2**(5/12),f=2**(6/12),fs=2**(7/12),g=2**(8/12),gs=2**(9/12),a=2**(10/12),as=2**(11/12),b=2**(12/12),(64&t*[,fs,gs,as,,as/2,,f,gs,as,,as/2,,fs,gs,as,,gs/2,,ds,fs,gs,,fs/2,,ds,f,fs,,fs/2,,ds,f,fs,,fs/2,,c,ds,f,,f/2,,d,ds,f,d,as/2,][(t>>13)%48])+(64&t*([ds,ds,ds,ds,,,d,d,d,d,,,cs,cs,cs,cs,,,c,c,c,c,,,b/2,b/2,b/2,b/2,,,as/2,as/2,as/2,as/2,,,a/2,a/2,a/2,a/2,,,as/2,as/2,as/2,as/2,,,][(t>>13)%48]))+(63&t*[ds/2,,ds,,,,d/2,,d,,,,cs/2,,cs,,,,c/2,,c,,,,ds/2,,b/2,,,,ds/2,,as/2,,,,cs/2,,a/2,,,,c/2,,as/2][(t>>13)%48])"
+            },
+            {
+                "name": "Shifted Reality",
+                "url": "https://www.bytebeat.cloud/post/968c6382-55a1-4f43-b0a9-a6dd4afbdb32",
+                "date": "Feb 6, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "(t^t>>8|t^(t>>12|t>>5))&t%(t&t>>12|256)"
+            },
+            {
+                "name": "my bytebeat remixes I made",
+                "url": "https://ihsoyct.github.io/index.html?comments=1rap679&backend=artic_shift",
+                "date": "Feb 21, 2026",
+                "children": [
+                {
+                    "name": "\"U.N Owen Was Her?\" -> \"ryg\"",
+                    "remix": {
+                        "author": "ryg",
+                        "url": "https://www.pouet.net/topic.php?which=8357&page=12#c389146"
+                    },
+                    "description": "Also Part Of \"ByterBeater\".",
+                    "sampleRate": 44100,
+                    "codeOriginal": "f=x=>t*2**(x/12),(f([0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,7,7,10,,5,5,7,,3,3,3,3,3,3,3,3,0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12][127&t>>12])&127|t/8192)+(f([8,10,12,9,8,10,12,12,12][7&t>>15])/(8>>(t/8192&1))&128)"
+            },
+                    {
+                    "name": "\"U.N Owen Was Her?\" -> \"iloveeveryend26\"",
+                    "remix": {
+                    "author": "a-desmos-grapher",
+                    "name": "iloveeveryend26",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1nsk177/remix_of_ilovemykids26_by_shcwazernecjlace/"
+                    },
+                        "sampleRate": 16000,
+                        "codeOriginal": "a=t*2**([8,10,12,9,8,10,12,12][t>>14&7]/12)/2,b=t*2**([0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,7,7,10,,5,5,7,,3,3,3,3,3,3,3,3,0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12][t>>11&127]/12+2),(3*a^t>>6&256/'1112'[t>>14&3]-1|a)%256*2/3+(b^b*2)%256/3"
+                },
+                    {
+                     "name": "\"Random Note Generator 2\" -> \"the pulse but as a song\""      
+                    "remix": [
+                        {
+                    "author": "D3nschøt",
+                    "name": "the pulse but as a song",
+                    "url": "https://youtu.be/hp0RUcEe3qA?si=0CyKCEnXCkFit12N"
+                    },
+                        {
+                            "author": "D3nschøt",
+                            "name": "Random Note generator 2",
+                            "url": "https://www.reddit.com/r/bytebeat/comments/1cn2mjt/random_note_generator_2/"
+                    }
+                    ],
+                        "sampleRate": 44100,
+                        "codeOriginal": "Bpm=160,Hz=44100,tf=abs(t/Hz/180*3*32768*Bpm),pitch=(6+((tf^tf/2^tf/4&tf/8)>>14&3))/6,pitch2=(6+((tf>>19)&3))/12,speed=2,x=abs(255*floor(t*pitch%256/(speed/4*tf%65536|(speed/4*tf/32^speed/4*tf/64)%65536)*65536/256%2)),abs(128*-x%256)+abs(t*pitch2%256)/2"
+                    }
+        ]
+    },
+    {
         "author": "HypernovaHeathen",
         "name": "Recon",
         "date": "Jan 14, 2026",
