@@ -5361,49 +5361,7 @@
                 "date": "Feb 6, 2026",
                 "sampleRate": 44100,
                 "codeOriginal": "(t^t>>8|t^(t>>12|t>>5))&t%(t&t>>12|256)"
-            },
-            {
-                "name": "my bytebeat remixes I made",
-                "url": "https://ihsoyct.github.io/index.html?comments=1rap679&backend=artic_shift",
-                "date": "Feb 21, 2026",
-                "children": [
-                {
-                    "name": "\"U.N Owen Was Her?\" -> \"ryg\"",
-                    "remix": {
-                        "author": "ryg",
-                        "url": "https://www.pouet.net/topic.php?which=8357&page=12#c389146"
-                    },
-                    "description": "Also Part Of \"ByterBeater\".",
-                    "sampleRate": 44100,
-                    "codeOriginal": "f=x=>t*2**(x/12),(f([0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,7,7,10,,5,5,7,,3,3,3,3,3,3,3,3,0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12][127&t>>12])&127|t/8192)+(f([8,10,12,9,8,10,12,12,12][7&t>>15])/(8>>(t/8192&1))&128)"
-            },
-                    {
-                    "name": "\"U.N Owen Was Her?\" -> \"iloveeveryend26\"",
-                    "remix": {
-                    "author": "a-desmos-grapher",
-                    "name": "iloveeveryend26",
-                    "url": "https://www.reddit.com/r/bytebeat/comments/1nsk177/remix_of_ilovemykids26_by_shcwazernecjlace/"
-                    },
-                        "sampleRate": 16000,
-                        "codeOriginal": "a=t*2**([8,10,12,9,8,10,12,12][t>>14&7]/12)/2,b=t*2**([0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,7,7,10,,5,5,7,,3,3,3,3,3,3,3,3,0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12][t>>11&127]/12+2),(3*a^t>>6&256/'1112'[t>>14&3]-1|a)%256*2/3+(b^b*2)%256/3"
-                },
-                    {
-                     "name": "\"Random Note Generator 2\" -> \"the pulse but as a song\""      
-                    "remix": [
-                        {
-                    "author": "D3nschøt",
-                    "name": "the pulse but as a song",
-                    "url": "https://youtu.be/hp0RUcEe3qA?si=0CyKCEnXCkFit12N"
-                    },
-                        {
-                            "author": "D3nschøt",
-                            "name": "Random Note generator 2",
-                            "url": "https://www.reddit.com/r/bytebeat/comments/1cn2mjt/random_note_generator_2/"
-                    }
-                    ],
-                        "sampleRate": 44100,
-                        "codeOriginal": "Bpm=160,Hz=44100,tf=abs(t/Hz/180*3*32768*Bpm),pitch=(6+((tf^tf/2^tf/4&tf/8)>>14&3))/6,pitch2=(6+((tf>>19)&3))/12,speed=2,x=abs(255*floor(t*pitch%256/(speed/4*tf%65536|(speed/4*tf/32^speed/4*tf/64)%65536)*65536/256%2)),abs(128*-x%256)+abs(t*pitch2%256)/2"
-                    }
+            }
         ]
     },
     {
