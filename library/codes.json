@@ -5278,7 +5278,6 @@
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "codeOriginal": "m=(x,A,b,c,d,E)=>tanh(b*cos(x/32*b/16))+sin(x/16e3+b/16e6),t||(A=6.5,b=10.5,c=6.5,d=12.5,E=.02,l=9e-4,X=9e-4,u=1,s=0),a=t>>2,Y=a*5,y=m(a,A,b,c,d,E),s++,((s%u)==0)&&(R=y-Y,G=(m(a,A+X,b,c,d,E)-y)/X,H=(m(a,A,b+X,c,d,E)-y)/X,g=(m(a,A,b,c+X,d,E)-y)/X,h=(m(a,A,b,c,d+X,E)-y)/X,J=(m(a,A,b,c,d,E+X)-y)/X,A-=l*2*R*G,b-=l*2*R*H,c-=l*2*R*g,d-=l*2*R*h,E-=l*2*R*J),y/3"
-      ]
     },
     {
         "author": "pck404 *(Creator Of BytebeatCloud)*",
