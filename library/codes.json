@@ -5374,7 +5374,7 @@
     },
      {
         "name": "Wavetable-like soft synths using exp/cosine bell bumps that move and wrap around.",
-        "description": "change their width to change its timbre; smaller is brighter, wider is softer.",
+        "description": "change their width to change its timbre; smaller is brighter, wider is softer. \"Very Demanding On Performance.\"",
         "url": "https://dollchan.net/btb/res/3.html#12918",
         "date": "Feb 24, 2026",
         "sampleRate": 22050,
@@ -5509,12 +5509,14 @@
                 "name": "full version",
                 "mode": "Floatbeat",
                 "sampleRate": 44000,
+                "stereo": true,
                 "codeOriginal": "T=t/21120,i=64,o=q=[0,0],r=(e,t)=>(m=0,e.forEach(e=>e<t?m=t-e:0),m),(()=>{while(i--)o[1&i]+=((t*(j=[58,69,46,52][2.5<T%4|T>>1&2]/50)*[40,(e=2.5<T%8)?50:48,60,e?75.2:70.8,90][(i>>1)%5]/40+1e4*(1+sin(i+t/7e5)))%(a=256)-128)/1e3})(),o.forEach((e,i)=>t?l[i]+=(e%a-l[i])*(1-r([0,.75,1.5,2.5,3.25],T%4))**(7+5*sin(T*PI/8)):l=q),e=(e,t,i)=>(1-(e*t<1?e*t:1))**i,B=(g=(c=32768)*T)%c/48e3/4,k=atan(2*sin(7*cbrt(g%c)))*e(B,15,2)*(~g>>15&1),h=(m=sin(t**7))/4*e(g%8192/48e3/4,2==(g>>13&3)?10:40,3),y=atan(sin(8*cbrt(g%c))*e(B,40,.5)*1.7+2*m*(e(B,160,3)/3+e(B,20,2)*min(60*B,1)**1.5))*(g>>15&1),d=atan(k+h+y),b=atan((t*j/4%a/a-.5)*(2*T%2)),[(l[0]+b)*(q=(T%1)**.5)+d,(l[1]+b)*q+d]"
             },
             {
                 "name": "only the chords",
                 "mode": "Floatbeat",
                 "sampleRate": 44000,
+                "stereo": true,
                 "codeOriginal": "T=t/21120,i=64,o=q=[0,0],r=(e,t)=>(m=0,e.forEach(e=>e<t?m=t-e:0),m),(()=>{while(i--)o[1&i]+=((t*(j=[58,69,46,52][2.5<T%4|T>>1&2]/50)*[40,(e=2.5<T%8)?50:48,60,e?75.2:70.8,90][(i>>1)%5]/40+1e4*(1+sin(i+t/7e5)))%(a=256)-128)/1e3})(),o.forEach((e,i)=>t?l[i]+=(e%a-l[i])*(1-r([0,.75,1.5,2.5,3.25],T%4))**(7+5*sin(T*PI/8)):l=q),l"
             }
         ]
@@ -5583,6 +5585,15 @@
                 "date": "Mar 8, 2026",
                 "sampleRate": 44100,
                 "codeOriginal": "((random()*255)*(1-t/2048%1))*'1000100010101010100010001000100010101010100010001010101010101010'[t>>11&63]"
+            },
+            {
+                "name": "Moonlit Alley",
+                "url": "https://www.bytebeat.cloud/post/3026546d-2270-447d-9530-bfc5125d7129",
+                "date": "Mar 8, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 35000,
+                "stereo": true,
+                "codeOriginal": "v=J=>(t%=2**22,t||(C=Array(w=12288).fill(0)),x=w=>w((t*J*(6+(((t>>18&1?t>>(t>>18&1?13:12)&3:0)^t>>(t>>18&1?14:13)&(-t>>(t>>18&1?15:14)&3?1:2))+3&3))/8%128+(t*(6+(t>>16&3))/16|t>>7^t>>9)%128)/128*PI)/3,T=(((x(sin)%x(cos))*(t%1048576<524288?(1-t/8192%1):1))+((x(cos)*2)*(t<524288?0:t<1048576?1:(1-t/8192%1))))%256+C[t%w],C[t%w]=T/1.75,(T/2)+((sin(J*sqrt(t%16384))*(1-t/8192%1)*'10'[t>>13&1])*(t%2097152>1048576))+(((random()-random())/2.135*(1-t/8192%1)*'01'[t>>13&1])*(t>2097152))),[v(1.005),v(.995)]"
             }
         ]
     }
