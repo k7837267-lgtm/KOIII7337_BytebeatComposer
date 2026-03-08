@@ -4700,6 +4700,7 @@
                 "url": "https://www.bytebeat.cloud/post/b4c34d5c-0a8f-4ef7-b423-f8080a665d09",
                 "date": "Feb 26, 2026",
                 "sampleRate": 28000,
+                "mode": "Floatbeat",
                 "codeOriginal": [
                     "m=[1,1,4/3,3/2][t>>14&3],",
 "m2=[1,1,-.8,-.9][t>>14&3],",
