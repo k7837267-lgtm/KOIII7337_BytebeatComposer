@@ -5278,6 +5278,7 @@
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "codeOriginal": "m=(x,A,b,c,d,E)=>tanh(b*cos(x/32*b/16))+sin(x/16e3+b/16e6),t||(A=6.5,b=10.5,c=6.5,d=12.5,E=.02,l=9e-4,X=9e-4,u=1,s=0),a=t>>2,Y=a*5,y=m(a,A,b,c,d,E),s++,((s%u)==0)&&(R=y-Y,G=(m(a,A+X,b,c,d,E)-y)/X,H=(m(a,A,b+X,c,d,E)-y)/X,g=(m(a,A,b,c+X,d,E)-y)/X,h=(m(a,A,b,c,d+X,E)-y)/X,J=(m(a,A,b,c,d,E+X)-y)/X,A-=l*2*R*G,b-=l*2*R*H,c-=l*2*R*g,d-=l*2*R*h,E-=l*2*R*J),y/3"
+            }
     },
     {
         "author": "pck404 *(Creator Of BytebeatCloud)*",
@@ -5403,32 +5404,32 @@
         "url": "https://ihsoyct.github.io/index.html?comments=1rap679&backend=artic_shift",
         "date": "Feb 21, 2026",
         "children": [
-            {
-                "name": "U.N Owen Was Her? -> ryg",
+             {
+                "name": "U.N Owen Was Her? → ryg",
                 "description": "Also Part Of \"ByterBeater\".",
                 "sampleRate": 44100,
                 "codeOriginal": "f=x=>t*2**(x/12),(f([0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,7,7,10,,5,5,7,,3,3,3,3,3,3,3,3,0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12][127&t>>12])&127|t/8192)+(f([8,10,12,9,8,10,12,12,12][7&t>>15])/(8>>(t/8192&1))&128)"
-            },
+             },
             {
-                "name": "U.N Owen Was Her? -> iloveeveryend26",
+                "name": "U.N Owen Was Her? → iloveeveryend26",
                 "sampleRate": 16000,
                 "codeOriginal": "a=t*2**([8,10,12,9,8,10,12,12][t>>14&7]/12)/2,b=t*2**([0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,7,7,10,,5,5,7,,3,3,3,3,3,3,3,3,0,0,,,7,7,,,2,2,,,7,7,,,3,3,,,5,5,7,7,5,5,,,9,9,,,12,12,7,7,14,14,15,15,14,14,15,14,12,12,10,10,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12][t>>11&127]/12+2),(3*a^t>>6&256/'1112'[t>>14&3]-1|a)%256*2/3+(b^b*2)%256/3"
             },
-            {
-                "name": "Random Note Generator 2 -> the pulse but as a song",
+             {
+                "name": "Random Note Generator 2 → the pulse but as a song",
                 "sampleRate": 44100,
                 "codeOriginal": "Bpm=160,Hz=44100,tf=abs(t/Hz/180*3*32768*Bpm),pitch=(6+((tf^tf/2^tf/4&tf/8)>>14&3))/6,pitch2=(6+((tf>>19)&3))/12,speed=2,x=abs(255*floor(t*pitch%256/(speed/4*tf%65536|(speed/4*tf/32^speed/4*tf/64)%65536)*65536/256%2)),abs(128*-x%256)+abs(t*pitch2%256)/2"
-            },
+             },
             {
-                "name": "desire drive -> iloveeveryend26",
+                "name": "desire drive → iloveeveryend26",
                 "sampleRate": 16000,
                 "codeOriginal": "a=t*2**(parseInt('KMJOKMOOO'[7&t>>14],36)/12)/4,b=t*2**(parseInt('C7C5C32A23AFEA5A23AFHEACEA5C73A2'[(t>>12)%32],36)/12+2),(3*a^t>>6&256/'1112'[t>>14&3]-1|a)%256*2/3+(b^b*2)%256/3"
             },
-            {
-                "name": "the pulse but as a song -> Synthwave",
+             {
+                "name": "the pulse but as a song → Synthwave",
                 "sampleRate": 32000,
                 "codeOriginal": "a=t*1.01*4*([1,2,3,4,4.5,4.75,6,8][t/1.66>>12&7]/12)&255,a=(a%256+a%254)/4,b=t*.503*4*([4,4.5,4.75,5+1/3][t/1.66>>16&3]/12),b=(b%256+b%255)/5,b+a"
-            }
+             }
         ]
             },
             {
@@ -5439,7 +5440,6 @@
                 }, 
                 "url": "https://www.bytebeat.cloud/post/f44c7f5e-5627-4c14-8442-eef6dc73ba51",
                 "date": "Mar 6, 2026",
-                "description": "Modified by KOIII7337",
                 "sampleRate": 44100,
                 "file": "mqdantee.js",
                 "fileOriginal": true
