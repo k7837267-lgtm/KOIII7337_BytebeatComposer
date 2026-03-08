@@ -5441,7 +5441,7 @@
                 "date": "Mar 6, 2026",
                 "description": "Modified by KOIII7337",
                 "sampleRate": 44100,
-                "file": "mqdantee.js"
+                "file": "mqdantee.js",
                 "fileOriginal": true
                 }
         ]
@@ -5481,44 +5481,17 @@
                 "codeOriginal": "((t>>5^t>>4)&127?0:t*(t*t^255&t>>7)&140)|(t/3*((t/3>>9|t/5>>10)&1)?t*3&63:4*t%191)"
             },
             {
-                "name": "Bozi",
-                "url": "https://www.bytebeat.cloud/post/fb1ba2ae-d36e-49c9-966c-1ad059ed39df",
-                "date": "Feb 19, 2026",
-                "codeOriginal": "(t/(12+((t*(1+(t>>14&3^1)))/12&7^1))&127)+9000/(t&4095)"
-            },
-            {
                 "name": "Going home",
                 "url": "https://www.bytebeat.cloud/post/7e799163-ad56-46fe-b104-a426a9b1f4ea",
                 "date": "Feb 28, 2026",
                 "codeOriginal": "((t*t/2*(1+(t>>13&8|t>>12&10|5&t>>14)+((t>>10^t>>11)&1))))+((~t>>9)+t^t)|t>>4&t"
             },
             {
-                "name": "Short code",
-                "url": "https://www.bytebeat.cloud/post/fb1ba2ae-d36e-49c9-966c-1ad059ed39df",
-                "date": "Mar 5, 2026",
-                "sampleRate": 32000,
-                "codeOriginal": "t%((t&28+(36+(t>>12)))-256)%192"
-            },
-            {
                 "name": "Sound good and not complex",
-                "url": "https://www.bytebeat.cloud/post/fb1ba2ae-d36e-49c9-966c-1ad059ed39df",
+                "url": "https://www.bytebeat.cloud/post/30129a97-6e66-4917-9b12-3d4e0ead7155",
                 "date": "Mar 6, 2026",
                 "sampleRate": 44100,
                 "codeOriginal": "t%((t&(32+(t>>13^t>>14)))-192)"
-            },
-            {
-                "name": "Not the best",
-                "url": "https://www.bytebeat.cloud/post/7e799163-ad56-46fe-b104-a426a9b1f4ea",
-                "date": "Mar 7, 2026",
-                "mode": "Signed Bytebeat",
-                "codeOriginal": "((t<65536?t*5*(1+(t>>10&3)/5)%(t>>8):t*4*((1+(t>>10))%(9+(t>>12&t>>10&t>>13))/4)&255)-127)*(1-t/1024%1)"
-            },
-            {
-                "name": "String",
-                "description": "\"Boredom is killing me\" - ThusII",
-                "url": "https://www.bytebeat.cloud/post/7e799163-ad56-46fe-b104-a426a9b1f4ea",
-                "date": "Mar 7, 2026",
-                "codeOriginal": "(t*(t%2?(t&2048/(t>>12))?8:2:3)%32768)/((t*(t%2?(t&2048/(t>>12))?8:2:3)%32768)&16383)*4"
             }
         ]
     },
