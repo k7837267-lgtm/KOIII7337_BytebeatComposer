@@ -5531,7 +5531,7 @@
             },
             {
                 "name": "String",
-                "description": "\"Boredom is killing me\" - ThusII"
+                "description": "\"Boredom is killing me\" - ThusII",
                 "url": "https://www.bytebeat.cloud/post/7e799163-ad56-46fe-b104-a426a9b1f4ea",
                 "date": "Mar 7, 2026",
                 "codeOriginal": "(t*(t%2?(t&2048/(t>>12))?8:2:3)%32768)/((t*(t%2?(t&2048/(t>>12))?8:2:3)%32768)&16383)*4"
