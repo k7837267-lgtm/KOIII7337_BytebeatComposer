@@ -5518,5 +5518,72 @@
                 "codeOriginal": "T=t/21120,i=64,o=q=[0,0],r=(e,t)=>(m=0,e.forEach(e=>e<t?m=t-e:0),m),(()=>{while(i--)o[1&i]+=((t*(j=[58,69,46,52][2.5<T%4|T>>1&2]/50)*[40,(e=2.5<T%8)?50:48,60,e?75.2:70.8,90][(i>>1)%5]/40+1e4*(1+sin(i+t/7e5)))%(a=256)-128)/1e3})(),o.forEach((e,i)=>t?l[i]+=(e%a-l[i])*(1-r([0,.75,1.5,2.5,3.25],T%4))**(7+5*sin(T*PI/8)):l=q),l"
             }
         ]
+    },
+    {
+        "author": "YouLikeHaveMaterials87",
+        "children": [
+            {
+                "name": "AND Beat",
+                "url": "https://www.bytebeat.cloud/post/8e49d2e0-19c3-4f5d-8bc2-0f9ec7b61627",
+                "date": "Mar 7, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "(tanh(sin(2*sqrt((t%16384)&t>>'12345678'[t>>15&7])))*(1-t/16384%1)/2)+sin(1.67*sqrt(t%16384))/3"
+            },
+            {
+                "name": "MakeyMakey Musical Experiments No1: Plastic Forks",
+                "url": "https://www.bytebeat.cloud/post/ff614f48-3fc0-42f7-9f05-270559cde44c",
+                "date": "Mar 7, 2026",
+                "sampleRate": 16000,
+                "codeOriginal": "l=9,l2=12,a=j=>(t/2)*j*2**('2699'.charCodeAt(t>>14&3)/23.95),g=(k,b)=>a(k)%256/b,X=((t?f+=((g(1,6)+g(2,4)+g(4,9)+g(8,16)))-f/l:f=0)/l),b=(X*(1-t/[8192,32768][t>>15&1]%1))*(t&32768?1:!(t>>13&1)),R=random(),Q=a=>a*log10(t%4096),K=16*(tan(cos(Q(17)))+tan(sin(Q(7)))+sin(Q(10))+exp(sin(Q(18))))+128,S=128*(R/2*(1-t/4096%1))+128,Dru=[K,0,S,K,K,K,S,K,K,0,S,K,K,K,S,S][t>>12&15],$=t*2**([22,22,22,22,20,20,18,17,17,17,17,17,15,15,15,15][t>>12&15]/12),g2=b=>$%256/b,Oth=(t?f2+=g2(4)-f2/l2:f2=0)/l+32,(b+((Dru+Oth)*(t>65536)))/2"
+            },
+            {
+                "name": "that random fly in my face be like",
+                "url": "https://www.bytebeat.cloud/post/7d6b6b00-7f61-42b7-80e9-b120dffbed37",
+                "date": "Mar 7, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "codeOriginal": "x=t/128*PI,atan(tan(x))/3*(sin((x/64)/1.45)+cos((x/32)/1.25)+sin((x/44)-cos(x/33)))"
+            },
+            {
+                "name": "Шаску",
+                "remix": {
+                    "author": "akurwtools",
+                    "name": "i make a beautiful thing!",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1frkbxr/i_make_a_beautiful_thing/"
+                },
+                "url": "https://www.bytebeat.cloud/post/76d7e6b7-35a6-4530-9213-f28c9f1206fa",
+                "date": "Mar 7, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "codeOriginal": "D=((d=t*1.25*[1,1.25,1.35,1.5][t>>14&3])/4%64+d/16%64.249)+(d/4%64+d/8%64&32)+(d/4%64+d/4%64&32)+(d/4%64+d/4%64.5&32),((D%256/128-1)*2*sqrt(t/16384%1))+(sin(sqrt(t%4096))*(1-t/4096%1)*'1000'[t>>12&3])+((random()-.5)*(1-t/4096%1)*'0010'[t>>12&3])"
+            },
+            {
+                "name": "big echoing in the town hall",
+                "remix": {
+                    "author": "Glebguything",
+                    "name": "js compatible cat",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1hh4w1g/a_c_compatible_cat_tried_to_meow_to_a_js/"
+                },
+                "url": "https://www.bytebeat.cloud/post/a443751d-ca4e-4403-813c-b627e20343c8",
+                "date": "Mar 7, 2026",
+                "mode": "Signed Bytebeat",
+                "codeOriginal": "t||(C=Array(w=12288/4).fill(0)),x='2431'[t>>12&3],r=((t/(1+(7&t>>12)*1.4/(1+(3&t>>12)))&15)*-t/64*x*(1+(1&t>>12)))%256+C[t%w],C[t%w]=r/1.7,(r/5)+64"
+            },
+            {
+                "name": "The Waving Flags",
+                "url": "https://www.bytebeat.cloud/post/36c6c917-ce35-4c64-81c3-a4906b59f38c",
+                "date": "Mar 7, 2026",
+                "sampleRate": 32000,
+                "codeOriginal": "u=d=>128+sin((d/40.7530))/.009,u(t&-t>>5)"
+            },
+            {
+                "name": "trap hi-hat thingy",
+                "url": "https://www.bytebeat.cloud/post/319f3127-30ad-497e-931b-0c0eed248e38",
+                "date": "Mar 8, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "((random()*255)*(1-t/2048%1))*'1000100010101010100010001000100010101010100010001010101010101010'[t>>11&63]"
+            }
+        ]
     }
 ]
