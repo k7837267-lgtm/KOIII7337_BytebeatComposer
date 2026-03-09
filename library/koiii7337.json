@@ -134,6 +134,20 @@
         "sampleRate": 32000,
         "mode": "Floatbeat",
         "codeOriginal": "(exp(sin(cos(tan(cbrt(((t/2&t*.75))%16384)))))-1.35)"
+     },
+      {
+        "name": "V4",
+        "date": "Mar 9, 2026",
+        "sampleRate": 48000,
+        "mode": "Floatbeat",
+        "codeOriginal": "(exp(sin(cos(tan(cbrt(((t/2|t>>4&t))%16384)))))-1.375)"
+      },
+      {
+        "name": "V5",
+        "date": "Mar 9, 2026",
+        "sampleRate": 48000,
+        "mode": "Floatbeat",
+        "codeOriginal": "(exp(sin(cos(tan(cbrt(((t/2|t>>2&(t^t>>3)))%16384)))))-1.375)"
      }
     ]
   },
