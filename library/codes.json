@@ -5371,6 +5371,15 @@
                 "mode": "Floatbeat",
                 "file": "pck404-5.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "hard random radio",
+                "url": "https://www.bytebeat.cloud/post/a4fc9c3db236-4c83-a40a-5731579cb7db",
+                "description": "BytebeatCloud's Week 13 Submission",
+                "date": "Mar 9, 2026",
+                "file": "pck404-6.js",
+                "fileOriginal": true,
+                "fileMinified": true,
             }
         ]
     },
