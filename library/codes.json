@@ -52,14 +52,14 @@
         "author": "stephth",
         "name": "remix of miiro's 1-line symphony",
         "url": "https://news.ycombinator.com/item?id=3064986",
-        "date": "Oct 03, 2011",
+        "date": "Oct 3, 2011",
         "codeOriginal": "t*9&(t*1>>4)|t*5&(t>>7)|t*3&(t*4>>12)",
         "codeMinified": "t*9&t>>4|t*5&t>>7|t*3&t>>10"
     },
     {
         "author": "216",
         "url": "https://www.pouet.net/topic.php?which=8357&page=6#c388715",
-        "date": "Oct 03, 2011",
+        "date": "Oct 3, 2011",
         "codeOriginal": "t*(t^t+(t>>15|1)^(t-1280^t)>>10)"
     },
     {
@@ -74,7 +74,7 @@
             "https://www.pouet.net/topic.php?post=388873",
             "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
         ],
-        "date": "Oct 04, 2011",
+        "date": "Oct 4, 2011",
         "sampleRate": 44100,
         "codeOriginal": "(t>>4)*(13&(0x8898a989>>(t>>11&30)))"
     },
