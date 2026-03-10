@@ -5470,7 +5470,18 @@
                 "sampleRate": 44100,
                 "file": "mqdantee.js",
                 "fileOriginal": true
-                }
+                },
+            {
+                "name": "Jeopardy Theme",
+                "cover": {
+                    "name": "Jeopardy! Theme Music",
+                    "url": "https://www.youtube.com/watch?v=0Wi8Fv0AJA4"
+                }, 
+                "url": "https://www.bytebeat.cloud/post/8bb176b1-e3b2-4268-9303-7b194b63cd3b",
+                "date": "Mar 10, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "t*=22528/55125,(t*2*2**([1,1,6,6,1,1,-6,-6,1,1,6,6,1,1,,,1,1,6,6,1,1,6,6,10,10,10,8,6,5,3,2,1,1,6,6,1,1,-6,-6,1,1,6,6,1,1,,,6,6,6,3,1,1,-1,-1,-2,-2,-4,-4,-6,-6][t>>12&63]/12)&64)+(t/2*2**([6,3,8,1,6,3,8,1,6,3,8,5,-1,-1,'15'[t>>13&1],6][t>>14&15]/12)&64)"
+            }
         ]
     },
     {
@@ -5519,6 +5530,14 @@
                 "date": "Mar 6, 2026",
                 "sampleRate": 44100,
                 "codeOriginal": "t%((t&(32+(t>>13^t>>14)))-192)"
+            },
+            {
+                "name": "Sisco",
+                "url": "https://www.bytebeat.cloud/post/d866b92e-1409-4808-9697-41771b93b779",
+                "date": "Mar 9, 2026",
+                "mode": "Floatbeat",
+                "codeOriginal": "Math.min((t/64)/128,Math.max((-t/64)/128,Math.sin(Math.PI*Math.sin(t*(1+(t>>11&7^5*(1|t>>15))))*Math.PI)/3+Math.sin(Math.PI*Math.sin(40000/(t&4095|1)))/4+Math.sin(Math.PI*Math.sin(t*(t>>12&1)*(-t>>9&6^5*(t>>15|1))))/4+Math.sin(Math.PI*Math.cos(t/3000)*10-t/(1|t>>9&t>>12)%1)/2))/(3/2)",
+                "codeMinified": "min((t/64)/128,max((-t/64)/128,sin(PI*sin(t*(1+(t>>11&7^5*(1|t>>15))))*PI)/3+sin(PI*sin(4e4/(t&4095|1)))/4+sin(PI*sin(t*(t>>12&1)*(-t>>9&6^5*(t>>15|1))))/4+sin(PI*cos(t/3e3)*10-t/(1|t>>9&t>>12)%1)/2))/(3/2)"
             }
         ]
     },
