@@ -517,7 +517,7 @@ button[name="close"] {
 }
 
 .code-exotic {
-	color: #d11515;
+	color: #ff0000;
 }
 
 .code-length, .code-info {
@@ -530,7 +530,7 @@ button[name="close"] {
 }
 
 .code-stereo {
-	color: #09ad69;
+	color: #00ff00;
 }
 
 .code-text {
