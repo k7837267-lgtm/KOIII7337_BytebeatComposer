@@ -870,15 +870,20 @@ globalThis.bytebeat = new class {
 			sampleRate = 8000;
 		}
 		switch (sampleRate) {
+			case 1000:
 			case 4000:
 			case 6000:
 			case 8000:
+			case 9000:
 			case 11025:
 			case 12000:
 			case 16000:
+			case 18000:
 			case 22050:
 			case 24000:
 			case 32000:
+			case 36000:
+			case 42000:
 			case 44100:
 			case 48000: this.controlSampleRateSelect.value = sampleRate; break;
 			default: this.controlSampleRateSelect.selectedIndex = -1;
