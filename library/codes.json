@@ -4336,6 +4336,16 @@
                 "sampleRate": 48000,
                 "stereo": true,
                 "codeOriginal": "t||(fx=[]),fxi=0,lpf=(a,c)=>(lp_fxii=fxi++,fx[lp_fxii]??=0,fx[lp_fxii]+=(a-fx[lp_fxii])*c),hpf=(a,c)=>a-lpf(a,c),bpf=(a,hc,lc)=>hpf(lpf(a,lc),hc),bbf=(a,hc,lc,v)=>a+bpf(a,hc,lc)*v,ts=t*abs(130/(48e3*60)*16384),l=16384,m=8192,s=4096,seq=(inst,pat=\"\",step=t)=>((!pat[step]||pat[step]==\"0\")?0:inst)||0,kick=()=>tanh((sin(100*(ts%s)**.025*6)+hpf((random()-.5)/2,.5))*(1-ts/s%1)**22+(sin(100*(ts%s)**.1))*(1-(ts/s%1)**2)*(1-(1-ts/s%1)**8)*1.2)/tanh(1),clap=()=>bpf(((random()-.5)*10*(ts>>10&3?(1-ts/s%1)**4*2.5:(1-(ts/(512/1.5))%1)**2)),.2,.2)*1.25,chat=closedHat=()=>hpf((random()-.5)*10*(1-ts/s%1)**4,.9),ride=()=>bpf(bpf((random()-.5)*(1-(ts/s%1)**2),.6,.59),.6,.59)*12.5,mast=()=>sin(bbf(+seq(kick(),\"1000000101010000\",ts>>12&15)+seq(clap(),\"00001000\",ts>>12&7)+seq(chat(),\"0010001000100010\",ts>>12&15)+seq(ride(),\"0000000101010000\",ts>>12&15)+(random()-.5)/1e3,.025,.2,-.5)),[mast(),mast()]"
+            },
+            {
+                "name": "Sample this (140 bpm — Eb minor)",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/82bce1cd-01a7-4dfa-b6dc-02df73bed0ba",
+               "date": "Mar 14, 2026",
+                "sampleRate": 24000,
+                "stereo": true,
+                "file": "PrincessPriscillaPT-1.js",
+                "fileOriginal": true
             }
         ]
     },
@@ -5493,6 +5503,18 @@
                 "date": "Mar 10, 2026",
                 "sampleRate": 44100,
                 "codeOriginal": "t*=22528/55125,(t*2*2**([1,1,6,6,1,1,-6,-6,1,1,6,6,1,1,,,1,1,6,6,1,1,6,6,10,10,10,8,6,5,3,2,1,1,6,6,1,1,-6,-6,1,1,6,6,1,1,,,6,6,6,3,1,1,-1,-1,-2,-2,-4,-4,-6,-6][t>>12&63]/12)&64)+(t/2*2**([6,3,8,1,6,3,8,1,6,3,8,5,-1,-1,'15'[t>>13&1],6][t>>14&15]/12)&64)"
+            },
+            {
+                "name": "ti3699 & N3330x64 & KOIII7337",
+                "description": "\"HERE I AM!!!\" - KOIII7337",
+                "url": "https://www.bytebeat.cloud/post/5a9d4756-4bb5-4124-bc7b-3a90a7ba0c3c",
+                "date": "Mar 15, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "g=(x,y,z)=>t/z*2**(floor((parseInt(x[(t>>y)%(x.length)],36))/5))*2**([2,4,7,9,11][(parseInt(x[(t>>y)%(x.length)],36))%5]/12),(g(\"ti3699\",14,16)&64)/64*(~t>>8&63)+",
+"(g(\"N3330x64\",13,16)&64)/64*(~t>>7&63)+",
+"(g(\"KOIII7337\",14,32)&63)/64*(~t>>8&63)"
+                ]
             }
         ]
     },
