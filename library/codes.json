@@ -1402,7 +1402,7 @@
                 "url": "https://www.reddit.com/r/bytebeat_2/comments/1qo0zy2/running_out_of_ideas_basic_remix/",
                 "date": "Jan 26, 2026",
                 "sampleRate": 48000,
-                "codeOriginal" [
+                "codeOriginal": [
                 "p=x=>2**([0,3,5,7,10][x%5]/12+(x/5|0)-2+((t>>18&3)==3)),",
                     "a=t*2*p(3*(t>>13&t>>16)%19|0)%256/128-1,",
                     "b=sin(t*PI/512/(1.0594**[0,4,-3,2,0,4,-3,-2][t>>17&7])),",
