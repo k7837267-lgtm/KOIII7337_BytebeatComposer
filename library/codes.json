@@ -1386,6 +1386,41 @@
                     "",
                     "(c+d)*1"
                 ]
+            },
+            {
+                "name": "hardcore new dimension ripoff [ZAAG / KRACH (?) edit]",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1l9ahhq/hardcore_new_dimension_ripoff_zaag_krach_edit/",
+                "date": "Jun 12, 2025",
+                "sampleRate": 40000,
+                "file": "newfall4.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "running out of ideas (basic remix)",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat_2/comments/1qo0zy2/running_out_of_ideas_basic_remix/",
+                "date": "Jan 26, 2026",
+                "sampleRate": 48000,
+                "codeOriginal" [
+                "p=x=>2**([0,3,5,7,10][x%5]/12+(x/5|0)-2+((t>>18&3)==3)),",
+                    "a=t*2*p(3*(t>>13&t>>16)%19|0)%256/128-1,",
+                    "b=sin(t*PI/512/(1.0594**[0,4,-3,2,0,4,-3,-2][t>>17&7])),",
+                    "[[a,b][t>>15&1]/3+([b,a][t>>15&1])/2,[b,a][t>>15&1]/3+([a,b][t>>15&1])/2]"
+                ]
+            },
+            {
+                "name": "a weird code i made while bored",
+                "url": "https://www.reddit.com/r/bytebeat_2/comments/1qx385o/a_weird_code_i_made_while_bored/",
+                "date": "Feb 6, 2026",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "a=((t*(4+'15371753'[t>>15&7])*(t>>9|t>>11)&64)|t>>t/4),",
+"b=(a/8%32)+(a%256*(t%16384/21000)),",
+"c=((((128*sin(1.4*sqrt(5*(t%16384)))-128))*(-t>>4&255)>>8)-(t/16&255))/4-192,",
+"d=-((((128*sin(1.4*sqrt(5*(t%16384)))-128))*(-t>>6&255)>>10)),",
+"b+c+d*3"
+                ]
             }
         ]
     },
