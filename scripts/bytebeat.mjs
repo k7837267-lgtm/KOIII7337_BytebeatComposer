@@ -61,7 +61,7 @@ globalThis.bytebeat = new class {
 			themeStyle: 'Default',
 			volume: .5
 		};
-		this.songData = { mode: 'Bytebeat', sampleRate: 8000 };
+		this.songData = { mode: 'Signed Bytebeat', sampleRate: 9000 };
 		this.init();
 	}
 	get editorValue() {
