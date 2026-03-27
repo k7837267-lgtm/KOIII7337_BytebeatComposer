@@ -494,7 +494,6 @@
         "name": "Bytebeat_2048",
         "mode": "2048",
         "sampleRate": 9000,
-        "stereo": true,
         "exotic": true,
         "codeOriginal": "(t*=2|t>>8,t?128:T=U=V=0,T^=t>>8^t>>7,A=((T^T/1.001)*128+t*128|t<<1),U-=(t>>8^t>>9),B=t*8&(U*U>>8),V+=tan(t/64*PI),C=(t^(V/128))*8,((A&255)*4+(B&255)+(C&255))||t*t)+256"
       }
