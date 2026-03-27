@@ -485,7 +485,7 @@
       {
         "name": "Bytebeat_Logmode",
         "mode": "Logmode",
-        "sampleRate": 42000,
+        "sampleRate": 36000,
         "stereo": true,
         "exotic": true,
         "codeOriginal": "t/=4,T=K=>(tan(t*((t>>10^t>>9^t>>11)&14)/128*PI*K)|sin(150**(K*2)/(t&4095))*128)+16+(tan(t*K*t/5*K)*t/3*K)*((t>>10&7)==4),[T(.999),T(1.001)]"
