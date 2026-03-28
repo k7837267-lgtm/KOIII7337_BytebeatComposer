@@ -707,8 +707,8 @@ button[name="close"] {
 	border: none;
 	border-radius: var(--control-corners);
 	background-image: var(--control-button);
-	color: #e3e3e3;
-	font: bold var(--font-size)/var(--control-size) Retro Floral;
+	color: #D0FFFF;
+	font: bold var(--font-size)/var(--control-size) Products Sans;
 	cursor: pointer;
 }
 
@@ -839,7 +839,7 @@ button[name="close"] {
 	background: var(--control-text);
 	color: #e3e3e3;
 	border: none;
-	font: bold var(--font-size)/var(--control-size) Comic Sans;
+	font: bold var(--font-size)/var(--control-size) Super Mario World;
 	box-shadow: inset 0 0 12px rgba(202, 202, 202, 0.5);
 }
 
