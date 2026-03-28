@@ -496,7 +496,7 @@ button[name="close"] {
 	box-sizing: border-box;
 	background-color: #000;
 	color: #fff;
-	font: var(--font-size)/var(--font-size) Super Mario World;
+	font: var(--font-size)/var(--font-size) Gals;
 	outline: none;
 	resize: none;
 }
@@ -608,7 +608,7 @@ button[name="close"] {
 	border: none;
 	color: #ffcc53;
 	background: none;
-	font: var(--font-size)/10px Super Mario World;
+	font: var(--font-size)/10px Gals;
 	text-align: left;
 	text-decoration: none;
 	white-space: pre-wrap;
@@ -708,7 +708,7 @@ button[name="close"] {
 	border-radius: var(--control-corners);
 	background-image: var(--control-button);
 	color: #e3e3e3;
-	font: bold var(--font-size)/var(--control-size) sans-serif;
+	font: bold var(--font-size)/var(--control-size) Retro Floral;
 	cursor: pointer;
 }
 
@@ -839,7 +839,7 @@ button[name="close"] {
 	background: var(--control-text);
 	color: #e3e3e3;
 	border: none;
-	font: bold var(--font-size)/var(--control-size) monospace;
+	font: bold var(--font-size)/var(--control-size) Comic Sans;
 	box-shadow: inset 0 0 12px rgba(202, 202, 202, 0.5);
 }
 
