@@ -608,7 +608,7 @@ button[name="close"] {
 	border: none;
 	color: #ffcc53;
 	background: none;
-	font: var(--font-size)/10px Gals;
+	font: var(--font-size)/10px SF-Pro-Rounded;
 	text-align: left;
 	text-decoration: none;
 	white-space: pre-wrap;
