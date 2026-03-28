@@ -2,7 +2,7 @@
 @font-face {
 	font-family: 'Gals';
 	src: url('./Fonts/GALS.ttf') format('truetype');
-	font-weight: normal;
+	font-weight: large;
 	font-style: normal;
 }
 @font-face {
@@ -26,7 +26,7 @@
 @font-face {
 	font-family: 'Super Mario World';
 	src: url('./Fonts/SMW.otf') format('truetype');
-	font-weight: normal;
+	font-weight: large;
 	font-style: normal;
 }
 @font-face {
