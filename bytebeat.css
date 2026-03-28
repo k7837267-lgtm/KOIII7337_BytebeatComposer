@@ -99,7 +99,7 @@ html {
 	color-scheme: dark;
 	background-color: #037;
 	color: #50eaf9;
-	font: var(--font-size) monospace;
+	font: var(--font-size) Tomo;
 }
 
 html[data-theme="Blue"] {
