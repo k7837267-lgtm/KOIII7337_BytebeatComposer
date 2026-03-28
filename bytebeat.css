@@ -551,7 +551,7 @@ button[name="close"] {
 	max-height: calc(100% - 256px);
 	overflow-y: scroll;
 	color: #ffffff;
-	font: 12px/12px monospace;
+	font: 12px/12px IBM-Plex-Sans-Condensed;
 	letter-spacing: -1px;
 }
 
@@ -608,7 +608,7 @@ button[name="close"] {
 	border: none;
 	color: #ffcc53;
 	background: none;
-	font: var(--font-size)/16px monospace;
+	font: var(--font-size)/10px Super Mario World;
 	text-align: left;
 	text-decoration: none;
 	white-space: pre-wrap;
