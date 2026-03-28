@@ -568,7 +568,7 @@ button[name="close"] {
 	border-radius: 3px;
 	background-image: var(--code-button);
 	color: #ced5e1;
-	font: var(--font-size)/var(--font-size) sans-serif;
+	font: var(--font-size)/var(--font-size) Shag Lounge;
 	white-space: nowrap;
 	cursor: pointer;
 }
