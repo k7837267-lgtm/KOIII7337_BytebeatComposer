@@ -551,8 +551,8 @@ button[name="close"] {
 	max-height: calc(100% - 256px);
 	overflow-y: scroll;
 	color: #ffffff;
-	font: 12px/12px IBM-Plex-Sans-Condensed;
-	letter-spacing: -1px;
+	font: 18px/18px IBM-Plex-Sans-Condensed;
+	letter-spacing: 0px;
 }
 
 ::selection {
