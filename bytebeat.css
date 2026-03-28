@@ -1,3 +1,71 @@
+/* ==[ Fonts ] ============================================================================================ */
+@font-face {
+	font-family: 'Gals';
+	src: url('./Fonts/GALS.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Products Sans';
+	src: url('./Fonts/Google Products Sans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Nostalgia NES';
+	src: url('./Fonts/NostalgiaNesFont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF-Pro-Rounded';
+	src: url('./Fonts/SF-Pro-Rounded-Regular.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Super Mario World';
+	src: url('./Fonts/SMW.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Shag Lounge';
+	src: url('./Fonts/Shag Lounge.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Comic Sans';
+	src: url('./Fonts/comic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'IBM-Plex-Sans-Condensed';
+	src: url('./Fonts/ibm-plex-sans-condensed.medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Impact';
+	src: url('./Fonts/impact.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Retro Floral';
+	src: url('./Fonts/retro-floral.regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Tomo';
+	src: url('./Fonts/tomo.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* ==[ Document ] ========================================================================================= */
 
 :root {
@@ -482,7 +550,7 @@ button[name="close"] {
 	max-width: 100vw;
 	max-height: calc(100% - 256px);
 	overflow-y: scroll;
-	color: #f92672;
+	color: #ffffff;
 	font: 12px/12px monospace;
 	letter-spacing: -1px;
 }
