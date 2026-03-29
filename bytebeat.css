@@ -606,7 +606,7 @@ button[name="close"] {
 	margin: 1;
 	padding: 1;
 	border: none;
-	color: #ffcc53;
+	color: #007fff;
 	background: none;
 	font: var(--font-size)/14px SF-Pro-Rounded;
 	text-align: left;
@@ -837,7 +837,7 @@ button[name="close"] {
 	height: var(--control-size);
 	padding: 0 4px;
 	background: var(--control-text);
-	color: #D040FF;
+	color: #72aafa;
 	border: none;
 	font: bold var(--font-size)/var(--control-size) Super Mario World;
 	box-shadow: inset 0 0 12px rgba(202, 202, 202, 0.5);
