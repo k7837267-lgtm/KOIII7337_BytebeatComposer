@@ -837,7 +837,7 @@ button[name="close"] {
 	height: var(--control-size);
 	padding: 0 4px;
 	background: var(--control-text);
-	color: #e3e3e3;
+	color: #D040FF;
 	border: none;
 	font: bold var(--font-size)/var(--control-size) Super Mario World;
 	box-shadow: inset 0 0 12px rgba(202, 202, 202, 0.5);
