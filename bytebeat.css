@@ -92,12 +92,12 @@
 	--library-header-hover: linear-gradient(to bottom, #0000ff, #000000);
 	--library-header-hover-color: #00ff7f;
 	--link: #ffff00;
-	--link-hover: #007fff !important;
+	--link-hover: #1f4fff !important;
 }
 
 html {
 	color-scheme: dark;
-	background-color: #037;
+	background-color: #025;
 	color: #50eaf9;
 	font: var(--font-size) Tomo;
 }
