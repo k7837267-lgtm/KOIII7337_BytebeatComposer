@@ -5554,6 +5554,88 @@
         ]
     },
     {
+        "author": "DismalPercentage3802",
+        "children": [
+            {
+                "name": "ByteSteppier",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1qbp4r2/bytesteppier/",
+                "date": "Jan 13, 2026",
+                "sampleRate": 48000,
+                "stereo": true,
+                "exotic": true,
+                "codeOriginal": "[3/sinf(sqrt(2e3*(t&16383)))*[1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1][[t>>13]%16]|(t%128+t%102+t%85+t%64)%256*(sin(t%65535/2620/1.5))*[1,1,1,0][[t>>12]%4]&(((64*sinf(t/4)^128)+(1273*sinf(random()))+5*sinf(t/42))%256*(1-t%16384/16384))|((128*sinf(t/2))%256*(t%16384/16384)^128)*[0,1,1,1,0,1,1,1,0,1,1,1,0,0,0,0][[t>>13]%16], (3/sinf(sqrt(2e3*(t&16383)))*[1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1][[t>>13]%16]|(t%128+t%102+t%85+t%64)%256*(sin(t%65535/2620/1.5))*[1,1,1,0][[t>>12]%4]&(((64*sinf(t/4)^128)+(1273*sinf(random()))+5*sinf(t/42))%256*(1-t%16384/16384))|((128*sinf(t/2))%256*(t%16384/16384)^128)*[0,1,1,1,0,1,1,1,0,1,1,1,0,0,0,0][[t>>13]%16])]"
+            },
+            {
+                "name": "stereo breakdown",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1qff9s0/stereo_breakdown_56100_hz/",
+                "date": "Jan 17, 2026",
+                "sampleRate": 56100,
+                "stereo": true,
+                "exotic": true,
+                "codeOriginal": "t2=t/2,[127*sinf(t/4)%256*(t%16384/16384)^128|t>>8^128^tanh((sinf(t2*3)+sinf(t2*[7,6,5,4][[t>>17]%4])+sinf(t2*2))*2)*128|1/sinf(sqrt(2e3*(t&8191)))*[1,0,0,0,1,0,0,1,1,0,0,1,1,0,1,0][[t>>13]%16],(127*sinf(t/4)%256*(t%16384/16384)^128|t>>8^128^tanh((sinf(t2*3)+sinf(t2*[7,6,5,4][[t>>17]%4])+sinf(t2*2))*2)*128|1/sinf(sqrt(2e3*(t&8191)))*[1,0,0,0,1,0,0,1,1,0,0,1,1,0,1,0][[t>>13]%16])*1.23]"
+            },
+            {
+                "name": "NaN-step",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1qvuw75/nanstep/",
+                "date": "Feb 4, 2026",
+                "sampleRate": 44100,
+                "stereo": true,
+                "exotic": true,
+                "codeOriginal": [
+                    "a=t=>(sin(t/(PI*t&t>>13)))/1.2+",
+"tanh((1-t%8192/8192)*16*sinf(sqrt(2e3*(t&16383))))*[1,0][[t>>13]%2]+tanh(8*sinf(t/4*1.12))/2%255*[0,1][[t>>13]%2]*2.4+sinf(random()*32)%256*(1-t%8192/8192)*[0,1][[t>>13]%2]+sinf(random()*128)%256*(1-t%16384/16384)*[0,0,1,0][[t>>13]%4],",
+"[a(t),a(t)*1.2]"
+                ]
+            },
+            {
+                "name": "ee",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1rdtyrj/ee/",
+                "date": "Feb 24, 2026",
+                "sampleRate": 57000,
+                "stereo": true,
+                "exotic": true,
+                "codeOriginal": [
+                    "e=[7,7,9,8][[t>>18]%4],",
+"lpf=t=>(a2=t,",
+"a2=a2%256,",
+"this.e2??=0,",
+"e2=e2+(a2-e2)/2)*1.5,",
+"h=(x,v)=>lpf(sinf(tanf(t*v/x^t*v/x/2.01)*127)),out=t=>tanh(((h([4,3,2,3][[t>>15]%4],2),h([4,5,6,5.4][[t>>17]%4],1))%256*(t%32768/32768)*[1,1,1,.25,1,1,.25,.5,1,.25,.5,1,1,1,.25,.5][[t>>13]%16]+(tanh(3*sinf(sqrt(6e3*(t&8191))))*[1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0][[t>>13]%16]%256*(1-t%8192/8192)+(tanh(sinf(t**sin(t*1.5>>2)))%256*(1-t%8192/8192)*[0,0,0,0,1,0,0,0][[t>>13]%8]*1.5+sinf(sqrt(10e3*(t&16383)))%256*(1-t%8192/8192)*[0,0,0,0,1,0,0,0][[t>>13]%8]*1.25)*2)/1.25)*1.5)*2,",
+"[out(t),out(t)]"
+                ]
+            },
+            {
+                "name": "I dont know what to name this again.",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1rmntfv/i_dont_know_what_to_name_this_again/",
+                "date": "Mar 6, 2026",
+                "sampleRate": 44100,
+                "stereo": true,
+                "exotic": true,
+                "codeOriginal": [
+                    "i=t=>(t*1.4%128+t*1.4%127)/2,",
+"n=x=>i(t*x*t*x)*2,",
+"b=s=>atan(tanh(s)),",
+"out=(t,k,z)=>(b((tanh(n(k)%256/128-1)%256*(t/1.5%16384/16384)*2.5+tanh(sinf(sqrt(5e3*(t/1.5&4095))))%256*exp(1-t/1.5%4096/1328)*'10010000100000001000000010000000'[[t/1.5>>12]%32]*4+(tanh(sinf(sqrt(10e3*(t/1.5&8191))))%256*exp(1-t/1.5%8192/1092)*6+tanh(sinf(t**sin(t*1.5>>2)))%256*(1-t/1.5%4096/4096)*3)*'00001000'[[t/1.5>>12]%8])/2+((atan(tanf(t*z/8*1.6*[1,2,3,4,5,6,8,10][[t/1.5>>11]%8]))/2+atan(tanf(t*z/4.01*1.6*[1,2,3,4,5,6,8,10][[t/1.5>>11]%8]))/2)%256*(1-t/1.5%2048/9048)%256*(t/1.5%16384/16384))/4+tanh(sinf(t*1.6/4*z))*2%256*(t/1.5%16384/16384)/1.5)+tanh((sinf(tanf(t/8*1.6*z)*128)/2+sinf(t/4*1.6)/2)%256*(t/1.5%16384/16384))/1.25)/1.25,",
+"[out(t*2/PI,1,[1,1.5][[t/PI/1.5>>16]%2]),out(t*2/PI,2,[1,1.5][[t/PI/1.5>>16]%2])]",
+"// Set t for normal speed, set t*2/PI for HOLY- (needs to divide the sequence speee by PI or it will be out of sync)"
+                ]
+            },
+            {
+                "name": "aa",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1s58n0j/aa/",
+                "date": "Mar 27, 2026",
+                "sampleRate": 56000,
+                "exotic": true,
+                "codeOriginal": [
+                    "h=(f,v)=>(a=[1.25,1.25,1.2,1.25][[t>>16]%4],z=[1,.94,1.25,1.115][[t>>16]%4]*f*[1,a*.998,1.501][[t>>v>>0]%3]/2,x=(exp(t%16384/16384)*317*20*z*'1'[[t>>14]%4])||t*z,atan(tanf(x))/2),",
+"((h(2,12)/3+h(1,0)/2)%256*exp(t%32768/8192)/2+tanh(sinf(t*[1,.94,1.25,1.115][[t>>16]%4]/4)%256*exp(t%32768/7192)/3)/1.2+tanh(sinf(t*[1,.94,1.25,1.115][[t>>16]%4]/2)%256*exp(t%32768/7192)/3)/4.2+tan(sinf(sqrt(5e3*(t&8191)))*'1000'[[t>>13]%4]%256*exp(1-t%8192/1029))*5+(sinf(sqrt(5e3*(t&16383)))%256*exp(1-t%16384/1632)*2+tanh(sinf(t**sin(t*1.5>>1)))%255*exp(1-t%16384/2632))*'0010'[[t>>14]%4])*3"
+                ]
+    },
+    {
         "author": "HypernovaHeathen",
         "name": "Recon",
         "date": "Jan 14, 2026",
