@@ -4019,6 +4019,15 @@
 "dm=sin(s*1430)*.75,",
 "floor(s)==63?dm:R"
                 ]
+            },
+            {
+                "name": "The Nice One",
+                "url": "https://www.bytebeat.cloud/post/e65b6b21-b361-462d-a304-a88827bf75ce",
+                "date": "Mar 24, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "file": "TI3699-3.js",
+                "fileOriginal": true,
             }
         ]
     },
@@ -5340,6 +5349,15 @@
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "codeOriginal": "m=(x,A,b,c,d,E)=>tanh(b*cos(x/32*b/16))+sin(x/16e3+b/16e6),t||(A=6.5,b=10.5,c=6.5,d=12.5,E=.02,l=9e-4,X=9e-4,u=1,s=0),a=t>>2,Y=a*5,y=m(a,A,b,c,d,E),s++,((s%u)==0)&&(R=y-Y,G=(m(a,A+X,b,c,d,E)-y)/X,H=(m(a,A,b+X,c,d,E)-y)/X,g=(m(a,A,b,c+X,d,E)-y)/X,h=(m(a,A,b,c,d+X,E)-y)/X,J=(m(a,A,b,c,d,E+X)-y)/X,A-=l*2*R*G,b-=l*2*R*H,c-=l*2*R*g,d-=l*2*R*h,E-=l*2*R*J),y/3"
+            },
+            {
+                "name": "taumata",
+                "url": "https://www.bytebeat.cloud/post/5a87fd3a-10a9-4dc7e8-8c25a214cb4e",
+                "date": "Mar 15, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 16000,
+                "file": "vbinchees3000-2.js",
+                "fileOriginal": true
             }
                 ]
     },
@@ -5811,5 +5829,14 @@
                 "codeOriginal": "v=J=>(t%=2**22,t||(C=Array(w=12288).fill(0)),x=w=>w((t*J*(6+(((t>>18&1?t>>(t>>18&1?13:12)&3:0)^t>>(t>>18&1?14:13)&(-t>>(t>>18&1?15:14)&3?1:2))+3&3))/8%128+(t*(6+(t>>16&3))/16|t>>7^t>>9)%128)/128*PI)/3,T=(((x(sin)%x(cos))*(t%1048576<524288?(1-t/8192%1):1))+((x(cos)*2)*(t<524288?0:t<1048576?1:(1-t/8192%1))))%256+C[t%w],C[t%w]=T/1.75,(T/2)+((sin(J*sqrt(t%16384))*(1-t/8192%1)*'10'[t>>13&1])*(t%2097152>1048576))+(((random()-random())/2.135*(1-t/8192%1)*'01'[t>>13&1])*(t>2097152))),[v(1.005),v(.995)]"
             }
         ]
+    },
+    { 
+        "author": "Cyberslot",
+        "name": "Hardbyte.wav (Remix of Winter Whispers of Equestria · Hexwave)",
+        "date": "Mar 29, 2026",
+        "mode": "Floatbeat",
+        "sampleRate": 22050,
+        "file": "Cyberslot.js",
+        "fileOriginal": true
     }
 ]
