@@ -4027,7 +4027,7 @@
                 "mode": "Floatbeat",
                 "sampleRate": 44100,
                 "file": "TI3699-3.js",
-                "fileOriginal": true,
+                "fileOriginal": true
             }
         ]
     },
