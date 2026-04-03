@@ -5837,6 +5837,7 @@
         "date": "Mar 29, 2026",
         "mode": "Floatbeat",
         "sampleRate": 22050,
+        "stereo": true,
         "file": "Cyberslot.js",
         "fileOriginal": true
     }
