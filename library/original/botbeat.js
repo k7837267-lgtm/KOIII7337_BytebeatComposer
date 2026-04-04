@@ -2,7 +2,7 @@ this.X??=0,
 
 pitch=2**(-11/12)*447*256/48e3,n=$=>(2**($/12)),tt=t*2*pitch,
 
-t||(buffer=[],$a=$b=0,fxi=0,fx=[]), sr=92e3,i=sr/4,bpm=175,
+t||(buffer=[],$a=$b=0,fxi=0,fx=[]), sr=96e3,i=sr/4,bpm=175,
 
 T=t*bpm/60*sr/131072,
 
