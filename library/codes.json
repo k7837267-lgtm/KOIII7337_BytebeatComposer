@@ -5894,12 +5894,74 @@
         "author": "Cyberslot",
         "name": "Hardbyte.wav (Remix of Winter Whispers of Equestria · Hexwave)",
         "url": "https://www.bytebeat.cloud/post/378c7c53-5201-4b2c-9781-e1d67165963b",
-        "description": "BytebeatCloud's Week 16 Submission",
+        "description": "BytebeatCloud's Week 16 Top Pick",
         "date": "Mar 29, 2026",
         "mode": "Floatbeat",
         "sampleRate": 22050,
         "stereo": true,
         "file": "Cyberslot.js",
         "fileOriginal": true
+    },
+    {
+        "author": "botbeat"
+        "children": [
+            {
+                "name": "Serves a purpose",
+                "url": "https://www.bytebeat.cloud/post/5103e4b6-d945-4df3-96db-51dd7d123e49",
+                "description": "Sample Rate Decreased To 24000.",
+                "date": "Apr 3, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 24000,
+                "file": "botbeat.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "What the googly moogly",
+                "url": "https://www.bytebeat.cloud/post/97f938ba-8cef-4b9c-9d2b-cf4698315ed9",
+                "date": "Apr 3, 2026",
+                "sampleRate": 48000,
+                "codeOriginal": "bpm=136,sr=48e3,r=abs(t/sr/180*3*32768*bpm),p=(1/sr*256)*440*2**(1/12),s=a=>(((p*t/8*a&r>>6)|(p*t/4*a*2**(4/12)&r>>9)|(t*p*a/2*2**(2/12)&r>>12)|(t*p*a/2*2**(11/12)&r>>10))%256-128)/1.5,((s(4.02)/2+s(1))/2+(s(3.98)/2+s(1))/2)+128"
+            },
+            {
+                "name": "C64e4hz remixed",
+                "url": "https://www.bytebeat.cloud/post/e4426b64-1451-4f59-81ca-8142c96f5562",
+                "date": "Apr 3, 2026",
+                "sampleRate": 40000,
+                "codeOriginal": "t>>=2,v=(t*4/(t&16384?1.25:1.2)*[.5,1,[2,3,4,6][(t>>15)%4]][(t*.75>>10)%3]),a=(((v*2**(0/12)&128)/2))^(((v*2**(0/12)+(t>>8)&128)/2)), b=(((v*2**(4/12)&128)/2))^(((v*2**(4/12)+(t/1.1>>8)&128)/2)),c=(((v*2**(7/12)&128)/2))^(((v*2**(7/12)+(t/1.2>>8)&128)/2)), (a+b+c)/2+(t*2**([0,4,7][(t*.75>>11)%3]/12)/2/(t&16384?1.25:1.2)%64)+(64*random()*\"101\"[(t*.75>>10)%3]*(1-(t%2048)/2048))+32"
+            },
+            {
+                "name": "nostalgia type beat",
+                "url": "https://www.bytebeat.cloud/post/ced5c6c4-c3cc-4765-b2d4-aae9c2ea4002",
+                "date": "Apr 3, 2026",
+                "codeOriginal": [
+                    "t*=7680/8e3,t-=t/4&256,arr=['047'[t>>10&3],11],bas='04',((t*4*2**(arr[(!(-t>>10&3)|0)%arr.length]/12))&127)+",
+"((t*2**(bas[(t>>15)%bas.length]/12))&127)"
+                ]
+            },
+            {
+                "name": "Presence of the New",
+                "url": "https://www.bytebeat.cloud/post/c94e30b1-36d2-4ef6-9130-18442fa848d3",
+                "date": "Apr 3, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 48000,
+                "codeOriginal": "t||(x=[]),tr=1,bpm=123,sr=48e3,_T=t*sr/131072*bpm/60,p=2**(0/12)*2**tr,wf=y=>(y^y/3),dec=(s,r,S)=>max((1-_T/s%1)**r,S),lp=(i,f)=>(q=0,r=q++,x[r]??=0,x[r]+=((i)-x[r])*f),hp=(i,f)=>(i-lp((i),f)),bp=(i,hf,lf)=>(hp(lp(i,hf),lf)),lp2=(i,f)=>lp(lp(i,f),f),hp2=(i,f)=>hp(hp(i,f),f),lpr=(i,f,R)=>(q=0,r=q++,t||(x[r+'lp6']=0,x[r+'lp12']=0),ct=min(f,.999),X=R+R/(1-ct),x[r+'lp6']+=ct*(i-x[r+'lp6']+X*(x[r+'lp6']-x[r+'lp12'])),x[r+'lp12']+=ct*(x[r+'lp6']-x[r+'lp12'])),hpr=(i,f,R)=>(i-lpr(i,f,R)),clamp=(x,mode)=>(mode==\"soft\"?tanh(x)*127+127:mode==\"sHard\"?min(max(x%256,-128),127):mode==\"sine\"?sin(x)*127+127:mode),echo=(I,O)=>(t||(e=Array(I).fill(0)),a=(O%256)+e[t%(I/2)],e[t%(I/2)]=a/Math.PI*2,a/2),kd=kickDrum=(s,i)=>(i*cbrt(_T%s)),b=_T>>13,B=b>>3,T=(n)=>(.08*(1<<(n+=4)/7)*1.0594**(2*n%21-(3<n%7))*t*p%256),c=n=>(wf(T(n))/4)+(wf(T(n+2))/4)+(wf(T(n+4))/4)+(wf(T(n+6))/4),m=(b^B)%12+14,l=17-B%4,clamp(echo(32768,hp((wf(T(m))/4+c(l)),.02)*dec(8192,2,.45))*2+(1&kd(16384,4))*64*dec(16384,2,.1),\"sHard\")"
+            },
+            {
+                "name": "Chiptune Keys (ChipKeys full)",
+                "url": "https://www.bytebeat.cloud/post/5409195f-8556-4f1c-8f68-3aaeabec568c",
+                "date": "Apr 3, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 48000,
+                "codeOriginal": "(t/=1.25)?0:(r={},b1=[]),cc=0,lp=(i,f)=>(cl=cc++,b1[cl]??=0,b1[cl]+=(i-b1[cl])*f),hp=(i,f)=>(i-lp(i,f)),bp=(i,lf,hf)=>(hp(lp(i,lf),hf)),pwm=x=>hp((x%256/127)>((sin(t/32768*PI))/2+1),.005),fm=x=>bp((cos(2*sin(x*PI/128)))+(sin(2*sin(x*PI/127))),.4,.01)/2,tt=t/2*440*2**(-5/12)*256/38.4e3,min(max((tanh(Array(L=12).keys().reduce((x,_,z)=>(x+hp(fm((tt*2**(z>>2)*2**([[0,4,7,11],[-1,3,6,9],[-5,-1,2,6],[-5,-1,4,7]][t>>15&3][z%4]/12))),.01)*((1-(t-z*8192)/131072%1))%256/L))+(t>524288)*sin(2*sin(128*sqrt(t%4096)**.1))*(1-t/4096%1)**3/2*(\"1000100010010010\"[t>>12&15])+(t>262144)*sin(((4-t/2048%4)**(1/5*4))*sin((tt/512*PI*2**(((m=[[0,4,7,11],[-1,3,6,9],[-5,-1,2,6],[-5,-1,4,7]])[t>>15&3][((t>>13)+(t>>15))&3])/12))))/4+(t>1048576)*((t%4?r.rI:r.rI=random()*32)/32-(1/2))*(1-t/8192%1)**4*!((t+(2<<13))>>13&7)+(t>1572864)*(P=new Float32Array(5).reduce((X,_,Z)=>(X+lp(pwm(tt*2**Z/4*2**((m[t>>15&3][t>>11&3])/12)),Z/5)*(1-(t+Z*12288)/16384%1)/8)))+bp(random(),.1,.8)*.7)*192),-128),127)"
+            },
+            {
+                "name": "c-compatible",
+                "url": "https://www.bytebeat.cloud/post/2efb8b9a-ba9f-4515-9b22-eb27a191178e",
+                "date": "Apr 4, 2026",
+                "sampleRate": 17000,
+                "file": "botbeat-1.js",
+                "fileOriginal": true
+            }
+        ]
     }
 ]
