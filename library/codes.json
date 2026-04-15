@@ -5478,6 +5478,24 @@
         "stereo": true,
         "file": "funcbeatanon-1.js",
         "fileOriginal": true
+    },
+     {
+        "name": "Distorted metallic delay matrix applied on percussive sweeping sines with a reversing buffer.",
+        "url": "https://dollchan.net/btb/res/3.html#13494",
+        "date": "Mar 22, 2026",
+        "sampleRate": 32000,
+        "mode": "Funcbeat",
+        "file": "funcbeatanon-2.js",
+        "fileOriginal": true
+    },
+     {
+        "name": "Pseudorandom generative polyrhythmic beat test.",
+        "url": "https://dollchan.net/btb/res/3.html#13953",
+        "date": "Apr 14, 2026",
+        "sampleRate": 32000,
+        "mode": "Funcbeat",
+        "file": "funcbeatanon-3.js",
+        "fileOriginal": true
     }
         ]
             },
