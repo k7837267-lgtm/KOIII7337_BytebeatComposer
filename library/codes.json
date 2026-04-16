@@ -6127,6 +6127,7 @@
                 "date": "Apr 14, 2026",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
+                "stereo": true,
                 "file": "botbeat-2.js",
                 "fileOriginal": true
             },
@@ -6136,6 +6137,7 @@
                 "date": "Apr 14, 2026",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
+                "stereo": true,
                 "file": "botbeat-3.js",
                 "fileOriginal": true
             }
