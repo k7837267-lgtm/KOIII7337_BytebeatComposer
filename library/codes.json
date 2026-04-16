@@ -6040,10 +6040,11 @@
                     "url": "https://www.youtube.com/watch?v=0J2QdDbelmY"
                 },
                 "url": "https://www.bytebeat.cloud/post/ff614f48-3fc0-42f7-9f05-270559cde44c",
+                "description": "\"the waveform looks insane in the dollchan player.\" - trillwin"
                 "date": "Apr 15, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
-                "codeOriginal": "l=9,l2=12,a=j=>(t/2)*j*2**('2699'.charCodeAt(t>>14&3)/23.95),g=(k,b)=>a(k)%256/b,X=((t?f+=((g(1,6)+g(2,4)+g(4,9)+g(8,16)))-f/l:f=0)/l),b=(X*(1-t/[8192,32768][t>>15&1]%1))*(t&32768?1:!(t>>13&1)),R=random(),Q=a=>a*log10(t%4096),K=16*(tan(cos(Q(17)))+tan(sin(Q(7)))+sin(Q(10))+exp(sin(Q(18))))+128,S=128*(R/2*(1-t/4096%1))+128,Dru=[K,0,S,K,K,K,S,K,K,0,S,K,K,K,S,S][t>>12&15],$=t*2**([22,22,22,22,20,20,18,17,17,17,17,17,15,15,15,15][t>>12&15]/12),g2=b=>$%256/b,Oth=(t?f2+=g2(4)-f2/l2:f2=0)/l+32,(b+((Dru+Oth)*(t>65536)))/2"
+                "codeOriginal": "X=J=>(t||(F=Array(d=10000).fill(0)),S=sin,C=cbrt,RR=random(),A=(x,b)=>C(S(x-($=t*J*2**(parseInt('HHHHHHHHKKKHHHFFDDDDDDDDCCCCCCCC'[t>>12&31],36)/12))/b*2*PI)),V=s=>((A(5,512)+A(7.3,1048)+A(5.8,1024)*A(2,1048))/8)%s,O=(V(.1)/2.3+V(256))%256+F[t%d],F[t%d]=O/1.7,(O+((sin(sqrt(t%8192)))*(.9996**(t%8192))*2*'10010000'[t>>13&7]+(RR-.5)*(.9998**(t%32768))*(t>>15&1))*(t/262144&1))+(atan(tan($/(1+(t&262144?t>>13&1:1))/512*PI)))/4),[X(1.005),X(.995)]"
             }
         ]
     },
