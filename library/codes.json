@@ -6044,6 +6044,7 @@
                 "date": "Apr 15, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
+                "stereo": true,
                 "codeOriginal": "X=J=>(t||(F=Array(d=10000).fill(0)),S=sin,C=cbrt,RR=random(),A=(x,b)=>C(S(x-($=t*J*2**(parseInt('HHHHHHHHKKKHHHFFDDDDDDDDCCCCCCCC'[t>>12&31],36)/12))/b*2*PI)),V=s=>((A(5,512)+A(7.3,1048)+A(5.8,1024)*A(2,1048))/8)%s,O=(V(.1)/2.3+V(256))%256+F[t%d],F[t%d]=O/1.7,(O+((sin(sqrt(t%8192)))*(.9996**(t%8192))*2*'10010000'[t>>13&7]+(RR-.5)*(.9998**(t%32768))*(t>>15&1))*(t/262144&1))+(atan(tan($/(1+(t&262144?t>>13&1:1))/512*PI)))/4),[X(1.005),X(.995)]"
             }
         ]
