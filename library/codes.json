@@ -6017,6 +6017,10 @@
             },
             {
                 "name": "another scan ytpmv",
+                "cover": {
+                    "name": "(YTPMV) Ben has a Sparta Hyper V2 Remix Scan",
+                    "url": "https://www.youtube.com/watch?v=WJSpa47MKP8"
+                },
                 "url": "https://www.bytebeat.cloud/post/283ac1e7-dcb1-4797-a1db-1eb006643411",
                 "date": "Mar 28, 2026",
                 "mode": "Floatbeat",
