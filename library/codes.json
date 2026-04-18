@@ -3245,19 +3245,6 @@
         ]
     },
     {
-        "author": [
-            "absolute197",
-            "BSquareII",
-            "lhphr",
-            "orion_aboy"
-        ],
-        "name": "Sepulchre but it's a minification collab",
-        "url": "https://www.reddit.com/r/bytebeat/comments/15j9aef/sephulcre_minified_by_me_and_bsquareii/",
-        "date": "Aug 05, 2023",
-        "sampleRate": 48000,
-        "codeOriginal": "C=29.2,c=27.56,D=26.02,e=23.17,F=21.87,G=19.49,A=17.36,a=16.39,B=F/2,b=A*2,d=a*2,f=a/2,g=A/2,H=D/2,h=G/2,I=c/2,i=this,k=sin,S=9e3,z=t/S,Z=z&1023,J='D-F-A-G-c-F-B-GFb-F-A-G-d-F-f-g',l=Z>>7,p=i[J[Z%32]],p2=i[J[Z%32-3&31]]+.01,j='DDFeDDbADDFGDDb-DHBGHDbAHABhHIA-DFAGcFBGbFAGdFfGDeF-Dcb-DHF-ceA',q=i[j[Z+4>>3&63]],Q=i[j[Z>>3&63]],R=i[j[Z-4>>3&63]],v=min((t/S*4&15),8)/8,y=q==Q,x=!q,q||=Q*2,q=y?q-k(z*6)/2e4:Q+(q-Q)*v,Y=Q==R,X=!Q,Q||=R*2,Q=Y?Q:R+(Q-R)*v,V=-Z*8-1&31,W=1+k(Z)*C,w=2^Z/8&3,(p/W+tan(t/2/p)&min(Z/3,27))+(p2/W+tan(t/2/p2)&min(Z/6,11))+(l&&72>>((l>3&&l<8?2+(Z>>1&2):2)*t/PI/(i[J[Z>>4&6]]*2**w+(t&1)/4)<<w))+(l>2&&(tan(t/(4+(8*z+32&45+(Z/8&3)))^z*128)&V)+(k(t/(192+sqrt(45/(z*2%8))/64))+1)*V+random()*(-z*32&15-9*k(C*Z)))+(l>3&&(k(t*2/q)-1&24*(!x||1-v))+(k(t*2/Q)-1&12*(!X||1-v)))"
-    },
-    {
         "author": "Weird Arg",
         "children": [
             {
@@ -6172,5 +6159,22 @@
                 "codeMinified": "c=ceil,s=sqrt,c(asinh(sqrt(t*8*('1102003322011020445533441020102023423423423423423453453456456456'[t>>13&63]/12)&255)/5))*32+(c(sin(s((f=t*1.5*([12,12,13,12][t>>14&3]/12)*(t>>13&-t>>12&1))&255)/5))+c(sin(s((f*2/3)&255)/5))+c(sin(s((f*2/1.5)&255)/5)))*32+(hypot(((1e4/(t&8191)|1e3/(t&4095)|1e5/(t&32767))*10)%48,trunc(2e4/(t&4095)&63)))*1.35"
             }
         ]
+    },
+    {
+        "author": [
+            "Unnamed_Cloud",
+            "VastLingonberry9902"
+        ],
+        "name": "Super Metroid - Escape [900c]",
+        "cover": {
+            "name": "Super Metroid Music - Escape",
+            "url": "https://www.youtube.com/watch?v=mj47pXTCKmU"
+        },
+        "url": "https://www.bytebeat.cloud/post/f4f1e9ce-9300-478c-ad08-dd51aade8f0a",
+        "date": "Apr 17, 2026",
+        "sampleRate": 48000,
+        "mode": "Floatbeat",
+        "stereo": true,
+        "codeOriginal": "(T=t)||(c=f=0,r=v=0,Z=A=0,I=W=0),t/=48000,b=t*PI*2,p=v=>2**(v/12),tri=x=>asin(sin(x))*2/PI,swx=x=>atan(tan(x))*2/PI,sw=x=>atan(tan(x/2))*2/PI,e=b*128*p([0,-12,-12,0,-12,-12,1,-11,-2,-14][t*8%10|0]+[0,0,0,3,0][t/5%5|0]),y=[1,2,10,1,1][t/5%5|0],j=(t*16&1),s=(sw(e*p(.125))+sw(e)+sw(e*p(-.0675))+sw(e/2))*!j/6+(sw(e*p(.125))+sw(e)+sw(e*p(-.0675))+sw(e/2))*j/4,o=(sw(e*p(.124)+PI/2)+sw(e)+sw(e*p(-.067)+PI/2)+sw(e*p(-.125)/2+PI/2))*j/6+(sw(e*p(.124)+PI/2)+sw(e)+sw(e*p(-.067)+PI/2)+sw(e*p(-.125)/2+PI/2))*!j/4,c+=f+=(s-c-f)/(1+(t*8%1)*32+(sin(b/25)/2+.5)*8),r+=v+=(o-r-v)/(1+(t*8%1)*32+(u=sin(b/20)/2+.5)*8),w=[0,0,[0,-5,-12,-7][t*4/5&3],3,0][t/5%5|0],Z+=A+=(((sw(b*32*p(0+w))+sw(b*32*p(.125+w))+sw(b*32*p(-.0675+w))+sw(b*32*p(-.125+w)))/4)-Z-A)/(1+u*32+8),I+=W+=(((sw(b*32*p(w)+PI/2)+sw(b*32*p(.124+w)+PI/2)+sw(b*32*p(-.067+w)+PI/2)+sw(b*32*p(-.127+w)+PI/2))/4)-I-W)/(1+u*32+8),[tanh(c/y+Z),tanh(r/y+I)]"
     }
 ]
