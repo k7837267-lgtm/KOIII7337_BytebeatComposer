@@ -1706,6 +1706,16 @@
                 "stereo": true,
                 "file": "decentmanager8.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "A High Sparks",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/e12c3928-4298-447f-8abd-380ad492d5dd",
+                "date": "Apr 19, 2026",
+                "description": "\"Was originally made for week18, but unfortunately I was late. At least I made something though.\" - Decent-Manager-6169",
+                "sampleRate": 48000,
+                "file": "decentmanager9.js",
+                "fileOriginal": true
             }
         ]
     },
