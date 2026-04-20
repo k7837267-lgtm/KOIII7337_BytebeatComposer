@@ -518,5 +518,33 @@
 "/* From KPM 1000 Series */",
 "t/=1.43,K=PM=>(c=2**(1/12),cs=2**(2/12),d=2**(3/12),ds=2**(4/12),e=2**(5/12),f=2**(6/12),fs=2**(7/12),g=2**(8/12),gs=2**(9/12),a=2**(10/12),as=2**(11/12),b=2**(12/12),T=1.83,A1=(t*PM*T/2*[c,c,c,c,ds,d,c,c,f,f,f,f,gs,gs,gs,gs,f,f,f,f,g,g,g,g,f,f,f,f,as,as,as,as,c*2,c*2,as,as,cs*2,cs*2,cs*2,cs*2,as,as,f,f,as,as,ds,ds,gs,gs,f,f,gs,gs,gs,gs,f,f,ds,ds,cs,cs,cs,cs][t>>12&63]%128+t*PM*T/4*[c,c,c,c,ds,d,c,c,f,f,f,f,gs,gs,gs,gs,f,f,f,f,g,g,g,g,f,f,f,f,as,as,as,as,c*2,c*2,as,as,cs*2,cs*2,cs*2,cs*2,as,as,f,f,as,as,ds,ds,gs,gs,f,f,gs,gs,gs,gs,f,f,ds,ds,cs,cs,cs,cs][t>>12&63]%128)/'11121'[min(4,t>>14&15)]*(~t>>'77567777777777776677666666776666'[t>>13&31]&255|128)>>9,A2=(t*PM/2*T*[ds,ds,ds,ds,gs,g,f,f,gs,gs,gs,gs,as,as,as,as,gs,gs,gs,gs,c*2,c*2,c*2,c*2,as,as,as,as,cs*2,cs*2,cs*2,cs*2,ds*2,ds*2,c*2,c*2,f*2,f*2,f*2,f*2,cs*2,cs*2,gs,gs,ds*2,ds*2,gs,gs,c*2,c*2,as,as,cs*2,cs*2,cs*2,cs*2,as,as,gs,gs,g,g,f,f][t>>12&63]%128+t*PM/4*T*[ds,ds,ds,ds,gs,g,f,f,gs,gs,gs,gs,as,as,as,as,gs,gs,gs,gs,c*2,c*2,c*2,c*2,as,as,as,as,cs*2,cs*2,cs*2,cs*2,ds*2,ds*2,c*2,c*2,f*2,f*2,f*2,f*2,cs*2,cs*2,gs,gs,ds*2,ds*2,gs,gs,c*2,c*2,as,as,cs*2,cs*2,cs*2,cs*2,as,as,gs,gs,g,g,f,f][t>>12&63]%128)*(~t>>'77567777777777776677666666776666'[t>>13&31]&255|128)>>9,A=(A1+A2),B=(t*PM*T/4*[gs,f,as,ds,gs,f,as,ds,gs,f,as,ds,gs,f,as,ds][t>>14&15]&128)*(~t>>7&255|128)>>8,(A+B)/1.5),[K(1.005),K(.995)]"
         ]
+  },
+  {
+    "name": "Trying The Ceil Function",
+    "url": "https://www.bytebeat.cloud/post/cfbee312-85f1-4524-88c4-fad517b9e566",
+    "date": "Apr 11, 2026",
+    "sampleRate": 10000,
+    "codeOriginal": "((((ceil(sin(sqrt(((t/4*2.5*(3+(t>>11&3^t>>13&5^t>>11&6^t>>10&4)))%128))))*127*(t>>10))&255)*(-t>>5&255)>>9)+(ceil(tan(t)*t)&255)/4*(-t>>9&1)*(t>>16&1)|(35e4/(t&4095)&64)*(t>>17&1)+(((ceil(sin(sqrt(((t/8*2.5*(3+(t>>10&3^t>>13&5^t>>10&6^t>>10&4)))%64))))*64)))*min(1,t>>18&3)+((ceil(tan(t)*t)&128)*(-t>>4&255)>>8)*(t>>12&1)/1.5*(t>>19&1))/1.25"
+  },
+  {
+    "name": "MakeyMakey Musical Experiments No13: Repurposed Atari",
+    "url": "https://www.bytebeat.cloud/post/82116f29-b32e-47e9-b2b9-746c8c086026",
+    "description": "Inspired By Trillwin",
+    "date": "Apr 17, 2026",
+    "sampleRate": 35500,
+    "mode": "Floatbeat",
+    "file": "koiii7337-10.js",
+    "fileOriginal": true
+  },
+  {
+    "name": "Overstressed",
+    "url": "https://www.bytebeat.cloud/post/6033bba1-1596-4b8c-ac85-70ffb5996723",
+    "description": "It's Just There's Been A Lot Going On In My YouTube Channel, So I Decided To Make This Song.",
+    "date": "Apr 20, 2026",
+    "mode": "Signed Bytebeat",
+    "codeOriginal": [
+      "// KOIII7337 - \"Overstressed\"",
+"t%=524288,t+=131072*((t>>16)>=5),min(127,max(-128,(((((A=t*3.9*2**([7,4,9,2,7,4,0,2][t>>13&7]/12)),(B=t*3.9*2**([11,7,12,6,11,7,4,6][t>>13&7]/12)),C=(t*3.9*2**([7,7,4,,9,,9,9,,,5,,9,9,4,,7,7,,4,4,,9,9,,,9,,9,9,,,19,19,,16,16,,14,14,,,14,,19,19,14,19,21,21,16,,12,,14,14,14,,12,10,14,14][t>>10&63]/12)||173),(A%256/4+B%256/4+A*1.5%256/4.25+A*2%256/4)*((-t+3)>>3&255|128)>>8)+(t>>4&63))*'21121121'[t>>10&7]-'21121121'[t>>10&7]*128)/3)+((A/2&A/2+(t>>6)&128)/2-32)/2*((t>>16)>=1)+((((cos(t*8>>4)*t)&224)/((t*3/1024)%6+1.5)+(t>>6&31)*2.2-80)/2+((((sin(t*8>>5)*t)&224)*(-t>>4&255)>>8)/2+(t>>6&63)-60)*(t>>12&1))/1.5*((t>>17)>=1)+(((C*2&128)/2+C/2%128)/4-15)*((t>>18)>=1)))"
+    ]
   }
 ]
