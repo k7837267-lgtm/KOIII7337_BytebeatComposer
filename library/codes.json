@@ -6004,7 +6004,7 @@
                 "name": "C-Compatible? for #week15",
                 "url": "https://www.bytebeat.cloud/post/a770da43-01f2-450f-9991-38c180bea1fe",
                 "description": "BytebeatCloud's Week 15 Submission",
-                "date": "Mar 24, 2026",
+                "date": "Mar 23, 2026",
                 "sampleRate": 9000,
                 "codeOriginal": "((((2048%(t%8192))^(2048%(t%8192))>>1)&255)/2)+((t*t*t>>~t*t)&255)*(1-t/2048%1)*((t>>11&3)==2)"
             },
