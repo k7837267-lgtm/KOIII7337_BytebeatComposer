@@ -5854,12 +5854,20 @@
         ],
         "children": [
             {
+                "name": "Bank Bass",
+                "url": "https://www.bytebeat.cloud/post/722b15c7-bccc-42fd-b173-f32dc43c305c",
+                "date": "Mar 7, 2026",
+                "sampleRate": 32000,
+                "codeOriginal": "(((t*t>>8*(t>>5|t>>11))+(t&t>>7))&255)-128"
+            },
+            {   
                 "name": "AND Beat",
                 "url": "https://www.bytebeat.cloud/post/8e49d2e0-19c3-4f5d-8bc2-0f9ec7b61627",
                 "date": "Mar 7, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
-                "codeOriginal": "(tanh(sin(2*sqrt((t%16384)&t>>'12345678'[t>>15&7])))*(1-t/16384%1)/2)+sin(1.67*sqrt(t%16384))/3"
+                "codeOriginal": "(tanh(sin(2*sqrt((t%16384)&t>>'12345678'[t>>15&7])))*(1-t/16384%1)/2)+sin(1.67*sqrt(t%16384))/3",
+                "codeMinified": "T=16384,(tanh(sin(2*sqrt((t%T)&t>>(1+(t>>15&7)))))*(1-t/T%1)/2)+sin(1.67*sqrt(t%T))/3"
             },
             {
                 "name": "MakeyMakey Musical Experiments No1: Plastic Forks",
@@ -6013,6 +6021,14 @@
                 "codeOriginal": "y=(t*2**([8,0,-7,5,0,-7,8,0,-7,5,0,-7,8,0,5,-7,10,0,-7,5,0,-11,10,1,-7,7,3,-2,10,3,-2,7,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,8,-4,-11,5,-4,-11,8,-4,-7,5,-4,-11,10,-4,5,-7,7,-2,-9,3,-2,-9,7,-2,-9,3,-9,-2,8,7,5,10,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,][t>>12&127]/12)&255),(((((y^y>>1)%256/4))+(128+log((t%(t&131072?32768:65536))*4)*16)))+64"
             },
             {
+                "name": "Vampire Attack",
+                "url": "https://www.bytebeat.cloud/post/a1cc5445-c102-4bef-a144-bb4a95e2aeac",
+                "date": "Mar 28, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "codeOriginal": "t||(X=Array(P=12288).fill(0)),mel=a=>a*t,Q=(a,b)=>a(mel($=(t>>13&7|t>>12&6)+((t>>14&7)==0)+(t>>14&7)/1.3)/b*PI),L=((asin(atan(Q(sin,256)+Q(cos,512)+Q(cos,128)*Q(sin,64))/1.1945)/3*(1-t/8192%1))+(atan(tan(mel($)/512*PI))/3*(t>524288)))%256+X[t%P],X[t%P]=L/1.7,(L/1.3)+(sin(1.37*sqrt(t%16384))*6*(1-t/4096%1)*((t>>12&3)==0)*(t>131072))+(((random()-.5)*(1-t/4096%1)*('10011010'[t>>12&7])*(t>262144))*2)"
+            },
+            {
                 "name": "another scan ytpmv",
                 "cover": {
                     "name": "(YTPMV) Ben has a Sparta Hyper V2 Remix Scan",
@@ -6030,6 +6046,29 @@
                 "date": "Mar 31, 2026",
                 "sampleRate": 44100,
                 "codeOriginal": "(t*(t>>13&63|t>>9&7)|t>>11)*((t>>13&3)|t>>15)|t>>6"
+            },
+            {
+                "name": "DJ Life Cycle",
+                "remix": {
+                    "author": "absolute197",
+                    "name": "Life Cycle",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/153j4u9/comment/jsjkzjf/?utm_source=reddit&utm_medium=web2x&context=3"
+                },
+                "url": "https://www.bytebeat.cloud/post/54c7730d-c1be-4fd6-9c12-d3cca9307217",
+                "date": "Mar 31, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "n=tan(sin((1+(3&t/1.19>>14))*t*'35463546363645363544445354536344'[31&t/1.19>>12]/147))/4,t?0:a=Array(R=13768).fill(0),r=n+a[t%R],a[t%R]=r/2,(r/2)+sin(2.5*sqrt(t/1.19%16384))/2+((random()-random())*(1-t/1.19/16384%1)*(t/1.19>>14&1))"
+            },
+            {
+                "name": "opylmyhrht",
+                "description": "the title is not a typo, its just \"polyrhythm\" scrambled",
+                "url": "https://www.bytebeat.cloud/post/9e7bcb6b-465f-4d2c-b1c3-30ee200aa210",
+                "date": "Apr 3, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "file": "trillwin.js",
+                "fileOriginal": true
             },
             {
                 "name": "∐",
@@ -6051,6 +6090,13 @@
                 "sampleRate": 32000,
                 "stereo": true,
                 "codeOriginal": "X=J=>(t||(F=Array(d=10000).fill(0)),S=sin,C=cbrt,RR=random(),A=(x,b)=>C(S(x-($=t*J*2**(parseInt('HHHHHHHHKKKHHHFFDDDDDDDDCCCCCCCC'[t>>12&31],36)/12))/b*2*PI)),V=s=>((A(5,512)+A(7.3,1048)+A(5.8,1024)*A(2,1048))/8)%s,O=(V(.1)/2.3+V(256))%256+F[t%d],F[t%d]=O/1.7,(O+((sin(sqrt(t%8192)))*(.9996**(t%8192))*2*'10010000'[t>>13&7]+(RR-.5)*(.9998**(t%32768))*(t>>15&1))*(t/262144&1))+(atan(tan($/(1+(t&262144?t>>13&1:1))/512*PI)))/4),[X(1.005),X(.995)]"
+            },
+            {
+                "name": "im back!!!!",
+                "url": "https://www.bytebeat.cloud/post/407accfa-3c8b-444d-b3fc-e8deaf4a4bc0",
+                "date": "Apr 21, 2026",
+                "sampleRate": 16000,
+                "codeOriginal": "l=4,a=t*[2.34,2.34,1.55,2,2.34,2.34,1.55,1.55][t>>14&7],((t?f+=((a*.98%128+a%128+a*.99%127+a%127+a*.97%129+a%129+a*.96%126+a%126+a*.97%130+a%130)*.20)-f/l:f=0)/l)+((((cbrt(sin(2*sqrt(t%4096)))*(1-t/4096%1)*'10000100'[t>>12&7])*50)+((random()*(1-t/8192%1)*(t>>13&1))*32))*(t>131072))+(((random()*(1-t/2048%1))*32)*(t>262144))"
             }
         ]
     },
@@ -6166,7 +6212,15 @@
                 "date": "Apr 12, 2026",
                 "sampleRate": 44100,
                 "codeOriginal": "ceil(asinh(sqrt(t*8*([1,1,0,2,0,0,3,3,2,2,0,1,1,0,2,0,4,4,5,5,3,3,4,4,1,0,2,0,1,0,2,0,2,3,4,2,3,4,2,3,4,2,3,4,2,3,4,2,3,4,5,3,4,5,3,4,5,6,4,5,6,4,5,6,4][t>>13&63]/12)&255)/5))*32+(ceil(sin(sqrt((f=t*1.5*([12,12,13,12][t>>14&3]/12)*(t>>13&-t>>12&1))&255)/5))+ceil(sin(sqrt((f*2/3)&255)/5))+ceil(sin(sqrt((f*2/1.5)&255)/5)))*32+(hypot(((10000/(t&8191)|1000/(t&4095)|100000/(t&32767))*10)%48,trunc(20000/(t&4095)&63)))*1.35",
-                "codeMinified": "c=ceil,s=sqrt,c(asinh(sqrt(t*8*('1102003322011020445533441020102023423423423423423453453456456456'[t>>13&63]/12)&255)/5))*32+(c(sin(s((f=t*1.5*([12,12,13,12][t>>14&3]/12)*(t>>13&-t>>12&1))&255)/5))+c(sin(s((f*2/3)&255)/5))+c(sin(s((f*2/1.5)&255)/5)))*32+(hypot(((1e4/(t&8191)|1e3/(t&4095)|1e5/(t&32767))*10)%48,trunc(2e4/(t&4095)&63)))*1.35"
+                "codeMinified": "c=ceil,s=sqrt,c(asinh(s(t*8*('1102003322011020445533441020102023423423423423423453453456456456'[t>>13&63]/12)&255)/5))*32+(c(sin(s((f=t*1.5*([12,12,13,12][t>>14&3]/12)*(t>>13&-t>>12&1))&255)/5))+c(sin(s((f*2/3)&255)/5))+c(sin(s((f*2/1.5)&255)/5)))*32+(hypot(((1e4/(t&8191)|1e3/(t&4095)|1e5/(t&32767))*10)%48,trunc(2e4/(t&4095)&63)))*1.35"
+            },
+            {
+                "name": "Ceiling it!",
+                "url": "https://www.bytebeat.cloud/post/d702669e-bd77-4b4b-94c7-55be8ee06b87",
+                "date": "Apr 20, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "t?0:(a=0,b=[]),u=ceil(sqrt(t/4*(t>>13&7^t>>14&3|t>>15&3^t>>16&7)&255)/5)*16+ceil(sqrt(2000000/(t/16&511)&255)/5)*16+trunc(sqrt(t*(1+(t>>16&3)/12)>>(-t>>13&1)&255)/5)*16+round(sqrt(hypot(t&t>>8,t&t>>7)&255)/5)*16,a=b[x=t%12288]||0,b[x]=u,u/4+a/2",                
+                "codeMinified": "t?0:(a=0,b=[]),s=sqrt,T=16,u=ceil(s(t/4*(t>>13&7^t>>14&3|t>>15&3^t>>T&7)&255)/5)*T+ceil(s(2e6/(t/T&511)&255)/5)*T+trunc(s(t*(1+(t>>T&3)/12)>>(-t>>13&1)&255)/5)*T+round(s(hypot(t&t>>8,t&t>>7)&255)/5)*16,a=b[x=t%12288]||0,b[x]=u,u/4+a/2"
             }
         ]
     },
