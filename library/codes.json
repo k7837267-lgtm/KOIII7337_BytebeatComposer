@@ -6083,6 +6083,7 @@
                 "date": "Apr 7, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
+                "stereo": true,
                 "codeOriginal": "x=j=>(t?0:F=new Float32Array(X=12288).fill(0),z=g=>t*j*2**('QQQN'.charCodeAt(t>>15&3)/12*g),p=(sin(z(.3)/128*PI)+cos(z(.3)/256*PI))%256+F[t%X],F[t%X]=p/2,(p/6)+(cbrt(sin(sqrt(t%8192)))*(1-t/8192%1)*!(t>>13&1))+(t%[1,1,16,1,1,1,16,16][t>>13&7]?R:R=random()*(1-t/8192%1)*'01100111'[t>>13&7])),[x(1.005),x(.995)]"
             },
             {
