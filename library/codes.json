@@ -6078,6 +6078,14 @@
                 "codeOriginal": "t*(t>>13&3^t>>14&7)^t%255"
             },
             {
+                "name": "0v3rdr1v3",
+                "url": "https://www.bytebeat.cloud/post/caf90531-51bb-40a5-adc7-224e031681f3",
+                "date": "Apr 7, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "codeOriginal": "x=j=>(t?0:F=new Float32Array(X=12288).fill(0),z=g=>t*j*2**('QQQN'.charCodeAt(t>>15&3)/12*g),p=(sin(z(.3)/128*PI)+cos(z(.3)/256*PI))%256+F[t%X],F[t%X]=p/2,(p/6)+(cbrt(sin(sqrt(t%8192)))*(1-t/8192%1)*!(t>>13&1))+(t%[1,1,16,1,1,1,16,16][t>>13&7]?R:R=random()*(1-t/8192%1)*'01100111'[t>>13&7])),[x(1.005),x(.995)]"
+            },
+            {
                 "name": "S3V3N_N4TI0N_4RMY",
                 "cover": {
                     "name": "The White Stripes - Seven Nation Army",
@@ -6097,6 +6105,61 @@
                 "date": "Apr 21, 2026",
                 "sampleRate": 16000,
                 "codeOriginal": "l=4,a=t*[2.34,2.34,1.55,2,2.34,2.34,1.55,1.55][t>>14&7],((t?f+=((a*.98%128+a%128+a*.99%127+a%127+a*.97%129+a%129+a*.96%126+a%126+a*.97%130+a%130)*.20)-f/l:f=0)/l)+((((cbrt(sin(2*sqrt(t%4096)))*(1-t/4096%1)*'10000100'[t>>12&7])*50)+((random()*(1-t/8192%1)*(t>>13&1))*32))*(t>131072))+(((random()*(1-t/2048%1))*32)*(t>262144))"
+            },
+            {
+                "name": "yes",
+                "remix": {
+                    "author": "rrrola",
+                    "name": "CA98",
+                    "url": "http://www.pouet.net/topic.php?which=8357&page=9#c388902"
+                },
+                "url": "https://www.bytebeat.cloud/post/70a3129c-5e88-4a0a-9f0c-388e9408ed78",
+                "date": "Apr 23, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 24000,
+                "codeOriginal": "tanh(((t/4*(0xCA98CA98>>(t>>11&30)&15))%256/256-.5)*8)/3+tan(sin(cos(t/128)))/2"
+            },
+            {
+                "name": "Paitpaws",
+                "url": "https://www.bytebeat.cloud/post/3f19360b-9491-4e2e-b2c3-86083e011869",
+                "date": "Apr 23, 2026",
+                "sampleRate": 32000,
+                "codeOriginal": "128+(asin(sin(t*2**(parseInt('FDA8'[t>>14&3],36)/12)/128*PI))*(.9996**(t%(t&16384?12288/2:8192)))/2+sin(sqrt(t%16384))*(.9998**(t%16384))+(random()-.5)*(.999**(t%8192))/2+sin(t*4*(t>>8&127)/128*PI)*(.999**(t%16384))/4)*64"
+            },
+            {
+                "name": "oboe? #week19",
+                "remix": {
+                    "author": "Blueberry",
+                    "name": "Good old fractal melody",
+                    "url": "http://www.pouet.net/topic.php?which=8357&page=12#c389114"
+                },
+                "url": "https://www.bytebeat.cloud/post/5d342b7d-9745-497b-9dc5-14d19a08bcee",
+                "description": "BytebeatCloud's Week 19 Submission \"idk if this counts as the theme for week19, but an oboe is a \"wind\" instrument. so it kinda counts?\"",
+                "date": "Apr 23, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "codeOriginal": "(expm1(sin(((t>>11^(t>>11)-1^1)%13*t/4+t)/128*PI))/2*(exp(sin(t/2048*PI)))/2)/1.5"
+            },
+            {
+                "name": "perlin noise tutorial #week19",
+                "url": "https://www.bytebeat.cloud/post/5882e3b3-7de3-49b8-ac9c-cb8927d3103f",
+                "description": "BytebeatCloud's Week 19 Submission \"The Outside Ambience\"",
+                "date": "Apr 23, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "t?(b=random()-.5,l+=r+=(b-l-r*3)/(cos(4)*250+256),l*2):l=r=0"
+            },
+            {
+                "remix": {
+                    "author": "YouLikeHaveMeterials87",
+                    "name": "AND Beat",
+                    "url": "https://www.bytebeat.cloud/post/8e49d2e0-19c3-4f5d-8bc2-0f9ec7b61627"
+                },
+                "url": "https://www.bytebeat.cloud/post/2b120a1f-443e-46f8-8acd-afb4f0f257dc",
+                "date": "Apr 24, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "(sin(2*sqrt((t%16384)&t>>(1+(t>>15&7))))*(t/16384%1))+atan(5*sin(4*sqrt(t&16383)))*2*(.9996**(t%16384))*(t>262144)+(random()-.5)*6*(.9997**(t%16384))*(t>>14&1)*(t>524288)"
             }
         ]
     },
