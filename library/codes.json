@@ -6270,6 +6270,13 @@
                 "codeMinified": "c=ceil,s=sqrt,c(s(t*(1+(t>>12&7^t>>13&7|t>>14&7)/12)%256)/5)*24+c(s(2e5/(t&8191))/5)*10+c(s((t/7*(t>>11&7^t>>12&5|t>>15&7))%64+(t/7*(t>>11&7^t>>12&5|t>>15&7))%128)/5)*34-60"
             },
             {
+                "name": "Ceil n true/false",
+                "url": "https://www.bytebeat.cloud/post/f6ee155f-cc10-4696-92c1-344a82744150",
+                "date": "Apr 12, 2026",
+                "codeOriginal": "ceil(sin(sqrt(t*(1+(t>>17&1)/12)*'&8-&-&-8&8-&-&-8&8-&-&-&-&8-&-_8&8-&-&-8&8-&-&-8&8-&-&-&_&8+&+8-9,8,7,6,5,4,3,2,1,11,11,22,22,44,44444444,&+&+&+/-/-/-/-#*#*#*#*'.charCodeAt(t/1024%128|0)/12&255)))*64+ceil(sin(cbrt(t/4096%1)*512))*64*(t<262144?false:true)+ceil(sin(pow(t%16384,3)))*32*(t&512?false:true)*(t<131072?false:true)"
+                "codeMinified": "c=ceil,c(sin(sqrt(t*(1+(t>>17&1)/12)*'&8-&-&-8&8-&-&-8&8-&-&-&-&8-&-_8&8-&-&-8&8-&-&-8&8-&-&-&_&8+&+8-9,8,7,6,5,4,3,2,1,11,11,22,22,44,44444444,&+&+&+/-/-/-/-#*#*#*#*'.charCodeAt(t/1024%128)/12&255)))*64+c(sin(cbrt(t/4096%1)*512))*64*(t<262144?0:1)+c(sin(pow(t%16384,3)))*32*(t&512?0:1)*(t<131072?0:1)"
+            },
+            {
                 "name": "Ceil N hypot/trunc",
                 "url": "https://www.bytebeat.cloud/post/c0655b8e-4854-412d-9eb4-ef5d5a853fd3",
                 "description": "\"BRO I DIDN'T KNOW THESE FUNCTIONS EXISTS-\" - KOIII7337",
