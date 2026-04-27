@@ -587,5 +587,28 @@
         "sampleRate": 31550,
         "exotic": true,
         "codeOriginal": "((br(t*[1,1,1.5,1.35][t>>14&3]>>2^t*[1,1,1.5,1.35][t>>14&3]>>4,16)^t)-((t>>16)*92)*712.45)/(t*'11121124'[t>>14&7]&16383)*16*8/(16+(t>>16))"
-      }
+      },
+    {
+"name": "And I Remixed.",
+"url": "https://www.bytebeat.cloud/post/fd25258e-ec7f-4152-9263-1f722cc36527",
+"remix": [
+{
+"author": "John2013",
+"name": "This goes hard with greaserpirate's drum machine",
+"url": "https://www.bytebeat.cloud/post/e450527a-e022-4769-80a8-67072f1d1ede"
+},
+{
+"author": "May_I_Change_My_Name",
+"name": "Chasing Moonlight",
+"url": "https://www.reddit.com/r/bytebeat/comments/1g01th7/chasing_moonlight_bytebattle_season_1_entry/"
+},
+{
+"author": "skurk, raer",
+"name": "Street Surfer",
+"url": "http://www.pouet.net/topic.php?which=8357&page=4#c388479"
+}
+],
+"date": "Apr 27, 2026",
+"codeOriginal": "((A=(t>>t/30*2**(49/12)|t>>t/30*2**([56,56,58,56][t>>14&3]/12)|t>>t/30*2**([60,60,61,60][t>>14&3]/12)|t>>t/30*2**([65,63,66,63][t>>14&3]/12)|t>>t/30*2**(68/12)),(((((t>>9&1+t>>12&7?0:9001/(t%4096)-t/9&8?-1:0)^t>>4&(A))&255)/(t&4095)*256+(A&255)/1.1|80000/(t&4095))&255)/(2+(t/1024)%4)+(((t&4096)?((t*(t^t%255)|(t>>4))>>1):(t>>3)|((t&8192)?t>>2:t))&255)/2)/128-1.1)*3"
+  }
 ]
