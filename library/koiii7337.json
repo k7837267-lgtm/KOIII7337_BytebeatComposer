@@ -611,5 +611,43 @@
 "mode": "Floatbeat",
 "date": "Apr 27, 2026",
 "codeOriginal": "((A=(t>>t/30*2**(49/12)|t>>t/30*2**([56,56,58,56][t>>14&3]/12)|t>>t/30*2**([60,60,61,60][t>>14&3]/12)|t>>t/30*2**([65,63,66,63][t>>14&3]/12)|t>>t/30*2**(68/12)),(((((t>>9&1+t>>12&7?0:9001/(t%4096)-t/9&8?-1:0)^t>>4&(A))&255)/(t&4095)*256+(A&255)/1.1|80000/(t&4095))&255)/(2+(t/1024)%4)+(((t&4096)?((t*(t^t%255)|(t>>4))>>1):(t>>3)|((t&8192)?t>>2:t))&255)/2)/128-1.1)*3"
-  }
+  },
+  {
+    "name": "New Modes 2",
+    "date": "Mar 26, 2026",
+    "children": [
+      {
+        "name": "Bytebeat_LogHack",
+"remix": {
+"author": "mqdantee",
+"name": "stimmer Animation Warrior Theme",
+"url": "https://www.bytebeat.cloud/post/8f13230f-f966-4f7b-81a8-f5484106c8d4"
+},
+        "mode": "LogHack",
+        "sampleRate": 32000,
+        "stereo": true,
+        "exotic": true,
+        "codeOriginal": "U=I=>(bpm=t/8000*190/60/4,A=t*2**([7,19,7,19,7,19,7,21,10,22,10,22,10,22,10,21][bpm*2&15]/12),B=t*2*2**([10,10,9,,9,,10,10,9,,9,,10,10,9,,9,,10,10,9,,9,,10,10,9,9,10,10,11,11][bpm*4&31]/12)*(~(bpm*2**("334 4 ".repeat(4)+"33333333")[bpm*4&31])&3),((tanh(tan(I*A/1024*PI))*1.5+(tanh(tan(B*I/512*PI))||0))/(1+((bpm*4)%2))+(3+(bpm%1)))*8),[U(1.005),U(.995)]"
+      },
+      {
+        "name": "Bytebeat_LogHack2",
+                "remix": {
+                    "author": "D3nschøt",
+                    "name": "Another C compatible thing",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1ed5ika/another_c_compatible_thing/"
+                },
+        "mode": "LogHack2",
+        "sampleRate": 32000,
+        "exotic": true,
+        "codeOriginal": "((tanh(tan(t/1024*PI*(6+(t>>16&3))))/5+(cos(t/32*PI*(6+(((t>>18&1?t>>(t>>18&1?13:12)&3:0)^t>>(t>>18&1?14:13)&(-t>>(t>>18&1?15:14)&3?1:2))+3&3))/8))/2)/(t>>2&2047))"
+      },
+      {
+        "name": "Inverted Bytebeat",
+        "description": "A Mode By Gigorthub (IncreaseRegular). Modified By KOIII7337"
+        "mode": "Inverted Bytebeat",
+        "sampleRate": 4000,
+        "exotic": true,
+        "codeOriginal": "(t*(1+(t>>9&3))*(1+(t>>13&3))&127)+(t/4*(1+(t>>13&3))*(2-(t>>14&1))*(((((t>>9|t>>11)^t>>12&2)&3))+1)&127)"
+      }
+    ]
 ]
