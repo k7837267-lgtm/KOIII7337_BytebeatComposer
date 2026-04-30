@@ -371,18 +371,25 @@ globalThis.bytebeat = new class {
 			entry += `${codeOriginal ? '' : '<br>'}<button class="code-text code-text-minified"` +
 				` data-songdata='${songData}' code-length="${codeMinified.length}">${this.escapeHTML(codeMinified)}</button>`;
 		}
-		if(children) {
+		if (children) {
 			let childrenStr = '';
-			for(let i = 0, len = children.length; i < len; ++i) {
-				childrenStr += this.generateLibraryEntry(children[i]);
+			const len = children.length;
+			if (len > 8) {
+				childrenStr += `<details><summary class="code-button children-toggle">${len - 5} more bytebeats</summary>`;
+				for (let i = 0; i < len; ++i) {
+					if (i === len - 5) {
+						childrenStr += '</details>';
+					}
+					childrenStr += this.generateLibraryEntry(children[i]);
+				}
+			} else {
+				for (let i = 0; i < len; ++i) {
+					childrenStr += this.generateLibraryEntry(children[i]);
+				}
 			}
-			entry += `<div class="entry-children">${ childrenStr }</div>`;
+			entry += `<div class="entry-children">${childrenStr}</div>`;
 		}
-		return `<div class="${ codeOriginal || codeMinified || file || children ? 'entry' : 'entry-text' }${
-			starred ? ' ' + ['star-white', 'star-yellow'][starred - 1] : '' }">${ entry }</div>`;
-	}
-	getX(t) {
-		return t / (1 << this.settings.drawScale);
+		return `<div class="${codeOriginal || codeMinified || file || children ? 'entry' : 'entry-text'}">${entry}</div>`;
 	}
 	handleEvent(e) {
 		let elem = e.target;
