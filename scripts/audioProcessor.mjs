@@ -191,14 +191,14 @@ class audioProcessor extends AudioWorkletProcessor {
 				this.getValues = (funcValue, ch) =>
 					(this.lastByteValue[ch] = (Math.log2(funcValue) * 32) & 255) / 127.5 - 1;
 					break;
-			case 'logHack':
+			case 'LogHack':
 				this.getValues = (funcValue, ch) => {
 					const neg = (funcValue < 0) ? -32 : 32;
 					this.lastByteValue[ch] = (Math.log2(Math.abs(funcValue)) * neg) & 255;
 					return this.lastByteValue[ch] / 127.5 - 1;
 				};
 				break;
-			case 'logHack2':
+			case 'LogHack2':
 				this.getValues = (funcValue, ch) => {
 					const neg = funcValue < 0;
 					if(funcValue === 0) {
