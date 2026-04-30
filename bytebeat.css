@@ -651,14 +651,6 @@ button[name="close"] {
 	font-size: var(--font-size);
 }
 
-.entry.star-white::before {
-	color: green;
-}
-
-.entry.star-yellow::before {
-	color: cyan;
-}
-
 .entry-top {
 	padding: 6px 4px 8px 16px;
 }
@@ -704,7 +696,7 @@ button[name="close"] {
 }
 
 @keyframes wait-anim {
-	to { transform: rotate(360deg); }
+	to { transform: rotate(1440deg); }
 }
 
 .loading-wait {
