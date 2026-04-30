@@ -194,13 +194,20 @@ class audioProcessor extends AudioWorkletProcessor {
 			case 'logHack':
 				this.getValues = (funcValue, ch) => {
 					const neg = (funcValue < 0) ? -32 : 32;
-					return (this.lastByteValue[ch] = (Math.log2(Math.abs(funcValue)) * neg) & 255) / 127.5 - 1;
+					this.lastByteValue[ch] = (Math.log2(Math.abs(funcValue)) * neg) & 255;
+					return this.lastByteValue[ch] / 127.5 - 1;
 				};
 				break;
 			case 'logHack2':
 				this.getValues = (funcValue, ch) => {
-					const neg = funcValue < 0
-					return funcValue == 0 ? 0 : ((this.lastByteValue[ch] = ((Math.log2(Math.abs(funcValue)) * (neg ? -16 : 16)) + (neg ? -127 : 128)) & 255) / 127.5 - 1);
+					const neg = funcValue < 0;
+					if(funcValue === 0) {
+						this.lastByteValue[ch] = 128;
+						return 0;
+					}
+					this.lastByteValue[ch] =
+						((Math.log2(Math.abs(funcValue)) * (neg ? -16 : 16)) + (neg ? -127 : 128)) & 255;
+					return this.lastByteValue[ch] / 127.5 - 1;
 				};
 				break;
 				case 'Tanmode':
