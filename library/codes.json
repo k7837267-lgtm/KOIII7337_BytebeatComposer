@@ -6152,7 +6152,7 @@
             },
             {
                 "remix": {
-                    "author": "YouLikeHaveMeterials87",
+                    "author": "YouLikeHaveMaterials87",
                     "name": "AND Beat",
                     "url": "https://www.bytebeat.cloud/post/8e49d2e0-19c3-4f5d-8bc2-0f9ec7b61627"
                 },
@@ -6161,6 +6161,36 @@
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "codeOriginal": "(sin(2*sqrt((t%16384)&t>>(1+(t>>15&7))))*(t/16384%1))+atan(5*sin(4*sqrt(t&16383)))*2*(.9996**(t%16384))*(t>262144)+(random()-.5)*6*(.9997**(t%16384))*(t>>14&1)*(t>524288)"
+            },
+            {
+                "name": "hard life (c-compatible?)",
+                "remix": {
+                    "author": "NikNemメ",
+                    "name": "hard life",
+                    "url": "https://dollchan.net/btb/res/204.html#260"
+                },
+                "url": "https://www.bytebeat.cloud/post/86f2fd5b-15f9-4244-858f-a1bd5f515423",
+                "date": "Apr 28, 2026",
+                "sampleRate": 48000,
+                "file": "trillwin-1.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "fm omega",
+                "url": "https://www.bytebeat.cloud/post/72e411b3-17c8-46cf-8623-d3e0836cd4fc",
+                "date": "Apr 28, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "codeOriginal": "t?0:i=0,i+=2**(i>>14&7),(sin(i/128*PI)**3+sin(i/256*PI)**5)/2*(.9998**(i%16384))"
+            },
+            {
+                "name": "ABILLITYCORE",
+                "description": "BytebeatCloud's Week 20 Submission",
+                "url": "https://www.bytebeat.cloud/post/54e5d951-3cb9-44dd-87b7-d4408e0de358",
+                "date": "Apr 29, 2026",
+                "sampleRate": 39430,
+                "file": "trillwin-2.js",
+                "fileOriginal": true
             }
         ]
     },
@@ -6222,11 +6252,12 @@
             },
             {
                 "name": "Chiptune Keys (ChipKeys full)",
+                "description": "Sample Rate Decreased To 16000.",
                 "url": "https://www.bytebeat.cloud/post/5409195f-8556-4f1c-8f68-3aaeabec568c",
                 "date": "Apr 3, 2026",
                 "mode": "Signed Bytebeat",
-                "sampleRate": 48000,
-                "codeOriginal": "(t/=1.25)?0:(r={},b1=[]),cc=0,lp=(i,f)=>(cl=cc++,b1[cl]??=0,b1[cl]+=(i-b1[cl])*f),hp=(i,f)=>(i-lp(i,f)),bp=(i,lf,hf)=>(hp(lp(i,lf),hf)),pwm=x=>hp((x%256/127)>((sin(t/32768*PI))/2+1),.005),fm=x=>bp((cos(2*sin(x*PI/128)))+(sin(2*sin(x*PI/127))),.4,.01)/2,tt=t/2*440*2**(-5/12)*256/38.4e3,min(max((tanh(Array(L=12).keys().reduce((x,_,z)=>(x+hp(fm((tt*2**(z>>2)*2**([[0,4,7,11],[-1,3,6,9],[-5,-1,2,6],[-5,-1,4,7]][t>>15&3][z%4]/12))),.01)*((1-(t-z*8192)/131072%1))%256/L))+(t>524288)*sin(2*sin(128*sqrt(t%4096)**.1))*(1-t/4096%1)**3/2*(\"1000100010010010\"[t>>12&15])+(t>262144)*sin(((4-t/2048%4)**(1/5*4))*sin((tt/512*PI*2**(((m=[[0,4,7,11],[-1,3,6,9],[-5,-1,2,6],[-5,-1,4,7]])[t>>15&3][((t>>13)+(t>>15))&3])/12))))/4+(t>1048576)*((t%4?r.rI:r.rI=random()*32)/32-(1/2))*(1-t/8192%1)**4*!((t+(2<<13))>>13&7)+(t>1572864)*(P=new Float32Array(5).reduce((X,_,Z)=>(X+lp(pwm(tt*2**Z/4*2**((m[t>>15&3][t>>11&3])/12)),Z/5)*(1-(t+Z*12288)/16384%1)/8)))+bp(random(),.1,.8)*.7)*192),-128),127)"
+                "sampleRate": 16000,
+                "codeOriginal": "(t/=1.25/3)?0:(r={},b1=[]),cc=0,lp=(i,f)=>(cl=cc++,b1[cl]??=0,b1[cl]+=(i-b1[cl])*f),hp=(i,f)=>(i-lp(i,f)),bp=(i,lf,hf)=>(hp(lp(i,lf),hf)),pwm=x=>hp((x%256/127)>((sin(t/32768*PI))/2+1),.005),fm=x=>bp((cos(2*sin(x*PI/128)))+(sin(2*sin(x*PI/127))),.4,.01)/2,tt=t/2*440*2**(-5/12)*256/38.4e3,min(max((tanh(Array(L=12).keys().reduce((x,_,z)=>(x+hp(fm((tt*2**(z>>2)*2**([[0,4,7,11],[-1,3,6,9],[-5,-1,2,6],[-5,-1,4,7]][t>>15&3][z%4]/12))),.01)*((1-(t-z*8192)/131072%1))%256/L))+(t>524288)*sin(2*sin(128*sqrt(t%4096)**.1))*(1-t/4096%1)**3/2*(\"1000100010010010\"[t>>12&15])+(t>262144)*sin(((4-t/2048%4)**(1/5*4))*sin((tt/512*PI*2**(((m=[[0,4,7,11],[-1,3,6,9],[-5,-1,2,6],[-5,-1,4,7]])[t>>15&3][((t>>13)+(t>>15))&3])/12))))/4+(t>1048576)*((t%4?r.rI:r.rI=random()*32)/32-(1/2))*(1-t/8192%1)**4*!((t+(2<<13))>>13&7)+(t>1572864)*(P=new Float32Array(5).reduce((X,_,Z)=>(X+lp(pwm(tt*2**Z/4*2**((m[t>>15&3][t>>11&3])/12)),Z/5)*(1-(t+Z*12288)/16384%1)/8)))+bp(random(),.1,.8)*.7)*192),-128),127)"
             },
             {
                 "name": "c-compatible",
