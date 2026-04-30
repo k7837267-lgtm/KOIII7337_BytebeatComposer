@@ -226,7 +226,7 @@ class audioProcessor extends AudioWorkletProcessor {
 				break;
 			case 'Inverted Bytebeat':
 				this.getValues = (funcValue, ch) =>
-					(this.lastByteValue[ch] = (funcValue + 256) & 255) / 127.5 - 1;
+					(this.lastByteValue[ch] = (funcValue + 256) * - 1 & 255) / 127.5 - 1;
 				break;
 				default: this.getValues = (funcValue, ch) => (this.lastByteValue[ch] = NaN);
 			}
