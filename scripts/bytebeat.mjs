@@ -389,8 +389,7 @@ globalThis.bytebeat = new class {
 			}
 			entry += `<div class="entry-children">${childrenStr}</div>`;
 		}
-		return `<div class="${codeOriginal || codeMinified || file || children ? 'entry' : 'entry-text'}${
-			starred ? ' ' + ['star-white', 'star-yellow'][starred - 1] : '' }">${entry}</div>`;
+		return `<div class="${codeOriginal || codeMinified || file || children ? 'entry' : 'entry-text'}">${entry}</div>`;
 	}
 	handleEvent(e) {
 		let elem = e.target;
