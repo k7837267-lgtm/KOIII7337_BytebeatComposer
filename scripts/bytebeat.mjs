@@ -391,6 +391,9 @@ globalThis.bytebeat = new class {
 		}
 		return `<div class="${codeOriginal || codeMinified || file || children ? 'entry' : 'entry-text'}">${entry}</div>`;
 	}
+	getX(t) {
+		return t / (1 << this.settings.drawScale);
+	}
 	handleEvent(e) {
 		let elem = e.target;
 		switch (e.type) {
