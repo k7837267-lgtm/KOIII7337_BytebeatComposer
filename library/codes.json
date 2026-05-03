@@ -5468,6 +5468,24 @@
         ]
     },
     {
+        "author": "L1TTL3_BR4Z1LI4N (Separate_Sundae_8815)",
+        "name": "𝙄𝙉𝙏𝙊 𝙏𝙃𝙀 𝙊𝘽𝙇𝙄𝙑𝙄𝙊𝙉",
+        "url": "https://www.bytebeat.cloud/post/8d1c0baa-e333-4eac-a206-bda12721c5fd",
+        "date": "Jan 1, 2026",
+        "mode": "Floatbeat",
+        "sampleRate": 44100,
+        "codeOriginal": [
+            "// 𝙄𝙉𝙏𝙊 𝙏𝙃𝙀 𝙊𝘽𝙇𝙄𝙑𝙄𝙊𝙉.",
+"//𝙍𝙚𝙢𝙞𝙭 𝙗𝙮 : (⋆. 𐙚˚࿔ ƖıɬɬƖɛ ცཞąʑıƖıąŋ 𝜗𝜚˚⋆)",
+"// ~ 𝙎𝙥𝙚𝙚𝙙 𝘼𝙣𝙙 𝙀𝙘𝙝𝙤 ~",
+"t/=4,rev=x=>(t?0:a=Array(12288).fill(0),b=x+a.shift(),a.push(b/2),b),rev",
+"// ~ 𝙗𝙮𝙩𝙚𝙗𝙚𝙖𝙩 𝙛𝙤𝙧𝙢𝙪𝙡𝙖 ~",
+"((e=x=>sin(\"405060\"[(t>>10)%6]*t/[20,40,30,40,30][(t>>14)%5]/x), (e(1)+e(2)+e(3)+e(4)+e(5)+e(6))/1.4/3)%256/1.5)+",
+"// ~ 𝙠𝙞𝙘𝙠, 𝙝𝙖𝙩𝙨 & 𝙨𝙣𝙖𝙧𝙚𝙨 ~",
+"(random(7)%256/2*(32-t*4/256%32)/48/8+random()%256/2*(32-t*2/256%32)/48/8+sin(cbrt(t*2%16384)*8)/3)"
+]
+    },
+    {
         "author": "Funcbeat Anon",
         "children": [
             {
@@ -5856,7 +5874,7 @@
             {
                 "name": "Bank Bass",
                 "url": "https://www.bytebeat.cloud/post/722b15c7-bccc-42fd-b173-f32dc43c305c",
-                "date": "Mar 7, 2026",
+                "date": "Mar 6, 2026",
                 "sampleRate": 32000,
                 "codeOriginal": "(((t*t>>8*(t>>5|t>>11))+(t&t>>7))&255)-128"
             },
@@ -6199,7 +6217,7 @@
         "name": "Hardbyte.wav (Remix of Winter Whispers of Equestria · Hexwave)",
         "url": "https://www.bytebeat.cloud/post/378c7c53-5201-4b2c-9781-e1d67165963b",
         "description": "BytebeatCloud's Week 16 Top Pick",
-        "date": "Mar 29, 2026",
+        "date": "Mar 28, 2026",
         "mode": "Floatbeat",
         "sampleRate": 22050,
         "stereo": true,
