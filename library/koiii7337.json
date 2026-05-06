@@ -693,5 +693,10 @@
 "D=((((K=70000/(t&4095)&32))*((t>>10&3)==0)*3+((random()*256&32))*'0000101012001010'[t>>9&15])/1.75),",
 "[N1,N1+N2,N1+N2,N1+N2,N1+N2+D,N1+N2+D,N1+N2+D,N1+N2+D,N1+D,N1+N2,N1+N2+D][min(10,t>>16)]-32"
     ]
+  },
+  {
+    "name": "Tried To Make A Bytebeat In robert's Style",
+    "date": "May 6, 2025",
+    "codeOriginal": "(t>>11|t%14)&(t>>10|t%34)&(t>>13|t%45)"
   }
 ]
