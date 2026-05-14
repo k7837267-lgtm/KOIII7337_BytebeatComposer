@@ -6096,6 +6096,24 @@
                 "codeOriginal": "t*(t>>13&3^t>>14&7)^t%255"
             },
             {
+                "name": "hyyh",
+                "url": "https://www.bytebeat.cloud/post/97b78a5d-2f9f-48be-9faf-514c0aaba8f0",
+                "date": "Apr 6, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 33000,
+                "codeOriginal": "A=t%[65536,20480,65536,12288][t>>15&3],t?(b=t*.9&255,l+=r+=(b-l-r*3)/(-cos(A*PI/2e4)*250+256),l/5):l=r=0"
+            },
+            {
+                "name": "oppotron take-over",
+                "url": "https://www.bytebeat.cloud/post/1b8f1706-c584-4b46-b596-c384f37764f6",
+                "date": "Apr 7, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "stereo": true,
+                "file": "trillwin-5.js",
+                "fileOriginal": true
+            },
+            {
                 "name": "0v3rdr1v3",
                 "url": "https://www.bytebeat.cloud/post/caf90531-51bb-40a5-adc7-224e031681f3",
                 "date": "Apr 7, 2026",
@@ -6103,6 +6121,14 @@
                 "sampleRate": 32000,
                 "stereo": true,
                 "codeOriginal": "x=j=>(t?0:F=new Float32Array(X=12288).fill(0),z=g=>t*j*2**('QQQN'.charCodeAt(t>>15&3)/12*g),p=(sin(z(.3)/128*PI)+cos(z(.3)/256*PI))%256+F[t%X],F[t%X]=p/2,(p/6)+(cbrt(sin(sqrt(t%8192)))*(1-t/8192%1)*!(t>>13&1))+(t%[1,1,16,1,1,1,16,16][t>>13&7]?R:R=random()*(1-t/8192%1)*'01100111'[t>>13&7])),[x(1.005),x(.995)]"
+            },
+            {
+                "name": "song using InfinitySnapz's tech",
+                "url": "https://www.bytebeat.cloud/post/eb2d9cad-a441-46d7-a6d5-b0ffc567e69f",
+                "date": "Apr 11, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "codeOriginal": "t<2?(a=0,b=0,c=0):(a=tan(sin(2*sqrt(t%[4096,16384,8192,32768][t>>13&3]))),b=.5-((W=t*(t&1048576?1.2:1)*2**(parseInt('AAAAAAABAAAAAAD9'[t>>13&15],36)/12))^W>>1)%256/256,c=abs(sin(W/64*PI)),b+=tanh(a+b+c)+(random()-.5)*(1-t/8192%1))/2"
             },
             {
                 "name": "S3V3N_N4TI0N_4RMY",
@@ -6209,6 +6235,62 @@
                 "sampleRate": 39430,
                 "file": "trillwin-2.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "some frutiger aero kinda thing",
+                "url": "https://www.bytebeat.cloud/post/8b9012d3-a822-41be-bbcb-597c4e8a6981",
+                "date": "May 6, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 43050,
+                "codeOriginal": [
+"t?0:F=new Float32Array(c=12288).fill(0),",
+"",
+"D=(sin(t*2**(parseInt('AELPSVXZ'[t>>14&7],36)/12)/198*PI)*(1-t/10000%1))%256+F[t%c],F[t/2%c]=D/1.7,",
+"",
+"(D/2)+sin(D-3)"
+]
+            },            
+            {
+                "name": "◔◡◔ ◕◠◕",
+                "url": "https://www.bytebeat.cloud/post/0b7d07cb-41bf-46bc-929f-03db058dd335",
+                "date": "May 8, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "stereo": true,
+                "file": "trillwin-3.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "imbrandonfarris google translate",
+                "url": "https://www.bytebeat.cloud/post/7f1e1caa-3f87-4486-8210-7bdbeb86d575",
+                "date": "May 11, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "codeOriginal": "A=t*2**(parseInt('abdegikl'[t>>13&7],36)/12)*[1,.8,1.3,1.2][t>>17&3],(atan((sin(A/128*PI+sin(A/256*PI*5))/2-sin(A/64*PI)**3)*2)/2-sin(A/512*PI-sin(A/128*PI-sin(A/1024*PI)))/2)/3+sin(2*sqrt(t%16384))/2+(random()*(.9994**(t%4096))-.5)*('1010110111111010'[t>>12&15])"
+            },
+            {
+                "url": "https://www.bytebeat.cloud/post/64eb2008-b024-4281-a96e-766992df5bf7",
+                "date": "May 11, 2026",
+                "sampleRate": 37500,
+                "codeOriginal": "(t/4)*((t>>9^t>>8&31)&(t>>10&127)^(t>>7&7|t>>8&42))"
+            },
+            {
+                "name": "aleocv",
+                "url": "https://www.bytebeat.cloud/post/73f87aa9-55c8-446e-9420-56b62a893e91",
+                "date": "May 12, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 32000,
+                "stereo": true,
+                "file": "trillwin-4.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "made this for someone on websim",
+                "url": "https://www.bytebeat.cloud/post/dcf503f8-b8d4-46ef-aca1-83a514a255c1",
+                "date": "May 13, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 34200,
+                "codeOriginal": "V=-9E9,Octave=0,Pitch=-6,Detune=-20,p=(round(Pitch)+(Octave*12)+(Detune/100)),t||(CC=Array(w=8699).fill(0),a=b=0),c=a+=b+=(2**(p/12)*2**(parseInt('7E7B7E7B4B474B470704070427262726'[t>>13&31],36)/12)-b)/500,Rs=(asin(sin(c/64*PI/1.1)/1.03)/3+atan(tan(t/127*PI*2*2**([V,V,V,V,3,2,3,3,3,3,3,3,3,4,3,3,-1,-1,-1,-1,-.55,-1,-.55,-.55,1,1,1,1,V,V,V,V][t>>13&31]/12)))/8)%256+CC[t%w],CC[t%w]=Rs/1.7,Rs/2"
             }
         ]
     },
