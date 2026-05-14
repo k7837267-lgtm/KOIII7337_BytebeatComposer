@@ -6108,7 +6108,7 @@
                 "url": "https://www.bytebeat.cloud/post/1b8f1706-c584-4b46-b596-c384f37764f6",
                 "date": "Apr 7, 2026",
                 "mode": "Floatbeat",
-                "sampleRate": 32000,
+                "sampleRate": 37500,
                 "stereo": true,
                 "file": "trillwin-5.js",
                 "fileOriginal": true
