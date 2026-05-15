@@ -588,6 +588,14 @@ button[name="close"] {
 	color: #ff0000;
 }
 
+.code-c {
+	color: #0000ff
+}
+
+.code-slow {
+	color: #ffff00
+}
+
 .code-length, .code-info {
 	color: gray;
 	cursor: default;
