@@ -6280,7 +6280,6 @@
                 "date": "May 12, 2026",
                 "mode": "Signed Bytebeat",
                 "sampleRate": 32000,
-                "stereo": true,
                 "file": "trillwin-4.js",
                 "fileOriginal": true
             },
