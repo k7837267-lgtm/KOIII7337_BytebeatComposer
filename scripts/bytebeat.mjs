@@ -321,7 +321,7 @@ globalThis.bytebeat = new class {
 			entry += ` <span class="code-remix">(remix of ${arr.join(', ')})</span>`;
 		}
 
-		if (date || sampleRate || mode || stereo || exotic) {
+		if (date || sampleRate || mode || stereo || exotic || c || slow) {
 			let infoStr = date ? `(${date})` : '';
 			if (sampleRate) {
 				infoStr += `${infoStr ? ' ' : ''}${sampleRate}Hz`;
