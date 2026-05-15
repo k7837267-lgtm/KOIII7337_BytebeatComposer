@@ -137,12 +137,14 @@
                 "name": "No 3",
                 "url": "https://yehar.com/blog/?p=2554",
                 "date": "Feb 25, 2012",
+                "starred": 1,
                 "codeOriginal": "t>>4+!(-t>>13&7)+2*!(t>>17)|t*t*(t>>(t>>12^t>>11)%3+10)/(7+(t>>10&t>>14&3))*!(t&512)<<3+(t>>14&1)"
             },
             {
                 "name": "bare-bones version",
                 "url": "https://yehar.com/blog/?p=2554",
                 "date": "Feb 25, 2012",
+                "starred": 1,
                 "c": true,
                 "codeOriginal": "t>>4|t*t*(t>>6&8^8)*(t>>11^t/3>>12)/(7+(t>>10&t>>14&3))"
             },
@@ -304,6 +306,7 @@
                 "name": "Smooth Digital",
                 "url": "https://demozoo.org/music/305280/",
                 "date": "Feb 12, 2022",
+                "starred": 1,
                 "sampleRate": 22050,
                 "codeOriginal": "k=1536,l=(t<1)?0.0:l*.90+max(0,min(255,t*((-t>>10)&(t>>2)&k)+((-t>>3)&(-t>>2)&k)>>(13-(2*((t>>18)+(t>>(t>>1)))%(10+((t>>15)&3))))+20))/(1800+(t>>12))*(-t&8191),max(0,min(255,l/30+(sqrt(t*(t>>18&1)&8191)<<6&64)))"
             },
@@ -311,6 +314,7 @@
                 "name": "Visitors from the Dark Side",
                 "url": "https://demozoo.org/music/311730/",
                 "date": "Aug 06, 2022",
+                "starred": 1,
                 "sampleRate": 44100,
                 "codeOriginal": "max(0,min(128,(b=-t*1.0595**('0010010030705503'[t>>13&15]-12+3*(t>>18&1))&255,c=b**3>>5,sin(b*(.2+sin(t/6E6))*.2)*c+c)*(-t&8191)>>18))-((sqrt(t&8183)<<6&64)*(t>>15&1^t>>13)-(t&15))*(1048576<t)+(t&16383)*(-t>>3&511)/7E4*random()*(524288<t)"
             },
@@ -345,6 +349,7 @@
                 "name": "Steady On Tim, It's Only A Budget Game",
                 "url": "https://demozoo.org/music/305284/",
                 "date": "Feb 12, 2022",
+                "starred": 2,
                 "sampleRate": 44100,
                 "codeOriginal": "M=T=>(b=abs((T&31)-16),(t*2**([-1,4,7][T*4%3|0]/12+(K=1+((1-(T>>5&3))%2-1)/6))&128)*(T>>8&&12-T%12)/12)+(t*2**(K+(b/5|0)-(5514>>b%(T>>9?4:5)*4&15)/12)&128),M(T=t/5e3)/3+M(T-3)/5+(T>>7&&(t*2**((T&4&&(T&7)-1)/6-4)&63*(197>>T%8&1))+random()*32*(1-(T+4)%8/8))"
             },
@@ -559,6 +564,7 @@
         "name": "Phantasie für drei Blockflöten, Op. 256",
         "url": "https://demozoo.org/music/305279/",
         "date": "Feb 12, 2022",
+        "starred": 1,
         "sampleRate": 44100,
         "codeOriginal": "i=t/8**5-2,T=x=>abs(x%2-1),R=(A,B)=>[C=A+B,S=i=>\"0x\"+\"66DAD0035655ACD\"[(A+6*(i>58-C))*(i|B)%15],d=+S(i+1),V=T(i*4),r=d=>T(t/50/C*1.06**d)*30*C,(r(d)*V+r(d+.1)*(1-V))*(i/9>6-3*A+B)*min(max(i%1,d==S(i),.7-T(i*8)),8-i%1*8+(d==S(i+2)))][5],R(1,0)+R(2,0)+R(2,1)"
     },
@@ -569,6 +575,7 @@
                 "name": "Cracklebass",
                 "url": "https://demozoo.org/music/305285/",
                 "date": "Feb 12, 2022",
+                "starred": 1,
                 "sampleRate": 44100,
                 "codeOriginal": "(o=>{for(x=i=5,m=(n,i)=>'!9$1!9,1!:#<!!!)! !+)**\" 8;%0111@$DD ]XT&'.charCodeAt(8*n+i>>1)-32>>3*(1&i)&7;n=m(m(i,o)-1,e=o*2**m(9,i++)%8),i<9;)x+=n&&((t*2**((10*n-n*n+m(9,o%6>4&&8*o&3))/12+i-12)&8)-4)*(1-e%1)})(t/6e5),6*x+52*sin((e%1)**.4*151)*n+98+random()"
             },
@@ -615,6 +622,7 @@
                 "name": "Stress Signal",
                 "url": "https://demozoo.org/music/305286/",
                 "date": "Feb 12, 2022",
+                "starred": 2,
                 "sampleRate": 44100,
         "c": true,
                 "codeOriginal": "((t/(t>>9&15))&32)*(((-t>>16&t>>20|t>>21)&118518023>>(t>>11))&1)+((t/(t%152))&(-t>>7&t>>10&t>>17)&63)+(t*4/(3353657496>>(t>>18<<3)&255)&23)+(t*8/(3370500505>>(t>>18<<3)&255)&23)+(t*5/24&(-t>>9&13))+(t*5/32&(-t>>8&13))+((t/4-t/64*(-t>>17&1))&(-t/3>>8&13))"
@@ -3272,6 +3280,7 @@
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/3.html#1810",
         "date": "Aug 04, 2023",
+                "starred": 1,
         "sampleRate": 48000,
         "codeOriginal": [
             "r=x=>(t?0:a=Array(n=12288).fill(0),b=x+a[t%n],a[t%n]=b/3,b),",
@@ -3655,6 +3664,7 @@
                 "name": "Tune 2",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1dqumfv/more_random_stuff/",
                 "date": "Jun 28, 2024",
+                "starred": 2,
                 "sampleRate": 44100,
                 "codeOriginal": [
                     "(pow((tan(t/([100,200,100,200,100,200,100,200,80,180,90,180,80,180,90,180][(t>>13)%16])*((([0.8,0.65,0.8,0.65,1.25,1,1.25,1][(t>>16)%8]))))*(sin(t/16384)+cos(t/32768)))>>-t/8192,t/-t)*128)|((220005)/(2*(t>>[1,2,3,4][(t>>16)%4])&[4095,8191,12724,36407,6544,32383,0,0][(t>>([12,14,12,13][(t>>13)%4])|t>>14&56)%8]))",
@@ -3665,6 +3675,7 @@
                 "name": "Remix of cool waveform tune from 3yrs ago",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1e2e5l4/remix_of_cool_waveform_tune_from_3yrs_ago/",
                 "date": "Jul 13, 2024",
+                "starred": 1,
                 "sampleRate": 44100,
                 "codeOriginal": [
                     "((t=t,((sqrt(t**1.45))/(t&[4095,8191,12724,36407,615414,32383,3252,57015][(t>>([11,14,12,13][(t>>7&42|t>>15)%4])|t>>14&(t>>18))%8]))/2&127))",
@@ -3676,6 +3687,7 @@
                 "name": "scuffed array melody (floatbeat)",
                 "mode": "Floatbeat",
                 "date": "Jul 14, 2024",
+                "starred": 1,
                 "sampleRate": 64000,
                 "codeOriginal": [
                     "a=[64,128,512,1024][(t>>17)%4],",
@@ -3708,6 +3720,7 @@
                 "date": "Aug 07, 2024",
                 "sampleRate": 32000,
                 "stereo": true,
+                "starred": 2,
                 "codeOriginal": [
                     "t=(t/4+20000),a=t=>cbrt(cos((t1=(0.1*t*[1,0.67,1,0.5,0.67,0.88,0.5,1.33][(t>>12)%8])*[0.5,1,1.33,1.7,2,2.25,2,2.25,1.5,1.7,1.5,1.7,1.33,1.5,1.33,1.5][(t>>[15,16,14,17][(t>>15)%4]|t>>15&[0,3,0,1,0,4,0,5][(t>>13|t>>12)%8])%16]))**([32,64,128,16][(t>>19)%4]-(t>>11|-t>>7)%8>>[5,3,2,3][(t>>17&t>>11)%4])-3)*10 + (clz32((42*(random())/((1.015**((t+4100)&16384*2-1)))))/6) + 2.5*sin(9000/((t&8192*[1,2,3,5][(t>>13)%4]-1)+[100,150,300,150][(t>>15)%4]))||40,",
                     "[(a(t)/1.5-a(t-3E0)/2+a(t-6E3)/3-a(t-9E0)/4-a(t-12E3)/5+a(t-15E0)/12-a(t-18E3)/18)/5+0.1,",
@@ -4450,6 +4463,7 @@
                 },
                 "url": "https://dollchan.net/btb/res/5289.html#5766",
                 "date": "Apr 06, 2025",
+                "starred": 2,
                 "sampleRate": 38775.4648,
                 "mode": "Funcbeat",
                 "file": "aniruF.js",
@@ -4484,6 +4498,7 @@
                 },
                 "url": "https://dollchan.net/btb/res/5289.html#9537",
                 "date": "Oct 02, 2025",
+                "starred": 2,
                 "sampleRate": 20480,
                 "mode": "Floatbeat",
                 "codeOriginal": "t%=786432,r=(x,y=12288,z=0.5)=>(t?0:a=Array(y).fill(0),b=x%256+a.shift(),a.push(b*z),b),pI=parseInt,A=r(sin(t/20480*2*PI*528*2**(pI(\"J HJC AC7 570   5 35A   5 35D   \"[t>>12&31],36)/12))||0,6144)/2,(t&16384?(t&16383):(t&8191))?0:S=Array.from({length:s=int(81920/(528*2**((pI(\"8CJ 8CJ 6AH 6AD 8CJ 8CJ BFM BFI\"[t>>13&31],36)||0)/12)))},()=>random()),S[t%s]=S[t%s]/2+S[(t+1)%s]/2,B=r(S[t%s]-.5),D={K:sin(cbrt(t&4095)*8)/(1+((t/256)&15))},D.S=D.K/2+(D.H=(random()-.5)*(-t>>4&255)/256),C=D[\"K SKH SK  SKS   \"[t>>12&15]]||0,[B+A,B+C][t>>19&1]",
