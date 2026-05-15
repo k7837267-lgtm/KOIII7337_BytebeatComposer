@@ -268,7 +268,7 @@ globalThis.bytebeat = new class {
 	}
 	generateLibraryEntry({
 		author, c, children, codeMinified, codeOriginal, cover, date, description, exotic, file,
-		fileFormatted, fileMinified, fileOriginal, mode, name, remix, sampleRate, slow, stereo, url
+		fileFormatted, fileMinified, fileOriginal, mode, name, remix, sampleRate, slow, starred, stereo, url
 	}) {
 		let entry = '';
 		const noArrayUrl = url && !Array.isArray(url);
@@ -395,7 +395,8 @@ globalThis.bytebeat = new class {
 			}
 			entry += `<div class="entry-children">${childrenStr}</div>`;
 		}
-		return `<div class="${codeOriginal || codeMinified || file || children ? 'entry' : 'entry-text'}">${entry}</div>`;
+		return `<div class="${codeOriginal || codeMinified || file || children ? 'entry' : 'entry-text'}${
+			starred ? ' ' + ['star-white', 'star-yellow'][starred - 1] : '' }">${ entry }</div>`;
 	}
 	getX(t) {
 		return t / (1 << this.settings.drawScale);
