@@ -335,6 +335,12 @@ globalThis.bytebeat = new class {
 			if (exotic) {
 				infoStr += `${infoStr ? ' ' : ''}<span class="code-exotic">EXOTIC</span>`;
 			}
+			if (c) {
+				infoStr += `${infoStr ? ' ' : ''}<span class="code-c">C</span>`;
+			}
+			if (slow) {
+				infoStr += `${infoStr ? ' ' : ''}<span class="code-slow">Slow</span>`;
+			}
 			entry += ` <span class="code-info">${infoStr}</span>`;
 		}
 		const songData = codeOriginal || codeMinified || file ? JSON.stringify({ sampleRate, mode }) : '';
