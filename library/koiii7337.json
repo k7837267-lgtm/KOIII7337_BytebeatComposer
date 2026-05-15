@@ -698,5 +698,23 @@
     "name": "Tried To Make A Bytebeat In robert's Style",
     "date": "May 6, 2026",
     "codeOriginal": "(t>>11|t%14)&(t>>10|t%34)&(t>>13|t%45)"
+  },
+  {
+    "name": "ARE YOU KIDDING ME YOUTUBE JUST CREATED A STONE AGE",
+    "cover":
+    {
+      "name": "Metal Gear Solid 3 - Game Over: Time Paradox",
+      "url": "https://www.youtube.com/watch?v=EsmQdAdOzZY"
+    },
+    "remix":
+    {
+      "author": "a-desmos-grapher",
+      "name": "iloveeveryend26",
+      "url": "https://www.reddit.com/r/bytebeat/comments/1nsk177/remix_of_ilovemykids26_by_shcwazernecjlace"
+    },
+    "description": "The Title Was Just About Myself When A Channel With 12k Subscribers Got Terminated For 3 Copyright Strikes. I Decided To Make A \"MGS3 Game Over: Time Paradox\" Cover To Remix \"iloveeveryend26 by a-desmos-grapher\". I Added Extra Notes In This Cover."
+    "date": "May 14, 2026",
+    "sampleRate": 16000,
+    "codeOriginal": "a=t*2**([-3,-3,-2,0,-3,-3,-5,-4][t>>14&7]/12),B=b=>(b*4^b*8)%256/3,B(t*2**([9,9,9,9,9,9,9,9,9,9,9,9,9,9,5,7,10,10,10,10,10,10,7,8,12,12,12,12,10,10,10,10,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10,7,2,2,2,2,2,2,9,7,5,5,5,5,7,7,7,7][t>>11&63]/12))+(3*a^t>>6&256/'4221'[t>>14&3]-1|a)%256*2/3"
   }
 ]
