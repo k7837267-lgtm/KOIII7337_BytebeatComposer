@@ -267,8 +267,8 @@ globalThis.bytebeat = new class {
 		return `${power1024s}/${power1000s}`
 	}
 	generateLibraryEntry({
-		author, children, codeMinified, codeOriginal, cover, date, description, exotic, file,
-		fileFormatted, fileMinified, fileOriginal, mode, name, remix, sampleRate, stereo, url
+		author, c, children, codeMinified, codeOriginal, cover, date, description, exotic, file,
+		fileFormatted, fileMinified, fileOriginal, mode, name, remix, sampleRate, slow, stereo, url
 	}) {
 		let entry = '';
 		const noArrayUrl = url && !Array.isArray(url);
