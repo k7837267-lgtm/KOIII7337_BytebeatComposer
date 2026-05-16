@@ -321,7 +321,7 @@ globalThis.bytebeat = new class {
 			entry += ` <span class="code-remix">(remix of ${arr.join(', ')})</span>`;
 		}
 
-		if (date || sampleRate || mode || stereo || exotic || c || slow) {
+		if (date || sampleRate || mode || stereo || exotic || c || slow || big) {
 			let infoStr = date ? `(${date})` : '';
 			if (sampleRate) {
 				infoStr += `${infoStr ? ' ' : ''}${sampleRate}Hz`;
@@ -340,6 +340,10 @@ globalThis.bytebeat = new class {
 			}
 			if (slow) {
 				infoStr += `${infoStr ? ' ' : ''}<span class="code-slow">Slow</span>`;
+			}
+			if (big) {
+				infoStr += `${infoStr ? ' ' : ''}<span class="code-big">Big</span>`;
+			
 			}
 			entry += ` <span class="code-info">${infoStr}</span>`;
 		}
