@@ -595,6 +595,9 @@ button[name="close"] {
 .code-slow {
 	color: #ff7f00
 }
+.code-big {
+	color: #40ff00
+}
 
 .code-length, .code-info {
 	color: gray;
