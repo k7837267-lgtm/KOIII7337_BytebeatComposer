@@ -267,7 +267,7 @@ globalThis.bytebeat = new class {
 		return `${power1024s}/${power1000s}`
 	}
 	generateLibraryEntry({
-		author, c, children, codeMinified, codeOriginal, cover, date, description, exotic, file,
+		author, big, c, children, codeMinified, codeOriginal, cover, date, description, exotic, file,
 		fileFormatted, fileMinified, fileOriginal, mode, name, remix, sampleRate, slow, starred, stereo, url
 	}) {
 		let entry = '';
