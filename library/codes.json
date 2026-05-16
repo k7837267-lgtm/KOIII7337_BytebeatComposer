@@ -1134,6 +1134,7 @@
                 "mode": "Floatbeat",
                 "date": "Apr 24, 2025",
                 "sampleRate": 36000,
+                "big": true,
                 "fileOriginal": true,
                 "file": "baenhohoho2.js"
             },
@@ -1255,6 +1256,7 @@
                 "date": "Sep 26, 2025",
                 "sampleRate": 44100,
                 "mode": "Funcbeat",
+                "big": true,
                 "file": "baenhohoho4.js",
                 "fileOriginal": true
             },
@@ -1320,6 +1322,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/wpfndo/hypertone_in_a_bytebeat/",
                 "date": "Aug 16, 2022",
                 "sampleRate": 44100,
+                "big": true,
                 "file": "newfall3.js",
                 "fileOriginal": true
             },
@@ -1372,6 +1375,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/1bfvpdq/88_metronomes_playing_at_the_same_time_pendulum/",
                 "date": "Mar 16, 2024",
                 "sampleRate": 48000,
+                "big": true,
                 "file": "newfall1.js",
                 "fileOriginal": true
             },
@@ -1397,6 +1401,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/1f3ifsh/floatbeat_test/",
                 "date": "Aug 28, 2024",
                 "sampleRate": 64000,
+                "big": true,
                 "file": "newfall2.js",
                 "fileOriginal": true
             },
@@ -1597,6 +1602,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/y5woba/blocked_forever_instrumental/",
                 "date": "Oct 17, 2022",
                 "sampleRate": 44100,
+                "big": true,
                 "file": "decentmanager4.js",
                 "fileOriginal": true
             },
@@ -1623,6 +1629,7 @@
                 "date": "Jun 16, 2023",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "decentmanager5.js",
                 "fileOriginal": true
             },
@@ -1655,6 +1662,7 @@
                 "url": "https://dollchan.net/btb/res/520.html#3144",
                 "date": "Mar 19, 2024",
                 "sampleRate": 35498.667,
+                "big": true,
                 "file": "decentmanager3.js",
                 "fileOriginal": true
             },
@@ -1718,6 +1726,7 @@
                 "date": "Mar 14, 2025",
                 "sampleRate": 33860.266,
                 "stereo": true,
+                "big": true,
                 "file": "decentmanager7.js",
                 "fileOriginal": true
             },
@@ -1728,6 +1737,7 @@
                 "date": "Apr 9, 2025",
                 "sampleRate": 32000,
                 "stereo": true,
+                "big": true,
                 "file": "decentmanager6.js",
                 "fileOriginal": true
             },
@@ -1739,6 +1749,7 @@
                 "description": "BytebeatCloud's Week 11 Top Pick (A Sequel To \"Nostalgic Before Hopeless\")",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "decentmanager8.js",
                 "fileOriginal": true
             },
@@ -1750,6 +1761,7 @@
                 "description": "\"Was originally made for week18, but unfortunately I was late. At least I made something though.\" - Decent-Manager-6169",
                 "sampleRate": 48000,
                 "slow": true,
+                "big": true,
                 "file": "decentmanager9.js",
                 "fileOriginal": true
             }
@@ -1807,6 +1819,7 @@
                 "date": "Mar 28, 2023",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "greaserpirate5.js",
                 "fileOriginal": true
             },
@@ -1816,6 +1829,7 @@
                 "date": "Apr 18, 2023",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "greaserpirate3.js",
                 "fileOriginal": true
             },
@@ -1825,6 +1839,7 @@
                 "date": "May 03, 2023",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "greaserpirate4.js",
                 "fileOriginal": true
             },
@@ -1835,6 +1850,7 @@
                 "date": "Jul 07, 2023",
                 "sampleRate": 44100,
                 "stereo": true,
+                "big": true,
                 "file": "greaserpirate6.js",
                 "fileOriginal": true
             },
@@ -1845,6 +1861,7 @@
                 "date": "Jul 07, 2023",
                 "sampleRate": 44100,
                 "stereo": true,
+                "big": true,
                 "file": "greaserpirate7.js",
                 "fileOriginal": true
             },
@@ -1864,6 +1881,7 @@
                 "date": "Apr 11, 2025",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "greaserpirate.js",
                 "fileOriginal": true
             },
@@ -1908,6 +1926,7 @@
         "url": "https://demozoo.org/music/318954/",
         "date": "Feb 11, 2023",
         "sampleRate": 44100,
+        "slow": true,
         "codeOriginal": "v=(t)=>(T=abs(t/3e6%1),U=t>>15,((t/50&15)-6)*(U%3&2)*T+sin(t/125)*16*T**.5+(((t/50^t/50.1+(t&7)/16)&126))/2*T**3+sin(U%4*t/62)*4),w=(f,q,d)=>d?(w(f,q-2201,d-1)+w(f,q-ceil(14250+q/6e1),d-1)+w(f,q-7459,d-1)+w(f,q-11927,d-1))/2:f(q)-f(q-1)/2,v(t)+w(v,t,3)+23"
     },
     {
@@ -1917,6 +1936,7 @@
                 "name": "Progression",
                 "url": "https://demozoo.org/music/318956/",
                 "date": "Feb 11, 2023",
+                "starred": 2,
                 "codeOriginal": "[3*sin(1400/(9+t%8192/99))+sin(t/99)*t%max(.01,cos(((t+4e3)&8191)/2e3))+sin(t)*t%2/(1+t%2048/77),12,11,10,t>>16==7?t>>7:9+(t>>17)].reduce((a,s,i)=>a+sin([2,2.7,2,3][t>>15&3]*2**(i-7)*t*[1,4,2,3,4,6,7.13,6][t>>s&7])*1e3/(1e3+t%(1<<s))*(t>>16>i-2)*6/i)*8+128"
             },
             {
@@ -1940,6 +1960,7 @@
                 "url": "https://demozoo.org/music/318953/",
                 "date": "Feb 11, 2023",
                 "sampleRate": 44100,
+                "starred": 2,
                 "codeOriginal": "t/=16e4,a=(x,y)=>[y==3?4:5,0,y==3?5:7,0,y==3?7:8,0,y&1?(y&2?8:10):7,0,y&1?(y&2?10:12):5,0,y==3?12:10,0,8,0,7,0][x%16],b=x=>a(x,x%64>>4),f=(d,s,b,m)=>t*440*2**((d(t*s|0)+b)/12)%1>.5+.4*sin(t*m),(f(b,16,10,t/2)*(1-t*32%1)+f(x=>[5,3,1,0][x%4],1,-14,4))*126+1"
             },
             {
@@ -1947,6 +1968,7 @@
                 "url": "https://demozoo.org/music/318957/",
                 "date": "Feb 11, 2023",
                 "sampleRate": 44100,
+                "starred": 1,
                 "codeOriginal": "s=t/4e4,s+=(1-exp(-s))*38,t=s*6.4,x=108*s*(s<50?t*0.97:1+((t|0)%3)/2*!!(t/4&16))*((t&63)>47?1.19:1)%2-1,f=1-pow(t%1,-sin(t/8)*1.8+2),x=-(.44*(f-2)*(f+.7)*x*(x*x-1))/((f-.25)*x*x-f/2-.25),b=t/4%1,(x+(sin(b**.53*214)-x)*min(max(1-2*b,0),1)+1)*127"
             },
             {
@@ -2427,6 +2449,7 @@
                 "url": "https://www.reddit.com/r/bytebeat_2/comments/1ngbns9/the_unicode_show/",
                 "date": "Sep 13, 2025",
                 "mode": "Floatbeat",
+                "big": true,
                 "file": "chasyxx3.js",
                 "fileOriginal": true
             }
@@ -2610,6 +2633,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/14kyzij/broke_matrix_reuploaded/",
                 "date": "Jun 26, 2023",
                 "sampleRate": 48000,
+                "big": true,
                 "file": "abs197.js",
                 "fileOriginal": true
             },
@@ -2646,6 +2670,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/14nm3sm/remix_of_spring_park/",
                 "date": "Jul 01, 2023",
                 "sampleRate": 37000,
+                "big": true,
                 "file": "abs197-2.js",
                 "fileOriginal": true
             },
@@ -2752,6 +2777,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/15ifzjn/i_added_lowpass_filter_thingy_to_chipbeat_and/",
                 "date": "Aug 04, 2023",
                 "sampleRate": 48000,
+                "big": true,
                 "file": "absolute197-4.js",
                 "fileOriginal": true
             },
@@ -2760,6 +2786,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/15ijm9y/added_clamp_and_mix/",
                 "date": "Aug 05, 2023",
                 "sampleRate": 48000,
+                "big": true,
                 "file": "absolute197-6.js",
                 "fileOriginal": true
             },
@@ -2806,6 +2833,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/15n05zf/more_tools/",
                 "date": "Aug 10, 2023",
                 "sampleRate": 32000,
+                "big": true,
                 "file": "absolute197-7.js",
                 "fileOriginal": true
             },
@@ -2907,6 +2935,7 @@
                 "url": "https://dollchan.net/btb/res/951.html#2148",
                 "date": "Aug 31, 2023",
                 "sampleRate": 48000,
+                "big": true,
                 "file": "absolute197.js",
                 "fileOriginal": true
             },
@@ -2915,6 +2944,7 @@
                 "url": "https://www.reddit.com/r/psubscirbe/comments/16byisg/abandoned_subreddit/jzocw2q/",
                 "date": "Sep 08, 2023",
                 "sampleRate": 25600,
+                "big": true,
                 "file": "absolute197-9.js",
                 "fileOriginal": true
             },
@@ -2932,6 +2962,7 @@
                 "url": "https://dollchan.net/btb/res/951.html#2293",
                 "date": "Sep 16, 2023",
                 "sampleRate": 27050,
+                "big": true,
                 "file": "absolute197-2.js",
                 "fileOriginal": true
             },
@@ -2941,6 +2972,7 @@
                 "url": "https://dollchan.net/btb/res/951.html#2357",
                 "date": "Sep 28, 2023",
                 "sampleRate": 16000,
+                "big": true,
                 "file": "absolute197-8.js",
                 "fileOriginal": true
             },
@@ -2949,6 +2981,7 @@
                 "url": "https://dollchan.net/btb/res/951.html#2382",
                 "date": "Oct 02, 2023",
                 "sampleRate": 48000,
+                "big": true,
                 "file": "absolute197-3.js",
                 "fileOriginal": true
             },
@@ -3108,6 +3141,8 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/1lc8rh0/frequency_machine_by_funute_remix_i_will_be/",
                 "date": "Jun 15, 2025",
                 "sampleRate": 39999,
+                "slow": true,
+                "big": true,
                 "file": "absolute197-10.js",
                 "fileOriginal": true
             }
@@ -3208,6 +3243,7 @@
         "date": "May 26, 2023",
         "sampleRate": 44100,
         "stereo": true,
+                "big": true,
         "file": "hrllobrothers4.js",
         "fileOriginal": true
     },
@@ -3231,6 +3267,8 @@
                 },
                 "url": "https://www.reddit.com/r/bytebeat/comments/1iq1lkb/ccompatible_chasing_moonlight_chord_progression/",
                 "date": "Feb 15, 2025",
+                "c": true,
+                "big": true,
                 "file": "PortablePorcelain.js",
                 "fileOriginal": true
             },
@@ -3414,6 +3452,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/1f0toc9/title_theme_of_some_mario_bootleg_be_like/",
                 "date": "Aug 25, 2024",
                 "sampleRate": 32000,
+                "big": true,
                 "file": "psub2.js",
                 "fileOriginal": true
             },
@@ -3456,6 +3495,7 @@
                 "name": "99 bottles of beer",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1j9kn6y/99_bottles_of_beer/",
                 "date": "Mar 12, 2025",
+                "big": true,
                 "file": "psub.js",
                 "fileOriginal": true
             },
@@ -3523,6 +3563,7 @@
         "date": "Feb 09, 2024",
         "sampleRate": 48000,
         "stereo": true,
+        "slow": true,
         "codeOriginal": "v=[0,J=0],(_=>{for(;J<32;J++)s=(t+J%2*J)/1e4+8,b=(s-(J/2&7)/2)%4,i=s-b,I=J/8&2,j=(i%8%3>0)*8+((i/8&6)+(i%8/2-.6&3)&i/16),r=I?2e3:1,[4,6,3,2].map(n=>(r/=n-j%2,j>>=1)),x=b*r%1,i*2%(I||1<<log2(~i>>3&15))?0:v[J&1]+=sin(x/r*exp(6-b+I*i/64%4))/exp(b+4*x+1)})(),v"
     },
     {
@@ -3542,6 +3583,7 @@
                 "name": "this is mf bytebeat (pcm test)",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1b2yisq/this_is_mf_bytebeat_pcm_test/",
                 "date": "Feb 29, 2024",
+                "big": true,
                 "file": "gdplayer.js",
                 "fileOriginal": true
             },
@@ -3616,6 +3658,7 @@
                 "date": "Sep 05, 2024",
                 "sampleRate": 48000,
                 "exotic": true,
+                "big": true,
                 "file": "ConsistentNerve185.js",
                 "fileOriginal": true
             },
@@ -3636,6 +3679,7 @@
                 "sampleRate": 48000,
                 "stereo": true,
                 "exotic": true,
+                "big": true,
                 "file": "ConsistentNerve185-1.js",
                 "fileOriginal": true
             },
@@ -3746,6 +3790,7 @@
         "url": "https://battleofthebits.com/arena/Entry/want+a+byte+of+my+food_/70383/",
         "date": "Aug 10, 2024",
         "sampleRate": 32000,
+                "big": true,
         "file": "SRB2er.js",
         "fileOriginal": true
     },
@@ -3762,6 +3807,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/1f87fek/w_a_r_m_t_h/",
                 "date": "Sep 03, 2024",
                 "sampleRate": 44100,
+                "big": true,
                 "file": "feeshbread3.js",
                 "fileOriginal": true
             },
@@ -3776,6 +3822,7 @@
                 "date": "Sep 03, 2024",
                 "sampleRate": 44100,
                 "stereo": true,
+                "big": true,
                 "file": "feeshbread2.js",
                 "fileOriginal": true
             },
@@ -3786,6 +3833,7 @@
                 "date": "Feb 12, 2025",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "feeshbread.js",
                 "fileOriginal": true
             }
@@ -3845,6 +3893,7 @@
 },
     {
         "name": "#5",
+        "starred": 2,
         "description": "\"Cool Sound You Got! I Also Did A No Variable Minified Code!\" - KOIII7337",
         "codeOriginal": [
             "x = 16,",
@@ -3857,6 +3906,7 @@
     },
     {
         "name": "#6",
+        "starred": 1,
         "codeOriginal": [
             "a = 16,",
             "b = 1|t >> 4*t | a/15*3,",
@@ -4011,6 +4061,7 @@
                 "date": "Jul 19, 2025",
                 "mode": "Floatbeat",
                 "sampleRate": 44100,
+                "big": true,
                 "file": "TI3699.js",
                 "fileOriginal": true
             },
@@ -4020,6 +4071,7 @@
                 "date": "Sep 06, 2025",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
+                "big": true,
                 "file": "TI3699-2.js",
                 "fileOriginal": true
             },
@@ -4068,6 +4120,7 @@
                 "date": "Mar 24, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 44100,
+                "big": true,
                 "file": "TI3699-3.js",
                 "fileOriginal": true
             },
@@ -4150,6 +4203,7 @@
                 "date": "Feb 03, 2025",
                 "sampleRate": 67000,
                 "stereo": true,
+                "big": true,
                 "file": "two2fall.js",
                 "fileOriginal": true
             },
@@ -4178,6 +4232,7 @@
                 "date": "Apr 04, 2025",
                 "sampleRate": 33500,
                 "stereo": true,
+                "big": true,
                 "file": "two2fall2.js",
                 "fileOriginal": true
             }
@@ -4401,6 +4456,7 @@
                 "date": "Oct 25, 2025",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "PrincessPriscillaPT.js",
                 "fileOriginal": true
             },
@@ -4466,6 +4522,7 @@
                 "starred": 2,
                 "sampleRate": 38775.4648,
                 "mode": "Funcbeat",
+                "big": true,
                 "file": "aniruF.js",
                 "fileOriginal": true
             },
@@ -4544,6 +4601,7 @@
                 "url": "https://ihsoyct.github.io/index.html?comments=1jx5qva",
                 "date": "Apr 11, 2025",
                 "sampleRate": 38000,
+                "big": true,
                 "file": "sharp.js",
                 "fileOriginal": true
             },
@@ -4553,6 +4611,7 @@
                 "date": "Apr 12, 2025",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "sharp2.js",
                 "fileOriginal": true
             }
@@ -4569,6 +4628,8 @@
         "url": "https://www.reddit.com/r/bytebeat/comments/1k2mihy/ethereal_byteshop_v10/",
         "date": "Apr 19, 2025",
         "sampleRate": 48000,
+        "slow": true,
+                "big": true,
         "file": "cattoadishere.js",
         "fileOriginal": true
     },
@@ -4694,6 +4755,7 @@
                     "url": "https://dollchan.net/btb/res/55.html#194"
                 },
                 "url": "https://www.reddit.com/r/bytebeat/comments/1mgplgb/feedabeefableface/",
+                "description": "Runs Smoothly On Firefox.",
                 "date": "Aug 03, 2025",
                 "mode": "Floatbeat",
                 "sampleRate": 75000,
@@ -4723,6 +4785,7 @@
                 "date": "Aug 06, 2025",
                 "mode": "Floatbeat",
                 "sampleRate": 36000,
+                "big": true,
                 "file": "IncreaseRegular.js",
                 "fileOriginal": true
             },
@@ -4807,6 +4870,7 @@
                 "date": "Feb 10, 2026",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
+                "big": true,
                 "file": "mariofan171.js",
                 "fileOriginal": true
             },
@@ -4843,6 +4907,8 @@
                 "date": "Mar 9, 2026",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
+                "stereo": true,
+                "big": true,
                 "file": "mariofan171-1.js",
                 "fileOriginal": true
             }
@@ -4896,11 +4962,12 @@
             {
                 "name": "anotha one",
                 "description": "Date Is Unknown. Founded On TikTok.",
-                "codeOriginal": "z=[[23,26,29][(t>>11)%3],26,26,29,23,23,23,23][(t>>12)%8],a=[[z,13,z,13,z,13,z,13],[13,26,29,23,13,26,29,[31,31,23][(t>>15)%3]]],b=1*((t*(\"000000.-------300000003-------.\".charCodeAt((t>>13)%32)-32)/10)),T=[11,13],d=0.7*sin(sqrt(t%4096)**0.01*4e3)*32+30,e=1*(random()*(((-(t+2048)>>[6,6,6,6,6,6,6,5,6,6,6,6,6,6,6,4][(t>>11)%16])%64)+64))/2,((t<(1<<17))&(t>((1<<16)+14*(1<<12)))?0:1)*((0.5005*t*a[(t>>18)%2][(t>>T[(t>>18)%2])%8]%256)/12+(1.005*t*a[(t>>18)%2][(t>>T[(t>>18)%2])%8]%256)/12)+(t<(1<<15)?0:1)*(b%256/5+(1.01*b)%256/5)+(t<(1<<17)?0:1)*(e+d)*((t<((1<<18)+0.5*(1<<18)))&(t>((1<<18)))?0:1)"
+                "codeOriginal": "z=[[23,26,29][(t>>11)%3],26,26,29,23,23,23,23][(t>>12)%8],a=[[z,13,z,13,z,13,z,13],[13,26,29,23,13,26,29,[31,31,23][(t>>15)%3]]],b=1*((t*(\"000000.-------300000003-------..\".charCodeAt((t>>13)%32)-32)/10)),T=[11,13],d=0.7*sin(sqrt(t%4096)**0.01*4e3)*32+30,e=1*(random()*(((-(t+2048)>>[6,6,6,6,6,6,6,5,6,6,6,6,6,6,6,4][(t>>11)%16])%64)+64))/2,((t<(1<<17))&(t>((1<<16)+14*(1<<12)))?0:1)*((0.5005*t*a[(t>>18)%2][(t>>T[(t>>18)%2])%8]%256)/12+(1.005*t*a[(t>>18)%2][(t>>T[(t>>18)%2])%8]%256)/12)+(t<(1<<15)?0:1)*(b%256/5+(1.01*b)%256/5)+(t<(1<<17)?0:1)*(e+d)*((t<((1<<18)+0.5*(1<<18)))&(t>((1<<18)))?0:1)"
             },
             {
                 "description": "Date Is Unknown. Founded On TikTok.",
                 "stereo": true,
+                "big": true,
                 "codeOriginal": "a=[[[13,15.5,17.5],[13,15.5,17.5],[13,15.5,17.5],[13,15.5,17.5]],[[13,15.5,17.5],[13,15.5,19.45],[13,15.5,23.3],[13,15.5,26]],[[13,15.5,29],[13,15.5,26],[15.5,13,23.3],[17.5,15.5,31]]],a2=[[13,15.5,17.5],[13,15.5,19.45],[13,15.5,23.3],[13,15.5,26]],a3=[[13,15.5,29],[13,15.5,26],[15.5,13,23.3],[17.5,15.5,31]],P=[23,26.2,31,39,26.2,23,19.5,39],z=[1.3,1.3,1.3,1.3,1.3,1.3,1.45,1.9,1.6,1.6,1.6,1.6,1.6,1.6,1.9,2.43],d=1.815,c=1.5,f=1.8155,y=[d,d,d,d,d,d,f,f,0,0,0,0,0,0,0,0],x=[0,0,0,0,0,0,0,0,c,c,c,c,c,c,c,c],l=[0,1],l2=[0,0,1],l3=[1,1,1,2],p=t*y[(t>>11)%16],q=t*x[(t>>11)%16],b=((t*z[(t>>13)%16])%256/5),b1=((1.003*t*z[(t>>13)%16])%256/5),e=l[(t>>17)%2]*(random()*(((-t>>[6,5,6,4,6,5,6,4,6,5,6,4,6,5,6,3][(t>>11)%16])%64)+64))/2,sl=l2[(t>>17)%3]*(P[(t>>14)%8]*t%256)/15+p%30.101/3+p%59.985/3+p%48.0205/3+p%36.204/3+q%30.103/3+q%59.9802/3+q%50.0206/3+q%40.2002/3+b+e+(t*a[(t>>16)%3][(t>>14)%4][(t>>10)%3]%256)/11,sr=l2[(t>>17)%3]*(1.002*P[(t>>14)%8]*t%256)/15+p%30.1/3+p%59.98/3+p%48.02/3+p%36.2/3+q%30.1/3+q%59.98/3+q%50.02/3+q%40.2/3+b1+e+(t*a[(t>>16)%3][(t>>14)%4][(t>>10)%3]%256)/11,T=t*l[(t>>17)%2]*l3[(t>>15)%4],dd=0.7*sin(sqrt(T%4096)**0.01*4e3)*32+30,ss=[sl+dd,sr+dd]"
             },
             {
@@ -4938,6 +5005,7 @@
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
                 "stereo": true,
+                "big": true,
                 "file": "newmemesfromsnapchat2.js",
                 "fileOriginal": true
             }
@@ -4990,6 +5058,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/1o4yxfj/oh_my_god/",
                 "date": "Oct 12, 2025",
                 "sampleRate": 23301.689,
+                "big": true,
                 "file": "spaceboi0713.js",
                 "fileOriginal": true
             },
@@ -5022,6 +5091,7 @@
                 "date": "Oct 11, 2025",
                 "url": "https://www.reddit.com/r/bytebeat_2/comments/1o3t6j0/complex_step_sequencer_stereo/",
                 "stereo": true,
+                "big": true,
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
                 "file": "UD965.js",
@@ -5061,6 +5131,7 @@
                 "url": "https://www.reddit.com/r/bytebeat_2/comments/1obp3i4/boneiris_moment_os_means_bone_in_my_language/",
                 "sampleRate": 44100,
                 "mode": "Floatbeat",
+                "big": true,
                 "file": "UD965-2.js",
                 "fileOriginal": true
             },
@@ -5083,6 +5154,7 @@
                 "sampleRate": 42500,
                 "mode": "Signed Bytebeat",
                 "stereo": true,
+                "big": true,
                 "file": "UD965-4.js",
                 "fileOriginal": true
             }
@@ -5116,6 +5188,7 @@
                 "mode": "Signed Bytebeat",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "insanity2.js",
                 "fileOriginal": true
             },
@@ -5127,6 +5200,7 @@
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "insanity.js",
                 "fileOriginal": true
             },
@@ -5210,6 +5284,7 @@
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "stereo": true,
+                "big": true,
                 "file": "insanity-3.js",
                 "fileOriginal": true
             },
@@ -5220,6 +5295,7 @@
                 "date": "Jan 31, 2026",
                 "sampleRate": 32000,
                 "stereo": true,
+                "big": true,
                 "file": "insanity4.js",
                 "fileOriginal": true
             },
@@ -5370,6 +5446,7 @@
         "date": "Nov 03, 2025",
         "sampleRate": 48000,
         "stereo": true,
+                "big": true,
         "mode": "Floatbeat",
         "file": "omega.js",
         "fileOriginal": true
@@ -5401,6 +5478,7 @@
             "mode": "Floatbeat",
             "sampleRate": 11025,
             "stereo": true,
+                "big": true,
             "file": "vbinchees3000-1.js",
             "fileOriginal": true
          },
@@ -5439,6 +5517,7 @@
         "url": "https://www.bytebeat.cloud/post/447ebb36-fc8e-47e8-9a0c-d7183cd9d877",
         "date": "Dec 13, 2025",
         "mode": "Floatbeat",
+                "big": true,
         "file": "pck404.js",
         "fileOriginal": true
     },
@@ -5469,6 +5548,7 @@
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
                 "stereo": true,
+                "big": true,
                 "file": "pck404-2.js",
                 "fileOriginal": true
             },
@@ -5477,6 +5557,7 @@
         "url": "https://www.bytebeat.cloud/post/e457b3ce-b16d-4909-9a47-a7ce5797ca0d",
         "date": "Jan 01, 2026",
         "mode": "Floatbeat",
+                "big": true,
         "file": "pck404-3.js",
         "fileOriginal": true
     },
@@ -5493,6 +5574,7 @@
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
                 "stereo": true,
+                "big": true,
                 "file": "pck404-4.js",
                 "fileOriginal": true
             },
@@ -5502,6 +5584,7 @@
                 "date": "Mar 7, 2025",
                 "sampleRate": 44100,
                 "mode": "Floatbeat",
+                "big": true,
                 "file": "pck404-5.js",
                 "fileOriginal": true
             },
@@ -5545,6 +5628,7 @@
         "sampleRate": 44100,
         "mode": "Funcbeat",
         "stereo": true,
+                "big": true,
         "file": "funcbeatanon.js",
         "fileOriginal": true
     },
@@ -5557,6 +5641,7 @@
         "mode": "Funcbeat",
         "stereo": true,
          "slow": true,
+                "big": true,
         "file": "funcbeatanon-1.js",
         "fileOriginal": true
     },
@@ -5566,6 +5651,7 @@
         "date": "Mar 22, 2026",
         "sampleRate": 32000,
         "mode": "Funcbeat",
+                "big": true,
         "file": "funcbeatanon-2.js",
         "fileOriginal": true
     },
@@ -5575,6 +5661,7 @@
         "date": "Apr 14, 2026",
         "sampleRate": 32000,
         "mode": "Funcbeat",
+                "big": true,
         "file": "funcbeatanon-3.js",
         "fileOriginal": true
     }
@@ -5640,6 +5727,7 @@
                 "url": "https://www.bytebeat.cloud/post/f44c7f5e-5627-4c14-8442-eef6dc73ba51",
                 "date": "Mar 6, 2026",
                 "sampleRate": 44100,
+                "big": true,
                 "file": "mqdantee.js",
                 "fileOriginal": true
                 },
@@ -5652,6 +5740,7 @@
                 "url": "https://www.bytebeat.cloud/post/a1e9d8f8-e5dc-4aa4-98e4-a9aa1ecd7a52",
                 "date": "Mar 8, 2026",
                 "sampleRate": 44100,
+                "big": true,
                 "file": "mqdantee-1.js",
                 "fileOriginal": true
             },
@@ -6300,6 +6389,8 @@
                 "url": "https://www.bytebeat.cloud/post/54e5d951-3cb9-44dd-87b7-d4408e0de358",
                 "date": "Apr 29, 2026",
                 "sampleRate": 39430,
+                "stereo": true,
+                "big": true,
                 "file": "trillwin-2.js",
                 "fileOriginal": true
             },
@@ -6370,6 +6461,7 @@
         "mode": "Floatbeat",
         "sampleRate": 22050,
         "stereo": true,
+                "big": true,
         "file": "Cyberslot.js",
         "fileOriginal": true
     },
@@ -6383,6 +6475,7 @@
                 "date": "Apr 3, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 24000,
+                "big": true,
                 "file": "botbeat.js",
                 "fileOriginal": true
             },
@@ -6431,6 +6524,7 @@
                 "url": "https://www.bytebeat.cloud/post/2efb8b9a-ba9f-4515-9b22-eb27a191178e",
                 "date": "Apr 4, 2026",
                 "sampleRate": 17000,
+                "big": true,
                 "file": "botbeat-1.js",
                 "fileOriginal": true
             },
@@ -6441,6 +6535,7 @@
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
                 "stereo": true,
+                "big": true,
                 "file": "botbeat-2.js",
                 "fileOriginal": true
             },
@@ -6451,6 +6546,7 @@
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
                 "stereo": true,
+                "big": true,
                 "file": "botbeat-3.js",
                 "fileOriginal": true
             }
@@ -6488,8 +6584,16 @@
                 "url": "https://www.bytebeat.cloud/post/d702669e-bd77-4b4b-94c7-55be8ee06b87",
                 "date": "Apr 20, 2026",
                 "sampleRate": 44100,
-                "codeOriginal": "t?0:(a=0,b=[]),u=ceil(sqrt(t/4*(t>>13&7^t>>14&3|t>>15&3^t>>16&7)&255)/5)*16+ceil(sqrt(2000000/(t/16&511)&255)/5)*16+trunc(sqrt(t*(1+(t>>16&3)/12)>>(-t>>13&1)&255)/5)*16+round(sqrt(hypot(t&t>>8,t&t>>7)&255)/5)*16,a=b[x=t%12288]||0,b[x]=u,u/4+a/2",                
+                "codeOriginal": "t?0:(a=0,b=[]),u=ceil(sqrt(t/4*(t>>13&7^t>>14&3|t>>15&3^t>>16&7)&255)/5)*16+ceil(sqrt(2000000/(t/16&511)&255)/5)*16+trunc(sqrt(t*(1+(t>>16&3)/12)>>(-t>>13&1)&255)/5)*16+round(sqrt(hypot(t&t>>8,t&t>>7)&255)/5)*16,a=b[x=t%12288]||0,b[x]=u,u/4+a/2",
                 "codeMinified": "t?0:(a=0,b=[]),s=sqrt,T=16,u=ceil(s(t/4*(t>>13&7^t>>14&3|t>>15&3^t>>T&7)&255)/5)*T+ceil(s(2e6/(t/T&511)&255)/5)*T+trunc(s(t*(1+(t>>T&3)/12)>>(-t>>13&1)&255)/5)*T+round(s(hypot(t&t>>8,t&t>>7)&255)/5)*16,a=b[x=t%12288]||0,b[x]=u,u/4+a/2"
+            },
+            {
+                "name": "Ceil with Sign",
+                "url": "https://www.bytebeat.cloud/post/7a651c5e-9063-4177-b6fc-b1cf5b67a4f7",
+                "date": "May 15, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "min(max(ceil(sqrt((t*(1+((t>>13^t>>14|t>>12)&7)))&255)/5)*32*(t<262144?1:(t>>8&63)/64)+ceil(sqrt(-t&49152?t&16383:(t*(t*t/256))*5e7)*50&255)/(1+(t>>8&63)/16)*(t>262144)+ceil(sqrt(sign(sin(t/8^t/4|t>>9&1))*t&255)/2)*32*((-t>>8&31)/64),0),255)",
+                "codeMinified": "c=ceil,s=sqrt,min(max(c(s((t*(1+((t>>13^t>>14|t>>12)&7)))&255)/5)*32*(t<262144?1:(t>>8&63)/64)+c(s(-t&49152?t&16383:(t*(t*t/256))*5e7)*50&255)/(1+(t>>8&63)/16)*(t>262144)+c(s(sign(sin(t/8^t/4|t>>9&1))*t&255)/2)*32*((-t>>8&31)/64),0),255)"
             }
         ]
     },
