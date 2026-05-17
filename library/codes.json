@@ -3808,6 +3808,7 @@
                 "date": "Sep 03, 2024",
                 "sampleRate": 44100,
                 "big": true,
+                "starred": 2,
                 "file": "feeshbread3.js",
                 "fileOriginal": true
             },
@@ -3823,6 +3824,7 @@
                 "sampleRate": 44100,
                 "stereo": true,
                 "big": true,
+                "starred": 2,
                 "file": "feeshbread2.js",
                 "fileOriginal": true
             },
@@ -3834,6 +3836,7 @@
                 "sampleRate": 48000,
                 "stereo": true,
                 "big": true,
+                "starred": 2,
                 "file": "feeshbread.js",
                 "fileOriginal": true
             }
