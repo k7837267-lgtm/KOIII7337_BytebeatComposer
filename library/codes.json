@@ -5593,6 +5593,7 @@
                 "url": "https://www.bytebeat.cloud/post/a4fc9c3db236-4c83-a40a-5731579cb7db",
                 "description": "BytebeatCloud's Week 13 Submission",
                 "date": "Mar 9, 2026",
+                "starred": 2,
                 "file": "pck404-6.js",
                 "fileOriginal": true,
                 "fileMinified": true
@@ -5728,6 +5729,7 @@
                 "date": "Mar 6, 2026",
                 "sampleRate": 44100,
                 "big": true,
+                "starred": 2,
                 "file": "mqdantee.js",
                 "fileOriginal": true
                 },
@@ -5741,6 +5743,7 @@
                 "date": "Mar 8, 2026",
                 "sampleRate": 44100,
                 "big": true,
+                "starred": 1,
                 "file": "mqdantee-1.js",
                 "fileOriginal": true
             },
@@ -5753,6 +5756,7 @@
                 "url": "https://www.bytebeat.cloud/post/8bb176b1-e3b2-4268-9303-7b194b63cd3b",
                 "date": "Mar 10, 2026",
                 "sampleRate": 44100,
+                "starred": 2,
                 "codeOriginal": "t*=22528/55125,(t*2*2**([1,1,6,6,1,1,-6,-6,1,1,6,6,1,1,,,1,1,6,6,1,1,6,6,10,10,10,8,6,5,3,2,1,1,6,6,1,1,-6,-6,1,1,6,6,1,1,,,6,6,6,3,1,1,-1,-1,-2,-2,-4,-4,-6,-6][t>>12&63]/12)&64)+(t/2*2**([6,3,8,1,6,3,8,1,6,3,8,5,-1,-1,'15'[t>>13&1],6][t>>14&15]/12)&64)"
             },
             {
@@ -5798,6 +5802,7 @@
                 "sampleRate": 44100,
                 "stereo": true,
                 "exotic": true,
+                "starred": 2,
                 "codeOriginal": [
                     "a=t=>(sin(t/(PI*t&t>>13)))/1.2+",
 "tanh((1-t%8192/8192)*16*sinf(sqrt(2e3*(t&16383))))*[1,0][[t>>13]%2]+tanh(8*sinf(t/4*1.12))/2%255*[0,1][[t>>13]%2]*2.4+sinf(random()*32)%256*(1-t%8192/8192)*[0,1][[t>>13]%2]+sinf(random()*128)%256*(1-t%16384/16384)*[0,0,1,0][[t>>13]%4],",
@@ -5830,6 +5835,7 @@
                 "sampleRate": 44100,
                 "stereo": true,
                 "exotic": true,
+                "starred": 2,
                 "codeOriginal": [
                     "i=t=>(t*1.4%128+t*1.4%127)/2,",
 "n=x=>i(t*x*t*x)*2,",
@@ -5846,6 +5852,7 @@
                 "date": "Mar 27, 2026",
                 "sampleRate": 56000,
                 "exotic": true,
+                "starred": 1,
                 "codeOriginal": [
                     "h=(f,v)=>(a=[1.25,1.25,1.2,1.25][[t>>16]%4],z=[1,.94,1.25,1.115][[t>>16]%4]*f*[1,a*.998,1.501][[t>>v>>0]%3]/2,x=(exp(t%16384/16384)*317*20*z*'1'[[t>>14]%4])||t*z,atan(tanf(x))/2),",
 "((h(2,12)/3+h(1,0)/2)%256*exp(t%32768/8192)/2+tanh(sinf(t*[1,.94,1.25,1.115][[t>>16]%4]/4)%256*exp(t%32768/7192)/3)/1.2+tanh(sinf(t*[1,.94,1.25,1.115][[t>>16]%4]/2)%256*exp(t%32768/7192)/3)/4.2+tan(sinf(sqrt(5e3*(t&8191)))*'1000'[[t>>13]%4]%256*exp(1-t%8192/1029))*5+(sinf(sqrt(5e3*(t&16383)))%256*exp(1-t%16384/1632)*2+tanh(sinf(t**sin(t*1.5>>1)))%255*exp(1-t%16384/2632))*'0010'[[t>>14]%4])*3"
@@ -6005,6 +6012,7 @@
                 "sampleRate": 44000,
                 "stereo": true,
                 "slow": true,
+                "starred": 2,
                 "codeOriginal": "T=t/21120,i=64,o=q=[0,0],r=(e,t)=>(m=0,e.forEach(e=>e<t?m=t-e:0),m),(()=>{while(i--)o[1&i]+=((t*(j=[58,69,46,52][2.5<T%4|T>>1&2]/50)*[40,(e=2.5<T%8)?50:48,60,e?75.2:70.8,90][(i>>1)%5]/40+1e4*(1+sin(i+t/7e5)))%(a=256)-128)/1e3})(),o.forEach((e,i)=>t?l[i]+=(e%a-l[i])*(1-r([0,.75,1.5,2.5,3.25],T%4))**(7+5*sin(T*PI/8)):l=q),e=(e,t,i)=>(1-(e*t<1?e*t:1))**i,B=(g=(c=32768)*T)%c/48e3/4,k=atan(2*sin(7*cbrt(g%c)))*e(B,15,2)*(~g>>15&1),h=(m=sin(t**7))/4*e(g%8192/48e3/4,2==(g>>13&3)?10:40,3),y=atan(sin(8*cbrt(g%c))*e(B,40,.5)*1.7+2*m*(e(B,160,3)/3+e(B,20,2)*min(60*B,1)**1.5))*(g>>15&1),d=atan(k+h+y),b=atan((t*j/4%a/a-.5)*(2*T%2)),[(l[0]+b)*(q=(T%1)**.5)+d,(l[1]+b)*q+d]"
             },
             {
@@ -6013,6 +6021,7 @@
                 "sampleRate": 44000,
                 "stereo": true,
                 "slow": true,
+                "starred": 1,
                 "codeOriginal": "T=t/21120,i=64,o=q=[0,0],r=(e,t)=>(m=0,e.forEach(e=>e<t?m=t-e:0),m),(()=>{while(i--)o[1&i]+=((t*(j=[58,69,46,52][2.5<T%4|T>>1&2]/50)*[40,(e=2.5<T%8)?50:48,60,e?75.2:70.8,90][(i>>1)%5]/40+1e4*(1+sin(i+t/7e5)))%(a=256)-128)/1e3})(),o.forEach((e,i)=>t?l[i]+=(e%a-l[i])*(1-r([0,.75,1.5,2.5,3.25],T%4))**(7+5*sin(T*PI/8)):l=q),l"
             }
         ]
@@ -6049,6 +6058,7 @@
                 "url": "https://www.bytebeat.cloud/post/ff614f48-3fc0-42f7-9f05-270559cde44c",
                 "date": "Mar 7, 2026",
                 "sampleRate": 16000,
+                "starred": 1,
                 "codeOriginal": "l=9,l2=12,a=j=>(t/2)*j*2**('2699'.charCodeAt(t>>14&3)/23.95),g=(k,b)=>a(k)%256/b,X=((t?f+=((g(1,6)+g(2,4)+g(4,9)+g(8,16)))-f/l:f=0)/l),b=(X*(1-t/[8192,32768][t>>15&1]%1))*(t&32768?1:!(t>>13&1)),R=random(),Q=a=>a*log10(t%4096),K=16*(tan(cos(Q(17)))+tan(sin(Q(7)))+sin(Q(10))+exp(sin(Q(18))))+128,S=128*(R/2*(1-t/4096%1))+128,Dru=[K,0,S,K,K,K,S,K,K,0,S,K,K,K,S,S][t>>12&15],$=t*2**([22,22,22,22,20,20,18,17,17,17,17,17,15,15,15,15][t>>12&15]/12),g2=b=>$%256/b,Oth=(t?f2+=g2(4)-f2/l2:f2=0)/l+32,(b+((Dru+Oth)*(t>65536)))/2"
             },
             {
@@ -6111,6 +6121,7 @@
                 "mode": "Floatbeat",
                 "sampleRate": 35000,
                 "stereo": true,
+                "starred": 2,
                 "codeOriginal": "v=J=>(t%=2**22,t||(C=Array(w=12288).fill(0)),x=w=>w((t*J*(6+(((t>>18&1?t>>(t>>18&1?13:12)&3:0)^t>>(t>>18&1?14:13)&(-t>>(t>>18&1?15:14)&3?1:2))+3&3))/8%128+(t*(6+(t>>16&3))/16|t>>7^t>>9)%128)/128*PI)/3,T=(((x(sin)%x(cos))*(t%1048576<524288?(1-t/8192%1):1))+((x(cos)*2)*(t<524288?0:t<1048576?1:(1-t/8192%1))))%256+C[t%w],C[t%w]=T/1.75,(T/2)+((sin(J*sqrt(t%16384))*(1-t/8192%1)*'10'[t>>13&1])*(t%2097152>1048576))+(((random()-random())/2.135*(1-t/8192%1)*'01'[t>>13&1])*(t>2097152))),[v(1.005),v(.995)]"
             },
             {
@@ -6144,6 +6155,7 @@
                 "url": "https://www.bytebeat.cloud/post/b353bae8-dc24-4e3e-abe4-449cc84d6d39",
                 "date": "Mar 16, 2026",
                 "sampleRate": 44100,
+                "starred": 1,
                 "codeOriginal": [
                     "g=(x,y,z)=>t/z*2**(floor((parseInt(x[(t>>y)%(x.length)],36))/5))*2**([2,4,7,9,11][(parseInt(x[(t>>y)%(x.length)],36))%5]/12),(g(\"this\",14,64)&63)+",
 "(g(\"ThusII\",14,32)&63)+",
@@ -6198,6 +6210,7 @@
                 "date": "Mar 28, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
+                "starred": 1,
                 "codeOriginal": "t||(X=Array(P=12288).fill(0)),mel=a=>a*t,Q=(a,b)=>a(mel($=(t>>13&7|t>>12&6)+((t>>14&7)==0)+(t>>14&7)/1.3)/b*PI),L=((asin(atan(Q(sin,256)+Q(cos,512)+Q(cos,128)*Q(sin,64))/1.1945)/3*(1-t/8192%1))+(atan(tan(mel($)/512*PI))/3*(t>524288)))%256+X[t%P],X[t%P]=L/1.7,(L/1.3)+(sin(1.37*sqrt(t%16384))*6*(1-t/4096%1)*((t>>12&3)==0)*(t>131072))+(((random()-.5)*(1-t/4096%1)*('10011010'[t>>12&7])*(t>262144))*2)"
             },
             {
@@ -6257,6 +6270,7 @@
                 "date": "Apr 6, 2026",
                 "mode": "Signed Bytebeat",
                 "sampleRate": 33000,
+                "starred": 1,
                 "codeOriginal": "A=t%[65536,20480,65536,12288][t>>15&3],t?(b=t*.9&255,l+=r+=(b-l-r*3)/(-cos(A*PI/2e4)*250+256),l/5):l=r=0"
             },
             {
@@ -6298,6 +6312,7 @@
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "stereo": true,
+                "starred": 2,
                 "codeOriginal": "X=J=>(t||(F=Array(d=10000).fill(0)),S=sin,C=cbrt,RR=random(),A=(x,b)=>C(S(x-($=t*J*2**(parseInt('HHHHHHHHKKKHHHFFDDDDDDDDCCCCCCCC'[t>>12&31],36)/12))/b*2*PI)),V=s=>((A(5,512)+A(7.3,1048)+A(5.8,1024)*A(2,1048))/8)%s,O=(V(.1)/2.3+V(256))%256+F[t%d],F[t%d]=O/1.7,(O+((sin(sqrt(t%8192)))*(.9996**(t%8192))*2*'10010000'[t>>13&7]+(RR-.5)*(.9998**(t%32768))*(t>>15&1))*(t/262144&1))+(atan(tan($/(1+(t&262144?t>>13&1:1))/512*PI)))/4),[X(1.005),X(.995)]"
             },
             {
@@ -6325,6 +6340,7 @@
                 "url": "https://www.bytebeat.cloud/post/3f19360b-9491-4e2e-b2c3-86083e011869",
                 "date": "Apr 23, 2026",
                 "sampleRate": 32000,
+                "starred": 1,
                 "codeOriginal": "128+(asin(sin(t*2**(parseInt('FDA8'[t>>14&3],36)/12)/128*PI))*(.9996**(t%(t&16384?12288/2:8192)))/2+sin(sqrt(t%16384))*(.9998**(t%16384))+(random()-.5)*(.999**(t%8192))/2+sin(t*4*(t>>8&127)/128*PI)*(.999**(t%16384))/4)*64"
             },
             {
@@ -6391,6 +6407,7 @@
                 "sampleRate": 39430,
                 "stereo": true,
                 "big": true,
+                "starred": 2,
                 "file": "trillwin-2.js",
                 "fileOriginal": true
             },
@@ -6415,6 +6432,7 @@
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "stereo": true,
+                "big": true,
                 "file": "trillwin-3.js",
                 "fileOriginal": true
             },
