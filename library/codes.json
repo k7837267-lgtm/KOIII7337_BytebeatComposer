@@ -3980,7 +3980,7 @@
         ]
     },
     {
-        "author": "TrashImpossible3699",
+        "author": "ProcessedGradient (TrashImpossible3699)",
         "children": [
             {
                 "name": "wurm :0",
@@ -4091,6 +4091,7 @@
                 "url": "https://www.bytebeat.cloud/post/ca6c0b27-31d9-4edb-aeba-46b4b43cad9d",
                 "date": "Jan 10, 2026",
                 "sampleRate": 48000,
+                "starred": 2,
                 "codeOriginal": "s=t/11972,.75*((t*8/2.8*pow(2,(s/16&1?((s/8&1?s/4&1?0b001:0:0)>>(0|8*s%3)&1&&-1)+((s/8&1?0x720:0x950)>>(0|8*s%3)*4&15):s/8&1?(0b001>>(0|8*s%3)&1&&-1)+((s/4&1?0x740:0x720)>>(0|8*s%3)*4&15):((s/4&1?0x950:0x740)>>(0|8*s%3)*4&15))/12)%256<100+54*sin(t/1999)||63)*((s/4&1?0b10111001:0b10110001)>>(s*2&7)&1)*(s*2%1<.8)+(t/4/2.8*pow(2,(s/16&1?s/8&1?-((s/4&1?0x13111111:0x31000000)>>(2*s&7)*4&15):-3:s/8&1?s/4&1?4:-1:s/4&1?5:0)/12)&63)+((t/2.8)/16*pow(2,(s/16&1?s/8&1?s/4&1?(s%2>1?-1:-5):(s%2>1?0:-3):(s%2>1?-3:-7):s/8&1?-(0x15687531>>(s&7)*4&15):(0x02454C74>>(s&7)*4&15))/12)&1||-s*64&63)+(t*t*.65&63)*(1-(s*2%1))*(s%1<.5)+((t>>2)*(t>>2)*.65&63)*(1-(s/2%1))*!(s/4%1<.5))"
             },
             {
@@ -4103,6 +4104,7 @@
                 "date": "Jan 18, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
+                "starred": 1,
                 "codeOriginal": [
 "s=t/10912,",
 "dly=(f,l,m)=>m&&f(s-l*m)/m*4+dly(f,l,m-1),fm1=(t,e)=>sin(sin(t)*5.1258083*e+sin(t)*3.139*e)*.2*e,",
@@ -4124,6 +4126,7 @@
                 "mode": "Floatbeat",
                 "sampleRate": 44100,
                 "big": true,
+                "starred": 2,
                 "file": "TI3699-3.js",
                 "fileOriginal": true
             },
@@ -4135,12 +4138,40 @@
                 },
                 "url": [
                     "https://www.reddit.com/r/bytebeat_2/comments/1sl680i/loud_ass_astronomia_remix/",
-                    "https://www.bytebeat.cloud/post/e65b6b21-b361-462d-a304-a88827bf75ce"
+                    "https://www.bytebeat.cloud/post/06573546-93bb-4422-8325-bf8465962eca"
                 ],
                 "date": "Apr 14, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
+                "stereo": true,
                 "codeOriginal": "d=t/5450,t||(b=[0,0],n=[0,0,0],s={l:Array(M=21532).fill(0),r:Array(M*2).fill(0),V:[0,0]}),C=(d/2)>32?[81,,81,88,86,,84,,83,,83,83,86,,83,79,81,,81,96,95,96,95,96,81,,81,96,95,96,95,96]:[84,84,84,84,88,88,88,88,86,86,86,86,91,91,91,91,93,93,93,93,93,93,93,93,93,93,93,93,86,84,83,79],h=[[69,72,77,81],[74,79,83,86],[72,76,81,84]],w=T=>pow(2,(-69+T)/12),v=(x,K)=>(x?K/256%1:K/256%1<.5)-.5,n[0]+=([...Array(4).keys()].reduce((D,o)=>D+.2*v(1,t*w(h[\"0122\"[d/16%4|0]][o])||0),0)-n[0])*pow((d/4%1/.002)*.00002,d%1),n[1]+=n[2]+=(.36*v(0,b[0]+=b[1]+=(w(C[d/2%C.length|0]||=null)-b[1])*(d/2>32?1:d/2>3?.0005:1))-n[1]-n[2])*pow(.002,d/2%1),s.l[s.V[0]+=1,s.V[0]%=M]=n[1]+s.l[s.V[0]]*(H=.5),s.r[s.V[1]+=1,s.V[1]%=M*2]=n[1]+s.r[s.V[1]]*H,[s.l[s.V[0]],s.r[s.V[1]]].map(v=>(v+=n[0]*2*(d/4%1),I=(t-pow(.00002,d*(O=\"1112\"[d/4%4|0])%4)*1200)*PI/512,v+=(d/2)>32?pow(.006,d*O/2%2)*32*sin(I):0,v*=4)).map(P=>tanh(atan(P))*.8)"
+            },
+            {
+                "name": "schizophrenic person on an empty room",
+                "url": "https://www.bytebeat.cloud/post/474d5dcb-8a9a-4451-bab6-87061011afc3",
+                "date": "Apr 24, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "stereo": true,
+                "starred": 1,
+                "codeOriginal": "t||(V=r=>floor(r*random()),O=f=W=0,s=[0,0],R={l:new Float32Array(l1=1000),r:new Float32Array(l2=2500),at:[0,0]}),W++%8192||(D=V(24)),T=1<<14,O+=(D*56%24|0)==0?2**(D/12):0,f+=(O-f)/3000,s[0]+=s[1]+=((f/256%1)-s[0]-s[1])*pow(.0002,(X=O/T)%1),s[0]-=.5,s[0]*=(X%1>.5?1-X/.5%1:1),g=.7,R.l[R.at[0]+=1,R.at[0]%=l1]+=s[0],R.l[R.at[0]]=s[0]+R.l[R.at[0]]*g,R.r[R.at[1]+=1,R.at[1]%=l2]+=s[0],R.r[R.at[1]]=s[0]+R.r[R.at[1]]*g,[R.l[R.at[0]],R.r[R.at[1]]].map(x=>x*.245)"
+            },
+            {
+                "name": "Re-Random",
+                "url": "https://www.bytebeat.cloud/post/474d5dcb-8a9a-4451-bab6-87061011afc3",
+                "date": "May 2, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "starred": 2,
+                "codeOriginal": "t||(z=Array(1<<16).fill(null),F={l:(a,i,c)=>{i-=z[a];z[a]+=i*c;return z[a]},h:(a,i,c)=>i-F.l(a,i,c)},N=random()*2.5,R=0),l=17e3,R++,G=R*N,v=R/l,c=[[0,2,7],[-2,2,7],[-4,0,5],[-5,0,5]][floor(v/8)%4],M=r=>r/256%1-.5,X=M(G*pow(2,c[0|v*8%3]/12)*pow(2,v*2%3|0)|71)*.8*(v%1),s=[...c,...c.map(x=>x-.15),...c.map(x=>x-.3)].reduce((b,l)=>b+=M(22.5+22.5*sin(v*PI)|G/2*pow(2,l/12))*.64*(v/2%1),0),X+=s,B=pow(v%1,.5)*290,X+=sin(B)*3*pow(.003,v%1)*!(v&1),r=pow(v%1,.5)*350,w=F.l(0,random()-.5,.09),X+=(sin(r)*4+w*(v%1/.005)*2)*pow(.0002,v%1)*(v&1),A=F.h(1,random()-.5,.9),X+=A*16*pow(.1,v*4%4%3),F.l(2,X<-(_D=sin(v*PI)*.35+.75)?-_D:X>_D?_D:X,.75+.65*sin(v/8*PI))"
+            },
+            {
+                "name": "tin can grits",
+                "url": "https://www.bytebeat.cloud/post/474d5dcb-8a9a-4451-bab6-87061011afc3",
+                "date": "May 11, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "t||(g=v=n=0,m=[...Array(32).keys()].map(()=>random()*5|0)),atan(m.reduce((x,y)=>x+=((g+=pow(2,g/512e3&7)+(v++/16000*y%1/.2))/16*y/256%1-.5)*.1*pow(.02,v*(1+y)/256e3%3),0)+sin(n++/300)*16*pow(.004,n/16000%(floor(n/32000/1.5)%4==3?.5:1)))*.5"
             }
         ]
     },
@@ -5973,14 +6004,6 @@
                 "codeMinified": "min((t/64)/128,max((-t/64)/128,sin(PI*sin(t*(1+(t>>11&7^5*(1|t>>15))))*PI)/3+sin(PI*sin(4e4/(t&4095|1)))/4+sin(PI*sin(t*(t>>12&1)*(-t>>9&6^5*(t>>15|1))))/4+sin(PI*cos(t/3e3)*10-t/(1|t>>9&t>>12)%1)/2))/(3/2)"
             },
             {
-                "name": "Party rock",
-                "url": "https://www.bytebeat.cloud/post/01422952-33b3-40c6-ac12-044962023474",
-                "date": "Mar 11, 2026",
-                "sampleRate": 32000,
-        "c": true,
-                "codeOriginal": "((t/8*((((t/3328)%16)<1)*(5/2)+((((t/3328)%16)>1)*(((t/3328)%16)<2))*(9/2)+((((t/3328)%16)>2)*(((t/3328)%16)<4))*(3/2)+((((t/3328)%16)>4)*(((t/3328)%16)<6))*(6/2)+((((t/3328)%16)>8)*(((t/3328)%16)<9))*9+((((t/3328)%16)>9)*(((t/3328)%16)<10))*10+((((t/3328)%16)>10)*(((t/3328)%16)<12))*12+((((t/3328)%32)*2)>24)*((((t/3328)%32)*2)<25)*15+((((t/3328)%32)*2)>25)*((((t/3328)%32)*2)<26)*14+((((t/3328)%32)*2)>26)*((((t/3328)%32)*2)<27)*13+((((t/3328)%32)*2)>27)*((((t/3328)%32)*2)<28)*12+((((t/3328)%16)>14)*(((t/3328)%16)<16))*14)+((((t/3328)%16)>16)*(((t/3328)%16)<17))*15)&72)+(((t&255)/(t/(t/8/3328&1?t/16/3328&1?1:2:4)/3328%1))&92)+((((t/2/3328&1)?(t*t*t>>3*t):50000/(t/2%3328))&95)*(1-t/2/3328%1))"
-            },
-            {
                 "name": "Poful bits",
                 "url": "https://www.bytebeat.cloud/post/4b5dc1f0-ae26-4a28-8f2f-39c890210e84",
                 "date": "Mar 12, 2026",
@@ -5995,10 +6018,35 @@
                 "codeOriginal": "b=(a,b)=>(cos(cbrt(a%b)/5))*128,min(255,max(0,(b(((t>2097152)*t*(5+(t>>12&3^1*((t>>13&7^t>>16&15)*3)))/8)/2,98)+b(((t>2097152)*t*(5+(t>>12&3^1*((t>>13&7^t>>16&15)*3)))/8)/2,128)+b((t>2097152)*t*(5+(t>>12&3^1*((t>>13&7^t>>16&15)*3)))/8,134)+b(((t>2097152)*t*(5+(t>>12&3^1*((t>>13&7^t>>16&15)*3)))/8)/3,118)&255)+((p=(sin(sqrt((t&16383||1)*4)))*cos((t/16384%1)*(3/2))*128)*sin(p>0)+128*(t<2097152))+(((t>>12|t>>13^t>>14|t>>15&t>>16)&1)*sin(sqrt((t%4096||1)*10))*cos(sqrt(t/4096%1)*1.5)*64*(t>524288))+((((sin(t**3)+sin(t**5)+sin(t**6))/sin(t/4096%1||1))*3)*(t>1048576))+((((9e4/(t%16384)*(sin(t**3)+sin(t**5)+sin(t**6))))*(t>>14&1))/4*(t>262144))+((((b((t>327680*2.8)*t*(1+(t>>13&7^(t>>12&t>>13&5|t>>15&7))),142)+b((t>327680*2.8)*t*(1+(t>>13&7^(t>>12&t>>13&5|t>>15&7))),182)+b((t>327680*2.8)*t*(1+(t>>13&7^(t>>12&t>>13&5|t>>15&7))),160))/2)-(t<327680*2.8?192:128)))+((b((t>1048576*1.5)*t/5*(1+(((t>>13^t>>15|t>>14)^t>>16)&7)),98)+b((t>1048576*1.5)*t/5*(1+(((t>>13^t>>15|t>>14)^t>>16)&7)),72)-(t>1048576*1.5?192:256)))))"
             },
             {
+                "name": "Normal drum",
+                "url": "https://www.bytebeat.cloud/post/e26a15ba-f8ff-4323-8ae5-e9c1fa9d40a9",
+                "date": "Mar 20, 2026",
+                "sampleRate": 32000,
+                "codeOriginal": "(((((t/(t&163)))%256)/(t/16384%1)&127)/(t>>9&15)*((-t>>12&t>>13&t>>14&-t>>11)&7)&255)/(3/2)+(((((t%63+t%89|t*t*t>>10)*t>>3)&255)/(t>>9&15)*((-t>>12&-t>>13&t>>14&-t>>11)%6)&255)/2*(-t>>13&1))+(((((t*t*t<<2)*t>>10)&255)/(t>>9&7)*(t>>12&1)&255)/4*((t>>16&-t>>14)&1))"
+            },
+            {
+                "name": "Song thing",
+                "url": "https://www.bytebeat.cloud/post/978804af-e2d0-47e9-91ef-7e9d77a6cc38",
+                "date": "Mar 27, 2026",
+                "sampleRate": 22050,
+                "codeOriginal": "((c=t*2-t/(1+(t>>10&7|t>>12&3|t>>17)))%(p=192))/4+(c*(3/2)&p)/3+(c*2&p)/(3/2)"
+            },
+            {
                 "name": "Longer you listen more glitchy is get",
                 "url": "https://dollchan.net/btb/res/11955.html#13735",
                 "date": "Apr 3, 2026",
                 "codeOriginal": "t/(t%(t&((t>>7&t>>6&255)-256)*t>>18)*t>>12)*t>>15"
+            },
+            {
+                "name": "Making bytebeat because im bored",
+                "url": "https://www.bytebeat.cloud/post/402e801e-2677-4961-8903-e140e675a821",
+                "date": "Apr 7, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "SAMPLERATE=44100,",
+"t/=SAMPLERATE/2,",
+"((p=cos((x=t*pow(2,14)*((t*2&5^t/2^t)&7))%512/pow(2,8)*(f=sin((t/16*PI%32)*PI/2)*PI)*14)*(1-x/512%1))*sin(p<0))*2*128-1"
+                ]
             }
         ]
     },
@@ -6577,14 +6625,6 @@
         "author": "Mugei8_71274",
         "children": [
             {
-                "name": "Ceiler",
-                "url": "https://www.bytebeat.cloud/post/f1197d7a-f986-4fbe-a4c2-4339926ed98e",
-                "date": "Apr 9, 2026",
-                "sampleRate": 32000,
-                "codeOriginal": "ceil(sqrt(t*(1+(t>>12&7^t>>13&7|t>>14&7)/12)%256)/5)*24+ceil(sqrt(200000/(t&8191))/5)*10+ceil(sqrt((t/7*(t>>11&7^t>>12&5|t>>15&7))%64+(t/7*(t>>11&7^t>>12&5|t>>15&7))%128)/5)*34-60",
-                "codeMinified": "c=ceil,s=sqrt,c(s(t*(1+(t>>12&7^t>>13&7|t>>14&7)/12)%256)/5)*24+c(s(2e5/(t&8191))/5)*10+c(s((t/7*(t>>11&7^t>>12&5|t>>15&7))%64+(t/7*(t>>11&7^t>>12&5|t>>15&7))%128)/5)*34-60"
-            },
-            {
                 "name": "Ceil n true/false",
                 "url": "https://www.bytebeat.cloud/post/f6ee155f-cc10-4696-92c1-344a82744150",
                 "date": "Apr 12, 2026",
@@ -6621,7 +6661,7 @@
     {
         "author": [
             "Unnamed_Cloud",
-            "VastLingonberry9902"
+            "Vast Lingonberry"
         ],
         "name": "Super Metroid - Escape [900c]",
         "cover": {
@@ -6634,5 +6674,21 @@
         "mode": "Floatbeat",
         "stereo": true,
         "codeOriginal": "(T=t)||(c=f=0,r=v=0,Z=A=0,I=W=0),t/=48000,b=t*PI*2,p=v=>2**(v/12),tri=x=>asin(sin(x))*2/PI,swx=x=>atan(tan(x))*2/PI,sw=x=>atan(tan(x/2))*2/PI,e=b*128*p([0,-12,-12,0,-12,-12,1,-11,-2,-14][t*8%10|0]+[0,0,0,3,0][t/5%5|0]),y=[1,2,10,1,1][t/5%5|0],j=(t*16&1),s=(sw(e*p(.125))+sw(e)+sw(e*p(-.0675))+sw(e/2))*!j/6+(sw(e*p(.125))+sw(e)+sw(e*p(-.0675))+sw(e/2))*j/4,o=(sw(e*p(.124)+PI/2)+sw(e)+sw(e*p(-.067)+PI/2)+sw(e*p(-.125)/2+PI/2))*j/6+(sw(e*p(.124)+PI/2)+sw(e)+sw(e*p(-.067)+PI/2)+sw(e*p(-.125)/2+PI/2))*!j/4,c+=f+=(s-c-f)/(1+(t*8%1)*32+(sin(b/25)/2+.5)*8),r+=v+=(o-r-v)/(1+(t*8%1)*32+(u=sin(b/20)/2+.5)*8),w=[0,0,[0,-5,-12,-7][t*4/5&3],3,0][t/5%5|0],Z+=A+=(((sw(b*32*p(0+w))+sw(b*32*p(.125+w))+sw(b*32*p(-.0675+w))+sw(b*32*p(-.125+w)))/4)-Z-A)/(1+u*32+8),I+=W+=(((sw(b*32*p(w)+PI/2)+sw(b*32*p(.124+w)+PI/2)+sw(b*32*p(-.067+w)+PI/2)+sw(b*32*p(-.127+w)+PI/2))/4)-I-W)/(1+u*32+8),[tanh(c/y+Z),tanh(r/y+I)]"
+    },
+    {
+        "author": [
+            "ThusII",
+            "BaenHoHoHo"
+        ],
+        "name": "Short sweet child o mine",
+        "cover": {
+            "name": "Guns N' Roses - Sweet Child O' Mine",
+            "url": "https://www.youtube.com/watch?v=1w7OgIMMRc4"
+        },
+        "url": "https://www.bytebeat.cloud/post/79656775-f741-4b3b-9c2b-aaa01054bbc1",
+        "date": "May 12, 2026",
+        "sampleRate": 32000,
+        "mode": "Floatbeat",
+        "codeOriginal": "sin(sin(t*PI/128*2**([[-3,-1,2,-3][t/112E3&3],9,4,2,14,2,13,4][t/7E3&7]/12+3)/3))*(1-t/7e3%1)/2"
     }
 ]
