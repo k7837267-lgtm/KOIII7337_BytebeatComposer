@@ -6556,7 +6556,7 @@
                 "mode": "Signed Bytebeat",
                 "sampleRate": 32000,
                 "stereo": true,
-                "codeOriginal": "DRU=atan(sin(sqrt(A=t%([16384,8192,12288,4096][t>>12&3])))*2)*3*(.99975**A)+((random()-.5)*(.9993**(t%[8192,12288,8192,32768][t>>13&3])))*9,p=(spd,a)=>2**(parseInt(a[(t>>spd)%a.length],36)/12),MAI=sin(t/128*PI*p(12,'ELQTJLOP')*(t&131072?1.34:1)-sin(t/128*PI*16)),DRU+MAI"
+                "codeOriginal": "t||(f=[0,0]),R=(b,c)=>(t>>b)*[16,19,21,2,19,3,9,18,2][t>>13&7]|c,a=f[0]+=f[1]+=((B=R(3,t>>11)&255)-f[0]/3-f[1]/9),A=a/8-48,[A,B]"
             },
             {
                 "name": "did something similar to newfall2k's floatbeat test",
