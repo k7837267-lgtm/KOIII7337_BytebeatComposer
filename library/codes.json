@@ -6518,6 +6518,7 @@
                 "date": "May 13, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 34200,
+                "starred": 1,
                 "codeOriginal": "V=-9E9,Octave=0,Pitch=-6,Detune=-20,p=(round(Pitch)+(Octave*12)+(Detune/100)),t||(CC=Array(w=8699).fill(0),a=b=0),c=a+=b+=(2**(p/12)*2**(parseInt('7E7B7E7B4B474B470704070427262726'[t>>13&31],36)/12)-b)/500,Rs=(asin(sin(c/64*PI/1.1)/1.03)/3+atan(tan(t/127*PI*2*2**([V,V,V,V,3,2,3,3,3,3,3,3,3,4,3,3,-1,-1,-1,-1,-.55,-1,-.55,-.55,1,1,1,1,V,V,V,V][t>>13&31]/12)))/8)%256+CC[t%w],CC[t%w]=Rs/1.7,Rs/2"
             },
             {
@@ -6531,11 +6532,13 @@
             {
                 "name": "then, the world shuts down",
                 "url": "https://www.bytebeat.cloud/post/465c7669-a951-4e3a-aa17-c3ae94a9f1bc",
+                "description": "BytebeatCloud's Week 22 Submission",
                 "date": "May 15, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 44100,
                 "stereo": true,
                 "big": true,
+                "starred": 2,
                 "file": "trillwin-6.js",
                 "fileOriginal": true
             },
@@ -6569,6 +6572,7 @@
                 "date": "May 17, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 64000,
+                "starred": 1,
                 "file": "trillwin-7.js",
                 "fileOriginal": true
             }
