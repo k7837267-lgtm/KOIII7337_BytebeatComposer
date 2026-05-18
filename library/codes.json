@@ -5900,6 +5900,7 @@
         "date": "Jan 14, 2026",
         "url": "https://dollchan.net/btb/res/77.html#12049",
         "sampleRate": 48000,
+        "big": true,
         "file": "hypernovaheathen.js",
         "fileOriginal": true
     },
@@ -6518,6 +6519,58 @@
                 "mode": "Floatbeat",
                 "sampleRate": 34200,
                 "codeOriginal": "V=-9E9,Octave=0,Pitch=-6,Detune=-20,p=(round(Pitch)+(Octave*12)+(Detune/100)),t||(CC=Array(w=8699).fill(0),a=b=0),c=a+=b+=(2**(p/12)*2**(parseInt('7E7B7E7B4B474B470704070427262726'[t>>13&31],36)/12)-b)/500,Rs=(asin(sin(c/64*PI/1.1)/1.03)/3+atan(tan(t/127*PI*2*2**([V,V,V,V,3,2,3,3,3,3,3,3,3,4,3,3,-1,-1,-1,-1,-.55,-1,-.55,-.55,1,1,1,1,V,V,V,V][t>>13&31]/12)))/8)%256+CC[t%w],CC[t%w]=Rs/1.7,Rs/2"
+            },
+            {
+                "name": "i cant even make a sound accurate to a clap",
+                "url": "https://www.bytebeat.cloud/post/d6729cd2-6c05-4513-b187-6d75bcd62e33",
+                "date": "May 15, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 36500,
+                "codeOriginal": "t||(Z=[],z1=[]),X=0,callCount=0,lpf=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),hpf=(a,c)=>a-lpf(a,c),bpf=(a,h,l)=>hpf(lpf(a,l),h),lbf=(a,c,v)=>a+lpf(a,c)*v,lpr=(a,c,r)=>((call=callCount++,t||(z1[call+'lp6']=0,z1[call+'lp12']=0),ct=Math.min(c,.999),R=r+r/(1-ct),z1[call+'lp6']+=ct*(a-z1[call+'lp6']+R*(z1[call+'lp6']-z1[call+'lp12']))),z1[call+'lp12']+=ct*(z1[call+'lp6']-z1[call+'lp12'])),hpf(lpr(random()-.5,.35,.6),.02,.3)*(.9997**(t%16384))*5+bpf(sign(sin(t/8*PI)),.05,.08)*(.997**(t%4096))*2"
+            },
+            {
+                "name": "then, the world shuts down",
+                "url": "https://www.bytebeat.cloud/post/465c7669-a951-4e3a-aa17-c3ae94a9f1bc",
+                "date": "May 15, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "stereo": true,
+                "big": true,
+                "file": "trillwin-6.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "if you see the sticker on their shirt, then RUN!!!",
+                "description": "the title is just a joke and isnt refering to anyone (pls ignore the typos)",
+                "url": "https://www.bytebeat.cloud/post/d86c1290-1ae2-4129-b783-c5c34baf9320",
+                "date": "May 16, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 37690,
+                "codeOriginal": "DRU=atan(sin(sqrt(A=t%([16384,8192,12288,4096][t>>12&3])))*2)*3*(.99975**A)+((random()-.5)*(.9993**(t%[8192,12288,8192,32768][t>>13&3])))*9,p=(spd,a)=>2**(parseInt(a[(t>>spd)%a.length],36)/12),MAI=sin(t/128*PI*p(12,'ELQTJLOP')*(t&131072?1.34:1)-sin(t/128*PI*16)),DRU+MAI"
+            },
+            {
+                "name": "stereum",
+                "description": "[L:With Filter, R:Without Filter]",
+                "url": "https://www.bytebeat.cloud/post/6a0fe728-c2c3-408c-b98c-432adfafca14",
+                "date": "May 16, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 32000,
+                "stereo": true,
+                "codeOriginal": "DRU=atan(sin(sqrt(A=t%([16384,8192,12288,4096][t>>12&3])))*2)*3*(.99975**A)+((random()-.5)*(.9993**(t%[8192,12288,8192,32768][t>>13&3])))*9,p=(spd,a)=>2**(parseInt(a[(t>>spd)%a.length],36)/12),MAI=sin(t/128*PI*p(12,'ELQTJLOP')*(t&131072?1.34:1)-sin(t/128*PI*16)),DRU+MAI"
+            },
+            {
+                "name": "did something similar to newfall2k's floatbeat test",
+                "remix": {
+                    "author": "Newfall2020",
+                    "name": "floatbeat test",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1f3ifsh/floatbeat_test/"
+                },
+                "url": "https://www.bytebeat.cloud/post/97229d04-e619-4187-b9b1-3cdb116387af",
+                "date": "May 17, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 64000,
+                "file": "trillwin-7.js",
+                "fileOriginal": true
             }
         ]
     },
