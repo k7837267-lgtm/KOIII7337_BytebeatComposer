@@ -6578,7 +6578,33 @@
                 "starred": 1,
                 "file": "trillwin-7.js",
                 "fileOriginal": true
-            }
+            },
+            {
+                "name": "what did i eat",
+                "description": "the title is just a joke (Sample Rate Decreased By 48000 Due To Music Bug)",
+                "url": "https://www.bytebeat.cloud/post/c140ce30-134d-462b-a9b2-434197c2c167",
+                "date": "May 18, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 48000,
+                "codeOriginal": "t*=2,t&16383?0:r=random(),t?0:D=new Float32Array(s=12288).fill(0),G=(sin(t/64*PI*r)*(1-t/16384%1))%256+D[t%s],D[t%s]=G/1.7,G*64"
+            },
+            {
+                "name": "every kids show i could list",
+                "description": "Demanding On Performance",
+                "url": "https://www.bytebeat.cloud/post/9487fc19-5bbd-4020-b3a6-a787f7fb2cd2",
+                "date": "May 22, 2026",
+                "sampleRate": 48000,
+                "file": "trillwin-8.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "telephone pole",
+                "url": "https://www.bytebeat.cloud/post/4c3a2978-1e27-4dbf-aa62-0bdeb5592639",
+                "date": "May 22, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 48000,
+                "codeOriginal": "t/=1.4,bass=p=>32*sin(t*p*2**(([1,13,1,13,1,13,1,13,-1,11,-1,11,-1,11,-1,11,-3,9,-3,9,-3,9,-3,9,-4,8,-4,8,0,12,0,12][(t>>13)%32]+.5)/12)/128*PI),64*sin(t*2*2**(([1,3,5,6,8,6,5,3,1,3,5,6,8,6,5,3,-1,3,5,6,8,6,5,3,-1,3,5,6,8,6,5,3,-3,3,5,6,8,6,5,3,-3,3,5,6,8,6,5,3,-4,3,5,6,8,6,5,3,0,3,5,6,8,6,5,3][(t>>12)%64]+.5)/12)/64*PI)/2+(bass(.501*8)&128)/3-16"
+            }            
         ]
     },
     { 
