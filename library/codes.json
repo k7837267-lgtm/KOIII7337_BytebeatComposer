@@ -6594,6 +6594,8 @@
                 "url": "https://www.bytebeat.cloud/post/9487fc19-5bbd-4020-b3a6-a787f7fb2cd2",
                 "date": "May 22, 2026",
                 "sampleRate": 48000,
+                "big": true,
+                "slow": true,
                 "file": "trillwin-8.js",
                 "fileOriginal": true
             },
