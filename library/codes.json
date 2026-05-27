@@ -4671,7 +4671,7 @@
         "fileOriginal": true
     },
     {
-        "author": "IncreaseRegular",
+        "author": "Gigorthub (IncreaseRegular)",
         "children": [
 {
         "name": "squsinsaw floatbeat",
@@ -5958,6 +5958,7 @@
         "url": "https://dollchan.net/btb/res/77.html#12049",
         "sampleRate": 48000,
         "big": true,
+        "slow": true,
         "file": "hypernovaheathen.js",
         "fileOriginal": true
     },
