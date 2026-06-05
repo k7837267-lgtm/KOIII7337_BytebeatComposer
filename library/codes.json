@@ -6678,7 +6678,7 @@
         "fileOriginal": true
     },
     {
-        "author": "botbeat",
+        "author": "Carrot / Carrot-Guy / CarrotGuy-Superior",
         "children": [
             {
                 "name": "Serves a purpose",
@@ -6760,6 +6760,45 @@
                 "stereo": true,
                 "big": true,
                 "file": "botbeat-3.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "song of bubbo",
+                "url": "https://www.bytebeat.cloud/post/e03cc759-fe1e-4d1c-b58d-a49f467022cc",
+                "date": "May 1, 2026",
+                "sampleRate": 32000,
+                "mode": "Floatbeat",
+                "file": "botbeat-4.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "irt3",
+                "url": "https://www.bytebeat.cloud/post/e8535e3a-80ba-4d9d-9339-c0ce51a89530",
+                "date": "May 4, 2026",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "stereo": true,
+                "big": true,
+                "file": "botbeat-5.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "little dancing ponies rainbows and magical butterflies who make you eat pixy stix and...",
+                "url": "https://www.bytebeat.cloud/post/e8535e3a-80ba-4d9d-9339-c0ce51a89530",
+                "date": "May 8, 2026",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "codeOriginal": "T=t,C=0,hp=(audio,cutoff)=>(T?(c=C++,hpB[c]??=0,audio-(hpB[c]+=(audio-hpB[c])*cutoff)):hpB=[]),t+=2**22,n=x=>2**(x/12),r=(t,x)=>x&&(sign(7&(t/1.44*2*n(parseInt(\"BPIFKDMKFIHAHIHD\"[x%16],36))*PI/256)))*(1-(t-x*8191)/131072%1)+r(t,x-1),hp(r(t,16)/4,.01)"
+            },
+            {
+                "name": "i am a crystal",
+                "url": "https://www.bytebeat.cloud/post/e8535e3a-80ba-4d9d-9339-c0ce51a89530",
+                "date": "Jun 1, 2026",
+                "sampleRate": 44100,
+                "mode": "Floatbeat",
+                "stereo": true,
+                "big": true,
+                "file": "botbeat-6.js",
                 "fileOriginal": true
             }
         ]
