@@ -6571,6 +6571,20 @@
                 "fileOriginal": true
             },
             {
+                "name": "finished it",
+                "remix": {
+                    "author": "YouLikeHaveMaterials87",
+                    "name": "another scan ytpmv",
+                    "url": "https://www.bytebeat.cloud/post/283ac1e7-dcb1-4797-a1db-1eb006643411"
+                },
+                "url": "https://bytebeat.cloud/post/552953c1-f6ae-47b6-93dc-438403f31f1a",
+                "date": "May 13, 2026",
+                "mode": "Floatbeat",
+                "starred" 1,
+                "sampleRate": 44100,
+                "codeOriginal": "t||(RV=Array(RVA=13570).fill(0)),X=t=>(i=1.2,v=-9E9,f=[-1,4,-1,7,4,6,2,-3,1,4,1,-1,3,6,3,v,v][t/i>>13&15],h=(a,b)=>a((t*4*1/3*2**(f/12))/b*PI),FM=(a,b)=>expm1(h(a,b))/2,(t?(b=atan(2.34*((FM(sin,32)*FM(cos,128))-FM(sin,128)**3))/2.65,l+=r+=(b-l-r*3)/(-cos((t/i%16384)*PI/3.5e4)*250+256),(l*3)-b+FM(sin,128)):l=r=0)*(1-t/i/8192%1))/2,CC=X(t)%256+RV[t%RVA],RV[t%RVA]=CC/1.7,CC+(((t?(b2=9*random()-4,l2+=r2+=(b2-l2-r2*3)/(cos(3.4)*250+256),l2/7):l2=r2=0)*(.9998**((i2=t/1.2)%8192))*((sin((ie=t*5/1.15)/128*PI)+cos(ie/256*PI))*2))/2*(i2>131072))+((random()-.5)*((-i2>>14&1?.999:.9999)**(i2&16383))/(-i2>>14&1?3:2))*(i2>262144)+(sin(t*2**(parseInt('E0E0EJ00JG00DE00E0E0EJ00JG00IE00'[GGie=i2>>13&31],36)/12)/128*PI*('1010110011001100'.repeat(2)[GGie]))**9)*(.9997**(i2%8192))*(i2>524288)"
+            },
+            {
                 "name": "made this for someone on websim",
                 "url": "https://www.bytebeat.cloud/post/dcf503f8-b8d4-46ef-aca1-83a514a255c1",
                 "date": "May 13, 2026",
@@ -6661,7 +6675,79 @@
                 "mode": "Signed Bytebeat",
                 "sampleRate": 48000,
                 "codeOriginal": "t/=1.4,bass=p=>32*sin(t*p*2**(([1,13,1,13,1,13,1,13,-1,11,-1,11,-1,11,-1,11,-3,9,-3,9,-3,9,-3,9,-4,8,-4,8,0,12,0,12][(t>>13)%32]+.5)/12)/128*PI),64*sin(t*2*2**(([1,3,5,6,8,6,5,3,1,3,5,6,8,6,5,3,-1,3,5,6,8,6,5,3,-1,3,5,6,8,6,5,3,-3,3,5,6,8,6,5,3,-3,3,5,6,8,6,5,3,-4,3,5,6,8,6,5,3,0,3,5,6,8,6,5,3][(t>>12)%64]+.5)/12)/64*PI)/2+(bass(.501*8)&128)/3-16"
-            }            
+            },
+            {
+                "name": "made another thing for someone on websim...",
+                "url": "https://bytebeat.cloud/post/b333fe69-e2a3-4516-bb83-40de6e6eb74b",
+                "date": "May 24, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 36000,
+                "stereo": true,
+                "big": true,
+                "starred" 2,
+                "file": "trillwin-9.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "made another thing bc im bored",
+                "url": "https://bytebeat.cloud/post/d130e1f2-d281-4797-b6cf-3b7cabc053ac",
+                "date": "May 26, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "codeOriginal": "tanh(cos(t/512*PI*1.1*8))*(.9998**(t%[32768,32768,32768,8192,32768,32768,8192,2048][t>>14&7]))+sin(3*sqrt(t%16384))/3+(random())*(.999**(t%16384)*(t>>14&1))"
+            },
+            {
+                "name": "does anyone else remember GoNoodle?",
+                "url": "https://bytebeat.cloud/post/5622fec7-cb33-414a-bb2a-4c66b41ddfe2",
+                "date": "May 28, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "codeOriginal": "p=(spd,v)=>2**(parseInt(v[(t>>spd)%v.length],36)/12),(sin(t*1.2*p(13,'TDUTDUKNHKNH')/128*PI)+sin(t/128*PI)+sin(3*sqrt(t%16384)))/3"
+            },
+            {
+                "name": "🖍️",
+                "url": "https://bytebeat.cloud/post/406f91b8-2cdc-46af-9e36-c6dd2e51deec",
+                "date": "May 30, 2026",
+                "codeOriginal": "(t&t>>1?400000/(t&65535):-400000/(t&65535))|(t&t>>13)"
+            },
+            {
+                "name": "Pride Of Bytebeat (Pride Month 2026)",
+                "url": "https://bytebeat.cloud/post/d130e1f2-d281-4797-b6cf-3b7cabc053ac",
+                "date": "Jun 1, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 48000,
+                "starred" 1,
+                "codeOriginal": "t%=1048576*3,n=t=>((t&128?-t:t+64)+32)%256/4,(((t?f+=n((t/4)*2**('AIMV'.charCodeAt(t>>17&3)/76))-f/4:f=0)/4)*(t/32768%1)*(1-t/8191%1))+(sin(sqrt(t%32768))*32)+((random()*32)*(1-t/4096%1)*((A=t<(1048576*2))?'1000'[t>>12&3]:1)*(A?(t%1048576>524288):1))+(sin(sqrt(t%32768)*128)*(t>1048576))"
+            },
+            {
+                "name": "neurofunk remix",
+                "remix": {
+                    "author": "SthephanShi",
+                    "name": "Neurofunk",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/s0laz2/neurofunk/"
+                },
+                "url": "https://bytebeat.cloud/post/56319d7f-77a6-4389-8788-0a263837ef5a",
+                "date": "Jun 2, 2026",
+                "mode": "Floatbeat",
+                "starred" 2,
+                "sampleRate": 32000,
+                "codeOriginal": "t||(Z=[]),X=0,lp=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),hp=(a,c)=>a-lp(a,c),bp=(a,h,l)=>hp(lp(a,l),h),lb=(a,c,e)=>a+lp(a,c)*e,A=j=>t*j/4*((t/4&4096?t/4%65536<59392?7:t/4&7:16)+(1&t/4>>14))>>(3&-t/4>>(t/4&2048?2:10)),S=t=>sign(sin(t)),bp(A(1.01)&255,.06,.4)/256+.1+tanh(sin(1.5*sqrt(t%16384))*5)*(.9992**(t%16384))+lp(S(t/128*PI*4)+S(t/512*PI*8),.1)/2*(.9995**(t%16384))*(t>>14&1)"
+            },
+            {
+                "name": "who remembers this tiktok sound",
+                "url": "https://bytebeat.cloud/post/9d5d39a0-0cae-4da6-80d2-b16116d1664a",
+                "date": "Jun 2, 2026",
+                "sampleRate": 56000,
+                "codeOriginal": "Octave=0,Pitch=-6,Detune=-20,p=(round(Pitch)+(Octave*12)+(Detune/100)),t||(a=b=0),c=a+=b+=(2**(p/12)*2**(parseInt('EEC0'[t>>13&3],36)/12)-b)/500,c*1.9"
+            },
+            {
+                "name": "i keep being gone 🥀🥀🥀",
+                "url": "https://bytebeat.cloud/post/d3c5bbd2-57bc-4b9d-a1fe-7864d978e78a",
+                "date": "Jun 8, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "codeOriginal": "K=tanh(sin(sqrt(t%8192)))*(.9998**(t%8192)),S=(random()-.5)*(.9996**(t%8192)),H=(t%8?RR:RR=random()-.5)*(.9996**(t%8192)),[K,S,H,S,K,S,H,S,K,K,H,H,S,K,S,S][t>>13&15]+atanh(sin(t/128*PI*2**([0,0,-3,-1][t>>16&3]/12)*(1+(t>>19&1)))/1.02)/4"
+            }
         ]
     },
     { 
@@ -6872,5 +6958,29 @@
         "sampleRate": 32000,
         "mode": "Floatbeat",
         "codeOriginal": "sin(sin(t*PI/128*2**([[-3,-1,2,-3][t/112E3&3],9,4,2,14,2,13,4][t/7E3&7]/12+3)/3))*(1-t/7e3%1)/2"
-    }
+    },
+    {
+        "author": "SentleXR",
+        "name": "Laggy bass with filter sweep + my engine",
+        "url": "https://bytebeat.cloud/post/c999548f-66a5-4aec-a5c5-402fb4bd41ea",
+        "description": "\"My first bytebeat in here ever! Shows around 14 seconds of processing on luna197's converter so don't expect from me codes that aren't demanding in performance. I'm sorry.\" - SentleXR",
+        "date": "Jun 3, 2026",
+        "sampleRate": 48000,
+        "mode": "Floatbeat",
+        "stereo": true,
+        "big": true,
+        "slow": true,
+        "file": "SentleXR.js",
+        "fileOriginal": true
+    },
+    {
+        "author": "monkeypatcher",
+        "name": "Self-destruct initiated ...",
+        "url": "https://www.bytebeat.cloud/post/79656775-f741-4b3b-9c2b-aaa01054bbc1",
+        "description": "BytebeatCloud's Week 26 Submission",
+        "date": "Jun 6, 2026",
+        "mode": "Signed Bytebeat",
+        "codeOriginal": "40*(sin(t*.04+(50000*sin(t*.0001))*sin(t*.0005))+sin(t*.5+(40*sin(t*.05))*sin(t*0.0001))+sin(t*.05+(150*sin(t*.0025))*sin(t*.004)))",
+        "codeMinified": "S=sin,40*(S(t*.04+(5E4*S(t*.0001))*S(t*.0005))+S(t*.5+(40*S(t*.05))*S(t*0.0001))+S(t*.05+(150*S(t*.0025))*S(t*.004)))"
+    }    
 ]
