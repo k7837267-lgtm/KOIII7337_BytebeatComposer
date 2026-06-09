@@ -551,7 +551,7 @@ button[name="close"] {
 	max-height: calc(100% - 256px);
 	overflow-y: scroll;
 	color: #d0ffff;
-	font: 16px/20px Tomo;
+	font: 16px/17px Tomo;
 	font-size: 80%;
 	letter-spacing: 0px;
 }
