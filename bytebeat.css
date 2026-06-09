@@ -547,8 +547,8 @@ button[name="close"] {
 
 #error {
 	margin: 0;
-	max-width: 100vw;
-	max-height: calc(100% - 256px);
+	max-width: 70vw;
+	max-height: calc(70% - 256px);
 	overflow-y: scroll;
 	color: #d0ffff;
 	font: 16px/20px Tomo;
