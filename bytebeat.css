@@ -85,8 +85,8 @@
 	--control-text-hover: linear-gradient(to top, #00cfcf, #00004f);
 	--control-volume: linear-gradient(to bottom, #00ffff, #0000ff);
 	--control-volume-hover: linear-gradient(to bottom, #4fffff, #00007f);
-	--editor: #1b4f60;
-	--focus: #6110ef;
+	--editor: #1b1260;
+	--focus: #1b4f60;
 	--font-size: 10.25pt;
 	--library-header: linear-gradient(to bottom, #005080, #203020);
 	--library-header-hover: linear-gradient(to bottom, #0000ff, #000000);
