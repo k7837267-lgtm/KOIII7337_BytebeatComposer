@@ -5619,6 +5619,7 @@
                 "date": "Dec 13, 2025",
                 "sampleRate": 22050,
                 "mode": "Floatbeat",
+                "starred": 2,
                 "file": "pck404-1.js",
                 "fileOriginal": true
             },
@@ -5644,13 +5645,13 @@
                 "fileOriginal": true
             },
             {
-        "name": "Lullaby",
-        "url": "https://www.bytebeat.cloud/post/e457b3ce-b16d-4909-9a47-a7ce5797ca0d",
-        "date": "Jan 01, 2026",
-        "mode": "Floatbeat",
+                "name": "Lullaby",
+                "url": "https://www.bytebeat.cloud/post/e457b3ce-b16d-4909-9a47-a7ce5797ca0d",
+                "date": "Jan 01, 2026",
+                "mode": "Floatbeat",
                 "big": true,
-        "file": "pck404-3.js",
-        "fileOriginal": true
+                "file": "pck404-3.js",
+                "fileOriginal": true
     },
             {
                 "name": "we do no more",
@@ -5676,18 +5677,18 @@
                 "sampleRate": 44100,
                 "mode": "Floatbeat",
                 "big": true,
+                "slow": true,
                 "file": "pck404-5.js",
                 "fileOriginal": true
             },
             {
                 "name": "hard random radio",
-                "url": "https://www.bytebeat.cloud/post/a4fc9c3db236-4c83-a40a-5731579cb7db",
+                "url": "https://www.bytebeat.cloud/post/a4fc9c36-d236-4c83-a40a-5731579cb7db",
                 "description": "BytebeatCloud's Week 13 Submission",
                 "date": "Mar 9, 2026",
                 "starred": 2,
                 "file": "pck404-6.js",
-                "fileOriginal": true,
-                "fileMinified": true
+                "fileOriginal": true
             }
         ]
     },
@@ -5720,7 +5721,7 @@
         "sampleRate": 44100,
         "mode": "Funcbeat",
         "stereo": true,
-                "big": true,
+        "big": true,
         "file": "funcbeatanon.js",
         "fileOriginal": true
     },
