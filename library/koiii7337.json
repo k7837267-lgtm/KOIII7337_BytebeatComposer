@@ -755,6 +755,7 @@
     "date": "Jun 11, 2026",
     "sampleRate": 31750,
     "mode": "Floatbeat",
+    "big": true,
     "file": "KOIII7337-Format.js",
     "fileFormatted": true
   }
