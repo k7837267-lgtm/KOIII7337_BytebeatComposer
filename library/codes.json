@@ -5954,14 +5954,26 @@
     },
     {
         "author": "HypernovaHeathen",
-        "name": "Recon",
-        "date": "Jan 14, 2026",
-        "url": "https://dollchan.net/btb/res/77.html#12049",
-        "sampleRate": 48000,
-        "big": true,
-        "slow": true,
-        "file": "hypernovaheathen.js",
-        "fileOriginal": true
+        "children": [
+            {
+                
+                "name": "Recon",
+                "date": "Jan 14, 2026",
+                "url": "https://dollchan.net/btb/res/77.html#12049",
+                "sampleRate": 48000,
+                "big": true,
+                "slow": true,
+                "file": "hypernovaheathen.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "Extreme Majority OST: Hannah",
+                "date": "Jun 9, 2026",
+                "url": "https://dollchan.net/btb/res/77.html#15401",
+                "sampleRate": 48000,
+                "codeOriginal": "S=Math.sin,C=Math.cos,Q=Math.sqrt,P=Math.pow,o=t*P(1.125,\"2323454523235656\"[t>>15&15])/((-t>>11&1)+16),d=t*P(1.125,\"46574658\"[t>>16&7])/64,g=t*P(1.0625,\"4353\"[t>>19&3])/4,o%16+o/1.01%16+o*1.5%16+o/1.01*1.5%16+S(d+S(d)*0.5)*16+C(d*1.5+C(d*1.5)*0.5)*16+(S(Q(t&16383)*1.25)*((-t>>10&15)+1)+C(Q(t&16383)*1.75)*((-t>>10&15)+1))*(-t>>14&1)+Math.random()*((-t>>7&31)+1)*\"1000\"[t>>12&3]+(g&16)+(g*1.5&16)+64"
+            }
+        ]
     },
     {
         "author": "ThusII",
@@ -6760,7 +6772,7 @@
         "mode": "Floatbeat",
         "sampleRate": 22050,
         "stereo": true,
-                "big": true,
+         "big": true,
         "file": "Cyberslot.js",
         "fileOriginal": true
     },
