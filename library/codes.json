@@ -70,7 +70,7 @@
     {
         "author": "jounim",
         "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
-        "date": "Oct 04, 2011",
+        "date": "Oct 4, 2011",
         "c": true,
         "codeOriginal": "((t&((t>>5)))+(t|((t>>7))))&(t>>6)|(t>>5)&(t*(t>>7))"
     },
@@ -200,7 +200,7 @@
             {
                 "name": "Deep Tones",
                 "url": "https://www.youtube.com/watch?v=V4GfkFbDojc",
-                "date": "July 9, 2016",
+                "date": "Jul 9, 2016",
         "c": true,
                 "codeOriginal": "t*(t*287/256&t>>11&31)"
             },
@@ -211,12 +211,12 @@
                     "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
                 },
                 "url": "https://www.youtube.com/watch?v=V4GfkFbDojc",
-                "date": "July 9, 2016",
+                "date": "Jul 9, 2016",
                 "codeOriginal": "y=t*(t>>10&42),y*2|y+t/64"
             },
             {
                 "url": "https://www.youtube.com/watch?v=V4GfkFbDojc",
-                "date": "July 9, 2016",
+                "date": "Jul 9, 2016",
         "c": true,
                 "codeOriginal": "(t&t+t/256)-t*(t>>15)&64"
             }
@@ -293,6 +293,7 @@
             "min(255,max(0,64+(t*pow(2,(t>>10&0x03)+((t>>14&0x01)+(t>>12&0x03))/12)&0xff)/2+cos(t/(8*(t&0xfff)+1000))*100+(1-(t%0x400)/0x400)*(1.5*sin(t/100000)*sin(t/977.8)*((((t%0x400)*(t%0x400)*1300)%(256-(floor(t/0x2000)&0x03)))-128)+60*sin(t*sin(t/10000)))))",
             ""
         ]
+        "codeMinified": "s=sin,min(255,max(0,64+(t*pow(2,(t>>10&3)+((t>>14&1)+(t>>12&3))/12)&255)/2+cos(t/(8*(t&4095)+1E3))*100+(1-t%1024/1024)*(1.5*s(t/1E5)*s(t/977.8)*(t%1024*(t%1024)*1300%(256-(floor(t/8192)&3))-128)+60*s(t*s(t/1E4)))))"
     },
     {
         "author": "Dresdenboy",
@@ -314,8 +315,11 @@
             },
             {
                 "name": "Visitors from the Dark Side",
-                "url": "https://demozoo.org/music/311730/",
-                "date": "Aug 06, 2022",
+                "url": [
+                    "https://demozoo.org/music/311730/",
+                    "https://dollchan.net/btb/res/220.html#220"
+                ],
+                "date": "Aug 6, 2022",
                 "starred": 1,
                 "sampleRate": 44100,
                 "codeOriginal": "max(0,min(128,(b=-t*1.0595**('0010010030705503'[t>>13&15]-12+3*(t>>18&1))&255,c=b**3>>5,sin(b*(.2+sin(t/6E6))*.2)*c+c)*(-t&8191)>>18))-((sqrt(t&8183)<<6&64)*(t>>15&1^t>>13)-(t&15))*(1048576<t)+(t&16383)*(-t>>3&511)/7E4*random()*(524288<t)"
@@ -349,7 +353,10 @@
             },
             {
                 "name": "Steady On Tim, It's Only A Budget Game",
-                "url": "https://demozoo.org/music/305284/",
+                "url": [
+                    "https://demozoo.org/music/305284/",
+                    "http://www.sizecoding.org/wiki/Steady_On_Tim"
+                ],
                 "date": "Feb 12, 2022",
                 "starred": 2,
                 "sampleRate": 44100,
@@ -358,7 +365,7 @@
             {
                 "name": "Byteklub",
                 "url": "https://demozoo.org/music/311731/",
-                "date": "Aug 06, 2022",
+                "date": "Aug 6, 2022",
                 "sampleRate": 44100,
                 "codeOriginal": "S=n=>sin(i=t*2**((n+5)/12)/20.3)+sin(i/2),T=t/5e3,a=[2674,2384,1856,3186][(T&16?17179870639:4)>>(~T&31)*2&3],(t/[8,4,4.5][25920>>T%8*2&3]&127)*(1-T%1)/2+128+3*(2+((2709919840>>T%16*2)&3)-T%1)*(S(a&15)+S(a>>4&15)+S(a>>8))+(1-T%4/4)**3*((t%1e4/(9+(T%4)))&32)"
             }
