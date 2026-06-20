@@ -266,12 +266,18 @@ class audioProcessor extends AudioWorkletProcessor {
 					return result
 				}
 			},
+			// EnBeat_NEW Exotic Functions
 			/*sin that loops every 128 "steps", instead of every pi steps*/"sinf": function (x) { return Math.sin(x / (128 / Math.PI)) },
 			/*cos that loops every 128 "steps", instead of every pi steps*/"cosf": function (x) { return Math.cos(x / (128 / Math.PI)) },
 			/*tan that loops every 128 "steps", instead of every pi steps*/"tanf": function (x) { return Math.tan(x / (128 / Math.PI)) },
-			/*converts t into a string composed of it's bits, regex's that*/"regG": function (t, X) { return X.test(t.toString(2)) }
-			/*corrupt sound"crpt": function(x,y=8) {return chyx.br(chyx.br(x,y)+t,y)^chyx.br(t,y)},
-			decorrupt sound"decrpt": function(x,y=8) {return chyx.br(chyx.br(x^chyx.br(t,y),y)-t,y)},*/
+			/*converts t into a string composed of it's bits, regex's that*/"regG": function (t, X) { return X.test(t.toString(2)) },
+				// Somehow Scrapped New Exotic Functions
+			/*corrupt sound*/"crpt": function(x,y=8) {return chyx.br(chyx.br(x,y)+t,y)^chyx.br(t,y)},
+			/*decorrupt sound*/"decrpt": function(x,y=8) {return chyx.br(chyx.br(x^chyx.br(t,y),y)-t,y)},
+		// D3nschøt's ThisBeat2.1 Exotic Functions (Extended Waveform Generator)
+		"saw": t => t % 256,
+			"tri": t => Math.abs((t % 512) - 256),
+			"sq": t => t % 256 < 128 ? 255 : 0
 		}
 		// Create shortened Math functions
 		const params = Object.getOwnPropertyNames(Math);
