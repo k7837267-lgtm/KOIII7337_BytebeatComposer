@@ -148,18 +148,31 @@
 					<b>Bytebeat:</b> expects output is an unsigned 8bit value (0 to 255).<br>
 					<b>Signed bytebeat:</b> assumes output is a signed 8bit value (-128 to 127).<br>
 					<b>Floatbeat:</b> assumes output is -1.0 to 1.0.<br>
-					<b>Funcbeat:</b> statement based mode<br>
+					<b>Funcbeat:</b> statement based mode. A Mode By SArpnt.<br>
 					<b>Bitbeat:</b> expects output is an only-used LSB (0 to 1)<br>
 					<b>Tanmode:</b> a mode made by psub (zopium)<br>
+					<b>Loghack:</b> Exotic Mode<br>
+					<b>Loghack2:</b> Another Exotic Mode<br>
+					<b>Inverted bytebeat:</b> a mode made by Gigorthub & Modified By KOIII7337 (Me!)<br>
 					<br>
 					This website is the fork of <a href="http://entropedia.co.uk/generative_music/" target="_blank">8-bit Generative Composer</a> by <a href="http://twitter.com/paul_hayes/" target="_blank">@paul_hayes</a>.<br>
 					Forked by SthephanShi aka Viraya.<br>
 					<br>
-					Custom functions by Chasyxx include: <ul>
+					Custom Functions By Chasyxx Include: <ul>
 						<li>bitC: <b>(X,Y,Z)</b> => <i>X</i>&amp;<i>Y</i>?<i>Z</i>:0</li>
 						<li>br: <b>(T,SIZE)</b> => Bit reverses <i>SIZE</i> bits of <i>T</i>, discards the other bits</li>
 						<li><b><i>sinf, cosf, tanf</i>: (X)</b> => <i>sin, cos, tan</i> but inputting t will output the same freqency as t by itself. AKA the function loops around every 256 "steps" instead of every 2pi steps</li>
 						<li>regG: <b>(T,regEx)</b> => takes a string of <i>T</i>'s bits, and tests against <i>regEx</i> for a match. Outputs a boolean.</li>
+					</ul>
+					Other Functions Include: <ul>
+						<li>crpt: <b>(X,Y=8,Z)</b> => Corrupts The Sound.</li>
+						<li>decrpt: <b>(X,Y=8,Z)</b> => Decorrupts The Sound.</li>
+					</ul>
+					These Were Somehow Scrapped Functions But Somehow I Brought These Back.
+					Functions From ThisBeat2.1 Include: <ul>
+						<li><b><i>saw</i>: (X)</b> => Generates A Sawtooth Wave.</li>
+						<li><b><i>sq</i>: (X)</b> => Generates A Square Wave.</li>
+						<li><b><i>tri</i>: (X)</b> => Generates A Triangle Wave.</li>
 					</ul>
 					<b>Note from Chasyxx (modified by BSquareII):</b><br>
 					Using any of these functions makes your code exotic, meaning that it won't be added to the dollchan.net library.<br>
