@@ -5650,7 +5650,7 @@
             },
             {
                 "url": "https://www.bytebeat.cloud/post/4911d857-dd4c-4882-804e-1c97e3c3d0a9",
-                "description": "Used (int) To Make It Still C-Compatible."
+                "description": "Used (int) To Make It Still C-Compatible.",
                 "date": "Apr 10, 2026",
                 "c": true,
                 "codeOriginal": "(4*t*((t>>10&7)&(t>>13&255))&255)/5+(t*((t>>11&31)&(t>>13&255))&255)/5*!!(t&32768)+((4000000000000/(((1<<18)*(t%1024+1024)|t%1024+1024^t%1024+1024)|1)+4*t%1024+1024|(t%1024+1024>>2))*((t>>10&3)==0?255:0)&255)/2+((t&32767)/((t&32767)*(t&32767)>>((t&32767)>>8|(t&32767)>>7|(t&32767)*(t&32767)>>9))&255)/6",
