@@ -4314,7 +4314,7 @@
                 "name": "number 69420 ei koskaan or somrhing",
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/27.html#6304",
-                "date": "May 08, 2025",
+                "date": "May 8, 2025",
                 "sampleRate": 48000,
                 "codeOriginal": [
                     "f=(v,x,s=0.1)=>x!=0?f(abs(v-s*4)+s,x-1):v,",
@@ -4330,6 +4330,16 @@
                     ")/1.5-0.5"
                 ],
                 "codeMinified": "f=(v,x,s=.1)=>x?f(abs(v-s*4)+s,x-1):v,w=(t,x)=>f(cos(t/48000*PI*x/2),16,1e-3)+.01,wt=j=>w(t,440*2**(j/12)/2)*10-2,l=\"1144  11  113344  11  11334400001144  11  113344  6 666 66442222\"[t/1.2>>12&63],(wt(l)*(L=l!=\" \")/3+wt((l|0)+5)*L/3+wt((l|0)+10)*L/3)/1.5-.5"
+            },
+            {
+                "name": "MININ ISI",
+                "mode": "Floatbeat",
+                "starred" 2,
+                "url": "https://dollchan.net/btb/res/27.html#15695",
+                "date": "Jun 21, 2026",
+                "sampleRate": 32000,
+                "file": "Kolbosa.js",
+                "fileOriginal": true
             }
         ]
     },
@@ -5728,19 +5738,30 @@
         "author": "pck404 *(Creator Of BytebeatCloud)*",
         "children": [
             {
-        "name": "momentum presence",
-        "url": "https://www.bytebeat.cloud/post/447ebb36-fc8e-47e8-9a0c-d7183cd9d877",
-        "date": "Dec 13, 2025",
-        "mode": "Floatbeat",
+                "name": "momentum presence",
+                "url": "https://www.bytebeat.cloud/post/447ebb36-fc8e-47e8-9a0c-d7183cd9d877",
+                "date": "Dec 12, 2025",
+                "mode": "Floatbeat",
                 "big": true,
-        "file": "pck404.js",
-        "fileOriginal": true
-    },
+                "starred": 1,
+                "file": "pck404.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "morale incident",
+                "url": "https://www.bytebeat.cloud/post/8aac616f-5981-44bc-b7bd-d8e6ddcd3ac7",
+                "date": "Dec 12, 2025",
+                "sampleRate": 44100,
+                "mode": "Floatbeat",
+                "starred": 2,
+                "file": "pck404-7.js",
+                "fileOriginal": true
+            },
             {
                 "name": "rêverie subaquatique",
                 "url": "https://www.bytebeat.cloud/post/9fb8de73-8167-4330-adf0-9e21e7f01ac0",
                 "description": "BytebeatCloud's Week 1 Submission",
-                "date": "Dec 13, 2025",
+                "date": "Dec 12, 2025",
                 "sampleRate": 22050,
                 "mode": "Floatbeat",
                 "starred": 2,
@@ -5771,7 +5792,7 @@
             {
                 "name": "Lullaby",
                 "url": "https://www.bytebeat.cloud/post/e457b3ce-b16d-4909-9a47-a7ce5797ca0d",
-                "date": "Jan 01, 2026",
+                "date": "Jan 1, 2026",
                 "mode": "Floatbeat",
                 "big": true,
                 "file": "pck404-3.js",
