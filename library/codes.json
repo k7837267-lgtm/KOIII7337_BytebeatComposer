@@ -4355,6 +4355,7 @@
                 "date": "Feb 04, 2025",
                 "sampleRate": 48000,
                 "stereo": true,
+                "big": true,
                 "file": "eslash.js",
                 "fileOriginal": true
             },
