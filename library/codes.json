@@ -7157,6 +7157,15 @@
         "codeMinified": "S=sin,40*(S(t*.04+(5E4*S(t*.0001))*S(t*.0005))+S(t*.5+(40*S(t*.05))*S(t*0.0001))+S(t*.05+(150*S(t*.0025))*S(t*.004)))"
     },
     {
+        "author": "EYFTDL",
+        "description": "Why Did I Add This.",
+        "date": "Jun 13, 2026",
+        "mode": "Floatbeat",
+        "sampleRate": 48000,
+        "file": "WhyDidIAddThis.js",
+        "fileOriginal": true
+    },
+    {
         "author": "Gl4z3rBl1tz",
         "url": "https://dollchan.net/btb/res/3.html#15563",
         "date": "Jun 17, 2026",
