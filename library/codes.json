@@ -7157,7 +7157,7 @@
         "codeMinified": "S=sin,40*(S(t*.04+(5E4*S(t*.0001))*S(t*.0005))+S(t*.5+(40*S(t*.05))*S(t*0.0001))+S(t*.05+(150*S(t*.0025))*S(t*.004)))"
     },
     {
-        "author": "EYFTDL",
+        "author": "EYFTDL", 
         "cover": [
             {
                 "name": "YOU FOUND LOST MEDIA!",
