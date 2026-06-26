@@ -7157,14 +7157,14 @@
         "codeMinified": "S=sin,40*(S(t*.04+(5E4*S(t*.0001))*S(t*.0005))+S(t*.5+(40*S(t*.05))*S(t*0.0001))+S(t*.05+(150*S(t*.0025))*S(t*.004)))"
     },
     {
-        "author": "EYFTDL", 
+        "author": "EYFTDL",
         "cover": [
             {
                 "name": "YOU FOUND LOST MEDIA!",
                 "url": "https://www.youtube.com/watch?v=P_1ohkk3aQM"
             },
             {
-                "name": "Anthony Hampton - Schoolhouse Trouble! (Baldi's Basics Classic Remastered OST)"
+                "name": "Anthony Hampton - Schoolhouse Trouble! (Baldi's Basics Classic Remastered OST)",
                 "url": "https://www.youtube.com/watch?v=PaoFEp9kP68"
             }
         ],
