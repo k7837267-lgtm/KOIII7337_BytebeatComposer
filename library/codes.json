@@ -6054,6 +6054,15 @@
 "(g('MT2023  ',14,64)&63)+",
 "(g(\"MaxiToys\",12,128)&63)"
 ]
+            },
+            {
+                "name": "Mo Beats - Righteous",
+                "url": "https://www.bytebeat.cloud/post/5dd4b164-37b1-489f-87fe-1cab921e0a71",
+                "description": "BytebeatCloud's Week 16 Submission",
+                "date": "Apr 4, 2026",
+                "sampleRate": 44100,
+                "starred": 2,
+                "codeOriginal": "n=(x)=>t/8*2**(parseInt(x[t>>14&31],36)/12)&31,c=(x,y,z,w,q)=>n(x)+n(y)+n(z)+n(w)+n(q),c('11111111111113335555555555555555','55555555555557778888888888888888','8888888888888AAAFFFFFFFFHHHHHHHH','CCCCCCCCCCCCCFFFJJJJJJJJ????????','?????????????OOO????????????????')+(t*(1+(t>>16&1))*2**('8730'[(t>>(12-'0010'[g=t>>15&3])^'0003'[g])&3]/12)&64)"
             }
                 ]
 },
