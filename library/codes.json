@@ -6091,6 +6091,14 @@
                 "sampleRate": 44100,
                 "starred": 1,
                 "codeOriginal": "bpm=t/44100*65/60*4,n=(x,y)=>t/(172.27/261.63*2)/y*2**(parseInt(x[bpm&63],36)/12),c=(x,y,z,w,r)=>(n(x,w)&r)+(n(y,w)&r)+(n(z,w)&r),c(\"GGJ_BBJ_GGJ_BBJ_FFI,BBI_GGJ_BBJ_GGJ_FFJ_EEJ_DDJ_FFFFBBBBGG__B976\",\"__N___N___N___N___L___L___N___N___N___N___N___N_LLLLLLLLJJ__NLJI\",\"_\".repeat(56)+\"NN\",8,63)/2+c(\"777_____4466777_3344666_4466777_777_77__4466777_333333334444444\",\"BBBCBB997799BBB_6677999_7799BBB_BBBCBB997799BBB_6666666677\",\"_\".repeat(52)+\"BBBB\",1,64)/2"
+            },
+            {
+                "name": "Places - BFB OST",
+                "description": "\"A Little Inaccurate, But I Could Appreciate The Effort You Put In.\" - KOIII7337",
+                "url": "https://www.bytebeat.cloud/post/c70f1bd5-e245-48d9-a857-bf54eb18ea74",
+                "date": "May 25, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "bpm=t/44100*140/60,n=(x)=>t/16/(11025/64/261.63)*2**(((q=x.charCodeAt(bpm*2%64))-23)/12)*(q<127),c=n(\"AAAACCCCEEEECCCCAAAACCCCEEEE@@EEAAAA@@@@CCCCCCCCEEEECCCCEEEEEEEE\"),c1=n(\"FFFFFFFFJJJJHHHH\"[r='repeat'](2)+\"FFFFEEEEHHHHIIIIHHHHFFFFJJJJHHHH\"),c2=n(\"JJJJJJJJMMMMLLLL\"[r](2)+\"JJJJHHHHLLLLLLLLLLLLMMMMMMMMLLLL\"),c3=n(\"£\"[r](40)+\"JJJJ\"+\"£\"[r](20),0),mel=n(\"VVTRQQOO£TRQOOMMVVTRQQOQQOMLL€QTVVTRQQOO£TRQOOMMOOQRQQOQQOMOOO£££\"),(mel%256/5)/128*(96+(~(bpm*128+64*(\"00010000010100000001000111011101000100000101000000010001110100\"[bpm*2%64|0]))&127))+(c%256/5+c1%256/5+c2%256/5)/(1.5-.5*(\"0101100101001001\"[bpm*2&15]))+((16/(bpm*2%1)&64)*\"1010011010110110\"[bpm*2&15]+(32/(bpm*2%1)&64)*\"0010001000100010\"[bpm*2&15]+(random()*(~(bpm*64)&63)))/2.5"
             }
                 ]
 },
