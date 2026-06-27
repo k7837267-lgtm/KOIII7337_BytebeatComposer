@@ -6036,6 +6036,23 @@
 ]
             },
             {
+                "name": "ti3699 & N3330x64 & KOIII7337 (ASCII)",
+                "description": "\"Here Again.\" - KOIII7337",
+                "remix": {
+                           "author": "mqdantee",
+                           "name": "ti3699 & N3330x64 & KOIII7337",
+                           "url": "https://www.bytebeat.cloud/post/5a9d4756-4bb5-4124-bc7b-3a90a7ba0c3c"
+                },
+                "url": "https://www.bytebeat.cloud/post/4924af0d-bdda-4ee1-b6b2-ddf96ee25cd7",
+                "date": "Mar 28, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": [
+"g=(x,z,y)=>t/y*(2**(floor(x.charCodeAt((t>>z)%x.length)/5+4)%7))*2**([2,4,7,9,11][x.charCodeAt((t>>z)%x.length)%5]/12),(g(\"ti3699\",15,16)&96)/64*(~t>>9&63)+",
+"(g(\"N3330x64\",12,32)&64)/64*(~t>>6&63)+",
+"(g(\"KOIII7337\",13,32)&63)/64*(~t>>7&63)",
+]
+            },
+            {
                 "name": "t&t>>14 Pentatonic",
                 "url": "https://www.bytebeat.cloud/post/5b32adc6-483a-4f2b-b2c0-e4c5dd3c832b",
                 "date": "Mar 27, 2026",
