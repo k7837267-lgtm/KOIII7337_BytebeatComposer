@@ -6034,6 +6034,14 @@
 "(g(\"BSquareII_ANoUserXD\",15,64)&64)/64*(~t>>9&63)+",
 "(g(\"GreenOneTheCreator37\",14,32)&63)/64*(~t>>8&63)+(g(\"greenandyellowcatjuice\",12,64)&64)/64*(~t>>6&63)"
 ]
+            },
+            {
+                "name": "t&t>>14 Pentatonic",
+                "url": "https://www.bytebeat.cloud/post/5b32adc6-483a-4f2b-b2c0-e4c5dd3c832b",
+                "date": "Mar 27, 2026",
+                "sampleRate": 44100,
+                "starred": 1,
+                "codeOriginal": "(t>>(t>>3)*(t&32768?1.05:1)&64)+(4e5/(t&[16383,12287,2147483647,12287,16383,12287,2147483647,5728][(t>>14)%8])&64)"
             }
                 ]
 },
