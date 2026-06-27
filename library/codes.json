@@ -6084,6 +6084,13 @@
                 "sampleRate": 44100,
                 "starred": 2,
                 "codeOriginal": "bpm=t/44100*162/60,n=(x,y)=>t/y*2**(x/12)&32,k=(x)=>n(x[0],16)*(~(bpm*2)&1)+(n(x[1],16)+n(x[2],16))*(bpm*2&1),æ=(x,y,z)=>n(parseInt (x[bpm&15],36),4)+n(parseInt (y[bpm&15],36),4)+n(parseInt (z[bpm&15],36),4),k([[5,17,20],[10,22,26],[3,15,19],[8,20,24],[2,14,17],[7,19,23],[0,12,15],[0,12,16]][bpm/2&7])/64*(10+(~(bpm*128)&63))+æ(\"C7587EC7C758754?\",\"F?ACAHFCH?BBA8G?\",\"OJHKJQOJOJHKJHJ?\")/32*(10+((~(bpm*32*(\"12\"+\"1\".repeat(6)).repeat(2)[bpm&15])&31)))"
+            },
+            {
+                "name": "London Bridge is Falling Down Minor Key",
+                "url": "https://www.bytebeat.cloud/post/a30b01bf-06fe-4bdb-b184-a3c2ff9d3517",
+                "date": "Apr 30, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "bpm=t/44100*65/60*4,n=(x,y)=>t/(172.27/261.63*2)/y*2**(parseInt(x[bpm&63],36)/12),c=(x,y,z,w,r)=>(n(x,w)&r)+(n(y,w)&r)+(n(z,w)&r),c(\"GGJ_BBJ_GGJ_BBJ_FFI,BBI_GGJ_BBJ_GGJ_FFJ_EEJ_DDJ_FFFFBBBBGG__B976\",\"__N___N___N___N___L___L___N___N___N___N___N___N_LLLLLLLLJJ__NLJI\",\"_\".repeat(56)+\"NN\",8,63)/2+c(\"777_____4466777_3344666_4466777_777_77__4466777_333333334444444\",\"BBBCBB997799BBB_6677999_7799BBB_BBBCBB997799BBB_6666666677\",\"_\".repeat(52)+\"BBBB\",1,64)/2"
             }
                 ]
 },
