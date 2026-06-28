@@ -5435,6 +5435,15 @@
         "author": "ccret2022 (NEW)",
         "children": [
             {
+                "name": "experimenting with fm synthesis",
+                "description": "\"I Kinda Regret Adding It Back.\" - KOIII7337",
+                "url": "https://ihsoyct.github.io/index.html?comments=1od8sfs",
+                "date": "Oct 22, 2025",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "codeOriginal": "t/=1.35,pt=1.06,ii=28/25,iii=13/11,iv=151/113,v=223/149,vi=19/12,vii=16/9,fm=(v,u,m,r)=>sin(v*pt*PI/2**7+sin(v*pt*PI/2**u)*m+sin(v*pt*PI/2**r)*m)/2,o=w=>atan(fm(w,6,.06*(-t>>5&255)/8*abs(sin(t*PI/2**19)),5)*4)/4000*((-t>>5&255)+150),f=V=>o(V/1.005)+o(V*1.005),f(t*[1,vi/2,vii/2,t&32768?iv:iii][t>>16&3])+f(t*[iii,1,ii,t&32768?vii:iv][t>>16&3])+f(t*[v,iii,iv,t&32768?2:vii][t>>16&3])+fm(t/2*[1,0,0,0,2,1,0,1,0,1,1,1,2,vii,v,iii,v/2,0,v,v/2,0,v/2,v/2,iii/2,0,iii/2,0,iii/2,0,0,0,0,iv/2,0,iv,iv/2,0,iv,iv/2,0,v/2,0,v/2,iii,vi/2,0,ii/2,vii/2,iv,0,iv*2,2,0,vi*2,v,0,v,0,v/2,v,0,0,v/2,vii/2][t>>12&63],3,1*(-t>>4&255)/80+.6,7)*1.2+atan(sin(sqrt(t&8191)+sin(sqrt(t&8191))*(-t>>5&255)/130)*3+random()/3)*(-t>>5&255)*'1  1 1  '[t>>13&7]/290+(sin((t>>3)*sin(t>>2))/500+sin(sqrt(t*8&2**17-1))/800)*(-t>>6&255)*(t>>14&1)+(random()-.5)*(-t>>4&255)*((-t>>6&255)+200)/1.5e5"
+            },
+            {
                 "url": "https://www.reddit.com/r/DollchanBytebeat/comments/1ofut3h/holyfuckingshitimsinewavingitsofuckinggoodgoonacum/",
                 "date": "Oct 25, 2025",
                 "sampleRate": 75000,
