@@ -3990,12 +3990,20 @@
         ]
     },
     {
+        "author": "!{G&Ycatjuice}? (greenandyellowcatjuice)",
+        "name": "808 points collected",
+        "date": "Dec 24, 2025",
+        "mode": "Floatbeat"
+        "sampleRate": 48000,
+        "codeOriginal": "BPM=135,SR=48E3,tf=abs(t/SR*32768/120*BPM),sidechain=min(1,tf/4096%4),btf=(a)=>a%256/128-1,p=[0,0,0,0,0,0,3,1][tf>>13&7],kick=tanh(sin(cbrt(tf%16384)**0.8*10))*max(0,1-tf/4096%4)/2,hihat=sin((t|0)**3)*max(0,1-tf/4096%2)*sidechain/16,snare=sin((t/7|0)**3)*max(0,1-tf/8192%2)*(tf>>14&1)/4*sidechain,cowbell=(btf(t*1.7*2**(p/12))+btf(t*1.7*2**(7/12)*2**(p/12)))*max(0,1-tf/4096%2)/7,(kick+hihat+snare+cowbell)*10"
+    },
+    {
         "author": "ProcessedGradient (TrashImpossible3699)",
         "children": [
             {
                 "name": "wurm :0",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1hsja96/wurm_0/",
-                "date": "Jan 03, 2025",
+                "date": "Jan 3, 2025",
                 "sampleRate": 44100,
                 "codeOriginal": [
                     "S=7487,",
@@ -4040,7 +4048,7 @@
                 "codeOriginal": "a=0<t?a:[0,0],M=r=>pow(2,r/12),w=10000*sin(t*PI/2500/64),R=[0,3,7,10][(w+t)/2500%4|0],g=[0,0,7,5][(w+t)/8/2500%4|0],a[0]+=a[1]+=(atan(tan(t*PI/256*M(R)*M(g)))*.2-a[0]-a[1])/(1+((w+t)*64/2500&63)),a[0]"
             },
             {
-                "date": "May 03, 2025",
+                "date": "May 3, 2025",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
                 "codeOriginal": [
@@ -4064,7 +4072,7 @@
                     "url": "https://www.reddit.com/r/bytebeat/comments/1kzki7c/gdi_skid_repellent/"
                 },
                 "url": "https://www.reddit.com/r/bytebeat/comments/1kzki7c/comment/mvv8x5x/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
-                "date": "Jun 03, 2025",
+                "date": "Jun 3, 2025",
                 "mode": "Floatbeat",
                 "codeOriginal": "rd=t*2*\"1122112112112112\"[t/1024&15],qd=rd*pow(2,(t&32768?[0,3,5,7,8,10,12,-2]:[0,3,5,7,8,10,12,7])[t/4096&7]/12),lqd=t*2*pow(2,[0,0,3,(t&4096?-2:7)][t/8192&3]/12),((qd/2%128+((lqd&64?-lqd:lqd)&127)+sin(sin(t*1e15)*1e5)*64/exp(t/1024%1/.1)+sin(4e3/((t%4096)+50))*512/exp(t/4096%1/.6)+sin(sin(t*1e17)*1e8)*512/exp(t/4096%1/.095)*(1&t>>12))*.5)/127-.5"
             },
@@ -4081,7 +4089,7 @@
             {
                 "name": "lankku",
                 "url": "https://www.reddit.com/r/bytebeat_2/comments/1n9xngk/a/",
-                "date": "Sep 06, 2025",
+                "date": "Sep 6, 2025",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "big": true,
@@ -4675,6 +4683,14 @@
         ]
     },
     {
+        "author": "CompressedCode",
+        "name": "i love you",
+        "date": "Apr 15, 2025",
+        "mode": "Floatbeat",
+        "sampleRate": 48000,
+        "codeOriginal": "T=t*1.1,((a=(t*2**(((1*!!(T>>19)+(T>>13&3)>>((T>>13&t)&3))/12)*7))*[1.01,1.01,1.2,1.35,1.01,1.01,0.9,0.8][T>>16&7]/2),a=(a%256/2)+(a*1.01%256/2),asin(sin(a/128))/1.6+asin(sin(sqrt(t%32768)))*8*(1-t%32768/32768)**6+asin(sin(t**18))*4*(1-t%32768/32768)**4*(t>>15&1),abs(sin(a%256/32-(t/4*PI)*(T>>20&1)))+(asin(sin(1.3*sqrt(T%(e=65536>>(T>>14&1^T>>12&3)))))*8*(1-T%e/e)**8+sin(a/128*PI)*sin((t/8|0)**18)*(1-T%(f=32768>>(T>>14&1))/f)**6*8*(T>>15&1)+random()*8*(1-T%8192/8192)**8)/4)-0.5"
+    },
+    {
         "author": "Cattoadishere",
         "cover": {
             "name": "Ethereal Workshop - Full Song Wave 7 (My Singing Monsters)",
@@ -4686,7 +4702,7 @@
         "date": "Apr 19, 2025",
         "sampleRate": 48000,
         "slow": true,
-                "big": true,
+        "big": true,
         "file": "cattoadishere.js",
         "fileOriginal": true
     },
@@ -7182,6 +7198,52 @@
                 "sampleRate": 44100,
                 "codeOriginal": "min(max(ceil(sqrt((t*(1+((t>>13^t>>14|t>>12)&7)))&255)/5)*32*(t<262144?1:(t>>8&63)/64)+ceil(sqrt(-t&49152?t&16383:(t*(t*t/256))*5e7)*50&255)/(1+(t>>8&63)/16)*(t>262144)+ceil(sqrt(sign(sin(t/8^t/4|t>>9&1))*t&255)/2)*32*((-t>>8&31)/64),0),255)",
                 "codeMinified": "c=ceil,s=sqrt,min(max(c(s((t*(1+((t>>13^t>>14|t>>12)&7)))&255)/5)*32*(t<262144?1:(t>>8&63)/64)+c(s(-t&49152?t&16383:(t*(t*t/256))*5e7)*50&255)/(1+(t>>8&63)/16)*(t>262144)+c(s(sign(sin(t/8^t/4|t>>9&1))*t&255)/2)*32*((-t>>8&31)/64),0),255)"
+            }
+        ]
+    },
+    {
+        "author": [
+            "Kyler_cool_thingys (KylerByetbeatthings",
+            "Choer)"
+        ],
+        "children": [
+            {
+                "name": "I'm waiting",
+                "date": "Apr 15, 2026",
+                "file": "Kyler.js",
+                "fileOriginal": true,
+            },
+            {
+                "name": "You know what sin needs? Five more sins",
+                "date": "Apr 17, 2026",
+                "sampleRate": 6000,
+                "file": "Kyler-1.js",
+                "fileOriginal": true,
+            },
+            {
+                "name": "Synth chade",
+                "date": "May 1, 2026",
+                "sampleRate": 11025,
+                "file": "Kyler-2.js",
+                "fileOriginal": true,
+            },
+            {
+                "name": "Eerie",
+                "date": "May 13, 2026",
+                "sampleRate": 11025,
+                "file": "Kyler-3.js",
+                "fileOriginal": true,
+            },
+            {
+                "name": "Most normal byetbeat I probably made",
+                "date": "Jun 24, 2026",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "[((64*sin(t/3/5.0931/4*[12,12,9,12,12,9,12,12,9,12,12,9,12,9,12,9][t>>12&15]*[1,.89,.8,.75,.8,.75,.6,.56][t>>15&7])^128) ",
+"+ ",
+"(64*sin(t/3/5.0931/4*[6,7,8,6,6,7,8,6,6,7,8,6,6,9,8,6][t>>13&15]))",
+"),(t?0:z=0,v=~t>>15,u=t>>13,z+=x=2**((u&1^!(v&3))+(u/4&1^!(v&11))+2*!(v&15)),z%=w=16384,z/w*((C=t=>(S=(p,t)=>t*2**(p[u>>4&3]/12)&255)('0000',t)+S('7745',t)+S([10,9,7,8],t)+S([15,17,11,15],t)>>2)((1+(u&1)))>C(t)&&128)+(1-z/w)*(50/(x/z)**.5&128))]"
+                ]
             }
         ]
     },
