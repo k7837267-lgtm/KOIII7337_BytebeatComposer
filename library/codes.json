@@ -7235,6 +7235,8 @@
             {
                 "name": "I'm waiting",
                 "date": "Apr 15, 2026",
+                "stereo": true,
+                "starred": 2,
                 "file": "Kyler.js",
                 "fileOriginal": true
             },
@@ -7242,6 +7244,8 @@
                 "name": "You know what sin needs? Five more sins",
                 "date": "Apr 17, 2026",
                 "sampleRate": 6000,
+                "stereo": true,
+                "starred": 1,
                 "file": "Kyler-1.js",
                 "fileOriginal": true
             },
@@ -7256,6 +7260,7 @@
                 "name": "Eerie",
                 "date": "May 13, 2026",
                 "sampleRate": 11025,
+                "starred": 2,
                 "file": "Kyler-3.js",
                 "fileOriginal": true
             },
@@ -7263,6 +7268,7 @@
                 "name": "Most normal byetbeat I probably made",
                 "date": "Jun 24, 2026",
                 "sampleRate": 32000,
+                "stereo": true,
                 "codeOriginal": [
                     "[((64*sin(t/3/5.0931/4*[12,12,9,12,12,9,12,12,9,12,12,9,12,9,12,9][t>>12&15]*[1,.89,.8,.75,.8,.75,.6,.56][t>>15&7])^128) ",
 "+ ",
