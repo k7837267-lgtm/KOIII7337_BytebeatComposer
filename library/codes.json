@@ -1612,6 +1612,7 @@
                 "date": "Oct 17, 2022",
                 "sampleRate": 44100,
                 "big": true,
+                "slow": true,
                 "file": "decentmanager4.js",
                 "fileOriginal": true
             },
@@ -1639,6 +1640,8 @@
                 "sampleRate": 48000,
                 "stereo": true,
                 "big": true,
+                "slow": true,
+                "starred": 2,
                 "file": "decentmanager5.js",
                 "fileOriginal": true
             },
@@ -1672,6 +1675,7 @@
                 "date": "Mar 19, 2024",
                 "sampleRate": 35498.667,
                 "big": true,
+                "starred": 1,
                 "file": "decentmanager3.js",
                 "fileOriginal": true
             },
@@ -1690,6 +1694,7 @@
                 "date": "Feb 22, 2025",
                 "sampleRate": 32000,
                 "stereo": true,
+                "starred": 2,
                 "codeOriginal": [
                     "n=440/32000*128*2**(10.4/12),",
                     "vi=63+sin(t/1e3)*8,",
@@ -1736,6 +1741,7 @@
                 "sampleRate": 33860.266,
                 "stereo": true,
                 "big": true,
+                "starred": 2,
                 "file": "decentmanager7.js",
                 "fileOriginal": true
             },
@@ -1747,6 +1753,7 @@
                 "sampleRate": 32000,
                 "stereo": true,
                 "big": true,
+                "starred": 2,
                 "file": "decentmanager6.js",
                 "fileOriginal": true
             },
@@ -1759,6 +1766,7 @@
                 "sampleRate": 48000,
                 "stereo": true,
                 "big": true,
+                "starred": 1,
                 "file": "decentmanager8.js",
                 "fileOriginal": true
             },
@@ -1771,8 +1779,25 @@
                 "sampleRate": 48000,
                 "slow": true,
                 "big": true,
+                "starred": 2,
                 "file": "decentmanager9.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "Probably gonna do another full-fledged recreation idk.",
+                "mode": "Floatbeat",
+                "description": "Gonna recreate Apoplexy I guess.",
+                "url": "https://bytebeat.cloud/post/67723a19-a6e1-429d-a888-97632a2dcd92",
+                "date": "May 7, 2026",
+                "sampleRate": 48000,
+                "codeOriginal": [
+                    "Hz=125/60*16384,",
+"t/=48e3/Hz,",
+"n=444/Hz*64*2**(3/12),",
+"o=o=>~((t*2*n*(o/12)&255))/512+.25,",
+"((((~t%4096*n*2**([-7,,,-7,5,,-6,,,-9,,,-6,-9,6,-6,-7,,,-7,,,-6,,,-9,-6,,-9,,,-6][t>>12&31]/12))%256)/256+.5)*(1-1*(min(t,t/4096%1)))||0",
+"+max(-1,min(1,sin(~t%4096*n*PI/256*2**([,-7,5,,,5,,-7,-9,,5,5,,,,,,8,5,,-7,5,,3,0,,,-2,,-2,-4][t>>12&31]/12))*9e9))*(1-1*(min(t,t/4096%1)))/4||0)+(o(8)+o(12.05)*(t>>17&1))/4"
+                ]
             }
         ]
     },
