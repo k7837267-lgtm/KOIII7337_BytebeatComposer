@@ -3990,14 +3990,6 @@
         ]
     },
     {
-        "author": "!{G&Ycatjuice}? (greenandyellowcatjuice)",
-        "name": "808 points collected",
-        "date": "Dec 24, 2025",
-        "mode": "Floatbeat"
-        "sampleRate": 48000,
-        "codeOriginal": "BPM=135,SR=48E3,tf=abs(t/SR*32768/120*BPM),sidechain=min(1,tf/4096%4),btf=(a)=>a%256/128-1,p=[0,0,0,0,0,0,3,1][tf>>13&7],kick=tanh(sin(cbrt(tf%16384)**0.8*10))*max(0,1-tf/4096%4)/2,hihat=sin((t|0)**3)*max(0,1-tf/4096%2)*sidechain/16,snare=sin((t/7|0)**3)*max(0,1-tf/8192%2)*(tf>>14&1)/4*sidechain,cowbell=(btf(t*1.7*2**(p/12))+btf(t*1.7*2**(7/12)*2**(p/12)))*max(0,1-tf/4096%2)/7,(kick+hihat+snare+cowbell)*10"
-    },
-    {
         "author": "ProcessedGradient (TrashImpossible3699)",
         "children": [
             {
@@ -5876,6 +5868,14 @@
                 "fileOriginal": true
             }
         ]
+    },
+    {
+        "author": "!{G&Ycatjuice}? (greenandyellowcatjuice)",
+        "name": "808 points collected",
+        "date": "Dec 24, 2025",
+        "mode": "Floatbeat",
+        "sampleRate": 48000,
+        "codeOriginal": "BPM=135,SR=48E3,tf=abs(t/SR*32768/120*BPM),sidechain=min(1,tf/4096%4),btf=(a)=>a%256/128-1,p=[0,0,0,0,0,0,3,1][tf>>13&7],kick=tanh(sin(cbrt(tf%16384)**0.8*10))*max(0,1-tf/4096%4)/2,hihat=sin((t|0)**3)*max(0,1-tf/4096%2)*sidechain/16,snare=sin((t/7|0)**3)*max(0,1-tf/8192%2)*(tf>>14&1)/4*sidechain,cowbell=(btf(t*1.7*2**(p/12))+btf(t*1.7*2**(7/12)*2**(p/12)))*max(0,1-tf/4096%2)/7,(kick+hihat+snare+cowbell)*10"
     },
     {
         "author": "L1TTL3_BR4Z1LI4N (Separate_Sundae_8815)",
