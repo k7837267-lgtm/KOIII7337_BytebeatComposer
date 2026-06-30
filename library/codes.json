@@ -6780,6 +6780,7 @@
                 "name": "wierd voice thing",
                 "url": "https://www.bytebeat.cloud/post/a770da43-01f2-450f-9991-38c180bea1fe",
                 "date": "Apr 4, 2026",
+                "mode": "Floatbeat",
                 "sampleRate": 11025,
                 "codeOriginal": "e=6E4,sin(t*e>>50|t*80)/2"
             },
