@@ -7267,6 +7267,11 @@
             },
             {
                 "name": "What the googly moogly",
+                "remix": {
+                    "author": "PrincessPriscillaPT",
+                    "name": "F#maj9(omit5)",
+                    "url": "https://dollchan.net/btb/res/7164.html#7478"
+                },
                 "url": "https://www.bytebeat.cloud/post/97f938ba-8cef-4b9c-9d2b-cf4698315ed9",
                 "date": "Apr 3, 2026",
                 "sampleRate": 48000,
@@ -7290,6 +7295,7 @@
             },
             {
                 "name": "Presence of the New",
+                "description": "\"\"Presence of the New\" kind of sounds like \"Something New\" by maj-6, one from May 8th contains the melody of \"Fly into sky\" by Zackx (NikNemメ).\" - PrincessPriscillaPT",
                 "url": "https://www.bytebeat.cloud/post/c94e30b1-36d2-4ef6-9130-18442fa848d3",
                 "date": "Apr 3, 2026",
                 "mode": "Signed Bytebeat",
