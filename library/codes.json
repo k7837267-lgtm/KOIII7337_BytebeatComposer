@@ -6819,6 +6819,13 @@
                 "codeOriginal": "x=j=>(t?0:F=new Float32Array(X=12288).fill(0),z=g=>t*j*2**('QQQN'.charCodeAt(t>>15&3)/12*g),p=(sin(z(.3)/128*PI)+cos(z(.3)/256*PI))%256+F[t%X],F[t%X]=p/2,(p/6)+(cbrt(sin(sqrt(t%8192)))*(1-t/8192%1)*!(t>>13&1))+(t%[1,1,16,1,1,1,16,16][t>>13&7]?R:R=random()*(1-t/8192%1)*'01100111'[t>>13&7])),[x(1.005),x(.995)]"
             },
             {
+                "name": "first time using feeshbread's filters",
+                "url": "https://www.bytebeat.cloud/post/f2a7ab0a-4bb7-428a-82b0-64caa222c156",
+                "date": "Apr 10, 2026",
+                "sampleRate": 32000,
+                "codeOriginal": "t?0:Z=[],X=0,lp=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),lp((t|t>>5&t>>4|t>>7)&255,.1)"
+            },
+            {
                 "name": "song using InfinitySnapz's tech",
                 "url": "https://www.bytebeat.cloud/post/eb2d9cad-a441-46d7-a6d5-b0ffc567e69f",
                 "date": "Apr 10, 2026",
@@ -6946,7 +6953,7 @@
                 "fileOriginal": true
             },
             {
-                "name": "fm omega",
+                "name": "@YouLikeHaveMaterials87 thingys",
                 "description": "Modified Since There Were Clicks.",
                 "url": "https://www.bytebeat.cloud/post/9750985d-d652-4c80-ae1e-1e2f209938c5",
                 "date": "Apr 30, 2026",
@@ -6983,6 +6990,14 @@
                 "file": "trillwin-3.js",
                 "fileOriginal": true
             },
+            {
+                "name": "*starts buzzing like a fridge*",
+                "description": "BytebeatCloud's Week 21 Submission",
+                "url": "https://bytebeat.cloud/post/73c1dcf5-b57c-4523-bf12-54e6410af9db",
+                "date": "May 8, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 32000,
+                "codeOriginal": "t?(c=sin(t/183*2*p),a+=((c-a*c-1)%p)/2,b=a*(c-2)/2,b+=b*2,(b/4-b/2)*1.7-32,c+=(a+b)/3-a,d=(c+b-a)/9-64):(a=b=c=d=0,p=PI)",
             {
                 "name": "imbrandonfarris google translate",
                 "url": "https://www.bytebeat.cloud/post/7f1e1caa-3f87-4486-8210-7bdbeb86d575",
