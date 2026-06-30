@@ -3550,6 +3550,7 @@
     {
         "author": "Butterroach",
         "name": "stereo wind + \"raindrop\" sounds",
+        "description": "\"I Will Probably Add His Bytebeat Codes Now Or Later.\" - KOIII7337",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/16kx7ln/stereo_wind_raindrop_sounds/",
         "date": "Sep 17, 2023",
@@ -3878,7 +3879,7 @@
         ]
     },
     {
-"author": "Fenix F (John Black)",
+"author": "Fenix-F (John Black)",
 "name": "Bytebeat Random Experiments #1",
 "url": "https://www.youtube.com/watch?v=tPsu9Y8frSc",
 "date": "Sep 7, 2024",
@@ -4489,6 +4490,7 @@
     {
         "author": "PrincessPriscillaPT",
         "children": [
+            { "description": "She's Regarding Questions In My Composer." },
             {
                 "name": "F#maj / Ebmin, 90 BPM",
                 "mode": "Floatbeat",
@@ -5888,6 +5890,7 @@
     {
         "author": "pck404 *(Creator Of BytebeatCloud)*",
         "children": [
+            { "description": "The Guy Who Created \"BytebeatCloud\"." },
             {
                 "name": "momentum presence",
                 "url": "https://www.bytebeat.cloud/post/447ebb36-fc8e-47e8-9a0c-d7183cd9d877",
@@ -6537,11 +6540,13 @@
             "FoodlesMickey)"
         ],
         "children": [
+            { "description": "My Bytebeat Friend Of Mine! That I Usually Add Very Often" },
             {
                 "name": "Bank Bass",
                 "url": "https://www.bytebeat.cloud/post/722b15c7-bccc-42fd-b173-f32dc43c305c",
                 "date": "Mar 7, 2026",
                 "sampleRate": 32000,
+                "starred": 2,
         "c": true,
                 "codeOriginal": "(((t*t>>8*(t>>5|t>>11))+(t&t>>7))&255)-128"
             },
@@ -6599,6 +6604,7 @@
                 "url": "https://www.bytebeat.cloud/post/55a191e9-1575-4f4d-b691-a31b095b9de8",
                 "date": "Mar 7, 2026",
                 "sampleRate": 11025,
+                "starred": 2,
                 "c": true,
                 "codeOriginal": "(400000/(t&4095))+((t*t|t>>5)*(t>>13&1))*2"
             },
@@ -6781,6 +6787,7 @@
                 "url": "https://www.bytebeat.cloud/post/a770da43-01f2-450f-9991-38c180bea1fe",
                 "date": "Apr 4, 2026",
                 "mode": "Floatbeat",
+                "starred": 1,
                 "sampleRate": 11025,
                 "codeOriginal": "e=6E4,sin(t*e>>50|t*80)/2"
             },
@@ -7222,6 +7229,7 @@
                 "url": "https://www.bytebeat.cloud/post/33fe771b-cc86-4e1a-bbff-31c6f3fa1d18",
                 "date": "June 12, 2026",
                 "mode": "Floatbeat",
+                "starred": 1,
                 "sampleRate": 32000,
                 "stereo": true,
                 "big": true,
@@ -7235,6 +7243,19 @@
                 "sampleRate": 32000,
                 "date": "Jun 24, 2026",
                 "codeOriginal": "fb=t=>t*128+128,t||(Z=[]),X=0,lp=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),hp=(a,c)=>a-lp(a,c),bp=(a,h,l)=>hp(lp(a,l),h),lb=(a,c,e)=>a+lp(a,c)*e,p=(spd,v)=>2**(parseInt(v[(t>>spd)%v.length],36)/12),a=t/4*p(16,'WYTR'),lp((a*.98%128+a%128+a*.99%127+a*.999%127)*.20,.4)*(t/16384%1)+96+fb(sin(3*sqrt(t%4096))/2*((t>>12&3)==0))+fb(sin(t)/3*(.9995**(t%4096)))+128"
+            },
+            {
+                "name": "seven-nation resonance",
+                "cover": {
+                    "name": "The White Stripes - Seven Nation Army",
+                    "url": "https://www.youtube.com/watch?v=0J2QdDbelmY"
+                },
+                "url": "https://bytebeat.cloud/post/241420ff-c429-4f0a-9cd1-57f68e124c1d",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "date": "Jun 29, 2026",
+                "file": "trillwin-11.js",
+                "fileOriginal": true
             }
         ]
     },
