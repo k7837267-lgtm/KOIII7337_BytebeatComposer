@@ -6997,7 +6997,7 @@
                 "date": "May 8, 2026",
                 "mode": "Signed Bytebeat",
                 "sampleRate": 32000,
-                "codeOriginal": "t?(c=sin(t/183*2*p),a+=((c-a*c-1)%p)/2,b=a*(c-2)/2,b+=b*2,(b/4-b/2)*1.7-32,c+=(a+b)/3-a,d=(c+b-a)/9-64):(a=b=c=d=0,p=PI)",
+                "codeOriginal": "t?(c=sin(t/183*2*p),a+=((c-a*c-1)%p)/2,b=a*(c-2)/2,b+=b*2,(b/4-b/2)*1.7-32,c+=(a+b)/3-a,d=(c+b-a)/9-64):(a=b=c=d=0,p=PI)"
             },
             {
                 "name": "imbrandonfarris google translate",
