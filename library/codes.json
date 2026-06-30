@@ -6592,7 +6592,7 @@
                 "url": "https://www.bytebeat.cloud/post/e281e968-8118-4853-8b81-004354ab92ff",
                 "date": "Mar 7, 2026",
                 "c": true,
-                "codeOriginal": "(t*t*(t>>12&3))|t>>3"
+                "codeOriginal": "(t*t/(t>>12&3))|t>>3"
             },
             {
                 "name": "n-u-t-e-l-l-a, that spells peanut butter",
