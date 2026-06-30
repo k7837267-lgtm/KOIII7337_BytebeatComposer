@@ -6540,7 +6540,7 @@
             {
                 "name": "Bank Bass",
                 "url": "https://www.bytebeat.cloud/post/722b15c7-bccc-42fd-b173-f32dc43c305c",
-                "date": "Mar 6, 2026",
+                "date": "Mar 7, 2026",
                 "sampleRate": 32000,
         "c": true,
                 "codeOriginal": "(((t*t>>8*(t>>5|t>>11))+(t&t>>7))&255)-128"
@@ -6586,6 +6586,21 @@
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "codeOriginal": "D=((d=t*1.25*[1,1.25,1.35,1.5][t>>14&3])/4%64+d/16%64.249)+(d/4%64+d/8%64&32)+(d/4%64+d/4%64&32)+(d/4%64+d/4%64.5&32),((D%256/128-1)*2*sqrt(t/16384%1))+(sin(sqrt(t%4096))*(1-t/4096%1)*'1000'[t>>12&3])+((random()-.5)*(1-t/4096%1)*'0010'[t>>12&3])"
+            },
+            {
+                "name": "non-nutritious beat",
+                "url": "https://www.bytebeat.cloud/post/e281e968-8118-4853-8b81-004354ab92ff",
+                "date": "Mar 7, 2026",
+                "c": true,
+                "codeOriginal": "(t*t*(t>>12&3))|t>>3"
+            },
+            {
+                "name": "n-u-t-e-l-l-a, that spells peanut butter",
+                "url": "https://www.bytebeat.cloud/post/55a191e9-1575-4f4d-b691-a31b095b9de8",
+                "date": "Mar 7, 2026",
+                "sampleRate": 11025,
+                "c": true,
+                "codeOriginal": "(400000/(t&4095))+((t*t|t>>5)*(t>>13&1))*2"
             },
             {
                 "name": "big echoing in the town hall",
@@ -6671,7 +6686,7 @@
             {
                 "name": "Atari-Step",
                 "url": "https://www.bytebeat.cloud/post/16d54f0f-d53b-4cb4-a370-62e6d954eef2",
-                "date": "Mar 18, 2026",
+                "date": "Mar 17, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 35000,
                 "codeOriginal": "inst=t=>'9099909909999'[(t>>8)%'9099909909999'[\"length\"]],(inst(t*'55007605'[t>>12&7]*(1+(t>>16&1))*1.7)%256/16*(1-t/(8192/(1+(t>>15&1)))%1))+((t>>13&3)==2?(t%8?r:r=random()-.5):(random()-.5))*(1-t/8192%1)"
@@ -6712,7 +6727,7 @@
             {
                 "name": "Vampire Attack",
                 "url": "https://www.bytebeat.cloud/post/a1cc5445-c102-4bef-a144-bb4a95e2aeac",
-                "date": "Mar 28, 2026",
+                "date": "Mar 27, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "starred": 1,
@@ -6733,7 +6748,7 @@
             {
                 "name": "🍙",
                 "url": "https://www.bytebeat.cloud/post/c58e525a-3655-4756-a526-4418e32c1842",
-                "date": "Mar 31, 2026",
+                "date": "Mar 30, 2026",
                 "sampleRate": 44100,
         "c": true,
                 "codeOriginal": "(t*(t>>13&63|t>>9&7)|t>>11)*((t>>13&3)|t>>15)|t>>6"
@@ -6746,7 +6761,7 @@
                     "url": "https://www.reddit.com/r/bytebeat/comments/153j4u9/comment/jsjkzjf/?utm_source=reddit&utm_medium=web2x&context=3"
                 },
                 "url": "https://www.bytebeat.cloud/post/54c7730d-c1be-4fd6-9c12-d3cca9307217",
-                "date": "Mar 31, 2026",
+                "date": "Mar 30, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "codeOriginal": "n=tan(sin((1+(3&t/1.19>>14))*t*'35463546363645363544445354536344'[31&t/1.19>>12]/147))/4,t?0:a=Array(R=13768).fill(0),r=n+a[t%R],a[t%R]=r/2,(r/2)+sin(2.5*sqrt(t/1.19%16384))/2+((random()-random())*(1-t/1.19/16384%1)*(t/1.19>>14&1))"
@@ -6755,24 +6770,30 @@
                 "name": "opylmyhrht",
                 "description": "the title is not a typo, its just \"polyrhythm\" scrambled",
                 "url": "https://www.bytebeat.cloud/post/9e7bcb6b-465f-4d2c-b1c3-30ee200aa210",
-                "date": "Apr 3, 2026",
+                "date": "Apr 2, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "file": "trillwin.js",
                 "fileOriginal": true
             },
             {
+                "name": "wierd voice thing",
+                "url": "https://www.bytebeat.cloud/post/a770da43-01f2-450f-9991-38c180bea1fe",
+                "date": "Apr 4, 2026",
+                "sampleRate": 11025,
+                "codeOriginal": "e=6E4,sin(t*e>>50|t*80)/2"
+            },
+            {
                 "name": "∐",
                 "url": "https://www.bytebeat.cloud/post/c58e525a-3655-4756-a526-4418e32c1842",
                 "date": "Apr 5, 2026",
                 "sampleRate": 37500,
-        "c": true,
                 "codeOriginal": "t*(t>>13&3^t>>14&7)^t%255"
             },
             {
                 "name": "hyyh",
                 "url": "https://www.bytebeat.cloud/post/97b78a5d-2f9f-48be-9faf-514c0aaba8f0",
-                "date": "Apr 6, 2026",
+                "date": "Apr 5, 2026",
                 "mode": "Signed Bytebeat",
                 "sampleRate": 33000,
                 "starred": 1,
@@ -6781,7 +6802,7 @@
             {
                 "name": "oppotron take-over",
                 "url": "https://www.bytebeat.cloud/post/1b8f1706-c584-4b46-b596-c384f37764f6",
-                "date": "Apr 7, 2026",
+                "date": "Apr 6, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 37500,
                 "stereo": true,
@@ -6791,7 +6812,7 @@
             {
                 "name": "0v3rdr1v3",
                 "url": "https://www.bytebeat.cloud/post/caf90531-51bb-40a5-adc7-224e031681f3",
-                "date": "Apr 7, 2026",
+                "date": "Apr 6, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "stereo": true,
@@ -6800,10 +6821,18 @@
             {
                 "name": "song using InfinitySnapz's tech",
                 "url": "https://www.bytebeat.cloud/post/eb2d9cad-a441-46d7-a6d5-b0ffc567e69f",
-                "date": "Apr 11, 2026",
+                "date": "Apr 10, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "codeOriginal": "t<2?(a=0,b=0,c=0):(a=tan(sin(2*sqrt(t%[4096,16384,8192,32768][t>>13&3]))),b=.5-((W=t*(t&1048576?1.2:1)*2**(parseInt('AAAAAAABAAAAAAD9'[t>>13&15],36)/12))^W>>1)%256/256,c=abs(sin(W/64*PI)),b+=tanh(a+b+c)+(random()-.5)*(1-t/8192%1))/2"
+            },
+            {
+                "name": "karplus strong algorithm as a feeshbread style function",
+                "url": "https://www.bytebeat.cloud/post/26a3f566-c1d4-4800-8111-7eac7258f6c9",
+                "date": "Apr 10, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "codeOriginal": "karp=c=>(Y=t%c,Y2=(t-1)%c,t%16384==0?karp_fxii=Array.from({length:c},()=>random()):(karp_fxii[Y]=(karp_fxii[Y]+karp_fxii[Y2])/2)*2-1),t||(C=Array(w=12288).fill(0)),S=karp([600,300,600,500,700,400,500,200][t>>14&7])%256+C[t%w],C[t%w]=S/1.7,S/1"
             },
             {
                 "name": "S3V3N_N4TI0N_4RMY",
@@ -6813,7 +6842,7 @@
                 },
                 "url": "https://www.bytebeat.cloud/post/6a8f373e-df1e-4eb8-99c4-d739997be856",
                 "description": "\"the waveform looks insane in the dollchan player.\" - trillwin",
-                "date": "Apr 15, 2026",
+                "date": "Apr 14, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 32000,
                 "stereo": true,
@@ -6917,6 +6946,19 @@
                 "fileOriginal": true
             },
             {
+                "name": "fm omega",
+                "description": "Modified Since There Were Clicks."
+                "url": "https://www.bytebeat.cloud/post/9750985d-d652-4c80-ae1e-1e2f209938c5",
+                "date": "Apr 30, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "min(255,(g=(x,z,y)=>t/y*(2**(floor(x.charCodeAt((t>>z)%x.length)/5+4)%7))*2**([2,4,7,9,11][x.charCodeAt((t>>z)%x.length)%5]/12),(g(\"https://www.bytebeat.cloud/u/YouLikeHaveMaterials87\",14,64)&64)/64*(~t>>8&63)+",
+"(g(\"https://www.youtube.com/@YouLikeHaveMaterials\",13,32)&96)/64*(~t>>9&63)",
+"+(g(`YouLikeHaveMaterials87 (formerly trillwin or FoodlesMickey)he/him.i like midi art, gdi malware.i play minecraft, garry's mod, roblox, progressbar95, and more`,12,32)&63)/64*(~t>>6&63)+",
+"(g(\"YouLikeHaveMaterials87-trillwin-FoodlesMickey\",14,128)&64)/64*(~t>>8&63)))"
+                ]
+            },
+            {
                 "name": "some frutiger aero kinda thing",
                 "url": "https://www.bytebeat.cloud/post/8b9012d3-a822-41be-bbcb-597c4e8a6981",
                 "date": "May 6, 2026",
@@ -7013,7 +7055,7 @@
                 "name": "if you see the sticker on their shirt, then RUN!!!",
                 "description": "the title is just a joke and isnt refering to anyone (pls ignore the typos)",
                 "url": "https://www.bytebeat.cloud/post/d86c1290-1ae2-4129-b783-c5c34baf9320",
-                "date": "May 16, 2026",
+                "date": "May 15, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 37690,
                 "codeOriginal": "DRU=atan(sin(sqrt(A=t%([16384,8192,12288,4096][t>>12&3])))*2)*3*(.99975**A)+((random()-.5)*(.9993**(t%[8192,12288,8192,32768][t>>13&3])))*9,p=(spd,a)=>2**(parseInt(a[(t>>spd)%a.length],36)/12),MAI=sin(t/128*PI*p(12,'ELQTJLOP')*(t&131072?1.34:1)-sin(t/128*PI*16)),DRU+MAI"
@@ -7142,6 +7184,40 @@
                 "mode": "Floatbeat",
                 "sampleRate": 44100,
                 "codeOriginal": "K=tanh(sin(sqrt(t%8192)))*(.9998**(t%8192)),S=(random()-.5)*(.9996**(t%8192)),H=(t%8?RR:RR=random()-.5)*(.9996**(t%8192)),[K,S,H,S,K,S,H,S,K,K,H,H,S,K,S,S][t>>13&15]+atanh(sin(t/128*PI*2**([0,0,-3,-1][t>>16&3]/12)*(1+(t>>19&1)))/1.02)/4"
+            },
+            {
+                "name": "HLM (Height Limit Multiplier)",
+                "remix": {
+                    "author": "bear @ celephais",
+                    "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
+                },
+                "url": "https://www.bytebeat.cloud/post/f0193741-8465-4ab9-b46f-ae97f66a83b4",
+                "date": "Jun 11, 2026",
+                "codeOriginal": "mult=(a,o)=>{F=0;for(i=0;i<o;i++){F+=(a-F*i)/o};return F},mult((t+(t&t^t>>6)-t*(t>>9&(t%16?2:6)&t>>9)),8)"
+            },
+            {
+                "name": "🎛️📣😋🪪🪧🖨️🎐",
+                "remix": {
+                    "author": "rrrola",
+                    "name": "CA98"
+                    "url": "http://www.pouet.net/topic.php?which=8357&page=9#c388902"
+                },
+                "url": "https://www.bytebeat.cloud/post/33fe771b-cc86-4e1a-bbff-31c6f3fa1d18",
+                "date": "June 12, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "stereo": true,
+                "big": true,
+                "file": "trillwin-10.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "Were so back!",
+                "url": "https://www.bytebeat.cloud/post/41203441-bbc8-4ca1-a566-d4f4ca5245f3",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 32000,
+                "date": "Jun 24, 2026",
+                "codeOriginal": "fb=t=>t*128+128,t||(Z=[]),X=0,lp=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),hp=(a,c)=>a-lp(a,c),bp=(a,h,l)=>hp(lp(a,l),h),lb=(a,c,e)=>a+lp(a,c)*e,p=(spd,v)=>2**(parseInt(v[(t>>spd)%v.length],36)/12),a=t/4*p(16,'WYTR'),lp((a*.98%128+a%128+a*.99%127+a*.999%127)*.20,.4)*(t/16384%1)+96+fb(sin(3*sqrt(t%4096))/2*((t>>12&3)==0))+fb(sin(t)/3*(.9995**(t%4096)))+128"
             }
         ]
     },
