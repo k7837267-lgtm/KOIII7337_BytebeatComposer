@@ -1,0 +1,9 @@
+p=(spd,v)=>t*2**(parseInt(v[(t>>spd)%v.length],36)/12),t||(z1=[]),callCount=0,lpr=lowPassResonance=(a,c,r)=>((
+	call=callCount++,
+	t||(z1[call+'lp6']=0,z1[call+'lp12']=0),
+	ct=Math.min(c,.999),
+	R=r+r/(1-ct),
+	z1[call+'lp6']+=ct*(a-z1[call+'lp6']+R*(z1[call+'lp6']-z1[call+'lp12']))),
+	z1[call+'lp12']+=ct*(z1[call+'lp6']-z1[call+'lp12'])
+),
+lpr(p(12,"DDDDDDDDDDDDDDDDAAAAAAAA88888888DDDDDDDDDDDDDDDDAAAAAAAA8888CCCCDDDDDDDDHHHDDDCCAAAAAAAA88888888DDDDDDDDHHHDDDCCAAAAAAAA88888888")&255,abs(sin(t/242103)),.9)/128
