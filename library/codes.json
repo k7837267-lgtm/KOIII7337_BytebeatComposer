@@ -6536,7 +6536,7 @@
     },
     {
         "author": [
-            "trillwin (YouLikeHaveMaterials87",
+            "Trillwin (YouLikeHaveMaterials87",
             "FoodlesMickey)"
         ],
         "children": [
@@ -7227,7 +7227,7 @@
                     "url": "http://www.pouet.net/topic.php?which=8357&page=9#c388902"
                 },
                 "url": "https://www.bytebeat.cloud/post/33fe771b-cc86-4e1a-bbff-31c6f3fa1d18",
-                "date": "June 12, 2026",
+                "date": "Jun 12, 2026",
                 "mode": "Floatbeat",
                 "starred": 1,
                 "sampleRate": 32000,
@@ -7256,6 +7256,19 @@
                 "date": "Jun 29, 2026",
                 "file": "trillwin-11.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "Random Bytebeat Dump with Beat",
+                "remix": {
+                    "author": "MarioFan171",
+                    "name": "Random Bytebeat Dump",
+                    "url": "https://www.bytebeat.cloud/post/c2b99aa0-d7cc-48a2-b5b3-8e95646050ab"
+                },
+                "url": "https://www.bytebeat.cloud/post/f75d8888-efa2-4211-987f-64bcadd8a7f0",
+                "date": "Jun 29, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "atan(tan(cbrt((t&t>>(1+(t>>12&15^t/(t&12288?1.5:1)>>15&7)))%512)*sin(t*PI/2**18^t/1.5*PI/16384)*[25,10,17,6][t>>14&3^t>>16&1]))/(PI/2)+sin(sqrt(t%16384))*5*(.9995**(t%16384))+(random()*8-.5)*(.9998**(t%16384))*(t>>14&1)"
             }
         ]
     },
