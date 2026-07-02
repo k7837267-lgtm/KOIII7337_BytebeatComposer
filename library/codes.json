@@ -52,6 +52,23 @@
         "codeOriginal": "(t?0:v=0,v=(v>>1)+(v>>4)+t*((t>>16|t>>6)&69&t>>9))&128"
     },
     {
+        "author": "godinpants",
+        "children": [
+            {
+                "url": "https://chipmusic.org/forums/post/79378/#p79378",
+                "date": "Oct 1, 2011",
+                "c": true,
+                "codeOriginal": "t / 3 >> 1 | t / 2 >> 2 & (t / 5) >> 7 | t & 31 * t * (t >> 8)"
+            },
+            {
+                "url": "https://chipmusic.org/forums/post/79378/#p79378",
+                "date": "Oct 1, 2011",
+                "c": true,
+                "codeOriginal": "t/992>>(t%(t/939))<< (t*t*t)>>((t<<5)>>(17/t))"
+            }
+        ]
+    },
+    {
         "author": "stephth",
         "name": "remix of miiro's 1-line symphony",
         "url": "https://news.ycombinator.com/item?id=3064986",
