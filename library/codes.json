@@ -63,8 +63,18 @@
             {
                 "url": "https://chipmusic.org/forums/post/79378/#p79378",
                 "date": "Oct 1, 2011",
-                "c": true,
-                "codeOriginal": "t/992>>(t%(t/939))<< (t*t*t)>>((t<<5)>>(17/t))"
+                "children": [
+                    {
+                        "c": true,
+                        "codeOriginal": "t/992>>(t%(t/939))<< (t*t*t)>>((t<<5)>>(17/t))"
+                    },
+                    {
+                        "name": "Modified By KOIII7337",
+                        "date": "Jul 2, 2026",
+                        "c": true,
+                        "codeOriginal": "t/992>>(t%(t/939))<<((t&255)*(t&255)*(t&255))>>((t<<5)>>(17/t))"
+                    }
+                ]
             }
         ]
     },
