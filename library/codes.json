@@ -4383,18 +4383,6 @@
                     ")/1.5-0.5"
                 ],
                 "codeMinified": "f=(v,x,s=.1)=>x?f(abs(v-s*4)+s,x-1):v,w=(t,x)=>f(cos(t/48000*PI*x/2),16,1e-3)+.01,wt=j=>w(t,440*2**(j/12)/2)*10-2,l=\"1144  11  113344  11  11334400001144  11  113344  6 666 66442222\"[t/1.2>>12&63],(wt(l)*(L=l!=\" \")/3+wt((l|0)+5)*L/3+wt((l|0)+10)*L/3)/1.5-.5"
-            },
-            {
-                "name": "MININ ISI",
-                "mode": "Floatbeat",
-                "description": "\"Cool 12KiB PC Speaker Soundtrack, Deserves The Cyan Star!\" - KOIII7337",
-                "starred": 2,
-                "url": "https://dollchan.net/btb/res/27.html#15695",
-                "date": "Jun 21, 2026",
-                "sampleRate": 32000,
-                "big": true,
-                "file": "Kolbosa.js",
-                "fileOriginal": true
             }
         ]
     },
