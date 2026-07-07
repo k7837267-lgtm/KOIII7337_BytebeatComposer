@@ -322,6 +322,7 @@ html[data-theme="Orange"] {
 
 html[data-theme="Red"] {
 	--button-hover-color: #ffffa5;
+	--canvas-border: linear-gradient(#c9b0b0, #e03030) 1;
 	--canvas-button: linear-gradient(to bottom, #ff0f0f, #380d0d);
 	--canvas-button-hover: linear-gradient(to bottom, #ff4343, #6d1313) !important;
 	--code-button: linear-gradient(to bottom, #c50000, #220606);
