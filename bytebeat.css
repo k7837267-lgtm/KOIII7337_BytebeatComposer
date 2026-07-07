@@ -335,7 +335,7 @@ html[data-theme="Red"] {
 	--control-volume: linear-gradient(to bottom, #ec2828, #371111);
 	--control-volume-hover: linear-gradient(to bottom, #ff6a6a, #4e1010);
 	--editor: #170000;
-	--focus: #ffaaaa;
+	--focus: #ff3a3a;
 	--library-header: linear-gradient(to bottom, #c50000, #1d0606);
 	--library-header-hover: linear-gradient(to bottom, #f50404, #3b0d0d);
 	--library-header-hover-color: #ffa5a5;
