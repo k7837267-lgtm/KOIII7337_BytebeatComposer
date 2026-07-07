@@ -295,7 +295,7 @@ html[data-theme="Green"] {
 	--focus: #aaffc4;
 	--library-header: linear-gradient(to bottom, #20462c, #0b170d);
 	--library-header-hover: linear-gradient(to bottom, #326c42, #152b1b);
-	--library-headeffr-hover-color: #94ffc7;
+	--library-header-hover-color: #94ffc7;
 	--link: #89ffac;
 }
 
@@ -318,6 +318,28 @@ html[data-theme="Orange"] {
 	--library-header-hover: linear-gradient(to bottom, #f58004, #3b260d);
 	--library-header-hover-color: #ffffa5;
 	--link: #d6ff8e;
+}
+
+html[data-theme="Red"] {
+	--button-hover-color: #ffffa5;
+	--canvas-button: linear-gradient(to bottom, #ff0f0f, #380d0d);
+	--canvas-button-hover: linear-gradient(to bottom, #ff4343, #6d1313) !important;
+	--code-button: linear-gradient(to bottom, #c50000, #220606);
+	--code-button-hover: linear-gradient(to bottom, #eb0000, #4e1010);
+	--control-button: linear-gradient(to bottom, #df1e1e, #371111);
+	--control-button-active: linear-gradient(to bottom, #9c1616, #290d0d);
+	--control-button-hover: linear-gradient(to bottom, #f84d4d, #4e1010);
+	--control-text: linear-gradient(to top, #b31f1f, #391515);
+	--control-text-hover: linear-gradient(to top, #e04141, #582121);
+	--control-volume: linear-gradient(to bottom, #ec2828, #371111);
+	--control-volume-hover: linear-gradient(to bottom, #ff6a6a, #4e1010);
+	--editor: #170000;
+	--focus: #ffaaaa;
+	--library-header: linear-gradient(to bottom, #c50000, #1d0606);
+	--library-header-hover: linear-gradient(to bottom, #f50404, #3b0d0d);
+	--library-header-hover-color: #ffa5a5;
+	--link: #d62020;
+	--link-hover: #ffb7b7 !important;
 }
 
 html[data-theme="Purple"] {
