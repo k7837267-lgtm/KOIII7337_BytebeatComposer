@@ -1121,7 +1121,7 @@
             {
                 "name": "suicide..",
                 "remix": {
-                    "author": "ANoUserXD",
+                    "author": "BSquareII",
                     "name": "depression",
                     "url": "https://dollchan.net/btb/res/2628.html#4662"
                 },
@@ -1129,6 +1129,7 @@
                 "url": "https://dollchan.net/btb/res/2628.html#4683",
                 "date": "Oct 18, 2024",
                 "sampleRate": 30500,
+                "stereo": true,
                 "codeOriginal": "t?(C=cos,S=sin,[(N=(t,S,C)=>(l=t>>14,a=PI*t/64*2**((((l/2&5|2)^l>>3&3+(2*l&6)/3)+(t%([0,0,2,3,0,-9,2,-11][l/2&7]+4))*7)/12),S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/2/8192)+C(t*PI/2/12e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/2/15e3))))(t,S,C),N(t,C,S)].map(k=>(b+=c+=(k-b-15*c)/256))):b=c=0"
             },
             {
@@ -1154,6 +1155,7 @@
                 "date": "Dec 14, 2024",
                 "sampleRate": 48000,
                 "stereo": true,
+                "slow": true,
                 "codeOriginal": "t?(Main=t=>t>0&&(t/=1.68,a=x=>{for(A=B=0;A<7;A++)B+=t>0&&t*x**A*2**([0,2,5,7,9,10,12,17][(t>>13^t/3>>12)&7]/12)&(~t>>7&127|128);return B/A},[a(1.5),a(1.502)].reduce((x,y)=>(x+y)/2)),[Main(t)+Main(t-(No=6145))/2+Main(t-2*No)/4+Main(t-4*No)/6+Main(t-8*No)/8+Main(t-16*No)/10,Main(t)+Main(t-(No_=8191))/2+Main(t-2*No_)/4+Main(t-4*No_)/6+Main(t-8*No)/8+Main(t-16*No)/10].map(Code=>(Input=Code/256+ReverbEffect[T_=V_++%Delay],ReverbEffect[T_]=Input*.54)).reduce((Left,Right)=>[Left-1,-Right+1])):this.ReverbEffect??=Array(Delay=18E3).fill(V_=1)",
                 "codeMinified": "this.r??=Array(d=18E3).fill(v=1),m=t=>t>0&&(t/=1.68,a=x=>{for(A=B=0;A<7;A++)B+=t*x**A*2**([0,2,5,7,9,10,12,17][(t>>13^t/3>>12)&7]/12)&(~t>>7&127|128);return B/A},(a(1.5)+a(1.502))/2),[m(t)+m(t-(n=6145))/2+m(t-2*n)/4+m(t-4*n)/6+m(t-8*n)/8+m(t-16*n)/10,m(t)+m(t-(N=8191))/2+m(t-2*N)/4+m(t-4*N)/6+m(t-8*N)/8+m(t-16*N)/10].map(x=>(i=x/256+r[h=v++%d],r[h]=i*.54)).reduce((x,y)=>[x-1,-y+1])"
             },
@@ -1167,6 +1169,11 @@
             },
             {
                 "name": "doing this for fun lmao",
+                "remix": {
+                    "author": "BSquareII",
+                    "name": "736367373537",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1d26qkg/736367373537/"
+                },
                 "mode": "Floatbeat",
                 "date": "Apr 24, 2025",
                 "sampleRate": 36000,
@@ -2009,7 +2016,8 @@
                 "codeOriginal": [
                     "o=sin,p=16384,c=96+(t>>21&5&&t&p&&o(t/p)),b=[c,128,c,72][3&t>>18]*t/p,z=x=>x?o(2**x*b*[2,3,4,6][3&t>>15-x]/4)/(t%p/(p>>x))/2+z(x-1):0,o(z(6)+o(b*8)*o(b*12)*o(b/c)*!(t&1<<(15&t>>15+3*o(t>>18)))+o(b*b)/(t%8192/c)+o(1e3/(5+t%p/c))+(t&p&&o(t*t)/(t%p/1e3)))//❤️",
                     ""
-                ]
+                ],
+                "codeMinified": "o=sin,p=16384,c=96+(t>>21&5&&t&p&&o(t/p)),b=[c,128,c,72][3&t>>18]*t/p,z=x=>x?o(2**x*b*'2346'[3&t>>15-x]/4)/(t%p/(p>>x))/2+z(x-1):0,o(z(6)+o(b*8)*o(b*12)*o(b/c)*!(t&1<<(15&t>>15+3*o(t>>18)))+o(b*b)/(t%8192/c)+o(1e3/(5+t%p/c))+(t&p&&o(t*t)/(t%p/1e3)))"
             }
         ]
     },
@@ -2369,7 +2377,7 @@
             {
                 "name": "notitle #1 ass beat",
                 "remix": {
-                    "author": "ANoUserXD",
+                    "author": "BSquareII",
                     "name": "depression",
                     "url": "https://dollchan.net/btb/res/2628.html#4662"
                 },
@@ -3069,7 +3077,7 @@
             {
                 "name": "chio (stereo version 3)",
                 "remix": {
-                    "author": "ANoUserXD",
+                    "author": "BSquareII",
                     "name": "chio (stereo version 2)",
                     "url": "https://ihsoyct.github.io/index.html?comments=17db99m&id=k6lzfgq"
                 },
@@ -4546,7 +4554,7 @@
             {
                 "name": "ANoUserXD - 736367373537 [PrincessPriscillaPT Remix]",
                 "remix": {
-                    "author": "ANoUserXD",
+                    "author": "BSquareII",
                     "name": "736367373537",
                     "url": "https://www.reddit.com/r/bytebeat/comments/1d26qkg/736367373537/"
                 },
@@ -4887,7 +4895,7 @@
                     },
                     {
                         "name": "minified moment",
-                        "author": "ANoUserXD",
+                        "author": "BSquareII",
                         "url": "https://dollchan.net/btb/res/2628.html#4643"
                     }
                 ],
@@ -4939,7 +4947,7 @@
                 "name": "Momentator",
                 "remix": {
                     "name": "minified moment",
-                    "author": "ANoUserXD",
+                    "author": "BSquareII",
                     "url": "https://dollchan.net/btb/res/2628.html#4643"
                 },
                 "url": "https://www.reddit.com/r/bytebeat/comments/1mjd8z0/momentator_remix_of_minified_moment_by_anouserxd/",
@@ -5179,12 +5187,12 @@
     },
     {
         "author": [
-            "ANoUserXD",
+            "BSquareII",
             "BaenHoHoHo"
         ],
         "name": "pleasure_to_bytebeat???",
         "remix": {
-            "author": "ANoUserXD",
+            "author": "BSquareII",
             "name": "Pleasure To Paso (Unfinished/Not Full Version)",
             "url": "https://www.reddit.com/r/bytebeat/comments/13im4qr/pleasure_to_paso_unfinishednot_full_version/"
         },
@@ -5434,7 +5442,7 @@
                 "name": "worst ever remix of 736367373537",
                 "url": "https://www.reddit.com/r/bytebeat_2/comments/1ocqxvx/worst_ever_remix_of_736367373537/",
                 "remix": {
-                    "author": "ANoUserXD",
+                    "author": "BSquareII",
                     "name": "736367373537",
                     "url": "https://www.reddit.com/r/bytebeat/comments/1d26qkg/736367373537/"
                 },
