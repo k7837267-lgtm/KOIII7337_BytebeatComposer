@@ -4164,7 +4164,7 @@
                 "date": "Oct 26, 2025",
                 "sampleRate": 48000,
                 "starred": 2,
-                "codeOriginal": "sp=3000,ir=sp*3,cl=wd=>atan(wd),rr=aw=>sin(aw*1e32)*1e16,so={\"1a\":[[1,-4,-7,-14],[1,-2,-6,-13],[3,-2,-6,-13],[1,-2,-6,-9]],\"1b\":\"10001000\",\"1c\":\"00001000#\",#\"1d#\":[[1,5,8,10],[11,10,6,1],[10,6,3,1],[-2,1,5,8]]},z1=(Ua=so[\"1a\"])[floor(t/32/sp)%4].map(X1=>cl(tan(pow(2,X1/12)*t*2/129))*.05).reduce((na0,na1)=>na0+=na1*max(-t/8/sp%1/.35),0),z2=cl(sin(4/((t/4/sp%1)+.1))*16*pow(.0001,t/4/sp%1))*.5*(Ub=[so[\"1b\"],so[\"1c\"]])[0][floor(t/2/sp)%8]+sin(rr(t>>1))*.5*pow(.01,t/4/sp%1)*Ub[1][floor(t/2/sp)%8],es=t=>t>0&&sin(t*(t/sp*2%2>1?16:8)/129*pow(2,(Uc=so[\"1d\"])[floor(t/32/sp)%4][floor(t/2/sp)%4]/12))*.2*pow(.01,t/2/sp%1),z3=es(t)+es(t-ir)*.7+es(t-ir*2)*.5+es(t-ir*3)*.2,[z1,z2,z3*2].reduce((W0,W1)=>W0+=atan(W1)*.6,0)"
+                "codeOriginal": "sp=3000,ir=sp*3,cl=wd=>atan(wd),rr=aw=>sin(aw*1e32)*1e16,so={\"1a\":[[1,-4,-7,-14],[1,-2,-6,-13],[3,-2,-6,-13],[1,-2,-6,-9]],\"1b\":\"10001000\",\"1c\":\"00001000#\",\"1d\":[[1,5,8,10],[11,10,6,1],[10,6,3,1],[-2,1,5,8]]},z1=(Ua=so[\"1a\"])[floor(t/32/sp)%4].map(X1=>cl(tan(pow(2,X1/12)*t*2/129))*.05).reduce((na0,na1)=>na0+=na1*max(-t/8/sp%1/.35),0),z2=cl(sin(4/((t/4/sp%1)+.1))*16*pow(.0001,t/4/sp%1))*.5*(Ub=[so[\"1b\"],so[\"1c\"]])[0][floor(t/2/sp)%8]+sin(rr(t>>1))*.5*pow(.01,t/4/sp%1)*Ub[1][floor(t/2/sp)%8],es=t=>t>0&&sin(t*(t/sp*2%2>1?16:8)/129*pow(2,(Uc=so[\"1d\"])[floor(t/32/sp)%4][floor(t/2/sp)%4]/12))*.2*pow(.01,t/2/sp%1),z3=es(t)+es(t-ir)*.7+es(t-ir*2)*.5+es(t-ir*3)*.2,[z1,z2,z3*2].reduce((W0,W1)=>W0+=atan(W1)*.6,0)"
             },
             {
                 "name": "the μ of the errors",
