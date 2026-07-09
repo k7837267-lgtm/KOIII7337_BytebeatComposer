@@ -4150,9 +4150,26 @@
                 "fileOriginal": true
             },
             {
+                "name": "tuff ahh beat 🥀🥀",
+                "url": "https://www.reddit.com/r/bytebeat_2/comments/1o256ln/tuff_ahh_beat/",
+                "date": "Oct 9, 2025",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "big": true,
+                "codeOriginal": "tern=(a_x,a_y,a_z)=>a_x?a_y:a_z,speed=10000,t||(buffer=new Float32Array(48000)),t*=tern([0,128][\"0001\"[t/speed/16&3]]>>(t/speed/2&7)&1,!(1&t/speed*4),1),clamp=(input,number)=>max(min(input,number),-number),filter={lowpass:(bufslc,input,cutoff)=>(buffer[bufslc]+=(input-buffer[bufslc])*cutoff,buffer[bufslc]),highpass:(bufslc,input,cutoff)=>input-filter.lowpass(bufslc,input,cutoff)},noise=time=>sin(time*1e32)*1e16,kick=clamp(sin(4/((t/speed/2%1)+.08))*pow(.01,t/speed/2%1),.3)*!(1&t/speed/2),hihat=filter.highpass(0,sin(noise(t)),.9)*1.5*pow(tern(4>>(t/speed*2&3)&1,.2,.001),t/speed*2%1),snare=(clamp(sin(40/((t/speed/2%1)+.18))*pow(.005,t/speed/2%1)*8,.3)+filter.lowpass(1,sin(noise(t)),.04)*max(t/speed/2%1/.002)*pow(.002,t/speed/2%1)*.05)*(1&t/speed/2),chord=[[-13,-8,-5,-1],[-12,-8,-5,-1],[-13,-10,-6,-3],tern(t/speed/2&1,[-13,-10,-6,-3],[-12,-8,-5,-3])][t/speed/4&3].reduce((cx,cy)=>cx+=clamp(tan(t*PI/128*pow(2,cy/12))*.6*pow(.02,t/speed/\"4442\"[t/speed/4&3]%1),.3)*.7,0),mel=sin(t*PI/128*pow(2,[4,7,11,14,16,19,23,26][(t*2/speed&t/2/speed)&7]/12+[0,5,7,12][(t/speed/8)&3]/12))*.2,ble=(t,not)=>t>0?sin(sin(t*PI/128*pow(2,not/12))*8*exp(-t/speed%32/4)+sin(t*PI/8*pow(2,not/12))*0.9*exp(-t/speed%32/4))*.2:0,bell=ble(t,4)+ble(t-speed*8,2)+ble(t-speed*16,-5)+ble(t-speed*24,-3),[kick,hihat,snare,chord*.8,mel,bell*2].reduce((mx,my)=>mx+=my*.7,0)"
+            },
+            {
+                "name": "Down The Stairs",
+                "url": "https://www.reddit.com/r/bytebeat_2/comments/1ogfskt/down_the_stairs/",
+                "date": "Oct 26, 2025",
+                "sampleRate": 48000,
+                "starred": 2,
+                "codeOriginal": "sp=3000,ir=sp*3,cl=wd=>atan(wd),rr=aw=>sin(aw*1e32)*1e16,so={\"1a\":[[1,-4,-7,-14],[1,-2,-6,-13],[3,-2,-6,-13],[1,-2,-6,-9]],\"1b\":\"10001000\",\"1c\":\"00001000\",\"1d\":[[1,5,8,10],[11,10,6,1],[10,6,3,1],[-2,1,5,8]]},z1=(Ua=so[\"1a\"])[floor(t/32/sp)%4].map(X1=>cl(tan(pow(2,X1/12)*t*2/129))*.05).reduce((na0,na1)=>na0+=na1*max(-t/8/sp%1/.35),0),z2=cl(sin(4/((t/4/sp%1)+.1))*16*pow(.0001,t/4/sp%1))*.5*(Ub=[so[\"1b\"],so[\"1c\"]])[0][floor(t/2/sp)%8]+sin(rr(t>>1))*.5*pow(.01,t/4/sp%1)*Ub[1][floor(t/2/sp)%8],es=t=>t>0&&sin(t*(t/sp*2%2>1?16:8)/129*pow(2,(Uc=so[\"1d\"])[floor(t/32/sp)%4][floor(t/2/sp)%4]/12))*.2*pow(.01,t/2/sp%1),z3=es(t)+es(t-ir)*.7+es(t-ir*2)*.5+es(t-ir*3)*.2,[z1,z2,z3*2].reduce((W0,W1)=>W0+=atan(W1)*.6,0)"
+            },
+            {
                 "name": "the μ of the errors",
                 "url": "https://www.bytebeat.cloud/post/9672d2e4-f2aa-485c-a548-f69259f0f6b2",
-                "date": "Jan 02, 2026",
+                "date": "Jan 2, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "codeOriginal": "I=t?I:0,T=++I/48000,s=I/6000,P=[].concat([[1,2],[6.5,4.5]][floor(s/16)%2].map(x=>x+4/x),[[2,4],[4,5],[3,2],[3],[2,4,3],[2.5,1],[1.5,2],[3]][floor(s/16)%8].map(y=>y-4*y)),(e=>{e*=sin(cos(I/100000)*82);return atan(e*2)*.75})(P.reduce((Z,o)=>Z+=(sin(sin(T*PI*60*o*2)+(sin(T*PI*120*o)*o/8)**2)*.01**(s*(1+o/16)/4%1))*.5,0)+sin(4/((s/4%1)+.05)))"
@@ -4191,6 +4208,14 @@
                 ]
             },
             {
+                "url": "https://www.reddit.com/r/DollchanBytebeat/comments/1rrkmys/my_super_amazing_songghn_for_steven_hardcore/",
+                "description": "\"EPIK MUSIX LOLZZZ!!!\"",
+                "date": "Mar 12, 2026",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "codeOriginal": "c=t*pow(2,((S=(t>>10|t>>15&t).toString(16)).charCodeAt(t/4096%S.length|0)-69)/12),atan(sin((c-pow(.0000000000000002,t/16384%1)*555)/10)*500*pow(.000004,t/16384%1)+sin(sin(c/160)+sin(c/10)*4+cos(sin(c/40)*5)*5)*(t/8192%2>1?t/8192%1/.3:0))*.5"
+            },
+            {
                 "name": "The Nice One",
                 "url": "https://www.bytebeat.cloud/post/e65b6b21-b361-462d-a304-a88827bf75ce",
                 "date": "Mar 24, 2026",
@@ -4200,6 +4225,17 @@
                 "starred": 2,
                 "file": "TI3699-3.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "Drunk Hard to Vienna",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat_2/comments/1sb04tm/drunk_hard_to_vienna/",
+                    "https://www.bytebeat.cloud/post/19437789-f87b-456d-b76b-d2309ef0c590"
+                ],
+                "date": "Apr 3, 2026",
+                "sampleRate": 48000,
+                "stereo": true,
+                "codeOriginal": "t%(A=7580)||(n=0,V=[0,0].map(()=>random()*8|0)),s=t/A,V.map(l=>.5*(((([35,42,52,62,70,0][l%6]/50)*(n+=pow(2,(-.12+[0,5,7,12][s/4%4|0]/12)))%128+(35/400*n%128)*1.5)+(35/800*pow(2,(s/32&1?48+[0,3,7][s*8%3|0]:(12044123752>>(s*2&31)&1?63:48))/12)*n%256<(1+(s*128&127)))*128)*(s/2%1)+(pow(s/2%1,.5)*17e3&128)*pow(.45,s/2%1)))"
             },
             {
                 "name": "loud A$$ astronomia remix",
@@ -7317,6 +7353,27 @@
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "codeOriginal": "atan(tan(cbrt((t&t>>(1+(t>>12&15^t/(t&12288?1.5:1)>>15&7)))%512)*sin(t*PI/2**18^t/1.5*PI/16384)*[25,10,17,6][t>>14&3^t>>16&1]))/(PI/2)+sin(sqrt(t%16384))*5*(.9995**(t%16384))+(random()*8-.5)*(.9998**(t%16384))*(t>>14&1)"
+            },
+            {
+                "name": "i wont use my midi tool i dont want complex mel programming",
+                "url": "https://bytebeat.cloud/post/0edfbd40-c683-425d-82ed-572308085877",
+                "description": "BytebeatCloud's Week 30 Submission",
+                "date": "Jul 5, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 32000,
+                "stereo": true,
+                "big": true,
+                "starred": 1,
+                "file": "trillwin-12.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "i think this is the first time ive used "tan" :)👍",
+                "url": "https://bytebeat.cloud/post/d130e1f2-d281-4797-b6cf-3b7cabc053ac",
+                "date": "Jul 6, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 33700,
+                "codeOriginal": "sin(tan(sin(t/[205,205,205,194][t>>15&3]*PI)*2))/3+tanh(sin(2*sqrt(t%8192)))*6*(.9997**(t%8192))*\"10001001\"[t>>13&7]+(random()-.5)*'00010010001010101'[t>>12&15]"
             }
         ]
     },
@@ -7589,17 +7646,36 @@
     },
     {
         "author": "SentleXR",
-        "name": "Laggy bass with filter sweep + my engine",
-        "url": "https://bytebeat.cloud/post/c999548f-66a5-4aec-a5c5-402fb4bd41ea",
-        "description": "\"My first bytebeat in here ever! Shows around 14 seconds of processing on luna197's converter so don't expect from me codes that aren't demanding in performance. I'm sorry.\" - SentleXR",
-        "date": "Jun 3, 2026",
-        "sampleRate": 48000,
-        "mode": "Floatbeat",
-        "stereo": true,
-        "big": true,
-        "slow": true,
-        "file": "SentleXR.js",
-        "fileOriginal": true
+        "children": [
+            {
+                "name": "Laggy bass with filter sweep + my engine",
+                "url": "https://bytebeat.cloud/post/c999548f-66a5-4aec-a5c5-402fb4bd41ea",
+                "description": "\"My first bytebeat in here ever! Shows around 14 seconds of processing on luna197's converter so don't expect from me codes that aren't demanding in performance. I'm sorry.\" - SentleXR",
+                "date": "Jun 3, 2026",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "stereo": true,
+                "big": true,
+                "slow": true,
+                "starred": 1,
+                "file": "SentleXR.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "(90377) Sedna",
+                "url": "https://bytebeat.cloud/post/250d5561-dba5-4fbc-a9ef-642cd134c962",
+                "description": "BytebeatCloud's Week 30 Submission \"Performance is demanding as always. Tried to do ambient music. Deleted most of the functions that weren't used to save some code space. Loopy.\" - SentleXR",
+                "date": "Jul 5, 2026",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "stereo": true,
+                "big": true,
+                "slow": true,
+                "starred": 2,
+                "file": "SentleXR-1.js",
+                "fileOriginal": true
+            }
+        ]
     },
     {
         "author": "monkeypatcher",
