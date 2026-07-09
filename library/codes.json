@@ -4156,8 +4156,7 @@
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
                 "big": true,
-                "file": "TI3699-4.js",
-                "fileOriginal": true
+                "codeOriginal": "tern=(a_x,a_y,a_z)=>a_x?a_y:a_z,speed=10000,t||(buffer=new Float32Array(48000)),t*=tern([0,128][\"0001\"[t/speed/16&3]]>>(t/speed/2&7)&1,!(1&t/speed*4),1),clamp=(input,number)=>max(min(input,number),-number),filter={lowpass:(bufslc,input,cutoff)=>(buffer[bufslc]+=(input-buffer[bufslc])*cutoff,buffer[bufslc]),highpass:(bufslc,input,cutoff)=>input-filter.lowpass(bufslc,input,cutoff)},noise=time=>sin(time*1e32)*1e16,kick=clamp(sin(4/((t/speed/2%1)+.08))*pow(.01,t/speed/2%1),.3)*!(1&t/speed/2),hihat=filter.highpass(0,sin(noise(t)),.9)*1.5*pow(tern(4>>(t/speed*2&3)&1,.2,.001),t/speed*2%1),snare=(clamp(sin(40/((t/speed/2%1)+.18))*pow(.005,t/speed/2%1)*8,.3)+filter.lowpass(1,sin(noise(t)),.04)*max(t/speed/2%1/.002)*pow(.002,t/speed/2%1)*.05)*(1&t/speed/2),chord=[[-13,-8,-5,-1],[-12,-8,-5,-1],[-13,-10,-6,-3],tern(t/speed/2&1,[-13,-10,-6,-3],[-12,-8,-5,-3])][t/speed/4&3].reduce((cx,cy)=>cx+=clamp(tan(t*PI/128*pow(2,cy/12))*.6*pow(.02,t/speed/\"4442\"[t/speed/4&3]%1),.3)*.7,0),mel=sin(t*PI/128*pow(2,[4,7,11,14,16,19,23,26][(t*2/speed&t/2/speed)&7]/12+[0,5,7,12][(t/speed/8)&3]/12))*.2,ble=(t,not)=>t>0?sin(sin(t*PI/128*pow(2,not/12))*8*exp(-t/speed%32/4)+sin(t*PI/8*pow(2,not/12))*0.9*exp(-t/speed%32/4))*.2:0,bell=ble(t,4)+ble(t-speed*8,2)+ble(t-speed*16,-5)+ble(t-speed*24,-3),[kick,hihat,snare,chord*.8,mel,bell*2].reduce((mx,my)=>mx+=my*.7,0)"
             },
             {
                 "name": "Down The Stairs",
@@ -4165,8 +4164,7 @@
                 "date": "Oct 26, 2025",
                 "sampleRate": 48000,
                 "starred": 2,
-                "file": "TI3699-5.js",
-                "fileOriginal": true
+                "codeOriginal": "sp=3000,ir=sp*3,cl=wd=>atan(wd),rr=aw=>sin(aw*1e32)*1e16,so={\"1a\":[[1,-4,-7,-14],[1,-2,-6,-13],[3,-2,-6,-13],[1,-2,-6,-9]],\"1b\":\"10001000\",\"1c\":\"00001000#\",#\"1d#\":[[1,5,8,10],[11,10,6,1],[10,6,3,1],[-2,1,5,8]]},z1=(Ua=so[\"1a\"])[floor(t/32/sp)%4].map(X1=>cl(tan(pow(2,X1/12)*t*2/129))*.05).reduce((na0,na1)=>na0+=na1*max(-t/8/sp%1/.35),0),z2=cl(sin(4/((t/4/sp%1)+.1))*16*pow(.0001,t/4/sp%1))*.5*(Ub=[so[\"1b\"],so[\"1c\"]])[0][floor(t/2/sp)%8]+sin(rr(t>>1))*.5*pow(.01,t/4/sp%1)*Ub[1][floor(t/2/sp)%8],es=t=>t>0&&sin(t*(t/sp*2%2>1?16:8)/129*pow(2,(Uc=so[\"1d\"])[floor(t/32/sp)%4][floor(t/2/sp)%4]/12))*.2*pow(.01,t/2/sp%1),z3=es(t)+es(t-ir)*.7+es(t-ir*2)*.5+es(t-ir*3)*.2,[z1,z2,z3*2].reduce((W0,W1)=>W0+=atan(W1)*.6,0)"
             },
             {
                 "name": "the μ of the errors",
@@ -7370,7 +7368,7 @@
                 "fileOriginal": true
             },
             {
-                "name": "i think this is the first time ive used "tan" :)👍",
+                "name": "i think this is the first time ive used \"tan\" :)👍",
                 "url": "https://bytebeat.cloud/post/d130e1f2-d281-4797-b6cf-3b7cabc053ac",
                 "date": "Jul 6, 2026",
                 "mode": "Floatbeat",
