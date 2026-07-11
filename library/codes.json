@@ -6126,8 +6126,8 @@
         "sampleRate": 22050,
         "mode": "Funcbeat",
         "stereo": true,
-         "slow": true,
-                "big": true,
+        "slow": true,
+        "big": true,
         "file": "funcbeatanon-1.js",
         "fileOriginal": true
     },
@@ -7390,6 +7390,19 @@
                 "mode": "Floatbeat",
                 "sampleRate": 33700,
                 "codeOriginal": "sin(tan(sin(t/[205,205,205,194][t>>15&3]*PI)*2))/3+tanh(sin(2*sqrt(t%8192)))*6*(.9997**(t%8192))*\"10001001\"[t>>13&7]+(random()-.5)*'00010010001010101'[t>>12&15]"
+            },
+            {
+                "name": "vowels in brazil",
+                "remix": {
+                    "author": "awogler9124812041",
+                    "name": "formant synthesis",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/15x6jtg/formant_synthesis/"
+                },
+                "url": "https://bytebeat.cloud/post/d130e1f2-d281-4797-b6cf-3b7cabc053ac",
+                "date": "Jul 11, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "f=a=>sin(t/128/187.5*a*PI),p=a=>{q=0;a.forEach(b=>q+=f(b)/a.length);return q},vowels=[[660,1700,2400],[530,1850,2500],[270,2300,3E3],[640,1200,2400],[300,870,2250]],p(vowels[(t>>15)%vowels.length])+sin(t/139)*33*(-t>>14&1)+(random()*(.9995**(t%8192)))*7*'02020222'[t>>13&7]"
             }
         ]
     },
@@ -7680,7 +7693,7 @@
             {
                 "name": "(90377) Sedna",
                 "url": "https://bytebeat.cloud/post/250d5561-dba5-4fbc-a9ef-642cd134c962",
-                "description": "BytebeatCloud's Week 30 Submission \"Performance is demanding as always. Tried to do ambient music. Deleted most of the functions that weren't used to save some code space. Loopy.\" - SentleXR",
+                "description": "BytebeatCloud's Week 30 Top Pick \"Performance is demanding as always. Tried to do ambient music. Deleted most of the functions that weren't used to save some code space. Loopy.\" - SentleXR",
                 "date": "Jul 5, 2026",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
