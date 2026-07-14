@@ -4641,6 +4641,7 @@
                 "date": "Jan 30, 2026",
                 "sampleRate": 48000,
                 "stereo": true,
+                "slow": true
                 "codeOriginal": "r=t*(125/(48e3*60)*32768),l=16384,u=8192,c=4096,s=(a,b)=>t/48e3*256*445*2**((parseInt(a,36)+4)/12)/b/8%64-32,x=j=>tanh(((tanh((w=r=>r>0&&(e=a=>s(\"FGNGFGBGFGNGGPNGFGNGFGBGFGNGKLKG\"[31&((21&r>>13)^(r>>15))+(r>>13&r>>14)],a*2),e(1)+e(j/3))+(cm=a=>tanh(s(\"GGKIGGFBGGIGKLKF\"[r>>15&15],a)/12)*12,(cm(1)+cm(j))),w(r)+w(r-(d=24576))/2+w(r-2*d)/3+w(r-3*d)/4)/32)*64*(min(1,r/l%2)**1.2)**.8-tanh(((b=a=>s(\"9B8D\"[r>>16&3],a)*8,b(8)+b(4*j))*(r/l%2)*(1-r%u/1E4)+1E4*sin(120*(r%l)**.1)*(1-r/u%1)*!(r>>13&3))/64)*64+sin(t*j/2.1|t/j/4.5)*64*(1-r/l/2%1)**2*!(~r&2*l)+(random()-random())*64*(1-r/u%1)**3))/128),[x(1.005),x(.995)]"
             },
             {
@@ -4651,6 +4652,33 @@
                 "sampleRate": 48000,
                 "stereo": true,
                 "codeOriginal": "t||(fx=[]),fxi=0,lpf=(a,c)=>(lp_fxii=fxi++,fx[lp_fxii]??=0,fx[lp_fxii]+=(a-fx[lp_fxii])*c),hpf=(a,c)=>a-lpf(a,c),bpf=(a,hc,lc)=>hpf(lpf(a,lc),hc),bbf=(a,hc,lc,v)=>a+bpf(a,hc,lc)*v,ts=t*abs(130/(48e3*60)*16384),l=16384,m=8192,s=4096,seq=(inst,pat=\"\",step=t)=>((!pat[step]||pat[step]==\"0\")?0:inst)||0,kick=()=>tanh((sin(100*(ts%s)**.025*6)+hpf((random()-.5)/2,.5))*(1-ts/s%1)**22+(sin(100*(ts%s)**.1))*(1-(ts/s%1)**2)*(1-(1-ts/s%1)**8)*1.2)/tanh(1),clap=()=>bpf(((random()-.5)*10*(ts>>10&3?(1-ts/s%1)**4*2.5:(1-(ts/(512/1.5))%1)**2)),.2,.2)*1.25,chat=closedHat=()=>hpf((random()-.5)*10*(1-ts/s%1)**4,.9),ride=()=>bpf(bpf((random()-.5)*(1-(ts/s%1)**2),.6,.59),.6,.59)*12.5,mast=()=>sin(bbf(+seq(kick(),\"1000000101010000\",ts>>12&15)+seq(clap(),\"00001000\",ts>>12&7)+seq(chat(),\"0010001000100010\",ts>>12&15)+seq(ride(),\"0000000101010000\",ts>>12&15)+(random()-.5)/1e3,.025,.2,-.5)),[mast(),mast()]"
+            },
+            {
+                "name": "\"Virtual Riot\" moment",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/7b186781-4fa5-497e-aeb3-8e0fdb394f89",
+                "date": "Feb 15, 2026",
+                "sampleRate": 48000,
+                "codeOriginal": "r=t/1.2,t||(d=Array(n=round(12144*1.2)).fill(0),f=[]),fi=0,lp=(a,c)=>(i=fi++,f[i]??=0,f[i]+=(a-f[i])*c),hp=(a,c)=>a-lp(a,c),bp=(a,h,l)=>hp(lp(a,l),h),s=x=>hp(bp((x-x%6)/48e3*(r>>16?2:1)*261.63*2**(parseInt(\"0ceafm0ceafm0fe7\"[r>>12&15],36)/12)%2-1,.01,.8),.02)*(1-r/4096%1)**.35/2,w=sin(s(t*1.005)-s(t/(r>>16?2.01:1.50375)))*!((r>>12)==15)*!((r>>16)>=9)+d[((t%n)*1.006|0)%n],d[t%n]=tanh(bp(w,.01,.8)/180)*140,w"
+            },
+            {
+                "name": "Xorand Synth thingy",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/7c4a52f5-b434-499b-811e-233150160735",
+                "date": "Feb 25, 2026",
+                "sampleRate": 32000,
+                "stereo": true,
+                "starred": 2,
+                "codeOriginal": [
+                    "t||(f=[],lp=(a,c)=>(i=fi++,f[i]??=0,f[i]+=(a-f[i])*c),hp=(a,c)=>a-lp(a,c),bp=(a,hc,lc)=>hp(lp(a,lc),hc)),fi=0,",
+"",
+"ts=t*abs(110/(32e3*60)*16384),mp=x=>2**(parseInt(x,36)/12),tt=t/32e3*256*432*mp(-3)/4,",
+"",
+"t||(syn=xorAndSynth=(_t,d)=>hp(tanh(sin((((_t&_t*2/(_d=.005,_dA=1+(d?_d:-_d))*(1+(d?-_d:_d))^_t*_dA*2)%256-128)+((_t^_t*1.5^_t/2)%256-128)/2+((_t^_t*2)%256-128)+((_t*_dA%126+_t*_dA%129)-127.5))/2*!!_t/128)),.005)),",
+"",
+"out=d=>lp(tanh(bp(syn(tt*mp(\"5420\"[ts>>16&3])/4,d)*1.5+syn(tt*mp(\"5420\"[ts>>16&3]),d)+syn(tt*mp(\"CB97\"[ts>>16&3]),d)+syn(tt*mp(\"LJHG\"[ts>>16&3]),d)+syn(tt*mp(\"SQON\"[ts>>16&3]),d),.005,.9375)/2),.5), // IVmaj7 - iiimin7 - iimin7 - Imaj7",
+"[out(0),out(1)]"
+                ]
             },
             {
                 "name": "Sample this (140 bpm — Eb minor)",
