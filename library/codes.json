@@ -4321,6 +4321,7 @@
                 "date": "May 27, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 44100,
+                "stereo": true,
                 "codeOriginal": "t||(rr=Array(13570).fill(0),lr=Array(12476).fill(0),ar=0,al=0,T=0,sp=0,l=[0,0]),b=125,T++,sp+=1/(48e3/60*b),n=[[0,3,7,10,15],[-3,1,4,7,9],[2,5,9,12,14],[-5,-1,2,6,7]],nl=sp/2%n.length,Q=(n,l,I)=>[...Array(n).keys()].reduce((x,w)=>x+=sin(sin(T*I*pow(l,w))+2*sin(T/4*I*pow(l+.01,w))),0),l[0]+=(n[nl|=0].reduce((r,Z)=>r+=Q((0|sp*8%4),2,pow(2,Z/12)/8)*.05,0)-l[0])*.14,l[1]+=(n[nl].reduce((q,m)=>q+=Q((0|sp*4%4),2,pow(2,m/12)/4)*.05,0)-l[1])*.1,F=.5,ar++,ar%=rr.length,rr[ar]+=l[0],rr[ar]=l[0]+rr[ar]*F,al++,al%=lr.length,lr[al]+=l[1],lr[al]=l[1]+lr[al]*F,[rr[ar],lr[al]]"
             },
             {
