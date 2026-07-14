@@ -275,9 +275,9 @@ class audioProcessor extends AudioWorkletProcessor {
 			/*corrupt sound*/"crpt": function(x,y=8,z) {return chyx.br(chyx.br(x,y)+z,y)^chyx.br(z,y)},
 			/*decorrupt sound*/"decrpt": function(x,y=8,z) {return chyx.br(chyx.br(x^chyx.br(z,y),y)-z,y)},
 		// D3nschøt's ThisBeat2.1 Exotic Functions (Extended Waveform Generator)
-		"st": t => t % 256, // Renamed "saw" to "st" Because It Somehow Ruins SentleXR's Music.
-			"tri": t => Math.abs((t % 512) - 256),
-			"sq": t => t % 256 < 128 ? 255 : 0
+		"SAWT": t => t % 256, // Renamed "saw" to "st" Because It Somehow Ruins SentleXR's Music. (Update) Renamed To SAWT Because Of An Error On vbinchees3000's music. i Also Applied To TRI & SQU
+			"TRI": t => Math.abs((t % 512) - 256),
+			"SQU": t => t % 256 < 128 ? 255 : 0
 		}
 		// Create shortened Math functions
 		const params = Object.getOwnPropertyNames(Math);
