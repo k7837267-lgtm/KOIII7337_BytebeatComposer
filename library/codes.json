@@ -1420,6 +1420,7 @@
                 "sampleRate": 48000,
                 "big": true,
                 "file": "newfall1.js",
+                "codeMinified": "t/=16,p=(n,d)=>t*2**(n/12)%256*(1-t/((T=291200)/d)%1)/52*!(t/T*d&3),(_=>{for(s=i=0;i<88;i++)s+=p(14+i,1+i);return s})()",
                 "fileOriginal": true
             },
             {
@@ -7787,6 +7788,7 @@
             },
             {
                 "name": "Most normal byetbeat I probably made",
+                "description": "Has Kick From \"<a href='https://dollchan.net/btb/res/44.html#837' target='_blank'>\"autochxrded\"</a>\" by lhphr",
                 "date": "Jun 24, 2026",
                 "sampleRate": 32000,
                 "stereo": true,
