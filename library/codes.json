@@ -3651,6 +3651,10 @@
         "children": [
             {
                 "name": "this is mf bytebeat (pcm test)",
+                "cover": {
+                    "name": "MF DOOM - Rapp Snitch Knishes (feat. Mr. Fantastik)",
+                    "url": "https://www.youtube.com/watch?v=dERcdvcXuE0"
+                },
                 "url": "https://www.reddit.com/r/bytebeat/comments/1b2yisq/this_is_mf_bytebeat_pcm_test/",
                 "date": "Feb 29, 2024",
                 "big": true,
@@ -6058,6 +6062,10 @@
             },
             {
                 "name": "spirals",
+                "cover": {
+                    "name": "Jerobeam Fenderson - Spirals",
+                    "url": "https://www.youtube.com/watch?v=kPUdhm2VE-o"
+                },
                 "url": "https://www.bytebeat.cloud/post/1ca368dc-2ec4-4b85-94bf-6243f844920d",
                 "date": "May 12, 2026",
                 "mode": "Floatbeat",
