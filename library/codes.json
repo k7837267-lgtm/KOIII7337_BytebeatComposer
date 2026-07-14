@@ -4767,6 +4767,7 @@
                 "date": "Mar 21, 2026",
                 "sampleRate": 24000,
                 "stereo": true,
+                "big": true,
                 "file": "PrincessPriscillaPT-2.js",
                 "fileOriginal": true
             },
@@ -4777,6 +4778,7 @@
                 "date": "Mar 27, 2026",
                 "sampleRate": 24000,
                 "stereo": true,
+                "big": true,
                 "file": "PrincessPriscillaPT-3.js",
                 "fileOriginal": true
             },
@@ -4786,8 +4788,9 @@
                 "url": "https://www.bytebeat.cloud/post/a1869126-dc63-4421-8159-20b6a4e42246",
                 "date": "Apr 4, 2026",
                 "sampleRate": 24000,
-                "file": "PrincessPriscillaPT-4.js",
+                "big": true,
                 "starred": 2,
+                "file": "PrincessPriscillaPT-4.js",
                 "fileOriginal": true
             },
             {
@@ -4810,8 +4813,124 @@
                 "date": "May 10, 2026",
                 "sampleRate": 24000,
                 "stereo": true,
+                "big": true,
                 "starred": 1,
                 "file": "PrincessPriscillaPT-5.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "banjo-type sound",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/e1f9be89-17a2-47a9-aa8b-940ced6c0841",
+                "remix": {
+                    "author": "neverforgettoleave",
+                    "name": "Arpeggios",
+                    "url": "https://reddit.com/r/bytebeat/comments/jm7a7e/arpeggios/"
+                },
+                "date": "May 22, 2026",
+                "sampleRate": 48000,
+                "file": "PrincessPriscillaPT-6.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "\"ERROR 01\" remixed",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/12136e22-69b2-4ee3-9d74-58e0a06a3716",
+                "cover": {
+                    "name": "PortalCraftDash Studio 20 (LikeLimeLife) - ERROR 01",
+                    "url": "https://www.youtube.com/watch?v=_cw0StSleGA"
+                },
+                "date": "Jun 4, 2026",
+                "sampleRate": 48000,
+                "big": true,
+                "file": "PrincessPriscillaPT-7.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "sine-nomath + nothing is real",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/e49fcbdf-28ba-40d1-a23a-082a24955e35",
+                "remix": [
+                    {
+                        "author": "erlehmann",
+                        "name": "sine-nomath",
+                        "url": "https://github.com/erlehmann/algorithmic-symphonies/blob/master/sine-nomath/"
+                    },
+                    {
+                        "author": "Two2Fall",
+                        "name": "Nothing is real",
+                        "url": "https://www.reddit.com/r/bytebeat/comments/1gzwwdr/i_finished_my_song_for_the_bytebattle_season_2/"
+                    }
+                ],
+                "date": "Jun 11, 2026",
+                "sampleRate": 48000,
+                "codeOriginal": "w=x=>-(x&15)*(-x&15)*(((x&16)/8)-1)/64,w(t/8*2**([[0,1][t>>18&1],5,[8,8,8,8,10,10,12,15][t>>15&7]][(t>>12&15)%3]/12))*(-t&8191)/8192*min(1,(t*32&2**17-1)/4096)*min(1,(-t*32&2**17-1)/4096)"
+            },
+            {
+                "name": "decided to remix one of ccret's codes",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/d8c4ae2c-43de-4740-9768-93dc264b7515",
+                "remix": {
+                    "author": "ccret2022",
+                    "url": "https://www.reddit.com/r/DollchanBytebeat/comments/1ofut3h/holyfuckingshitimsinewavingitsofuckinggoodgoonacum/"
+                },
+                "date": "Jun 29, 2026",
+                "sampleRate": 33140,
+                "big": true,
+                "file": "PrincessPriscillaPT-8.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "random hex melody",
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/6a8fc866-0eda-476e-8537-a1a0d3e4bee5",
+                "date": "Jun 30, 2026",
+                "sampleRate": 48000,
+                "big": true,
+                "starred": 2,
+                "file": "PrincessPriscillaPT-9.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "Canterlot to the Cosmos",
+                "mode": "Floatbeat",
+                "url": [
+                    "https://www.bytebeat.cloud/post/457fe3f9-bd50-418f-aea7-b727d41bf665",
+                    "https://dollchan.net/btb/res/7164.html#16003"
+                ],
+                "date": "Jul 5, 2026",
+                "sampleRate": 48000,
+                "big": true,
+                "starred": 1,
+                "file": "PrincessPriscillaPT-10.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "SH∆PE-SH¡FT Remix",
+                "remix": {
+                    "author": "UltraDasher965",
+                    "name": "SH∆PE-SH¡FT",
+                    "url": "https://www.reddit.com/r/bytebeat_2/comments/1olei14/shpeshft_by_far_one_of_the_best_bytebeats_ive_made/"
+                },
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/1c217ab2-e8ef-4c92-b11f-a7373bbf0413",
+                "date": "Jul 8, 2026",
+                "sampleRate": 42000,
+                "file": "PrincessPriscillaPT-11.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "Echoes of the Crystal Heart",
+                "remix": {
+                    "author": "pck404",
+                    "name": "Lullaby",
+                    "url": "https://www.bytebeat.cloud/post/e457b3ce-b16d-4909-9a47-a7ce5797ca0d"
+                },
+                "mode": "Floatbeat",
+                "url": "https://www.bytebeat.cloud/post/8ccae996-be95-47e6-a570-7135abaf8fc0",
+                "date": "Jul 14, 2026",
+                "sampleRate": 48000,
+                "file": "PrincessPriscillaPT-12.js",
                 "fileOriginal": true
             }
         ]
