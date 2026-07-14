@@ -4886,6 +4886,7 @@
                 "url": "https://www.bytebeat.cloud/post/6a8fc866-0eda-476e-8537-a1a0d3e4bee5",
                 "date": "Jun 30, 2026",
                 "sampleRate": 48000,
+                "stereo": true,
                 "big": true,
                 "starred": 2,
                 "file": "PrincessPriscillaPT-9.js",
@@ -4893,6 +4894,7 @@
             },
             {
                 "name": "Canterlot to the Cosmos",
+                "description": "BytebeatCloud's Week 30 Submission",
                 "mode": "Floatbeat",
                 "url": [
                     "https://www.bytebeat.cloud/post/457fe3f9-bd50-418f-aea7-b727d41bf665",
@@ -4900,6 +4902,7 @@
                 ],
                 "date": "Jul 5, 2026",
                 "sampleRate": 48000,
+                "stereo": true,
                 "big": true,
                 "starred": 1,
                 "file": "PrincessPriscillaPT-10.js",
@@ -4916,6 +4919,7 @@
                 "url": "https://www.bytebeat.cloud/post/1c217ab2-e8ef-4c92-b11f-a7373bbf0413",
                 "date": "Jul 8, 2026",
                 "sampleRate": 42000,
+                "stereo": true,
                 "file": "PrincessPriscillaPT-11.js",
                 "fileOriginal": true
             },
@@ -4930,6 +4934,7 @@
                 "url": "https://www.bytebeat.cloud/post/8ccae996-be95-47e6-a570-7135abaf8fc0",
                 "date": "Jul 14, 2026",
                 "sampleRate": 48000,
+                "stereo": true,
                 "big": true,
                 "file": "PrincessPriscillaPT-12.js",
                 "fileOriginal": true
