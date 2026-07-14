@@ -4804,13 +4804,14 @@
             },
             {
                 "name": "another synthwave thing",
-                "description": "BytebeatCloud's Week 22 Submission Sonic Frontiers Mentioned.",
+                "description": "BytebeatCloud's Week 22 Submission (Sonic Frontiers Mentioned.)",
                 "mode": "Floatbeat",
                 "url": "https://www.bytebeat.cloud/post/6a3bde3f-8fda-4690-8cbf-2cb602f8cfde",
                 "date": "May 10, 2026",
                 "sampleRate": 24000,
-                "file": "PrincessPriscillaPT-5.js",
+                "stereo": true,
                 "starred": 1,
+                "file": "PrincessPriscillaPT-5.js",
                 "fileOriginal": true
             }
         ]
