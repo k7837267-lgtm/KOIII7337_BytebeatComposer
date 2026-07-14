@@ -4617,6 +4617,19 @@
                 "fileOriginal": true
             },
             {
+                "name": "made a beat from v3",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1pxi8qj/comment/nwc534w/?context=3",
+                "remix": {
+                    "author": "KOIII7337",
+                    "name": "I Was Using Functions Then Got This",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1pxi8qj/i_was_using_functions_then_got_this/"
+                },
+                "date": "Dec 28, 2025",
+                "sampleRate": 44100,
+                "codeOriginal": "T=t+8192,tanh((exp(sin(cos(tan(cbrt(((T/2&T))%16384)*8))))-1.35))*min(1,t/8192%2)+tanh(sin(100*(t%16384)**.1)*4)*4*max(0,1-t/8192%2)+sin(t/2.1|t/4.5)*(1-t/16384%1)**4*4*(t>>14&1)"
+            },
+            {
                 "name": "Sunlit Streets of Manehattan [Bytewave Concept]",
                 "remix": {
                     "author": "NikNemメ",
@@ -4629,19 +4642,6 @@
                 "sampleRate": 48000,
                 "stereo": true,
                 "codeOriginal": "r=t*(125/(48e3*60)*32768),l=16384,u=8192,c=4096,s=(a,b)=>t/48e3*256*445*2**((parseInt(a,36)+4)/12)/b/8%64-32,x=j=>tanh(((tanh((w=r=>r>0&&(e=a=>s(\"FGNGFGBGFGNGGPNGFGNGFGBGFGNGKLKG\"[31&((21&r>>13)^(r>>15))+(r>>13&r>>14)],a*2),e(1)+e(j/3))+(cm=a=>tanh(s(\"GGKIGGFBGGIGKLKF\"[r>>15&15],a)/12)*12,(cm(1)+cm(j))),w(r)+w(r-(d=24576))/2+w(r-2*d)/3+w(r-3*d)/4)/32)*64*(min(1,r/l%2)**1.2)**.8-tanh(((b=a=>s(\"9B8D\"[r>>16&3],a)*8,b(8)+b(4*j))*(r/l%2)*(1-r%u/1E4)+1E4*sin(120*(r%l)**.1)*(1-r/u%1)*!(r>>13&3))/64)*64+sin(t*j/2.1|t/j/4.5)*64*(1-r/l/2%1)**2*!(~r&2*l)+(random()-random())*64*(1-r/u%1)**3))/128),[x(1.005),x(.995)]"
-            },
-            {
-                "name": "made a beat from v3",
-                "mode": "Floatbeat",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1pxi8qj/comment/nwc534w/?context=3",
-                "remix": {
-                    "author": "KOIII7337",
-                    "name": "I Was Using Functions Then Got This",
-                    "url": "https://www.reddit.com/r/bytebeat/comments/1pxi8qj/i_was_using_functions_then_got_this/"
-                },
-                "date": "Dec 28, 2025",
-                "sampleRate": 44100,
-                "codeOriginal": "T=t+8192,tanh((exp(sin(cos(tan(cbrt(((T/2&T))%16384)*8))))-1.35))*min(1,t/8192%2)+tanh(sin(100*(t%16384)**.1)*4)*4*max(0,1-t/8192%2)+sin(t/2.1|t/4.5)*(1-t/16384%1)**4*4*(t>>14&1)"
             },
             {
                 "name": "Simple drum machine",
@@ -4716,6 +4716,22 @@
                 "mode": "Floatbeat",
                 "codeOriginal": "t%=786432,r=(x,y=12288,z=0.5)=>(t?0:a=Array(y).fill(0),b=x%256+a.shift(),a.push(b*z),b),pI=parseInt,A=r(sin(t/20480*2*PI*528*2**(pI(\"J HJC AC7 570   5 35A   5 35D   \"[t>>12&31],36)/12))||0,6144)/2,(t&16384?(t&16383):(t&8191))?0:S=Array.from({length:s=int(81920/(528*2**((pI(\"8CJ 8CJ 6AH 6AD 8CJ 8CJ BFM BFI\"[t>>13&31],36)||0)/12)))},()=>random()),S[t%s]=S[t%s]/2+S[(t+1)%s]/2,B=r(S[t%s]-.5),D={K:sin(cbrt(t&4095)*8)/(1+((t/256)&15))},D.S=D.K/2+(D.H=(random()-.5)*(-t>>4&255)/256),C=D[\"K SKH SK  SKS   \"[t>>12&15]]||0,[B+A,B+C][t>>19&1]",
                 "codeMinified": "t%=786432,r=(x,y=12288,z=0.5)=>(t?0:a=Array(y).fill(0),b=x%256+a.shift(),a.push(b*z),b),P=parseInt,A=r(sin(t/20480*2*PI*528*2**(P(\"J HJC AC7 570   5 35A   5 35D\"[L=t>>12&31],36)/12))||0,6144)/2,(t&4**7?t&16383:t&8191)?0:S=Array.from({length:s=int(81920/(528*2**(P(\"8CJ 8CJ 6AH 6AD 8CJ 8CJ BFM BFI\"[t>>13&31],36)/12)))},()=>random()),S[t%s]=S[t%s]/2+S[(t+1)%s]/2,B=r(S[t%s]-.5),D={K:sin(cbrt(t&4095)*8)/(1+(t/256&15))},D.S=D.K/2+(D.H=(random()-.5)*(-t>>4&255)/256),C=D[\"K SKH SK  SKS\"[L&15]]||0,[B+A,B+C][t>>19&1]"
+            },
+            {
+                "name": "𝙽𝙾𝚁𝚃𝙷𝙴𝚁𝙽𝙻𝙸𝙶𝙷𝚃",
+                "url": "https://dollchan.net/btb/res/5289.html#15966",
+                "description": "\"The \".shift()\" & \".push()\" Is So Not Worth It.\" - KOIII7337",
+                "date": "Jul 4, 2026",
+                "sampleRate": 24000,
+                "codeOriginal": [
+                    "t*=2,",
+"pI=a=>parseInt(a,36),",
+"f=a=>2**(a/12),",
+"lp=(i,w)=>{t?0:d=0;if(w==0)return i;o=i+d;d=o/(1+1/w);return d/w},",
+"r=(x,y=12288,z=0.5)=>(t?0:a=Array(y).fill(0),b=x%256+a.shift(),a.push(b*z),b),",
+"Bas=f(pI('95'[t>>18&1])-12)*t*((7&t>>14)==0)&128,",
+"Mel=r(f(12+pI('NCGCNCGcJ9C9JCB7'[t>>15&15]))*t*((3&t>>13)==0)&128)/2+random()*16,lp(Bas+Mel,16)"
+                ]
             }
         ]
     },
