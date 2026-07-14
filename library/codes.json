@@ -4565,6 +4565,10 @@
             { "description": "She's Regarding Questions In My Composer." },
             {
                 "name": "F#maj / Ebmin, 90 BPM",
+                "cover": {
+                    "name": "EDDENSKY - F# major 90 bpm",
+                    "url": "https://www.youtube.com/watch?v=V0PysQbnCaU"
+                },
                 "mode": "Floatbeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1j8pdm2/fmaj_ebmin_90_bpm/",
                 "date": "Mar 11, 2025",
@@ -6444,6 +6448,10 @@
             },
             {
                 "name": "Mo Beats - Righteous",
+                "cover": {
+                    "name": "Mo Beats - Righteous (pepe lore song)",
+                    "url": "https://www.youtube.com/watch?v=fyXD9Cq9Qj8"
+                },
                 "url": "https://www.bytebeat.cloud/post/5dd4b164-37b1-489f-87fe-1cab921e0a71",
                 "description": "BytebeatCloud's Week 16 Submission",
                 "date": "Apr 4, 2026",
@@ -6462,8 +6470,8 @@
             {
                 "name": "Looping the Rooms - rusino (Short Cover)",
                 "cover": {
-                           "name": "rusino - Looping the Rooms (ループザルーム) feat. Hatsune Miku",
-                           "url": "https://www.youtube.com/watch?v=icBDYkfxpMs"
+                    "name": "rusino - Looping the Rooms (ループザルーム) feat. Hatsune Miku",
+                    "url": "https://www.youtube.com/watch?v=icBDYkfxpMs"
                 },
                 "url": "https://www.bytebeat.cloud/post/9433b20b-8f4d-4e5c-a84e-ca054b9a7828",
                 "date": "Apr 19, 2026",
@@ -6481,7 +6489,10 @@
             },
             {
                 "name": "Places - BFB OST",
-                "description": "\"A Little Inaccurate, But I Could Appreciate The Effort You Put In.\" - KOIII7337",
+                "cover": {
+                    "name": "Yoyle Cake - Places",
+                    "url": "https://www.youtube.com/watch?v=oIGPyAgKgBM"
+                },
                 "url": "https://www.bytebeat.cloud/post/c70f1bd5-e245-48d9-a857-bf54eb18ea74",
                 "date": "May 25, 2026",
                 "sampleRate": 44100,
