@@ -1,6 +1,6 @@
 /*
   *
-  *    · The Celestial Bell Garden  *.
+  *    Â· The Celestial Bell Garden  *.
   *
   */
 
