@@ -4931,7 +4931,10 @@
                     "url": "https://www.bytebeat.cloud/post/e457b3ce-b16d-4909-9a47-a7ce5797ca0d"
                 },
                 "mode": "Floatbeat",
-                "url": "https://www.bytebeat.cloud/post/8ccae996-be95-47e6-a570-7135abaf8fc0",
+                "url": [
+                    "https://www.bytebeat.cloud/post/8ccae996-be95-47e6-a570-7135abaf8fc0",
+                    "https://dollchan.net/btb/res/7164.html#16207"
+                ],
                 "date": "Jul 14, 2026",
                 "sampleRate": 48000,
                 "stereo": true,
