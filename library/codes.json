@@ -7750,6 +7750,13 @@
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "codeOriginal": "f=a=>sin(t/128/187.5*a*PI),p=a=>{q=0;a.forEach(b=>q+=f(b)/a.length);return q},vowels=[[660,1700,2400],[530,1850,2500],[270,2300,3E3],[640,1200,2400],[300,870,2250]],p(vowels[(t>>15)%vowels.length])+sin(t/139)*33*(-t>>14&1)+(random()*(.9995**(t%8192)))*7*'02020222'[t>>13&7]"
+            },
+            {
+                "name": "=Y",
+                "url": "https://www.bytebeat.cloud/post/f61c9708-2023-48f1-922c-463204d48659",
+                "date": "Jul 13, 2026",
+                "sampleRate": 48000,
+                "codeOriginal": "(t&131072?(((t*[2,2.24,2.5,3][3&t])*[0,1][1&t]))*[1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0][15&t>>13]:(((t*[2,2.24,2.5,3,3.35,3,2.5,3][7&t>>13])*[1,0][[1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0][15&t>>13]&t])|(((t*[2,2.24,2.5,3][3&t])*[0,1][1&t]))*[1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0][15&t>>13]))+(400000/(t&32767))"
             }
         ]
     },
@@ -8102,29 +8109,57 @@
     },
     {
         "author": "astolfo671games",
-        "name": "232b bytebeat song",
-        "url": [
-            "https://www.youtube.com/watch?v=WjUhJuvxq6s",
-            "https://www.reddit.com/r/bytebeat/comments/1uqq7uu/232b_bytebeat_song_ccompatible/",
-            "https://www.bytebeat.cloud/post/7f6d42b6-bb2f-404e-93f1-bfc66499c3b6"
-        ],
-        "date": "Jul 8, 2026",
-        "sampleRate": 28160,
-        "c": true,
-        "file": "astolfo671games-Format.js",
-        "codeOriginal": "t>>23?0:(99>>t*~(54069/(~(~((t>>12^t/4096+(t>>18|1))%9)*12/7)*2-85)+387)/996&t>>(7^t>>21)^64>>(~t>>14&31?t>>14^t/16384+1:0)%9*863%5529%4695%3068%2247%576*t/4096)&~(t>>19^15?0:t>>12)^-(t>>19&7?t<15<<19?t>>6:0:35246<<(t>>14)<0?t>>5:0)",
-        "fileFormatted": true
+        "children": [
+            {
+                "name": "232b bytebeat song",
+                "url": [
+                    "https://www.youtube.com/watch?v=WjUhJuvxq6s",
+                    "https://www.reddit.com/r/bytebeat/comments/1uqq7uu/232b_bytebeat_song_ccompatible/",
+                    "https://www.bytebeat.cloud/post/7f6d42b6-bb2f-404e-93f1-bfc66499c3b6"
+                ],
+                "date": "Jul 8, 2026",
+                "sampleRate": 28160,
+                "c": true,
+                "file": "astolfo671games-Format.js",
+                "codeOriginal": "t>>23?0:(99>>t*~(54069/(~(~((t>>12^t/4096+(t>>18|1))%9)*12/7)*2-85)+387)/996&t>>(7^t>>21)^64>>(~t>>14&31?t>>14^t/16384+1:0)%9*863%5529%4695%3068%2247%576*t/4096)&~(t>>19^15?0:t>>12)^-(t>>19&7?t<15<<19?t>>6:0:35246<<(t>>14)<0?t>>5:0)",
+                "fileFormatted": true
+            },
+            {
+                "name": "hybrid song 2:20 cover wip",
+                "url": "https://www.bytebeat.cloud/post/54e098cc-c821-457d-a8a4-00e92ea44ddc",
+                "date": "Jul 12, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "t<976896?('0'+'x'+\"79bcdefffffedcb97643210000012346\"[(\"00335600337788440044431122335600\"[t/5088&31]%24*1937%13794%12022%10387%8720%7023%5196%3460%1703+1234)*(1+(t>976896))*t/8192&31])%108%39*4*(1-t%10176/20352.)+(t>325632?(t*1234/65536&7)+(22139>>t/5088%16&1?16*((t*1234/4096&31)+(t/20352&15)>15):0)*(1-t%5088/5088.):0)+(t>651264?t*1234/32768&7:0)+(t>814080?t*1234/16384&7:0):0"
+            }
+        ]
     },
     {
         "author": "Gallium-Gonzollium",
-        "name": "[#1] New Beginnings",
-        "url": [
-            "https://www.reddit.com/r/bytebeat/comments/1utoq1i/1_new_beginnings_256_bytes_ccompatible/",
-            "https://www.bytebeat.cloud/post/638c3f1b-22d6-4d44-91cf-86e10636309b"
-        ],
-        "date": "Jul 11, 2026",
-        "sampleRate": 48000,
-        "c": true,
-        "codeOriginal": "((t&t*91/(t>>16&1?10:12-3*(t>>17&1))/15&255)+!!(t>>20&3)*((t*6^t)*811>>9&63))*(~t>>6-(t>>14&1)&127)/128*!!(~t>>14&63)+(63-(t>>16&15)&((~t>>14&7?30-10*((t>>17&1)+(t>>11&1)-(t>>13&1)*(t>>19&3)):27-2*(t>>13&1))*t/40^t>>8))+!!(t>>21&3)*!(t>>11&7)*(t>>7&15)*159"
+        "children": [
+            {
+                
+                "name": "[#1] New Beginnings",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/1utoq1i/1_new_beginnings_256_bytes_ccompatible/",
+                    "https://www.bytebeat.cloud/post/638c3f1b-22d6-4d44-91cf-86e10636309b"
+                ],
+                "date": "Jul 11, 2026",
+                "sampleRate": 48000,
+                "c": true,
+                "codeOriginal": "((t&t*91/(t>>16&1?10:12-3*(t>>17&1))/15&255)+!!(t>>20&3)*((t*6^t)*811>>9&63))*(~t>>6-(t>>14&1)&127)/128*!!(~t>>14&63)+(63-(t>>16&15)&((~t>>14&7?30-10*((t>>17&1)+(t>>11&1)-(t>>13&1)*(t>>19&3)):27-2*(t>>13&1))*t/40^t>>8))+!!(t>>21&3)*!(t>>11&7)*(t>>7&15)*159"
+            },
+            {
+                
+                "name": "[#2] Nullify",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/1uwctg7/2_nullify/",
+                    "https://www.bytebeat.cloud/post/f1780573-d019-4f77-bc46-60bf57bee9bb"
+                ],
+                "date": "Jul 14, 2026",
+                "sampleRate": 48000,
+                "c": true,
+                "codeOriginal": "((((82+9*(t>>18&1))*t/9>>3^255*t>>11&t>>3)&127)*(t>>11&223&~t>>9&15)/9+(((3364383129>>(t>>14&28)&15)<<(~t>>9&5)-(t>>20&1))*t>>7&54)*!!(t>>20&3))*!!(~t>>15&15)+(((3+(t>>18&1))*t>>5&95)+((t^6*t)*85>>9&63)*(t>>15&1))*(~t>>12&7)/6+((~t>>(t>>7)&192)>>(t>>9))"
+            }
+        ]
     }
 ]
