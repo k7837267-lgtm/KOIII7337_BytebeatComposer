@@ -6052,16 +6052,19 @@
                 "date": "Jan 10, 2026",
                 "sampleRate": 72000,
                 "mode": "Floatbeat",
-                "stereo": true,
                 "description": "Posted by insanity696420",
-                "codeOriginal": "s=sin,r=sqrt,n=atan,d=l=>(-t&2**l-1)/2**l,N=x=>2**(parseInt(x,36)/12),$=o=>n(s(r(t&32767))*d(13)*(S=(t>>13&3)==0?1:0)*3)+(cos(r(t*N('7350'[t>>18&3]-7)&1023)/5)/1.5+((t*o*N(['7ahj'[v=t>>10&3],'aefj'[v],'5hjm'[v],'057h'[v]][t>>18&3])*N(-7)>>7&1)-.5)*d(14)/1.4+n(s(t*PI/2**6/(m=(t>>(t>>13&7)&t>>13&255)+1)+s(t*PI/2**3/m+s(t))*d(13)*d(17)*3)*d((t>>14&15)+2)*4)/7)*(S==0?1:(t%2**13)/2**13),[$(.999),$(1.001)]"
+                "codeOriginal": "s=sin,n=atan,d=l=>(-t&2**l-1)/2**l,n(s(sqrt(t&32767))*d(13)*(S=(t>>13&3)==0?1:0)*3)+n(s(t*PI/2**6/(m=(t>>(t>>13&7)&t>>13&255)+1)+s(t*PI/2**3/m+s(t))*d(13)*d(17)*3)*d((t>>14&15)+2)*4)/2*(S==0?1:(t%2**13)/2**13)"
             },
             {
+                "remix": {
+                    "author": "ccret2022"
+                },
                 "date": "Jan 10, 2026",
                 "sampleRate": 72000,
                 "mode": "Floatbeat",
+                "stereo": true,
                 "description": "Posted by insanity696420",
-                "codeOriginal": "s=sin,n=atan,d=l=>(-t&2**l-1)/2**l,n(s(sqrt(t&32767))*d(13)*(S=(t>>13&3)==0?1:0)*3)+n(s(t*PI/2**6/(m=(t>>(t>>13&7)&t>>13&255)+1)+s(t*PI/2**3/m+s(t))*d(13)*d(17)*3)*d((t>>14&15)+2)*4)/2*(S==0?1:(t%2**13)/2**13)"
+                "codeOriginal": "s=sin,r=sqrt,n=atan,d=l=>(-t&2**l-1)/2**l,N=x=>2**(parseInt(x,36)/12),$=o=>n(s(r(t&32767))*d(13)*(S=(t>>13&3)==0?1:0)*3)+(cos(r(t*N('7350'[t>>18&3]-7)&1023)/5)/1.5+((t*o*N(['7ahj'[v=t>>10&3],'aefj'[v],'5hjm'[v],'057h'[v]][t>>18&3])*N(-7)>>7&1)-.5)*d(14)/1.4+n(s(t*PI/2**6/(m=(t>>(t>>13&7)&t>>13&255)+1)+s(t*PI/2**3/m+s(t))*d(13)*d(17)*3)*d((t>>14&15)+2)*4)/7)*(S==0?1:(t%2**13)/2**13),[$(.999),$(1.001)]"
             },
             {
                 "name": "ADAMANTINE",
@@ -7820,7 +7823,7 @@
             },
             {
                 "name": "Presence of the New",
-                "description": "\"\"Presence of the New\" kind of sounds like \"Something New\" by maj-6, one from May 8th contains the melody of \"Fly into sky\" by Zackx (NikNemメ).\" - PrincessPriscillaPT",
+                "description": "\"Kind of sounds like <a href='https://battleofthebits.com/arena/Entry/Something+New/52726/' target='_blank'>\"Something New\"</a> by maj-6.\"",
                 "url": "https://www.bytebeat.cloud/post/c94e30b1-36d2-4ef6-9130-18442fa848d3",
                 "date": "Apr 3, 2026",
                 "mode": "Signed Bytebeat",
@@ -7888,7 +7891,7 @@
                 "fileOriginal": true
             },
             {
-                "description": "little dancing ponies rainbows and magical butterflies who make you eat pixy stix and...",
+                "description": "little dancing ponies rainbows and magical butterflies who make you eat pixy stix and... | contains the melody of <a href='https://dollchan.net/btb/res/204.html#1904' target='_blank'>\"Fly into sky\"</a> by Zackx (NikNemメ).",
                 "url": "https://www.bytebeat.cloud/post/3dff507f-58c0-4187-9afa-68f7546c757b",
                 "date": "May 8, 2026",
                 "sampleRate": 48000,
@@ -7985,7 +7988,7 @@
             },
             {
                 "name": "Most normal byetbeat I probably made",
-                "description": "Has Kick From <a href='https://dollchan.net/btb/res/44.html#837' target='_blank'>\"autochxrded\"</a> by lhphr",
+                "description": "\"Has Kick From <a href='https://dollchan.net/btb/res/44.html#837' target='_blank'>\"autochxrded\"</a> by lhphr\"",
                 "date": "Jun 24, 2026",
                 "sampleRate": 32000,
                 "stereo": true,
