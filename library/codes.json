@@ -6056,7 +6056,7 @@
                 "codeOriginal": "s=sin,n=atan,d=l=>(-t&2**l-1)/2**l,n(s(sqrt(t&32767))*d(13)*(S=(t>>13&3)==0?1:0)*3)+n(s(t*PI/2**6/(m=(t>>(t>>13&7)&t>>13&255)+1)+s(t*PI/2**3/m+s(t))*d(13)*d(17)*3)*d((t>>14&15)+2)*4)/2*(S==0?1:(t%2**13)/2**13)"
             },
             {
-                "children" [
+                "children": [
                 {
                 "description": "A Remix Of ccret2022 1/10/26"
                 },
