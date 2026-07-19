@@ -6416,10 +6416,56 @@
                 "name": "hard random radio",
                 "url": "https://www.bytebeat.cloud/post/a4fc9c36-d236-4c83-a40a-5731579cb7db",
                 "description": "BytebeatCloud's Week 13 Submission",
-                "date": "Mar 9, 2026",
+                "date": "Mar 8, 2026",
                 "starred": 2,
-                "file": "pck404-6.js",
-                "fileOriginal": true
+                "codeOriginal": [
+                    "(t==0||((floor(new Date().getTime()/250)%20)==0))&&(",
+"r=(a,b)=>floor(a+random()*(b-a)),",
+"ml=r(5,9)*2,",
+"gl=r(2,6)*4,",
+"m=new Array(ml).fill(0).map(_=>r(3,8)),",
+"g=new Array(gl).fill(0).map(_=>r(0,3)),",
+"b=1.5+random()*0.4,",
+"k=1+random()*3,",
+"w=r(62,145),",
+"s1=r(10,14),",
+"s2=r(11,13)",
+"),",
+"t*=b,",
+"((t*m[(t>>s1)%ml]*g[(t>>s2)%gl%2])&w)",
+"|floor(sin(sqrt(t%4096)*k))&182"
+                ],
+                "codeMinified": "(t==0||((floor(new Date().getTime()/250)%20)==0))&&(r=(a,b)=>floor(a+random()*(b-a)),ml=r(5,9)*2,gl=r(2,6)*4,m=new Array(ml).fill(0).map(_=>r(3,8)),g=new Array(gl).fill(0).map(_=>r(0,3)),b=1.5+random()*.4,k=1+random()*3,w=r(62,145),s1=r(10,14),s2=r(11,13)),t*=b,((t*m[(t>>s1)%ml]*g[(t>>s2)%gl%2])&w)|floor(sin(sqrt(t%4096)*k))&182"
+            },
+            {
+                "name": "hard random radio (no Date)",
+                "remix": {
+                    "author": "pck404",
+                    "name": "hard random radio",
+                    "url": "https://www.bytebeat.cloud/post/a4fc9c36-d236-4c83-a40a-5731579cb7db"
+                },
+                "url": "https://www.bytebeat.cloud/post/1a259ea3-1caa-41cb-9844-336002f5b752",
+                "date": "Mar 13, 2026",
+                "starred": 2,
+                "codeOriginal": [
+                    "SR=8E3,",
+"(t==0||((floor(t/SR*5)%20)==0))&&(",
+"r=(a,b)=>floor(a+random()*(b-a)),",
+"ml=r(5,9)*2,",
+"gl=r(2,6)*4,",
+"m=new Array(ml).fill(0).map(_=>r(3,8)),",
+"g=new Array(gl).fill(0).map(_=>r(0,3)),",
+"b=1.5+random()*0.4,",
+"k=1+random()*3,",
+"w=r(62,145),",
+"s1=r(10,14),",
+"s2=r(11,13)",
+"),"
+"t*=b,",
+"((t*m[(t>>s1)%ml]*g[(t>>s2)%gl%2])&w)",
+"|floor(sin(sqrt(t%4096)*k))&182"
+                ],
+                "codeMinified": "SR=8E3,(t==0||((floor(t/SR*5)%20)==0))&&(r=(a,b)=>floor(a+random()*(b-a)),ml=r(5,9)*2,gl=r(2,6)*4,m=new Array(ml).fill(0).map(_=>r(3,8)),g=new Array(gl).fill(0).map(_=>r(0,3)),b=1.5+random()*.4,k=1+random()*3,w=r(62,145),s1=r(10,14),s2=r(11,13)),t*=b,((t*m[(t>>s1)%ml]*g[(t>>s2)%gl%2])&w)|floor(sin(sqrt(t%4096)*k))&182"
             }
         ]
     },
