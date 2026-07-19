@@ -6368,7 +6368,7 @@
             {
                 "name": "Dark ̌͋́ritu͕̞a͊͊l̘͂͐",
                 "url": "https://www.bytebeat.cloud/post/a31a5e2d-131a-478a-a7a7-0a660905e24d",
-                "description": "BytebeatCloud's Week 3 Top Pick",
+                "description": "\"Around the fire, the machines began to spin, and ring their metallic bodies in an unsettling trance.\" - BytebeatCloud's Week 3 Top Pick",
                 "date": "Dec 27, 2025",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
@@ -6379,6 +6379,7 @@
             },
             {
                 "name": "Lullaby",
+                "description": "\"Rest my child, tomorrow your quest begins.\"",
                 "url": "https://www.bytebeat.cloud/post/e457b3ce-b16d-4909-9a47-a7ce5797ca0d",
                 "date": "Jan 1, 2026",
                 "mode": "Floatbeat",
@@ -6394,7 +6395,7 @@
                     "url": "https://www.bytebeat.cloud/post/28e3e8fb-5199-450e-869b-00e9bb06d881"
                 },
                 "url": "https://www.bytebeat.cloud/post/5aa3b17f-32ea-493d-8d14-dc59ccbf6577",
-                "description": "BytebeatCloud's Week 10 Submission",
+                "description": "\"...but sometimes we do.\" - BytebeatCloud's Week 10 Submission",
                 "date": "Feb 15, 2026",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
@@ -6406,7 +6407,7 @@
             {
                 "name": "flashhh (wip)",
                 "url": "https://www.bytebeat.cloud/post/25eeddcc-4f0b-4f27-9dab-02208dbfe15f",
-                "date": "Mar 7, 2025",
+                "date": "Mar 7, 2026",
                 "sampleRate": 44100,
                 "mode": "Floatbeat",
                 "big": true,
@@ -6448,7 +6449,7 @@
                 },
                 "url": "https://www.bytebeat.cloud/post/1a259ea3-1caa-41cb-9844-336002f5b752",
                 "date": "Mar 13, 2026",
-                "starred": 2,
+                "starred": 1,
                 "codeOriginal": [
                     "SR=8E3,",
 "(t==0||((floor(t/SR*5)%20)==0))&&(",
@@ -6468,6 +6469,18 @@
 "|floor(sin(sqrt(t%4096)*k))&182"
                 ],
                 "codeMinified": "SR=8E3,(t==0||((floor(t/SR*5)%20)==0))&&(r=(a,b)=>floor(a+random()*(b-a)),ml=r(5,9)*2,gl=r(2,6)*4,m=new Array(ml).fill(0).map(_=>r(3,8)),g=new Array(gl).fill(0).map(_=>r(0,3)),b=1.5+random()*.4,k=1+random()*3,w=r(62,145),s1=r(10,14),s2=r(11,13)),t*=b,((t*m[(t>>s1)%ml]*g[(t>>s2)%gl%2])&w)|floor(sin(sqrt(t%4096)*k))&182"
+            },
+            {
+                "name": "massive love <3",
+                "url": "https://www.bytebeat.cloud/post/7af50bb2-038c-42e4-94d8-1f7430888f16",
+                "date": "Jul 19, 2026",
+                "description": "BytebeatCloud's Week 32 Submission",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "big": true,
+                "stereo": true,
+                "file": "pck404-8.js",
+                "fileOriginal": true
             }
         ]
     },
