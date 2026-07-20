@@ -1,3 +1,5 @@
+import { ws, RPN } from "./rpn.js";
+
 class audioProcessor extends AudioWorkletProcessor {
 	constructor(...args) {
 		super(...args);
@@ -159,6 +161,7 @@ class audioProcessor extends AudioWorkletProcessor {
 		}
 		if (data.mode !== undefined) {
 			this.isFuncbeat = data.mode === 'Funcbeat';
+			this.isRPN = data.mode === 'postfix';
 			switch (data.mode) {
 				case 'Bytebeat':
 					this.getValues = (funcValue, ch) => (this.lastByteValue[ch] = funcValue & 255) / 127.5 - 1;
@@ -293,6 +296,8 @@ class audioProcessor extends AudioWorkletProcessor {
 		try {
 			if (this.isFuncbeat) {
 				this.func = new Function(...params, codeText).bind(globalThis, ...values);
+			} else if (this.isRPN) {
+				this.func = new Function(...params, 't', RPN(codeText)).bind(globalThis, ...values);
 			} else {
 				// Optimize code like eval(unescape(escape`XXXX`.replace(/u(..)/g,"$1%")))
 				codeText = codeText.trim().replace(
