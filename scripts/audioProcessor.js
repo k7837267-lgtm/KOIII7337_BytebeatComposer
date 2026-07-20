@@ -289,8 +289,8 @@ class audioProcessor extends AudioWorkletProcessor {
 		const values = params.map(k => Math[k]);
 		const chyxNames = Object.getOwnPropertyNames(chyx);
 		const chyxFuncs = chyxNames.map(k => chyx[k]);
-		params.push('int', 'window', ...chyxNames);
-		values.push(Math.floor, globalThis, ...chyxFuncs);
+		params.push('int', 'window', ...chyxNames, "ws", "stack");
+		values.push(Math.floor, globalThis, ...chyxFuncs, ws, stack);
 		audioProcessor.deleteGlobals();
 		// Bytebeat code testing
 		let isCompiled = false;
