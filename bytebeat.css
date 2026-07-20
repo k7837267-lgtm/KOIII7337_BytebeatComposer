@@ -321,26 +321,26 @@ html[data-theme="Orange"] {
 }
 
 html[data-theme="Red"] {
-	--button-hover-color: #ffa5a5;
-	--canvas-border: linear-gradient(#c9b0b0, #e03030) 1;
-	--canvas-button: linear-gradient(to bottom, #ff0f0f, #380d0d);
-	--canvas-button-hover: linear-gradient(to bottom, #ff4343, #6d1313) !important;
-	--code-button: linear-gradient(to bottom, #c50000, #220606);
-	--code-button-hover: linear-gradient(to bottom, #eb0000, #4e1010);
-	--control-button: linear-gradient(to bottom, #df1e1e, #371111);
-	--control-button-active: linear-gradient(to bottom, #9c1616, #290d0d);
-	--control-button-hover: linear-gradient(to bottom, #f84d4d, #4e1010);
-	--control-text: linear-gradient(to top, #b31f1f, #391515);
-	--control-text-hover: linear-gradient(to top, #e04141, #582121);
-	--control-volume: linear-gradient(to bottom, #ec2828, #371111);
-	--control-volume-hover: linear-gradient(to bottom, #ff6a6a, #4e1010);
-	--editor: #170000;
-	--focus: #ff3a3a;
-	--library-header: linear-gradient(to bottom, #c50000, #1d0606);
-	--library-header-hover: linear-gradient(to bottom, #f50404, #3b0d0d);
-	--library-header-hover-color: #ffa5a5;
-	--link: #d62020;
-	--link-hover: #ffb7b7 !important;
+	--button-hover-color: #f1eaea;
+	--canvas-border: linear-gradient(#c20505, #d40c0c) 1;
+	--canvas-button: linear-gradient(to bottom, #801b1b, #4e0808);
+	--canvas-button-hover: linear-gradient(to bottom, #b31515, #3f0a0a) !important;
+	--code-button: linear-gradient(to bottom, #8b0d0d, #3b1616);
+	--code-button-hover: linear-gradient(to bottom, #d41c1c, #7a1414);
+	--control-button: linear-gradient(to bottom, #7c0505, #2b0404);
+	--control-button-active: linear-gradient(to bottom, #5a0f0f, #3b0505);
+	--control-button-hover: linear-gradient(to bottom, #b40202, #740b0b);
+	--control-text: linear-gradient(to top, #af1919, #4b0a0a);
+	--control-text-hover: linear-gradient(to top, #da2020, #5c2121);
+	--control-volume: linear-gradient(to bottom, #9b1515, #630a0a);
+	--control-volume-hover: linear-gradient(to bottom, #e74a4a, #750d0d);
+	--editor: #1f0404;
+	--focus: #ad0d0d;
+	--library-header: linear-gradient(to bottom, #5f1313, #2b0505);
+	--library-header-hover: linear-gradient(to bottom, #b11010, #4d1010);
+	--library-header-hover-color: #dadada;
+	--link: #ff0000;
+	--link-hover: #a04b4b !important;
 }
 
 html[data-theme="Purple"] {
