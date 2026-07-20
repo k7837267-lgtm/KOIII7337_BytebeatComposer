@@ -165,6 +165,7 @@ class audioProcessor extends AudioWorkletProcessor {
 			this.isRPN = data.mode === 'postfix';
 			switch (data.mode) {
 				case 'Bytebeat':
+				case 'postfix':
 					this.getValues = (funcValue, ch) => (this.lastByteValue[ch] = funcValue & 255) / 127.5 - 1;
 					break;
 				case 'Signed Bytebeat':
