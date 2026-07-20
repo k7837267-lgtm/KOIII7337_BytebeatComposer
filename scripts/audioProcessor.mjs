@@ -11,6 +11,7 @@ class audioProcessor extends AudioWorkletProcessor {
 		this.getValues = null;
 		this.isFuncbeat = false;
 		this.isPlaying = false;
+		this.isRPN = false;
 		this.playbackSpeed = 1;
 		this.lastByteValue = [null, null];
 		this.lastFuncValue = [null, null];
@@ -283,6 +284,7 @@ class audioProcessor extends AudioWorkletProcessor {
 			"SQU": t => t % 256 < 128 ? 255 : 0
 		}
 		// Create shortened Math functions
+		let stack = new ws();
 		const params = Object.getOwnPropertyNames(Math);
 		const values = params.map(k => Math[k]);
 		const chyxNames = Object.getOwnPropertyNames(chyx);
