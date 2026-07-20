@@ -503,7 +503,7 @@ globalThis.bytebeat = new class {
 		this.audioCtx = new AudioContext({ latencyHint: 'balanced', sampleRate: 48000 });
 		this.audioGain = new GainNode(this.audioCtx);
 		this.audioGain.connect(this.audioCtx.destination);
-		await this.audioCtx.audioWorklet.addModule('./scripts/audioProcessor.mjs?version=2023022000');
+		await this.audioCtx.audioWorklet.addModule('./scripts/audioProcessor.js');
 		this.audioWorkletNode = new AudioWorkletNode(this.audioCtx, 'audioProcessor',
 			{ outputChannelCount: [2] });
 		this.audioWorkletNode.port.addEventListener('message', e => this.receiveData(e.data));
@@ -697,7 +697,7 @@ globalThis.bytebeat = new class {
 			const dataArr = Uint8Array.from(atob(hash.substring(2)), el => el.charCodeAt());
 			try {
 				songData = {
-					mode: ['Bytebeat', 'Signed Bytebeat', 'Floatbeat', 'Funcbeat'][dataArr[0]],
+					mode: ['Bytebeat', 'Signed Bytebeat', 'Floatbeat', 'Funcbeat', 'Bitbeat', 'Tanmode', 'postfix'][dataArr[0]],
 					sampleRate: new DataView(dataArr.buffer).getFloat32(1, 1),
 					code: inflateRaw(new Uint8Array(dataArr.buffer, 5), { to: 'string' })
 				};
@@ -985,7 +985,7 @@ globalThis.bytebeat = new class {
 		const codeArr = deflateRaw(code);
 		// First byte is mode, next 4 bytes is sampleRate, then the code
 		const outputArr = new Uint8Array(5 + codeArr.length);
-		outputArr[0] = ['Bytebeat', 'Signed Bytebeat', 'Floatbeat', 'Funcbeat'].indexOf(this.songData.mode);
+		outputArr[0] = ['Bytebeat', 'Signed Bytebeat', 'Floatbeat', 'Funcbeat', 'Bitbeat', 'Tanmode', 'postfix'].indexOf(this.songData.mode);
 		outputArr.set(new Uint8Array(new Float32Array([this.songData.sampleRate]).buffer), 1);
 		outputArr.set(codeArr, 5);
 		// since we're dealing with Uint8Array I should use the non-map method I think - Chasyxx
