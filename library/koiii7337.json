@@ -349,6 +349,7 @@
     "description": "This One's <64b. Also, This Is My First Day Here On BytebeatCloud. (Part Of \"Ultra-Short Challenge\")",
     "date": "Feb 26, 2026",
     "sampleRate": 9000,
+    "c": true,
     "codeOriginal": "((t*(t>>10&6*t>>12&11)*t)&120)+(t/4*((t>>9^12&62)&14)&127)"
   },
   {
@@ -356,6 +357,7 @@
     "url": "https://www.bytebeat.cloud/post/0b651bdf-3a3c-4f56-a454-f217d728d5ce",
     "date": "Feb 28, 2026",
     "mode": "Signed Bytebeat",
+    "c": true,
     "codeOriginal": "(((t^t>>20*(t>>11))*10/((t/(2+(t>>11&2))&1023)+25))&128)+(((t>>20*(t>>11))*20/((t*2/(2+(t>>11&2))&1023)+50))&127)"
   },
   {
@@ -806,12 +808,28 @@
       "codeOriginal": "I=22,STT=t=>(sqrt(tanh(tan(t/128*2**(I/12)*PI)))||0)-.4,T=2**([0,-3,2,-5,0,-3,-7,-5][t>>14&7]/12),T2=2**([4,0,5,-1,4,0,-3,-1][t>>14&7]/12),H=(STT(t*T2/4)*-(t/16384%1-2)/4+STT(t*T/4)*-(t/16384%1-2)/4+STT(t*T*2**(7/12)/4)*-(t/16384%1-2)/4+STT(t*T/2)*-(t/16384%1-2)/4),S=[T,T2,T*2**(7/12)],(H/1.5+STT(t/4*S[(t>>13^t>>14^t>>15)%3])/3+STT(t/2*S[(t>>12^t>>13^t>>14)%3])*-(t/4096%1-2)/2)/1.25"
       },
       {
-        "name": "Why Does It Remind Me Of Suno Extended 360p Moments V2?",
+      "name": "Why Does It Remind Me Of Suno Extended 360p Moments V2?",
       "sampleRate": 37900,
       "mode": "Floatbeat",
       "codeOriginal": "I=25,STT=t=>(sqrt(tanh(tan(t/128*2**(I/12)*PI)))||0)-.4,T=2**([0,-3,2,-5,0,-3,-7,-5][t>>14&7]/12),T2=2**([4,0,5,-1,4,0,-3,-1][t>>14&7]/12),H=(STT(t*T2/4)*-(t/16384%1-2)/4+STT(t*T/4)*-(t/16384%1-2)/4+STT(t*T*2**(7/12)/4)*-(t/16384%1-2)/4+STT(t*T/2)*-(t/16384%1-2)/4),S=[T*'11111122'[t>>14&7],T2*'11111122'[t>>14&7],T*2**(7/12)*'11111121'[t>>14&7]],(H/1.5*min(1,t/262144)+(STT(t/4*S[(t>>13^t>>14^t>>15)%3])/3+STT(t/2*S[(t>>12^t>>13^t>>14)%3])*-(t/4096%1-2)/2)*min(1,t/524288))/1.25"
       }
 ]
+  },
+  {
+    "name": "Yeah Ima Send This To The #week28 Challenge",
+    "description": "BytebeatCloud's Week 28 Submission | \"Yeah I Should've Won.\" - KOIII7337",
+    "url": "https://www.bytebeat.cloud/post/a6d0f4df-0507-41cc-be94-3f83e89bb9ee",
+    "date": "Jun 25, 2026",
+    "sampleRate": 36000,
+    "mode": "Signed Bytebeat",
+    "codeOriginal": "t||(a=Array(b=12288).fill(0)),c=(A=A=>-(exp(sin(t*'4231'[t>>12&3]*2**(A[t>>15&3]/12-(3/12))/128*PI)-1)-.55)*min(1,t/512%8)*max(-1,t/1024%4-4),B=((A('5797')-A('0242'))/3),B+sin((t>>(t>>14&3))/128*'1248'[t>>14&3]*PI*[2,,4][(t>>12^t>>13)%5]*2**('2479'[t>>15&3]/12-(3/12)))/4+sin(sqrt(t%16384)*2)/3||B/2+sin(sqrt(t%16384)*3)/5)+a[t%b],a[t%b]=(c/2),c*92"
+  },
+  {
+    "name": "IDK Just Some Random C-Compatible Beat",
+    "url": "https://www.bytebeat.cloud/post/0b651bdf-3a3c-4f56-a454-f217d728d5ce",
+    "date": "Jun 26, 2026",
+    "c": true,
+    "codeOriginal": "(((t^t>>20*(t>>11))*10/((t/(2+(t>>11&2))&1023)+25))&128)+(((t>>20*(t>>11))*20/((t*2/(2+(t>>11&2))&1023)+50))&127)"
   },
   {
     "name": "ByteFell",
