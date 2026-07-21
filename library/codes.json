@@ -3860,12 +3860,88 @@
         "codeOriginal": "c=t=>((cbrt(sin(t*PI/128*(1.5**(3&[t,-t][t>>15&1]>>13))/(1+1.5/2*(3&t>>16))))*sin(t*PI/128/64)+(random()*64&-t>>7)%255/128)/2+cbrt(sin(t*PI/128/128/4))/4)*127+128&255,(()=>{o=0;n=3;n2=4e3;for(i=0;i<n*n2;i+=n2)o+=c(t-i);return o/n})()+(sin(4e3/(t&16383))*32)"
     },
     {
+        "author": "JERN2K83",
+        "children": [
+            {
+                "name": "My first made Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1eei8ft/my_first_made_bytebeat/",
+                "date": "Jul 28, 2024",
+                "sampleRate": 48000,
+                "codeOriginal": [
+                    "T=t*8000/48000,",
+"P=T*1.04, T=T*1.12,",
+"",
+"VN=2.666666666, VN2=1,",
+"V=24, V2=32,",
+"",
+"A=P*2**([0,-3,2,-5][(T>>12)%4]/12)/VN%V+",
+"P*2**([4,0,5,-1][(T>>12)%4]/12)/VN%V+",
+"P*2**([7,4,9,2][(T>>12)%4]/12)/VN%V,",
+"",
+"AB=P*2**([0,-3,2,-5][(T>>12)%4]/12)/VN/2%V+",
+"P*2**([4,0,5,-1][(T>>12)%4]/12)/VN/2%V+",
+"P*2**([7,4,9,2][(T>>12)%4]/12)/VN/2%V,",
+"",
+"B=P*2**([0,2,4,7,4,5,7,9,5,7,9,12,7,9,11,14][(T>>10)%16]/12)/VN2%V2+",
+"P*2**([4,5,7,11,7,9,11,12,9,11,12,16,11,12,14,17][(T>>10)%16]/12)/VN2%V2,",
+"",
+"KICK=sin(sqrt(T%4096)**0.01*4e3)*32+30,",
+"HIT=random()*24*(1-T/1%2048/2048),",
+"SNARE=random()*28*(1-T/2%2048/2048)*(T/2>>11&1),",
+"",
+"(A+AB/2+B+KICK+HIT+SNARE)/1.1"
+                ]
+            },
+            {
+                "remix": {
+                    "name": "My first made Bytebeat",
+                    "author": "JERN2K83",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1eei8ft/my_first_made_bytebeat/"
+                },
+                "url": "https://dollchan.net/btb/res/7457.html#7457",
+                "date": "Jun 19, 2025",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "codeOriginal": [
+                    "T=t/48e3,",
+"P=(T*440), P*=2**(3/12),",
+"BPM=T*(130/60),",
+"",
+"",
+"SiB1=sin(P*PI/4*2**([0,-5,-3,4,2,-3,-5,2][(BPM*2|0)%8]/12)),",
+"SiB2=sin(P*PI/2*2**([0,-5,-3,4,2,-3,-5,2][(BPM*2|0)%8]/12)),",
+"",
+"SaC1=(-1+(P/2*2**([0,-3,2,-5][(BPM|0)%4]/12))%2),",
+"SaC2=(-1+(P/2*2**([4,0,5,-1][(BPM|0)%4]/12))%2),",
+"SaC3=(-1+(P/2*2**([7,4,9,2][(BPM|0)%4]/12))%2),",
+"",
+"Sa1=(-1+(P*2**([0,2,4,7,4,5,7,9,5,7,9,12,7,9,11,14][(BPM*4|0)%16]/12))%2),",
+"Sa2=(-1+(P*2**([4,5,7,11,7,9,11,12,9,11,12,16,11,12,14,17][(BPM*4|0)%16]/12))%2),",
+"",
+"",
+"Kick=sin(sqrt(BPM%1)**0.001*48e3),",
+"Hat=(.5-random())*(1-(BPM%0.5)*2)*((BPM*2|0)&1),",
+"NC=(t%8)?a:a=(.5-random()),",
+"Snare=NC*(1-(BPM%1))*((BPM|0)&1),",
+"",
+"",
+"Master=(Kick+Hat+Snare)/4+",
+"(SiB1-SiB2)/(6+(1+(BPM%.5)*16))+",
+"(SaC1+SaC2+SaC3)/(4+(1+(BPM%1)*8))+",
+"(Sa1+Sa2)*(1-(BPM%.25)*4)/4,",
+"",
+"Master/2"
+                ]
+            }
+        ]
+    },
+    {
         "author": "SRB2er",
         "name": "want a byte of my food?",
         "url": "https://battleofthebits.com/arena/Entry/want+a+byte+of+my+food_/70383/",
         "date": "Aug 10, 2024",
         "sampleRate": 32000,
-                "big": true,
+        "big": true,
         "file": "SRB2er.js",
         "fileOriginal": true
     },
