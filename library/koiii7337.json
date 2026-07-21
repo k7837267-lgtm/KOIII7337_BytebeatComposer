@@ -818,7 +818,7 @@
   {
     "name": "Yeah Ima Send This To The #week28 Challenge",
     "description": "BytebeatCloud's Week 28 Submission | \"Yeah I Should've Won.\" - KOIII7337",
-    "url": "https://www.bytebeat.cloud/post/a6d0f4df-0507-41cc-be94-3f83e89bb9ee",
+    "url": "https://bytebeat.cloud/post/c04010cc-735e-40c4-92bf-59bdd7668e35",
     "date": "Jun 25, 2026",
     "sampleRate": 36000,
     "mode": "Signed Bytebeat",
@@ -826,10 +826,10 @@
   },
   {
     "name": "IDK Just Some Random C-Compatible Beat",
-    "url": "https://www.bytebeat.cloud/post/0b651bdf-3a3c-4f56-a454-f217d728d5ce",
+    "url": "https://bytebeat.cloud/post/29ce0587-67de-4352-85ba-0146b38437fc",
     "date": "Jun 26, 2026",
     "c": true,
-    "codeOriginal": "(((t^t>>20*(t>>11))*10/((t/(2+(t>>11&2))&1023)+25))&128)+(((t>>20*(t>>11))*20/((t*2/(2+(t>>11&2))&1023)+50))&127)"
+    "codeOriginal": "(t*(t>>10&3))^t>>8*t>>7&64^t>>16/t"
   },
   {
     "name": "ByteFell",
