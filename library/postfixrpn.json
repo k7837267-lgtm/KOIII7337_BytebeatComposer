@@ -688,6 +688,23 @@
         ]
     },
     {
+        "author": "ProcessedGradient (TrashImpossible3699)",
+        "name": "wet slug",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1ii5xo4/wet_slug/",
+        "date": "Feb 5, 2025",
+        "mode": "postfix",
+        "sampleRate": 32000,
+        "codeOriginal": "t 8 * >> 15 & 8 t t 8 >> 8 & 2 + * 7 >> * ^ + & t 8 >> & t 2 * 13 >> 7 & * 8 + | t 5 * t 16 >> 3 & t * 18 >> 3 & * 2 >> |"
+    },
+    {
+        "author": "ThusII",
+        "name": "Kizim",
+        "url": "https://dollchan.net/btb/res/11955.html#14991",
+        "date": "May 25, 2026",
+        "mode": "postfix",
+        "codeOriginal": "& t 10 >> 9 & t * t 17 >> 1 + * t 4095 % / + t 1023 & t - 10 >> 7 & t * + t 4 >> - t - 3048 + t 402 / t & | "
+    },
+    {
         "author": "KOIII7337",
         "name": "My First Code Using Postfix!",
         "url": "https://www.reddit.com/r/bytebeat/comments/1v1qk4e/postfix_has_been_released_in_koiiis_bytebeat/",
