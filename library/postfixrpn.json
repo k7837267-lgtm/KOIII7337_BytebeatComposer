@@ -664,6 +664,15 @@
         ]
     },
     {
+        "author": "ProcessedGradient (TrashImpossible3699)",
+        "name": "wet slug",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1ii5xo4/wet_slug/",
+        "date": "Feb 5, 2025",
+        "mode": "postfix",
+        "sampleRate": 32000,
+        "codeOriginal": "t 8 * >> 15 & 8 t t 8 >> 8 & 2 + * 7 >> * ^ + & t 8 >> & t 2 * 13 >> 7 & * 8 + | t 5 * t 16 >> 3 & t * 18 >> 3 & * 2 >> |"
+    },
+    {
         "author": "insanity696420",
         "children": [
             {
@@ -686,15 +695,6 @@
                 "codeOriginal": "t t 11 >> t 12 >> | 3 + * t t 12 >> t 11 >> ^ 15 & 1 + / sin 64 * >> 255 & t 4 >> & 100000 t 4096 % / +"
             }
         ]
-    },
-    {
-        "author": "ProcessedGradient (TrashImpossible3699)",
-        "name": "wet slug",
-        "url": "https://www.reddit.com/r/bytebeat/comments/1ii5xo4/wet_slug/",
-        "date": "Feb 5, 2025",
-        "mode": "postfix",
-        "sampleRate": 32000,
-        "codeOriginal": "t 8 * >> 15 & 8 t t 8 >> 8 & 2 + * 7 >> * ^ + & t 8 >> & t 2 * 13 >> 7 & * 8 + | t 5 * t 16 >> 3 & t * 18 >> 3 & * 2 >> |"
     },
     {
         "author": "ThusII",
