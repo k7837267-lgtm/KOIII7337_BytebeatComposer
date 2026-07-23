@@ -7571,55 +7571,6 @@
 ]
     },
     {
-        "author": "Funcbeat Anon",
-        "children": [
-            {
-        "name": "Sampled procedural drum loop test with naïve time-stretching",
-        "url": "https://dollchan.net/btb/res/3.html#12024",
-        "date": "Jan 12, 2026",
-        "sampleRate": 44100,
-        "mode": "Funcbeat",
-        "stereo": true,
-        "big": true,
-        "file": "funcbeatanon.js",
-        "fileOriginal": true
-    },
-     {
-        "name": "Wavetable-like soft synths using exp/cosine bell bumps that move and wrap around.",
-        "description": "change their width to change its timbre; smaller is brighter, wider is softer. \"Very Demanding On Performance.\"",
-        "url": "https://dollchan.net/btb/res/3.html#12918",
-        "date": "Feb 24, 2026",
-        "sampleRate": 22050,
-        "mode": "Funcbeat",
-        "stereo": true,
-        "slow": true,
-        "big": true,
-        "file": "funcbeatanon-1.js",
-        "fileOriginal": true
-    },
-     {
-        "name": "Distorted metallic delay matrix applied on percussive sweeping sines with a reversing buffer.",
-        "url": "https://dollchan.net/btb/res/3.html#13494",
-        "date": "Mar 22, 2026",
-        "sampleRate": 32000,
-        "mode": "Funcbeat",
-                "big": true,
-        "file": "funcbeatanon-2.js",
-        "fileOriginal": true
-    },
-     {
-        "name": "Pseudorandom generative polyrhythmic beat test.",
-        "url": "https://dollchan.net/btb/res/3.html#13953",
-        "date": "Apr 14, 2026",
-        "sampleRate": 32000,
-        "mode": "Funcbeat",
-                "big": true,
-        "file": "funcbeatanon-3.js",
-        "fileOriginal": true
-    }
-        ]
-            },
-    {
         "author": "mqdantee",
         "children": [
             {
@@ -7824,6 +7775,55 @@
                 ]
 },
     {
+        "author": "Funcbeat Anon",
+        "children": [
+            {
+        "name": "Sampled procedural drum loop test with naïve time-stretching",
+        "url": "https://dollchan.net/btb/res/3.html#12024",
+        "date": "Jan 12, 2026",
+        "sampleRate": 44100,
+        "mode": "Funcbeat",
+        "stereo": true,
+        "big": true,
+        "file": "funcbeatanon.js",
+        "fileOriginal": true
+    },
+     {
+        "name": "Wavetable-like soft synths using exp/cosine bell bumps that move and wrap around.",
+        "description": "change their width to change its timbre; smaller is brighter, wider is softer. \"Very Demanding On Performance.\"",
+        "url": "https://dollchan.net/btb/res/3.html#12918",
+        "date": "Feb 24, 2026",
+        "sampleRate": 22050,
+        "mode": "Funcbeat",
+        "stereo": true,
+        "slow": true,
+        "big": true,
+        "file": "funcbeatanon-1.js",
+        "fileOriginal": true
+    },
+     {
+        "name": "Distorted metallic delay matrix applied on percussive sweeping sines with a reversing buffer.",
+        "url": "https://dollchan.net/btb/res/3.html#13494",
+        "date": "Mar 22, 2026",
+        "sampleRate": 32000,
+        "mode": "Funcbeat",
+                "big": true,
+        "file": "funcbeatanon-2.js",
+        "fileOriginal": true
+    },
+     {
+        "name": "Pseudorandom generative polyrhythmic beat test.",
+        "url": "https://dollchan.net/btb/res/3.html#13953",
+        "date": "Apr 14, 2026",
+        "sampleRate": 32000,
+        "mode": "Funcbeat",
+                "big": true,
+        "file": "funcbeatanon-3.js",
+        "fileOriginal": true
+    }
+        ]
+            },
+    {
         "author": "DismalPercentage3802",
         "children": [
             {
@@ -7937,6 +7937,13 @@
         "author": "ThusII",
         "children": [
             {
+                "name": "Frilo",
+                "url": "https://dollchan.net/btb/res/11955.html#12055",
+                "date": "Jan 14, 2026",
+        "c": true,
+                "codeOriginal": "~t>>2&t*((t&15255-t)>>9&t)"
+            },
+            {
                 "name": "Bypi",
                 "url": "https://dollchan.net/btb/res/11955.html#12063",
                 "date": "Jan 15, 2026",
@@ -7977,6 +7984,13 @@
                 "date": "Feb 1, 2026",
                 "sampleRate": 16000,
                 "codeOriginal": "(g=(1+(~t>>12&3)%(1+(t>>10&t>>13)))*2*t*(1+(t>>16&3)/12)),g%63+g/2%64+g/5%63+g/5%64"
+            },
+            {
+                "name": "Cool drum 2",
+                "url": "https://dollchan.net/btb/res/11955.html#12597",
+                "date": "Feb 9, 2026",
+                "sampleRate": 32000,
+                "codeOriginal": "y=t&16383,p=2e6,l=127,z=(t/(1+(t>>16&1)))*(t>>10&5*(t>>10&t>>13|t>>11&5)),((z+t&256?-p/y:p/y)&l)+((z/5+t&256*(t>>12^t>>14)?-p/y:p/y)&l)"
             },
             {
                 "name": "Equalized Dome",
@@ -8031,7 +8045,7 @@
                 "date": "Mar 9, 2026",
                 "mode": "Floatbeat",
                 "codeOriginal": "Math.min((t/64)/128,Math.max((-t/64)/128,Math.sin(Math.PI*Math.sin(t*(1+(t>>11&7^5*(1|t>>15))))*Math.PI)/3+Math.sin(Math.PI*Math.sin(40000/(t&4095|1)))/4+Math.sin(Math.PI*Math.sin(t*(t>>12&1)*(-t>>9&6^5*(t>>15|1))))/4+Math.sin(Math.PI*Math.cos(t/3000)*10-t/(1|t>>9&t>>12)%1)/2))/(3/2)",
-                "codeMinified": "min((t/64)/128,max((-t/64)/128,sin(PI*sin(t*(1+(t>>11&7^5*(1|t>>15))))*PI)/3+sin(PI*sin(4e4/(t&4095|1)))/4+sin(PI*sin(t*(t>>12&1)*(-t>>9&6^5*(t>>15|1))))/4+sin(PI*cos(t/3e3)*10-t/(1|t>>9&t>>12)%1)/2))/(3/2)"
+                "codeMinified": "s=sin,min((t/64)/128,max((-t/64)/128,s(PI*s(t*(1+(t>>11&7^5*(1|t>>15))))*PI)/3+s(PI*s(4e4/(t&4095|1)))/4+s(PI*s(t*(t>>12&1)*(-t>>9&6^5*(t>>15|1))))/4+s(PI*cos(t/3e3)*10-t/(1|t>>9&t>>12)%1)/2))/1.5"
             },
             {
                 "name": "Poful bits",
@@ -8077,6 +8091,23 @@
 "t/=SAMPLERATE/2,",
 "((p=cos((x=t*pow(2,14)*((t*2&5^t/2^t)&7))%512/pow(2,8)*(f=sin((t/16*PI%32)*PI/2)*PI)*14)*(1-x/512%1))*sin(p<0))*2*128-1"
                 ]
+            },
+            {
+                "name": "Drum thing",
+                "url": "https://dollchan.net/btb/res/11955.html#14245",
+                "date": "Apr 27, 2026",
+                "mode": "Funcbeat",
+                "sampleRate": 48000,
+                "slow": true,
+                "codeOriginal": "return t=>{for(C=F=0;F<13;F++)C+=sin(sqrt(t*2%1)*128*F^F)/sin(t*2%1)/64;for(G=O=0;O<15;O++)G+=asin(sin(sqrt(t*4%1)*O*16)%(1-t*4%1))/cos(t*O*4%1)/12;for(U=J=0;J<17;J++)U+=sin(t*J**3^t)*sin(t*PI*8/(1+(t*2&1)/(1+(t&1))))/8;for(V=H=0;H<10;H++)V+=sin((t*H*8e3)**3)/sin(t%1)/128;if(t*2&1^t&3){if(1-t*4&1^t*2&1){y=U}else{y=G}}else{if(t&1^t/2&3){y=C}else{y=V}};return atan(tanh(y||0))}"
+            },
+            {
+                "name": "Hyper city dance",
+                "url": "https://dollchan.net/btb/res/11955.html#14591",
+                "date": "May 13, 2026",
+                "sampleRate": 44100,
+                "mode": "Floatbeat",
+                "codeOriginal": "t?0:I=i=l=L=0,j=i+=I+=(('11226668664231123337788829482632'[t>>13&31]/2)-I)/1024,g=l+=L+=(('1122347384282389'[t>>14&15]/3)-L)/1024,((x=sin(j/256%2*(c=sin(1+(t*PI/128)/2048)*16))*(1-j/512%1))*sin(x>0)+(expm1((sin(g/256%2*c)))*sin(1-g/512%1))/2)*(t<2**19?1:sin(t/16384%1))+sin(sqrt(t&16383)*2)/4*expm1(1-t/16384%1)*(t>2**19)"
             }
         ]
     },
