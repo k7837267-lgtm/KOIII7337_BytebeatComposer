@@ -9287,6 +9287,14 @@
                 "date": "Jul 12, 2026",
                 "sampleRate": 44100,
                 "codeOriginal": "t<976896?('0'+'x'+\"79bcdefffffedcb97643210000012346\"[(\"00335600337788440044431122335600\"[t/5088&31]%24*1937%13794%12022%10387%8720%7023%5196%3460%1703+1234)*(1+(t>976896))*t/8192&31])%108%39*4*(1-t%10176/20352.)+(t>325632?(t*1234/65536&7)+(22139>>t/5088%16&1?16*((t*1234/4096&31)+(t/20352&15)>15):0)*(1-t%5088/5088.):0)+(t>651264?t*1234/32768&7:0)+(t>814080?t*1234/16384&7:0):0"
+            },
+            {
+                "name": "121 Byte Harmony",
+                "description": "BytebeatCloud's Week 32 Submission",
+                "url": "https://www.bytebeat.cloud/post/5e32e88a-bd2d-47ee-ae3d-23742d3d49d4",
+                "date": "Jul 22, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "A=(a,b,c)=>sin(t*PI/a*2**(~(~(((T=t/c)^T+b)%11)*12/7)/12))*(2-T%1)/8,A(48,7,_=8192)+A(96,5,_*2)+A(192,3,_*4)+A(384,1,_*8)"
             }
         ]
     },
@@ -9295,7 +9303,7 @@
         "children": [
             {
                 
-                "name": "[#1] New Beginnings",
+                "name": "New Beginnings",
                 "url": [
                     "https://www.reddit.com/r/bytebeat/comments/1utoq1i/1_new_beginnings_256_bytes_ccompatible/",
                     "https://www.bytebeat.cloud/post/638c3f1b-22d6-4d44-91cf-86e10636309b"
@@ -9307,7 +9315,7 @@
             },
             {
                 
-                "name": "[#2] Nullify",
+                "name": "Nullify",
                 "url": [
                     "https://www.reddit.com/r/bytebeat/comments/1uwctg7/2_nullify/",
                     "https://www.bytebeat.cloud/post/f1780573-d019-4f77-bc46-60bf57bee9bb"
@@ -9316,6 +9324,14 @@
                 "sampleRate": 48000,
                 "c": true,
                 "codeOriginal": "((((82+9*(t>>18&1))*t/9>>3^255*t>>11&t>>3)&127)*(t>>11&223&~t>>9&15)/9+(((3364383129>>(t>>14&28)&15)<<(~t>>9&5)-(t>>20&1))*t>>7&54)*!!(t>>20&3))*!!(~t>>15&15)+(((3+(t>>18&1))*t>>5&95)+((t^6*t)*85>>9&63)*(t>>15&1))*(~t>>12&7)/6+((~t>>(t>>7)&192)>>(t>>9))"
+            },
+            {
+                
+                "name": "Prose of a Robot",
+                "url":  "https://www.bytebeat.cloud/post/d77d8d71-c2f8-4034-ba82-c5fe90961c65",
+                "date": "Jul 26, 2026",
+                "c": true,
+                "codeOriginal": "(t*=6)/(1+(t>>4*t/(t>>18&1?53-6*(t>>17&1):42)))%255*(t>>15&1?~t>>10&7:t>>12&7)/15+((~t>>(t>>7)&255)>>(t>>9))+((t^6*t)*(64+(~t>>11&255))>>9&63)*(37520>>(t>>13&15)&1)+(t*(((t>>11&4+(t>>20&3))+(t>>15&3))*(1+(t>>21&1))+(4==(t>>13&7)?t>>8:0))&853)/17*!!(t>>20)"
             }
         ]
     }
