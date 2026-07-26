@@ -674,11 +674,22 @@
     },
     {
         "author": "ThusII",
-        "name": "Kizim",
-        "url": "https://dollchan.net/btb/res/11955.html#14991",
-        "date": "May 25, 2026",
-        "mode": "postfix",
-        "codeOriginal": "& t 10 >> 9 & t * t 17 >> 1 + * t 4095 % / + t 1023 & t - 10 >> 7 & t * + t 4 >> - t - 3048 + t 402 / t & | "
+        "children": [
+            {
+                "name": "Kizim",
+                "url": "https://dollchan.net/btb/res/11955.html#14991",
+                "date": "May 25, 2026",
+                "mode": "postfix",
+                "codeOriginal": "& t 10 >> 9 & t * t 17 >> 1 + * t 4095 % / + t 1023 & t - 10 >> 7 & t * + t 4 >> - t - 3048 + t 402 / t & | "
+            },
+            {
+                "name": "Funki parti!",
+                "url": "https://dollchan.net/btb/res/11955.html#16356",
+                "date": "Jul 26, 2026",
+                "mode": "postfix",
+                "codeOriginal": "t DUP 3095 & / t 8 >> | t DUP 2 >> & | t DUP 4095 & / t 8 >> t & + t 12 >> t 8 * & | ^"
+            }
+        ]
     },
     {
         "author": "insanity696420",
