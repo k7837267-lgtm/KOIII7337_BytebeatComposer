@@ -9294,6 +9294,7 @@
                 "url": "https://www.bytebeat.cloud/post/5e32e88a-bd2d-47ee-ae3d-23742d3d49d4",
                 "date": "Jul 22, 2026",
                 "sampleRate": 44100,
+                "mode": "Floatbeat",
                 "codeOriginal": "A=(a,b,c)=>sin(t*PI/a*2**(~(~(((T=t/c)^T+b)%11)*12/7)/12))*(2-T%1)/8,A(48,7,_=8192)+A(96,5,_*2)+A(192,3,_*4)+A(384,1,_*8)"
             }
         ]
