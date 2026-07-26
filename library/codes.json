@@ -5049,12 +5049,62 @@
             "d2 = t/a/2,",
             "e = d * (2.5/2)"
         ],
-        "codeMinified": "a=16,b=1|t>>4*t|a/15*3,c=b/4|b/8,d=c>>b*c>>2|2*t>>t&444|t/a/4|t/a<<2|16*t>>1|t*t,d2=t/a/2,e=d*2.5/2"
+        "codeMinified": "b=1|t>>4*t|16/15*3,c=b/4|b/8,d=c>>b*c>>2|2*t>>t&444|t/16/4|t/16<<2|16*t>>1|t*t,d*2.5/2"
     },
     {
         "name": "#7",
         "codeOriginal": "t >> t | t/16 >> 2&t*4/5.9 << 3 | t&t>>16^t/16/16 | t >> t | t/16 >> 2 & t * 2 >> t/5.9 << 3 | t & t >> 16^t/16/16 | t >> t | t/16 >> 6&t*4/5.9 << 3 | t&t>>16 ^t/16/16",
         "codeMinified": "t>>t|t/16>>2&t*4/5.9<<3|t&t>>16^t>>8|t/16>>2&t*2>>t/5.9<<3|t/16>>6&t*4/5.9<<3"
+    },
+    {
+        "name": "#8",
+        "codeOriginal": [
+            "t | t/16 |",
+"(t>>t*(t>>12*2)/2&t/16)|(t>>t*(t>>4*2)/4&t/32)"
+        ],
+        "codeMinified": "t|t/16|(t>>t*(t>>8)/4&t/32)"
+    },
+    {
+        "name": "#9",
+        "codeOriginal": "((t*4|(208<<t)&t/16|t*2%255/4)/8<<2)/16"
+    },
+    {
+        "name": "#10",
+        "codeOriginal": "(t*(9+(t^t>>9%16^(19))))|t/4"
+    },
+    {
+        "name": "#11",
+        "codeOriginal": "(t<<2|(t*t/128)|t/(64/16))/8",
+        "codeMinified": "(t<<2|(t*t/128)|t>>2)/8"
+    },
+    {
+        "name": "#12",
+        "codeOriginal": "t>>2|(t*t/128)|t/(64/2)/4",
+        "codeMinified": "t/4|t*t/128|t>>7"
+    },
+    {
+        "name": "#13",
+        "codeOriginal": "(t|t|t*(1*2&t)*t/9)/16|t/4|t/16",
+        "codeMinified": "(t|t*(2&t)*t/9)/16|t/4|t/16"
+    },
+    {
+        "name": "#14",
+        "description": "Nothing Special.",
+        "codeOriginal": "t/t|t*t/256"
+    },
+    {
+        "name": "#15",
+        "codeOriginal": "((t|t/64%255)*4)*t/2"
+    },
+    {
+        "name": "#16",
+        "sampleRate": 44100,
+        "codeOriginal": "(t * 7.75/5.16/2 | t^t/4.001 | t/128 + t * 0.5 | t/256^(24 * 3)) | 0x64"
+    },
+    {
+        "name": "#17",
+        "sampleRate": 48000,
+        "codeOriginal": "t * 7.75/5.15/2 | t^t/4.001"
     }
 ]
 },
