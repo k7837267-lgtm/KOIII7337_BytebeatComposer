@@ -723,6 +723,14 @@
                 "date": "Jul 27, 2026",
                 "mode": "postfix",
                 "codeOriginal": "1000000 t 4095 & / 255 & 1 / t 3 / t 2 / % t 10 >> 15 & * t 128 / * 255 & 2 / + t DUP 3 / * t * t 12 >> 1 & * 255 & 3 / + 6 3 / / 255 & + 2 / DUP"
+            },
+            {
+                "name": "Disico",
+                "url": "https://dollchan.net/btb/res/11955.html#16398",
+                "date": "Jul 29, 2026",
+                "mode": "postfix",
+                "sampleRate": 11000,
+                "codeOriginal": "t DUP DUP 15 >> 1 & 1 + / 53 % >> t DUP DUP 15 >> 1 & 1 + / 35 % >> | t DUP DUP 15 >> 1 & 1 + / 44 % >> | 63 & + 2 / DUP t 10 >> t 131072 < 3 + & * t DUP 4095 & / t 131072 > * 128 & + 3 2 * / 4 *"
             }
         ]
     },
