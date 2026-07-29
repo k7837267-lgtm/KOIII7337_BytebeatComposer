@@ -9316,9 +9316,11 @@
     },
     {
         "author": "skraternium",
+        "children": [
+            {
         "name": "mellow dy",
         "url": "https://www.bytebeat.cloud/post/f41182f0-ec77-48a4-9e64-c84c146f2550",
-        "date": "Jun 24, 2026",
+        "date": "Jun 23, 2026",
         "codeOriginal": [
             "// My first beat ever, thanks to my friend Absist04 in bytebeat.cloud or @Two2Fall on YT",
 "",
@@ -9330,8 +9332,17 @@
 "",
 "(melody+hihat+bass+kick+snare)/4"
         ],
-        "codeMinified": "(t*[2,4,6,8,10.5,10,9,10][t>>11&7]%256+t/2*[4,9,10,9][t>>13&3]%256+(1*10**5/(t%4096)&128)+(1*10**6/(t%4096)&128)*(t>>12&1)+((t*(t)*t>>12)&255)*((t>>8&7)==7)/2)/4"
+        "codeMinified": "(t*[2,4,6,8,10.5,10,9,10][t>>11&7]%256+t/2*[4,9,10,9][t>>13&3]%256+(1*10**5/(t%4096)&128)+(1*10**6/(t%4096)&128)*(t>>12&1)+((t*t*t>>12)&255)*((t>>8&7)==7)/2)/4"
         
+    },
+            {
+        "name": "did i tell you that i miss u - adore",
+        "url": "https://www.bytebeat.cloud/post/a44b1788-48c2-4a62-abe9-67798633ceea",
+        "date": "Jun 23, 2026",
+        "codeOriginal": "c3=4.1,d3=4.6,a3=6.9,asharp3=7.4,c4=c3*2,d4=d3*2,melody=t*([asharp3,asharp3,0,d4,c4,c4,asharp3,asharp3,a3,a3,0,d4,c4,c4,a3,a3,asharp3,asharp3,0,d4,c4,c4,asharp3,asharp3,a3,a3,0,a3,c4,asharp3,0,a3][(t>>10)%32])%256, kick=(sqrt(40000*(t/1%4096))&128)%256, hihat=((t*(t)*t>>12)&255)*\"0000000100000001\"[(t/2048*8|0)%16]/3,(melody+kick+hihat)/2",
+        "codeMinified": "c=8.2,d=9.2,a=6.9,A=7.4,((t*eval('AA dccAAaa dccaaAA dccAAaa acA a'[t>>10&31])&255)+(sqrt(4e4*(t%4096))&128)+((t*t*t>>12)&255)*((t>>8&7)==7)/3)/2"
+            }
+        ] 
     },
     {
         "author": "astolfo671games",
