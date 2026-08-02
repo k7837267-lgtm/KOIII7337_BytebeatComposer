@@ -440,11 +440,24 @@
         ]
     },
     {
+        "author": "Gede",
+        "name": "hardcOR",
+        "url": "https://touchbit.xyz/#s=8000&bb=5d000001001200000000000000003a08032343ba1cc77415ac7cfbeccb4449cb7005655ffe8d4c00",
+        "mode": "postfix"
+        "codeOriginal": "t 92 | .896 * 96 |"
+    },
+    {
         "author": "Ey Pacha!",
         "children": [
             {
+                "name": "untaunta",
+                "url": "https://touchbit.xyz/#s=8000&bb=5d000001001200000000000000003a081c04698400fe822a1c9bc4212c4a3884747affff035a0000",
+                "mode": "postfix",
+                "codeOriginal": "t t 4 >> | 0.999 *"
+            },
+            {
                 "name": "this != copla",
-                "url": "https://touchbit.xyz/",
+                "url": "https://touchbit.xyz/#s=8000&bb=5d000001002000000000000000003a0802235b1284d64f1b9d0c2fbb05e1d037fb002736df1dda5c6691461fffdc8ab000",
                 "mode": "postfix",
                 "codeOriginal": "t 13 >> t ~ 12 >> | 7 % t * 96 &"
             },
