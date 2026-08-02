@@ -679,7 +679,7 @@
                 "mode": "postfix",
                 "codeOriginal": [
                     "t 10 >> 13 & 9 % t * t 5 >> | t 12 >> 3 % 4 + * 65536 t 4096 % / ^",
-"DUP 3 / &"
+                    "DUP 3 / &"
                 ]
             },
             {
@@ -687,9 +687,9 @@
                 "mode": "postfix",
                 "codeOriginal": [
                     "t 11 >> 5 & t 12 >> 3 % - 4 + t * 3 /",
-"DUP 10 + |",
-"t 4 >> | SWAP - 3 *",
-"t 1000 * t 100 % / t ~ 4 >> & t 12 >> 1 & * ^"
+                    "DUP 10 + |",
+                    "t 4 >> | SWAP - 3 *",
+                    "t 1000 * t 100 % / t ~ 4 >> & t 12 >> 1 & * ^"
                 ]
             },
             {
@@ -698,11 +698,19 @@
                 "mode": "postfix",
                 "codeOriginal": [
                     "t t 8 * & t 4 >> t 8 >> & | 129 - t 11 >> & t 5 >> | 32 - 2 *",
-"t 6 >> ^ 64 ^",
-"t t t 10 >> 3 % 2 + * >> 3 >> 63 & |"
+                    "t 6 >> ^ 64 ^",
+                    "t t t 10 >> 3 % 2 + * >> 3 >> 63 & |"
                 ]
             }
         ]
+    },
+    {
+        "author": "HydrostaticPound90",
+        "name": "Nice Postfix Fractal Sound I Like (#★)",
+        "url": "https://touchbit.xyz/#s=8000&bb=5d000001002100000000000000003a08032211e71ceed804c0f4fbbe19f1b4a061e09bf5f5edde3edcbf4ce28fffffa3520000",
+        "date": "Jan 26, 2026",
+        "mode": "postfix",
+        "codeOriginal": "9 >> t | DUP t 127 % & t 7 >> ^"
     },
     {
         "author": "ProcessedGradient (TrashImpossible3699)",
