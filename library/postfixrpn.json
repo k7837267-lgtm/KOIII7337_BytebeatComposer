@@ -443,7 +443,7 @@
         "author": "Gede",
         "name": "hardcOR",
         "url": "https://touchbit.xyz/#s=8000&bb=5d000001001200000000000000003a08032343ba1cc77415ac7cfbeccb4449cb7005655ffe8d4c00",
-        "mode": "postfix"
+        "mode": "postfix",
         "codeOriginal": "t 92 | .896 * 96 |"
     },
     {
