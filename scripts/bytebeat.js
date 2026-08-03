@@ -319,7 +319,7 @@ globalThis.bytebeat = new class {
 						+ ' <small style="color:#0F0">Creator of EnBeat_NEW</small>' :
 					author == "pck404" ?
 						authorsList
-						+ ' <small style="color:#B0F">BytebeatCloud Creator</small>' :
+						+ ' <small style="color:#61F">BytebeatCloud Creator</small>' :
 						authorsList
 				}
 					</summary>`;
