@@ -293,6 +293,12 @@ globalThis.bytebeat = new class {
 						${author == "ccret2022 (NEW)" ?
 					authorsList
 					+ ` <img style="vertical-align:-2px" title="Non-binary" src="./Assets/NBFlag.png" width="21" height="14"></img>` :
+					author == "NewFall2020" ?
+					    authorsList
+					    + ` <img style="vertical-align:-2px" title="NewFall's PFP" src="./Assets/NewFallPFP.jpg" width="16" height="16"></img>` :
+					author == "JERN2K83" ?
+					    authorsList
+					    + ` <img style="vertical-align:-2px" title="Jinic (aka JERN)'s PFP" src="./Assets/JERNPFP.jpg" width="16" height="16"></img>` :
 					author == "Ey Pacha!" ?
 						authorsList
 						+ ' <small style="color:#0FF">Touchbit Creator</small>' :
@@ -302,6 +308,9 @@ globalThis.bytebeat = new class {
 					author == "KOIII7337" ?
 						authorsList
 						+ ' <small style="color:#0F9">Site Owner</small>' :
+					author == "BSquareII" ?
+						authorsList
+						+ ' <small style="color:#AAA">Original Site Creator</small>' :
 						authorsList
 				}
 					</summary>`;
