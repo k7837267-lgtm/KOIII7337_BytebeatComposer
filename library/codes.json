@@ -1,8 +1,4 @@
 [
-    {
-        "name": "trivial minimum: plain sawtooth",
-        "codeOriginal": "t"
-    },
     { 
         "author": "visy",
         "children": [
@@ -6470,7 +6466,6 @@
     {
         "author": "pck404 *(Creator Of BytebeatCloud)*",
         "children": [
-            { "description": "The Guy Who Created \"BytebeatCloud\"." },
             {
                 "name": "momentum presence",
                 "url": "https://www.bytebeat.cloud/post/447ebb36-fc8e-47e8-9a0c-d7183cd9d877",
@@ -7230,11 +7225,9 @@
     },
     {
         "author": [
-            "Trillwin (YouLikeHaveMaterials87",
-            "FoodlesMickey)"
+            "Trillwin (YouLikeHaveMaterials87, FoodlesMickey)"
         ],
         "children": [
-            { "description": "My Bytebeat Friend Of Mine! That I Usually Add Very Often" },
             {
                 "name": "Bank Bass",
                 "url": "https://www.bytebeat.cloud/post/722b15c7-bccc-42fd-b173-f32dc43c305c",
