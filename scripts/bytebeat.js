@@ -272,9 +272,6 @@ globalThis.bytebeat = new class {
 	}) {
 		let entry = '';
 		const noArrayUrl = url && !Array.isArray(url);
-		if (name) {
-			entry += url ? `<a href="${noArrayUrl ? url : url[0]}" target="_blank">${name}</a>` : name;
-		}
 		if (author) {
 			let authorsList = '';
 			const authorsArr = Array.isArray(author) ? author : [author];
@@ -308,6 +305,9 @@ globalThis.bytebeat = new class {
 						authorsList
 				}
 					</summary>`;
+		}
+		if (name) {
+			entry += url ? `<a href="${noArrayUrl ? url : url[0]}" target="_blank">${name}</a>` : name;
 		}
 		if (url && (!noArrayUrl || !name && !author)) {
 			if (noArrayUrl) {
