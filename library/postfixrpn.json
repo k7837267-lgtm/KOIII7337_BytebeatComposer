@@ -501,6 +501,14 @@
                 "mode": "postfix",
                 "date": "Feb 2, 2025",
                 "codeOriginal": "t 9 >> 42 & 17 % 7 % t * 2 * 161 & t 4 >> | t 8 >> 46 & |"
+            },
+            {
+                "name": "Shortbyte",
+                "url": "https://reddit.com//r/bytebeat/comments/1o8j8nx/shortbyte/",
+                "mode": "postfix",
+                "sampleRate": 6338,
+                "date": "Oct 16, 2025",
+                "codeOriginal": "t 157 | 4.19 * 143 | 2 *"
             }
         ]
     },
