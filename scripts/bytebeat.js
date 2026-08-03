@@ -290,7 +290,24 @@ globalThis.bytebeat = new class {
 					authorsList += ', ';
 				}
 			}
-			entry += ` <span>by ${authorsList}</span>`;
+			entry += `
+				<details>
+					<summary style="cursor:pointer;width:fit-content">
+						${author == "ccret2022" ?
+					authorsList
+					+ ` <img style="vertical-align:-2px" title="Non-binary" src="./Assets/NBFlag.png" width="21" height="14"></img>` :
+					author == "Ey Pacha!" ?
+						authorsList
+						+ ' <small style="color:#0FF">Touchbit Creator</small>' :
+					author == "Madgarden" ?
+						authorsList
+						+ ' <small style="color:#F00">Glitchmachine Creator</small>' :
+					author == "KOIII7337" ?
+						authorsList
+						+ ' <small style="color:#0F9">Site Owner</small>' :
+						authorsList
+				}
+					</summary>`;
 		}
 		if (url && (!noArrayUrl || !name && !author)) {
 			if (noArrayUrl) {
