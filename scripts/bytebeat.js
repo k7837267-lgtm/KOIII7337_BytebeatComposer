@@ -278,8 +278,7 @@ globalThis.bytebeat = new class {
 			for (let i = 0, len = authorsArr.length; i < len; ++i) {
 				const authorElem = authorsArr[i];
 				if (typeof authorElem === 'string') {
-					authorsList += name || !noArrayUrl ? '<b>' + authorElem + '</b>' :
-						`<a href="${url}" target="_blank">${authorElem}</a>`;
+					authorsList += '<b>' + authorElem + '</b>' ;
 				} else {
 					authorsList += `<a href="${authorElem[1]}" target="_blank">${authorElem[0]}</a>`;
 				}
