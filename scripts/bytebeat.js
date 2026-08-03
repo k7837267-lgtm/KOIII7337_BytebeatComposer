@@ -318,7 +318,7 @@ globalThis.bytebeat = new class {
 		if (name) {
 			entry += url ? `<a href="${noArrayUrl ? url : url[0]}" target="_blank">${name}</a>` : name;
 		}
-		if (url && (!noArrayUrl || !name && !author)) {
+		if (url && (!noArrayUrl || !name)) {
 			if (noArrayUrl) {
 				entry += `[<a href="${url}" target="_blank">link</a>]`;
 			} else {
