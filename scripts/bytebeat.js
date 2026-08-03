@@ -293,7 +293,7 @@ globalThis.bytebeat = new class {
 			entry += `
 				<details>
 					<summary style="cursor:pointer;width:fit-content">
-						${author == "ccret2022" ?
+						${author == "ccret2022 (NEW)" ?
 					authorsList
 					+ ` <img style="vertical-align:-2px" title="Non-binary" src="./Assets/NBFlag.png" width="21" height="14"></img>` :
 					author == "Ey Pacha!" ?
