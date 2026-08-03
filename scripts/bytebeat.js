@@ -298,6 +298,10 @@ globalThis.bytebeat = new class {
 					author == "JERN2K83" ?
 					    authorsList
 					    + ` <img style="vertical-align:-2px" title="Jinic (aka JERN)'s PFP" src="./Assets/JERNPFP.jpg" width="16" height="16"></img>` :
+					author == "Trillwin (YouLikeHaveMaterials87, FoodlesMickey)" ?
+					    authorsList
+					    + ` <img style="vertical-align:-2px" title="Trillwin's PFP" src="./Assets/TrillwinPFP.jpg" width="16" height="16"></img>`
+						+ ' <small style="color:#FFF">My Friend!</small>' :
 					author == "Ey Pacha!" ?
 						authorsList
 						+ ' <small style="color:#0FF">Touchbit Creator</small>' :
@@ -310,6 +314,9 @@ globalThis.bytebeat = new class {
 					author == "BSquareII" ?
 						authorsList
 						+ ' <small style="color:#AAA">Original Site Creator</small>' :
+					author == "Chasyxx" ?
+						authorsList
+						+ ' <small style="color:#0F0">Creator of EnBeat_NEW</small>' :
 						authorsList
 				}
 					</summary>`;
