@@ -345,7 +345,7 @@ html[data-theme="Red"] {
 }
 
 html[data-theme="Pink"] {
-	--button-hover-color: #fff;
+	--button-hover-color: #f5c;
 	--canvas-border: linear-gradient(#d45db6, #db02a5) 1;
 	--canvas-button-color: #7d3e7c;
 	--canvas-button: linear-gradient(to bottom, #ff63d8, #f23ac4);
@@ -411,6 +411,7 @@ html[data-theme="Teal"] {
 }
 html[data-theme="Yellow"] {
 	--button-hover-color: #ffff00;
+	--canvas-border: linear-gradient(#c9c9af, #aaaa7f) 1;
 	--canvas-button: linear-gradient(to bottom, #ffff0f, #38380d);
 	--canvas-button-color: #101000;
 	--canvas-button-hover: linear-gradient(to bottom, #ffff43, #6d6d13) !important;
