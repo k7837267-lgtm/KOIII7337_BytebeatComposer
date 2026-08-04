@@ -349,6 +349,11 @@
             },
             {
                 "name": "Hyperactive Mind",
+                "remix": {
+                    "author": "Dresdenboy",
+                    "name": "Visitors from the Dark Side",
+                    "url": "https://demozoo.org/music/311730/"
+                },
                 "url": "https://demozoo.org/music/318948/",
                 "date": "Feb 11, 2023",
                 "sampleRate": 44100,
@@ -648,7 +653,7 @@
         ]
     },
     {
-        "author": "Natt",
+        "author": "Natt Akuma",
         "children": [
             {
                 "name": "Stress Signal",
@@ -656,7 +661,6 @@
                 "date": "Feb 12, 2022",
                 "starred": 2,
                 "sampleRate": 44100,
-        "c": true,
                 "codeOriginal": "((t/(t>>9&15))&32)*(((-t>>16&t>>20|t>>21)&118518023>>(t>>11))&1)+((t/(t%152))&(-t>>7&t>>10&t>>17)&63)+(t*4/(3353657496>>(t>>18<<3)&255)&23)+(t*8/(3370500505>>(t>>18<<3)&255)&23)+(t*5/24&(-t>>9&13))+(t*5/32&(-t>>8&13))+((t/4-t/64*(-t>>17&1))&(-t/3>>8&13))"
             },
             {
@@ -3806,6 +3810,11 @@
             },
             {
                 "name": "Remix of cool waveform tune from 3yrs ago",
+                "remix": {
+                    "author": "1583736",
+                    "name": "Cool waveform i guess (second one)",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/ntpnza/cool_waveform_i_guess/"
+                },
                 "url": "https://www.reddit.com/r/bytebeat/comments/1e2e5l4/remix_of_cool_waveform_tune_from_3yrs_ago/",
                 "date": "Jul 13, 2024",
                 "starred": 1,
