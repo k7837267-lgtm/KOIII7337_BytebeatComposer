@@ -300,7 +300,7 @@ html[data-theme="Green"] {
 }
 
 html[data-theme="Orange"] {
-	--button-hover-color: #ff9fa5;
+	--button-hover-color: #ffefa5;
 	--canvas-button: linear-gradient(to bottom, #ff8f0f, #38240d);
 	--canvas-button-color: #321300;
 	--canvas-button-hover: linear-gradient(to bottom, #ffa743, #6d4313) !important;
@@ -345,8 +345,9 @@ html[data-theme="Red"] {
 }
 
 html[data-theme="Pink"] {
-	--button-hover-color: #fcaedd;
+	--button-hover-color: #fff;
 	--canvas-border: linear-gradient(#d45db6, #db02a5) 1;
+	--canvas-button-color: #7d3e7c;
 	--canvas-button: linear-gradient(to bottom, #ff63d8, #f23ac4);
 	--canvas-button-hover: linear-gradient(to bottom, #ffa6e9, #ff80df) !important;
 	--code-button: linear-gradient(to bottom, #ff40cf, #cc35a6);
