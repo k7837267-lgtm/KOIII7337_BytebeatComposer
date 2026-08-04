@@ -4152,6 +4152,13 @@
     }
 ]
 },
+      {
+        "author": "bendog",
+        "name": "feel the byte",
+        "date": "Sep 26, 2024",
+        "sampleRate": 10000,
+        "codeOriginal": "(t*(7&t>>5&t>>9)&t>>10)+(t*(15&t>>8&t>>10&t>>11&t>>6)&(255&-t>>10))"
+    },
     {
         "author": "Phoneposter",
         "description": "Write a chord progression player that's shorter and more concise than this one but has far more capabilities and can play rare/strangely-named chords (found in jazz/prog for instance), better if you use cool synths (Float64 wavetables, FM, soft pads) with rhythms, envelopes (ADSR), effects (N-order IIR filters, FDN reverb, chorus, dynamic compression) and arpeggios with some drums (pattern generation (rush/rolls, dynamics, off-beat/humanized swing), membrane simulation (snares, hi-hat, cymbal, bells)), even better if it's microtonal (are new chord notations required for this?) and not the standard 12-TET. also had to compress the JS because it was too long.",
