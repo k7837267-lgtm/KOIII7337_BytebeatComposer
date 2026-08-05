@@ -621,23 +621,31 @@ button[name="close"] {
 }
 
 .cmt-number {
-	color: #ff8dfd;
+	color: #9bfeda;
 }
 
-.cmt-keyword, .cmt-operator {
-	color: #96cbfe;
+.cmt-keyword {
+	color: #00ff90;
+}
+
+.cmt-operator {
+	color: #288474;
 }
 
 .cmt-propertyName {
-	color: #ffd2a7;
+	color: #0fa6a3;
 }
 
-.cmt-punctuation, .cmt-variableName {
-	color: #c5c8c6;
+.cmt-punctuation {
+	color: #46d999;
+}
+
+.cmt-variableName {
+	color: #0fa6a3;
 }
 
 .cmt-string {
-	color: #a8ff60;
+	color: #46d999;
 }
 
 #error {
