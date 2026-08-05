@@ -320,6 +320,9 @@ globalThis.bytebeat = new class {
 					author == "pck404" ?
 						authorsList
 						+ ' <small style="color:#61F">BytebeatCloud Creator</small>' :
+					author == "mqlarpp" ?
+						authorsList
+						+ ' <small style="color:#F70">mqdantee’s counterpart</small>' :
 						authorsList
 				}
 					</summary>`;
