@@ -45,7 +45,6 @@
 						<svg class="svg-play"><use xlink:href="#symbol-play"></use></svg>
 					</button>
 				</div>
-				<span class="control-label" id="control-volume-display">...%</span>
 				<div class="controls-group">
 					<button id="control-scaledown" class="control-button" title="Zoom in the scope">
 						<svg><use xlink:href="#symbol-scaledown"></use></svg>
@@ -58,7 +57,6 @@
 				<select id="control-drawmode" class="control-select controls-grow" title="Drawing mode">
 					<option value="Points" selected>Points</option>
 					<option value="Waveform">Waveform</option>
-					<option value="Diagram">Diagram</option>
 				</select>
 				<select id="control-mode" class="control-select controls-grow" title="Sound mode">
 					<option value="Bytebeat">Bytebeat (0 to 255)</option>
@@ -95,8 +93,8 @@
 						<option value="48000">48kHz</option>
 					</select>
 				</div>
-				<div class="controls-group controls-grow">
-					<input id="control-volume" type="range" min="0" max="1" value=".5" step="0.01" title="Volume">
+				<div class="controls-group controls-grow" width="128">
+					<input value="1" type="number" id="control-divisor" class="control-text" title="Set sample rate divisor then press Enter">
 				</div>
 				<div class="controls-group">
 					<button id="control-rec" class="control-button" title="Record to the file">
@@ -110,6 +108,10 @@
 					</button>
 					<span id="control-codesize" class="control-text" title="Code size in bytes (link size in characters)"></span>
 				</div>
+				<div class="controls-group controls-grow">
+					<input id="control-volume" type="range" min="0" max="1" value=".5" step="0.01" title="Volume">
+				</div>
+				<span class="control-label" id="control-volume-display">...%</span>
 			</div>
 			<pre id="error"></pre>
 			<div id="canvas-container" title="Click to play">
