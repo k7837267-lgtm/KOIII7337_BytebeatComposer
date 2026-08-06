@@ -730,7 +730,7 @@
         "codeOriginal": "t 8 * >> 15 & 8 t t 8 >> 8 & 2 + * 7 >> * ^ + & t 8 >> & t 2 * 13 >> 7 & * 8 + | t 5 * t 16 >> 3 & t * 18 >> 3 & * 2 >> |"
     },
     {
-        "author": "ThusII",
+        "author": "hymen (ThusII)",
         "children": [
             {
                 "name": "Kizim",
