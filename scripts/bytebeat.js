@@ -33,7 +33,6 @@ globalThis.bytebeat = new class {
 		this.canvasWidth = 1024;
 		this.containerFixedElem = null;
 		this.controlDrawMode = null;
-		this.controlLag = null;
 		this.controlPlaybackMode = null;
 		this.controlRecord = null;
 		this.controlSampleDivisor = null;
@@ -51,11 +50,9 @@ globalThis.bytebeat = new class {
 		this.editorElem = null;
 		this.errorElem = null;
 		this.isCompilationError = false;
-		this.isLagging = false;
 		this.isNeedClear = false;
 		this.isPlaying = false;
 		this.isRecording = false;
-		this.lastUpdateTime = 0;
 		this.playbackSpeed = 1;
 		this.settings = {
 			drawMode: 'Waveform',
@@ -65,7 +62,6 @@ globalThis.bytebeat = new class {
 			volume: .5
 		};
 		this.songData = { mode: 'Bytebeat', sampleRate: 8000 };
-		this.updateCounter = 0;
 		this.init();
 	}
 	get editorValue() {
@@ -153,11 +149,8 @@ globalThis.bytebeat = new class {
 			}
 		}
 		// Drawing in a segment
-		//NOTE: diagram view uses chasyxx's old diagram version from t-8492's bytebeat composer site
-		//															(https://github.com/T-8492/bbeat2)
 		const isWaveform = this.settings.drawMode === 'Waveform';
-		const isDiagram = this.settings.drawMode === 'Diagram';
-		let ch, drawPoint, drawWaveLine, drawDiagram;
+		let ch, drawPoint, drawWaveLine;
 		for (let i = 0; i < bufferLen; ++i) {
 			const curY = buffer[i].value;
 			const prevY = buffer[i - 1]?.value ?? [NaN, NaN];
@@ -166,9 +159,8 @@ globalThis.bytebeat = new class {
 			const nextTime = buffer[i + 1]?.t ?? endTime;
 			const curX = this.mod(Math.floor(this.getX(isReverse ? nextTime + 1 : curTime)) - startX, width);
 			const nextX = this.mod(Math.ceil(this.getX(isReverse ? curTime + 1 : nextTime)) - startX, width);
-			const diagramIteration = this.mod(curTime, 2 ** this.settings.drawScale);
 			// Error value - filling with red color
-			if ((isNaNCurY[0] || isNaNCurY[1]) && !isDiagram) {
+			if (isNaNCurY[0] || isNaNCurY[1]) {
 				for (let x = curX; x !== nextX; x = this.mod(x + 1, width)) {
 					for (let y = 0; y < height; ++y) {
 						const idx = (drawWidth * y + x) << 2;
@@ -182,12 +174,10 @@ globalThis.bytebeat = new class {
 			if ((curY[0] === curY[1] || isNaNCurY[0] && isNaNCurY[1]) && prevY[0] === prevY[1]) {
 				drawPoint = this.drawPointMono;
 				drawWaveLine = this.drawWaveLineMono;
-				drawDiagram = this.drawDiagramMono;
 				ch = 1;
 			} else {
 				drawPoint = this.drawPointStereo;
 				drawWaveLine = this.drawWaveLineStereo;
-				drawDiagram = this.drawDiagramStereo;
 				ch = 2;
 			}
 			while (ch--) {
@@ -195,25 +185,19 @@ globalThis.bytebeat = new class {
 					continue;
 				}
 				const curYCh = curY[ch];
-				if (!isDiagram) { // We are not drawing diagram
-					// Points drawing
-					for (let x = curX; x !== nextX; x = this.mod(x + 1, width)) {
-						drawPoint(data, (drawWidth * (255 - curYCh) + x) << 2, ch);
+				// Points drawing
+				for (let x = curX; x !== nextX; x = this.mod(x + 1, width)) {
+					drawPoint(data, (drawWidth * (255 - curYCh) + x) << 2, ch);
+				}
+				// Waveform mode: vertical lines drawing
+				if (isWaveform) {
+					const prevYCh = prevY[ch];
+					if (isNaN(prevYCh)) {
+						continue;
 					}
-					// Waveform mode: vertical lines drawing
-					if (isWaveform) {
-						const prevYCh = prevY[ch];
-						if (isNaN(prevYCh)) {
-							continue;
-						}
-						const x = isReverse ? this.mod(Math.floor(this.getX(curTime)) - startX, width) : curX;
-						for (let dy = prevYCh < curYCh ? 1 : -1, y = prevYCh; y !== curYCh; y += dy) {
-							drawWaveLine(data, (drawWidth * (255 - y) + x) << 2, ch);
-						}
-					}
-				} else {//We're drawing diagram, use that
-					for (let x = curX; x !== nextX; x = this.mod(x + 1, width)) {
-						drawDiagram(data, drawWidth, x, curYCh, diagramIteration, scale, isNaNCurY[ch], ch);
+					const x = isReverse ? this.mod(Math.floor(this.getX(curTime)) - startX, width) : curX;
+					for (let dy = prevYCh < curYCh ? 1 : -1, y = prevYCh; y !== curYCh; y += dy) {
+						drawWaveLine(data, (drawWidth * (255 - y) + x) << 2, ch);
 					}
 				}
 			}
@@ -262,30 +246,6 @@ globalThis.bytebeat = new class {
 			}
 		} else if (!data[++i]) {
 			data[i] = 160;
-		}
-	}
-	drawDiagramMono(data, DW, j, V, DI, scale, NaNchk) {
-		const size = Math.max(1, 256 / (2 ** scale))
-		for (let k = 0; k < size; k++) {
-			let i = ((k + (DI * size)) * DW + j) << 2
-			if (NaNchk) {
-				data[i] = 100
-			} else {
-				data[i++] = data[i++] = data[i] = V & 255;
-			}
-		}
-	}
-	drawDiagramStereo(data, DW, j, V, DI, scale, NaNchk, ch) {
-		const size = 256 / (2 ** scale)
-		for (let k = 0; k < size; k++) {
-			let i = ((k + (DI * size)) * DW + j) << 2
-			if (NaNchk) {
-				data[i] = 100
-			} else if (ch == 1) {
-				data[i] = data[i + 2] = V & 255;
-			} else {
-				data[i + 1] = V & 255;
-			}
 		}
 	}
 	escapeHTML(text) {
@@ -633,7 +593,6 @@ globalThis.bytebeat = new class {
 		this.controlCodeSize = document.getElementById('control-codesize');
 		this.controlDrawMode = document.getElementById('control-drawmode');
 		this.controlDrawMode.value = this.settings.drawMode;
-		this.controlLag = document.getElementById('control-lag');
 		this.controlPlaybackMode = document.getElementById('control-mode');
 		this.controlPlayBackward = document.getElementById('control-play-backward');
 		this.controlPlayForward = document.getElementById('control-play-forward');
@@ -833,11 +792,6 @@ globalThis.bytebeat = new class {
 				this.requestAnimationFrame();
 			}
 		} else {
-			this.lastUpdateTime = 0;
-			this.updateCounter = 0;
-			this.isLagging = false;
-			this.controlLag.innerText = '---';
-			this.controlLag.classList.remove('control-lag-red');
 			if (this.isRecording) {
 				this.isRecording = false;
 				this.controlRecord.classList.remove('control-recording');
@@ -923,27 +877,6 @@ globalThis.bytebeat = new class {
 	setCounterValue(value) {
 		this.controlTime.value = this.settings.isSeconds ?
 			(value / this.songData.sampleRate).toFixed(2) : value;
-		// Lag detection
-		this.updateCounter++;
-		if (this.updateCounter === 400) {
-			this.updateCounter = 0;
-			const time = Date.now();
-			if (this.lastUpdateTime) {
-				const lag =
-					Math.min(Math.max(Math.round((time - this.lastUpdateTime) * 37.5 / 400) - 100, 0), 999);
-				this.controlLag.innerText = lag + '%';
-				if (lag > 3) {
-					if (!this.isLagging) {
-						this.isLagging = true;
-						this.controlLag.classList.add('control-lag-red');
-					}
-				} else if (this.isLagging) {
-					this.isLagging = false;
-					this.controlLag.classList.remove('control-lag-red');
-				}
-			}
-			this.lastUpdateTime = time;
-		}
 	}
 	setDrawMode() {
 		this.settings.drawMode = this.controlDrawMode.value;
