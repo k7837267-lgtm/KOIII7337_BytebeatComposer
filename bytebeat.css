@@ -869,7 +869,7 @@ entry.star-white::before, .entry.star-yellow::before {
 }
 
 #control-counter {
-	width: 88px;
+	width: 233px;
 	border-radius: 0 var(--control-corners) var(--control-corners) 0;
 }
 
@@ -950,7 +950,7 @@ entry.star-white::before, .entry.star-yellow::before {
 }
 
 #control-samplerate {
-	width: 56px;
+	width: 132px;
 	border-radius: var(--control-corners) 0 0 var(--control-corners);
 }
 
