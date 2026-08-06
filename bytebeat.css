@@ -900,6 +900,17 @@ entry.star-white::before, .entry.star-yellow::before {
 	padding: 0 10px 0 10px !important
 }
 
+#control-lag {
+	width: 30px;
+	border-radius: 6px;
+	text-align: right;
+	cursor: default;
+}
+
+.control-lag-red {
+	background: linear-gradient(#F22, #F00) !important;
+}
+
 #control-play-backward, #control-play-forward {
 	position: relative;
 }
