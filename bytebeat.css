@@ -869,7 +869,7 @@ entry.star-white::before, .entry.star-yellow::before {
 }
 
 #control-counter {
-	width: 233px;
+	width: 88px;
 	border-radius: 0 var(--control-corners) var(--control-corners) 0;
 }
 
@@ -898,17 +898,6 @@ entry.star-white::before, .entry.star-yellow::before {
 
 .control-label {
 	padding: 0 10px 0 10px !important
-}
-
-#control-lag {
-	width: 30px;
-	border-radius: 6px;
-	text-align: right;
-	cursor: default;
-}
-
-.control-lag-red {
-	background: linear-gradient(#F22, #F00) !important;
 }
 
 #control-play-backward, #control-play-forward {
@@ -950,7 +939,7 @@ entry.star-white::before, .entry.star-yellow::before {
 }
 
 #control-samplerate {
-	width: 132px;
+	width: 56px;
 	border-radius: var(--control-corners) 0 0 var(--control-corners);
 }
 
@@ -1127,4 +1116,3 @@ entry.star-white::before, .entry.star-yellow::before {
 }
 
 	  
-
