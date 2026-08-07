@@ -7310,9 +7310,7 @@
         ]
     },
     {
-        "author": [
-            "Trillwin (YouLikeHaveMaterials87, FoodlesMickey)"
-        ],
+        "author": "Trillwin (YouLikeHaveMaterials87, FoodlesMickey)",
         "children": [
             {
                 "name": "Bank Bass",
@@ -8058,7 +8056,7 @@
             },
             {
                 "name": "i think this is the first time ive used \"tan\" :)👍",
-                "url": "https://bytebeat.cloud/post/d130e1f2-d281-4797-b6cf-3b7cabc053ac",
+                "url": "https://www.bytebeat.cloud/post/39a40414-f205-44bc-bb9c-b6fa5aff74f6",
                 "date": "Jul 6, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 33700,
@@ -8071,7 +8069,7 @@
                     "name": "formant synthesis",
                     "url": "https://www.reddit.com/r/bytebeat/comments/15x6jtg/formant_synthesis/"
                 },
-                "url": "https://bytebeat.cloud/post/d130e1f2-d281-4797-b6cf-3b7cabc053ac",
+                "url": "https://www.bytebeat.cloud/post/17991b54-807b-45ee-a307-6b6f79aabebf",
                 "date": "Jul 11, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
@@ -8083,6 +8081,19 @@
                 "date": "Jul 13, 2026",
                 "sampleRate": 48000,
                 "codeOriginal": "(t&131072?(((t*[2,2.24,2.5,3][3&t])*[0,1][1&t]))*[1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0][15&t>>13]:(((t*[2,2.24,2.5,3,3.35,3,2.5,3][7&t>>13])*[1,0][[1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0][15&t>>13]&t])|(((t*[2,2.24,2.5,3][3&t])*[0,1][1&t]))*[1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0][15&t>>13]))+(400000/(t&32767))"
+            },
+            {
+                "name": "laoodeoofioralodeori",
+                "remix": {
+                    "author": "MarioFan171",
+                    "name": "Poor attempt on TB303",
+                    "url": "https://www.bytebeat.cloud/post/05df9c65-b568-4407-8185-4a32c8187c84"
+                },
+                "url": "https://www.bytebeat.cloud/post/a2b0b9db-669a-4e22-8e92-db578824c41e",
+                "date": "Jul 16, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "codeOriginal": "t||(A=Array(n=12288).fill(0)),n=t>>12&t>>15,m=2**(parseInt('0CEAFM0CEAFM0FE7'[t>>12&15],36)/12),f=x=>x&&abs(sin(t*m*x*PI/256)/18)+f(x-1),g=x=>f(x)/x,atan(g(min(round((cos(t/'21'[t>>13&1]%4096*PI/16384))**2*8),(-t>>10)&31)+1)*16)/2+sin(2*sqrt(t%16384))*(.9997**(t%16384))"
             }
         ]
     },
