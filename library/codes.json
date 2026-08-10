@@ -22,10 +22,12 @@
     {
         "author": "red-",
         "children": [
-            {
-                "url": "https://www.pouet.net/topic.php?which=8357&page=2#c388356",
+                "name": "oh the joy!",
+                "url": [
+                    "https://www.pouet.net/topic.php?which=8357&page=2#c388356",
+                    "https://youtu.be/qlrs2Vorw2Y&t=105"
+                ],
                 "date": "Sep 28, 2011",
-                "c": true,
                 "codeOriginal": "(t|(t>>9|t>>7))*t&(t>>11|t>>9)",
                 "codeMinified": "(t|t>>9|t>>7)*t&(t>>11|t>>9)"
             },
@@ -76,19 +78,42 @@
     },
     {
         "author": "stephth",
-        "name": "remix of miiro's 1-line symphony",
-        "url": "https://news.ycombinator.com/item?id=3064986",
-        "date": "Oct 3, 2011",
-        "c": true,
-        "codeOriginal": "t*9&(t*1>>4)|t*5&(t>>7)|t*3&(t*4>>12)",
-        "codeMinified": "t*9&t>>4|t*5&t>>7|t*3&t>>10"
+        "children": [
+            {
+                
+                "name": "remix of miiro's 1-line symphony",
+                "url": "https://news.ycombinator.com/item?id=3064986",
+                "date": "Oct 3, 2011",
+                "c": true,
+                "codeOriginal": "t*9&(t*1>>4)|t*5&(t>>7)|t*3&(t*4>>12)",
+                "codeMinified": "t*9&t>>4|t*5&t>>7|t*3&t>>10"
+            },
+            {   
+                "name": "2-line remix of miiro's 1-line symphony",
+                "url": "https://news.ycombinator.com/item?id=3064986",
+                "date": "Oct 3, 2011",
+                "stereo": true,
+                "codeOriginal": "[t*9&(t*1>>4)|t*5&(t>>7)|t*3&(t*4>>12),t*1&(t*1>>4)|t*5&(t*1>>4)|t*5&(t*4>>14)]",
+                "codeMinified": "[t*9&t>>4|t*5&t>>7|t*3&t>>10,t&t>>4|t*5&t>>4|t*5&t>>12]"
+            }
+        ]
     },
     {
         "author": "216",
-        "url": "https://www.pouet.net/topic.php?which=8357&page=6#c388715",
+        "url": [
+            "https://www.pouet.net/topic.php?which=8357&page=6#c388715",
+            "https://youtu.be/tCRPUv8V22o&t=344"
+        ],
         "date": "Oct 3, 2011",
         "c": true,
         "codeOriginal": "t*(t^t+(t>>15|1)^(t-1280^t)>>10)"
+    },
+    {
+        "author": "zdubs",
+        "name": "Dance music!",
+        "url": "https://www.pouet.net/topic.php?which=8357&page=6#c388716",
+        "date": "Oct 3, 2011",
+        "codeOriginal": "t*(t>>15&t>>11&13&t>>6)+(t*((t>>7&31)<5))+(t*t*(t>>9&t>>11&4))"
     },
     {
         "author": "jounim",
@@ -112,12 +137,20 @@
         "author": "bst",
         "children": [
             {
-                "url": "https://youtu.be/tCRPUv8V22o?si=Kj3hbHZwDHU760MV&t=44",
+                "url": [
+                    "https://youtu.be/tCRPUv8V22o&t=44",
+                    "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+                    "https://www.pouet.net/topic.php?which=8357&page=16#c389525"
+                ],
                 "date": "Oct 10, 2011",
+                "c": true,
                 "codeOriginal": "(int)(t/1e7*t*t+t)%127|t>>4|t>>5|t%127+(t>>16)|t"
             },
             {
-                "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+                "url": [
+                    "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+                    "https://www.pouet.net/topic.php?which=8357&page=18#c389941"
+                ],
                 "date": "Oct 11, 2011",
                 "c": true,
                 "codeOriginal": "t>>16|((t>>4)%16)|((t>>4)%192)|(t*t%64)|(t*t%96)|(t>>16)*(t|t>>5)",
@@ -141,6 +174,43 @@
         "codeMinified": "(t*(t>>12)&201*t/100&199*t/100&t*(t>>14)&t*301/100&t*399/100)+(t*(t>>16)&t*202/100&t*198/100)-(t*(t>>17)&t*302/100&t*298/100)"
     },
     {
+        "author": "Robert",
+        "children": [
+            {
+                "url": [
+                    "https://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html?showComment=1318304070032#c1012002668780104550",
+                    "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
+                ],
+                "date": "Oct 11, 2011",
+                "codeOriginal": "(t>>13|t%24)&(t>>7|t%19)"
+            },
+            {
+                "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+                "date": "Oct 11, 2011",
+                "codeOriginal": "(t>>7|t%45)&(t>>8|t%35)&(t>>11|t%20)"
+            }
+        ]
+    },
+    {
+        "author": "beyon",
+        "remix": {
+            "author": "yumeji",
+            "name": "generic 3/4 buildup",
+            "url": "https://www.pouet.net/topic.php?which=8357&page=6#c388717"
+        },
+        "url": "https://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html?showComment=1318420534814&m=1#c3824894682767643057",
+        "date": "Oct 12, 2011",
+        "codeOriginal": "t>>6^t&0x25|t+(t^t>>11) -t*((t%24?2:6)&t>>11)^t<<1 &(t&0x256?t>>4:t>>10)",
+        "codeMinified": "t>>6^t&37|t+(t^t>>11)-t*((t%24?2:6)&t>>11)^t*2&(t&598?t>>4:t>>10)"
+    },
+    {
+        "author": "FreeFull",
+        "url": "https://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html?showComment=1318438949016&m=1#c1171374017538202960",
+        "date": "Oct 12, 2011",
+        "codeOriginal": "(~t/100|(t*3))^(t*3&(t>>5))&t",
+        "codeMinified": "(~t/100|t*3)^t*3&t>>5&t"
+    },
+    {
         "author": "ultrageranium",
         "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
         "date": "Oct 12, 2011",
@@ -148,24 +218,48 @@
         "codeOriginal": "(t*t/256)&(t>>((t/1024)%16))^t%64*(0xC0D3DE4D69>>(t>>9&30)&t%32)*t>>18"
     },
     {
+        "author": "Aaron Krister Johnson",
+        "url": "https://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html?showComment=1318630600804#c947426238247450493",
+        "date": "Oct 14, 2011",
+        "codeOriginal": "(int)(((t>>4)|(t%10))+3.3) | (((t%101)|(t>>14))&((t>>7)|(t*t%17)))",
+        "codeMinified": "(t>>4|t%10)+3|(t%101|t>>14)&(t>>7|t*t%17)"
+    },
+    {
+        "author": "ps",
+        "name": "very interesting thing",
+        "url": "https://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html?showComment=1325121763160&m=1#c8281176325712595014",
+        "date": "Dec 29, 2011",
+        "codeOriginal": "(t<65536)?((2*t*(t>>11)&(t-1)|(t>>4)-1)%64):(((t%98304)>65536)?((17*t*(2*t>>8)&(t-1)|(t>>6)-1)%64|(t>>4)):((15*t*(2*t>>16)&(t-1)|(t>>8)-1)%64|(t>>4)))"
+    },
+    {
         "author": "yehar",
+        "url": "https://yehar.com/blog/?p=2554",
         "children": [
             {
                 "name": "No 2",
-                "url": "https://yehar.com/blog/?p=2554",
+                "description": "A song with progression and a repeating pattern of chords. It has a bass drum, an arpeggiator derived from song No 1, and uses division to arrive at approximate note frequencies generated by a formula. Unfortunately, it gets a bit dissonant in the 4th quarter of the repeating pattern.",
+                "url": "https://www.pouet.net/topic.php?which=8357&page=20#c401634",
                 "date": "Feb 24, 2012",
                 "codeOriginal": "u=t>>10,8*t*t*(t>>u%3+15)/(3+(u&(u>>5&3|4)))|t>>4"
             },
             {
                 "name": "No 3",
-                "url": "https://yehar.com/blog/?p=2554",
+                "description": "Quite similar in form to song No 2, but the progression is done using the bass drum. Has gating to make the ti-ti-ti-ti-ti-ti-ti. Has additional elements for fine-tuning of the sound.",
+                "url": "https://www.pouet.net/topic.php?which=8357&page=21#c401680",
                 "date": "Feb 25, 2012",
                 "starred": 1,
+                "c": true,
                 "codeOriginal": "t>>4+!(-t>>13&7)+2*!(t>>17)|t*t*(t>>(t>>12^t>>11)%3+10)/(7+(t>>10&t>>14&3))*!(t&512)<<3+(t>>14&1)"
             },
             {
                 "name": "bare-bones version",
-                "url": "https://yehar.com/blog/?p=2554",
+                "description": "A no-frills variant with a somewhat simpler arpeggiator.",
+                "remix": {
+                    "author": "yehar",
+                    "name": "No 3",
+                    "url": "https://www.pouet.net/topic.php?which=8357&page=21#c401680"
+                },
+                "url": "https://www.pouet.net/topic.php?which=8357&page=21#c401690",
                 "date": "Feb 25, 2012",
                 "starred": 1,
                 "c": true,
@@ -173,58 +267,58 @@
             },
             {
                 "name": "No 4",
-                "url": "https://yehar.com/blog/?p=2554",
+                "description": "Monotonic minimalistic trance. Features a poor man's \"sinusoidal\" bassline that has a nice development coming out of the formula, driving the whole song forward. On top of that there's a bass drum making the bassline duck, and then there's a bit of high-frequency spice.",
+                "url": "https://www.pouet.net/topic.php?which=8357&page=21#c401796",
                 "date": "Feb 26, 2012",
                 "codeOriginal": "v=t/2^(t&64?63:0),v=v>>v,v/(1+(v>>7))&t/32|(t>>11)%8%3*t*t&15"
+            },
+            {
+                "name": "No 5",
+                "description": "This uses a kind of \"loop sampler\" of a nice smack!-kinda sound to create both a bass and a bass drum sound. The loops don't repeat evenly, creating an interesting polyrhythm. There's also an additional high-pitched sound.",
+                "url": "https://www.pouet.net/topic.php?which=8357&page=21#c401952",
+                "date": "Feb 28, 2012",
+                "mode": "Signed Bytebeat",
+                "codeOriginal": "u=3*t>>t/4096%4&-t%(t>>16|16)*t>>14&8191,u/(u>>6|1)*4"
             }
         ]
     },
     {
         "author": "a2aaron",
+        "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
+        "date": "Mar 16, 2014",
         "children": [
             {
                 "name": "fractal heaven",
-                "date": "Mar 16, 2014",
-                "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
                 "c": true,
                 "codeOriginal": "((t*t)/(t^t>>8))&t"
             },
            {
                 "name": "Sine wave heaven",
-                "date": "Mar 16, 2014",
-                "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
                 "codeOriginal": "sin(t/(1+(t>>8&t>>13)))*64+128"
             },
            {
                 "name": "click and pop",
-                "date": "Mar 16, 2014",
-                "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
                 "codeOriginal": "(sin(sin(t/10)+t/(1000-(t>>10|t>>12)))*64)+128"
             },
            {
                 "name": "dark kick",
-                "date": "Mar 16, 2014",
                 "c": true,
-                "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
                 "codeOriginal": "(t&t>>4)-(t>>13&t)"
             },
            {
                 "name": "duo team. Based off of mu6k's \"Long Line Theory\"",
-                "description": "\"This Is Amazing At 172 Seconds!\" - KOIII7337",
-                "date": "Mar 16, 2014",
-                "url": "https://www.reddit.com/r/bytebeat/comments/20km9l/cool_equations/",
                 "codeOriginal": "((t*.98)%(t>>13&t>>12))+(t%(t>>13&t>>10))"
-            }
+           }
         ]
     },
     {
         "author": "Gabriel Miceli",
+        "url": "https://www.youtube.com/watch?v=V4GfkFbDojc",
+        "date": "Jul 9, 2016",
         "children": [
             {
                 "name": "Deep Tones",
-                "url": "https://www.youtube.com/watch?v=V4GfkFbDojc",
-                "date": "Jul 9, 2016",
-        "c": true,
+                "c": true,
                 "codeOriginal": "t*(t*287/256&t>>11&31)"
             },
             {
@@ -233,17 +327,20 @@
                     "name": "The 42 Melody",
                     "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
                 },
-                "url": "https://www.youtube.com/watch?v=V4GfkFbDojc",
-                "date": "Jul 9, 2016",
                 "codeOriginal": "y=t*(t>>10&42),y*2|y+t/64"
             },
             {
-                "url": "https://www.youtube.com/watch?v=V4GfkFbDojc",
-                "date": "Jul 9, 2016",
-        "c": true,
+                "c": true,
                 "codeOriginal": "(t&t+t/256)-t*(t>>15)&64"
             }
         ]
+    },
+    {
+        "author": "ВОКОИТЕР",
+        "name": "\"Κινέζικα παράθυρα\" - \"Chinese windows\"",
+        "url": "https://countercomplex.blogspot.com/2011/10/some-deep-analysis-of-one-line-music.html?showComment=1466000713050#c5755088889174776539",
+        "date": "Jun 15, 2016",
+        "codeOriginal": "[([1.122,1.259,1.498,1.681,1.887][((t >> 12) ^ ((t >> 10)+ 3561)) %5]) * t & 128 | (([1.122,1.259,1.498,1.681,1.887][((t >> 11) ^ ((t >> 9) +2137)) %5]) * t) & ((t>>14)%120+8) | (t>>4),([1.122,1.259,1.498,1.681,1.887][((t >> 12) ^ ((t >> 10)+ 3561)) %5]) * t & 128 | (([1.122,1.259,1.498,1.681,1.887][((t >> 11) ^ ((t >> 9) +2137)) %5]) * t) & ((t>>14)%120+8) | (t>>5)]"
     },
     {
         "author": "neverforgettoleave",
