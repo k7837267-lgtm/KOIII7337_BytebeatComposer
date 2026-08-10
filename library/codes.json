@@ -57,7 +57,8 @@
                 "url": "https://chipmusic.org/forums/post/79378/#p79378",
                 "date": "Oct 1, 2011",
                 "c": true,
-                "codeOriginal": "t / 3 >> 1 | t / 2 >> 2 & (t / 5) >> 7 | t & 31 * t * (t >> 8)"
+                "codeOriginal": "t / 3 >> 1 | t / 2 >> 2 & (t / 5) >> 7 | t & 31 * t * (t >> 8)",
+                "codeMinified": "t/3>>1|t/2>>2&t/5>>7|t&31*t*(t>>8)"
             },
             {
                 "url": "https://chipmusic.org/forums/post/79378/#p79378",
@@ -114,6 +115,7 @@
         "name": "Dance music!",
         "url": "https://www.pouet.net/topic.php?which=8357&page=6#c388716",
         "date": "Oct 3, 2011",
+        "c": true,
         "codeOriginal": "t*(t>>15&t>>11&13&t>>6)+(t*((t>>7&31)<5))+(t*t*(t>>9&t>>11&4))"
     },
     {
@@ -201,6 +203,7 @@
         },
         "url": "https://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html?showComment=1318420534814&m=1#c3824894682767643057",
         "date": "Oct 12, 2011",
+        "c": true,
         "codeOriginal": "t>>6^t&0x25|t+(t^t>>11) -t*((t%24?2:6)&t>>11)^t<<1 &(t&0x256?t>>4:t>>10)",
         "codeMinified": "t>>6^t&37|t+(t^t>>11)-t*((t%24?2:6)&t>>11)^t*2&(t&598?t>>4:t>>10)"
     },
@@ -208,6 +211,7 @@
         "author": "FreeFull",
         "url": "https://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html?showComment=1318438949016&m=1#c1171374017538202960",
         "date": "Oct 12, 2011",
+        "c": true,
         "codeOriginal": "(~t/100|(t*3))^(t*3&(t>>5))&t",
         "codeMinified": "(~t/100|t*3)^t*3&t>>5&t"
     },
@@ -222,6 +226,7 @@
         "author": "Aaron Krister Johnson",
         "url": "https://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html?showComment=1318630600804#c947426238247450493",
         "date": "Oct 14, 2011",
+        "c": true,
         "codeOriginal": "(int)(((t>>4)|(t%10))+3.3) | (((t%101)|(t>>14))&((t>>7)|(t*t%17)))",
         "codeMinified": "(t>>4|t%10)+3|(t%101|t>>14)&(t>>7|t*t%17)"
     },
@@ -230,6 +235,7 @@
         "name": "very interesting thing",
         "url": "https://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html?showComment=1325121763160&m=1#c8281176325712595014",
         "date": "Dec 29, 2011",
+        "c": true,
         "codeOriginal": "(t<65536)?((2*t*(t>>11)&(t-1)|(t>>4)-1)%64):(((t%98304)>65536)?((17*t*(2*t>>8)&(t-1)|(t>>6)-1)%64|(t>>4)):((15*t*(2*t>>16)&(t-1)|(t>>8)-1)%64|(t>>4)))"
     },
     {
