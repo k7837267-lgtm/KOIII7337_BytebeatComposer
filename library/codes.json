@@ -6508,6 +6508,7 @@
                 "date": "Dec 27, 2025",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
+            "stereo": true,
                 "codeOriginal": "(()=>{g=globalThis.s||(globalThis.s={lfo:0,t:0,dir:1}),ta=2*PI,g.lfo+=0.3/48000+0.2/48000,sl=25*sin(g.lfo),inc=ta*126.365/48000,(g.t>ta||g.t<-4)&&(g.dir=sin(-g.dir*44)*2),g.t+=g.dir*inc,l=g.t*sin(sl*g.t)/16,r=g.t*cos(sl*g.t)/16;return[l,r]})()"
             },
          { 
@@ -6526,7 +6527,7 @@
             "mode": "Floatbeat",
             "sampleRate": 11025,
             "stereo": true,
-                "big": true,
+            "big": true,
             "file": "vbinchees3000-1.js",
             "fileOriginal": true
          },
