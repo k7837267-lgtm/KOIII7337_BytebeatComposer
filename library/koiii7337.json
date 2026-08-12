@@ -302,7 +302,7 @@
   {
     "name": "8-bit Violin Thing",
     "remix": {
-"author": "Pentalogue",
+"author": "Pentalogue Tridecalogue",
 "name": "Some Arcade Game Music",
 "url": "https://dollchan.net/btb/res/3.html#11866"
 },
@@ -310,15 +310,6 @@
     "mode": "Signed Bytebeat",
     "sampleRate": 32000,
     "file": "koiii7337-7.js",
-    "fileOriginal": true
-  },
-  {
-    "name": "Happy Independence Day From Japan!",
-    "description": "Japan National Anthem From Summer Games (C64) Converted To Bytebeat. -^w^-",
-    "date": "Feb 11, 2026",
-    "mode": "Signed Bytebeat",
-    "sampleRate": 15950,
-    "file": "koiii7337-8.js",
     "fileOriginal": true
   },
   {
