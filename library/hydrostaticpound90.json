@@ -137,5 +137,21 @@
     "name": "#23",
     "date": "Mar 9, 2026",
     "codeOriginal": "(((t*2^t>>8^t>>9)&255)*(t>>12&255))&-(t>>5&127)|t>>6&127"
+  },
+  {
+    "name": "#24",
+    "date": "Aug 15, 2026",
+    "description": "\"Unfortunately Lost The Original #24 & #25.\" - HydrostaticPound90",
+    "codeOriginal": "(t*(t<<(t>>8))/t<<(t>>5&3))-t<<(t>>9&3)"
+  },
+  {
+    "name": "#25",
+    "date": "Aug 15, 2026",
+    "codeOriginal": "((t*2^(t>>5)>>(5>>(t>>(7*(t>>(13*(t>>14))))))))&194+(t>>6&63)"
+  },
+  {
+    "name": "#26",
+    "date": "Aug 15, 2026",
+    "codeOriginal": "((((t>>(8^(t>>6&3))*t/64-t*(t>>11&1))&128)+t*(1+(t>>11&3)))&191)+32"
   }
 ]
