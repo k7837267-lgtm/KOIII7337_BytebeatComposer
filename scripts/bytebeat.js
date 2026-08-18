@@ -322,7 +322,7 @@ globalThis.bytebeat = new class {
 						+ ' <small style="color:#61F">BytebeatCloud Creator</small>' :
 					author == "mqlarpp" ?
 						authorsList
-						+ ' <small style="color:#F70">mqdantee’s counterpart</small>' :
+						+ ' <small style="color:#F70">mqdantee’s larp clone</small>' :
 						authorsList
 				}
 					</summary>`;
