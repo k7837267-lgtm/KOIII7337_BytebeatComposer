@@ -2670,6 +2670,10 @@
             },
             {
                 "name": "funky fm instrument",
+                "remix": {
+                    "author": "aturned777",
+                    "url": "https://dollchan.net/btb/res/406.html#406"
+                },
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/756.html#1708",
                 "date": "Jul 24, 2023",
@@ -3688,6 +3692,169 @@
         ]
     },
     {
+        "author": "Zopium (psubscirbe)",
+        "children": [
+            {
+                "name": "hydrogen fucker 6",
+                "url": "https://www.reddit.com/r/bytebeat/comments/14olc42/hydrogen_fucker_6/",
+                "date": "Jul 2, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "d=t>>2,h=(d/2/(4+(d>>13&3))*128|d>>(d>>12&15))%256/3,k=(sqrt(t&16383)*16)&64,q=(t*random()&63|t>>8&63)*(1&t>>14),",
+                    "",
+                    "",
+                    "h+k+q"
+                ]
+            },
+            {
+                "name": "epik",
+                "url": "https://dollchan.net/btb/res/284.html#1888",
+                "date": "Aug 11, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "//.31*t*8*2**([0,3,5,7,0,3,-4,-2][7&t>>15]/12)",
+                    "//t*2*2**([0,3,5,7,8,7,10,7][t>>14&7]/12)",
+                    "",
+                    "x=.31*t*8*2**([0,3,5,7,0,3,-4,-2][7&t>>15]/12),",
+                    "m=(32*sin(x*PI/256)+32)+(32*sin(x*PI/127)+32),",
+                    "r=t*(1&~t>>13)*random()&15&~t>>9,",
+                    "s=32+sin(sqrt(t&16383)*4)*32,",
+                    "q=16+sin(3e4/(t&[x1=16383,x2=4095,x3=8191,x2,x3,x3,x1,x1][t>>13&7]))*16,",
+                    "q+s+r+m"
+                ]
+            },
+            {
+                "name": "now, everyone has remixed decent manager's thing",
+                "url": "https://www.reddit.com/r/bytebeat/comments/163m6ji/now_everyone_has_remixed_decent_managers_thing/",
+                "date": "Aug 28, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "v=t*2.09*2**([8,0,-7,5,0,-7,8,0,-7,5,0,-7,8,0,5,-7,10,0,-7,5,0,-11,10,1,-7,7,3,-2,10,3,-2,7,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,8,-4,-11,5,-4,-11,8,-4,-7,5,-4,-11,10,-4,5,-7,7,-2,-9,3,-2,-9,7,-2,-9,3,-9,-2,8,7,5,10,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7][t*1.2>>12&127]/12),b=abs(sin(v*PI/128))*32+(exp(sin(v*PI/128))*16),",
+                    "a=(t*2.09*2**([8,8,8,8,10,10,10,10,12,12,12,12,12,12,10,10,8,8,8,8,7,7,7,7,12,12,12,12,12,12,10,10,8,8][t*1.2>>14&31]/12)/8&127)+(64-cos(t*1.2/8192)*32)&128,",
+                    "(b%256*(1-t*1.2%4096/4096))+a/3+(2e5/(t*1.2&16383)&64)+((t*(1&t*1.2>>14)*sin(t>>4)*.5&64)*(1-t*1.2%16384/16384))+(t*(1&~t*1.2>>11)*random()&16)"
+                ]
+            },
+            {
+                "name": "im being held hostage by aturned777 himself",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1668ru7/im_being_held_hostage_by_aturned777_himself/",
+                "date": "Aug 31, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "(t/(4+(t>>15)%16)*(1+(3&t>>13))&95)+(2e5/(t&16383)&63)+(t*random()%256/((2048+(t&8191))*.003))+(t*2/(4+(t>>15)%16)&96)/2"
+            },
+            {
+                "name": "Tanmode",
+                "mode": "Tanmode",
+                "url": "https://dollchan.net/btb/res/284.html#2231",
+                "date": "Sep 05, 2023",
+                "sampleRate": 7350,
+                "exotic": true,
+                "codeOriginal": "(t>>t*4/(4+(t>>13&3)))+(4e5/(t&4095))+(t*(1&t>>12)*random()&~t>>4)"
+            },
+            {
+                "name": "my version of drum something",
+                "url": "https://dollchan.net/btb/res/284.html#2340",
+                "date": "Sep 22, 2023",
+                "sampleRate": 44100,
+                "codeOriginal": "(32+sin(cbrt(t&16383)*8)*32+((t*sin(t>>\"3425\"[t>>13&3])&64)*(1-t/(1+(t>>16&1))/\"12221122\"[t>>13&7]%4096/4096)))"
+            },
+            {
+                "name": "got this",
+                "url": "https://dollchan.net/btb/res/284.html#2545",
+                "date": "Oct 25, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "r=t/4,v=t=>(t*2**(\"0357035714791478\"[(t>>13)%16]/12)&64)*(1-t%8192/8192),m=v(t)+v(t-r)+v(t-r*2)+v(t-r*3),f=32+sin(sqrt(t&16383)*2)*32,r=t*random()&15&~t>>8,m/2+f+r"
+            },
+            {
+                "name": "decision",
+                "url": "https://dollchan.net/btb/res/284.html#2603",
+                "date": "Nov 7, 2023",
+                "sampleRate": 44100,
+                "codeOriginal": "(t*(t&t>>(t>>10&15))>>10&127)+(3e4/(t*\"1112\"[t>>14&3]&16383)**.1&128)"
+            },
+            {
+                "name": "hydrogen fucker 8",
+                "url": "https://dollchan.net/btb/res/284.html#2933",
+                "date": "Jan 26, 2024",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "T=(t*4/[4,5,6,7][t>>15&3]&t>>(10+(t>>18&1)))%256/2,",
+                    "k=1e5/(t&16383)&63,",
+                    "s=t*random()&31&~t>>[7,7,7,7,7,7,7,6][t>>14&7],",
+                    "T2=[t*4/[4,5,6,7][t>>15&3]&31+8e3/(t&16383),8e3/(t&16383)&63][t>>15&1],",
+                    "c=(t*random()&63&~t>>[8,8,8,8,6,8,6,7][t>>13&7])+((t/8<<(t-20000>>10))*(1&t>>15)&127),",
+                    "H=((t*16/((t>>15&3)+4)|t/4>>(t>>14&15))+4e5/(t/4&4095)&~t>>6)%256/2,",
+                    "",
+                    "a=[T,T+k,T+k+s,T+k+s+T2,H+k+s+T2,H+k+s+T2,H+k+s,H+k,H][t>>19],",
+                    "b=[a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,c,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a][t>>16]"
+                ]
+            },
+            {
+                "name": "title theme of some mario bootleg be like",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1f0toc9/title_theme_of_some_mario_bootleg_be_like/",
+                "date": "Aug 25, 2024",
+                "sampleRate": 32000,
+                "big": true,
+                "file": "psub2.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "stimmer 7",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1f4twd4/stimmer_7/",
+                "date": "Aug 30, 2024",
+                "codeOriginal": "c=[1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,1.35,,,,,,,,1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,1.05,,,,,,,,2,,1.35,,,2.1,,2,2,1.8,1.8,2,1.8,,,,1.8,,1.2,,,2,,1.8,1.8,1.59,1.59,1.8,1.59,,,,1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,,1.35,1.4,1.59,1.05,,1.2,,,1.35,1.4,1.59,1.05,,1.2,,1.05,,,,,,,,][(t>>11)%144],t*(4|t>>13&3)>>(~t>>11&1)&128|t*4*c*(~t>>9&3)&127"
+            },
+            {
+                "name": "hydrogen fucker 9",
+                "url": "https://dollchan.net/btb/res/284.html#5313",
+                "date": "Jan 13, 2025",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "s=t%2?r:r=(random()*128/((t/256%128%48)-1)&255)/4,",
+                    "h=t%6?f:f=(random()*128/(((t/1024+16)%32)-1)&255)/4,",
+                    "trig=x=>parseInt(\"FEDCBA98765432100123456789ABCDEF\"[x?x>>3&31:15],16)*4,",
+                    "tm=t*4*(t>>13&1?1-(t>>12&1):1+(t>>12&1))/((t>>15&3)+4),",
+                    "ch1=((t*2*((1+(t>>10&3))*(t>>13&1))/(4+(t>>15&3))&63)+[8,16,32,16][t>>10&3]&64)*(1-t%8192/8192)/2,",
+                    "ch2=(t*([8][t>>9&15]??2)/(4+(t>>15&3))&63)|t>>8&63,",
+                    "ch1+ch2+trig(tm)+s+h"
+                ]
+            },
+            {
+                "name": "inside castle (Scanned Version)",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1i7fejr/inside_castle_scanned_version/",
+                "date": "Jan 22, 2025",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "a=t=>(p=[-2,3,-2,6,3,5,1,-4,0,3,0,-2,2,5,2][(t>>13)%16],z=p=>t*2**(p/12)*3.2,(z(p)&128)/1.5)*(1-t%8192/12E3),",
+                    "b=t=>(p=[,-2,,-2,,,3,,,,0,,,,-4,-2,,-2,,-2,,,3,,,,2,,,2,-2][(t>>13)%32],z=p=>t*2**(p/12)*3.2*2,(z(p)&128)/1.5)*(1-t%8192/12E3)*((t>>13&127)>64),",
+                    "main=a(t)+a(t-12168)/2+a(t-24336)/4+a(t-36504)/8+a(t-48672)/16,",
+                    "s=(((z(3-48)&127)+16&128)/1.5)*(1-t%8192/12E3)*((t>>13&127)>14),main+s,",
+                    "c1=b(t)+b(t-12168)/2+b(t-24336)/4+b(t-36504)/8+b(t-48672)/16,",
+                    "d=((t%1?r1:r1=random()*(~t>>6&63)*[1,1,1,0][t>>12&3])+(cbrt(t+16384&32767)*0xff&64))*((t>>13&127)>28),min(d+main+s+c1,255)"
+                ]
+            },
+            {
+                "name": "99 bottles of beer",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1j9kn6y/99_bottles_of_beer/",
+                "date": "Mar 12, 2025",
+                "big": true,
+                "file": "psub.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "0xBD",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1jb5gxa/0xbd/",
+                "date": "Mar 14, 2025",
+                "codeOriginal": "((t>>10^(t>>10)-1^7)%9*t/((t>>13&3)+(t>>15&3)+1)*2&95^((((t>>1)*(t>>1)&255)/((t&4095)+1)*192)*(t>126976)))+((t*2/((t>>15&3)+1)&63)*(t>>11&1)*(t>262144))+((t>>t/((t>>13&3)+1)&64)*(t>393216))"
+            },
+            {
+                "name": "some boss fight theme idk",
+                "date": "Apr 22, 2025",
+                "sampleRate": 44100,
+                "codeOriginal": "(t*2**((-(21+(t>>15&3))/12))&64)+(t%[25,3,12,3][t>>13&3]?r:r=random()*2&1&&max((~t>>5&255)-192,0))+(t*2**(((5<<(t>>20&1))-(t>>17&3))/12)&64&t>>13)"
+            }
+        ]
+    },
+    {
         "author": "NikNemメ",
         "name": "true phonk i made in bytebeat lol",
         "mode": "Floatbeat",
@@ -3773,7 +3940,7 @@
         "name": "Amethyst music",
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/3.html#1810",
-        "date": "Aug 04, 2023",
+        "date": "Aug 4, 2023",
                 "starred": 1,
         "sampleRate": 48000,
         "codeOriginal": [
@@ -3785,169 +3952,6 @@
             "pp=2,   //pitch 0-Infinity",
             "",
             "c=(mm-1?(t2/((nn&-t2>>12)+1)):t2)*pp*(nn&-t2>>(t2&4096?9:16)),f=(xx,p=0)=>(x=xx*(1.25+p),sin(x*PI/128)+sin(x*3.153826/128)+sin(x*5/128)),r((f(c*10)/8+sin(sqrt(t2%4096)*4)*2)/3)/2"
-        ]
-    },
-    {
-        "author": "Zopium (psubscirbe)",
-        "children": [
-            {
-                "name": "hydrogen fucker 6",
-                "url": "https://www.reddit.com/r/bytebeat/comments/14olc42/hydrogen_fucker_6/",
-                "date": "Jul 02, 2023",
-                "sampleRate": 32000,
-                "codeOriginal": [
-                    "d=t>>2,h=(d/2/(4+(d>>13&3))*128|d>>(d>>12&15))%256/3,k=(sqrt(t&16383)*16)&64,q=(t*random()&63|t>>8&63)*(1&t>>14),",
-                    "",
-                    "",
-                    "h+k+q"
-                ]
-            },
-            {
-                "name": "epik",
-                "url": "https://dollchan.net/btb/res/284.html#1888",
-                "date": "Aug 11, 2023",
-                "sampleRate": 32000,
-                "codeOriginal": [
-                    "//.31*t*8*2**([0,3,5,7,0,3,-4,-2][7&t>>15]/12)",
-                    "//t*2*2**([0,3,5,7,8,7,10,7][t>>14&7]/12)",
-                    "",
-                    "x=.31*t*8*2**([0,3,5,7,0,3,-4,-2][7&t>>15]/12),",
-                    "m=(32*sin(x*PI/256)+32)+(32*sin(x*PI/127)+32),",
-                    "r=t*(1&~t>>13)*random()&15&~t>>9,",
-                    "s=32+sin(sqrt(t&16383)*4)*32,",
-                    "q=16+sin(3e4/(t&[x1=16383,x2=4095,x3=8191,x2,x3,x3,x1,x1][t>>13&7]))*16,",
-                    "q+s+r+m"
-                ]
-            },
-            {
-                "name": "now, everyone has remixed decent manager's thing",
-                "url": "https://www.reddit.com/r/bytebeat/comments/163m6ji/now_everyone_has_remixed_decent_managers_thing/",
-                "date": "Aug 28, 2023",
-                "sampleRate": 32000,
-                "codeOriginal": [
-                    "v=t*2.09*2**([8,0,-7,5,0,-7,8,0,-7,5,0,-7,8,0,5,-7,10,0,-7,5,0,-11,10,1,-7,7,3,-2,10,3,-2,7,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,8,-4,-11,5,-4,-11,8,-4,-7,5,-4,-11,10,-4,5,-7,7,-2,-9,3,-2,-9,7,-2,-9,3,-9,-2,8,7,5,10,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7][t*1.2>>12&127]/12),b=abs(sin(v*PI/128))*32+(exp(sin(v*PI/128))*16),",
-                    "a=(t*2.09*2**([8,8,8,8,10,10,10,10,12,12,12,12,12,12,10,10,8,8,8,8,7,7,7,7,12,12,12,12,12,12,10,10,8,8][t*1.2>>14&31]/12)/8&127)+(64-cos(t*1.2/8192)*32)&128,",
-                    "(b%256*(1-t*1.2%4096/4096))+a/3+(2e5/(t*1.2&16383)&64)+((t*(1&t*1.2>>14)*sin(t>>4)*.5&64)*(1-t*1.2%16384/16384))+(t*(1&~t*1.2>>11)*random()&16)"
-                ]
-            },
-            {
-                "name": "im being held hostage by aturned777 himself",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1668ru7/im_being_held_hostage_by_aturned777_himself/",
-                "date": "Aug 31, 2023",
-                "sampleRate": 32000,
-                "codeOriginal": "(t/(4+(t>>15)%16)*(1+(3&t>>13))&95)+(2e5/(t&16383)&63)+(t*random()%256/((2048+(t&8191))*.003))+(t*2/(4+(t>>15)%16)&96)/2"
-            },
-            {
-                "name": "Tanmode",
-                "mode": "Tanmode",
-                "url": "https://dollchan.net/btb/res/284.html#2231",
-                "date": "Sep 05, 2023",
-                "sampleRate": 7350,
-                "exotic": true,
-                "codeOriginal": "(t>>t*4/(4+(t>>13&3)))+(4e5/(t&4095))+(t*(1&t>>12)*random()&~t>>4)"
-            },
-            {
-                "name": "my version of drum something",
-                "url": "https://dollchan.net/btb/res/284.html#2340",
-                "date": "Sep 22, 2023",
-                "sampleRate": 44100,
-                "codeOriginal": "(32+sin(cbrt(t&16383)*8)*32+((t*sin(t>>\"3425\"[t>>13&3])&64)*(1-t/(1+(t>>16&1))/\"12221122\"[t>>13&7]%4096/4096)))"
-            },
-            {
-                "name": "got this",
-                "url": "https://dollchan.net/btb/res/284.html#2545",
-                "date": "Oct 25, 2023",
-                "sampleRate": 32000,
-                "codeOriginal": "r=t/4,v=t=>(t*2**(\"0357035714791478\"[(t>>13)%16]/12)&64)*(1-t%8192/8192),m=v(t)+v(t-r)+v(t-r*2)+v(t-r*3),f=32+sin(sqrt(t&16383)*2)*32,r=t*random()&15&~t>>8,m/2+f+r"
-            },
-            {
-                "name": "decision",
-                "url": "https://dollchan.net/btb/res/284.html#2603",
-                "date": "Nov 07, 2023",
-                "sampleRate": 44100,
-                "codeOriginal": "(t*(t&t>>(t>>10&15))>>10&127)+(3e4/(t*\"1112\"[t>>14&3]&16383)**.1&128)"
-            },
-            {
-                "name": "hydrogen fucker 8",
-                "url": "https://dollchan.net/btb/res/284.html#2933",
-                "date": "Jan 26, 2024",
-                "sampleRate": 32000,
-                "codeOriginal": [
-                    "T=(t*4/[4,5,6,7][t>>15&3]&t>>(10+(t>>18&1)))%256/2,",
-                    "k=1e5/(t&16383)&63,",
-                    "s=t*random()&31&~t>>[7,7,7,7,7,7,7,6][t>>14&7],",
-                    "T2=[t*4/[4,5,6,7][t>>15&3]&31+8e3/(t&16383),8e3/(t&16383)&63][t>>15&1],",
-                    "c=(t*random()&63&~t>>[8,8,8,8,6,8,6,7][t>>13&7])+((t/8<<(t-20000>>10))*(1&t>>15)&127),",
-                    "H=((t*16/((t>>15&3)+4)|t/4>>(t>>14&15))+4e5/(t/4&4095)&~t>>6)%256/2,",
-                    "",
-                    "a=[T,T+k,T+k+s,T+k+s+T2,H+k+s+T2,H+k+s+T2,H+k+s,H+k,H][t>>19],",
-                    "b=[a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,c,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a][t>>16]"
-                ]
-            },
-            {
-                "name": "title theme of some mario bootleg be like",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1f0toc9/title_theme_of_some_mario_bootleg_be_like/",
-                "date": "Aug 25, 2024",
-                "sampleRate": 32000,
-                "big": true,
-                "file": "psub2.js",
-                "fileOriginal": true
-            },
-            {
-                "name": "stimmer 7",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1f4twd4/stimmer_7/",
-                "date": "Aug 30, 2024",
-                "codeOriginal": "c=[1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,1.35,,,,,,,,1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,1.05,,,,,,,,2,,1.35,,,2.1,,2,2,1.8,1.8,2,1.8,,,,1.8,,1.2,,,2,,1.8,1.8,1.59,1.59,1.8,1.59,,,,1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,,1.35,1.4,1.59,1.05,,1.2,,,1.35,1.4,1.59,1.05,,1.2,,1.05,,,,,,,,][(t>>11)%144],t*(4|t>>13&3)>>(~t>>11&1)&128|t*4*c*(~t>>9&3)&127"
-            },
-            {
-                "name": "hydrogen fucker 9",
-                "url": "https://dollchan.net/btb/res/284.html#5313",
-                "date": "Jan 13, 2025",
-                "sampleRate": 32000,
-                "codeOriginal": [
-                    "s=t%2?r:r=(random()*128/((t/256%128%48)-1)&255)/4,",
-                    "h=t%6?f:f=(random()*128/(((t/1024+16)%32)-1)&255)/4,",
-                    "trig=x=>parseInt(\"FEDCBA98765432100123456789ABCDEF\"[x?x>>3&31:15],16)*4,",
-                    "tm=t*4*(t>>13&1?1-(t>>12&1):1+(t>>12&1))/((t>>15&3)+4),",
-                    "ch1=((t*2*((1+(t>>10&3))*(t>>13&1))/(4+(t>>15&3))&63)+[8,16,32,16][t>>10&3]&64)*(1-t%8192/8192)/2,",
-                    "ch2=(t*([8][t>>9&15]??2)/(4+(t>>15&3))&63)|t>>8&63,",
-                    "ch1+ch2+trig(tm)+s+h"
-                ]
-            },
-            {
-                "name": "inside castle (Scanned Version)",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1i7fejr/inside_castle_scanned_version/",
-                "date": "Jan 22, 2025",
-                "sampleRate": 44100,
-                "codeOriginal": [
-                    "a=t=>(p=[-2,3,-2,6,3,5,1,-4,0,3,0,-2,2,5,2][(t>>13)%16],z=p=>t*2**(p/12)*3.2,(z(p)&128)/1.5)*(1-t%8192/12E3),",
-                    "b=t=>(p=[,-2,,-2,,,3,,,,0,,,,-4,-2,,-2,,-2,,,3,,,,2,,,2,-2][(t>>13)%32],z=p=>t*2**(p/12)*3.2*2,(z(p)&128)/1.5)*(1-t%8192/12E3)*((t>>13&127)>64),",
-                    "main=a(t)+a(t-12168)/2+a(t-24336)/4+a(t-36504)/8+a(t-48672)/16,",
-                    "s=(((z(3-48)&127)+16&128)/1.5)*(1-t%8192/12E3)*((t>>13&127)>14),main+s,",
-                    "c1=b(t)+b(t-12168)/2+b(t-24336)/4+b(t-36504)/8+b(t-48672)/16,",
-                    "d=((t%1?r1:r1=random()*(~t>>6&63)*[1,1,1,0][t>>12&3])+(cbrt(t+16384&32767)*0xff&64))*((t>>13&127)>28),min(d+main+s+c1,255)"
-                ]
-            },
-            {
-                "name": "99 bottles of beer",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1j9kn6y/99_bottles_of_beer/",
-                "date": "Mar 12, 2025",
-                "big": true,
-                "file": "psub.js",
-                "fileOriginal": true
-            },
-            {
-                "name": "0xBD",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1jb5gxa/0xbd/",
-                "date": "Mar 14, 2025",
-                "codeOriginal": "((t>>10^(t>>10)-1^7)%9*t/((t>>13&3)+(t>>15&3)+1)*2&95^((((t>>1)*(t>>1)&255)/((t&4095)+1)*192)*(t>126976)))+((t*2/((t>>15&3)+1)&63)*(t>>11&1)*(t>262144))+((t>>t/((t>>13&3)+1)&64)*(t>393216))"
-            },
-            {
-                "name": "some boss fight theme idk",
-                "date": "Apr 22, 2025",
-                "sampleRate": 44100,
-                "codeOriginal": "(t*2**((-(21+(t>>15&3))/12))&64)+(t%[25,3,12,3][t>>13&3]?r:r=random()*2&1&&max((~t>>5&255)-192,0))+(t*2**(((5<<(t>>20&1))-(t>>17&3))/12)&64&t>>13)"
-            }
         ]
     },
     {
