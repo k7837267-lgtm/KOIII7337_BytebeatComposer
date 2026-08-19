@@ -551,6 +551,13 @@
         ]
     },
     {
+        "author": "HellMood",
+        "name": "Sine~Core",
+        "url": "https://demozoo.org/music/291146/",
+        "date": "Mar 13, 2021",
+        "codeOriginal": "t==0?q=[]:1,r=random,d=[1,1.2,5/4,1.5,1.8,2,2.4,3][(t>>13)%8],s=(sin(t/d/2)*sin(t*d*4.6e-4)+1)*12*d,t>8192?(s+=q[t%8192]*.5):1,q[(t-2e3)%8192]=s,s+((t>>11)&1)*r()*7*(t>13e4)+(1-(t>>9)&1)*r()*5*(t>19e4)+(sin(sqrt(t%4096)*5)+1)*50*(t>1<<18)+r()*2*(t>65e3)"
+    },
+    {
         "author": "ern0",
         "name": "Tango",
         "url": "https://demozoo.org/music/291147/",
@@ -2193,8 +2200,9 @@
                 "name": "Progression",
                 "url": "https://demozoo.org/music/318956/",
                 "date": "Feb 11, 2023",
-                "starred": 2,
-                "codeOriginal": "[3*sin(1400/(9+t%8192/99))+sin(t/99)*t%max(.01,cos(((t+4e3)&8191)/2e3))+sin(t)*t%2/(1+t%2048/77),12,11,10,t>>16==7?t>>7:9+(t>>17)].reduce((a,s,i)=>a+sin([2,2.7,2,3][t>>15&3]*2**(i-7)*t*[1,4,2,3,4,6,7.13,6][t>>s&7])*1e3/(1e3+t%(1<<s))*(t>>16>i-2)*6/i)*8+128"
+                "starred": 1,
+                "codeOriginal": "[3*sin(1400/(9+t%8192/99))+sin(t/99)*t%max(.01,cos(((t+4e3)&8191)/2e3))+sin(t)*t%2/(1+t%2048/77),12,11,10,t>>16==7?t>>7:9+(t>>17)].reduce((a,s,i)=>a+sin([2,2.7,2,3][t>>15&3]*2**(i-7)*t*[1,4,2,3,4,6,7.13,6][t>>s&7])*1e3/(1e3+t%(1<<s))*(t>>16>i-2)*6/i)*8+128",
+				"codeMinified": "[3*sin(1400/(9+t%8192/99))+sin(t/99)*t%max(.01,cos((t+4E3&8191)/2E3))+sin(t)*t%2/(1+t%2048/77),12,11,10,t>>16==7?t>>7:9+(t>>17)].reduce((a,s,i)=>a+sin([2,2.7,2,3][t>>15&3]*2**(i-7)*t*[1,4,2,3,4,6,7.13,6][t>>s&7])*1E3/(1E3+t%(1<<s))*(t>>16>i-2)*6/i)*8+128"
             },
             {
                 "name": "Robotdans",
@@ -2202,11 +2210,12 @@
                 "url": "https://demozoo.org/music/367592/",
                 "date": "Feb 15, 2025",
                 "sampleRate": 44100,
+				"starred": 1,
                 "codeOriginal": [
                     "o=sin,p=16384,c=96+(t>>21&5&&t&p&&o(t/p)),b=[c,128,c,72][3&t>>18]*t/p,z=x=>x?o(2**x*b*[2,3,4,6][3&t>>15-x]/4)/(t%p/(p>>x))/2+z(x-1):0,o(z(6)+o(b*8)*o(b*12)*o(b/c)*!(t&1<<(15&t>>15+3*o(t>>18)))+o(b*b)/(t%8192/c)+o(1e3/(5+t%p/c))+(t&p&&o(t*t)/(t%p/1e3)))//❤️",
                     ""
                 ],
-                "codeMinified": "o=sin,p=16384,c=96+(t>>21&5&&t&p&&o(t/p)),b=[c,128,c,72][3&t>>18]*t/p,z=x=>x?o(2**x*b*'2346'[3&t>>15-x]/4)/(t%p/(p>>x))/2+z(x-1):0,o(z(6)+o(b*8)*o(b*12)*o(b/c)*!(t&1<<(15&t>>15+3*o(t>>18)))+o(b*b)/(t%8192/c)+o(1e3/(5+t%p/c))+(t&p&&o(t*t)/(t%p/1e3)))"
+                "codeMinified": "o=sin,p=4**7,c=96+(t>>21&5&&t&p&&o(t/p)),b=[c,128,c,72][3&t>>18]*t/p,z=x=>x?o(2**x*b*'2346'[3&t>>15-x]/4)/(t%p/(p>>x))/2+z(x-1):0,o(z(6)+o(b*8)*o(b*12)*o(b/c)*!(t&1<<(15&t>>15+3*o(t>>18)))+o(b*b)/(t%8192/c)+o(1e3/(5+t%p/c))+(t&p&&o(t*t)/(t%p/1e3)))"
             }
         ]
     },
@@ -2219,7 +2228,8 @@
                 "date": "Feb 11, 2023",
                 "sampleRate": 44100,
                 "starred": 2,
-                "codeOriginal": "t/=16e4,a=(x,y)=>[y==3?4:5,0,y==3?5:7,0,y==3?7:8,0,y&1?(y&2?8:10):7,0,y&1?(y&2?10:12):5,0,y==3?12:10,0,8,0,7,0][x%16],b=x=>a(x,x%64>>4),f=(d,s,b,m)=>t*440*2**((d(t*s|0)+b)/12)%1>.5+.4*sin(t*m),(f(b,16,10,t/2)*(1-t*32%1)+f(x=>[5,3,1,0][x%4],1,-14,4))*126+1"
+                "codeOriginal": "t/=16e4,a=(x,y)=>[y==3?4:5,0,y==3?5:7,0,y==3?7:8,0,y&1?(y&2?8:10):7,0,y&1?(y&2?10:12):5,0,y==3?12:10,0,8,0,7,0][x%16],b=x=>a(x,x%64>>4),f=(d,s,b,m)=>t*440*2**((d(t*s|0)+b)/12)%1>.5+.4*sin(t*m),(f(b,16,10,t/2)*(1-t*32%1)+f(x=>[5,3,1,0][x%4],1,-14,4))*126+1",
+				"codeMinified": "t/=16E4,a=(x,y)=>[y==3?4:5,0,y==3?5:7,0,y==3?7:8,0,y&1?y&2?8:10:7,0,y&1?y&2?10:12:5,0,y==3?12:10,0,8,0,7,0][x%16],b=x=>a(x,x%64>>4),f=(d,s,b,m)=>t*440*2**((d(t*s|0)+b)/12)%1>.5+.4*sin(t*m),(f(b,16,10,t/2)*(1-t*32%1)+f(x=>[5,3,1,0][x%4],1,-14,4))*126+1"
             },
             {
                 "name": "Technological Bass",
@@ -2227,7 +2237,8 @@
                 "date": "Feb 11, 2023",
                 "sampleRate": 44100,
                 "starred": 1,
-                "codeOriginal": "s=t/4e4,s+=(1-exp(-s))*38,t=s*6.4,x=108*s*(s<50?t*0.97:1+((t|0)%3)/2*!!(t/4&16))*((t&63)>47?1.19:1)%2-1,f=1-pow(t%1,-sin(t/8)*1.8+2),x=-(.44*(f-2)*(f+.7)*x*(x*x-1))/((f-.25)*x*x-f/2-.25),b=t/4%1,(x+(sin(b**.53*214)-x)*min(max(1-2*b,0),1)+1)*127"
+                "codeOriginal": "s=t/4e4,s+=(1-exp(-s))*38,t=s*6.4,x=108*s*(s<50?t*0.97:1+((t|0)%3)/2*!!(t/4&16))*((t&63)>47?1.19:1)%2-1,f=1-pow(t%1,-sin(t/8)*1.8+2),x=-(.44*(f-2)*(f+.7)*x*(x*x-1))/((f-.25)*x*x-f/2-.25),b=t/4%1,(x+(sin(b**.53*214)-x)*min(max(1-2*b,0),1)+1)*127",
+				"codeMinified": "s=t/4E4,s+=(1-exp(-s))*38,t=s*6.4,x=108*s*(s<50?t*.97:1+(t|0)%3/2*!!(t/4&16))*((t&63)>47?1.19:1)%2-1,f=1-pow(t%1,-sin(t/8)*1.8+2),x=-(.44*(f-2)*(f+.7)*x*(x*x-1))/((f-.25)*x*x-f/2-.25),b=t/4%1,(x+(sin(b**.53*214)-x)*min(max(1-2*b,0),1)+1)*127"
             },
             {
                 "name": "Hyper PWM",
@@ -2238,7 +2249,8 @@
                 "codeOriginal": [
                     "t=t/44e3%64,x=t%32,y=x%0.5,k=sin(y**.4*260)*1.6,k+(y*1.8+.1)*((t>16)*((9e9/y%1+sin(x*1608))*(x*2&1)*((1-y)**34*16+.5-y*2))+(((x*63.99*(1+((x*(2+((x+1)/2&6)))&(x<12?(t>4)*x&3:7))/2))%1>x*(t>48?319.6:t>29?255.3:.5)%1)*2-1)*(1-(x*(8<<(x&(3+(x>>1&4)))))%1)-k)",
                     ""
-                ]
+                ],
+				"codeMinified": "t=t/44E3%64,x=t%32,y=x%.5,k=sin(y**.4*260)*1.6,k+(y*1.8+.1)*((t>16)*((9E9/y%1+sin(x*1608))*(x*2&1)*((1-y)**34*16+.5-y*2))+((x*63.99*(1+(x*(2+((x+1)/2&6))&(x<12?(t>4)*x&3:7))/2)%1>x*(t>48?319.6:t>29?255.3:.5)%1)*2-1)*(1-x*(8<<(x&3+(x>>1&4)))%1)-k)"
             },
             {
                 "name": "Reverberating Heartbeat",
@@ -2644,6 +2656,19 @@
                 "codeOriginal": "SR=48000,WAVE=function(m,a,f=440,depth=10){a=a-m;out=0;for(let i=1;i<depth;i++){out+=Math.sin((t*(f*((i*m)+a)))/((128/Math.PI)*(SR/8000)*31.25))/i;}return out/(Math.pow(depth,1/14)*1.3)/2;},a=WAVE(6,3835245225345425,(31.25)*6,16)"
             },
             {
+                "name": "Drum Pattern",
+                "url": "https://dollchan.net/btb/res/756.html#967",
+                "date": "Apr 28, 2023",
+                "codeOriginal": [
+                    "a=(a,b)=>(b.test(a.toString(2))),",
+                    "tt=((t>>4)&255),",
+                    "drum=(t)=>a(t+tt,/^...1/)&&(a(t+tt,/^..1/)||a(t+tt,/^....1/)),",
+                    "",
+                    "drum(t%(2048/[1,1,1,1,1,1,2,2][t>>11&7]))?255:0"
+                ],
+                "codeMinified": "a=(a,b)=>b.test(a.toString(2)),a(T=t%(2048/\"1112\"[t>>12&3])+(t>>4&255),/^...1/)&(a(T,/^..1/)|a(T,/^....1/))&&255"
+            },
+            {
                 "name": "funky fm instrument",
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/756.html#1708",
@@ -2661,7 +2686,34 @@
                 ]
             },
             {
+                "name": "cave_7",
+                "remix": [
+                    {
+                        "author": "aturned777",
+                        "url": "https://dollchan.net/btb/res/406.html#406"
+                    },
+                    {
+                        "author": "BaenHoHoHo",
+                        "name": "echo_testing",
+                        "url": "https://www.reddit.com/r/bytebeat/comments/1546vk4/echo_testing/"
+                    }
+                ],
+                "url": "https://dollchan.net/btb/res/756.html#1762",
+                "date": "Jul 30, 2023",
+                "sampleRate": 31000,
+                "codeOriginal": [
+                    "f=4,t/=f,r=(x,y,z)=>(t||(a=Array(n=4096*f).fill(y)),c=x%256+a[(t*f)%n],a[(t*f)%n]=c*z,c),",
+                    "c=((t*5)/(4+(t>>15)%16)*(1+(3&t>>13))>>(1&t>>12)&16)*8,",
+                    "d=r(c*1.00009**(-t%16384)%256/4,64,.8)*1.5,e=isNaN(d)?e:d"
+                ]
+            },
+            {
                 "name": "cave7_2",
+                "remix": {
+                    "author": "Chasyxx",
+                    "name": "cave_7",
+                    "url": "https://dollchan.net/btb/res/756.html#1762"
+                },
                 "url": "https://dollchan.net/btb/res/756.html#1969",
                 "date": "Aug 19, 2023",
                 "sampleRate": 30720,
@@ -2669,6 +2721,11 @@
             },
             {
                 "name": "cave7_3",
+                "remix": {
+                    "author": "Chasyxx",
+                    "name": "cave7_2",
+                    "url": "https://dollchan.net/btb/res/756.html#1969"
+                },
                 "url": "https://dollchan.net/btb/res/756.html#1978",
                 "date": "Aug 20, 2023",
                 "sampleRate": 30720,
@@ -2676,6 +2733,11 @@
             },
             {
                 "name": "Drum pattern 2",
+                "remix": {
+                    "author": "Chasyxx",
+                    "name": "Drum Pattern",
+                    "url": "https://dollchan.net/btb/res/756.html#967"
+                },
                 "url": "https://dollchan.net/btb/res/756.html#2271",
                 "date": "Sep 13, 2023",
                 "codeOriginal": [
@@ -3486,7 +3548,11 @@
             },
             {
                 "name": "Infernal Rhythm",
-                "url": "https://dollchan.net/btb/res/3.html#2627",
+                "url": [
+					"https://dollchan.net/btb/res/3.html#2627",
+					"https://demozoo.org/music/337711/",
+					"https://www.reddit.com/r/bytebeat/comments/1apg8qv/infernal_rhythm_appeared_in_lovebyte_2024/"
+				],
                 "date": "Nov 12, 2023",
                 "sampleRate": 48000,
                 "codeOriginal": "x=[12,15,16,19][t>>18&3]*.1,(t*1.4&t>>4|t*[1.8,1.7][t>>18&1]&t>>8|t*x&t>>7|t*1.8&t>>5|(t>>22&1)*(t*x&t>>6)|(t>>23&1)*(t*x*2&t>>3))-2*(t>>20&3)*(1+(t>>22&3))"
@@ -3566,12 +3632,84 @@
         "name": "true phonk i made in bytebeat lol",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/14t39du/the_true_phonk_i_made_in_bytebeat_lol/",
-        "date": "Jul 07, 2023",
+        "date": "Jul 7, 2023",
         "sampleRate": 44100,
         "codeOriginal": "this.a??=0,r=t/1.25,p=t*2**(parseInt('25259474'[7&r>>13],36)/12)/2.1,a=(a*24+((p%88+p%59*6/4)-64)/((r/'4142'[3&r>>13]%4096+128)**.7)*64)/32,a/12"
     },
     {
-        "author": "Russian Anonymous",
+        "author": "Weird Arg",
+        "children": [
+            {
+                "name": "poslyoka",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/150ylj0/poslyoka/",
+                    "https://ihsoyct.github.io/index.html?comments=150ylj0",
+                    "https://web.archive.org/web/20230716062201/https://www.reddit.com/r/bytebeat/comments/150ylj0/poslyoka/"
+                ],
+                "date": "Jul 16, 2023",
+                "sampleRate": 44100,
+                "stereo": true,
+                "codeOriginal": "e=x=>(t?0:a=Array(12288).fill(0),b=x+a.shift(),a.push(b/2),b),c=cbrt(sin([1,1,1,2,2,2,3,3,0,0,2,1,1,5,3,3,3,3,2,2,2,1,2][(t>>13)%23]*t/50))/1.5,d=(4e5/(t&16383)),f=(4e5/(t&4095)),g=[d,d,d,d,d,d,f,f,d,d,d,d,f][(t>>13.5)%13],[e(c*80)+128,(e(g)&255/2)+50]"
+            },
+            {
+                "name": "reverb song cuz why not",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/158lxfc/reverb_song_cuz_why_not/",
+                    "https://ihsoyct.github.io/index.html?comments=158lxfc",
+                    "https://web.archive.org/web/20230724203129/https://www.reddit.com/r/bytebeat/comments/158lxfc/reverb_song_cuz_why_not/"
+                ],
+                "date": "Jul 24, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "r=x=>(t?0:a=Array(n=12288).fill(0),b=x+a[t%n],a[t%n]=b/2,b),re=r,rev=x=>(t?0:abe=Array(n=12288).fill(0),bee=x+abe[t%n],abe[t%n]=bee/2,bee), as=re((t/4>>t/4)&t>>6&255)/3,id=(((random()*255)&255)/2%256*(-t>>[2,3,2,1,3,2,3][(t>>12)%7]&2047)/2E3),ks=rev(4e5/(t&16383)&t&255)/2,[as,as,as+id,as+id,as+id+ks,as+id+ks,as+id+ks,as+id,as+id,as,as,0][(t>>18)%12]"
+            },
+            {
+                "name": "Corrupted Tera-Glitch",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/15dpy2q/give_this_song_a_name/",
+                    "https://ihsoyct.github.io/index.html?comments=15dpy2q",
+                    "https://web.archive.org/web/20230730164036/https://www.reddit.com/r/bytebeat/comments/15dpy2q/give_this_song_a_name/"
+                ],
+                "date": "Jul 30, 2023",
+                "sampleRate": 16000,
+                "stereo": true,
+                "codeOriginal": [
+                    "_=t,cr=random()*64+100&-_>>(_>>10&11)",
+                    "// for that is drums",
+                    ",",
+                    "sr=random()*64+100&-_>>(_>>10&12) // for that is drums",
+                    ",",
+                    "sp=((cr^sr)+128&255)/1.5",
+                    "// complete drums",
+                    ",",
+                    "ew=sqrt(sin(4E4/(_&4095))*128+128)*9",
+                    "// kicks but. what?",
+                    ",[(t/2*((0*(0xdead>>(t/2>>12)&3)*(0xbeef>>(t/2>>10)&3)|t/2>>(t/2>>11&1?4:3))|t/2>>(t/2>>12&15))&255)/3,sp%256/2+ew%256/2]"
+                ]
+            },
+            {
+                "name": "rain i made with absolute's filter",
+                "mode": "Floatbeat",
+                "date": "Aug 12, 2023",
+                "sampleRate": 480000,
+                "codeOriginal": "this.r??=0,this.v??=0,r++, a=`♂️♂️♂️♀️♂️♀️♂️♀️♂️♀️♀️☺️♂️☺️♀️♂️☺️♂️☺️☺️♂️☺️♂️♀️:-):-(:-*;-):OB-):-[O:-):-{8-):-\\^o^:-P:-$:'(^_^:-D:3(^_-)(^o^):-|:-/(-:<3↕️↔️↕️↔️↕️↔️↕️↔️↕️↔️↖️↩️↔️↕️♀️♂️♂️♂️♂️⚧♂️⚧♂️♀️♀️♂️♂️⚧♀️♂️♂️➰➿➰➿➰`,v=(v*31+(a.charCodeAt(r/2*(r/2&r/2>>8)%a.length)&255))/32,v/60-1+asin(cos(r/2/4095|r/2/4096))/4"
+            },
+            {
+                "name": "trianglewalker",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/15rz675/trianglewalker/",
+                    "https://ihsoyct.github.io/index.html?comments=15rz675&backend=artic_shift",
+                    "https://web.archive.org/web/20230815174106/https://reddit.com//r/bytebeat/comments/15rz675/trianglewalker/"
+                ],
+                "date": "Aug 15, 2023",
+                "sampleRate": 36900,
+                "stereo": true,
+                "codeOriginal": "a=acos(sin(t/4/4*(t/4&2**15?1.25:1)))/1.56*(-t>>'56'[(t>>15)%2]&127),[a%256/2+(sin(t/4095)*50+128%256/2),a%256/2+(cos(t/4095)*50+128%256/2)]",
+                "codeMinified": "a=acos(sin(t/16*(t&2**17?5/4:1)))/1.56*(-t>>'56'[t>>15&1]&127),s=x=>a/2+x(t/4095)*50+64,[s(sin),s(cos)]"
+            }
+        ]
+    },
+    {
+        "author": "anonymous-R7",
         "name": "Amethyst music",
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/3.html#1810",
@@ -3587,25 +3725,6 @@
             "pp=2,   //pitch 0-Infinity",
             "",
             "c=(mm-1?(t2/((nn&-t2>>12)+1)):t2)*pp*(nn&-t2>>(t2&4096?9:16)),f=(xx,p=0)=>(x=xx*(1.25+p),sin(x*PI/128)+sin(x*3.153826/128)+sin(x*5/128)),r((f(c*10)/8+sin(sqrt(t2%4096)*4)*2)/3)/2"
-        ]
-    },
-    {
-        "author": "Weird Arg",
-        "children": [
-            {
-                "name": "rain i made with absolute's filter",
-                "mode": "Floatbeat",
-                "date": "Aug 12, 2023",
-                "sampleRate": 480000,
-                "codeOriginal": "this.r??=0,this.v??=0,r++, a=`♂️♂️♂️♀️♂️♀️♂️♀️♂️♀️♀️☺️♂️☺️♀️♂️☺️♂️☺️☺️♂️☺️♂️♀️:-):-(:-*;-):OB-):-[O:-):-{8-):-\\^o^:-P:-$:'(^_^:-D:3(^_-)(^o^):-|:-/(-:<3↕️↔️↕️↔️↕️↔️↕️↔️↕️↔️↖️↩️↔️↕️♀️♂️♂️♂️♂️⚧♂️⚧♂️♀️♀️♂️♂️⚧♀️♂️♂️➰➿➰➿➰`,v=(v*31+(a.charCodeAt(r/2*(r/2&r/2>>8)%a.length)&255))/32,v/60-1+asin(cos(r/2/4095|r/2/4096))/4"
-            },
-            {
-                "name": "trianglewalker",
-                "date": "Aug 15, 2023",
-                "sampleRate": 36900,
-                "stereo": true,
-                "codeOriginal": "a=acos(sin(t/4/4*(t/4&2**15?1.25:1)))/1.56*(-t>>'56'[(t>>15)%2]&127),[a%256/2+(sin(t/4095)*50+128%256/2),a%256/2+(cos(t/4095)*50+128%256/2)]"
-            }
         ]
     },
     {
