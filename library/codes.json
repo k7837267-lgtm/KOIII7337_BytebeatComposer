@@ -2749,6 +2749,66 @@
                 ]
             },
             {
+                "name": "cave_8",
+                "remix": {
+                    "author": "Chasyxx",
+                    "name": "cave_7",
+                    "url": "https://dollchan.net/btb/res/756.html#1762"
+                },
+                "url": "https://dollchan.net/btb/res/756.html#2528",
+                "date": "Oct 23, 2023",
+                "sampleRate": 29000,
+                "codeOriginal": [
+                    "t||(rvA=[]),rvI=0,",
+                    "$A=t==0,",
+                    "rv=(X,L,dry=0.5,wet=0.5,dry2=0,T=t,Q=false)=>(",
+                    "\t(t&&!(rvA[rvI]==undefined))||(",
+                    "\t\trvA.push(Array(L).fill(0))",
+                    "\t),",
+                    "\t//(()=>{throw rv})()",
+                    "\tOUTPUT1=rvA[rvI][Q?int(T%L):t%L]=",
+                    "\t\trvA[rvI][Q?t%L:int(T%L)]*wet+",
+                    "\t\t(X&255)*dry,",
+                    "\tQ?OUTPUT1+X*dry2:rvA[rvI][t%L]+X*dry2",
+                    "),R=t*10/(4+(t>>17)%16)*(1+(3&t>>15))>>(1&t>>14)&128,rv(R*1.00003**-(t&16383),16384,0.2,0.8,0.0,t/1.004,true)*2"
+                ]
+            },
+            {
+                "name": "cave9",
+                "remix": {
+                    "author": "Chasyxx",
+                    "name": "cave_8",
+                    "url": "https://dollchan.net/btb/res/756.html#2528"
+                },
+                "url": "https://dollchan.net/btb/res/756.html#2531",
+                "date": "Oct 23, 2023",
+                "sampleRate": 31000,
+                "codeOriginal": [
+                    "tVanilla=t,",
+                    "t||(rvA=[]),rvI=0,",
+                    "$A=t==0,",
+                    "rv=(X,L,dry=0.5,wet=0.5,dry2=0,T=t,Q=false,F=x=>x)=>(",
+                    "\t(t&&!(rvA[rvI]==undefined))||(",
+                    "\t\trvA.push(Array(L).fill(0))",
+                    "\t),",
+                    "\t//(()=>{throw rv})()",
+                    "\tOUTPUT1=rvA[rvI][Q?int(T%L):t%L]=",
+                    "\t\tF(rvA[rvI][Q?t%L:int(T%L)])*wet+",
+                    "\t\t(X&255)*dry,",
+                    "\tQ?OUTPUT1+X*dry2:rvA[rvI][t%L]+X*dry2",
+                    "),",
+                    "vocode=(pitch=3/4,n=1024,input,name='filter',T=tVanilla)=>{",
+                    "\tthis[name]??={Array: null}",
+                    "\tthis[name].Array??=Array(n).fill(0);",
+                    "\tthis[name].Array[floor(T)%n]=input;",
+                    "\treturn this[name].Array[floor(T*pitch)%n];",
+                    "},R=t*10/(4+(t>>17)%16)*(1+(3&t>>15))>>(1&t>>14)&128,",
+                    "rv(R*1.00006**-(t&16383),16384,0.2,0.8,0.0,t*1.000,false,",
+                    "x=>vocode(1.005,256,x)",
+                    ")*2"
+                ]
+            },
+            {
                 "name": "open portal",
                 "url": "https://dollchan.net/btb/res/756.html#2614",
                 "date": "Nov 09, 2023",
