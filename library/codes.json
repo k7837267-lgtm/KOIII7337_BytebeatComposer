@@ -4021,19 +4021,49 @@
     },
     {
         "author": "awogler9124812041",
-        "name": "ultimate bitbeat",
-        "remix": {
-            "author": "BSquareII",
-            "name": "some cool bitbeat thing i made",
-            "url": "https://www.reddit.com/r/bytebeat/comments/178vzl9/some_cool_bitbeat_thing_i_made/"
-        },
-        "mode": "Floatbeat",
-        "url": "https://www.reddit.com/r/bytebeat/comments/199r12o/ultimate_bitbeat/",
-        "date": "Jan 18, 2024",
-        "sampleRate": 9000,
-        "stereo": true,
-        "codeOriginal": "a=(((t>>12&31)==31)?(t/((t>>11&1)?4:2))>>(((t/((t>>11&1)?4:2))>>(t/(t>>11&1?28:14)))&7):(t>>5&t>>9|t>>6&t>>10|t>>9&t>>11|t/4%9&t>>6|t/6&t>>12|t/10&t>>14|t/4&t>>15|t/6&t>>16|t/8&t>>17|t/12&t>>18)),[((a&1)+(a&2)/2-1)/2,((a&1)+(a%4)/3-1)/2]"
-    },
+		"children": [
+			{
+                "name": "ultimate bitbeat",
+                "remix": {
+                    "author": "BSquareII",
+                    "name": "some cool bitbeat thing i made",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/178vzl9/some_cool_bitbeat_thing_i_made/"
+                },
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/199r12o/ultimate_bitbeat/",
+                "date": "Jan 18, 2024",
+                "sampleRate": 9000,
+                "stereo": true,
+                "codeOriginal": "a=(((t>>12&31)==31)?(t/((t>>11&1)?4:2))>>(((t/((t>>11&1)?4:2))>>(t/(t>>11&1?28:14)))&7):(t>>5&t>>9|t>>6&t>>10|t>>9&t>>11|t/4%9&t>>6|t/6&t>>12|t/10&t>>14|t/4&t>>15|t/6&t>>16|t/8&t>>17|t/12&t>>18)),[((a&1)+(a&2)/2-1)/2,((a&1)+(a%4)/3-1)/2]"
+            },
+			{
+                "name": "more pitch shifting shenanigans",
+                "remix": {
+                    "author": "skurk",
+                    "name": "G minor Bach",
+                    "url": "http://www.pouet.net/topic.php?which=8357&page=11#c389045"
+                },
+                "url": "https://www.reddit.com/r/bytebeat/comments/1bqoij7/more_pitch_shifting_shenanigans/",
+                "date": "Mar 29, 2024",
+                "sampleRate": 32000,
+                "stereo": true,
+                "codeOriginal": [
+					"t||(aa=Array(n=2048).fill(0),bb=Array(n).fill(0)),p=(r,v)=>(aa[t%n]=r,aa[floor(t*v%n)]),p2=(r,v)=>(bb[t%n]=r,bb[floor(t*v%n)]),",
+                    "a=2**('B*918/916-918/91B*918/916-918/91>*;2:1;26/;2:1;2>*;2:1;26/;2:1;2A*;291;28/;291;2A*;291;28/;291;2B*=-;,=-91=-;,=-B*=-;,=-91=-;,=-E*>6=4>692>6=4>6E*>6=4>692>6=4>6D*<3:1<380<3:1<3D*<3:1<380<3:1<3D(=4<3=481=4<3=4D(=4<3=481=4<3=4B(:18/:16.:18/:1B(:18/:16.:18/:1B&;2:1;26/;2:1;2B&;2:1;26/;2:1;2@&;,9*;,8/;,9*;,@&;,9*;,8/;,9*;,@%=-;,=-91=-;,=-@%=-;,=-91=-;,=->*=-;,=-92=-;,=->*=-;,=-92=-;,=->,8/6-8/428/6-8/>,8/6-8/428/6-8/=-412/4192412141=-412/4192412141;-6341613/634163;-6341613/634163;,8/6-8/528/6-8/;,8/6-8/528/6-8'.charCodeAt(t>>12)/12-7)*16,",
+                    "[p((t|t>>6)%256,a)%256,p2((t&t>>6)%256,a)%256,255]"
+				]
+            },
+			{
+                "name": "i sure wonder what this one could be",
+                "mode": "Funcbeat",
+                "url": "https://reddit.com//r/bytebeat/comments/1hr87qv/i_sure_wonder_what_this_one_could_be/",
+                "date": "Jan 1, 2025",
+                "sampleRate": 48000,
+				"starred": 2,
+                "codeOriginal": "return(m=[\"70,1.2|00,1.2|40,1.2|51.2,1.2|91.2,1.2|21.2,1.2|42.4,1.2|72.4,1.2|;2.4,1.2|<3.6,1.2|93.6,1.2|53.6,1.2\",\"00,0.15|40.15,0.15|70.3,0.15|40.45,0.15|00.6,0.15|40.75,0.15|70.9,0.15|41.05,0.15|21.2,0.15|61.35,0.15|91.5,0.15|61.65,0.15|21.8,0.15|61.95,0.15|92.1,0.15|62.25,0.15|42.4,0.15|72.55,0.15|;2.7,0.15|72.85,0.15|43,0.15|73.15,0.15|;3.3,0.15|73.45,0.15|<3.6,0.15|;3.75,0.15|93.9,0.15|44.05,0.15|<4.2,0.15|;4.35,0.15|94.5,0.15|44.65,0.15\"].map(e=>e.split(\"|\").map(e=>(_=e.substr(1).split(','),[e[0].charCodeAt(0),parseFloat(_[0]),parseFloat(_[1])]))),w=[t=>(((sin(t/40)>0.5)?t:256-t%256)%256/256-0.5)/2,t=>(((t/2%125+t/2%128)&128)/128-0.5)*max(1-t/8192,0)],t=>(t%=4.8,o=0,m.forEach((r,i)=>{r.filter(n=>t>=n[1]&&t<n[1]+n[2]).forEach(e=>o+=w[i]((t-e[1])*14080*2**(e[0]/12)/8));}),o))"
+            }
+		]
+	},
     {
         "author": "fendoap",
         "name": "Byte_Tech",
