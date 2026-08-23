@@ -1734,7 +1734,7 @@
             },
             {
                 "name": "BaronVonBadGuy type beat",
-                "description": "submission for BytebeatCloud's #week13 challenge (Broken machine)",
+                "description": "BytebeatCloud's Week 13 Submission",
                 "url": [
                     "https://www.reddit.com/r/bytebeat/comments/1roi0gv/baronvonbadguy_type_beat/",
                     "https://www.bytebeat.cloud/post/bd72d7a9-4b77-422f-a487-46ec4a20f4ad"
@@ -1743,6 +1743,7 @@
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "stereo": true,
+				"slow": true,
                 "codeOriginal": "t||(u=[0,0],k=Array(128).fill(0)),o=u[0]+=1+sin(t/8192)*sin(t/9E3)/3+sin(3*t/4**9)/2,fm=[(x,y)=>tanh(sin(E/2**(sin(r=PI*x/128)+5*r*o/t%2)*y)),(x,y)=>tanh(sin(e=PI*x/512)+e%1.5-e%3.05)*y],[(h=l=>{for(i=_=0;i<l+2*(~o>>13&3);i++)_+=fm[0](t*(.5-i)*2**((1*'072530578'[(o>>13)%9]+2*(o>>15&5|o>>14&3))/12),.03**(o/8192%1)**1.2)/(1+i);return _})(2),h(4)].map(x=>{k[t%128]=u[1]+=((x||0)-u[1])/1E3;return k[t&127]=u[1]-(x||0)+fm[1](t*2**((o>>15&3|o>>14&7^o>>15&5)/9)+255*sin(t/4**7),1E-6**((o+4**7)/8**5%1)**3)/2+(outp=>{a=outp.toLowerCase();return a=='k'?18E6/(t*(l=1+(a!=outp))%4**7+3072)*!(t*l>>12&3)&128:a=='h'?384*random()*(1-o/4**7%1)**31:0})('khKHKh'[(t>>14)%6])/128,tanh(k[t*(1+2*(o>>16&1))%128|0])})"
             },
             {
