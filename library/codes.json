@@ -8351,6 +8351,7 @@
                 "date": "Jun 27, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 16000,
+				"stereo": true,
                 "codeOriginal": "t?0:a=b=0,v=[a,b,b*3],(t=>{for(i=32;i;i--)v[i%3]+=sin(sin(t*i*(1+(t*2&3^t&3)/12)*i*8e3/(3+(t&1))))/(i*3)+cos(t*4e3*(1+(t&3^t*2&3|t*4&7)+i/1280)*2**('411012'[i%6]/1.7-(i/2&3)))/(i*2)+sin(sqrt(t%1)*800)/(i*8)})(t/16e3),v.map(z=>a+=b+=(z/2-a-b)/32)"
 			},
             {
