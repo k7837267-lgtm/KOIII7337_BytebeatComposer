@@ -8027,6 +8027,7 @@
                 "url": "https://dollchan.net/btb/res/11955.html#12439",
                 "date": "Feb 1, 2026",
                 "sampleRate": 16000,
+				"starred": 2,
                 "codeOriginal": "(g=(1+(~t>>12&3)%(1+(t>>10&t>>13)))*2*t*(1+(t>>16&3)/12)),g%63+g/2%64+g/5%63+g/5%64"
             },
             {
@@ -8042,6 +8043,7 @@
                 "date": "Feb 17, 2026",
                 "sampleRate": 44100,
                 "mode": "Floatbeat",
+				"starred": 1,
                 "codeOriginal": "S=v=>asin(sin(v))*(-t/5>>4&63)/128,S(t/60*[([2,0,4,0,2,0,4,0,3,0,2.5,2.2,2,0,4,0][p=t/5120&15]),([4,0,5,0,4,0,5,5.5,7,0,7,5.5,5,0,3,0][p]),'4020304020356020'[p],'2030203010465030'[p]][t/5>>15&3])/2+S(sin(1e3/((t%20480)**.5)))*!!(t/5>>17)+((S((random()-.5)/129*(-t/5>>3&255)))+(sin(t**3)*(-t/5>>5&255)/800)*(t/5>>13&1))*!!(t/5>>18)"
             },
             {
@@ -8080,6 +8082,7 @@
                 "url": "https://www.bytebeat.cloud/post/30129a97-6e66-4917-9b12-3d4e0ead7155",
                 "date": "Mar 6, 2026",
                 "sampleRate": 44100,
+				"starred": 1,
         "c": true,
                 "codeOriginal": "t%((t&(32+(t>>13^t>>14)))-192)"
             },
@@ -8137,6 +8140,62 @@
                 ]
             },
             {
+                "name": "I made a Floatbeat thing",
+                "url": "https://www.bytebeat.cloud/post/cba809ad-1ef5-487c-9731-27d58eca3928",
+                "date": "Apr 10, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "codeOriginal": "(c=>{var T=t/c;for(a=s=0;a<13;a++)s+=(sin(f=T*2050+a)*cos(f*(a/8)&63)/2+sin(T*5e3*sin(a))/3+sin(sqrt(T*2%1+a*12)*500))*(1-T*2%1+sin(T*a))+sin(t**3)*(1-T*4%1)/16; return s/8})(44100)"
+            },
+            {
+                "name": "Magic hail",
+                "url": "https://www.bytebeat.cloud/post/1e90988e-454c-48e2-bf5b-ffeac2d2a547",
+                "date": "Apr 17, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "codeOriginal": "SP=44100,t?p[t%P]=((c=>{var T=t/c;for(s=a=0;s<14;s++)a+=sin(sin(sqrt(T*350*[[12,12,12,12,13,14,15,13],[12,12,12,12,13,15,13,14],[15,15,15,15,14,13,12,11],[11,11,11,12,11,13,12,13]][T/8&3][T&7]/12*(s*s/8*s)&255)))*sin(T*2%1)/8+(T*2&1?sin(sqrt(T*2*(s*s)%1)*127)/12:sin(sqrt(T/4*(s*s)%1)*127)/8)*sin(1-T*2%1)+sin(sqrt(T*8*(s*s*s*16)%1)*127)/20*sin(1-T*8%1)+sin(T*2**s*[[60,60,75,60,50,30,40,50],[75,60,50,75,30,40,50,40],[60,75,60,30,40,50,75,30],[60,40,50,75,40,30,50,40]][T/4&3][T*4&7]/12)/25*expm1(1-T*4%1);return a})(SP)*2-p[t%P])/2:p=Array(P=SP/10).fill(0)"
+            },
+            {
+                "name": "Lol",
+                "url": "https://www.bytebeat.cloud/post/97cc8170-b3e1-4526-85cd-b8a410584b53",
+                "date": "Apr 21, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "a='4404040404404444440044404040',a[x=(t*1.75**(1+((t>>12&7^t>>13&3|t>>16&7^t>>15&3)^t>>17&7)/8)>>6)%28]*t/256-t/256+(x)*16"
+			},
+            {
+                "name": "Random speed and melody",
+                "url": "https://www.bytebeat.cloud/post/271b1378-f51e-4ec7-ba4f-3d0d6fb7d080",
+                "date": "Apr 22, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "((t%=2**18)*[t?u:u=(r=random)(),t?U:U=r(),t?x:x=r(),t?X:X=r(),t?z:z=r(),t?Z:Z=r(),t?g:g=r(),t?U6:U6=r()][t/(2048*(t?l:l=random()*8))&7]&127)/128-.5+sin(sqrt(t%(16384*l))*3)/(sin(t/(16384*l)%1))/128+sin(t**3)*sin(1-t/(8192*l)%1)/4"
+            },
+            {
+                "name": "Basshunter DotA",
+                "url": "https://www.bytebeat.cloud/post/d20d352c-d392-4657-85fd-258eef86f897",
+                "date": "Apr 23, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "d=t/3072,t?0:a=Array(5120).fill(0),Q=(sin(t*PI/800*([I=1.75,,,I,,,2,,,I,,,2,,,X=2.25,X,,,I,I,,,,C=2.1,,,K=1.85,,,C,,,K,,,C,,,O=2.35,O,,,R=1.95,R,,,,C,,,K,,,C,,,K,,,C,,,C,C,,,F=1.45,F,,,,C,,,K,,,C,,,K,,,C,,,C,C,,,G=1.35,G,,,][d%96|0])%1||0)-sin(t*PI/800*([P=.5,1,P,1,P,1,P,V=.85,L=.35,D=.7,L,D,L,D,L,.9,P,J=1.25,P,J,P,J,P,P+1,D,F=1.4,D,F,D,V,D,V,D][d/3&31])%1||0)+sin(t*PI/800*[2,1,4,5][d/16&3]/12*(d/2&1)%1))+a.pop(),a.unshift(Q/2),atan(tanh(Q+(sin(sqrt(d/4%1.5)*128)*cos(d/4%1.5)+sin(sqrt(t**3)*128)*cos(d/2%1.5)+sin(t*cos(t>>3))*cos(d/4%1.5)*(d/16%1.5|0)||0)/4))"
+            },
+            {
+                "name": "Music 1",
+                "url": "https://www.bytebeat.cloud/post/721c33d5-a8a9-4124-acdb-f04bd05d732e",
+                "date": "Apr 26, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "codeOriginal": "(t=>{for(f=d=0;d<13;d++)f+=asin(sin(t*(1+(t/4&3^t/8&3)/3)*2**d)%(t*2%1))/12+(sin(sqrt(t*2*d/4%1)*256)/12)/((t*2%1)*12);if(f){c=f}else{c=0};return atan(tanh(c))})(t/44100)"
+            },
+            {
+                "name": "Alien scanning",
+                "url": "https://www.bytebeat.cloud/post/92216d85-1150-456e-b2ff-58268a0f4b4c",
+                "date": "Apr 27, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+				"starred": 2,
+                "codeOriginal": "t?0:u=Array(12288).fill(a=b=c=0),d=e=>sin(a-=sin(c+=b+=sin(1-e/53%1)-b-a))*sin(c/16),p=d(t/40)/4+u.pop(),u.unshift(p/2),p"
+            },
+            {
                 "name": "Drum thing",
                 "url": "https://dollchan.net/btb/res/11955.html#14245",
                 "date": "Apr 27, 2026",
@@ -8146,13 +8205,145 @@
                 "codeOriginal": "return t=>{for(C=F=0;F<13;F++)C+=sin(sqrt(t*2%1)*128*F^F)/sin(t*2%1)/64;for(G=O=0;O<15;O++)G+=asin(sin(sqrt(t*4%1)*O*16)%(1-t*4%1))/cos(t*O*4%1)/12;for(U=J=0;J<17;J++)U+=sin(t*J**3^t)*sin(t*PI*8/(1+(t*2&1)/(1+(t&1))))/8;for(V=H=0;H<10;H++)V+=sin((t*H*8e3)**3)/sin(t%1)/128;if(t*2&1^t&3){if(1-t*4&1^t*2&1){y=U}else{y=G}}else{if(t&1^t/2&3){y=C}else{y=V}};return atan(tanh(y||0))}"
             },
             {
+                "name": "Party muffin",
+                "url": "https://www.bytebeat.cloud/post/30ccefbe-7775-4bc6-93a7-5e86e12da555",
+                "date": "May 6, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 96000,
+                "codeOriginal": "(t=>{for(v=b=0;b<13;b++)v+=asin(sin(t*b*(86+((t/8&t/4|t/2)%16|0)*16)*b/4))/12+sin(sqrt((t*2&1?t*4:t/4)*b%1)*340^b)/160/sin(t*2%1)+sin(t*512/(1+(t/4&3^1)/8)*b)*sin(1-t*4%1)/12+sin(sqrt(t*b*b%1)*128^b)/32/sin(t*8%1)/5;return atan(tanh(v||0))})(t/96E3)"
+            },
+            {
+                "name": "Hyping dance",
+                "url": "https://www.bytebeat.cloud/post/2549a9e5-f746-410d-a2bb-bac63735b1bb",
+                "date": "May 11, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "(t=>{for(c=i=0;i<13;i++)c+=((asin(sin(5e4/(t*511*((t^t*2|t&t*4|t*2|t/2^t*8)&i)&285))/16)%(1-t*2%1))||0)+sin(sqrt(t*i%1)*512&i)/sin(t*2%1)/228+sin(t*8e3*t*8e3*t*8e3>>10)/12*sin(1-t*4%1)/5+(asin(sin((t*i/(1+(t&3^t*2&3|t*8&3|t/2&3)|0)*59*11)%i)%(t*2%1))||0)/3-.025;return c})(t/48e3)"
+            },
+            {
                 "name": "Hyper city dance",
                 "url": "https://dollchan.net/btb/res/11955.html#14591",
                 "date": "May 13, 2026",
                 "sampleRate": 44100,
                 "mode": "Floatbeat",
                 "codeOriginal": "t?0:I=i=l=L=0,j=i+=I+=(('11226668664231123337788829482632'[t>>13&31]/2)-I)/1024,g=l+=L+=(('1122347384282389'[t>>14&15]/3)-L)/1024,((x=sin(j/256%2*(c=sin(1+(t*PI/128)/2048)*16))*(1-j/512%1))*sin(x>0)+(expm1((sin(g/256%2*c)))*sin(1-g/512%1))/2)*(t<2**19?1:sin(t/16384%1))+sin(sqrt(t&16383)*2)/4*expm1(1-t/16384%1)*(t>2**19)"
-            }
+            },
+            {
+                "name": "Mi pan zuzuzu",
+                "url": "https://www.bytebeat.cloud/post/f072cb95-e49f-4a82-92d8-ef39c52611b4",
+                "date": "May 15, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 25600,
+                "codeOriginal": "t?(((a='1  12 1   1 2'[t>>12&15])==1?sin(sqrt(t/4096%1)*2e2)/sin(t/4096%1)/12:0)+(a==2?sin(t**3)*sin(1-t/1024%8)*sin(1-t/128%1)*(t>32768):0))*(t>16384)+(n=sin((c=v+=b+=(2*'55  55   11333444333   11222333222                              '[t>>11&63]-b)/256)/256%2*15)*sin(1-c/512%1))*sin(n<0):v=b=0"
+            },
+            {
+                "name": "Making stuff",
+                "url": "https://www.bytebeat.cloud/post/3afa7b0a-a20e-4f6f-9ae2-4fc310bc365b",
+                "date": "May 16, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 44100,
+				"c": true,
+                "codeOriginal": "(t/4*(1+(t>>(11+((t>>16&3)))&3)/3)&63)+((50000/(1+(t>>(t>>(8+(t>>16&3)))&255)*12)&63))-(t/8*(t>>13&92^t>>13&842)&63)*((t>>9&127)/16)/4"
+            },
+            {
+                "name": "Basic adventure",
+                "url": "https://www.bytebeat.cloud/post/d21f5be1-110e-4008-ade0-4cc82cc28990",
+                "date": "May 19, 2026",
+                "sampleRate": 11025,
+				"c": true,
+                "codeOriginal": "(t*((t>>12&7)%(1+((t>>11^t>>10|t>>14)&7)))|t>>6|192)+(40000/(1+(t&4095)))*((t>>8&15)<1)+((t/2/((1+((t>>11&3)/12))%(3+(t>>12|t>>13)&7)))&t>>5|128)+(700000/(1+(t&32767|(t*t*t>>10&255)))*((t>>10&15)<1))+(t*(((t>>8^t>>10)&7)%(8+(t>>11^t>>8)&7))&t>>6|205)"
+            },
+            {
+                "name": "2 minutes left",
+                "url": "https://www.bytebeat.cloud/post/1f82b020-e281-4644-9ae9-53d1ecf4fc4e",
+                "date": "May 20, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+				"starred": 1,
+                "codeOriginal": "j=t/20,t/=48e3,t*=10/8,n='101200211'[t*2&7],j<288e3?tanh(atan((sin((t*12000)**3>>10)*!(t*32&15)*(1-t*32%1)+(n==1?sin((t*4%1)**.1*428)*(1-t*4%1)*!(t*4&3):0)+(n==2?sin(((t/2%1)**.8*1280000)**3)*(1-t*4%1)*!(t*4&1)/2:0)+sin(cos(t*810)+sin(sin(t*88*2**(([8,12,16,7][t&3])/12)))*(12+((t/16%1)*6)))/2+((r,v)=>{for(n=m=0;m<3;m++)n+=cos(r*v[m]/40.7+sin(r*v[m]/40.7)*(t/8%1))/8;return n})(t*8e3,[[13,8.62,9.7],[12,7,8.59],[13.7,8.6,9.6],[11.5,8,9.5]][t/8&3])*2+expm1(sin(sin(t*300*(t*4&3^t*4&7|t*2&3^t&7))*sin(t/32)*5)/2))/2)/2):(f=>{for(l=I=0;I<f;I++)l+=asin(sin((t*(1+(t/4&1)/12)*I*120*(1+(t&3^t*4&3|t*2&3^t&3)/12))%I)%(1-t*'8444'[t*4&3]%1)||0)/8+sin(sqrt(t%1)*128)/(t%1)/528+((j>288e3+38000)*sin((t*8e3)**3)/32*sin(1-t*8%1));return l})(13)"
+            },
+            {
+                "name": "What who why when how",
+                "url": "https://www.bytebeat.cloud/post/b826157a-50fc-44a5-8235-3d2cc7b92af5",
+                "date": "May 21, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+				"starred": 2,
+                "codeOriginal": "tanh(atan(sin(sin(t/64*(1+(t>>13&1))/(1+(t>>16&3)/12))*(1-t/8192%1)*sin(t*PI/2**19)*16)/3+sin(sqrt(t&16383)*3)*sin(1-t/16384%1)/2+sin(cos(t/50*(t>>13&3|t>>14&7^t>>15&3^t>>12&1))*sin(t*PI/2**19)*8)/5+sin(t**3)*!(t>>10&7)*sin(1-t/1024%1)/1.25+(sin(sin(t*PI/512*(1+(t>>16&7^6))/(1+(-t>>13&1)))*sin((1+(t*PI/128)))*(1-t/8192%1)*3)))/2)"
+			},
+            {
+                "name": "Outdoor party",
+                "url": "https://www.bytebeat.cloud/post/6cd9cce2-8ad0-4bd9-90ec-f9debdf9b5e6",
+                "date": "May 25, 2026",
+                "mode": "Signed Bytebeat",
+                "codeOriginal": "t?0:a=b=c=d=e=f=0,(a+=(b+=(t&t>>8&15)-a))/2+(c+=(d+=-c*(1+(t>>10&7)/2)-32)-d/2.1)/2+(e+=(f+=(t>>6&t*(1+(t>>10&3))&15)-e/4)-d/2.1)/8"
+			},
+            {
+                "name": "Sioong",
+                "url": "https://www.bytebeat.cloud/post/eb546336-2699-462c-b043-8949a0f29558",
+                "date": "May 30, 2026",
+                "sampleRate": 32000,
+                "codeOriginal": "s=(f,t)=>t*2**(f[t>>14&3]/12)&255,a=b=>b&&((t=>(((t/4*(1+(-t>>12&7))&127)+(t/4*(1+(t>>12)%(2+(t>>15&7)))&63))/1.5+(((s([12,8,5,2],t/2)*(t>>14&1))&63)+(s([8,5,7,3],t/2)&63)+(s([7,7,9,8],t/2)&63))))(t-b))/2/b+a(b-2),a(32)"
+			},
+            {
+                "name": "Achooooooooo",
+                "url": "https://www.bytebeat.cloud/post/e279146e-2e29-46b7-9db1-105b20bd7186",
+                "date": "Jun 2, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 18500,
+				"starred": 2,
+                "codeOriginal": "(t=>{for(f=b=0;f<12;f++)b+=(t=>sin(cos(q=t*2e3*2**([8,1,9,6,4,3,8,4,8,6,5,2,7,4,12,5][t*4&15]/12)/3)+q*4)/2*(1-t*4%1))(t-2048*f)/12,t+=t*f/2048%(1/64);for(k=q=0;q<8;q++)k+=sin(sqrt((t*q)%1)*120^q)/18;return b+k})(t/18500)"
+			},
+            {
+                "name": "Shifting based machine",
+                "url": "https://www.bytebeat.cloud/post/01e5a858-50eb-4c88-a7b6-32f56b53999c",
+                "date": "Jun 4, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 22050,
+                "codeOriginal": "(t=>{for(a=b=0;b<13;b++)a-=sin(sin((t*512*2**('84723434'[t/4&3]/12))*b**(b/12))%(1-t/4%1)*2)/8*(1-t/4%1),t+=b*t/192*sin(t*b/128)*2;return a})(t/22050)"
+			},
+            {
+                "name": "MUsic i",
+                "url": "https://www.bytebeat.cloud/post/0545550e-4d9a-4283-bf92-777a9050d890",
+                "date": "Jun 6, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 35280,
+                "codeOriginal": [
+					"t?c+=((a+=((b+=((v+=(((t*5*2**([11,17,19,20,12,11,16,11][t>>13&7]/12))/3)%(t&1?t&3?127:72:t&3?192:163)-v)>>4)",
+"/exp(t/(16384/'4212'[t>>13&3])%1*1.25)/32-2+(sin(sqrt(t%8192)*2)*((t>>12&3)<1)*cbrt(1-t/4096%1)+((t*cbrt(sin(t>>5&511)*t>>2&511)&255)/128-1)*cbrt(1-t/4096%1)*(t>>14&1)*((t>>12&3)<1))+sin(t**3)*((t>>10&7)<1)*(1-t/1024%1))/6-a)-(b=b*(e=sin(t*PI/2**18%PI)*64)/(e+1)))))-(c=c*.9):a=b=c=v=0"
+				]
+			},
+            {
+                "name": "Experimental song",
+                "url": "https://www.bytebeat.cloud/post/cc692294-a0ef-464e-a056-00c53f280f8a",
+                "date": "Jun 8, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+				"starred": 2,
+                "codeOriginal": "(t=>{n=sin(sqrt(t*4%1)*128)*2*!(t*4&1)*(q=t>16)+(random()-.5)*2*!(t*32&3)*q*cbrt(1-t*32%1);for(b=a=0;a<13;a++)b+=asin(sin(t*(a/3)*1e3*(1+(t&3)/8)*(1+(t&7)/12))%sin(1-t*(a*2**(a/128))))/(1+a*2)/sin(t*2%1),t-=((a*t/32e3)+(a*t/32e3))*a*t/8%.01;return atan(tanh(n+b)/2)})(t/48e3)"
+			},
+            {
+                "name": "Hex ultra power",
+                "url": "https://www.bytebeat.cloud/post/ace0d6f8-ed1a-4003-8745-54dd0edeec87",
+                "date": "Jun 9, 2026",
+                "codeOriginal": "n='1010120001101010220101010112001230101010101111000321321321466466bbaba99774466975975975753753753567567a86a869aaaaa99999407189319191919191919161616161616161212121219879879879878768768768767657657657656546546546545435435435434324324324323213213213211111111199cc99cc183183ab9abfb9829729abfcaabc9482629462972abc12121212343457973cabefdab197392791729787123124134131303729493649269263846862abcbabcdaeee12312312312323423423423434534534534545645645645656756756756767867867867878978978978989a89a89a9ab9ab9ab9ab939372973937383781917191618171619171618171686',((((t*(f=`0x${n[(t>>10)%n.length]}`)&255)<(t/3*f&255))*-t>>3&127)+(((t*3*f&255)<(t/3*f&255))*t>>6&63)+(9000/(t*(f/12)&511*(f/(f-1)))&127))"
+            },
+            {
+                "name": "No chaos",
+                "url": "https://www.bytebeat.cloud/post/ebae8bf0-5083-4ca6-b280-ee5e670575de",
+                "date": "Jun 21, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "(f=>{T=t;t/=f;for(a=b=0;a<13;a++)b+=(((v='13421234'[t*6&7])==1?sin(sqrt(t*a*6%1)*128^a)/2:0)+(v==2?sin(sin(T>>6)*T>>3)/8:0)+(v==3?random()-.5:0)+(v==4?sin(sin(T>>3)*T>>4)/4:0))/16/ cbrt(1e-4+t*6%1)+(round(cbrt(sin(T/1e3)*32-t*13e3*'2458'[t*3&3]/(1+(t/16*3&3)/4)&255))/64-1/16)/2+sin(sin(t*2e3*sin(2+(t*6&3)*(t|0)))%(1-t*6%1))/16*(t*1.5>32);i=z=>{for(v=d=0;d<3;d++)v+=sin(t*250*z[d]+sin(t*250*z[d])*3/2)/3*(t*3>32);return v};return tanh(b+i([[8,2,3],[12,2,4],[14,3,6],[9,3,4]][t*3/4&3]))})(48e3)"
+			},
+            {
+                "name": "Outer travel",
+                "url": "https://www.bytebeat.cloud/post/c23f13aa-a004-4453-9b2b-f6d29fa2e767",
+                "date": "Jun 24, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "(T=t/6500)?0:a=0,g=[0,0],(e=>{for(i=v=32;i;i--)g[i%2]+=sin(((t*PI/16/v*i*8*(1+(t&3))*2**((['300213','100211','202111','302210'][T/16&3][i%6])/1.7-(i/2&15)))&25)/v*8)*(T/4%1)*(1-T%1)})(),g.map(z=>a+=(z-a)/32)"
+			}
         ]
     },
     {
