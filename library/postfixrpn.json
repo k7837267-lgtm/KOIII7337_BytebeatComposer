@@ -627,6 +627,46 @@
         ]
     },
     {
+        "author": "aturned777 (Kehkeown_Uai)",
+        "children": [
+            {
+                "name": "rpndance",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/12udjun/rpndance_postfixrpn_function/",
+                    "https://ihsoyct.github.io/index.html?comments=12udjun&backend=artic_shift"
+                ],
+                "date": "Apr 21, 2023",
+                "mode": "postfix",
+                "codeOriginal": [
+                    "t / >> % 5 >>",
+                    "t 11 >> 2 %",
+                    "t 9 >> 3 % * +",
+                    "t * >> 5 % -",
+                    "t * 4 /",
+                    "DUP 5 + |",
+                    "t 11 >> 2  % 1 SWAP -",
+                    "t 5 >> * | "
+                ]
+            },
+            {
+                "name": "rhythm postfix",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/12yplx6/rhythm_postfix/",
+                    "https://ihsoyct.github.io/index.html?comments=12yplx6&backend=artic_shift"
+                ],
+                "date": "Apr 25, 2023",
+                "mode": "postfix",
+                "codeOriginal": [
+                    "t ^ ",
+                    "t 12 % SWAP ",
+                    "DUP ",
+                    "t 12 & >>",
+                    "SWAP 4 >>"
+                ]
+            }
+        ]
+    },
+    {
         "author": "BSquareII",
         "children": [
             {
