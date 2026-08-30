@@ -405,10 +405,12 @@
     {
         "author": "ВОКОИТЕР",
         "name": "\"Κινέζικα παράθυρα\" - \"Chinese windows\"",
+		"description": "Minified By Vast Lingonberry",
         "url": "https://countercomplex.blogspot.com/2011/10/some-deep-analysis-of-one-line-music.html?showComment=1466000713050#c5755088889174776539",
         "date": "Jun 15, 2016",
         "stereo": true,
-        "codeOriginal": "[([1.122,1.259,1.498,1.681,1.887][((t >> 12) ^ ((t >> 10)+ 3561)) %5]) * t & 128 | (([1.122,1.259,1.498,1.681,1.887][((t >> 11) ^ ((t >> 9) +2137)) %5]) * t) & ((t>>14)%120+8) | (t>>4),([1.122,1.259,1.498,1.681,1.887][((t >> 12) ^ ((t >> 10)+ 3561)) %5]) * t & 128 | (([1.122,1.259,1.498,1.681,1.887][((t >> 11) ^ ((t >> 9) +2137)) %5]) * t) & ((t>>14)%120+8) | (t>>5)]"
+        "codeOriginal": "[([1.122,1.259,1.498,1.681,1.887][((t >> 12) ^ ((t >> 10)+ 3561)) %5]) * t & 128 | (([1.122,1.259,1.498,1.681,1.887][((t >> 11) ^ ((t >> 9) +2137)) %5]) * t) & ((t>>14)%120+8) | (t>>4),([1.122,1.259,1.498,1.681,1.887][((t >> 12) ^ ((t >> 10)+ 3561)) %5]) * t & 128 | (([1.122,1.259,1.498,1.681,1.887][((t >> 11) ^ ((t >> 9) +2137)) %5]) * t) & ((t>>14)%120+8) | (t>>5)]",
+		"codeMinified": "[(x=[1.122,1.259,1.498,1.681,1.887])[(t>>12^(t>>10)+3561)%5]*t&128|x[(t>>11^(t>>9)+2137)%5]*t&(t>>14)%120+8|t>>4,x[(t>>12^(t>>10)+3561)%5]*t&128|x[(t>>11^(t>>9)+2137)%5]*t&(t>>14)%120+8|t>>5]"
     },
     {
         "author": "Gabriel Miceli",
@@ -9684,10 +9686,30 @@
     },
     {
         "author": "Voidburger",
-        "name": "ab",
-        "url": "https://bytebeat.cloud/post/fd658fd0-fe5f-46fb-b7cb-9b81d24d832d",
-        "date": "Aug 23, 2026",
-        "sampleRate": 16000,
-        "codeOriginal": "globalThis.ArrMatey=globalThis.ArrMatey||Array(8192).fill(0).map(()=>Math.round(Math.random()*3)+1),t*globalThis.ArrMatey[t>>13&8191]"
+		"children": [
+			{
+                "name": "baj",
+                "url": "https://bytebeat.cloud/post/e7c450af-3c6d-4aed-90a3-a8fed0b5fc8a",
+                "date": "Aug 23, 2026",
+				"mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "a=t*[1.05,,1.05,1,1.05,1,1.05,1,1.05*0.85,,1.05*0.85,0.85,1.05*0.85,0.85,1.05*0.85,1.05,1,,1,0.9,1,0.9,1,0.9,0.8,,0.8,0.75,0.8,0.75,0.75,0.8][t>>13&31],isNaN(a)?random():tanh((sin(a/10+32000/(t%16384))*(t&t>>8))*2)"
+			},
+			{
+                "name": "ab",
+                "url": "https://bytebeat.cloud/post/fd658fd0-fe5f-46fb-b7cb-9b81d24d832d",
+                "date": "Aug 23, 2026",
+                "sampleRate": 16000,
+                "codeOriginal": "globalThis.ArrMatey=globalThis.ArrMatey||Array(8192).fill(0).map(()=>Math.round(Math.random()*3)+1),t*globalThis.ArrMatey[t>>13&8191]"
+			},
+			{
+                "name": "guitar overload",
+                "url": "https://bytebeat.cloud/post/e7c450af-3c6d-4aed-90a3-a8fed0b5fc8a",
+                "date": "Aug 29, 2026",
+				"mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "t%2048||(c=[8,-2,3].map(e=>Array.from({length:131/2**(e/12)},_=>random()-.5)),a=0),(_=>{for(i=0;i<c.length;i++)(t>(2**13*i)?c[i][t%c[i].length]=(c[i][t%c[i].length]+c[i][(t+1)%c[i].length])/2:0)})(),(a+=((_=>{for(i=j=0;i<c.length;i++)j+=(t>(2**13*i)?c[i][t%c[i].length]:0);return j})()-a)/80)*8"
+			}
+		]
     }
 ]
