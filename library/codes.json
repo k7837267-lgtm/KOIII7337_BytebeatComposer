@@ -6356,7 +6356,11 @@
                     "name": "Kitsune^2- Avast Your Ass",
                     "url": "https://www.youtube.com/watch?v=Y0E5wpyLd3M"
                 },
-                "url": "https://www.reddit.com/r/bytebeat/comments/1ksrhkv/cover_of_kitsune2_avast_your_a/",
+                "url": [
+					"https://www.reddit.com/r/bytebeat/comments/1ksrhkv/cover_of_kitsune2_avast_your_a/",
+					"https://ihsoyct.github.io/index.html?comments=1ksrhkv",
+					"https://dollchan.net/btb/res/14391.html#14391"
+				],
                 "date": "May 22, 2025",
                 "sampleRate": 48000,
                 "codeOriginal": [
@@ -6376,7 +6380,10 @@
                     "name": "Pls remix this",
                     "url": "https://www.reddit.com/r/bytebeat/comments/1erefv2/pls_remix_this/"
                 },
-                "url": "https://www.reddit.com/r/bytebeat/comments/1mwdygp/delay_test_using_recursion/",
+                "url": [
+					"https://www.reddit.com/r/bytebeat/comments/1mwdygp/delay_test_using_recursion/",
+					"https://ihsoyct.github.io/index.html?comments=1mwdygp"
+				],
                 "date": "Aug 21, 2025",
                 "sampleRate": 48000,
                 "codeOriginal": "t*=11025/48000,r=1024*3,a=t=>'64835582659355636583658265826421'[t>>11&31]*t%100*(1-t%2048/2048),b=n=>n&&a(max(0,t-r*(n-1)))/2**(n-1)+b(n-1),b(5)",
@@ -6388,7 +6395,11 @@
                     "name": "Dimrain47 - Every End...",
                     "url": "https://www.newgrounds.com/audio/listen/99477"
                 },
-                "url": "https://www.reddit.com/r/bytebeat/comments/1nsk177/remix_of_ilovemykids26_by_shcwazernecjlace/",
+                "url": [
+					"https://www.reddit.com/r/bytebeat/comments/1nsk177/remix_of_ilovemykids26_by_shcwazernecjlace/",
+					"https://ihsoyct.github.io/index.html?comments=1nsk177",
+					"https://dollchan.net/btb/res/14391.html#14394"
+				],
                 "date": "Sep 28, 2025",
                 "sampleRate": 16000,
                 "codeOriginal": "a=t*2**([0,0,-4,-4,3,3,-2,3][t>>13&7]/12),b=t*2**([-5,-5,-5,3,3,3,2,2,3,3,3,3,3,3,5,5,7,7,7,3,3,3,8,8,7,7,7,7,5,5,5,5,7,7,7,3,3,3,2,2,3,3,3,3,3,3,5,5,7,7,7,3,3,3,8,8,7,7,7,7,5,5,5,5][t>>11&63]/12+2),(3*a^(t>>6&256/'1112'[t>>14&3]-1)|a)%256*2/3+(b^b*2)%256/3",
@@ -6396,7 +6407,11 @@
             },
             {
                 "name": "project.jdm thingy (sound)",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1o0znoe/projectjdm_thingy_sound/",
+                "url": [
+					"https://www.reddit.com/r/bytebeat/comments/1o0znoe/projectjdm_thingy_sound/",
+					"https://ihsoyct.github.io/index.html?comments=1o0znoe",
+					"https://dollchan.net/btb/res/14391.html#14392"
+				],
                 "date": "Oct 7, 2025",
                 "sampleRate": 48000,
                 "mode": "Floatbeat",
@@ -6408,7 +6423,10 @@
                     "name": "Kitsune^2- Avast Your Ass",
                     "url": "https://www.youtube.com/watch?v=Y0E5wpyLd3M"
                 },
-                "url": "https://www.reddit.com/r/bytebeat/comments/1ojye5m/slightly_better_cover_of_avast_your_ass_by/",
+                "url": [
+					"https://www.reddit.com/r/bytebeat/comments/1ojye5m/slightly_better_cover_of_avast_your_ass_by/",
+					"https://ihsoyct.github.io/index.html?comments=1ojye5m"
+				],
                 "date": "Oct 30, 2025",
                 "sampleRate": 40960,
                 "stereo": true,
@@ -6425,8 +6443,11 @@
                     "name": "Italobrothers - Stamp On The Ground",
                     "url": "https://youtu.be/cHcVU5cGUNE"
                 },
-                "url": "https://www.reddit.com/r/bytebeat/comments/1ojye5m/comment/nmmylm5/",
-                "date": "Nov 02, 2025",
+                "url": [
+					"https://www.reddit.com/r/bytebeat/comments/1ojye5m/comment/nmmylm5/",
+					"https://ihsoyct.github.io/index.html?comments=1ojye5m&id=nmmylm5&backend=artic_shift"
+				],
+                "date": "Nov 2, 2025",
                 "sampleRate": 40960,
                 "stereo": true,
                 "codeOriginal": "pitch=0.25,bpm=150/120,t/=40960,n=t*112640,n1=a=>(n*2**((parseInt('555cca888   333888aaa888555cca888   aaa887555   '[max(0,a|0)%48],36)-6+pitch)/12)&255)/1.75&128,n2=p=>((m=(t*bpm*2%1%(2/3)/bpm*(n/t/4))*2**('5183513551835105'[t*bpm&15]/12-'332'[(t*bpm*6|0)%3]+pitch/12-0.5))^m+p*128)&128,[n1(t*bpm*6)/1.25+(n2(2/(t*bpm*2%1%(2/3)+3.4))+n2(2/(t*bpm*2%1%(2/3)*2.5+3.4)))/2.5,n1(t*bpm*6-3)/3.5+(n2(2/(t*bpm*2%1%(2/3)+3.4))+n2(2/(t*bpm*2%1%(2/3)*2.5+3.4)))/2.5]"
@@ -6442,8 +6463,11 @@
                     "name": "Kitsune^2- Avast Your Ass",
                     "url": "https://www.youtube.com/watch?v=Y0E5wpyLd3M"
                 },
-                "url": "https://www.reddit.com/r/bytebeat/comments/1ojye5m/comment/nmu0st9/",
-                "date": "Nov 03, 2025",
+                "url": [
+					"https://www.reddit.com/r/bytebeat/comments/1ojye5m/comment/nmu0st9/",
+					"https://ihsoyct.github.io/index.html?comments=1ojye5m&id=nmu0st9&backend=artic_shift"
+				],
+                "date": "Nov 3, 2025",
                 "sampleRate": 48000,
                 "stereo": true,
                 "codeOriginal": "pitch=((t&1)-0.5)*0.1+0.25,bpm=150/120,t/=48000,n=t*112640,n1=a=>(n*2**((parseInt('555  0557778888  188aaaccc dd cc ff aa ccaaacaa8555  5550001111  133111000 00 11 33 77 337778773'[max(0,a|0)%96],36)-6+pitch)/12)&255)/1.75&128,n2=p=>((m=(t*bpm*2%1%(2/3)/bpm*(n/t/4))*2**([-1,7,2,9][t*bpm/2&3]/12-'332'[(t*bpm*6|0)%3]+pitch/12))^m+p*128)&128,[n1(t*bpm*6)/1.25+(n2(2/(t*bpm*2%1%(2/3)+3.4))+n2(2/(t*bpm*2%1%(2/3)*2.5+3.4)))/2.5,n1(t*bpm*6-3)/3.5+(n2(2/(t*bpm*2%1%(2/3)+3.4))+n2(2/(t*bpm*2%1%(2/3)*2.5+3.4)))/2.5]"
