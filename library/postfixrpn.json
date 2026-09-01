@@ -820,6 +820,13 @@
                 "mode": "postfix",
                 "sampleRate": 11000,
                 "codeOriginal": "t DUP DUP 15 >> 1 & 1 + / 53 % >> t DUP DUP 15 >> 1 & 1 + / 35 % >> | t DUP DUP 15 >> 1 & 1 + / 44 % >> | 63 & + 2 / DUP t 10 >> t 131072 < 3 + & * t DUP 4095 & / t 131072 > * 128 & + 3 2 * / 4 *"
+            },
+            {
+                "name": "Chaos Nightmare",
+                "url": "https://dollchan.net/btb/res/11955.html#16972",
+                "date": "Aug 30, 2026",
+                "mode": "postfix",
+                "codeOriginal": "8 2 4 2 3 1 3 4 t 12 >> 8 t 15 >> | % PICK t * ^ t t 13 >> 3 & 4 + >> | DUP + 255 & 4 / DUP * t 7 >> t 9 >> 1 & * |"
             }
         ]
     },
