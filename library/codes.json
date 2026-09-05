@@ -635,6 +635,7 @@
                 "name": "He's an arpy boy",
                 "url": "https://battleofthebits.com/arena/Entry/He%27s+an+arpy+boy/50915/",
                 "date": "Jan 23, 2022",
+				"starred": 2,
 				"file": "AArt1256.js",
                 "fileOriginal": true,
                 "codeMinified": "b='4354',a=`1${b[floor(t/15e3)%b.length]}7`,tt=t,t*=1+a[floor(t/300)%a.length],f=(255&t)/exp(tt/500%4),t=tt,t*=1+a[floor(t/1e3)%a.length],f+=((255&t)/2+(1.01*t&255)/2)*(tt>24e4),f/=2,t=tt,t*=1+a[floor(t/1e3)%a.length],t*=1.5,f+=((255&t)/8+(1.01*t&255)/8)*(tt>36e4),f/=2,t=tt,t*=2.75,f+=((255&t)/8+(1.01*t&255)/8)*(tt>12e4),f/=2,tt-=15e3,f=tt>48e4&&tt<49e4?(255&f)/exp((tt-48e4)/1200):tt>49e4&&tt<53e4?(255&f)/exp((4e4-(tt-49e4))/1200):f,f+=(tt>49e4)*(128*(sin(tt*sin(tt))+1)/8)/(tt<51e4?exp(tt/250%2):exp(tt/500%4));"
@@ -646,6 +647,7 @@
                 "mode": "Funcbeat",
                 "sampleRate": 48000,
                 "big": true,
+				"slow": true,
                 "file": "AArt1256-1.js",
                 "fileOriginal": true
             },
@@ -655,6 +657,7 @@
                 "date": "Apr 22, 2026",
                 "mode": "Funcbeat",
                 "sampleRate": 48000,
+				"starred": 1,
                 "codeOriginal": "for(p=new Array(12).fill(0),c=0;c<12;c++)p[c]=65514*c%17/8;P=parseInt,n=c=>440*2**((c+TR)/12),ki=(c,s=9e6)=>c<.2?c<.008?(2*random()-1)/2:min(max(sin(cbrt(s*c)),-1),1)/2:0,D=a=0,s=1,C=c=>65514*c+(c>>16),q=0,Q=[\"027B\",\"037A\",\"047A\",\"027B\",\"027B\",\"027B\"],ch=Q[0],T=0,TN=0,b=c=>sin(c+sin(2*c+sin(15*c)*sin(c/100))),di=c=>(1-(2*-c)**2)*sign(c),TR=0,PL=0,tri=c=>(asin(sin(c))+PI/2)/PI,M=0,sn=c=>ki(c,4e7)+(c>.08&&c<.25&&(random()-.5)/2*tri(25*(c-.08)));return(i,r)=>{if(o=0,D++>=a&&(s=4294967295&C(s),a=r/(50/(5+((7&s)<<3)))|0,D=0,M++,PL++>=4&&(PL=0,s=4294967295&C(s),ch=Q[TR=abs(s%6)])),D<r/4){for(c=0;c<12;c++)p[c]+=n(P(ch[3&c],16)-10+((c>>2)-1)/12)/r,o+=(p[c]%1-.5)/7;cc=D/r*50&7,q+=n(P(ch[3&cc],16)-10+(4&cc?12:0))/r,o+=q%1>.5?.12:-.12,o+=b(i*n(-39)*2*PI)/2,M>15&&1&M?o+=sn(D/r):o+=ki(D/r)}else T++>=(Sp=a/8)&&(T=0,TN^=s=4294967295&C(s)),cc=7&TN,q+=n(P(ch[3&cc],16)-10+(4&cc?12:0))/r,v=(1-T/Sp)/6,M>31&&(o+=random()*max(1-T/4e3,0)**3/1.3),v=di(8*v)/13,o+=q%1>.5?v:-v,o+=b(i*n(-39)*2*PI)/4;return di(o)/12+o};//48khz,funcbt"
             },
             {
@@ -663,6 +666,8 @@
                 "date": "Apr 23, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
+				"stereo": true,
+				"slow": true,
                 "codeOriginal": [
 "// 48k floatbeat",
 "t?(",
@@ -681,6 +686,7 @@
                 "date": "Apr 26, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
+				"starred": 2,
                 "codeOriginal": [
 "t?(",
 "T=t/S,R=\"16\"[(T/12)&1]|0,M=1+abs(sin(T))*10,F=f(R+(\"057\"[((T*3)%3)|0]|0)-24)*b/M,",
@@ -9347,6 +9353,8 @@
                 "date": "Mar 16, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
+				"stereo": true,
+				"starred": 2,
                 "file": "cyclar2.js",
                 "fileOriginal": true
             },
@@ -9356,6 +9364,8 @@
                 "date": "Apr 22, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
+				"stereo": true,
+				"starred": 2,
 				"codeOriginal": "(_=t)||(L=2*PI,y=sin,f=floor,R=48e3,B=R*15/110,W=(m,a=0,...v)=>[a,...v].some(a=>f(m?_%(m*B):_)==f(a*B)),a=0,I=(A=\"/@BGI*@DIK*=BDG->BEI(9@DI1;?BF\").charCodeAt.bind(A),k=0,O=[,,,,,],P=(i,n)=>(O[i]=[_,n?520*2**((n+k-64)/12):O[i][1]]),Q=(i,x=-1)=>{for(;++x<5;)P(x,I(i*5+x))},S=(i)=>P(0,I(i*5)),Z=(x)=>((a+1)/2)*x|0,J=Array(8).fill().map((_,i)=>Array(round(4000*1.25**i)).fill(0))),a=y(t+200*y(a)),W(16)&&Q(Z(5)),t>B*64&&W(16,2,8,12)&&a<min(.5,t/48e12)&&P(0),t>B*128&&W(64)&&(k=Z(14)-7),s=O.reduce((a,[b,c])=>(b=(t-b)/R,a+sin(c*b*L)*exp(-2*b)*min(1,b*100)/6),0),M=[0,0],J.forEach((_,c)=>(_=t+100*y(L*t/R/2**(c/8))**2,M[c&1]+=J[c][f(_)%J[c].length]*(1-_%1)+J[c][f(_+1)%J[c].length]*(_%1))),J.forEach((_,c)=>(J[c][t%J[c].length]=(s+M[c&1]/16)/3)),M"
 			}
 		]
