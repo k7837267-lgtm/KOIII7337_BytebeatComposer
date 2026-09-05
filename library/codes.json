@@ -628,6 +628,79 @@
             }
         ]
     },
+	{
+        "author": "AArt1256",
+        "children": [
+            {
+                "name": "He's an arpy boy",
+                "url": "https://battleofthebits.com/arena/Entry/He%27s+an+arpy+boy/50915/",
+                "date": "Jan 23, 2022",
+				"file": "AArt1256.js",
+                "fileOriginal": true,
+                "codeMinified": "b='4354',a=`1${b[floor(t/15e3)%b.length]}7`,tt=t,t*=1+a[floor(t/300)%a.length],f=(255&t)/exp(tt/500%4),t=tt,t*=1+a[floor(t/1e3)%a.length],f+=((255&t)/2+(1.01*t&255)/2)*(tt>24e4),f/=2,t=tt,t*=1+a[floor(t/1e3)%a.length],t*=1.5,f+=((255&t)/8+(1.01*t&255)/8)*(tt>36e4),f/=2,t=tt,t*=2.75,f+=((255&t)/8+(1.01*t&255)/8)*(tt>12e4),f/=2,tt-=15e3,f=tt>48e4&&tt<49e4?(255&f)/exp((tt-48e4)/1200):tt>49e4&&tt<53e4?(255&f)/exp((4e4-(tt-49e4))/1200):f,f+=(tt>49e4)*(128*(sin(tt*sin(tt))+1)/8)/(tt<51e4?exp(tt/250%2):exp(tt/500%4));"
+            },
+            {
+                "name": "fuck i have to sleep now",
+                "url": "https://battleofthebits.com/arena/Entry/fuck+i+have+to+sleep+now/83275/",
+                "date": "Mar 16, 2026",
+                "mode": "Funcbeat",
+                "sampleRate": 48000,
+                "big": true,
+                "file": "AArt1256-1.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "walking happy dubstep",
+                "url": "https://battleofthebits.com/arena/Entry/walking_happy_dubstep_48khz_funcbeat.js.txt/84153/",
+                "date": "Apr 22, 2026",
+                "mode": "Funcbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "for(p=new Array(12).fill(0),c=0;c<12;c++)p[c]=65514*c%17/8;P=parseInt,n=c=>440*2**((c+TR)/12),ki=(c,s=9e6)=>c<.2?c<.008?(2*random()-1)/2:min(max(sin(cbrt(s*c)),-1),1)/2:0,D=a=0,s=1,C=c=>65514*c+(c>>16),q=0,Q=[\"027B\",\"037A\",\"047A\",\"027B\",\"027B\",\"027B\"],ch=Q[0],T=0,TN=0,b=c=>sin(c+sin(2*c+sin(15*c)*sin(c/100))),di=c=>(1-(2*-c)**2)*sign(c),TR=0,PL=0,tri=c=>(asin(sin(c))+PI/2)/PI,M=0,sn=c=>ki(c,4e7)+(c>.08&&c<.25&&(random()-.5)/2*tri(25*(c-.08)));return(i,r)=>{if(o=0,D++>=a&&(s=4294967295&C(s),a=r/(50/(5+((7&s)<<3)))|0,D=0,M++,PL++>=4&&(PL=0,s=4294967295&C(s),ch=Q[TR=abs(s%6)])),D<r/4){for(c=0;c<12;c++)p[c]+=n(P(ch[3&c],16)-10+((c>>2)-1)/12)/r,o+=(p[c]%1-.5)/7;cc=D/r*50&7,q+=n(P(ch[3&cc],16)-10+(4&cc?12:0))/r,o+=q%1>.5?.12:-.12,o+=b(i*n(-39)*2*PI)/2,M>15&&1&M?o+=sn(D/r):o+=ki(D/r)}else T++>=(Sp=a/8)&&(T=0,TN^=s=4294967295&C(s)),cc=7&TN,q+=n(P(ch[3&cc],16)-10+(4&cc?12:0))/r,v=(1-T/Sp)/6,M>31&&(o+=random()*max(1-T/4e3,0)**3/1.3),v=di(8*v)/13,o+=q%1>.5?v:-v,o+=b(i*n(-39)*2*PI)/4;return di(o)/12+o};//48khz,funcbt"
+            },
+            {
+                "name": "the abyss greets you",
+                "url": "https://battleofthebits.com/arena/Entry/the+abyss+greets+you+%28float+48k%29.txt/84171/",
+                "date": "Apr 23, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": [
+"// 48k floatbeat",
+"t?(",
+"h=((t/S*10)/12),to=t-(E=S*12/10*28),",
+"h>=32&&(t+=sin(t/S*a)*(h-32)*10),",
+"[(O(t)+O(t+sin(t/S*24)*20-S/1.5)/3)/2,(O(t)-O(t-sin(t/S*24)*20-S/2.5)/2)/2]",
+"):(",
+"S=48e3,n=x=>270*2**((x+R)/12),sp=[0],c=[5,5,3,5,15,12,12,12,12,8,3,10,8,5,8,5],l=x=>(asin(sin(x-PI/2))+PI/2)/PI,a=2*PI,m=(x,T)=>sin(T*n(c[x<<2|h&3])*a),s=(_,x)=>sin(x*n(_)),M=(x,f=m)=>f(x,T+f(x,T*2)/8000),O=t=>{",
+"T=t/S,r=(T*10)%12,h=((T*10)/12);q=h&31,R=q&16&&q<24;v=0;for(C=0;C<24;C++){V=(t-E)/S*(740+sin(C*C*73)*((t-E)/S)**2)/16*a;v+=(sin(V)*sin(V/8e2+C/10)+sin(V/2))*sin(V/1e3+C/9)/16;}F=(M(0)*l(T*a*5/2)*(r<4)+(M(1)+M(2)+M(3))*l(r*a/8+a/2)*(r>=4))/1.5+M((H[r>>(h&1)&3]|0)+44+(((T*20)%4)<1)*12,s)*(h>=8&&h<32)*l(80000*T/S+PI/2)/2;return (v*min(to/S/8,1)*(h>=28)+F*(h<34?1:max(1-(to-(S*72/10))/S/10,0)))*(h<48?1:max(1-(to-24*S)/S/9,0))},H=\"8750\",R=0",
+")"
+]
+            },
+            {
+                "name": "springy library noises",
+                "url": "https://battleofthebits.com/arena/Entry/springy+library+noises+%28floatbeat+48k%29.txt/84218/",
+                "date": "Apr 26, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": [
+"t?(",
+"T=t/S,R=\"16\"[(T/12)&1]|0,M=1+abs(sin(T))*10,F=f(R+(\"057\"[((T*3)%3)|0]|0)-24)*b/M,",
+"O=sin((asin(sin(F*T*M))+sin(F*T*M*(64+sin(T/8)*32))/8)*(2+abs(sin(T))*8)+T*b)*(1-((T*3)%1)),",
+"r=random()-0.5,s+=(r-s)/9,",
+"O+=[0,3,7].map(_=>sin(T*(H=f(R+_)*b)/2+sin(T*H/4))).reduce((a,c)=>a+c)/7*(T>=36)*min((T-36)/2,1),",
+"O+=(P-O)/(1.1+(T>=24)*min((T-24)/20,2)),",
+"P=O,",
+"J=1-((T>=60)*min((T-60)/8,1)),",
+"W=[-1,0,1,2,4,9].map(x=>sin(f(x/12-64)*T*b+sin(f(x/12-64)*T*b*6)+sin(f(x/12-24)*T*b*8)/2)).reduce((a,c)=>a+c)/8,",
+"G=(O+s*U(T))*J+W*(1-J),",
+"e[t%L]=(e[t%L]+G)/2,",
+"e[t%L]*(T>=72?1-min((T-72)/8,1):1)",
+"):(",
+"S=48e3,e=new Array(L=(S/2)|0).fill(0),b=2*PI,f=x=>(450*(T>=70?1+(T-70)/800:1))*2**(x/12),s=x=>sin(x*b),P=0,s=0,U=x=>(asin(sin(x-PI/2))+PI/2)/PI",
+")"
+]
+            }
+        ]
+    },
     {
         "author": "ccret293 (OLD)",
         "children": [
@@ -7614,6 +7687,27 @@
         ]
     },
     {
+        "author": "argarak",
+        "name": "planar portal",
+        "url": "https://battleofthebits.com/arena/Entry/planar+portal/80929/",
+        "date": "Dec 8, 2025",
+        "sampleRate": 44100,
+        "codeOriginal": [
+"/* planar portal by argarak [b1k] */",
+"nt=[0.977,1.097,1.162,1.3045,1.464,1.551,1.741],c=t/35,ia=(a)=>int(abs(a)),",
+"e=(s,a,l,n)=>{x=(exp(-((s%40)*n)*l));y=sqrt(a*(s%40)*n);return(y<x)?2*y:2*x},",
+"A=100,s=ia(sin(c/600)*20)+4,f=nt[ia((c/1200)%4)]/4,",
+"m=[\"1100\",\"1010\",\"1110\",\"0111\",\"1111\",\"1001\",\"1111\",\"0101\"],",
+"mx=(a)=>parseInt(m[ia((c/(1200*16))%m.length)].charAt(a)),",
+"128+(A/(abs(s)**(s*sin(f*c))+1)-A/2)*0.20*e(60+c/[15,7.5][ia((c/1200)%2)],1,0.1,1)*mx(0)+",
+"sin((log(0.4+(c/60)%10)*40))*32*e(c/15,100,2,0.1)*mx(1)+",
+"(A/(abs(s)**(s*sin(f*3*c))+1)-A/2)*0.10*e(60+c/[15,7.5][ia((c/1200)%2)],1,0.1,1)*mx(0)+",
+"(A/(abs(s)**(s*sin(nt[ia((c/300)%7)]*2*c))+1)-A/2)*0.20*e(120+c/[30,7.5][ia((c/1200)%2)],1,0.2,1)*mx(2)+",
+"sin(sin(c*10)*(log(0.9+(c/1)%4)*400000))*20*e(60+c/[15,7.5][ia((c/600)%2)],5,4,0.4)*mx(3)+",
+"sin(sin(c*10)*(log(0.9+(c/[1,2,1,50][ia((c/1200)%4)])%4)*40))*20*e(60+c/30,5,3,0.40)*mx(3)"
+		]
+	},
+    {
         "author": "!{G&Ycatjuice}? (greenandyellowcatjuice)",
         "name": "808 points collected",
         "date": "Dec 24, 2025",
@@ -7639,6 +7733,16 @@
 "// ~ 𝙠𝙞𝙘𝙠, 𝙝𝙖𝙩𝙨 & 𝙨𝙣𝙖𝙧𝙚𝙨 ~",
 "(random(7)%256/2*(32-t*4/256%32)/48/8+random()%256/2*(32-t*2/256%32)/48/8+sin(cbrt(t*2%16384)*8)/3)"
 ]
+    },
+    {
+        "author": "kleeder",
+        "name": "Jakerson's Secret Formula",
+        "url": "https://battleofthebits.com/arena/Entry/Jakerson%27s+Secret+Formula/81444/",
+        "date": "Jan 2, 2026",
+        "sampleRate": 40000,
+        "big": true,
+        "file": "kleeder.js",
+        "fileOriginal": true
     },
     {
         "author": "mqdantee",
@@ -9234,6 +9338,28 @@
             }
         ]
     },
+    {
+        "author": "cyclar2",
+        "children": [
+            {
+                "name": "don't leave me behind (DEMO)",
+                "url": "https://battleofthebits.com/arena/Entry/don%27t+leave+me+behind+%28DEMO%29/83284/",
+                "date": "Mar 16, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "file": "cyclar2.js",
+                "fileOriginal": true,
+            },
+            {
+                "name": "what do the fishies think",
+                "url": "https://battleofthebits.com/arena/Entry/%5Bfb48k%5D+what+do+the+fishies+think.txt/84157/",
+                "date": "Apr 22, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+				"codeOriginal": "(_=t)||(L=2*PI,y=sin,f=floor,R=48e3,B=R*15/110,W=(m,a=0,...v)=>[a,...v].some(a=>f(m?_%(m*B):_)==f(a*B)),a=0,I=(A=\"/@BGI*@DIK*=BDG->BEI(9@DI1;?BF\").charCodeAt.bind(A),k=0,O=[,,,,,],P=(i,n)=>(O[i]=[_,n?520*2**((n+k-64)/12):O[i][1]]),Q=(i,x=-1)=>{for(;++x<5;)P(x,I(i*5+x))},S=(i)=>P(0,I(i*5)),Z=(x)=>((a+1)/2)*x|0,J=Array(8).fill().map((_,i)=>Array(round(4000*1.25**i)).fill(0))),a=y(t+200*y(a)),W(16)&&Q(Z(5)),t>B*64&&W(16,2,8,12)&&a<min(.5,t/48e12)&&P(0),t>B*128&&W(64)&&(k=Z(14)-7),s=O.reduce((a,[b,c])=>(b=(t-b)/R,a+sin(c*b*L)*exp(-2*b)*min(1,b*100)/6),0),M=[0,0],J.forEach((_,c)=>(_=t+100*y(L*t/R/2**(c/8))**2,M[c&1]+=J[c][f(_)%J[c].length]*(1-_%1)+J[c][f(_+1)%J[c].length]*(_%1))),J.forEach((_,c)=>(J[c][t%J[c].length]=(s+M[c&1]/16)/3)),M"
+			}
+		]
+	},
     { 
         "author": "Cyberslot",
         "name": "Hardbyte.wav (Remix of Winter Whispers of Equestria · Hexwave)",
