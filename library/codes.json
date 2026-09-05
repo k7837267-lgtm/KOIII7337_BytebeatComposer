@@ -9348,7 +9348,7 @@
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "file": "cyclar2.js",
-                "fileOriginal": true,
+                "fileOriginal": true
             },
             {
                 "name": "what do the fishies think",
