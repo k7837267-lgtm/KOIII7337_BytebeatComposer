@@ -9724,6 +9724,14 @@
         "codeMinified": "S=sin,40*(S(t*.04+(5E4*S(t*.0001))*S(t*.0005))+S(t*.5+(40*S(t*.05))*S(t*0.0001))+S(t*.05+(150*S(t*.0025))*S(t*.004)))"
     },
     {
+        "author": "Brazilian_guy_2048",
+        "name": "cool sounding beat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1u1gfz2/cool_sounding_beat/",
+        "date": "Jun 9, 2026",
+        "sampleRate": 44100,
+        "codeOriginal": "random()*(8e4/((t-8192)&16383)&64)+((t/8*[1.33,1.5,1.8,3,0,3,0,2.7,2,0,1.5,0,1.5,2.4,2.27,0,1.5,1.6,1.8,3,0,3,0,2.7,2,0,4,0,4,0,4,0][t>>13&31])&63)+(t/2*([0,0,0,0.4,0,0.8,0,0.45,0,0.9,0,0.5,0,1,0,0,0,0,0,0.8,0,1.6,0,0.9,0,1.8,0,1,0,2,0,0][t>>13&31])&75)"
+    },
+    {
         "author": "EYFTDL",
         "description": "Why Did I Add This.",
         "date": "Jun 13, 2026",
@@ -9872,6 +9880,7 @@
 		"children": [
 			{
                 "name": "baj",
+				"description": "BytebeatCloud's Week 37 Submission",
                 "url": "https://bytebeat.cloud/post/e7c450af-3c6d-4aed-90a3-a8fed0b5fc8a",
                 "date": "Aug 23, 2026",
 				"mode": "Floatbeat",
@@ -9886,13 +9895,109 @@
                 "codeOriginal": "globalThis.ArrMatey=globalThis.ArrMatey||Array(8192).fill(0).map(()=>Math.round(Math.random()*3)+1),t*globalThis.ArrMatey[t>>13&8191]"
 			},
 			{
-                "name": "guitar overload",
-                "url": "https://bytebeat.cloud/post/8f896306-c299-4bdf-8d37-7ab6706f0851",
-                "date": "Aug 29, 2026",
-				"mode": "Floatbeat",
-                "sampleRate": 48000,
-                "codeOriginal": "t%2048||(c=[8,-2,3].map(e=>Array.from({length:131/2**(e/12)},_=>random()-.5)),a=0),(_=>{for(i=0;i<c.length;i++)(t>(2**13*i)?c[i][t%c[i].length]=(c[i][t%c[i].length]+c[i][(t+1)%c[i].length])/2:0)})(),(a+=((_=>{for(i=j=0;i<c.length;i++)j+=(t>(2**13*i)?c[i][t%c[i].length]:0);return j})()-a)/80)*8"
+                "name": "invented new instrument",
+                "url": "https://bytebeat.cloud/post/7d907afd-78d5-46d3-9143-68d54be1c7ca",
+                "date": "Aug 25, 2026",
+                "codeOriginal": "tan(t*(a=b=>[1,0.5,0.25,0.125][t>>b&3])(12)*a(15))*(65536/(t%4096))"
 			}
 		]
-    }
+    },
+    {
+        "author": "GTT31M2",
+        "children": [
+            {
+                "name": "CLL42 (RECURSIVE REMIX)",
+                "remix": {
+                    "author": "ccret2022",
+                    "name": "RECURSIVE",
+                    "url": "https://www.bytebeat.cloud/post/286333b1-ea63-414b-a3fa-917a4cf1d33b"
+                },
+                "url": "https://www.bytebeat.cloud/post/db8c9fff-ca79-438b-a62e-a8e96223fbe3",
+                "date": "Sep 4, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": [
+                    "BPM=264/60,HZ=48e3,to=r=>2**(r/12),To=55*to(98)*t/HZ,ti=BPM*t/HZ,a=l=>(ti%l)/l,",
+                    "l=((j=To*to([0,10,7,5,3,2,10,7][ti*2>>(ti*2&3)&7]))&j*2+ti*16&(ti&ti*2&15^37)*157+32)*(3+(ti*4&2)),",
+                    "L=(l-j*3&ti*32)%(v=256)*(ti*128&v-1)/64,",
+                    "b=((b=To*to([0,0,3,3,-4,-4,-2,-1][ti/2&7])*((ti&1)+1))^b%512/1.8)+b/2,",
+                    "M=(R=ti%32)*tan(R&R*2)*12837&21&~(ti*128),",
+                    "((l%v/4+L%v/5+b%v/3+M)/90-1)*(k=sqrt(min(1,R%8%5%2)))+sin(log(k+.002)*21)*(1-k)"
+                ]
+            },
+            {
+                "name": "TECHEDM",
+                "remix": {
+                    "author": "Gubbyplush",
+                    "name": "Very silent sound/muted sound",
+                    "url": "https://www.bytebeat.cloud/post/fc9bb228-395f-444a-a891-0ef3b5748fe8"
+                },
+                "url": "https://www.bytebeat.cloud/post/431466e5-d60d-46fa-92de-335606e6e935",
+                "date": "Sep 4, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": [
+                    "t||(Z=[]),X=0,lp=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),hp=(a,c)=>a-lp(a,c),bp=(a,h,l)=>hp(lp(a,l),h),lb=(a,c,e)=>a+lp(a,c)*e,",
+                    "BPM=330/60,HZ=48e3,to=r=>2**(r/12),To=55*to(98)*t/HZ,ti=BPM*t/HZ,a=l=>(ti%l)/l,",
+                    "l=bp(((j=To*to([0,3,5,7,12,15,19,22,24,31,27,20,19,17,15,12,7,5][(ti*2&15)%6+(ti/2&12)]))&j*2+ti*16&(ti&ti*2&15^37)*75+32)*(3+(ti*4&2))&255,.01,.001**(ti%.5)),",
+                    "L=lb(bp((l-j*3&ti*32)%(v=256)*(ti*128&v-1)/64&255,.1,.7),.1,2.5),",
+                    "b=((b=To*to([0,0,3,3,-4,-4,-2,-1][ti/4&7])*((ti&1)+1))^b%(1024>>(ti*2&3))/1.78)+b/2,",
+                    "hp(sin(atan(((l/3+L/9+b%v/3.5)/95)*(k=sqrt(min(1,ti%2)))+atan(sin(log(k+.002)*(21+(p=2&ti)*11))*(p?2:1)+(random()-.5)*(p)*(ti%2)*26)*(1-k)**1.5+bp(random(),.5,.5)*(1&ti)*(1-a(1))**2*4)),.005)"
+                ]
+            },
+			{
+				"name": "Cool disco thing",
+				"url": "https://bytebeat.cloud/post/160665e4-ceb2-4686-a699-ca148b029412",
+                "date": "Sep 5, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+				"codeOriginal": "t||(Z=[]),X=0,lp=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),hp=(a,c)=>a-lp(a,c),bp=(a,h,l)=>hp(lp(a,l),h),lb=(a,c,e)=>a+lp(a,c)*e,t*=.83,T=t,t+=2**21*27,k=r=>t*r*[1,6/5,.8,.75][t>>15&3]%128+t*[1,4/3][t>>16&1]*r%56+t*r*2/3%72+t*r*[1,.75,.8,.9][t>>17&3]%256,K=l=>l&&k(X=.68*1.003**l)+k(X*2)/3.5+k(X*16)/12.25+K(l-1),atan(lb(bp(K(8),.02,(.31+sin(t/131072*PI)*.12)**(t/4096%16%3)),.2,2)/600)*.73*(K=min(1,t/8192%2))+hp(sin(log(K+.0002)*11),.02)*2+hp(random(),.3)*(1-t/8192%1)**2*(t>>13&1)*.63"
+			},
+            {
+                "name": "TECHEDM SWING",
+                "remix": {
+                    "author": "GTT31M2",
+                    "name": "TECHEDM",
+                    "url": "https://www.bytebeat.cloud/post/431466e5-d60d-46fa-92de-335606e6e935"
+                },
+                "url": "https://www.bytebeat.cloud/post/39998a26-3879-43bd-9603-f5a0b481f9e5",
+				"description": "BytebeatCloud's Week 39 Submission",
+                "date": "Sep 6, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": [
+                    "r=(x,y,z)=>(t||(A=Array(y).fill(0)),c=x%256+A[t%y],A[t%y]=c*z||0,c),t||(Z=[]),X=0,lp=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),hp=(a,c)=>a-lp(a,c),bp=(a,h,l)=>hp(lp(a,l),h),lb=(a,c,e)=>a+lp(a,c)*e,",
+                    "BPM=280/60,HZ=48e3,to=r=>2**(r/12),To=55*to(96)*t/HZ,ti=BPM*t/HZ,ti-=ti%1/4,a=l=>(ti%l)/l,",
+                    "l=r(bp(((j=To*to([0,3,5,7,12,15,19,22,24,31,27,20,19,17,15,12,7,5][(ti*(x=1<<(ti&7)%3))&3|ti/2&12]))&j*2+ti*16&(ti&ti*2&15^37)*75+32)*(3+(ti*4&2))&255,.005,1e-7**(ti%(1/x))),HZ/BPM*4/3|0,.4),",
+                    "L=lb(bp((l-j*3&ti*32)%(v=256)*(ti*128&v-1)/64&255,.1,.7),.1,2.5),",
+                    "b=((b=To*to([0,0,3,3,-4,-4,-2,-1][ti/4&7])*((ti&1)+1))^b%(1024>>(ti*2&3))/1.78)+b/2,",
+                    "hp(sin(atan(((l*.4+L*.13+b%v/3.5)/99)*(k=sqrt(min(1,ti%2)))+atan(sin(log(k+.002)*(21+(p=2&ti)*11))*(p?2:1)+(random()-.5)*p*(ti%2)*26)*(1-k)**1.5+bp(random(),.5,.5)*(1&ti)*(1-a(1))**2*4)),.005)"
+                ]
+            },
+            {
+                "name": "cool saw",
+                "remix": {
+                    "author": "Brazilian_guy_2048",
+                    "name": "cool sounding beat",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1u1gfz2/cool_sounding_beat/"
+                },
+                "url": "https://bytebeat.cloud/post/36f52e87-34bf-4ab6-89e1-fbf9b9dd87c7",
+                "date": "Sep 7, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "r=(x,y,z)=>(t||(A=Array(y).fill(0)),c=x+A[t%y],A[t%y]=c*z||0,c),t||(Z=[]),X=0,",
+                    "lp=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),",
+                    "hp=(a,c)=>a-lp(a,c),",
+                    "bp=(a,h,l)=>hp(lp(a,l),h),",
+                    "BPM=323/60,",
+                    "HZ=44100,",
+                    "o=r=>2**((r+1)/12)*14080*t/HZ,",
+                    "sw=(l,k)=>k+1&&sw(l+HZ*k,k-1)+((l*(m=1.003**k)&63)+(l/m&63))*.75**k,",
+                    "T=BPM*t/HZ-8,",
+                    "sin(log((J=(j=T+8)%2)+.002)**2*1.5)*32*(J=(2-J)**2)+(atan(r(bp(sw(o([-12,-10,-7,2,,2,,0,-5,,-10,,-10,-2,-3,,-10,-9,-7,2,,2,,0,-5,,7,,7,,7][floor(T+3)%32]),9)*cbrt(sin(T*PI)),.04,.6),HZ/BPM*3|0,.25)/36-.4)*28+(o((T/4&4)*3+[-21,,-9,,-19,,-7,,-17,,-5][floor(T)%16])%64-32^11)+lp(o(-29)%64-32,5e-6**(j%.5))*(J=4-J)/3-9)*J*.4"
+				]
+            }
+		]
+	}
 ]
