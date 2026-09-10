@@ -437,6 +437,44 @@
         ]
     },
     {
+        "author": "Baron Knoxburry",
+        "children": [
+            {
+                "name": "Smlurlmesque Jammage for 3 Super Saws",
+                "url": "https://battleofthebits.com/arena/Entry/+Smlurlmesque+Jammage+for+3+Super+Saws/27413/",
+                "date": "Feb 4, 2018",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "(((t>>14&t>>12)&15) ? (( t * 0.418 * Math.pow(1.059, (t>>16&t>>12)&15) * 420 / 128) % 255 / 12) : 0) +",
+                    "(((t>>14&t>>12)&15) ? (( t * 0.420 * Math.pow(1.059, (t>>16&t>>12)&15) * 420 / 256) % 255 / 12) : 0) +",
+                    "(((t>>14&t>>12)&15) ? (( t * 0.423 * Math.pow(1.059, (t>>16&t>>12)&15) * 420 / 256) % 255 / 12) : 0) +",
+                    "((~(t>>14|t>>11)&(t>>19&15)) ? (( t * 0.417 * Math.pow(1.059, (t>>15|t>>11)&15) * 420 / 32) % 255 / 25) : 0) +",
+                    "((~(t>>14|t>>11)&(t>>19&15)) ? (( t * 0.422 * Math.pow(1.059, (t>>15|t>>11)&15) * 420 / 64) % 255 / 19) : 0) +",
+                    "((~(t>>14|t>>11)&(t>>19&15)) ? (( t * 0.413 * Math.pow(1.059, (t>>15|t>>11)&15) * 420 / 128) % 255 / 17) : 0) +",
+                    "(((t>>12&t>>13)&31) ? (( t * 0.419 * Math.pow(1.059, (t>>16&t>>13)&31) * 420 / 512) % 255 / 12) : 0) +",
+                    "(((t>>12&t>>13)&31) ? (( t * 0.427 * Math.pow(1.059, (t>>16&t>>13)&31) * 420 / 512) % 255 / 12) : 0) +",
+                    "(((t>>12&t>>13)&31) ? (( t * 0.414 * Math.pow(1.059, (t>>16&t>>13)&31) * 420 / 1024) % 255 / 12) : 0)"
+                ]
+            },
+            {
+                "name": "stumble-a-thon",
+                "url": "https://battleofthebits.com/arena/Entry/stumble-a-thon/39542/",
+                "date": "Oct 31, 2020",
+                "sampleRate": 44100,
+                "file": "BaronKnoxburry.js",
+				"fileOriginal": true
+			}
+        ]
+    },
+    {
+        "author": "JonBro",
+        "name": "insideinsideinsideinside",
+        "url": "https://battleofthebits.com/arena/Entry/insideinsideinsideinside/27987/",
+        "date": "Mar 31, 2018",
+        "file": "JonBro.js",
+		"fileOriginal": true
+	},
+    {
         "author": "neverforgettoleave",
         "children": [
             {
@@ -454,7 +492,7 @@
 ");"
                 ],
                 "codeMinified": "t*2**(([0,3,7,12,19,12,7,3,-12,7,12,15,0,7,12,14,-4,3,12,15,20,24,27,19,-12,7,12,15,0,7,12,14][((t>>11)%24+(t>>13&7))&31]-1)/12)"
-    },
+            },
             {
                 "name": "pentatonics",
                 "description": "Minification Requested By PrincessPriscillaPT",
@@ -7716,6 +7754,14 @@
         ]
     },
     {
+        "author": "arceus413",
+        "name": "evil fucked up printer noises",
+        "url": "https://battleofthebits.com/arena/Entry/evil+fucked+up+printer+noises/80926/",
+        "date": "Dec 8, 2025",
+        "sampleRate": 16000,
+        "codeOriginal": "(t>>10&1+t>>13&7?0:9001/(t%8192)-t/(t&0x2000?4:8)&16?-1:0)^t+9+(t)&2>>93/t%t-7%(73)<<(91)/56^(52)+t-8^t*(8)>>t>>((t*(t))^t)/2%t*2+t&t<<3-(t/t-07)-t|58-t^(0-77%t)^(t)%4^(28+t>>8<<(t&t>>t&t-(t%13>>t)^46>>t^91&530^((t%t)>>861*(638/(9-t>>87)))/171*t+t&t<<0-t>>9&752&547-t/2%t|t^t+(t)-4*(95)-t+t/(t)*8>>(t^t)+t<<(t)*36+(t)/785-t%2&4^(t^94%((t^((t>>634*67+t)^7-12^(02-((t)))))))|(04*(t>>472*066/t<<475)+72)^(57>>(8)+(331>>358+t))<<(t>>5^(t)%(818)-t%(t*811*t/91/(31/68+t/t>>(53%56*t^4)+50+(2)+5)+t%t)-(9>>((t)<<t))*(616/t)^447+t^97/(81/t%(03))|(t)&t+t-(4<<7-348+(t/26))>>(40&t)^(699)<<99*t^((73-t))&5/47-315>>t+((((38+46*(028-068+t/t*58))^619)/t*1)^2)|t+t/t^(0*(0^t>>65>>36<<t>>t+60))/0+t>>((5<<t%86)*38*t-t%064<<t)-43-8<<734>>77-t-t%t/(t^t)|(((3))^(t)&(0-68))&t&60*502/7/t/501%((t)%859)/97*t>>(53%95*t)*(t+5)^((1+2))*t%t^t>>(t)%009&t%01>>204%043)))"
+	},
+    {
         "author": "argarak",
         "name": "planar portal",
         "url": "https://battleofthebits.com/arena/Entry/planar+portal/80929/",
@@ -7981,51 +8027,62 @@
         "author": "Funcbeat Anon",
         "children": [
             {
-        "name": "Sampled procedural drum loop test with naïve time-stretching",
-        "url": "https://dollchan.net/btb/res/3.html#12024",
-        "date": "Jan 12, 2026",
-        "sampleRate": 44100,
-        "mode": "Funcbeat",
-        "stereo": true,
-        "big": true,
-        "file": "funcbeatanon.js",
-        "fileOriginal": true
-    },
-     {
-        "name": "Wavetable-like soft synths using exp/cosine bell bumps that move and wrap around.",
-        "description": "change their width to change its timbre; smaller is brighter, wider is softer. \"Very Demanding On Performance.\"",
-        "url": "https://dollchan.net/btb/res/3.html#12918",
-        "date": "Feb 24, 2026",
-        "sampleRate": 22050,
-        "mode": "Funcbeat",
-        "stereo": true,
-        "slow": true,
-        "big": true,
-        "file": "funcbeatanon-1.js",
-        "fileOriginal": true
-    },
-     {
-        "name": "Distorted metallic delay matrix applied on percussive sweeping sines with a reversing buffer.",
-        "url": "https://dollchan.net/btb/res/3.html#13494",
-        "date": "Mar 22, 2026",
-        "sampleRate": 32000,
-        "mode": "Funcbeat",
+                "name": "Sampled procedural drum loop test with naïve time-stretching",
+                "url": "https://dollchan.net/btb/res/3.html#12024",
+                "date": "Jan 12, 2026",
+                "sampleRate": 44100,
+                "mode": "Funcbeat",
+                "stereo": true,
                 "big": true,
-        "file": "funcbeatanon-2.js",
-        "fileOriginal": true
-    },
-     {
-        "name": "Pseudorandom generative polyrhythmic beat test.",
-        "url": "https://dollchan.net/btb/res/3.html#13953",
-        "date": "Apr 14, 2026",
-        "sampleRate": 32000,
-        "mode": "Funcbeat",
+                "file": "funcbeatanon.js",
+                "fileOriginal": true
+			},
+            {
+                "name": "Wavetable-like soft synths using exp/cosine bell bumps that move and wrap around.",
+                "description": "change their width to change its timbre; smaller is brighter, wider is softer.",
+                "url": "https://dollchan.net/btb/res/3.html#12918",
+                "date": "Feb 24, 2026",
+                "sampleRate": 22050,
+                "mode": "Funcbeat",
+                "stereo": true,
+                "slow": true,
                 "big": true,
-        "file": "funcbeatanon-3.js",
-        "fileOriginal": true
-    }
+                "file": "funcbeatanon-1.js",
+                "fileOriginal": true
+           },
+           {
+                "name": "Distorted metallic delay matrix applied on percussive sweeping sines with a reversing buffer.",
+                "url": "https://dollchan.net/btb/res/3.html#13494",
+                "date": "Mar 22, 2026",
+                "sampleRate": 32000,
+                "mode": "Funcbeat",
+                "big": true,
+                "file": "funcbeatanon-2.js",
+                "fileOriginal": true
+           },
+           {
+                "name": "Pseudorandom generative polyrhythmic beat test.",
+                "url": "https://dollchan.net/btb/res/3.html#13953",
+                "date": "Apr 14, 2026",
+                "sampleRate": 32000,
+                "mode": "Funcbeat",
+                "big": true,
+                "file": "funcbeatanon-3.js",
+                "fileOriginal": true
+           },
+            {
+                "name": "Multiband filter-bank delay effect test.",
+                "url": "https://dollchan.net/btb/res/3.html#16873",
+                "date": "Feb 24, 2026",
+                "sampleRate": 16000,
+                "mode": "Funcbeat",
+                "stereo": true,
+                "big": true,
+                "file": "funcbeatanon-4.js",
+                "fileOriginal": true
+           }
         ]
-            },
+    },
     {
         "author": "DismalPercentage3802",
         "children": [
