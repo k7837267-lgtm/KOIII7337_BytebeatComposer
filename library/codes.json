@@ -4794,7 +4794,6 @@
                 "date": "Dec 9, 2025",
                 "sampleRate": 32000,
 				"mode": "Floatbeat",
-                "big": true,
                 "file": "SRB2er-1.js",
                 "fileOriginal": true
 			},
@@ -4804,7 +4803,6 @@
                 "date": "Mar 31, 2026",
                 "sampleRate": 48000,
 				"mode": "Floatbeat",
-                "big": true,
 				"slow": true,
                 "file": "SRB2er-2.js",
                 "fileOriginal": true
