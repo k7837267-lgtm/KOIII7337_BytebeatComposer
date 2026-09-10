@@ -9984,7 +9984,7 @@
                 },
                 "url": "https://bytebeat.cloud/post/36f52e87-34bf-4ab6-89e1-fbf9b9dd87c7",
                 "date": "Sep 7, 2026",
-                "mode": "Floatbeat",
+                "mode": "Signed Bytebeat",
                 "sampleRate": 44100,
                 "codeOriginal": [
                     "r=(x,y,z)=>(t||(A=Array(y).fill(0)),c=x+A[t%y],A[t%y]=c*z||0,c),t||(Z=[]),X=0,",
