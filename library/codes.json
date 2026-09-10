@@ -4778,13 +4778,38 @@
     },
     {
         "author": "SRB2er",
-        "name": "want a byte of my food?",
-        "url": "https://battleofthebits.com/arena/Entry/want+a+byte+of+my+food_/70383/",
-        "date": "Aug 10, 2024",
-        "sampleRate": 32000,
-        "big": true,
-        "file": "SRB2er.js",
-        "fileOriginal": true
+		"children": [
+			{
+                "name": "want a byte of my food?",
+                "url": "https://battleofthebits.com/arena/Entry/want+a+byte+of+my+food_/70383/",
+                "date": "Aug 10, 2024",
+                "sampleRate": 32000,
+                "big": true,
+                "file": "SRB2er.js",
+                "fileOriginal": true
+			},
+			{
+                "name": "repeated stealing",
+                "url": "https://battleofthebits.com/arena/Entry/repeated+stealing/80947/",
+                "date": "Dec 9, 2025",
+                "sampleRate": 32000,
+				"mode": "Floatbeat",
+                "big": true,
+                "file": "SRB2er-1.js",
+                "fileOriginal": true
+			},
+			{
+                "name": "sparkles so small...",
+                "url": "https://battleofthebits.com/arena/Entry/sparkles+so+small.../83695/",
+                "date": "Mar 31, 2026",
+                "sampleRate": 48000,
+				"mode": "Floatbeat",
+                "big": true,
+				"slow": true,
+                "file": "SRB2er-2.js",
+                "fileOriginal": true
+			}
+		]
     },
     {
         "author": "feeshbread",
