@@ -910,6 +910,31 @@
                 "date": "Aug 25, 2026",
                 "mode": "postfix",
                 "codeOriginal": "t 4 / ~ - + + + | = | = | = | = | = ^ ^ ^ ^ ^ + | = | = | = + ^ DROP ^ ^ DROP | + + ^ ^ ^ ^ + + DUP DUP | = | + + + + t 3 >> t & %"
+            },
+            {
+                "name": "125 SR Postfix",
+                "date": "Sep 10, 2026",
+                "mode": "postfix",
+                "sampleRate": 125,
+                "codeOriginal": "t | = | = | = | = ^ ^ ^ ^ ^ + ^ ^ ^ | | | | ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^"
+            },
+            {
+                "name": "Fractal Minds..",
+                "date": "Sep 10, 2026",
+                "mode": "postfix",
+                "codeOriginal": "t+t%255+(t&t>>7&127) | = | = | = | = ^ ^ ^ ^ ^ + ^ ^ ^ | | | | ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^"
+            },
+            {
+                "name": "IDK What's Happening",
+                "date": "Sep 10, 2026",
+                "mode": "postfix",
+                "codeOriginal": "(t/6>>8)+(t/78>>12)%255+(t/6&t/6>>8&63)*88 | = | = | = | = ^ ^ ^ ^ ^ + ^ ^ ^ | | | | ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ | | | | | ^ ^ ^ ^ - - - - - - - - ^ ^"
+            },
+            {
+                "name": "Ok I Made A Stack Function Postfix Music, Now What?",
+                "date": "Sep 10, 2026",
+                "mode": "postfix",
+                "codeOriginal": "t*2^t*3.999 - ~ | = | = | = ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ + + + + + ^ ^ ^ - - | | | | & & & & & + + + + + + DUP + + + | | | | | ^"
             }
         ]
     },
