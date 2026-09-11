@@ -461,6 +461,7 @@
                 "url": "https://battleofthebits.com/arena/Entry/stumble-a-thon/39542/",
                 "date": "Oct 31, 2020",
                 "sampleRate": 44100,
+				"big": true,
                 "file": "BaronKnoxburry.js",
 				"fileOriginal": true
 			}
