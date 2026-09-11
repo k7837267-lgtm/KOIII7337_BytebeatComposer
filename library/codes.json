@@ -81,23 +81,21 @@
     },
     {
         "author": "stephth",
+		"url": "https://news.ycombinator.com/item?id=3064986",
+		"date": "Oct 3, 2011",
         "children": [
             {
                 
                 "name": "remix of miiro's 1-line symphony",
-                "url": "https://news.ycombinator.com/item?id=3064986",
-                "date": "Oct 3, 2011",
                 "c": true,
                 "codeOriginal": "t*9&(t*1>>4)|t*5&(t>>7)|t*3&(t*4>>12)",
                 "codeMinified": "t*9&t>>4|t*5&t>>7|t*3&t>>10"
             },
             {   
                 "name": "2-line remix of miiro's 1-line symphony",
-                "url": "https://news.ycombinator.com/item?id=3064986",
-                "date": "Oct 3, 2011",
                 "stereo": true,
                 "codeOriginal": "[t*9&(t*1>>4)|t*5&(t>>7)|t*3&(t*4>>12),t*1&(t*1>>4)|t*5&(t*1>>4)|t*5&(t*4>>14)]",
-                "codeMinified": "[t*9&t>>4|t*5&t>>7|t*3&t>>10,t&t>>4|t*5&t>>4|t*5&t>>12]"
+                "codeMinified": "[t*9&t>>4|t*5&t>>7|t*3&t>>10,t&t>>4|t*5&(t>>4|t>>12)]"
             }
         ]
     },
@@ -474,7 +472,7 @@
         "date": "Mar 31, 2018",
 		"sampleRate": 11000,
         "file": "JonBro.js",
-		"fileOriginal": true
+ 		"fileOriginal": true
 	},
     {
         "author": "neverforgettoleave",
@@ -514,7 +512,7 @@
 "",
 ") * 2 | (t >> (t / 8192));"
                 ],
-                "codeMinified": "t*2**(([0,3,5,7,10,12,15,17,19,22,24,22,19,17,15,12,10,7,5,3,0,-2,-5,-7,-9,-12,-14,-17,-19,-21,-24,-26,-24,-21,-19,-17,-14,-12,-9,-7,-5,-2][(t>>13)%42]-1)/12)*2|t>>(t>>13)"
+               "codeMinified": "t*2**(([0,3,5,7,10,12,15,17,19,22,24,22,19,17,15,12,10,7,5,3,0,-2,-5,-7,-9,-12,-14,-17,-19,-21,-24,-26,-24,-21,-19,-17,-14,-12,-9,-7,-5,-2][(t>>13)%42]-1)/12)*2|t>>(t>>13)"
             }
         ]
     },
@@ -4411,6 +4409,30 @@
         ]
     },
     {
+        "author": "Spimfurt",
+        "name": "Your DTMF is bigger than mine",
+        "url": "https://dollchan.net/btb/res/3.html#2076",
+        "date": "Aug 26, 2023",
+        "sampleRate": 16800,
+        "codeOriginal": [
+            "// Your DTMF is bigger than mine - by Spimfurt",
+            "",
+            "//dtmf                                       on/off     ",
+            "((t>>2)*(t>>(t>>13)|t>>11&(t>>17))&17)*(t>>20&1|t>>17&1)+",
+            "//drone1                                                       on/off  ",
+            "((4&-t>>8)*(t/50>>(t/((1743158887>>(2*(t>>15))&3))))&16)*(t>>17&1|t>>18&1)+",
+            "//drone2                                                   on/off   ",
+            "((4&-t>>8)*(t/50)>>(t/6*(2579195511>>(2*(t>>15))&3))&32)*(t>>18&1)+",
+            "//bd               seq                         on/off",
+            "((720%(t&4095)*(2971742497>>(t>>12)&1))&64)*(t>>19&1)+",
+            "//sd",
+            "((1536%(8192+t&16383))&(t>>1&127))+",
+            "//glitchando grande",
+            "(97451%(t>>1&(t>>4)&1212+(t>>16&15))&25)",
+            ""
+        ]
+    },
+    {
         "author": "Butterroach",
         "name": "stereo wind + \"raindrop\" sounds",
         "description": "\"I Will Probably Add His Bytebeat Codes Now Or Later.\" - KOIII7337",
@@ -8079,7 +8101,7 @@
             {
                 "name": "Multiband filter-bank delay effect test.",
                 "url": "https://dollchan.net/btb/res/3.html#16873",
-                "date": "Feb 24, 2026",
+                "date": "Aug 25, 2026",
                 "sampleRate": 16000,
                 "mode": "Funcbeat",
                 "stereo": true,
@@ -9873,6 +9895,14 @@
                 "sampleRate": 44100,
                 "mode": "Floatbeat",
                 "codeOriginal": "A=(a,b,c)=>sin(t*PI/a*2**(~(~(((T=t/c)^T+b)%11)*12/7)/12))*(2-T%1)/8,A(48,7,_=8192)+A(96,5,_*2)+A(192,3,_*4)+A(384,1,_*8)"
+            },
+            {
+                "name": "-Deadly Labyrinth-",
+                "url": "https://www.bytebeat.cloud/post/df0dd51b-45e1-4ea3-83da-00189757b662",
+                "date": "Sep 9, 2026",
+                "sampleRate": 44100,
+                "file": "astolfo671games.js"
+				"fileOriginal": true
             }
         ]
     },
