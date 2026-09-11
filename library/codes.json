@@ -7813,6 +7813,10 @@
     {
         "author": "kleeder",
         "name": "Jakerson's Secret Formula",
+		"cover": {
+			"name": "Jakerson - the secret formula.it",
+			"url": "https://battleofthebits.com/arena/Entry/the+secret+formula.it/44539/"
+		},
         "url": "https://battleofthebits.com/arena/Entry/Jakerson%27s+Secret+Formula/81444/",
         "date": "Jan 2, 2026",
         "sampleRate": 40000,
@@ -9994,6 +9998,7 @@
                 "date": "Sep 4, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
+				"starred": 2,
                 "codeOriginal": [
                     "t||(Z=[]),X=0,lp=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),hp=(a,c)=>a-lp(a,c),bp=(a,h,l)=>hp(lp(a,l),h),lb=(a,c,e)=>a+lp(a,c)*e,",
                     "BPM=330/60,HZ=48e3,to=r=>2**(r/12),To=55*to(98)*t/HZ,ti=BPM*t/HZ,a=l=>(ti%l)/l,",
@@ -10044,6 +10049,7 @@
                 "date": "Sep 7, 2026",
                 "mode": "Signed Bytebeat",
                 "sampleRate": 44100,
+				"starred": 1,
                 "codeOriginal": [
                     "r=(x,y,z)=>(t||(A=Array(y).fill(0)),c=x+A[t%y],A[t%y]=c*z||0,c),t||(Z=[]),X=0,",
                     "lp=(a,c)=>(Y=X++,Z[Y]??=0,Z[Y]+=(a-Z[Y])*c),",
