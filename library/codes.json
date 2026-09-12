@@ -7609,7 +7609,28 @@
                 "sampleRate": 48000,
                 "starred": 2,
                 "codeOriginal": "t||(f=[0,0,0],lp=(a,c)=>(j=i++,f[j]+=(a-f[j])*c),hp=(a,c)=>a-lp(a,c),st=[],cf=[20,25,31.5,40,50,63,80,100,125,160,200,250,315,400,500,630,800,1e3,1250,1600,2e3,2500,3150,4e3,5e3,6300,8e3].map((v,k)=>(st.push([0,0,0,0]),A=10**([-40,-40,-40,-40,-40,-40,-40,-30,-20,-15,-10,-5,0,4,8,12,15,18,15,12,8,4,0,-2,-4,-6,-8][k]/40),w=2*PI*v/44100,a=w/7,c=-2*cos(w),z=1+a/A,[(1+a*A)/z,c/z,(1-a*A)/z,c/z,(1-a/A)/z]))),i=0,tanh(sin(1.4*sqrt(t%32768)))*exp(-t/4096%8)+hp(random()*(1.4**(-t/512%8)/4)*('00101000001010110000'[t>>12&15]),.6)*2+((l=t%32768,n=l<400?exp(-l/100):l<900?exp(-(l-500)/100)*.8:l<1500?exp(-(l-1e3)/100)*.7:exp(-(l-1500)/1111)/2,s=(random()*2-1)*n,cf.map((x,k)=>(S=st[k],y=x[0]*s+x[1]*S[0]+x[2]*S[1]-x[3]*S[2]-x[4]*S[3],S[1]=S[0],S[0]=s,S[3]=S[2],S[2]=y,s=y)),s/6*(t>>15&1)))"
-            }
+            },
+            {
+                "name": "unsigned byte song",
+                "url": "https://bytebeat.cloud/post/ffde2dd2-8460-41d9-ba28-2a9c977f515e",
+                "date": "Aug 26, 2026",
+                "file": "vbinchees3000-3.js",
+				"fileOriginal": true
+			},
+            {
+                "url": "https://bytebeat.cloud/post/986950f8-8405-43d8-8944-c6bdbe8aaec0",
+                "date": "Aug 30, 2026",
+				"sampleRate": 16000,
+                "codeOriginal": "((t/200*t/400<<t/6*t>>4&255)&t+(t*t/202600)>>10&t+(t*t/202000)>>6&255)^300000/(t*t/202600%32768)^300000/(t*t/202000%32768)"
+			},
+            {
+                "url": "https://bytebeat.cloud/post/05369a99-ba44-4ee6-adc6-d050114dbcf8",
+                "date": "Sep 3, 2026",
+				"mode": "Floatbeat",
+				"sampleRate": 48000,
+				"starred": 1,
+                "codeOriginal": "t+=1024,sin(t/32*2**(([-5,-2,2,3,7,9,12,14][((t>>14|t>>13)*(t>>15&7)^(-t>>16&5)^(t>>14&3))%8])/12)/2*PI)"
+			}
                 ]
     },
     {
@@ -9462,6 +9483,8 @@
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
 				"stereo": true,
+				"big": true,
+				"slow": true,
 				"starred": 2,
                 "file": "cyclar2.js",
                 "fileOriginal": true
@@ -9472,7 +9495,7 @@
                 "date": "Apr 22, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
-				"stereo": true,
+				       "stereo": true,
 				"starred": 2,
 				"codeOriginal": "(_=t)||(L=2*PI,y=sin,f=floor,R=48e3,B=R*15/110,W=(m,a=0,...v)=>[a,...v].some(a=>f(m?_%(m*B):_)==f(a*B)),a=0,I=(A=\"/@BGI*@DIK*=BDG->BEI(9@DI1;?BF\").charCodeAt.bind(A),k=0,O=[,,,,,],P=(i,n)=>(O[i]=[_,n?520*2**((n+k-64)/12):O[i][1]]),Q=(i,x=-1)=>{for(;++x<5;)P(x,I(i*5+x))},S=(i)=>P(0,I(i*5)),Z=(x)=>((a+1)/2)*x|0,J=Array(8).fill().map((_,i)=>Array(round(4000*1.25**i)).fill(0))),a=y(t+200*y(a)),W(16)&&Q(Z(5)),t>B*64&&W(16,2,8,12)&&a<min(.5,t/48e12)&&P(0),t>B*128&&W(64)&&(k=Z(14)-7),s=O.reduce((a,[b,c])=>(b=(t-b)/R,a+sin(c*b*L)*exp(-2*b)*min(1,b*100)/6),0),M=[0,0],J.forEach((_,c)=>(_=t+100*y(L*t/R/2**(c/8))**2,M[c&1]+=J[c][f(_)%J[c].length]*(1-_%1)+J[c][f(_+1)%J[c].length]*(_%1))),J.forEach((_,c)=>(J[c][t%J[c].length]=(s+M[c&1]/16)/3)),M"
 			}
@@ -9743,6 +9766,7 @@
         "date": "Aug 15, 2026",
         "sampleRate": 48000,
         "mode": "Floatbeat",
+				"big": true,
         "stereo": true,
                 "file": "Unnamed_Cloud_Vast_Lingonberry.js",
                 "fileOriginal": true
@@ -9901,6 +9925,7 @@
                 "url": "https://www.bytebeat.cloud/post/df0dd51b-45e1-4ea3-83da-00189757b662",
                 "date": "Sep 9, 2026",
                 "sampleRate": 44100,
+				"big": true,
                 "file": "astolfo671games.js",
 				"fileOriginal": true
             }
@@ -10095,5 +10120,28 @@
 				]
             }
 		]
-	}
+	},
+    {
+        "author": "probablythebestusernameever",
+		"children": [
+			{
+                "name": "13kb cover of another medium",
+                "url": "https://bytebeat.cloud/post/a17e8580-ba45-473e-a1c8-fe5c9a590cad",
+                "date": "Sep 6, 2026",
+				"mode": "Floatbeat",
+                "sampleRate": 48000,
+				"file": "probablythebestusernameever.js",
+				"fileOriginal": true
+			},
+			{
+                "name": "SUNSET OF SEVEN SUNS",
+                "url": "https://bytebeat.cloud/post/3a41a6e6-2f4d-41f2-b3ca-3ace07e9aacc",
+                "date": "Sep 9, 2026",
+				"mode": "Floatbeat",
+                "sampleRate": 48000,
+				"file": "probablythebestusernameever-1.js",
+				"fileOriginal": true
+			}
+		]
+    }
 ]
