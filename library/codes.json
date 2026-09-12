@@ -10118,7 +10118,15 @@
                     "T=BPM*t/HZ-8,",
                     "sin(log((J=(j=T+8)%2)+.002)**2*1.5)*32*(J=(2-J)**2)+(atan(r(bp(sw(o([-12,-10,-7,2,,2,,0,-5,,-10,,-10,-2,-3,,-10,-9,-7,2,,2,,0,-5,,7,,7,,7][floor(T+3)%32]),9)*cbrt(sin(T*PI)),.04,.6),HZ/BPM*3|0,.25)/36-.4)*28+(o((T/4&4)*3+[-21,,-9,,-19,,-7,,-17,,-5][floor(T)%16])%64-32^11)+lp(o(-29)%64-32,5e-6**(j%.5))*(J=4-J)/3-9)*J*.4"
 				]
-            }
+            },
+			{
+				"name": "Foldableboldface beat",
+				"url": "https://bytebeat.cloud/post/ea50b072-b8f4-4103-8b92-49e611ea67a1",
+                "date": "Sep 11, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+				"codeOriginal": "t/=E,t+=2**17*21,j=[1,1,.8,.75][t>>15&3],x=d=>((t*j*d*((t>>12^(t>>11)*5+88)%7+1)&64)+(t*j*d*((t>>13^11^(t>>11)*11.7+349)%7+1)/2&64)+(t*j*d*((17.3*(t>>13)^(t>>11)*49+17)%7+1)/4&64))/96-1,x2=r=>x(r)+x(r*1.005)+x(r*.995)+x(r/1.005)+x(r/.995),sin(atan((x2(1)+x2(2.005)+x2(2.995)+x2(4.005)+x2(4.995)+x2(6.005)+x(6.995)+x(8))/11*sqrt(k=t/16384%1)+sin(log(k)*11)*(1-k)**2+min(max(sin(sin(t/128*PI*j)*(k*E+1.5))*3*sqrt(k),-1),1)))"
+			}
 		]
 	},
     {
@@ -10131,6 +10139,8 @@
 				"mode": "Floatbeat",
                 "sampleRate": 48000,
 				"file": "probablythebestusernameever.js",
+				"starred": 2,
+				"big", true,
 				"fileOriginal": true
 			},
 			{
@@ -10140,6 +10150,8 @@
 				"mode": "Floatbeat",
                 "sampleRate": 48000,
 				"file": "probablythebestusernameever-1.js",
+				"starred": 2,
+				"big": true,
 				"fileOriginal": true
 			}
 		]
