@@ -126,14 +126,28 @@
     },
     {
         "author": "ryg",
-        "url": [
-            "https://www.pouet.net/topic.php?post=388873",
-            "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
-        ],
-        "date": "Oct 4, 2011",
-        "sampleRate": 44100,
-        "c": true,
-        "codeOriginal": "(t>>4)*(13&(0x8898a989>>(t>>11&30)))"
+		"children": [
+			{
+                "url": [
+                    "https://www.pouet.net/topic.php?post=388873",
+                    "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
+                ],
+                "date": "Oct 4, 2011",
+                "sampleRate": 44100,
+                "c": true,
+                "codeOriginal": "(t>>4)*(13&(0x8898a989>>(t>>11&30)))"
+            },
+			{
+                "url": [
+                    "https://www.pouet.net/topic.php?post=389146",
+                    "https://youtu.be/tCRPUv8V22o?si=Hl-awHU7s5RdOn_x&t=176"
+                ],
+                "date": "Oct 6, 2011",
+                "sampleRate": 44100,
+				"starred": 2,
+                "codeOriginal": "(t*'36364689'[t>>13&7]/12&128)+(((t>>12^(t>>12)-2)%11*t/4|t>>13)&127)"
+            }
+		]
     },
     {
         "author": "bst",
