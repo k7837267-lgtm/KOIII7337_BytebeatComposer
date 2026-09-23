@@ -298,7 +298,7 @@ class audioProcessor extends AudioWorkletProcessor {
 		const oldFunc = this.func;
 		try {
 			if (this.isFuncbeat) {
-				this.func = new Function(...params, codeText + '\nreturn dsp').bind(globalThis, ...values);
+				this.func = new Function(...params, codeText).bind(globalThis, ...values);
 			} else if (this.isRPN) {
 				this.func = new Function(...params, 't', RPN(codeText)).bind(globalThis, ...values);
 			} else {
