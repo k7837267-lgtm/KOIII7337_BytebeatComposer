@@ -1,0 +1,23 @@
+export function new_env(outer = {}, binds = [], exprs = []) {
+  var e = Object.setPrototypeOf({}, outer);
+  // Bind symbols in binds to values in exprs
+  for (var i = 0; i < binds.length; i++) {
+    if (Symbol.keyFor(binds[i]) === "&") {
+      e[binds[i + 1]] = exprs.slice(i); // variable length arguments
+      break;
+    }
+    e[binds[i]] = exprs[i];
+  }
+  return e;
+}
+export const env_get = (env, sym) => {
+  //console.log('env:', env, 'sym:', sym)
+  if (sym in env) {
+    return env[sym];
+  }
+  if (globalThis.user && globalThis.user[Symbol.keyFor(sym)]) {
+    return globalThis.user[Symbol.keyFor(sym)]
+  }
+  throw Error(`'${Symbol.keyFor(sym)}' not found`);
+};
+export const env_set = (env, sym, val) => (env[sym] = val);
