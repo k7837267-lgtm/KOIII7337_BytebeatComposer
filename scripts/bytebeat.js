@@ -1,4 +1,20 @@
 import { deflateRaw, inflateRaw } from './pako.esm.min.mjs';
+import { compileString } from "./squishbeat/compiler";
+
+console.log(compileString(`
+(def lastSample 0)
+(def resonanceMomentum 0)
+(def notedata "$$$000,,,,,,,,''")
+(fn* [time sampleRate]
+  (let [pitch (** 2 (/ (+ (charCodeAt notedata (& (* time 4.3) 15)) 22) 12))
+        pulse (/ (- (> (% (* time pitch) 1)
+                      (+ (* (% (/ time 2) 1) 0.6) 0.2)) 0.5) 2)
+        kick (/ (sin (* (** (+ (% (* time 4.3) 2) 0.01) 0.3) 180)) 4)
+        newSample (/ (- pulse lastSample (* 3 resonanceMomentum))
+                    (+ (* (cos (/ time 5)) 170) 200))]
+    (+= lastSample (+= resonanceMomentum newSample))
+    (+ lastSample kick)))
+`))
 
 const loadScript = src => new Promise(resolve => {
 	try {
