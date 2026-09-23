@@ -489,6 +489,13 @@
  		"fileOriginal": true
 	},
     {
+        "author": "WireCat",
+        "url": "https://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html?showComment=1528042270625#c6227420617216902675",
+        "date": "Jun 3, 2018",
+        "sampleRate": 44100,
+        "codeOriginal": "t%(1E4/Math.pow(2,\"=B=E=B=G=A=D=A==B=I=E=E;>;D>G>=B=EBIENBEBJENENBFBIFLFLBGLJBGJI=B=E=B=E;>ED;=AB69=B=EBIENIQNUQZ\".charCodeAt((t>>13)%94)/12))"
+    },
+    {
         "author": "neverforgettoleave",
         "children": [
             {
