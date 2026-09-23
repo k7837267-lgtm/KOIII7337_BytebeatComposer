@@ -161,7 +161,7 @@ class audioProcessor extends AudioWorkletProcessor {
 			this.setSampleRatio(sampleRatio);
 		}
 		if (data.mode !== undefined) {
-			this.isFuncbeat = data.mode === 'Funcbeat';
+			this.isFuncbeat = data.mode === 'Funcbeat' || data.mode === 'Squishbeat';
 			this.isRPN = data.mode === 'postfix';
 			switch (data.mode) {
 				case 'Bytebeat':
@@ -173,6 +173,7 @@ class audioProcessor extends AudioWorkletProcessor {
 						(this.lastByteValue[ch] = (funcValue + 128) & 255) / 127.5 - 1;
 					break;
 				case 'Floatbeat':
+				case 'Squishbeat':
 				case 'Funcbeat':
 					this.getValues = (funcValue, ch) => {
 						const outValue = Math.max(Math.min(funcValue, 1), -1);
@@ -296,9 +297,10 @@ class audioProcessor extends AudioWorkletProcessor {
 		// Bytebeat code testing
 		let isCompiled = false;
 		const oldFunc = this.func;
+		console.log('[Squish compiler output]\n', codeText)
 		try {
 			if (this.isFuncbeat) {
-				this.func = new Function(...params, codeText).bind(globalThis, ...values);
+				this.func = new Function(...params, codeText + '\nreturn dsp').bind(globalThis, ...values);
 			} else if (this.isRPN) {
 				this.func = new Function(...params, 't', RPN(codeText)).bind(globalThis, ...values);
 			} else {
