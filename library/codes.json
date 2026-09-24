@@ -45,6 +45,24 @@
         ]
     },
     {
+        "author": "varjohukka",
+        "children": [
+            {
+                "name": "Fanfare?",
+                "url": "http://www.pouet.net/topic.php?which=8357&page=4#c388503",
+                "date": "Sep 30, 2011",
+                "codeOriginal": "(((t&8192)?((t&4096)?((t&1024)?t*2:t*4):((t&512)?t*4:t*4.2)):((t &4096)?((t&1024)?t*2:t*10):((t&512)?t*2:t*8))>>2)*(( t&16384 )?3:2))|t*(( t&16384 )?1/8:1/(.01*t))",
+                "codeMinified": "(t&8192?t&4096?t&1024?2*t:4*t:t&512?4*t:4.2*t:(t&4096?t&1024?2*t:10*t:t&512?2*t:8*t)>>2)*(t&16384?3:2)|t*(t&16384?1/8:1/(.01*t))"
+            },
+            {
+                "name": "JAJAJAJAJA",
+                "url": "https://www.pouet.net/topic.php?post=388516",
+                "date": "Sep 30, 2011",
+                "codeOriginal": "(((((t>>5)|(t>>2)*(t>>2))*((t&1536)?1:1.5)))^(t*2^t* 2.008))/2"
+            }
+        ]
+    },
+    {
         "author": "pyryp",
         "description": "JS Fix By Zopium, Modified By KOIII7337.",
         "url": "https://youtu.be/qlrs2Vorw2Y?si=nX634LhxFID2zv3c&t=69",
@@ -7445,7 +7463,7 @@
         },
         "name": "Keyboard",
         "url": "https://dollchan.net/btb/res/7164.html#10359",
-        "date": "Nov 03, 2025",
+        "date": "Nov 3, 2025",
         "sampleRate": 48000,
         "stereo": true,
         "big": true,
@@ -7453,6 +7471,68 @@
         "file": "omega.js",
         "fileOriginal": true
     },
+    {
+        "author": "!{G&Ycatjuice}? (greenandyellowcatjuice)",
+		"children": [
+			{
+                "name": "Crystal cave + drums detail",
+				"remix": [
+					{
+						"author": "kOLbOSa_exe",
+						"name": "Crystal Cave",
+						"url": "https://www.reddit.com/r/bytebeat/comments/154me2z/crystal_cave/"
+					},
+					{
+						"author": "NikNemメ",
+						"name": "drums detail",
+						"url": "https://dollchan.net/btb/res/204.html#891"
+					}
+				],
+				"url": "https://bytebeat.cloud/post/bf197bd3-56f3-4561-a03c-e25c4b74b564",
+                "date": "Nov 11, 2025",
+                "sampleRate": 48000,
+				"starred": 1,
+                "codeOriginal": "t/=5,a=(a=t=>cbrt(cos(t/((t>>10&3^t>>13&6|t>>12&7)+2)))*(32-(t>>6)&31)+32,(a(t)/1.5+a(t-3E3)/2+a(t-6E3)/3)),b=(t*=32000/8000,(300**((t*[[1,,,4,,4,4,8,4],[1,,,4,,4,8,16]][!(~t>>16&1)|0][7&t>>13]%32768)**.04)&128)/2+random()*(-t&4095)/150+(t*sin(t>>2)&255)*(-t&8191)/24E3*'00100101'[7&t>>13]),a+b/4"
+			},
+			{
+				"url": "https://bytebeat.cloud/post/3c740f23-58a8-4580-ab8c-73f1afb5ab07",
+                "date": "Nov 18, 2025",
+                "sampleRate": 36000,
+				"starred": 2,
+                "codeOriginal": "t?0:A=Array(d=12288).fill(0),m=((((t*2**([0,4,7,11][(t)%4]/12)*2**([0,0,-3,2,0,0,-3,-3][t>>13&7]/12)*2**([0,-5,-2,-4][t>>17&3]/12))&127)+(t>>[6,6,6,7][t>>14&3])&128)*(1-t%[8192,8192,8192,16384][t>>14&3]/[8192,8192,8192,16384][t>>14&3]))+A[t%d],A[t%d]=m/3,m"
+			},
+			{
+				"cover": {
+					"name": "ROMANCEPLANET - FALL FROM THE SKY PT.2",
+					"url": "https://www.youtube.com/watch?v=Cpc1akSzjPY"
+				},
+				"url": "https://bytebeat.cloud/post/b0681ed1-35ff-432b-a3e0-1df9b5a18fce",
+                "date": "Nov 27, 2025",
+                "mode": "Floatbeat",
+                "sampleRate": 41000,
+				"stereo": true,
+				"starred": 2,
+                "codeOriginal": "A=(t?0:a=Array(n=12288).fill(0),m=(p=([-3,-3,-3,1,1,1,11,11,9,9,9,8,8,8,3,3,3,3,3,4,4,4,6,6,3,3,3,4,4,4,-1,-1][t>>13&31]/12),p2=([-3,-5,0,-1][t>>16&3]/12),m=cbrt(sin(t*2/64*2**p+cbrt(sin(t*2/64*2**p))*sin(t/1E5)*10))/2)+a[t%n],a[t%n]=m/2,m,m2=cbrt(sin(t/50*2**p2)),m3=cbrt(sin(sqrt(343+t%16384)))/(1+t%16384/5000)*[1,0][t>>13&1]*4,m4=random()/4-0.5/4,m+m2+m3+m4),[A/2-sin(t/1000)/3,A/2-sin(t/5000/PI)/3]"
+			},
+			{
+				"url": "https://bytebeat.cloud/post/d8d03bf0-0f40-4ab3-946e-c7f20bd453e6",
+                "date": "Nov 30, 2025",
+                "mode": "Floatbeat",
+                "sampleRate": 21000,
+				"starred": 1,
+                "codeOriginal": "A=(t?0:a=Array(n=12288/2).fill(0),m=(p=([0,3,7,12][t>>12&3]/12)**[1,2,3,4][t>>16&3],(abs(sin(t*2**p/50+abs(sin(t*2**p/50))*sin(t/4.6E4)*10))-0.5)*(1-t%4096/4096))+a[t%n],a[t%n]=m/2,m),A"
+			},
+			{
+                "name": "808 points collected",
+				"url": "https://bytebeat.cloud/post/0e54d126-b477-41a1-a88c-8427f9395292",
+                "date": "Dec 24, 2025",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+				"starred": 1,
+                "codeOriginal": "BPM=135,SR=48E3,tf=abs(t/SR*32768/120*BPM),sidechain=min(1,tf/4096%4),btf=(a)=>a%256/128-1,p=[0,0,0,0,0,0,3,1][tf>>13&7],kick=tanh(sin(cbrt(tf%16384)**0.8*10))*max(0,1-tf/4096%4)/2,hihat=sin((t|0)**3)*max(0,1-tf/4096%2)*sidechain/16,snare=sin((t/7|0)**3)*max(0,1-tf/8192%2)*(tf>>14&1)/4*sidechain,cowbell=(btf(t*1.7*2**(p/12))+btf(t*1.7*2**(7/12)*2**(p/12)))*max(0,1-tf/4096%2)/7,(kick+hihat+snare+cowbell)*10"
+			}
+		]
+	},
     {
         "author": "vbinchees3000",
         "children":  [
@@ -7848,14 +7928,6 @@
 "sin(sin(c*10)*(log(0.9+(c/[1,2,1,50][ia((c/1200)%4)])%4)*40))*20*e(60+c/30,5,3,0.40)*mx(3)"
 		]
 	},
-    {
-        "author": "!{G&Ycatjuice}? (greenandyellowcatjuice)",
-        "name": "808 points collected",
-        "date": "Dec 24, 2025",
-        "mode": "Floatbeat",
-        "sampleRate": 48000,
-        "codeOriginal": "BPM=135,SR=48E3,tf=abs(t/SR*32768/120*BPM),sidechain=min(1,tf/4096%4),btf=(a)=>a%256/128-1,p=[0,0,0,0,0,0,3,1][tf>>13&7],kick=tanh(sin(cbrt(tf%16384)**0.8*10))*max(0,1-tf/4096%4)/2,hihat=sin((t|0)**3)*max(0,1-tf/4096%2)*sidechain/16,snare=sin((t/7|0)**3)*max(0,1-tf/8192%2)*(tf>>14&1)/4*sidechain,cowbell=(btf(t*1.7*2**(p/12))+btf(t*1.7*2**(7/12)*2**(p/12)))*max(0,1-tf/4096%2)/7,(kick+hihat+snare+cowbell)*10"
-    },
     {
         "author": "L1TTL3_BR4Z1LI4N (Separate_Sundae_8815)",
         "name": "𝙄𝙉𝙏𝙊 𝙏𝙃𝙀 𝙊𝘽𝙇𝙄𝙑𝙄𝙊𝙉",
