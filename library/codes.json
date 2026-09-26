@@ -4351,13 +4351,7 @@
                 "date": "Apr 22, 2025",
                 "sampleRate": 44100,
                 "codeOriginal": "(t*2**((-(21+(t>>15&3))/12))&64)+(t%[25,3,12,3][t>>13&3]?r:r=random()*2&1&&max((~t>>5&255)-192,0))+(t*2**(((5<<(t>>20&1))-(t>>17&3))/12)&64&t>>13)"
-            },
-            {
-                "name": "here's a \"game\" that gets boring after a few seconds",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1kzyqvg/heres_a_game_that_gets_boring_after_a_few_seconds/",
-                "date": "May 31, 2025",
-                "codeOriginal": "this.hits??=-1,this.ex??=[\">{:3}\",\">{XO}\"],t==0?hits++:0,t&255?(()=>{for(i=o=0;i<=(~t>>8&15);i++){o+=t*7%(i+1)};return o*4*(t<4096)})():(()=>{throw `\\n\\n${ex[t==0||t>2E3?0:1]}\\n\\nThis is Bitty. Bitty wants pain. To hit him,\\nfirst press the play button and then the \"Reset time to 0\" button.\\n\\nHits: ${hits}\nCurrent Weapon: metal pipe`})()"
-            },
+			},
             {
                 "name": "POV how it feels on the very last day of school",
 				"url": "https://www.bytebeat.cloud/post/22aa5bfc-6972-44cf-be63-0a26f55846be"
