@@ -22,7 +22,7 @@
                 "url": "https://www.pouet.net/topic.php?post=388536",
                 "date": "Sep 30, 2011",
                 "c": true,
-                "codeOriginal": "(t*(t-(t<<4|t>>14)&3&t<<3)|(t>>6|t&64)) ^ (t<<2&t>>3|t>>5|(t>>65&t>>5)*t>>5)",
+                "codeOriginal": "(t*(t-(t<<4|t>>14)&3&t<<3)|(t>>6|t&64)) ^ (t<<2&t>>3|t>>5|(t>>65&t>>5)*t>>5)"
             }
         ]
     },
