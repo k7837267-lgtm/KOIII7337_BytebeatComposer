@@ -16,6 +16,13 @@
                 "c": true,
                 "codeOriginal": "t*(t>>((t>>9)|(t>>8))&(63&(t>>4)))",
                 "codeMinified": "t*(t>>(t>>9|t>>8)&(63&t>>4))"
+            },
+            {
+                "name": "Cyberspace dragon playing around with synthetic fire",
+                "url": "https://www.pouet.net/topic.php?post=388536",
+                "date": "Sep 30, 2011",
+                "c": true,
+                "codeOriginal": "(t*(t-(t<<4|t>>14)&3&t<<3)|(t>>6|t&64)) ^ (t<<2&t>>3|t>>5|(t>>65&t>>5)*t>>5)",
             }
         ]
     },
@@ -4344,6 +4351,19 @@
                 "date": "Apr 22, 2025",
                 "sampleRate": 44100,
                 "codeOriginal": "(t*2**((-(21+(t>>15&3))/12))&64)+(t%[25,3,12,3][t>>13&3]?r:r=random()*2&1&&max((~t>>5&255)-192,0))+(t*2**(((5<<(t>>20&1))-(t>>17&3))/12)&64&t>>13)"
+            },
+            {
+                "name": "here's a \"game\" that gets boring after a few seconds",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1kzyqvg/heres_a_game_that_gets_boring_after_a_few_seconds/",
+                "date": "May 31, 2025",
+                "codeOriginal": "this.hits??=-1,this.ex??=[\">{:3}\",\">{XO}\"],t==0?hits++:0,t&255?(()=>{for(i=o=0;i<=(~t>>8&15);i++){o+=t*7%(i+1)};return o*4*(t<4096)})():(()=>{throw `\\n\\n${ex[t==0||t>2E3?0:1]}\\n\\nThis is Bitty. Bitty wants pain. To hit him,\\nfirst press the play button and then the \"Reset time to 0\" button.\\n\\nHits: ${hits}\nCurrent Weapon: metal pipe`})()"
+            },
+            {
+                "name": "POV how it feels on the very last day of school",
+				"url": "https://www.bytebeat.cloud/post/22aa5bfc-6972-44cf-be63-0a26f55846be"
+                "date": "Dec 23, 2025",
+                "sampleRate": 32000,
+                "codeOriginal": "b=\"55205524\"[t>>16&7],r=12288,p=parseInt,a=t=>(((t=max(t,0))*(t>>13<265)*2**(p(t&8192?\"CA97CA79\"[t>>14&7]:b,36)/12+(t>>19&1)-1)&63)+24&64)*(1-t%8192/r),a(t)+a(t-r)/3+a(t-r*2)/4+((t*2**(p(b)/12-4)&31)+6*sin(t/r)+16&32*(t>>20==1))"
             }
         ]
     },
