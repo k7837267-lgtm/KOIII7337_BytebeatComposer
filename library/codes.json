@@ -52,6 +52,41 @@
       }
     ]
   },
+  {
+    "author": "tejeez",
+    "children": [
+      {
+        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+        "date": "Sep 18, 2011",
+        "c": true,
+        "codeOriginal": "(t*(t>>5|t>>8))>>(t>>16)",
+		"codeMinified": "t*(t>>5|t>>8)>>(t>>16)"
+      },
+      {
+        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+        "date": "Sep 18, 2011",
+        "c": true,
+        "codeOriginal": "t*(((t>>11)&(t>>8))&(123&(t>>3)))",
+        "codeMinified": "t*(t>>11&t>>8&123&t>>3)"
+      },
+      {
+        "name": "Noisy beats",
+        "url": "https://youtu.be/GtQdIYUtAHg?t=2m55s",
+        "date": "Sep 18, 2011",
+        "c": true,
+        "codeOriginal": "((-t&4095)*(255&t*(t&(t>>13)))>>12)+(127&t*(234&t>>8&t>>3)>>(3&t>>14))",
+        "codeMinified": "((-t&4095)*(255&t*(t&t>>13))>>12)+(127&t*(234&t>>8&t>>3)>>(3&t>>14))"
+      },
+      {
+        "name": "Bassline #countercomplex",
+        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+        "date": "Oct 5, 2011",
+        "c": true,
+        "starred": 1,
+        "codeOriginal": "(~t>>2)*((127&t*(7&t>>10))<(245&t*(2+(5&t>>14))))"
+      }
+    ]
+  },
     { 
         "author": "visy",
         "children": [
