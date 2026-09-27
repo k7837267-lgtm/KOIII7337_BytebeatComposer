@@ -1,4 +1,57 @@
 [
+  {
+    "author": "viznut",
+    "children": [
+      {
+        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+        "date": "Sep 18, 2011",
+        "c": true,
+        "codeOriginal": "t*(((t>>12)|(t>>8))&(63&(t>>4)))",
+        "codeMinified": "t*((t>>12|t>>8)&63&t>>4)"
+      },
+      {
+        "name": "Sin() isn't kosher, people!",
+        "url": "https://www.pouet.net/topic.php?which=8357&page=4#c388477",
+        "date": "Sep 30, 2011",
+        "c": true,
+        "starred": 1,
+        "codeOriginal": "(t>>6|t|t>>(t>>16))*10+((t>>11)&7)",
+        "codeMinified": "10*(t>>6|t|t>>(t>>16))+(7&t>>11)"
+      },
+      {
+        "name": "Combined xpansive's and varjohukka's stuff",
+        "url": "https://www.pouet.net/topic.php?which=8357&page=4#c388488",
+        "date": "Sep 30, 2011",
+        "c": true,
+        "starred": 2,
+        "codeOriginal": "(t>>7|t|t>>6)*10+4*(t&t>>13|t>>6)"
+      },
+      {
+        "name": "Another attempt at melody construction (\"Running man\")",
+        "url": "http://www.pouet.net/topic.php?which=8357&page=9#c388930",
+        "date": "Oct 4, 2011",
+        "c": true,
+        "starred": 2,
+        "codeOriginal": "(t*((3+(1^t>>10&5))*(5+(3&t>>14))))>>(t>>8&3)",
+        "codeMinified": "t*(3+(1^t>>10&5))*(5+(3&t>>14))>>(t>>8&3)"
+      },
+      {
+        "name": "#countercomplex \"moon scanner generalization\", based on jaffa's formula",
+        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+        "date": "Oct 6, 2011",
+        "c": true,
+        "starred": 1,
+        "codeOriginal": "((t>>5&t)-(t>>5)+(t>>5&t))+(t*((t>>14)&14))",
+        "codeMinified": "2*(t>>5&t)-(t>>5)+t*(t>>14&14)"
+      },
+      {
+        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+        "date": "Oct 10, 2011",
+        "c": true,
+        "codeOriginal": "(t&t%255)-(t*3&t>>13&t>>6)"
+      }
+    ]
+  },
     { 
         "author": "visy",
         "children": [
