@@ -9665,7 +9665,11 @@
                 "mode": "Floatbeat",
                 "sampleRate": 44100,
                 "codeOriginal": "t||(A=Array(n=12288).fill(0)),n=t>>12&t>>15,m=2**(parseInt('0CEAFM0CEAFM0FE7'[t>>12&15],36)/12),f=x=>x&&abs(sin(t*m*x*PI/256)/18)+f(x-1),g=x=>f(x)/x,atan(g(min(round((cos(t/'21'[t>>13&1]%4096*PI/16384))**2*8),(-t>>10)&31)+1)*16)/2+sin(2*sqrt(t%16384))*(.9997**(t%16384))"
-            }
+            },
+			{
+				"name": "READ THIS MESSAGE (From Trillwin)",
+				"description": "”im sorry but i will be barely active on bytebeat.cloud due to many thing i gotta do”"
+			}
         ]
     },
     {
