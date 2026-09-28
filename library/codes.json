@@ -417,7 +417,7 @@
     },
     {
         "author": "beyon",
-		"name": "A bit long I suppose...but nice and soothing",
+		"name": "A bit long I suppose...but nice and soothing. Featuring a snippet from yumeji on pouet.net",
         "remix": {
             "author": "yumeji",
             "name": "generic 3/4 buildup",
@@ -3312,6 +3312,22 @@
             }
         ]
     },
+  {
+    "author": "KingDCNT",
+    "children": [
+      {
+        "name": "1989",
+        "url": "https://www.reddit.com/r/bytebeat/comments/11ue35d/1989/",
+        "date": "Mar 18, 2023",
+        "sampleRate": 48000,
+        "codeOriginal": "t*(t&t>>12|t&t>>11)/1989"
+      },
+      {
+        "name": "9|9",
+        "codeOriginal": "t*(t>>9|9)"
+      },
+	]
+  },
     {
         "author": "bulletbill",
         "cover": {
