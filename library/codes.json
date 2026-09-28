@@ -9793,6 +9793,29 @@
 			}
 		]
 	},
+    {
+        "author": "Inevitable_Poetry957",
+        "children": [
+            {
+                "name": "Well this is an heavenly beat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1s11kwx/well_this_is_an_heavenly_beat/",
+                "date": "Mar 22, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 32000,
+                "stereo": true,
+                "codeOriginal": "t?(T=t,sr=44100,bpm=120,st=T/8000|0,ph=(T%8000)/8000,env=Math.exp(-ph*4),pwm=Math.sin(T/15000)*.3+.5,sierp=(st&(st>>2)+(st>>5))%8,note=[0,2,7,9,12,14,19,21][sierp],f=440*2**(note/12),sig=((T*f/sr%1)<pwm?.2:-.2)*env,tap=(d,g)=>(T2=T-d,st2=T2/8000|0,ph2=(T2%8000)/8000,s2=(st2&(st2>>2)+(st2>>5))%8,n2=[0,2,7,9,12,14,19,21][s2],f2=440*2**(n2/12),((T2*f2/sr%1)<(Math.sin(T2/15000)*.3+.5)?.15:-.15)*Math.exp(-ph2*2)*g),verb=tap(4000,.4)+tap(8000,.3)+tap(12000,.2)+tap(16000,.15)+tap(24000,.1)+tap(32000,.05),L=sig+verb,R=sig*.4+verb*1.6,L=L/2+.5,R=R/2+.5,[L,R]):(a=b=0)"
+            },
+            {
+                "name": "Italian ahh beat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1s11p0p/italian_ahh_beat/",
+                "date": "Mar 22, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 38500,
+                "stereo": true,
+                "codeOriginal": "t/=2.5,t?(T=t,sr=32000,st=T/6000|0,ph=(T%6000)/6000,env=Math.exp(-ph*5),sierp=(st&(st>>2))^(st>>5&st>>7),note=[0,2,4,5,7,9,11,12,14,16,17,19,21,23,24,26][sierp%16],f=440*2**(note/12),sig=((T*f/sr%1)*2-1)*env,bass=((T*(f/4)/sr%1)<0.5?0.4:-0.4)*Math.exp(-ph*2),tap=(d,g)=>(T2=T-d,st2=T2/6000|0,ph2=(T2%6000)/6000,s2=(st2&(st2>>2))^(st2>>5&st2>>7),n2=[0,2,4,5,7,9,11,12,14,16,17,19,21,23,24,26][s2%16],f2=440*2**(n2/12),((T2*f2/sr%1)*2-1)*Math.exp(-ph2*3)*g),verb=tap(4000,.4)+tap(8000,.3)+tap(12000,.2)+tap(16000,.15)+tap(24000,.1)+tap(32000,.05),L=sig+bass+verb,R=sig*.4+bass+verb*1.6,L=L/2.5+0.5,R=R/2.5+0.5,[L,R]):(0)"
+            }
+        ]
+    },
     { 
         "author": "Cyberslot",
         "name": "Hardbyte.wav (Remix of Winter Whispers of Equestria · Hexwave)",
