@@ -270,6 +270,41 @@
             }
         ]
     },
+  {
+    "name": "Frere Jacques",
+    "author": "Lord Graga",
+    "url": "http://www.pouet.net/topic.php?which=8357&page=7#c388764",
+    "date": "Oct 3, 2011",
+    "codeOriginal": "(t>>7|t*3|t>>(t>>15))*10+((t>>8)&5)",
+    "codeMinified": "10*(t>>7|3*t|t>>(t>>15))+(t>>8&5)"
+  },
+  {
+    "author": "marmakoide",
+    "children": [
+      {
+        "name": "Lemmings March",
+        "url": "http://www.pouet.net/topic.php?which=8357&page=7#c388798",
+        "date": "Oct 3, 2011",
+        "codeOriginal": "(t>>5)|(t<<4)|((t&1023)^1981)|((t-67)>>4)",
+        "codeMinified": "t>>5|t<<4|t&1023^1981|t-67>>4"
+      },
+      {
+        "name": "string instruments, with a metallic triangle",
+        "url": "https://www.pouet.net/topic.php?which=8357&page=8#c388874",
+        "date": "Oct 4, 2011",
+        "codeOriginal": "(t>>(t&7))|(t<<(t&42))|(t>>7)|(t<<5)",
+        "codeMinified": "t>>(t&7)|t<<(t&42)|t>>7|t<<5"
+      },
+      {
+        "name": "The fall of Derp Herp",
+        "url": "http://www.pouet.net/topic.php?which=8357&page=10#c388980",
+        "date": "Oct 5, 2011",
+        "codeOriginal": "t*(0x13371337>>(t>>13&27)&127)|t>>4|t<<5",
+        "codeMinified": "t*(322376503>>(t>>13&27)&127)|t>>4|t<<5",
+        "starred": 2
+      }
+    ]
+  },
     {
         "author": "216",
         "url": [
