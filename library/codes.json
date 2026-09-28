@@ -211,6 +211,45 @@
             }
         ]
     },
+  {
+    "author": "Paralax",
+    "name": "a quite complex one using conditionals",
+    "url": "http://www.pouet.net/topic.php?which=8357&page=6#c388670",
+    "date": "Oct 2, 2011",
+    "codeOriginal": "(t&t*5|t>>6 | ((t&0xFFFF)>0x8000? (-6*t)/7 : ((t&0x1FFFF)>0x10000 ? -9*t&100 : (-9*(t&100)))/11))*10",
+    "codeMinified": "10*(t&5*t|t>>6|(t&32768?-6*t/7:(t&65536?-9*t&100:-9*(t&100))/11))"
+  },
+  {
+    "author": "frenzy",
+    "name": "robot out of control",
+    "url": "http://www.pouet.net/topic.php?which=8357&page=6#c388680",
+    "date": "Oct 2, 2011",
+    "codeOriginal": "(t&64|t>>5)^(t&33|t>>8)^(t&14|t>>9|t&76)^(t|187)^(t*(t>>8&838+t>>13)&644)",
+    "codeMinified": "(t&64|t>>5)^(t&33|t>>8)^(t&14|t>>9|t&76)^(t|187)^t*(t>>8&838+t>>13)&644"
+  },
+  {
+    "author": "lucasvb",
+    "name": "this shit is addictive",
+    "url": "http://www.reddit.com/r/programming/comments/kyj77/algorithmic_symphonies_from_one_line_of_code_how/",
+    "date": "Oct 2, 2011",
+    "codeOriginal": "(t>>6|t<<1)+((t>>5|t<<3)|t>>3)|t>>2|t<<1",
+    "codeMinified": "(t>>6|t<<1)+(t>>5|t<<3|t>>3)|t>>2|t<<1"
+  },
+  {
+    "author": "µB",
+    "name": "One-liner",
+    "url": "https://chipmusic.org/%C2%B5b/music/one-liner/",
+    "date": "Oct 2, 2011",
+    "codeOriginal": "(64*(t>>3|t>>4|t>>9)+(t>>11&t<<2))^2*(t>>16|t|t>>7)+32*(t>>t&32)",
+    "codeMinified": "64*(t>>3|t>>4|t>>9)+(t>>11&t<<2)^2*(t>>16|t|t>>7)+32*(t>>t&32)"
+  },
+  {
+    "author": "stimmer",
+    "url": "https://forum.arduino.cc/t/one-line-algorithmic-music/73409",
+    "date": "Oct 3, 2011",
+    "codeOriginal": "(t*(4|7&t>>13)>>((~t>>11)&1)&128) + ((t)*(t>>11&t>>13)*((~t>>9)&3)&127)",
+    "codeMinified": "t*(4|t>>13&3)>>(~t>>11&1)&128|t*(t>>11&t>>13)*(~t>>9&3)&127"
+  },
     {
         "author": "stephth",
 		"url": "https://news.ycombinator.com/item?id=3064986",
