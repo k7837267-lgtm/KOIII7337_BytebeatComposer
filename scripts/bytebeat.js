@@ -328,7 +328,7 @@ globalThis.bytebeat = new class {
 						+ ' <small style="color:#F70">mqdantee’s Larp Clone</small>' :
 					author == "probablythebestusernameever" ?
 						authorsList
-						+ ' <small style="color:#FF0">Best User In BytebeatCloud</small>' :
+						+ ' <small style="color:#FF0">Best User I’ve Ever Seen In BytebeatCloud</small>' :
 					author == "viznut" ?
 						authorsList
 						+ ' <small style="color:#5F5">The man who popularized bytebeat back in September 2011.</small>' :
