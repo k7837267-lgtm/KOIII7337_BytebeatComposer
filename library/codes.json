@@ -3311,23 +3311,7 @@
                 "codeOriginal": "s=sinf,t*=0.866,(m=t>>19)<5?sin((s(t^4*(1+(28&(x=t>>11))))*s(t/(z=[4,4,5,6][x/32&3]))*(y=(4095&-t/2)/4e3)/s(t/128))+random()/2*s(t/64)*(1&(-(m/2?(m<3?x/2:x/4):-x/4)|x/8))+s(t/128)*(m/2?2:0)+s((t*2/z^(27&x/4)*12)*(2+(2&x/2)))*y*(m/2?(m<3?2:0):0)):0"
             }
         ]
-    },
-  {
-    "author": "KingDCNT",
-    "children": [
-      {
-        "name": "1989",
-        "url": "https://www.reddit.com/r/bytebeat/comments/11ue35d/1989/",
-        "date": "Mar 18, 2023",
-        "sampleRate": 48000,
-        "codeOriginal": "t*(t&t>>12|t&t>>11)/1989"
-      },
-      {
-        "name": "9|9",
-        "codeOriginal": "t*(t>>9|9)"
-      },
-	]
-  },
+	},
     {
         "author": "bulletbill",
         "cover": {
