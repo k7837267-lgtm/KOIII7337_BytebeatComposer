@@ -139,6 +139,25 @@
             }
         ]
     },
+  {
+    "author": "xpansive",
+    "children": [
+      {
+        "name": "Lost in Space",
+        "url": "http://www.pouet.net/topic.php?which=8357&page=3#c388375",
+        "date": "Sep 29, 2011",
+        "c": true,
+        "codeOriginal": "((t*(t>>8|t>>9)&46&t>>8)) ^ (t&t>>13|t>>6)",
+        "codeMinified": "t*(t>>8|t>>9)&46&t>>8^(t&t>>13|t>>6)"
+      },
+      {
+        "url": "http://www.pouet.net/topic.php?which=8357&page=21#c401775",
+        "date": "Feb 25, 2012",
+        "c": true,
+        "codeOriginal": "t%(t/(t>>9|t>>13))"
+      }
+    ]
+  },
     {
         "author": "varjohukka",
         "children": [
