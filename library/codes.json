@@ -2958,8 +2958,10 @@
             {
                 "name": "long weekend chair",
                 "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/11q7hwx/long_weekend_chair/",
                     "https://web.archive.org/web/20230313114934/https://www.reddit.com/r/bytebeat/comments/11q7hwx/long_weekend_chair/",
-                    "https://ihsoyct.github.io/index.html?comments=11q7hwx"
+                    "https://ihsoyct.github.io/index.html?comments=11q7hwx",
+                    "https://search.pullpush.io/?author=glebguything&subreddit=bytebeat&type=submission&q=long+weekend+chair&sort_type=created_utc&sort=desc"
                 ],
                 "date": "Mar 13, 2023",
                 "sampleRate": 34000,
@@ -2973,8 +2975,10 @@
                     "url": "https://dollchan.net/de/res/706.html#707"
                 },
                 "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/11rts6t/egypt_dungeon/",
                     "https://web.archive.org/web/20230315113705/https://reddit.com//r/bytebeat/comments/11rts6t/egypt_dungeon/",
-                    "https://ihsoyct.github.io/index.html?comments=11rts6t"
+                    "https://ihsoyct.github.io/index.html?comments=11rts6t",
+                    "https://search.pullpush.io/?author=glebguything&subreddit=bytebeat&type=submission&q=Egypt+dungeon&sort_type=created_utc&sort=desc"
                 ],
                 "date": "Mar 15, 2023",
                 "sampleRate": 32000,
@@ -2983,22 +2987,33 @@
             {
                 "name": "CAPERMISSION",
                 "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/11x9ex9/capermission/",
                     "https://web.archive.org/web/20230321070456/https://reddit.com//r/bytebeat/comments/11x9ex9/capermission/",
-                    "https://ihsoyct.github.io/index.html?comments=11x9ex9"
+                    "https://ihsoyct.github.io/index.html?comments=11x9ex9",
+                    "https://search.pullpush.io/?author=glebguything&subreddit=bytebeat&type=submission&q=CAPERMISSION&sort_type=created_utc&sort=desc"
                 ],
                 "date": "Mar 21, 2023",
                 "codeOriginal": "((t*(0x9273727>>(t>>9&30)&15)|t>>8)%256/2+sin(4e3/(t%4096))*50+50)%256*(-t&2047)/2E3+(t*4&-t>>8)%256/4"
             },
             {
                 "name": "No limit type beat",
-                "url": "https://web.archive.org/web/20230414113330/https://www.reddit.com/r/bytebeat/comments/12lu636/no_limit_type_beat/",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/12lu636/no_limit_type_beat/",
+                    "https://web.archive.org/web/20230414113330/https://www.reddit.com/r/bytebeat/comments/12lu636/no_limit_type_beat/",
+                    "https://search.pullpush.io/?author=glebguything&subreddit=bytebeat&type=submission&q=No+limit+type+beat&sort_type=created_utc&sort=desc"
+                ],
                 "date": "Apr 14, 2023",
                 "sampleRate": 32000,
                 "codeOriginal": "t/=4,(t*t*4)%256*(-t/[2,1,4,4,4,4,1,1][(t>>12)%8]&2047)/2E3%256/3+(sin(4e3/(t%4096))*50)+50+(random ()*50&-t>>5)*[0,1][(t>>11)%2]+(t*4&-t>>9|t*8&-t>>10)%256/4"
             },
             {
                 "name": "Remix this or something",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1befdrp/please_remix_this_restored/",
+                "url": [
+                    "https://www.reddit.com/r/bytebeat/comments/12msbb8/remix_this_or_something/",
+                    "https://www.reddit.com/r/bytebeat/comments/1befdrp/please_remix_this_restored/",
+                    "https://web.archive.org/web/20230415100230/https://reddit.com//r/bytebeat/comments/12msbb8/remix_this_or_something/",
+                    "https://search.pullpush.io/?author=glebguything&subreddit=bytebeat&type=submission&q=Remix+this+or+something&sort_type=created_utc&sort=desc"
+                ],
                 "date": "Apr 15, 2023",
                 "sampleRate": 44100,
                 "codeOriginal": "(t*[1,2,3,4,3,2.5,2.5,2.5,1,2,3,4,3,2,2,2][(t>>13)%16]/[1,1.5,2,2.5][(t>>18)%4]%256*(-t/4&2047)/2E3)%256/2+(t*[1,2,3,4,3,2.5,2.5,2.5,1,2,3,4,3,2,2,2][(t>>13)%16]/[1,1.5,2,2.5][(t>>18)%4]%256*(-t/8&2047)/2E3&128)%256/2",
@@ -3110,6 +3125,11 @@
             },
             {
                 "name": "did something with it",
+                "remix": {
+                    "author": "Gaham",
+                    "name": "Very bad beeper tracker",
+                    "url": "https://dollchan.net/btb/res/727.html#4997"
+                },
                 "url": "https://dollchan.net/btb/res/727.html#5004",
                 "date": "Nov 21, 2024",
                 "codeOriginal": "t%=131051,x=128*(-t>>12&30|-t>>13&25)/2E3,beepertraker=(c,p,bpm,l,v)=>((c*x/1.7067*p[(t>>bpm)%l])%150&128)%256/v,beepertraker(t,[6,5,4,3,4,5,4,4],12,8,2)+beepertraker(t,[5,7,9, ,5,3,2, ],12,8,2)+beepertraker(t,[1,2,3,2,1,3,6,3],12,8,2)"
@@ -3297,9 +3317,23 @@
                     "https://dollchan.net/btb/res/727.html#6211",
                     "https://www.reddit.com/r/bytebeat/comments/1ke3dr5/long_weekday_chair/"
                 ],
-                "date": "May 03, 2025",
+                "date": "May 3, 2025",
                 "sampleRate": 34000,
                 "codeOriginal": "r=t,t/=4,r>1702637?128:r>1572611?sin(cbrt(t/16%4096*453400))%256*(2046&-t/16)/3e3*128+128:min((-(10*(t>>6|t|t>>(t>>16))+(7&t>>11)/4&t>>4|t>>3)%(t>>t/[4,6,5,4.5][(t>>14)%4])|t>>4)%256/4*(2046&t/2)/500+64+t*2**[2,3,4,3.27,3.42,3,4,3][t>>11&7]%256/2*(2046&-t)/2e3,255)%256/2+(r>1048560?0:(r>520427?4e4/(t%4096+30)&127+sin(t/2**[0.35,0.75,1.35,1.67][(t>>14)%4])*25-25:0))+(t*t*t*0.1&-t>>5&63)*(1&t>>11)"
+            },
+            {
+                "name": "The Cycling of The Concept of Infinity",
+                "remix": {
+                    "author": "absolute197",
+                    "name": "Cycle Infinite",
+                    "url": "https://search.pullpush.io/?author=absolute197&subreddit=bytebeat&type=submission&q=Cycle&sort_type=created_utc&sort=desc"
+                },
+                "url": "https://www.reddit.com/r/bytebeat_2/comments/1mwnkls/the_cycling_of_the_concept_of_infinity/",
+                "date": "Aug 21, 2025",
+                "sampleRate": 36500,
+                "mode": "Floatbeat",
+                "exotic": true,
+                "codeOriginal": "z=t*(1.0596**[4,5,9,12][3&t>>12])*[1,1.125][1&t>>16]*((w=t>>17)>1?(1+(1&-t>>18)/3):1),a=sinf(t/32)*32*(1&t>>14),x=(827&(z/2^z*4^z*2|t>>9)/2)%256/32-1,y=t+(2**12),w>15?0:(w>11?cbrt(sin(sinf(z+a)*3.3))%256*(-t/256&4095)/4e3/2:sin((w>10?0:sin(cbrt(sinf(z)*([2e3/(-t/64&4095)/3][t>>18]||2)*sinf(t/64)*128*([2e3/(-t/64&4095)/8][t>>18]||1)))/2)+(w>3?sin(t**3/100)/(1+(t>>(3+(7&t>>12))&127)/8)+cbrt(sin(cbrt(t%(4096*4)*1288)))/2:atan(t/512%tanh(4e3/(t/4%4096))%tan(t*PI/128/128)*12)+5+(x%256*(-y/16&4095)/4e2/2*(1&t>>15)))+(z*(3&t>>13)/64&1)/2*(w>3?1:1&-t>>12)-0.25+(w>3?(z/128*2>>z/128*8&1)*2%256*(4095&-t)/4e3:0)))"
             },
             {
                 "name": "xor beat",
@@ -3309,6 +3343,20 @@
                 "mode": "Floatbeat",
                 "exotic": true,
                 "codeOriginal": "s=sinf,t*=0.866,(m=t>>19)<5?sin((s(t^4*(1+(28&(x=t>>11))))*s(t/(z=[4,4,5,6][x/32&3]))*(y=(4095&-t/2)/4e3)/s(t/128))+random()/2*s(t/64)*(1&(-(m/2?(m<3?x/2:x/4):-x/4)|x/8))+s(t/128)*(m/2?2:0)+s((t*2/z^(27&x/4)*12)*(2+(2&x/2)))*y*(m/2?(m<3?2:0):0)):0"
+            },
+            {
+                "name": "t*1.5**x",
+                "url": "https://dollchan.net/btb/res/727.html#13557",
+                "date": "Mar 26, 2026",
+                "codeOriginal": "((t*(1.5**(t>>9&13))/2**(1+(t>>9&3)-(1&t>>13)/2)%256*(4095&-t)/4e3)^(t/2**(2+(3&t>>9))|t*1.5**(15&t>>11))|4e5/(t%4096+170)/4)%256*(4095&-t*2)/5e3"
+            },
+            {
+                "name": "angry sounding bass",
+                "date": "Aug 23, 2026",
+                "codeOriginal": [
+                    "x=(1+(3&t>>10))/((1+(3&t>>16))+(3&t>>14)/4),",
+                    "((t*x^t*3*x)*(t*x^t*3*x)+(t>>t*x/2))%256*(4095&-t*4/(1+(3&t>>12^3&t/8*x)))/8e3+(random()*128&-t>>5)*(1&t>>12)*(1&-t>>11)"
+                ]
             }
         ]
 	},
@@ -4210,6 +4258,14 @@
                 "big": true,
                 "file": "absolute197-10.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "New World",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1t4vrgr/new_world/",
+                "date": "May 05, 2026",
+                "sampleRate": 34400,
+                "codeOriginal": "w=((t*2**(([[10,7,3,0],[7,3,2,-2],[8,3,0,-5],[5,2,0,-2]][t*1.64>>17&3][t&3]-(t*1.64>>20&1))/12)*'1100101010110010'[t*1.64>>12&15]*1.51)%256)/3,t?0:a=Array(R=12288).fill(0),r=w+a[t%R],a[t%R]=r/5,A=B=0,A+=B+=r-A",
+                "codeMinified": "t?a[l=t%12288]=t*2**(([[10,7,3,0],[7,3,2,-2],[8,3,0,-5],[5,2,0,-2]][(T=t*1.64)>>17&3][t&3]-(T>>20&1))/12)*'1100101010110010'[T>>12&15]*1.51%256/3+(a[l]||0)/5:a=[]"
             }
         ]
     },
@@ -4681,7 +4737,7 @@
         "author": "awogler9124812041",
 		"children": [
 			{
-                "name": "ultimate bitbeat",
+                "name": "tritbeat",
                 "remix": {
                     "author": "BSquareII",
                     "name": "some cool bitbeat thing i made",
@@ -5090,6 +5146,7 @@
                 "date": "Dec 9, 2025",
                 "sampleRate": 32000,
 				"mode": "Floatbeat",
+				"slow": true,
                 "file": "SRB2er-1.js",
                 "fileOriginal": true
 			},
@@ -7152,6 +7209,36 @@
                 "big": true,
                 "file": "newmemesfromsnapchat2.js",
                 "fileOriginal": true
+            },
+            {
+                "name": "FoldableFlanger",
+                "remix": {
+                    "author": "PortablePorcelain",
+                    "name": "foldableboldface",
+                    "url": "https://dollchan.net/btb/res/55.html#194"
+                },
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ov15rh/foldableflanger/",
+                "date": "Nov 12, 2025",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "codeOriginal": [
+                    "x=t/15,T=t,l=0,t?0:(a=Array(n=round(1000)).fill(0),A=Array(V=round(20480)).fill(0)),t/=d=8+sin(x/164882)/40,f=q=>(a[(t*d)%n]=q/4-(a[(t*d*1.01|0)%n]||0)/3-(a[(t*d/1.01|0)%n]||0)/3,A[(t*d)%V]=a[(t*d)%n]+(A[(t*d)%V]||0)/1.5),f((sin(sin(t*(0xf01dab1eb01dface*((x>>13)+11521)).toString(9)[x>>9&15]*PI/[32,48,64,24][x>>15&3]/3*2)*(sin(t*PI/8192)+2)*(t/163840+1))*(",
+                    "max(1-x/4%128/128/1.5,0)*min(x/4%128/8,1))+random()*sin(t/5555)/4)*2+atan(tan(t/[32,48,64,48][x>>15&3]/3*PI)*cos(t/[32,48,64,48][x>>15&3]/1.5*8*PI)*(t/[32,48,64,48][x>>15&3]*16/3&8)+tan(t/[32,48,64,48][x>>15&3]/3*2*PI+PI/2)/8-sin(t*PI*4/[32,48,64,24][x>>15&3]/3*2)*8)*min(x/16%128/50,1))+sin(0.95**(x/16%128)*80)*min(x/16%128,8)*max(1-x/16%128/32,0)"
+                ]
+            },
+            {
+                "name": "Ｗ Ｅ Ｌ Ｌ Ｉ Ｋ Ｎ Ｏ Ｗ Ｗ Ｈ Ａ Ｔ Ｗ Ｅ Ｒ Ｅ Ｙ Ｏ Ｕ Ｄ Ｏ Ｉ Ｎ Ｇ",
+                "remix": {
+                    "author": "PortablePorcelain",
+                    "name": "What am I even doing",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1gzqyxp/what_am_i_even_doing/"
+                },
+                "url": "https://www.reddit.com/r/bytebeat/comments/1qjsxu0/%EF%BD%97_%EF%BD%85_%EF%BD%8C_%EF%BD%8C_%EF%BD%89_%EF%BD%8B_%EF%BD%8E_%EF%BD%8F_%EF%BD%97_%EF%BD%97_%EF%BD%88_%EF%BD%81_%EF%BD%94_%EF%BD%97_%EF%BD%85_%EF%BD%92_%EF%BD%85_%EF%BD%99_%EF%BD%8F_%EF%BD%95_%EF%BD%84_%EF%BD%8F_%EF%BD%89_%EF%BD%8E_%EF%BD%87/",
+                "date": "Jan 22, 2026",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "stereo": true,
+                "codeOriginal": "t/=.8,drums=cbrt(sin(log10(t%32768)*15))*max(0,1-t/16384%2)*2+sin(sin((t>>4)*(t>>2)*815)*max(0,t/32768%2-1)**3*300)*max(0,1-t/16384%2)*3*(t>>15&1)+(t>>15&7||!(t>>15&15)?t>>13&3?(random()-.5)*(1-t/16384%1)**2*5:0:0),d=t*[24,24,24,24,24,24,19.2,21][t>>16&7]/24,c=(t>>15&7?(t/32768%1)**.5*(t&131072?sin((-t>>15&3?t>>18&1?.5:t/16384:t>>18&1?t/128*21/24:t/8192)%1*PI):1):t>>18&1?(1-t/4096%16%3/3)*(1-t/256%1):.3)*(1-t/32768%1)**.2,a=t=>sin(t/16*3+sin(t/16*3)*4+cos(t/4)*tanh(tan(t/4)*88))**7+(cos(t/16+sin(t/16)*8)**127*cos(t*4)*atan(tan(t/32)*cos(t*2)*8)-cos(t/16+cos(t/16)*14)**13)+(cos(t/16+log(tan(t/16/2))*8)||sin(t+cos(t/4)*8))**7,b=t=>a(cos(t/16)+t)-a(t)*cos(t*3/16),o=x=>tanh(((tanh(b(d/8*PI/4+t*x/5000))+atan(tan(d/8*PI/2)*8)*a(d/8*PI/4))*exp(c*4-2)+drums)), [o(1),o(-1)]"
             }
         ]
     },
