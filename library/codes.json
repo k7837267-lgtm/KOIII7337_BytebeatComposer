@@ -42,7 +42,7 @@
         "c": true,
         "starred": 1,
         "codeOriginal": "((t>>5&t)-(t>>5)+(t>>5&t))+(t*((t>>14)&14))",
-        "codeMinified": "2*(t>>5&t)-(t>>5)+t*(t>>14&14)"
+        "codeMinified": "(t>>5^-t)+t+t*(t>>14&14)"
       },
       {
         "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
@@ -10407,6 +10407,17 @@
         "date": "Aug 4, 2026",
         "sampleRate": 44100,
         "codeOriginal": "c=2**(1/12),cs=2**(2/12),d=2**(3/12),ds=2**(4/12),e=2**(5/12),f=2**(6/12),fs=2**(7/12),g=2**(8/12),gs=2**(9/12),a=2**(10/12),as=2**(11/12),b=2**(12/12),(64&t/.69*[,e,ds,b,fs,a,g,g,fs,g,g,g,,d,cs,a,e,g,f,f,e,f,f,f][(t/1.34>>14)%24])+(64&t/.69*[c/2,g/2,g/2,c/2,g/2,g/2,c/2,g/2,g/2,c/2,g/2,g/2,as/4,f/2,f/2,as/4,f/2,f/2,as/4,f/2,f/2,as/4,f/2,f/2][(t/1.34>>14)%24])+(63&t/.69*[c/2,g/2,,c/2,g/2,,c/2,g/2,,c/2,g/2,,as/4,f/2,,as/4,f/2,,as/4,f/2,,as/4,f/2,][(t/1.34>>14)%24]*\"101000\"[(t/1.34>>13)%6])"
+    },
+    {
+        "author": "WindowsKin",
+        "name": "Tobu-Higher",
+        "url": "https://dollchan.net/btb/res/16545.html#16545",
+        "date": "Aug 7, 2026",
+        "mode": "Floatbeat",
+		"big": true,
+		"slow": true,
+        "file": "WindowsKin.js",
+		"fileOriginal": true
     },
     {
         "author": "i_am_learning_pls_help_me",
