@@ -5988,6 +5988,22 @@
                 "codeOriginal": "dc=(-t>>5&255),div=dc/180,a=(([0,.01,0,.01][t>>19&3])*random()*dc),x=y=>(cbrt(sin(t/y))+cbrt(tan(t/y)))*div,b=(sin(cbrt(t&8191)*10)+(random()/3))*dc/70,c=b+a,A=(v,l,r,sl,sr,vl,vr)=>cbrt([b,v,c,v,b,v,c,v,b,v,c,v/vl,b,v/vr,l,r,b,v,c,v,b,v,c,v/vr,b,v/vl,sr,sl,l,r,sl,sr,][t>>13&31]*2),[A(x(48.1*4)*pow(div,2),b,0,c,c/96,50,1),A(x(47.9*4)*pow(div,2),0,b,c/96,c,1,50)]"
             },
             {
+                "name": "Tangentstep",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1k4mwzr/comment/moxb1dt/?context=3",
+                "date": "Apr 21, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "codeOriginal": [
+					"a='0  01   0   1   0   1   0  01   0   1   0   1   0   1   0 001 0 ',",
+                    "b='2221111111111111333322221111444444111111111111113333555555111111',",
+                    "drums=lr=>((pat1=a[(t>>13)%a.length],pat1=='0'?(tan(cos((5+lr)*cbrt(t%8192))))*(-t>>5&255)/80:pat1=='1'?(random()+lr)*(-t>>5&255)/80+(tan(cos((15+lr)*cbrt(t%8192))))*(-t>>5&255)/80:0)*((-t>>6&255)^800)/1500)*3,",
+                    "bass=lr=>(pat2=b[(t>>13)%b.length],pat2=='1'?sin(cbrt(tan(t/280)-(9+lr)%t*tan(t/(40+lr))%tan(t/(80+lr)))):pat2=='2'?sin(cbrt(tan(t/280)-(9+lr)%t*tan(t/(54+lr))%tan(t/(70+lr)))):pat2=='3'?((tan(sin(t/(280+lr)))*tan(t/(280+lr))*cbrt(t/20))%sin(t/2047))*3:pat2=='4'?sin(tan(t/(160+lr))+tan(t/(80+lr)))*(-t>>5&255)/90:pat2=='5'?sin(tan(t/(160+lr))+tan(t/(240+lr)))*(-t>>5&255)/180:0),",
+                    "[atan(drums(0.01)+bass(-0.01)),atan(drums(-0.01)+bass(0.01))]"
+				],
+				"codeMinified": "a='0  01   0   1   0   1   0  01   0   1   0   1   0   1   0 001 0 ',b='2221111111111111333322221111444444111111111111113333555555111111',drums=c=>(pat1=a[(t>>13)%a.length],pat1=='0'?tan(cos((5+c)*cbrt(t%8192)))*(-t>>5&255)/80:pat1=='1'?(random()+c)*(-t>>5&255)/80+tan(cos((15+c)*cbrt(t%8192)))*(-t>>5&255)/80:0)*(-t>>6&255^800)/1500*3,bass=c=>(pat2=b[(t>>13)%b.length],pat2=='1'?sin(cbrt(tan(t/280)-(9+c)%t*tan(t/(40+c))%tan(t/(80+c)))):pat2=='2'?sin(cbrt(tan(t/280)-(9+c)%t*tan(t/(54+c))%tan(t/(70+c)))):pat2=='3'?tan(sin(t/(280+c)))*tan(t/(280+c))*cbrt(t/20)%sin(t/2047)*3:pat2=='4'?sin(tan(t/(160+c))+tan(t/(80+c)))*(-t>>5&255)/90:pat2=='5'?sin(tan(t/(160+c))+tan(t/(240+c)))*(-t>>5&255)/180:0),[atan(drums(.01)+bass(-.01)),atan(drums(-.01)+bass(.01))]"
+            },
+            {
                 "name": "some nice floatbeat drums",
                 "mode": "Floatbeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1k71czq/some_nice_floatbeat_drums/",
@@ -6113,7 +6129,6 @@
     {
         "author": "PrincessPriscillaPT",
         "children": [
-            { "description": "She's Regarding Questions In My Composer." },
             {
                 "name": "F#maj / Ebmin, 90 BPM",
                 "cover": {
@@ -7391,6 +7406,16 @@
             }
         ]
     },
+	{
+		"author": "Demari Smith",
+		"name": "making iconic bytebeat code to make melody",
+		"url": "https://dollchan.net/btb/res/3.html#9760",
+		"date": "Oct 11, 2025",
+		"mode": "Floatbeat",
+		"sampleRate": 48000,
+		"file": "DemariSmith.js",
+		"fileOriginal": true
+	},
     {
         "author": "insanity696420",
         "children": [
@@ -9033,6 +9058,39 @@
 			}
         ]
     },
+	{
+		"author": "AdjectiveNounNumber (Salty_Formal5291)",
+		"children": [
+			{
+				"name": "Operator of Fifths",
+				"url": "https://www.reddit.com/r/bytebeat/comments/1qsfgkv/operator_of_fifths/",
+				"date": "Jan 31, 2026",
+				"sampleRate": 48000,
+				"codeOriginal": [
+					"N=10,t?0:d=0,n=1+((t>>14|t>>12^t>>13)& // you can change the & to any operator and it will make a different melody",
+                    "(1+((-t>>13)&7)))%12,A=Array(n).fill(0).map((_,i)=>1.5**i*2**('0153'[t>>16&3]/12)/1.5).reduce((a,c)=>a+((t*c)%256),0)/(3+n/2)-(n-1)*8.5,d=((d*N)+A||0)/(N+1),d"
+				]
+			},
+			{
+				"name": "i am becoming a pro",
+				"url": "https://www.reddit.com/r/bytebeat/comments/1t8t8m2/i_am_becoming_a_pro/",
+				"date": "May 10, 2026",
+				"mode": "Floatbeat",
+				"sampleRate": 32000,
+				"slow": true,
+				"codeOriginal": "a=t=>(w=((t*2**(([[10,7,3,0],[7,3,2,-2],[10,8,3,0],[5,2,0,-2]][t*1.64>>17&3][t&3])/12)*'1100110010110011'[t*1.64>>12&15]*1.51||0)%256)/3)*(t>0),r=(t,d=1.1)=>{x=0;for(j=0;j<60;j++)x+=a(t-j**1.1*1187)/(d**j);return x},t||(J=K=L=0),J=(J*4+r(t)+a(t)*1.5)/6,K=(K*3+J)/4,L=(L+K)/2,L/256-1"
+			},
+			{
+				"name": "Something interesting",
+				"url": "https://www.bytebeat.cloud/post/fe2046d6-aba9-4df2-872c-82c88e2e4459",
+				"date": "Oct 3, 2026",
+				"mode": "Floatbeat",
+				"sampleRate": 48000,
+				"file": "SaltyFormal.js",
+				"fileOriginal": true
+			}
+		]
+	},
     {
         "author": "Slinx92 (RealZynx92)",
         "name": "stereo chords based on 0b5vr's 128 voices generator",
