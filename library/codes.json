@@ -1121,6 +1121,7 @@
         "date": "Jan 4, 2026",
         "mode": "Floatbeat",
         "sampleRate": 48000,
+		"stereo": true,
         "codeOriginal": "T=t,t*=1.2,n=x=>2**((x-9)/12),(typeof a!=\"undefined\")||(a=[[6,10,13,18],[5,10,13,17],[8,11,15,20],[5,8,11,17]]),i=0,ch=_=>((T/128*(_?1:1.01)*n(a[t>>16&3][i++&3])%2)-1)*(1-t/131072*(2+(i&3))%1),chf=_=>(ch(_)+ch(_)+ch(_)+ch(_))/3,k=tanh(sin((t/32768%1)**.1*120+(random()-.5)*(1-t/32768%1)**160*2)*2)*(1-t/32768%1)**5,h=(random()-.5)*(1-t/8192%1)**10,sn=tanh(sin(t*PI/400+sqrt(t%32768)**.1*50)*5*(1-t/32768%1)**10+(random()-.5)*(t/32768%1)*(1-t/32768%1)**5*8)*(t>>15&1),s=min(t/16384%2,1),ba=sin(T*PI/512*n(a[t>>16&3][0])),ap=((T/128*n(a[t>>16&3][t>>10&3])%1>(t/131072%1))-.5)*(1-t/2048/9%1),m=_=>tanh(k+(chf(_)+h+ba+ap)*s+sn),[m(0),m(1)]"
       },
       {
@@ -1200,6 +1201,7 @@
         "date": "Apr 20, 2026",
         "mode": "Floatbeat",
         "sampleRate": 48000,
+		"stereo": true,
         "codeOriginal": "t||(fx=[]),fxi=0,lpr=function(n,o,r){fb=r+r/(1-o);cn=fxi++;m=fx[cn]??=Array(2).fill(0);m[0]+=o*(n-m[0]+fb*(m[0]-m[1]));m[1]+=o*(m[0]-m[1]);return fx[cn][1]},hpr=(n,o,r)=>n+lpr(n,o,r),t||(vo1=[0],vo2=[1]),(()=>{if(random()<2e-6){vo1.push(t)}if(random()<3e-6){vo2.push(t)}})(),genFor=n=>n.map(n=>hpr(lpr(random()-.5,.05,.9),.03,.9)/(1+(t-n)/2048)*2).reduce((n,o)=>n+o),v1=genFor(vo1),v2=genFor(vo2),noi=n=>lpr(random()-.5,.05-sin(t*PI/65536)/256,.5)*sin(t*PI/1048576),[4*v1+noi(),4*v2+noi()]"
       },
       {
@@ -1321,7 +1323,7 @@
         "name": "messy",
         "description": "BytebeatCloud's Week 32 Submission",
         "url": "https://www.bytebeat.cloud/post/1b5ce0fd-690d-4ca7-af80-1898b24a937c",
-        "date": "Jul 16, 2026",
+        "date": "Jul 19, 2026",
         "mode": "Floatbeat",
         "sampleRate": 48000,
         "file": "MaxiToys-7.js",
@@ -1334,6 +1336,7 @@
         "date": "Aug 1, 2026",
         "mode": "Floatbeat",
         "sampleRate": 48000,
+		"stereo": true,
         "file": "MaxiToys-8.js",
         "fileOriginal": true
       },
@@ -1343,6 +1346,7 @@
         "url": "https://bytebeat.cloud/post/cdf763e0-0fab-45ab-b2bc-7dcd631624c8",
         "date": "Sep 16, 2026",
         "mode": "Floatbeat",
+		"stereo": true,
         "sampleRate": 48000,
         "file": "MaxiToys-9.js",
         "fileOriginal": true
