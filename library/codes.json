@@ -1132,6 +1132,18 @@
         "codeOriginal": "(t/4*2**([[0,3,7,12],[3,7,12,14],[7,12,14,17],[5,7,12,14]][t>>15&3][t*(t>>13)&3]/12)&-t>>8&t>>12)*10"
       },
       {
+        "name": "microtonalist beat",
+        "url": [
+			"https://battleofthebits.com/arena/Entry/microtonalist+beat/81690/",
+			"https://www.bytebeat.cloud/post/ebb34e9f-fb4b-473a-84cb-33ad77939e90"
+		],
+        "date": "Jan 15, 2026",
+        "mode": "Floatbeat",
+        "sampleRate": 48000,
+        "stereo": true,
+        "codeOriginal": "T=t*3.7,mt=t*(1+(T>>19&3)/10),t||(mr=(n,m,a)=>n.map(m).reduce(a),a=[[[1,1.25,1.5],[1.75,2,2.3],[1.5,1.75,2.2],[3,2.7,2.5]],[[1,1.5,7/6],[2,7/3,10/4],[173/130,2,19/8],[9/7,2,53/20]],[[1,9/4,199/120],[3/5,2,291/120],[168/130,177/63,2086/1056],[4/5,5/4,9/4]],[[1.6,2,2.5],[1.2,1.5,2],[1.125,2,2.4],[1.2,1,1.75,1.5]]],d=n=>tanh(tanh(n))),q=m=>mr(a[T>>21&3][T>>16&3],n=>sin(mt*(tun=1+m/512)*n*PI/128+sin(mt*tun*PI/129*n+sin(mt*tun*PI/127*n)*2)),(n,m)=>n+m)*(52593>>(T>>14&15)&1)*min(T/2048%8,1)*min(8-T/2048%8,1)/4+d(sin(mt*(i=a[T>>21&3][0][0])*PI/512+sin(mt*i*PI/512)*2*(1-T/131072%1))*2)/2,sd=min((a_=T/131072%1)*3,1)*min(32-a_*32,1),k=n=>d(sin(a_**.01*4e3+(random()-.5)*1e-30**a_)*2)*(1-sd),h=n=>d((random()-.5)*1e-10**(T/32768%1)*2)/2,sn=n=>d((sin(a_**.1*100+t*PI/256)*1e-4**a_+(random()-.5)*4*1e-4**a_*sd)*4)*(T>>17&1)/2,dr=n=>k()+sn()+h()*sd,m=n=>d(q(n)*sd+dr())+sin(mt*PI/[p=32,64,p,p][T>>21&3]*a[T>>21&3][2][0]|0)*.01**(T/524288%1)/8*(n?.8:.2),[m(0),m(1)]"
+      },
+      {
         "name": "yay",
         "description": "BytebeatCloud's Week 7 Submission",
         "url": "https://www.bytebeat.cloud/post/e4e08af4-a205-4aa6-a750-3adf84dd3350",
@@ -1144,7 +1156,7 @@
       {
         "name": "mzzmzm",
         "description": "BytebeatCloud's Week 7 Submission",
-        "url": "https://www.bytebeat.cloud/post/94ff09f2-608a-4162-bee9-c2b6c8eeca63",
+		"url": "https://www.bytebeat.cloud/post/94ff09f2-608a-4162-bee9-c2b6c8eeca63",
         "date": "Jan 31, 2026",
         "mode": "Floatbeat",
         "sampleRate": 48000,
@@ -1230,15 +1242,6 @@
         ]
       },
       {
-        "name": "microtonalist beat",
-        "url": "https://www.bytebeat.cloud/post/ebb34e9f-fb4b-473a-84cb-33ad77939e90",
-        "date": "Apr 30, 2026",
-        "mode": "Floatbeat",
-        "sampleRate": 48000,
-        "stereo": true,
-        "codeOriginal": "T=t*3.7,mt=t*(1+(T>>19&3)/10),t||(mr=(n,m,a)=>n.map(m).reduce(a),a=[[[1,1.25,1.5],[1.75,2,2.3],[1.5,1.75,2.2],[3,2.7,2.5]],[[1,1.5,7/6],[2,7/3,10/4],[173/130,2,19/8],[9/7,2,53/20]],[[1,9/4,199/120],[3/5,2,291/120],[168/130,177/63,2086/1056],[4/5,5/4,9/4]],[[1.6,2,2.5],[1.2,1.5,2],[1.125,2,2.4],[1.2,1,1.75,1.5]]],d=n=>tanh(tanh(n))),q=m=>mr(a[T>>21&3][T>>16&3],n=>sin(mt*(tun=1+m/512)*n*PI/128+sin(mt*tun*PI/129*n+sin(mt*tun*PI/127*n)*2)),(n,m)=>n+m)*(52593>>(T>>14&15)&1)*min(T/2048%8,1)*min(8-T/2048%8,1)/4+d(sin(mt*(i=a[T>>21&3][0][0])*PI/512+sin(mt*i*PI/512)*2*(1-T/131072%1))*2)/2,sd=min((a_=T/131072%1)*3,1)*min(32-a_*32,1),k=n=>d(sin(a_**.01*4e3+(random()-.5)*1e-30**a_)*2)*(1-sd),h=n=>d((random()-.5)*1e-10**(T/32768%1)*2)/2,sn=n=>d((sin(a_**.1*100+t*PI/256)*1e-4**a_+(random()-.5)*4*1e-4**a_*sd)*4)*(T>>17&1)/2,dr=n=>k()+sn()+h()*sd,m=n=>d(q(n)*sd+dr())+sin(mt*PI/[p=32,64,p,p][T>>21&3]*a[T>>21&3][2][0]|0)*.01**(T/524288%1)/8*(n?.8:.2),[m(0),m(1)]"
-      },
-      {
         "name": "not fl studio bytebeat",
         "url": "https://www.bytebeat.cloud/post/99955b69-9459-4594-828e-cdfee9e21187",
         "date": "May 8, 2026",
@@ -1311,6 +1314,10 @@
       },
       {
         "name": "mole",
+		"cover": {
+			"name": "M.U.L.E theme (specifically NTSC)",
+			"url": "https://www.youtube.com/watch?v=h6ByRXZCg9k"
+		},
         "url": "https://www.bytebeat.cloud/post/1b5ce0fd-690d-4ca7-af80-1898b24a937c",
         "date": "Jul 16, 2026",
         "mode": "Floatbeat",
@@ -11179,7 +11186,7 @@
 		]
 	},
     {
-        "author": "probablythebestusernameever",
+        "author": "MeWhen-I-StubMyToe (probablythebestusernameever)",
 		"children": [
 			{
                 "name": "13kb cover of another medium",
@@ -11262,7 +11269,7 @@
 			{
                 "name": "It's funny how this code is exactly 16KB",
 				"remix": {
-					"author": "probablythebestusernameever",
+					"author": "MeWhen-I-StubMyToe",
 					"name": "Demo of a tracker to floatbeat converter",
 					"url": "https://bytebeat.cloud/post/8e10acef-bc79-4069-8b2f-1b45a8fa477d"
 				},
