@@ -1315,7 +1315,7 @@
       {
         "name": "mole",
 		"cover": {
-			"name": "M.U.L.E theme (specifically NTSC)",
+			"name": "M.U.L.E theme",
 			"url": "https://www.youtube.com/watch?v=h6ByRXZCg9k"
 		},
         "url": "https://www.bytebeat.cloud/post/1b5ce0fd-690d-4ca7-af80-1898b24a937c",
@@ -8505,6 +8505,7 @@
                 "name": "unsigned byte song",
                 "url": "https://bytebeat.cloud/post/ffde2dd2-8460-41d9-ba28-2a9c977f515e",
                 "date": "Aug 26, 2026",
+				"big": true,
                 "file": "vbinchees3000-3.js",
 				"fileOriginal": true
 			},
