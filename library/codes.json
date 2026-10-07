@@ -11267,7 +11267,7 @@
 				"fileOriginal": true
 			},
 			{
-                "name": "It's funny how this code is exactly 16KB",
+            "name": "It's funny how this code is exactly 16KB",
 				"remix": {
 					"author": "MeWhen-I-StubMyToe",
 					"name": "Demo of a tracker to floatbeat converter",
@@ -11280,6 +11280,65 @@
                 "sampleRate": 48000,
 				"file": "probablythebestusernameever-7.js",
 				"starred": 2,
+				"big": true,
+				"fileOriginal": true
+			},
+			{
+                "name": "IT'S OCTOBER",
+                "url": "https://bytebeat.cloud/post/bb9f7575-482f-4a77-9062-d5dd0df4a9c7",
+                "date": "Oct 1, 2026",
+				"mode": "Floatbeat",
+                "sampleRate": 48000,
+				"file": "probablythebestusernameever-8.js",
+				"starred": 2,
+				"big": true,
+				"fileOriginal": true
+			},
+			{
+                "name": "song i made while i was sick",
+                "url": "https://bytebeat.cloud/post/067ee7af-230c-41a0-9f5f-46aa172ea302",
+                "date": "Oct 2, 2026",
+				"mode": "Floatbeat",
+                "sampleRate": 48000,
+				"file": "probablythebestusernameever-9.js",
+				"starred": 2,
+				"big": true,
+				"fileOriginal": true
+			},
+			{
+                "name": "Funky Stars ported",
+                "url": "https://bytebeat.cloud/post/c89367b8-3b49-44f3-a286-629f311bcaa3",
+                "date": "Oct 2, 2026",
+				"mode": "Floatbeat",
+                "sampleRate": 48000,
+				"file": "probablythebestusernameever-10.js",
+				"starred": 1,
+				"big": true,
+				"fileOriginal": true
+			},
+			{
+                "name": "Rainbow Tylenol ported",
+				"cover": {
+					"name": "Kitsune^2 - Rainbow Tylenol",
+					"url": "https://youtu.be/5K7Frc2lTI8"
+				},
+                "url": "https://bytebeat.cloud/post/12c5c4f9-f627-4771-ba61-0cfe90c85295",
+                "date": "Oct 3, 2026",
+				"mode": "Floatbeat",
+                "sampleRate": 48000,
+				"file": "probablythebestusernameever-11.js",
+				"starred": 2,
+				"big": true,
+				"fileOriginal": true
+			},
+			{
+                "name": "earthbound school theme",
+                "url": "https://bytebeat.cloud/post/f6e3e6a4-5f37-4c22-bf7f-074d92f2c64d",
+                "date": "Oct 5, 2026",
+				"mode": "Floatbeat",
+                "sampleRate": 48000,
+				"file": "probablythebestusernameever-12.js",
+				"starred": 1,
 				"big": true,
 				"fileOriginal": true
 			}
