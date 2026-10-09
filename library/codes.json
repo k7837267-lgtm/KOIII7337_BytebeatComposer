@@ -1,4 +1,10 @@
 [
+	{
+		"author": "bear @ celephais",
+		"url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+		"codeOriginal": "t+(t&t^t>>6)-t*((t>>9)&(t%16?2:6)&t>>9)",
+		"codeMinified": "t+(t^t>>6)-t*((t%16?2:6)&t>>9)"
+	},
   {
     "author": "viznut",
     "children": [
@@ -42,7 +48,7 @@
         "c": true,
         "starred": 1,
         "codeOriginal": "((t>>5&t)-(t>>5)+(t>>5&t))+(t*((t>>14)&14))",
-        "codeMinified": "(t>>5^-t)+t+t*(t>>14&14)"
+        "codeMinified": "t-(t^t>>5)+t*(t>>14&14)"
       },
       {
         "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
