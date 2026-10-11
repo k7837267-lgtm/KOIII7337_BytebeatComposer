@@ -178,7 +178,8 @@
                 "name": "JAJAJAJAJA",
                 "url": "https://www.pouet.net/topic.php?post=388516",
                 "date": "Sep 30, 2011",
-                "codeOriginal": "(((((t>>5)|(t>>2)*(t>>2))*((t&1536)?1:1.5)))^(t*2^t* 2.008))/2"
+                "codeOriginal": "(((((t>>5)|(t>>2)*(t>>2))*((t&1536)?1:1.5)))^(t*2^t* 2.008))/2",
+				"codeMinified": "(((t>>2)*(t>>2)|t>>5)*((t&1536)?1:1.5)^(t*2^t*2.008))/2"
             }
         ]
     },
