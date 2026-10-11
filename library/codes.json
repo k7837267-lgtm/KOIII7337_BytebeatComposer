@@ -101,7 +101,7 @@
                 "date": "Sep 18, 2011",
                 "c": true,
                 "codeOriginal": "t*(((t>>9)|(t>>13))&(25&(t>>6)))",
-                "codeMinified": "t*((t>>9|t>>13)&(25&t>>6))"
+                "codeMinified": "t*((t>>9|t>>13)&25&t>>6)"
             },
             {
                 "name": "Space Invaders vs Pong",
