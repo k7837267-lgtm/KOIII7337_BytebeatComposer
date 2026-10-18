@@ -688,32 +688,30 @@ button[name="close"] {
 	width: fit-content;
 }
 
-.code-exotic {
-	color: #ff0000;
-}
-
-.code-c {
-	color: #0000ff
-}
-
-.code-slow {
-	color: #ff6020
-}
 .code-big {
-	color: #00ffc0
+	color: #777;
 }
-
+.code-c {
+	color: #00F;
+}
+.code-exotic {
+	color: #F70;
+}
 .code-length, .code-info {
 	color: gray;
 	cursor: default;
 }
-
+.code-port {
+	color: #DFF;
+}
 .code-remix {
 	font-size: 90%;
 }
-
+.code-slow {
+	color: #F00;
+}
 .code-stereo {
-	color: #00ff00;
+	color: #0F0;
 }
 
 .code-text {
@@ -734,7 +732,7 @@ button[name="close"] {
 }
 
 .code-text:hover {
-	color: #ffffff !important;
+	color: #FFF !important;
 }
 
 .entry {
@@ -815,7 +813,7 @@ entry.star-white::before, .entry.star-yellow::before {
 
 .loading-error {
 	text-align: center;
-	color: #ffffff;
+	color: #700;
 }
 
 @keyframes wait-anim {
