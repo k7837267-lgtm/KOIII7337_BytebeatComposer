@@ -271,7 +271,7 @@ globalThis.bytebeat = new class {
 	}
 	generateLibraryEntry({
 		author, big, c, children, codeMinified, codeOriginal, cover, date, description, exotic, file,
-		fileFormatted, fileMinified, fileOriginal, mode, name, remix, sampleRate, slow, starred, stereo, url
+		fileFormatted, fileMinified, fileOriginal, mode, name, port, remix, sampleRate, slow, starred, stereo, url
 	}) {
 		let entry = '';
 		const noArrayUrl = url && !Array.isArray(url);
@@ -365,7 +365,7 @@ globalThis.bytebeat = new class {
 			entry += ` <span class="code-remix">(remix of ${arr.join(', ')})</span>`;
 		}
 
-		if (date || sampleRate || mode || stereo || exotic || c || slow || big) {
+		if (date || sampleRate || mode || stereo || exotic || c || slow || big || port) {
 			let infoStr = date ? `(${date})` : '';
 			if (sampleRate) {
 				infoStr += `${infoStr ? ' ' : ''}${sampleRate}Hz`;
@@ -377,7 +377,7 @@ globalThis.bytebeat = new class {
 				infoStr += `${infoStr ? ' ' : ''}<span class="code-stereo">Stereo</span>`;
 			}
 			if (exotic) {
-				infoStr += `${infoStr ? ' ' : ''}<span class="code-exotic">EXOTIC</span>`;
+				infoStr += `${infoStr ? ' ' : ''}<span class="code-exotic" title="this code contains a custom function(s), that only works on this bytebeat player. using any of these makes your code become ”R I G G E D” and have no chance in being on the dollchan bytebeat library.">&#9888; EXOTIC &#9888;</span>`;
 			}
 			if (c) {
 				infoStr += `${infoStr ? ' ' : ''}<span class="code-c">C</span>`;
@@ -387,6 +387,9 @@ globalThis.bytebeat = new class {
 			}
 			if (big) {
 				infoStr += `${infoStr ? ' ' : ''}<span class="code-big">Big</span>`;
+			}
+			if (port) {
+				infoStr += `${infoStr ? ' ' : ''}<span class="code-port">Port</span>`;
 			
 			}
 			entry += ` <span class="code-info">${infoStr}</span>`;
