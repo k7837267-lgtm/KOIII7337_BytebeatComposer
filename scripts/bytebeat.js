@@ -301,6 +301,9 @@ globalThis.bytebeat = new class {
 					author == "JERN2K83" ?
 					    authorsList
 					    + ` <img style="vertical-align:-2px" title="Jinic (aka JERN)'s PFP" src="./Assets/JERNPFP.jpg" width="16" height="16"></img>` :
+					author == "HypernovaHeathen" ?
+					    authorsList
+					    + ` <img style="vertical-align:-2px" title="HypernovaHeathen's PFP" src="./Assets/HypernovaHeathenPFP.jpg" width="16" height="16"></img>` :
 					author == "Trillwin (YouLikeHaveMaterials87, FoodlesMickey)" ?
 					    authorsList
 					    + ` <img style="vertical-align:-2px" title="Trillwin's PFP" src="./Assets/TrillwinPFP.jpg" width="16" height="16"></img>`
