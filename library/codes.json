@@ -5620,6 +5620,84 @@
         ]
     },
     {
+        "author": "HypernovaHeathen",
+        "children": [
+            {
+                "name": "I got rid an infohazard. (#3)",
+                "date": "Aug 9, 2024",
+                "url": "https://dollchan.net/btb/res/77.html#4145",
+                "sampleRate": 48000,
+                "codeOriginal": "S=Math.sin,C=Math.cos,π=Math.PI,g=function(x,y,z,Σ){return [((t>>x&y)+z),((-t>>x&y)+z)][t>>Σ&1]},p=((-t>>9&31)+1)*(-t>>[\"1232\"[t>>15&3],g(13,3,8,16)][t>>18&1]&1),d=t*Math.pow(1.125,\"22332233232323234455445545454545\"[t>>15&31])/96,l=g(11,63,1,17)/((-t>>18&3)+5),S(d*1.5+S(d/2)*l)*32+C(d/1.015*1.5+C(d/2*1.02)*l)*32+S(d*π+S(d*π)*l)*p+C(d/1.05*π+C(d/1.01*π)*l)*p+128"
+			},
+            {
+                "name": "I AM NOT KIDDING, THIS WARNING NEEDS TO BE HEARD ALL AROUND THE WORLD!",
+				"description": "THE ELITE ARE NOW PANICKING!",
+                "date": "Feb 25, 2025",
+                "url": "https://dollchan.net/btb/res/77.html#5534",
+                "sampleRate": 111111,
+                "codeOriginal": "L=Math.log,P=Math.pow,e=Math.E,π=Math.PI,tau=π*2.008531,TrueTick=t/2.3148125,AlarmTick=t/1.259762,N1=4095,N2=8191,N3=16383,N4=32767,N5=65535,DrumDelay=L((TrueTick&[N4,N3,N4,N3,N5,N5,N5,N5,N4,N4,N3,N3,N2,N2,N1,N1][TrueTick>>17&15])+1)*16,DrumDecay=((-TrueTick>>[11,10,11,10,12,12,12,12,11,11,10,10,9,9,8,8][TrueTick>>17&15]&15)+1),F0=(x)=>P(1.0625,\"13201320131312121313121245652100\"[TrueTick>>18&31])*x,F1=(x,y)=>((AlarmTick/F0(tau)*x|AlarmTick/F0(tau)*x*y)&255)/16,F2=(x,y)=>((AlarmTick/F0(e)*x|AlarmTick/F0(e)*x*y)&255)/16,F1(1,1.022)+F1(1.018,1.003)+F1(2,1.022)+F1(2.016,1.003)+F2(1,1.022)+F2(1.018,1.003)+F2(2,1.022)+F2(2.016,1.003)+Math.sin(DrumDelay)*DrumDecay+Math.cos(DrumDelay*π)*DrumDecay+32"
+			},
+            {
+                "name": "top 5 scariest jumpscares in destiny 2",
+				"description": "number 5: titan jumpscare",
+                "date": "Apr 10, 2025",
+                "url": "https://dollchan.net/btb/res/77.html#4145",
+                "sampleRate": 48000,
+                "codeOriginal": "S=Math.sin,C=Math.cos,R=Math.random(),π=Math.PI,h=t*\"46574657465746575768576857685768\"[t>>12&31]/48,l=t*Math.pow(1.125,\"34567899345678993647589936475899\"[t>>14&31])/32,f0=(x,y)=>S(h*y+S(h*y*1.5)*0.67+S(h*y*2.25)*0.5+S(h*y*3.375)*0.33)*x+C(h/π*y+C(h/1.01*y*1.5)*0.67+C(h/π*y*2.25)*0.5+C(h/π*y*3.375)*0.33)*x+x*2,Bin4=\"1000\",DrumFunction=(x)=>Math.log(t&16383)*x%32,f1=f0(4,1)+f0(4,6)+f0(8,0.5),f2=f0(4,2)+f0(4,12)+f0(8,0.25),f3=f0(4,3)+f0(4,18)+f0(8,0.167),[f1,f2,f1,f3,f1,f2,f3,f2,f1,f3,f1,f2,f1,f2,f3,f2][t>>17&15]+R*((-t>>6&31)+1)*Bin4[t>>11&3]+R*((-t>>8&31)+1)*Bin4[t>>13&3]+(l&32)+(l*1.022&32)+DrumFunction(256)+DrumFunction(272)"
+			},
+            {
+                
+                "name": "Recon",
+                "date": "Jan 13, 2026",
+                "url": [
+					"https://www.youtube.com/watch?v=x5Jgmd52_W4",
+					"https://dollchan.net/btb/res/77.html#12049"
+				],
+                "sampleRate": 48000,
+                "big": true,
+                "slow": true,
+                "file": "hypernovaheathen.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "Another Random Bytebeat Song",
+				"description": "The \"T=Math.tan\" Code Was Useless, Sorry.",
+                "date": "Jan 27, 2026",
+                "url": "https://www.youtube.com/watch?v=6i8cyJPPvic",
+                "sampleRate": 48000,
+                "codeOriginal": "S=Math.sin,C=Math.cos,T=Math.tan,SQ=Math.sqrt,CB=Math.cbrt,P=Math.pow,SEQ1=t*P(1.125,\"24243535\"[t>>16&7])/24,SEQ2=t*P(1.125,\"46465353\"[t>>17&7])/24,SEQ3=t*P(1.125,\"23423465\"[t>>15&7])/16,DD1=((-t>>11&15)+1)*\"10101100\"[t>>15&7],DD2=((-t>>10&7)+1)*\"0010010010001010\"[t>>13&15],BSEQ=t*P(1.125,\"5647\"[t>>18&3]),BD=((-t>>13&7)+1)*\"1000\"[t>>16&3],(SEQ1%16+SEQ1*1.022%16+(SEQ2&SEQ2*1.009&32)+(SEQ3|SEQ3*1.016)%32+S(SQ(t&32767)*1.125)*DD1+C(SQ(t&32767)*1.25)*DD1+S(t/2.5|t/3.75)*DD2+C(t/2.75|t/4.5)*DD2+Math.random()*((-t>>9&15)+1)+CB(S(BSEQ/8))*BD+CB(C(BSEQ/16))*BD+64)*1.15"
+            },
+            {
+                "name": "Extreme Majority OST: Hannah",
+                "date": "Jun 9, 2026",
+                "url": "https://dollchan.net/btb/res/77.html#15401",
+                "sampleRate": 48000,
+                "codeOriginal": "S=Math.sin,C=Math.cos,Q=Math.sqrt,P=Math.pow,o=t*P(1.125,\"2323454523235656\"[t>>15&15])/((-t>>11&1)+16),d=t*P(1.125,\"46574658\"[t>>16&7])/64,g=t*P(1.0625,\"4353\"[t>>19&3])/4,o%16+o/1.01%16+o*1.5%16+o/1.01*1.5%16+S(d+S(d)*0.5)*16+C(d*1.5+C(d*1.5)*0.5)*16+(S(Q(t&16383)*1.25)*((-t>>10&15)+1)+C(Q(t&16383)*1.75)*((-t>>10&15)+1))*(-t>>14&1)+Math.random()*((-t>>7&31)+1)*\"1000\"[t>>12&3]+(g&16)+(g*1.5&16)+64"
+            },
+            {
+                "name": "that one song in restaurants",
+                "date": "Oct 10, 2026",
+                "url": [
+					"https://www.youtube.com/watch?v=OGVcjOLjUhI",
+					"https://dollchan.net/btb/res/77.html#17852"
+				],
+                "sampleRate": 48000,
+                "codeOriginal": "S=Math.sin,SEQ1=\"2245224587876666\"[t>>15&15],SEQ2=\"2254225478986655\"[t>>15&15],SEQ3=\"3542354256567777\"[t>>15&15],d=t*Math.pow(1.133,[SEQ1,SEQ2,SEQ1,SEQ2,SEQ2,SEQ3,SEQ1,SEQ3,SEQ2][t>>19&7])/16,S(d/2+S(d/2.01)*1.65)*16+S(d/3+S(d/3.01)*1.65)*16+(d%16|d*0.995%16)+(d&16)+(d*0.985&16)+S(t/4+S(t/8|((-t>>10&3)+1))*0.71)*((-t>>8&31)+1)*\"10001010100011001100101010101000\"[t>>13&31]+S(t/5|t/6|6)*((-t>>7&31)+1)*\"10001000100010001010101010001010\"[t>>12&31]+96"
+            },
+            {
+                "name": "Book of Anomalies - Minecraft Spirit Overload",
+				"description": "\"I can't get myself to ponder on my notebook of anomalies, Wayne.\"",
+                "date": "Oct 13, 2026",
+                "url": [
+					"https://www.youtube.com/watch?v=mZyZKwOTpnw",
+					"https://dollchan.net/btb/res/77.html#17920"
+				],
+                "sampleRate": 48000,
+                "codeOriginal": "u=Math.sin,r=Math.asin,y=Math.cbrt,o=Math.pow,g=t*o(1.029,\"mifomifomifqmifq\".charCodeAt(t>>17&15))/48,k=t*o(1.123,\"2345235634563457\"[t>>17&15])/2,h=((-t>>14&7)+1)*(-t>>17&1),r(u(g/2)*0.45+u(g/2.006)*0.35)*10+r(u(g/3)*0.45+u(g/3.015)*0.35)*10+r(u(g/4)*0.45+u(g/4.015)*0.35)*12+y(u(g/18+u(g/18.45)*0.55))*16+y(u(g/24+u(g/24.25)*0.55))*16+u(k*1.5+u(k*1.25)*0.6)*h+u(k/1.15+u(k*1.05)*0.65)*h+u(k/12)*h+u(k/48)*h+u(t*((t>>19&5)+33)/3072)*32+128"
+            }
+        ]
+    },
+    {
         "author": "SRB2er",
 		"children": [
 			{
@@ -9108,43 +9186,6 @@
                     "h=(f,v)=>(a=[1.25,1.25,1.2,1.25][[t>>16]%4],z=[1,.94,1.25,1.115][[t>>16]%4]*f*[1,a*.998,1.501][[t>>v>>0]%3]/2,x=(exp(t%16384/16384)*317*20*z*'1'[[t>>14]%4])||t*z,atan(tanf(x))/2),",
 "((h(2,12)/3+h(1,0)/2)%256*exp(t%32768/8192)/2+tanh(sinf(t*[1,.94,1.25,1.115][[t>>16]%4]/4)%256*exp(t%32768/7192)/3)/1.2+tanh(sinf(t*[1,.94,1.25,1.115][[t>>16]%4]/2)%256*exp(t%32768/7192)/3)/4.2+tan(sinf(sqrt(5e3*(t&8191)))*'1000'[[t>>13]%4]%256*exp(1-t%8192/1029))*5+(sinf(sqrt(5e3*(t&16383)))%256*exp(1-t%16384/1632)*2+tanh(sinf(t**sin(t*1.5>>1)))%255*exp(1-t%16384/2632))*'0010'[[t>>14]%4])*3"
                 ]
-            }
-        ]
-    },
-    {
-        "author": "HypernovaHeathen",
-        "children": [
-            {
-                
-                "name": "Recon",
-                "date": "Jan 14, 2026",
-                "url": "https://dollchan.net/btb/res/77.html#12049",
-                "sampleRate": 48000,
-                "big": true,
-                "slow": true,
-                "file": "hypernovaheathen.js",
-                "fileOriginal": true
-            },
-            {
-                "name": "Extreme Majority OST: Hannah",
-                "date": "Jun 9, 2026",
-                "url": "https://dollchan.net/btb/res/77.html#15401",
-                "sampleRate": 48000,
-                "codeOriginal": "S=Math.sin,C=Math.cos,Q=Math.sqrt,P=Math.pow,o=t*P(1.125,\"2323454523235656\"[t>>15&15])/((-t>>11&1)+16),d=t*P(1.125,\"46574658\"[t>>16&7])/64,g=t*P(1.0625,\"4353\"[t>>19&3])/4,o%16+o/1.01%16+o*1.5%16+o/1.01*1.5%16+S(d+S(d)*0.5)*16+C(d*1.5+C(d*1.5)*0.5)*16+(S(Q(t&16383)*1.25)*((-t>>10&15)+1)+C(Q(t&16383)*1.75)*((-t>>10&15)+1))*(-t>>14&1)+Math.random()*((-t>>7&31)+1)*\"1000\"[t>>12&3]+(g&16)+(g*1.5&16)+64"
-            },
-            {
-                "name": "that one song in restaurants",
-                "date": "Oct 10, 2026",
-                "url": "https://dollchan.net/btb/res/77.html#17852",
-                "sampleRate": 48000,
-                "codeOriginal": "S=Math.sin,SEQ1=\"2245224587876666\"[t>>15&15],SEQ2=\"2254225478986655\"[t>>15&15],SEQ3=\"3542354256567777\"[t>>15&15],d=t*Math.pow(1.133,[SEQ1,SEQ2,SEQ1,SEQ2,SEQ2,SEQ3,SEQ1,SEQ3,SEQ2][t>>19&7])/16,S(d/2+S(d/2.01)*1.65)*16+S(d/3+S(d/3.01)*1.65)*16+(d%16|d*0.995%16)+(d&16)+(d*0.985&16)+S(t/4+S(t/8|((-t>>10&3)+1))*0.71)*((-t>>8&31)+1)*\"10001010100011001100101010101000\"[t>>13&31]+S(t/5|t/6|6)*((-t>>7&31)+1)*\"10001000100010001010101010001010\"[t>>12&31]+96"
-            },
-            {
-                "name": "Book of Anomalies - Minecraft Spirit Overload",
-                "date": "Oct 13, 2026",
-                "url": "https://dollchan.net/btb/res/77.html#17920",
-                "sampleRate": 48000,
-                "codeOriginal": "u=Math.sin,r=Math.asin,y=Math.cbrt,o=Math.pow,g=t*o(1.029,\"mifomifomifqmifq\".charCodeAt(t>>17&15))/48,k=t*o(1.123,\"2345235634563457\"[t>>17&15])/2,h=((-t>>14&7)+1)*(-t>>17&1),r(u(g/2)*0.45+u(g/2.006)*0.35)*10+r(u(g/3)*0.45+u(g/3.015)*0.35)*10+r(u(g/4)*0.45+u(g/4.015)*0.35)*12+y(u(g/18+u(g/18.45)*0.55))*16+y(u(g/24+u(g/24.25)*0.55))*16+u(k*1.5+u(k*1.25)*0.6)*h+u(k/1.15+u(k*1.05)*0.65)*h+u(k/12)*h+u(k/48)*h+u(t*((t>>19&5)+33)/3072)*32+128"
             }
         ]
     },
