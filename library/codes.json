@@ -8771,6 +8771,14 @@
         "author": "vbinchees3000",
         "children":  [
          {
+            "name": "signed beats",
+            "url": "https://www.bytebeat.cloud/post/ab5b19c1-295f-474b-a5a5-46e2923c6e59",
+            "date": "Dec 9, 2025",
+            "mode": "Signed Bytebeat",
+            "sampleRate": 22050,
+            "codeOriginal": "(128*(tanh(((t>>2&64)*(t/2048)^128*tanh(sin(12000/(t%(t&16384?16384:4096))))-exp(t/1024%16)/64*random())/128))^(((((t>>15&7)+2.00001)*t*t&t>>6)+128)%128))/180*12%sin(sin(300/(t%8192)))*128"
+         },
+         {
             "name": "experimenting",
             "url": "https://www.bytebeat.cloud/post/f5993567-27d5-464d-b035-e7e89aa867c1",
             "date": "Dec 12, 2025",
@@ -8787,14 +8795,14 @@
             },
             {
                 "url": "https://www.bytebeat.cloud/post/03e13b67-0b6d-4267-a257-f6a423bc1902",
-                "date": "Dec 23, 2025",
+                "date": "Dec 24, 2025",
                 "sampleRate": 11025,
                 "codeOriginal": "(t&64)*(~t>>((t>>10&3)<2?6:(t>>11&3)>2?3:8))+((t>>12&15)==8?(t*t>>4)&(-t>>2&4095):(t>>12&15)>14&&((30000/(t%128))&31)*(-t>>(t&65536?9:8)&7))^90000/(t%((t>>12&7)==7?2048:4096)|1)-(t&1<<18?t|t>>2:0)"
             },
             {
                 "name": "☺",
                 "url": "https://www.bytebeat.cloud/post/79dbc263-fa05-4eac-b9a6-5261bde9f070",
-                "date": "Dec 27, 2025",
+                "date": "Dec 28, 2025",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
             "stereo": true,
@@ -8803,12 +8811,19 @@
          { 
             "name": "weep woop",
             "url": "https://www.bytebeat.cloud/post/270926c1-207e-4fd3-abf5-7d5109befd19",
-            "date": "Jan 3, 2026",
+            "date": "Jan 2, 2026",
             "mode": "Floatbeat",
             "sampleRate": 11025,
             "file": "vbinchees3000.js",
             "fileOriginal": true
          },
+            {
+                "url": "https://www.bytebeat.cloud/post/befbf95c-612e-402e-bf5c-8d9603d74162",
+                "date": "Jan 9, 2026",
+                "mode": "Signed Bytebeat",
+                "sampleRate": 22050,
+                "codeOriginal": "(((t/5<<t)/11&255)&(-t>>3)*(t&16384?(0x11010011>>4*(t>>11&7)&1):0)&255)/6^(((t/((t>>13&15)<8?1:(t>>13&15)<12?3/2:27/20)&255)/4+(4*t&t>>5&255)*(-t>>13&7)/40&255)*(t>>8&31)/16)+(100000/(t%8192+1)|127)+((t>>17&3)==2?(t/16*(t>>5|t>>10|t>>7)&255)/4:0)+1"
+            },
          { 
             "name": "idk church bells",
             "url": "https://www.bytebeat.cloud/post/b9cf8642-f872-4acf-afc8-cbb7c05528cc",
@@ -8837,7 +8852,7 @@
             {
                 "name": "corruption",
                 "url": "https://www.bytebeat.cloud/post/27e8d581-878b-420a-b040-b99be86cb81e",
-                "date": "Feb 15, 2026",
+                "date": "Feb 16, 2026",
                 "sampleRate": 48000,
                 "codeOriginal": "ln=(x,b)=>log(x)/log(E),f=t=>asin(sin(t*1.165))*tanh(8*sin(ln(t**2))),atan(f(f(f(f(f(f(f(f(f(f(f(t/(1<<20))))))))))))*6)*64&-t/4"
             },
@@ -8870,7 +8885,7 @@
             {
                 "url": "https://www.bytebeat.cloud/post/4911d857-dd4c-4882-804e-1c97e3c3d0a9",
                 "description": "Used (int) To Make It Still C-Compatible.",
-                "date": "Apr 10, 2026",
+                "date": "Apr 11, 2026",
                 "c": true,
                 "codeOriginal": "(4*t*((t>>10&7)&(t>>13&255))&255)/5+(t*((t>>11&31)&(t>>13&255))&255)/5*!!(t&32768)+((4000000000000/(((1<<18)*(t%1024+1024)|t%1024+1024^t%1024+1024)|1)+4*t%1024+1024|(t%1024+1024>>2))*((t>>10&3)==0?255:0)&255)/2+((t&32767)/((t&32767)*(t&32767)>>((t&32767)>>8|(t&32767)>>7|(t&32767)*(t&32767)>>9))&255)/6",
                 "codeMinified": "(4*t*((t>>10&7)&(t>>13&255))&255)/5+(t*((t>>11&31)&(t>>13&255))&255)/5*!!(t&32768)+(((int)(4e12)/(((1<<18)*(t%1024+1024)|t%1024+1024^t%1024+1024)|1)+4*t%1024+1024|(t%1024+1024>>2))*((t>>10&3)==0?255:0)&255)/2+((t&32767)/((t&32767)*(t&32767)>>((t&32767)>>8|(t&32767)>>7|(t&32767)*(t&32767)>>9))&255)/6"
@@ -8878,7 +8893,7 @@
             {
                 "name": "jimㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ???",
                 "url": "https://www.bytebeat.cloud/post/fa3fc0e1-f6e4-4517-a312-f440f75c0c72",
-                "date": "May 1, 2026",
+                "date": "May 2, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "starred": 1,
@@ -8899,7 +8914,7 @@
             },
             {
                 "url": "https://www.bytebeat.cloud/post/e5e3ec66-1eaf-4a17-8504-abae131ebc8f",
-                "date": "May 28, 2026",
+                "date": "May 29, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "starred": 2,
@@ -8916,14 +8931,14 @@
             {
                 "name": "corruption 2",
                 "url": "https://www.bytebeat.cloud/post/5240cf62-8cd9-4b79-a42a-493d752a8f7b",
-                "date": "Jun 2, 2026",
+                "date": "Jun 3, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "codeOriginal": "g=t=>tanh(32*sin(t*8)),g(g(g(g(g(sin(t/16))-sin(t/16e3))+sin(t/160))+cos(t/16e3))-cos(t/1e4))/2"
             },
             {
                 "url": "https://www.bytebeat.cloud/post/dc9a1713-f563-4bd4-b1c3-9644eb2dee66",
-                "date": "Jun 5, 2026",
+                "date": "Jun 6, 2026",
                 "sampleRate": 24000,
                 "starred": 1,
                 "codeOriginal": "((t+65500)*((-(t+65500)>>11^(t+65500)>>12&(t+65500)>>11)%(t&8192?32:16))/(((t+65500)&65536?(t+65500)&32768?3:4:5)/4)&255)/2+((t+65500)*((-(t+65500)>>10^(t+65500)>>12&-(t+65500)>>11)%8)/(((t+65500)&65536?(t+65500)&32768?3:4:5)/4)&64)*!((t+(1<<18))&1<<18)"
@@ -8939,7 +8954,7 @@
             {
                 "name": "(untitle)",
                 "url": "https://www.bytebeat.cloud/post/f14c9738-8d36-4729-967c-a69594439fd7",
-                "date": "Jun 11, 2026",
+                "date": "Jun 12, 2026",
                 "mode": "Floatbeat",
                 "sampleRate": 48000,
                 "starred": 2,
@@ -8966,6 +8981,15 @@
 				"sampleRate": 48000,
 				"starred": 1,
                 "codeOriginal": "t+=1024,sin(t/32*2**(([-5,-2,2,3,7,9,12,14][((t>>14|t>>13)*(t>>15&7)^(-t>>16&5)^(t>>14&3))%8])/12)/2*PI)"
+			},
+            {
+				"name": "boi",
+                "url": "https://bytebeat.cloud/post/05369a99-ba44-4ee6-adc6-d050114dbcf8",
+                "date": "Sep 10, 2026",
+				"mode": "Floatbeat",
+				"sampleRate": 48000,
+				"starred": 2,
+                "codeOriginal": "t*=1.4,t||(F=[],f=0,lp=(a,c)=>(i=f++,F[i]??=0,F[i]+=(a-F[i])*c)),f=0,a=t/64*2**(([-2,1,6,5,5,6,1,-3][t>>15&7])/12),atan(tanh(2*tanh(lp(lp(tanh(sin(a*PI)-cos(a/4*PI*(t&(t>>12&7)))*1.2**(-t/8192%4)*4)/2,.3),.1)*4+.4)*2+(sin(a/2*PI-cos(a*PI*2)*2)/2*exp(-t/4096%4)*4)*(((t>>14|t>>10)%(t>>13&9))&1)*8)+tanh(((t>>6&1)*(t/1.5>>5&1))*((t>>16&3)==3?3:8)**(-t/((t>>16&3)==3?4096:8192)%4)*32+cbrt(sin(sqrt(t%16384)))*8-sin(8*a+cos(a*PI))*2.2**(t/8192%4))*2**(-t/((t>>16&3)==3?4096:8192)%4)*8*(t>>19&1)+max(min(tanh(2*sin(1.6*sqrt(t%32768)))*70**(-(t/8192)%4)*60+sin((t*1.5|7)*(t*1.5|7))*8**(-(t/8192)%4)*6,1),-1)/2*(t>>15&1)*3)/2"
 			}
                 ]
     },
