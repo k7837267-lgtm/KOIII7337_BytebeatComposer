@@ -8142,7 +8142,7 @@
                 "date": "Feb 12, 2026",
                 "sampleRate": 48000,
                 "codeOriginal": "t?0:(j=Array(l=13e3).fill(x=y=X=Y=K=c=0),L=Array(l2=11e3).fill(0)),o=(x+=y+=(sin(t*PI/256*2**('0406'[t>>16&3]/12)*PI*2**(parseInt('0357CEJL'[t&t>>13&7],36)/12)*1.5**(t&t>>14&1))-x-y*3)*(sin(t*PI/16384)**2+.1)/3)*sin(t*PI/32768)**4+j[t%l],j[t%l]=o/3,o2=(X+=Y+=(atan(tan(t*PI*PI/1024*2**(['0358','0347'][t>>16&1][t&3]/12)))/4-X-Y*7)*(sin(t*PI/16384)**4*.1+.03))+L[t%l2],L[t%l2]=o2/1.7,ef=sin(log(t*PI&t>>12&t>>13^t>>14&3)*128|0)/4,bs=sin((BS=t*PI*PI/512*2**([0,-1][t>>16&1]/12))+sin(BS*5)*(1-t/(BS2=[65536,65536,65536,32768][t>>15&3])%1))*(1-t/BS2%1)**3,kc=sin((t%16384)**.003*4096)*(1-t/16384%1)**5,sd=K+=c+=(random()-.5-K-c*4)/17,sn=tanh(sin((t%16384)**.2*32+t/170+(t%16384)**.003*512)*4*(1-t/16384%1)**5+sd*4*min(1,t/16384%1*3)*(1-t/16384%1))*!!(t&16384),sch=min(1,t/16384%1*2),atan((tanh(sn*3+kc*4)*1.3+(o2+o/1.7+ef/2+bs/3)*sch*4)/2.2)"
-            }
+            },
 			{
                 "name": "peak filter",
                 "description": "a peak filter is a filter that when the audio reaches a certain frequency of the peak filter of the peak filter range or shit then it gets volumeboosted <a href=\"https://www.recordingblogs.com/wiki/peak-filter\" target=\"_blank\">https://www.recordingblogs.com/wiki/peak-filter</a>",
