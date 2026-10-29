@@ -173,5 +173,11 @@
     "name": "#30",
     "date": "Aug 17, 2026",
     "codeOriginal": "t|=t>>10^t>>7,((t*12|(t>>12)*t)-(t>>3)&128)+64"
+  },
+  {
+    "name": "#31",
+    "date": "Oct 28, 2026",
+    "description": "\"You Know, I Should Stop Disappearing From Existence, Things Have Been Crazy Around Here.\" - HydrostaticPound90",
+    "codeOriginal": "((t*(t&32768?7:7.3)|t*(t&32768?4.5:4.8)|t>>5&127)&255)*(t/8192%1+6)"
   }
 ]
