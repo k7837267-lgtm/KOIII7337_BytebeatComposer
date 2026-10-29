@@ -8767,6 +8767,49 @@
 			}
 		]
 	},
+		  {
+			  "author": "vasz200",
+			  "children": [
+				  {
+					  "name": "js bytebeat",
+					  "url": "https://www.bytebeat.cloud/post/8b6d3674-cb1d-4ec9-b232-b245ffdcfc08",
+					  "date": "Dec 6, 2025",
+					  "codeOriginal": "t*(t>>11&2?7:4)*(t&4096?1:3/2)*(1+(3&t>>10))>>(3&t>>8)|100000/(t&4095)"
+				  },
+				  {
+					  "url": "https://www.bytebeat.cloud/post/3299b571-9799-4d1d-acae-96cd358326ff",
+					  "date": "Dec 25, 2025",
+					  "c": true,
+					  "codeOriginal": "t*((t>>11&(t&8192?2:1))==0?7:4)*(t&4096?1:3/2)*(1+(3&t>>10))>>(3&t>>8)>>1&127|t*12>>(t>>7)&128"
+				  },
+				  {
+					  "name": "\"I have made a thing#2\" ass beat",
+					  "url": "https://www.bytebeat.cloud/post/db6a6673-46f7-4060-b0fe-2cd850e1435c",
+					  "date": "Jan 10, 2026",
+					  "c": true,
+					  "codeOriginal": "(t*9|t>>4)&(t*5|t>>7)&(t*3|t/1024)"
+				  },
+				  {
+					  "url": "https://www.bytebeat.cloud/post/fb587cb0-7731-4b77-b7c3-fb4f61b6c5a9",
+					  "date": "Jan 13, 2026",
+					  "c": true,
+					  "codeOriginal": "t*(t&16384?t&8192?6:4:7)*(t&4096?1:3/2)*(1-(5&t>>10))>>(3&t>>10)|t>>3"
+				  },
+				  {
+					  "name": "c compatible**2",
+					  "remix": {
+						  "author": "Voidburger",
+						  "name": "c compatible",
+						  "url": "https://www.bytebeat.cloud/post/0a6f5097-0ee8-49f2-a425-cae950520def"
+					  },
+					  "url": "https://www.bytebeat.cloud/post/080c1d6b-00bd-4f23-b7e7-7667e21e0ede",
+					  "date": "Jan 21, 2026",
+					  "sampleRate": 11025,
+					  "c": true,
+					  "codeOriginal": "(t*(t>>4&128?3:2)*(t>>6&128?2:1)*(t&8192?1:3/2)>>1&127)+(t*(t&16384?3:3/2)*(t&4096?1:3/2)&127)"
+				  }
+			  ]
+			},
     {
         "author": "vbinchees3000",
         "children":  [
