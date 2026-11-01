@@ -3310,17 +3310,6 @@
                 "fileOriginal": true
             },
             {
-                "name": "Bathed In Lasers (WIP)",
-                "mode": "Floatbeat",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1jwfz8l/bathed_in_lasers_bytebeat_master_level/",
-                "date": "Apr 11, 2025",
-                "sampleRate": 48000,
-                "stereo": true,
-                "big": true,
-                "file": "greaserpirate.js",
-                "fileOriginal": true
-            },
-            {
                 "mode": "Floatbeat",
                 "remix": {
                     "author": "PrincessPriscillaPT",
@@ -3333,6 +3322,17 @@
                 "sampleRate": 48000,
                 "stereo": true,
                 "codeOriginal": "r=t*1.125,l=16384,u=8192,c=4096,x=j=>min(max((s=(a,b)=>(t*2**(parseInt(a,36)/12)/b*1.14/4%64+(sin(r*PI/l/2)*2+16)&64)-16,w=r=>r>0&&(e=a=>s('C7EGG0J7C7EGG0JN'[15&r>>13],a*'1111121211111211'[15&r>>13]),((t&8)/6*sin(t/2e5)+1-sin(t/2e5))*(e(1)+e(j)))/2*(1.25-r/u%1*[.25,.75][1&r>>19]),w(r)+w(r-(d=24576))/2+w(r-2*d)/3+w(r-3*d)/4+(b=a=>s('C957'[3&r>>18],a),b(8)*2+b(4/j))/1.25*(r/l%2)*(1.25-r%u/1e4)+(random()-.5)*80*(1-r/u%1)**4+atan(sin(6*sqrt(r%u)**.7))*100*1.31*(1-r/u%1)**.25*!(r&u)*'10100110'[r>>14&7]+((t*sin(t/.66>>3)&32)-16)*(1.33-r/l/2%1)**2*!(~r&2*l)+(f=a=>s('GJGEGGCE'[i=7&r>>[14,16][1&r>>18]],a)+s('CCB79CB7'[i],a),f(1/j)/3+f(j/2)/2)),-128),128)/128,[x(1.005),x(.995)]"
+            },
+            {
+                "name": "Bathed In Lasers (WIP)",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1jwfz8l/bathed_in_lasers_bytebeat_master_level/",
+                "date": "Apr 11, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "big": true,
+                "file": "greaserpirate.js",
+                "fileOriginal": true
             }
         ]
     },
@@ -5694,6 +5694,17 @@
 				],
                 "sampleRate": 48000,
                 "codeOriginal": "u=Math.sin,r=Math.asin,y=Math.cbrt,o=Math.pow,g=t*o(1.029,\"mifomifomifqmifq\".charCodeAt(t>>17&15))/48,k=t*o(1.123,\"2345235634563457\"[t>>17&15])/2,h=((-t>>14&7)+1)*(-t>>17&1),r(u(g/2)*0.45+u(g/2.006)*0.35)*10+r(u(g/3)*0.45+u(g/3.015)*0.35)*10+r(u(g/4)*0.45+u(g/4.015)*0.35)*12+y(u(g/18+u(g/18.45)*0.55))*16+y(u(g/24+u(g/24.25)*0.55))*16+u(k*1.5+u(k*1.25)*0.6)*h+u(k/1.15+u(k*1.05)*0.65)*h+u(k/12)*h+u(k/48)*h+u(t*((t>>19&5)+33)/3072)*32+128"
+            },
+            {
+                "name": "kaguyahouraisan.mp4",
+                "date": "Nov 1, 2026",
+                "url": [
+					"https://www.youtube.com/watch?v=0PyaY2bv_ek",
+					"https://dollchan.net/btb/res/77.html#18316"
+				],
+                "sampleRate": 48000,
+				"stereo": true,
+                "codeOriginal": "AS=Math.asin,S=Math.sin,P=Math.pow,fade=((-t>>11&7)+1)/1.625*(-t>>14&1),f1=x=>x%8+x*1.5%8+x*2%8+x*3%8,f2=x=>((x&6)+(x*1.02&6)+(x/1.5&6)+(x/1.5*1.02&6))*1.5,f3=x=>(255>>x&32)*((-t>>11&7)+1)/8,f4=x=>AS(S(x|0))*fade*(-t>>14&1)+AS(S(x/1.5|0))*fade+16,d=t*P(1.03,(-t>>11&3)+1)/[5,10,20,10][t>>[13,14,13,12][t>>17&3]&3]/\"65645654\"[t>>15&7]*2,g=t*P(1.05,((t>>((t>>15&1)+13)&1)+2)*\"23242343\"[t>>17&7])/28,m=t*P(1.04,(t>>17&5)+16)/[18,22,24,22][t>>14&3],r=t*P(1.03,\"ekrvakrv\".charCodeAt(t>>16&7))/32,[f1(d*0.995)+f1(d*2*0.995)+f2(g*0.995)+f2(g*2*0.995)+f3(m*0.995)+f3(m*2*0.995)+f4(r*0.995)+f4(r*2*0.995),f1(d*1.005)+f1(d*2*1.005)+f2(g*1.005)+f2(g*2*1.005)+f3(m*1.005)+f3(m*2*1.005)+f4(r*1.005)+f4(r*2*1.005)]"
             }
         ]
     },
