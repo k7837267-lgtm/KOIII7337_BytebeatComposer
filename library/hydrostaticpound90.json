@@ -179,5 +179,11 @@
     "date": "Oct 28, 2026",
     "description": "\"You Know, I Should Stop Disappearing From Existence, Things Have Been Crazy Around Here.\" - HydrostaticPound90",
     "codeOriginal": "((t*(t&32768?7:7.3)|t*(t&32768?4.6:4.8)|t>>5&127)&255)*(t/8192%1+6)"
+  },
+  {
+    "name": "#32",
+    "date": "Nov 1, 2026",
+    "description": "\"THIS IS FOR YOU KOIII!\" - HydrostaticPound90",
+    "codeOriginal": "(((t*E*E*E*E/64*(4+(0x7337ADDED>>(t>>9&30)&20)))^64)&t>>4)^(((t*E*E*E*E/32*(-3+('THEYCANNOWRETURN'.charCodeAt(t>>10&15)&43)))^192)&-t>>4)+(8e4/(t&4095)&128)"
   }
 ]
