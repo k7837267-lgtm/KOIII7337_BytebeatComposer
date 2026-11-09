@@ -8702,20 +8702,75 @@
     },
     {
         "author": "ØMEGA 777",
-        "remix": {
-            "author": "D3nschøt",
-            "name": "idk a keyboard",
-            "url": "https://www.reddit.com/r/bytebeat/comments/1hhija9/idk_a_keyboard/"
-        },
-        "name": "Keyboard",
-        "url": "https://dollchan.net/btb/res/7164.html#10359",
-        "date": "Nov 3, 2025",
-        "sampleRate": 48000,
-        "stereo": true,
-        "big": true,
-        "mode": "Floatbeat",
-        "file": "omega.js",
-        "fileOriginal": true
+		"children": [
+			{
+                "name": "Keyboard",
+                "remix": {
+                    "author": "D3nschøt",
+                    "name": "idk a keyboard",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1hhija9/idk_a_keyboard/"
+                },
+                "url": "https://dollchan.net/btb/res/7164.html#10359",
+                "date": "Nov 3, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "big": true,
+                "mode": "Floatbeat",
+                "file": "omega.js",
+                "fileOriginal": true
+			},
+			{
+                "name": "IDK is Sky",
+                "url": "https://dollchan.net/btb/res/10665.html#10918",
+                "date": "Nov 29, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "big": true,
+                "mode": "Floatbeat",
+				"starred": 2,
+                "file": "omega-1.js",
+                "fileOriginal": true
+			},
+			{
+				"name": "CHORDS RANDOM",
+                "url": "https://dollchan.net/btb/res/10665.html#16382",
+                "date": "Jul 27, 2026",
+                "sampleRate": 32000,
+                "stereo": true,
+                "big": true,
+                "mode": "Funcbeat",
+				"starred": 1,
+                "file": "omega-3.js",
+                "fileOriginal": true
+			},
+			{
+                "url": "https://dollchan.net/btb/res/10665.html#17671",
+                "date": "Oct 1, 2026",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+				"starred": 1,
+                "codeOriginal": [
+					"Saw=(x,i)=>((x&255)/127.5-1)*tanh(abs(sin(x*PI/256)*i)),",
+                    "melody=[,,,2,7,11,6,,s=[14][t>>13&1],s,7,11,6,,6,,][t>>14&15]+2,",
+                    "bass=[[-1,11][t>>14&1],[2,14][t>>14&1]][t>>18&1],",
+                    "Cut=256*(1-t/2**14%1)**2,",
+                    "(Saw(t*55*2**(bass/12-7),Cut)+Saw(t*55*2**(melody/12-6)||0,Cut))/2"
+				]
+			},
+			{
+				"name": "Drafts",
+                "url": "https://dollchan.net/btb/res/10665.html#18420",
+                "date": "Jul 27, 2026",
+                "sampleRate": 32000,
+                "stereo": true,
+                "big": true,
+				"slow": true,
+                "mode": "Funcbeat",
+				"starred": 2,
+                "file": "omega-4.js",
+                "fileOriginal": true
+			}
+		]
     },
     {
         "author": "!{G&Ycatjuice}? (greenandyellowcatjuice)",
