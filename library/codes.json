@@ -3265,6 +3265,7 @@
                 "date": "Apr 18, 2023",
                 "sampleRate": 48000,
                 "stereo": true,
+				"slow": true,
                 "big": true,
                 "file": "greaserpirate3.js",
                 "fileOriginal": true
@@ -3322,6 +3323,7 @@
                 "date": "Mar 27, 2025",
                 "sampleRate": 48000,
                 "stereo": true,
+				"slow": true,
                 "codeOriginal": "r=t*1.125,l=16384,u=8192,c=4096,x=j=>min(max((s=(a,b)=>(t*2**(parseInt(a,36)/12)/b*1.14/4%64+(sin(r*PI/l/2)*2+16)&64)-16,w=r=>r>0&&(e=a=>s('C7EGG0J7C7EGG0JN'[15&r>>13],a*'1111121211111211'[15&r>>13]),((t&8)/6*sin(t/2e5)+1-sin(t/2e5))*(e(1)+e(j)))/2*(1.25-r/u%1*[.25,.75][1&r>>19]),w(r)+w(r-(d=24576))/2+w(r-2*d)/3+w(r-3*d)/4+(b=a=>s('C957'[3&r>>18],a),b(8)*2+b(4/j))/1.25*(r/l%2)*(1.25-r%u/1e4)+(random()-.5)*80*(1-r/u%1)**4+atan(sin(6*sqrt(r%u)**.7))*100*1.31*(1-r/u%1)**.25*!(r&u)*'10100110'[r>>14&7]+((t*sin(t/.66>>3)&32)-16)*(1.33-r/l/2%1)**2*!(~r&2*l)+(f=a=>s('GJGEGGCE'[i=7&r>>[14,16][1&r>>18]],a)+s('CCB79CB7'[i],a),f(1/j)/3+f(j/2)/2)),-128),128)/128,[x(1.005),x(.995)]"
             },
             {
@@ -3331,6 +3333,7 @@
                 "date": "Apr 11, 2025",
                 "sampleRate": 48000,
                 "stereo": true,
+				"slow": true,
                 "big": true,
                 "file": "greaserpirate.js",
                 "fileOriginal": true
@@ -12012,5 +12015,19 @@
         "date": "Oct 9, 2026",
         "sampleRate": 22050,
         "codeOriginal": "F=n=>.1117*pow(2,n/12),M=[19,99,23,24,23,19,21,99,19,16,19,21,24,99,21,99,17,21,26,23,19,99,14,99,24,99,23,24,26,28,28,99,26,24,23,21,21,99,24,99,26,24,26,99,23,19,14,99],V=x=>x>0&&(I=x/3072|0,J=I-(M[I%48]>98),n=M[J%48],g=x*F(n),(sin(g)+.4*sin(g*2)+.15*sin(g*3))*exp(-(x-J*3072)/2200)),b=t/18432%8|0,R=[0,-3,5,7,0,-3,2,7][b],Q=[4,3,4,4,4,3,3,4][b],u=t%6144,B=t/6144%3|0,m=(V(t)+.35*V(t-4608))*.3+(B==0)*sin(t*F(R-12))*exp(-u/2800)*.5+(B>0)*(sin(t*F(R))+sin(t*F(R+Q))+sin(t*F(R+7)))*exp(-u/1400)*.13+(b>3)*(sin(t*F(R+7))+sin(t*F(R+Q+12)))*.03,tanh(m*1.3)*120+128"
-    }
+    },
+	{
+		"author": "Caseium",
+		"name": "Robert inspired beat + Drums",
+		"remix": {
+			"name": "robert inspired beat",
+			"author": "BSquareII",
+			"url": "https://dollchan.net/btb/res/2628.html#4578"
+		},
+		"date": "Oct 26, 2026",
+		"sampleRate": 16384,
+		"c": true,
+		"description": "\"this wasn't actually made on October 2026, I probably made this in like August or September, but I cant exactly remember.\" - Caseium",
+		"codeOriginal": "((t%45|t>>9)&(t%57|t>>6)&(t%38|t>>11)&63)<<2|(int)(3E5/(t&8191)&64)+(t&8192?((t>>2)*(t>>2)*(t>>2)/8&128)%256*(1-t%16383/32767):1)+(t&8192?(t*t*t/256&36)%256*(1-t%8191/8191):1)"
+	}
 ]
