@@ -960,5 +960,47 @@
                 "codeOriginal": "t&=4095*20 t/4 & / * * DUP t>>14 t/4 * * t - / t>>5 |"
             }
         ]
+    },
+    {
+        "author": "Caseium",
+        "children": [
+            {
+                "name": "Some kind of weird square wave?",
+                "url": "https://www.touchbit.xyz/#s=8192&bb=5d000001001500000000000000003a08032389d725840dbb53b949ef0b2b3f9c87a38af8f7e5ffffbd170000",
+                "date": "Oct 29, 2026",
+                "mode": "postfix",
+                "sampleRate": 8192,
+                "codeOriginal": "t 96 & t -1 >> | 13 *"
+            },
+            {
+                "name": "Wistless",
+                "description": "I was originally gonna use this for RiseByte Day 2, but i decided to scrap it. It just didnt really sound that good imo.",
+                "date": "Nov 6, 2026",
+                "mode": "postfix",
+                "sampleRate": 7596,
+                "codeOriginal": [
+                    "t t",
+                    "t 14 >> 4 % 5 +",
+                    "t 19 >> 7 & 1 + *",
+                    "8 * % /",
+                    "t 4 >> & -",
+                    "t 17 >> 2 & + *"
+                ]
+            },
+            {
+                "name": "Beta version",
+                "date": "Nov 6, 2026",
+                "mode": "postfix",
+                "sampleRate": 7596,
+                "codeOriginal": [
+                    "t t",
+                    "t 14 >> 4 % 5 +",
+                    "t 19 >> 7 & 1 + *",
+                    "8 * % /",
+                    "t 4 >> & - 8 && >> 2 96 +",
+                    "t 17 >> 2 & + *"
+                ]
+            }
+        ]
     }
 ]
