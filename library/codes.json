@@ -5937,6 +5937,28 @@
         "sampleRate": 10000,
         "codeOriginal": "(t*(7&t>>5&t>>9)&t>>10)+(t*(15&t>>8&t>>10&t>>11&t>>6)&(255&-t>>10))"
     },
+      {
+        "author": "LarkeyFactorial",
+        "name": "127c \"Radioactive and Treif\"",
+		  "remix": {
+			  "author": "viznut",
+			  "name": "Sin() isn't kosher, people!",
+			  "url": "https://www.pouet.net/topic.php?which=8357&page=4#c388477"
+		  },
+		"url": "https://dollchan.net/btb/res/4595.html#4677",
+        "date": "Oct 18, 2024",
+        "codeOriginal": "(t*(sin(t%16384>8192?t>>(t>>6):t>>(t>>7))))+(((t%8192)>4096)*((t>>4)|random()*256))^10*(t>>7|(sin(t>>10)*t)|t>>(t>>9))+(7&t>>1)"
+    },
+      {
+        "author": [
+			"LarkeyFactorial",
+			"amyy"
+		],
+        "name": "Final Destination",
+		"url": "https://dollchan.net/btb/res/4595.html#4682",
+        "date": "Oct 18, 2024",
+        "codeOriginal": "(((t%((t>>((t>>8)%8))%256))>0?t%(64+((t>>12)%16))+(t%(128+(t>>14%256))):t)|((((t>>12)%4)-1)?((t>>12)%4-3)?(t>>4):(t>>2):(t>>3)))^(t|t>>4|t>>6)"
+    },
     {
         "author": "Phoneposter",
         "description": "Write a chord progression player that's shorter and more concise than this one but has far more capabilities and can play rare/strangely-named chords (found in jazz/prog for instance), better if you use cool synths (Float64 wavetables, FM, soft pads) with rhythms, envelopes (ADSR), effects (N-order IIR filters, FDN reverb, chorus, dynamic compression) and arpeggios with some drums (pattern generation (rush/rolls, dynamics, off-beat/humanized swing), membrane simulation (snares, hi-hat, cymbal, bells)), even better if it's microtonal (are new chord notations required for this?) and not the standard 12-TET. also had to compress the JS because it was too long.",
@@ -10979,10 +11001,27 @@
                 "sampleRate": 44100,
                 "codeOriginal": "t||(A=Array(n=12288).fill(0)),n=t>>12&t>>15,m=2**(parseInt('0CEAFM0CEAFM0FE7'[t>>12&15],36)/12),f=x=>x&&abs(sin(t*m*x*PI/256)/18)+f(x-1),g=x=>f(x)/x,atan(g(min(round((cos(t/'21'[t>>13&1]%4096*PI/16384))**2*8),(-t>>10)&31)+1)*16)/2+sin(2*sqrt(t%16384))*(.9997**(t%16384))"
             },
-			{
-				"name": "READ THIS MESSAGE (From Trillwin)",
-				"description": "”im sorry but i will be barely active on bytebeat.cloud due to many thing i gotta do”"
-			}
+            {
+                "name": "i will plan to get even better at bytebeat if i can",
+				"description": "BytebeatCloud's Week 33 Submission",
+                "url": "https://www.bytebeat.cloud/post/d55b9201-c715-46c4-9d04-972d21b30bc5",
+                "date": "Jul 28, 2026",
+                "sampleRate": 44100,
+                "codeOriginal": "(t*(3+(t>>13&t>>14&5|t>>12&7))/13*2)&128"
+            },
+            {
+                "name": "random bytebeat #1",
+                "remix": {
+                    "author": "HeremTheBFDI",
+                    "name": "⚗",
+                    "url": "https://www.bytebeat.cloud/post/9d77cfdb-8824-4c9f-8f79-3da483242d7d"
+                },
+                "url": "https://www.bytebeat.cloud/post/936d94bf-461e-408d-a8c7-e6fed6093cc5",
+                "date": "Nov 8, 2026",
+                "mode": "Floatbeat",
+                "sampleRate": 48000,
+                "codeOriginal": "sr=48e3,sa=8192/sr,bpm=120,T=t*sa/30*bpm,tau=2*PI,p=2**(-11/12)*432*128/sr,n=$=>(2**($/12)),t||(x=new Float32Array(4e7)),lp=(i,f)=>(q=1,r=q++,x[r]??=0,x[r]+=((i)-x[r])*f),hp=(i,f)=>(i-lp(i,f)),antiNaN=i=>isNaN(i)?0:i,c=t*p*(N=n(\"0x\"+\"037A\"[T>>12&3])),(hp((c|c<<3|c>>1|T>>7|T>>8)%256/1-1,.04))"
+            }
         ]
     },
     {
