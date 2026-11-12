@@ -8019,6 +8019,7 @@
 		"date": "Oct 11, 2025",
 		"mode": "Floatbeat",
 		"sampleRate": 48000,
+		"big": true,
 		"file": "DemariSmith.js",
 		"fileOriginal": true
 	},
