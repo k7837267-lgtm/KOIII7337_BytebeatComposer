@@ -12050,6 +12050,20 @@
 		]
     },
     {
+        "author": "DanilkaDOOMep",
+		"name": "Nya ^w^",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1wea7az/nya_w_arrayfill_test/",
+        "date": "Sep 12, 2026",
+		"mode": "Signed Bytebeat",
+        "sampleRate": 48000,
+        "codeOriginal": [
+			"a=PI*(t/128*2**(parseInt(['H0CA','H1DC'][1&t>>17][3&t>>13],36)/12))||0,",
+            "b=PI*(t/128*2**(parseInt('O7JHO7JHO7JHODPRO8KJO8KJO8KJOJHC'[31&t>>13],36)/12))||0,",
+            "",
+            "t?0:A=Array(D=12288).fill(0),M=(sin(a+sin(a))+sin(b+sin(b)))*32/(t/1024%8+1),R=M+A[t%D],A[t%D]=R/2,R"
+		]
+    },
+    {
         "author": "0naCB0_1488",
         "url": "https://reddit.com//r/bytebeat/comments/1x1y8t6/_/",
         "date": "Oct 9, 2026",
