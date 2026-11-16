@@ -5656,7 +5656,6 @@
                 "codeOriginal": "S=Math.sin,C=Math.cos,R=Math.random(),π=Math.PI,h=t*\"46574657465746575768576857685768\"[t>>12&31]/48,l=t*Math.pow(1.125,\"34567899345678993647589936475899\"[t>>14&31])/32,f0=(x,y)=>S(h*y+S(h*y*1.5)*0.67+S(h*y*2.25)*0.5+S(h*y*3.375)*0.33)*x+C(h/π*y+C(h/1.01*y*1.5)*0.67+C(h/π*y*2.25)*0.5+C(h/π*y*3.375)*0.33)*x+x*2,Bin4=\"1000\",DrumFunction=(x)=>Math.log(t&16383)*x%32,f1=f0(4,1)+f0(4,6)+f0(8,0.5),f2=f0(4,2)+f0(4,12)+f0(8,0.25),f3=f0(4,3)+f0(4,18)+f0(8,0.167),[f1,f2,f1,f3,f1,f2,f3,f2,f1,f3,f1,f2,f1,f2,f3,f2][t>>17&15]+R*((-t>>6&31)+1)*Bin4[t>>11&3]+R*((-t>>8&31)+1)*Bin4[t>>13&3]+(l&32)+(l*1.022&32)+DrumFunction(256)+DrumFunction(272)"
 			},
             {
-                
                 "name": "Recon",
                 "date": "Jan 13, 2026",
                 "url": [
@@ -5716,6 +5715,41 @@
                 "sampleRate": 48000,
 				"stereo": true,
                 "codeOriginal": "AS=Math.asin,S=Math.sin,P=Math.pow,fade=((-t>>11&7)+1)/1.625*(-t>>14&1),f1=x=>x%8+x*1.5%8+x*2%8+x*3%8,f2=x=>((x&6)+(x*1.02&6)+(x/1.5&6)+(x/1.5*1.02&6))*1.5,f3=x=>(255>>x&32)*((-t>>11&7)+1)/8,f4=x=>AS(S(x|0))*fade*(-t>>14&1)+AS(S(x/1.5|0))*fade+16,d=t*P(1.03,(-t>>11&3)+1)/[5,10,20,10][t>>[13,14,13,12][t>>17&3]&3]/\"65645654\"[t>>15&7]*2,g=t*P(1.05,((t>>((t>>15&1)+13)&1)+2)*\"23242343\"[t>>17&7])/28,m=t*P(1.04,(t>>17&5)+16)/[18,22,24,22][t>>14&3],r=t*P(1.03,\"ekrvakrv\".charCodeAt(t>>16&7))/32,[f1(d*0.995)+f1(d*2*0.995)+f2(g*0.995)+f2(g*2*0.995)+f3(m*0.995)+f3(m*2*0.995)+f4(r*0.995)+f4(r*2*0.995),f1(d*1.005)+f1(d*2*1.005)+f2(g*1.005)+f2(g*2*1.005)+f3(m*1.005)+f3(m*2*1.005)+f4(r*1.005)+f4(r*2*1.005)]"
+            },
+            {
+                "name": "Hecatia's Shenanigan Buffer - Heavy Rainfall On Nibiru",
+                "date": "Nov 4, 2026",
+                "url": [
+					"https://www.youtube.com/watch?v=IzPrhV2Uos4",
+					"https://dollchan.net/btb/res/77.html#18364"
+				],
+                "sampleRate": 48000,
+				"stereo": true,
+                "big": true,
+                "file": "hypernovaheathen-1.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "Fall Of Aveyas - The Boundary Of True Heaven",
+                "date": "Nov 7, 2026",
+				"description": "\"I could've just made this Minecraft The Absolute Insanity OST a terry WAD or a Yanito932 song. Seriously.\"",
+                "url": "https://dollchan.net/btb/res/77.html#18415",
+                "sampleRate": 48000,
+				"stereo": true,
+                "big": true,
+                "file": "hypernovaheathen-2.js",
+                "fileOriginal": true
+            },
+            {
+                "name": "C-48",
+				"description": "\"NO, I DON'T WANT TO BE SOMEONE FROM DIDI DA DON! NOOOOOO!\"",
+                "date": "Nov 16, 2026",
+                "url": [
+					"https://www.youtube.com/watch?v=1VBO32zui7o",
+					"https://dollchan.net/btb/res/77.html#18641"
+				],
+                "sampleRate": 48000,
+                "codeOriginal": "(t*((t>>15&5^t>>12&3)+5)/4&255)*((-t>>6&63)+1)/256+(t*((t>>15&5^t>>13&3)+5)/18&256)*((-t>>7&63)+1)/256+(t*((t>>13&-t>>15&7)+12)/75)%32+(t*((t>>13&-t>>15&7)+12)/75*1.012)%32+(t*(-t>>11&7)/3&255)*((-t>>8&63)+1)/256"
             }
         ]
     },
@@ -8762,6 +8796,16 @@
                 "mode": "Floatbeat",
 				"starred": 2,
                 "file": "omega-1.js",
+                "fileOriginal": true
+			},
+			{
+                "name": "class Glitch {...}",
+                "url": "https://dollchan.net/btb/res/10665.html#12808",
+                "date": "Feb 20, 2025",
+                "sampleRate": 48000,
+                "big": true,
+                "mode": "Floatbeat",
+                "file": "omega-2.js",
                 "fileOriginal": true
 			},
 			{
