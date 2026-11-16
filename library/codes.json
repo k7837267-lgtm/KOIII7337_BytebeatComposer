@@ -8804,7 +8804,6 @@
                 "date": "Feb 20, 2025",
                 "sampleRate": 48000,
                 "big": true,
-                "mode": "Floatbeat",
                 "file": "omega-2.js",
                 "fileOriginal": true
 			},
