@@ -12178,6 +12178,7 @@
 		"name": "SSR Sky",
         "date": "Oct 16, 2026",
         "sampleRate": 32000,
+		"mode": "Floatbeat",
 		"exotic": true,
         "codeOriginal": [
 			"c=1.047,cs=1.107,d=1.173,ds=1.243,e=1.318,f=1.392,fs=1.476,g=1.568,gs=1.656,a=1.755,as=1.862,b=1.977,",
