@@ -11271,6 +11271,59 @@
             }
         ]
     },
+	{
+		"author": "Blocky2026",
+		"children": [
+			{
+				"name": "Br 42 melody",
+				"remix": {
+					"name": "the 42 melody",
+					"url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt"
+				},
+				"date": "Apr 10, 2026",
+				"exotic": true,
+				"codeOriginal": "br(t*(t>>10&42)/64)"
+			},
+			{
+				"name": "Funni xor thing 3",
+				"remix": {
+					"author": "D3nschøt",
+					"name": "Funni xor thing 2"
+				},
+				"date": "Apr 10, 2026",
+				"sampleRate": 44100,
+				"mode": "Floatbeat",
+				"exotic": true,
+				"codeOriginal": "sinf((t*(br(~t>>12,16)^t)>>14)-1e6/(t%(1<<14))|(t>>6))+(random()-0.5) *(4096-t%4096)/2048",
+				"codeMinified": "sinf((t*(br(~t>>12,16)^t)>>14)-1e6/(t%(1<<14))|t>>6)+(random()-.5)*(4096-t%4096)/2048"
+			},
+			{
+				"name": "2048 test",
+                "remix": {
+                    "name": "WhiskedAwayToPomerania",
+                    "author": "wyngwyrm",
+                    "url": "https://battleofthebits.com/arena/Entry/WhiskedAwayToPomerania.txt/57975/"
+                },
+				"date": "Apr 10, 2026",
+				"sampleRate": 9000,
+				"mode": 2048,
+				"exotic": true,
+				"codeOriginal": "((-t>>4)&(2*t&8*t|t/32&36*t&18*t&9*t|t/128&32*t&t/64*t|t/16&t/4|t/32&t/16|t/12&t/8&t/6)&255) *8+sinf(2*t&8*t|t/32&36*t&18*t&9*t|t/128&32*t&t/64*t|t/16&t/4|t/32&t/16|t/12&t/8&t/6) *128+128",
+				"codeMinified": "((-t>>4)&(2*t&8*t|t/32&36*t&18*t&9*t|t/128&32*t&t/64*t|t/16&t/4|t/32&t/16|t/12&t/8&t/6)&255)*8+sinf(2*t&8*t|t/32&36*t&18*t&9*t|t/128&32*t&t/64*t|t/16&t/4|t/32&t/16|t/12&t/8&t/6)*128+128"
+			},
+			{
+				"name": "2048 test",
+                "remix": {
+                    "name": "Useless7",
+                    "author": "Decent-Manager-6169",
+                    "url": "https://dollchan.net/btb/res/520.html#2733"
+                },
+				"date": "Apr 19, 2026",
+				"sampleRate": 38000,
+				"codeOriginal": "(((4*t*((t>>19&1)+1)*2**([2,5,9,2,5,9,2,5,9,12,14,9,12,14,9,12,10,7,14,10,7,14,10,7,9,4,13,9,4,13,9,4][t>>13&31]/12)&4095)**(1/sqrt(4+.32*sin(t/8192)))&16)%256*8)%256/2+((4*t*((t>>19&1)+1)*2**([2,5,9,2,5,9,2,5,9,12,14,9,12,14,9,12,10,7,14,10,7,14,10,7,9,4,13,9,4,13,9,4][t>>13&31]/12))/4|t>>5)%256/4+(4e5/(t%[16384,16384,4096,2048,16384,16384,4096,16384,16384,16384,4096,2048,16384,16384,4096,409][(t>>14)%16]))%256/4+((t*(t&16384?random():0))&-t>>7)%256/3+(t*(random())&-t>>5)%256/10"
+			}
+    ]
+	},
     {
         "author": "Mugei8_71274",
         "children": [
@@ -12120,6 +12173,18 @@
         "sampleRate": 22050,
         "codeOriginal": "F=n=>.1117*pow(2,n/12),M=[19,99,23,24,23,19,21,99,19,16,19,21,24,99,21,99,17,21,26,23,19,99,14,99,24,99,23,24,26,28,28,99,26,24,23,21,21,99,24,99,26,24,26,99,23,19,14,99],V=x=>x>0&&(I=x/3072|0,J=I-(M[I%48]>98),n=M[J%48],g=x*F(n),(sin(g)+.4*sin(g*2)+.15*sin(g*3))*exp(-(x-J*3072)/2200)),b=t/18432%8|0,R=[0,-3,5,7,0,-3,2,7][b],Q=[4,3,4,4,4,3,3,4][b],u=t%6144,B=t/6144%3|0,m=(V(t)+.35*V(t-4608))*.3+(B==0)*sin(t*F(R-12))*exp(-u/2800)*.5+(B>0)*(sin(t*F(R))+sin(t*F(R+Q))+sin(t*F(R+7)))*exp(-u/1400)*.13+(b>3)*(sin(t*F(R+7))+sin(t*F(R+Q+12)))*.03,tanh(m*1.3)*120+128"
     },
+    {
+        "author": "Pyro",
+		"name": "SSR Sky",
+        "date": "Oct 16, 2026",
+        "sampleRate": 32000,
+		"exotic": true,
+        "codeOriginal": [
+			"c=1.047,cs=1.107,d=1.173,ds=1.243,e=1.318,f=1.392,fs=1.476,g=1.568,gs=1.656,a=1.755,as=1.862,b=1.977,",
+            "m=[0,fs,b,a,g,fs,e,fs,b/2,b,a,g,fs,e,d,cs,b/2,b,a,g,fs,g,b,a,g,fs,g,a,as,g, fs, cs],",
+            "tt=t*1.2,(sign(sinf((t*2*m[tt>>13&31]) ))*(exp(-tt/16/128%4))+sign(sinf(t*[b,a,g,fs][tt>>16&3]))*(exp(-tt/32/128%4))) /2"
+		]
+	},
 	{
 		"author": "Caseium",
 		"name": "Robert inspired beat + Drums",
