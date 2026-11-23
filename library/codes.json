@@ -9626,7 +9626,7 @@
 			},
             {
                 "name": "Wavetable-like soft synths using exp/cosine bell bumps that move and wrap around.",
-                "description": "change their width to change its timbre; smaller is brighter, wider is softer.",
+                "description": "change their width to change its timbre; smaller is brighter, wider is softer. | \"You might as well call this a lag tester cause my i5-13420H CANT even play this BRO WHAT-\" - Caseium",
                 "url": "https://dollchan.net/btb/res/3.html#12918",
                 "date": "Feb 24, 2026",
                 "sampleRate": 22050,
@@ -12155,6 +12155,7 @@
     {
         "author": "DanilkaDOOMep",
 		"name": "Nya ^w^",
+		"description": "\"idk if its just me but this kinda sounds like Nothing is Real\" - Caseium",
         "url": "https://www.reddit.com/r/bytebeat/comments/1wea7az/nya_w_arrayfill_test/",
         "date": "Sep 12, 2026",
 		"mode": "Signed Bytebeat",
@@ -12188,6 +12189,8 @@
 	},
 	{
 		"author": "Caseium",
+		"children": [
+			{
 		"name": "Robert inspired beat + Drums",
 		"remix": {
 			"name": "robert inspired beat",
@@ -12199,5 +12202,31 @@
 		"c": true,
 		"description": "\"this wasn't actually made on October 2026, I probably made this in like August or September, but I cant exactly remember.\" - Caseium",
 		"codeOriginal": "((t%45|t>>9)&(t%57|t>>6)&(t%38|t>>11)&63)<<2|(int)(3E5/(t&8191)&64)+(t&8192?((t>>2)*(t>>2)*(t>>2)/8&128)%256*(1-t%16383/32767):1)+(t&8192?(t*t*t/256&36)%256*(1-t%8191/8191):1)"
+	},
+	{
+		"date": "Nov 14, 2026",
+		"children": [
+			{
+				"name": "WIP",
+				"url": [
+					"https://www.youtube.com/watch?v=sDm6DhzNJHU",
+					"https://www.bytebeat.cloud/post/7dd14fcc-e83a-4410-8983-149a04845808"
+				],
+				"sampleRate": 20000,
+				"codeOriginal": "t*(('^··^·^··^··^·^··^··^·^··^··^·^··*££*£*££*££*£*££^··^·^··^··^·^··'.charCodeAt(t>>11&63)))/76"
+			},
+			{
+				"name": "90. Don't inspect a box using a TV",
+				"url": "https://www.bytebeat.cloud/post/1fbd21ee-30e4-4fbc-ab0b-ea4487adf6e7",
+				"remix": {
+					"name": "89. Do not check the temperature in degrees",
+					"author": "AdvasterBytesBread",
+					"url": "https://www.bytebeat.cloud/post/97776e60-595a-420d-b179-b2b463e96cd7"
+				},
+			"sampleRate": 16000,
+			"c": true,
+			"codeOriginal": "(t>>0)*(15&(0xdeadab1edbed>>(t>>11&31)))"
+			}
+		]
 	}
 ]
